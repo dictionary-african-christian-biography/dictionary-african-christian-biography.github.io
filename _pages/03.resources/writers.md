@@ -3,6 +3,11 @@ title: Resources for Writers and Researchers
 layout: single-full
 permalink: /resources/writers/
 lang: en
+languages-available:                         
+  - en
+  - fr
+  - pt
+  - sw
 ---
 
 **1\. Introduction to the Project**  

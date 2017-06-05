@@ -3,6 +3,11 @@ title: Modern Africa Map
 layout: single-full
 permalink: /maps/modern/
 lang: en
+languages-available:                         
+  - en
+  - fr
+  - pt
+  - sw
 ---
 
 Click on a country name to see a list of biographies. For an alphabetical list of countries, see below the map.  

@@ -1,0 +1,145 @@
+---
+layout: archive
+permalink: /fr/stories/Ghana/
+title: "Ghana"
+author_profile: false
+lang: fr
+languages-available:
+  - en
+  - fr
+  - pt
+  - sw
+---
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}
+{% assign sorted = site.pages | where: "country","Ghana" | where: "index","primary" %}
+{% assign asort = sorted | where: "ancient","ancient" %}
+{% assign csort = sorted | where: "tradition","catholic" %}
+{% assign isort = sorted | where: "tradition","independent" %}
+{% assign osort = sorted | where: "tradition","orthodox" %}
+{% assign psort = sorted | where: "tradition","protestant" %}
+
+<p>
+{% for page in asort limit:1 %}{% if forloop.first == true %}
+<a href="#ancient">{{ site.t[parent_lang].ancient }}</a> |
+{% endif %}{% endfor %}
+{% for page in csort limit:1 %}{% if forloop.first == true %}
+<a href="#catholic">{{ site.t[parent_lang].catholic }}</a> |
+{% endif %}{% endfor %}
+{% for page in isort limit:1 %}{% if forloop.first == true %}
+<a href="#independent">{{ site.t[parent_lang].independent }}</a> |
+{% endif %}{% endfor %}
+{% for page in osort limit:1 %}{% if forloop.first == true %}
+<a href="#orthodox">{{ site.t[parent_lang].orthodox }}</a> |
+{% endif %}{% endfor %}
+{% for page in psort limit:1 %}{% if forloop.first == true %}
+<a href="#protestant">{{ site.t[parent_lang].protestant }}</a>
+{% endif %}{% endfor %}
+</P><br />
+<!-- INSERT COUNTRY SPECIFIC INFORMATION HERE -->
+
+<table border="1px" cellspacing="0" cellpadding="20px" align="center">
+<tbody>
+<tr>
+<td valign="top" ><img src="/images/countrymaps/ghana.png" width="178" height="178"><br /><br /><small>Source: <a href="http://www.operationworld.org/country/ghan/owtext.html"> Operation World</a></small></td>
+<td valign="top">
+<p>Population 2015: 26,984,000, 54% urban<br /><br />
+Christians: 64.3%<br />
+Muslims: 19.9%<br />
+Ethnoreligionists: 15.3%<br />Agnostics: 0.30%<br /><br />
+Number of Christians:17,351,000<br />
+Catholics: 3,500,000<br />
+Protestant: 6,890,000<br />
+Independents: 5,710,000<br />
+Orthodox: 4,600<br /><br />
+<small>Source:<a href="http://www.worldchristiandatabase.org">World Christian Database</a> accessed Sept 14, 2015</small></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<!-- DO NOT EDITE BELOW THIS LINE -->
+
+{% for page in asort limit:1 %}{% if forloop.first == true %}
+<h2 id="ancient">{{ site.t[parent_lang].ancient }}</h2>
+<table><thead>
+<th width=35%>{{ site.t[parent_lang].name }}</th>
+<th width=25%>{{ site.t[parent_lang].affiliation }}</th>
+<th width=25%>{{ site.t[parent_lang].country }}</th>
+<th width=15%>{{ site.t[parent_lang].languages }}</th>
+</thead></table>
+{% endif %}{% endfor %}
+{% for page in sorted %}
+{% for tag in page.ancient %}
+{% if tag == "ancient" %}
+  {% include archive-category-index.html parent_lang=parent_lang %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+{% for page in csort limit:1 %}{% if forloop.first == true %}
+<h2 id="catholic">{{ site.t[parent_lang].catholic }}</h2>
+<table><thead>
+<th width=35%>{{ site.t[parent_lang].name }}</th>
+<th width=25%>{{ site.t[parent_lang].affiliation }}</th>
+<th width=25%>{{ site.t[parent_lang].country }}</th>
+<th width=15%>{{ site.t[parent_lang].languages }}</th>
+</thead></table>
+{% endif %}{% endfor %}
+{% for page in sorted %}
+{% for tag in page.tradition %}
+{% if tag == "catholic" %}
+  {% include archive-category-index.html parent_lang=parent_lang %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+{% for page in isort limit:1 %}{% if forloop.first == true %}
+<h2 id="independent">{{ site.t[parent_lang].independent }}</h2>
+<table><thead>
+<th width=35%>{{ site.t[parent_lang].name }}</th>
+<th width=25%>{{ site.t[parent_lang].affiliation }}</th>
+<th width=25%>{{ site.t[parent_lang].country }}</th>
+<th width=15%>{{ site.t[parent_lang].languages }}</th>
+</thead></table>
+{% endif %}{% endfor %}
+{% for page in sorted %}
+{% for tag in page.tradition %}
+{% if tag == "independent" %}
+  {% include archive-category-index.html parent_lang=parent_lang %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+{% for page in osort limit:1 %}{% if forloop.first == true %}
+<h2 id="orthodox">{{ site.t[parent_lang].orthodox }}</h2>
+<table><thead>
+<th width=35%>{{ site.t[parent_lang].name }}</th>
+<th width=25%>{{ site.t[parent_lang].affiliation }}</th>
+<th width=25%>{{ site.t[parent_lang].country }}</th>
+<th width=15%>{{ site.t[parent_lang].languages }}</th>
+</thead></table>
+{% endif %}{% endfor %}
+{% for page in sorted %}
+{% for tag in page.tradition %}
+{% if tag == "orthodox" %}
+  {% include archive-category-index.html parent_lang=parent_lang %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+{% for page in psort limit:1 %}{% if forloop.first == true %}
+<h2 id="protestant">{{ site.t[parent_lang].protestant }}</h2>
+<table><thead>
+<th width=35%>{{ site.t[parent_lang].name }}</th>
+<th width=25%>{{ site.t[parent_lang].affiliation }}</th>
+<th width=25%>{{ site.t[parent_lang].country }}</th>
+<th width=15%>{{ site.t[parent_lang].languages }}</th>
+</thead></table>
+{% endif %}{% endfor %}
+{% for page in sorted %}
+{% for tag in page.tradition %}
+{% if tag == "protestant" %}
+  {% include archive-category-index.html parent_lang=parent_lang %}
+{% endif %}
+{% endfor %}
+{% endfor %}

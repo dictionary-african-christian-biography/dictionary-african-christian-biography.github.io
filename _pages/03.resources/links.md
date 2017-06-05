@@ -3,6 +3,11 @@ title: Links
 layout: single-full
 permalink: /resources/links/
 lang: en
+languages-available:                         
+  - en
+  - fr
+  - pt
+  - sw
 ---
 
 <small>(Internet connection needed)</small>  

@@ -3,6 +3,11 @@ title: Ancient North Africa
 layout: single-full
 permalink: /maps/ancient/
 lang: en
+languages-available:                         
+  - en
+  - fr
+  - pt
+  - sw
 ---
 
 **to approx. 650 A.D.**  

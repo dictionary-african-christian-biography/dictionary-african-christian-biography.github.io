@@ -3,6 +3,11 @@ title: Video Resources
 layout: single-full
 permalink: /resources/video/
 lang: en
+languages-available:                         
+  - en
+  - fr
+  - pt
+  - sw
 ---
 
 <small>(Internet connection needed)</small>  

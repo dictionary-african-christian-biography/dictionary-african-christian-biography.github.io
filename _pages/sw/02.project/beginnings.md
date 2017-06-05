@@ -3,6 +3,11 @@ title: Beginnings
 layout: single-full
 permalink: /sw/project/beginnings/
 lang: sw
+languages-available:                         
+  - en
+  - fr
+  - pt
+  - sw
 ---
 
 In the 1990s, while I was still a seminary instructor in Canada, the Dictionary of African Christian Biography was an inchoate idea, little more than the agenda for a modest scholarly consultation convened from August 31 to September 2, 1995. Funded by the Pew Charitable Trusts and hosted by the Overseas Ministries Study Center, this invitation-only event explored the need for an International Dictionary of Non-Western Christian Biography, with Africa as the particular focus.

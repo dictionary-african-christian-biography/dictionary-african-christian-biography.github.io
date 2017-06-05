@@ -3,6 +3,11 @@ title: Resources for Educators
 layout: single-full
 permalink: /resources/educators/
 lang: en
+languages-available:                         
+  - en
+  - fr
+  - pt
+  - sw
 ---
 
 **I. Introductory Materials: Getting to know the project**

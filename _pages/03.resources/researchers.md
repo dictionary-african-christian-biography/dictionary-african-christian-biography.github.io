@@ -3,6 +3,11 @@ title: Resources for Research on Christianity and Mission in Africa
 layout: single-full
 permalink: /resources/researchers/
 lang: en
+languages-available:                         
+  - en
+  - fr
+  - pt
+  - sw
 ---
 
 ## Newly Redesigned Website for [WCC Library and Archives](http://www.oikoumene.org/en/what-we-do/library-and-archives) (parts 1 and 2)

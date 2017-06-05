@@ -2,6 +2,16 @@
    BASE ELEMENTS
    ========================================================================== */
 
+img.bio {
+  width: 35%;
+  min-width:250px;
+  border-radius: $border-radius;
+  -webkit-transition: $global-transition;
+  transition: $global-transition;
+  float: left;
+  margin-right: .5em;
+  margin-bottom: .5em;
+   }
 html {
   /* sticky footer fix */
   position: relative;
@@ -128,6 +138,7 @@ blockquote {
 /* links */
 
 a {
+  text-decoration: none;
   &:focus {
     @extend %tab-focus;
   }

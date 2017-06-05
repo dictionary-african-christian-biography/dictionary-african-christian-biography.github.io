@@ -3,6 +3,11 @@ title: Vision
 layout: single-full
 permalink: /fr/project/vision/
 lang: fr
+languages-available:                         
+  - en
+  - fr
+  - pt
+  - sw
 ---
 
 ## Ecclesiastical Cartography and the Invisible Continent: _The Dictionary of African Christian Biography_ [1]
