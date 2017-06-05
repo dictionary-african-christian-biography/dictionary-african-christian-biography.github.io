@@ -1,0 +1,26 @@
+---
+layout: archive
+title: "Institution Sort"
+permalink: /fr/stories/institution-sort/
+lang: fr
+languages-available:
+  - en
+  - fr
+  - pt
+  - sw
+---
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}
+{% assign sorted = site.pages | where: "index","primary" | sort:"institution" %}
+
+<table><thead>
+  <th width=20%>{{ site.t[page.lang].institution }}</th>
+  <th width=20%>{{ site.t[page.lang].author }}</th>
+  <th width=30%>{{ site.t[page.lang].name }}</th>
+  <th width=15%>{{ site.t[page.lang].country }}</th>
+  <th width=15%>{{ site.t[page.lang].languages }}</th>
+  </thead></table>
+{% for page in sorted %}
+{% if page.title != empty %}
+  {% include institution-single-index.html parent_lang=parent_lang %}
+{% endif %}
+{% endfor %}

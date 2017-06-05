@@ -1,0 +1,93 @@
+---
+layout: archive
+permalink: /sw/stories/tradition-sort/
+title: "Tradition Sort"
+author_profile: false
+lang: sw
+languages-available:
+  - en
+  - fr
+  - pt
+  - sw
+---
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}
+{% assign sorted = site.pages | where: "index","primary" %}
+{% assign csort = site.pages | where: "tradition","catholic" %}
+{% assign isort = site.pages | where: "tradition","independent" %}
+{% assign osort = site.pages | where: "tradition","orthodox" %}
+{% assign psort = site.pages | where: "tradition","protestant" %}
+
+<p>
+<a href="#catholic">{{ site.t[parent_lang].catholic }}</a> |
+<a href="#independent">{{ site.t[parent_lang].independent }}</a> |
+<a href="#orthodox">{{ site.t[parent_lang].orthodox }}</a> |
+<a href="#protestant">{{ site.t[parent_lang].protestant }}</a>
+</P>
+
+{% for page in csort limit:1 %}{% if forloop.first == true %}
+<h2 id="catholic">Catholic</h2>
+<table><thead>
+<th width=35%>{{ site.t[parent_lang].name }}</th>
+<th width=25%>{{ site.t[parent_lang].affiliation }}</th>
+<th width=25%>{{ site.t[parent_lang].country }}</th>
+<th width=15%>{{ site.t[parent_lang].languages }}</th>
+</thead></table>
+{% endif %}{% endfor %}
+{% for page in sorted %}
+{% for tag in page.tradition %}
+{% if tag == "catholic" %}
+  {% include archive-category-index.html parent_lang=parent_lang %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+{% for page in isort limit:1 %}{% if forloop.first == true %}
+<h2 id="independent">Independent</h2>
+<table><thead>
+<th width=35%>{{ site.t[parent_lang].name }}</th>
+<th width=25%>{{ site.t[parent_lang].affiliation }}</th>
+<th width=25%>{{ site.t[parent_lang].country }}</th>
+<th width=15%>{{ site.t[parent_lang].languages }}</th>
+</thead></table>
+{% endif %}{% endfor %}
+{% for page in sorted %}
+{% for tag in page.tradition %}
+{% if tag == "independent" %}
+  {% include archive-category-index.html parent_lang=parent_lang %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+{% for page in osort limit:1 %}{% if forloop.first == true %}
+<h2 id="orthodox">Orthodox</h2>
+<table><thead>
+<th width=35%>{{ site.t[parent_lang].name }}</th>
+<th width=25%>{{ site.t[parent_lang].affiliation }}</th>
+<th width=25%>{{ site.t[parent_lang].country }}</th>
+<th width=15%>{{ site.t[parent_lang].languages }}</th>
+</thead></table>
+{% endif %}{% endfor %}
+{% for page in sorted %}
+{% for tag in page.tradition %}
+{% if tag == "orthodox" %}
+  {% include archive-category-index.html parent_lang=parent_lang %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+{% for page in psort limit:1 %}{% if forloop.first == true %}
+<h2 id="protestant">Protestant</h2>
+<table><thead>
+<th width=35%>{{ site.t[parent_lang].name }}</th>
+<th width=25%>{{ site.t[parent_lang].affiliation }}</th>
+<th width=25%>{{ site.t[parent_lang].country }}</th>
+<th width=15%>{{ site.t[parent_lang].languages }}</th>
+</thead></table>
+{% endif %}{% endfor %}
+{% for page in sorted %}
+{% for tag in page.tradition %}
+{% if tag == "protestant" %}
+  {% include archive-category-index.html parent_lang=parent_lang %}
+{% endif %}
+{% endfor %}
+{% endfor %}

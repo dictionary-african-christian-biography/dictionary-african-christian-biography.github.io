@@ -1,0 +1,188 @@
+---
+layout: archive
+permalink: /stories/country-sort/
+title: "Country Sort"
+author_profile: false
+lang: en
+---
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}
+{% assign sorted = site.pages | where: "index","primary" | sort:"country" %}
+
+<table><thead>
+<th width=70%>{{ site.t[parent_lang].country }}</th>
+<th width=30%>{{ site.t[parent_lang].number-bio }}</th>
+</thead></table>
+
+{% assign algeria = site.pages | where: "index","primary" | where: "country","algeria" %} {% for page in algeria %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign angola = site.pages | where: "index","primary" | where: "country","angola" %} {% for page in angola %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign benin = site.pages | where: "index","primary" | where: "country","benin" %} {% for page in benin %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign botswana = site.pages | where: "index","primary" | where: "country","botswana" %} {% for page in botswana %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign burkina = site.pages | where: "index","primary" | where: "country","burkina faso" %} {% for page in burkina %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign burundi = site.pages | where: "index","primary" | where: "country","burundi" %} {% for page in burundi %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign cameroon = site.pages | where: "index","primary" | where: "country","cameroon" %} {% for page in cameroon %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign cape = site.pages | where: "index","primary" | where: "country","cape verde" %} {% for page in cape %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign central = site.pages | where: "index","primary" | where: "country","central african republic" %} {% for page in central %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign chad = site.pages | where: "index","primary" | where: "country","chad" %} {% for page in chad %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign comoros = site.pages | where: "index","primary" | where: "country","comoros" %} {% for page in comoros %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign congo-brazzaville = site.pages | where: "index","primary" | where: "country","congo-brazzaville" %} {% for page in congo-brazzaville %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign cote = site.pages | where: "index","primary" | where: "country","cote divoire" %} {% for page in cote %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign democratic = site.pages | where: "index","primary" | where: "country","democratic republic of congo" %} {% for page in democratic %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign djibouti = site.pages | where: "index","primary" | where: "country","djibouti" %} {% for page in djibouti %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign egypt = site.pages | where: "index","primary" | where: "country","egypt" %} {% for page in egypt %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign equatorial = site.pages | where: "index","primary" | where: "country","equatorial guinea" %} {% for page in equatorial %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign eritrea = site.pages | where: "index","primary" | where: "country","eritrea" %} {% for page in eritrea %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign ethiopia = site.pages | where: "index","primary" | where: "country","ethiopia" %} {% for page in ethiopia %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign gabon = site.pages | where: "index","primary" | where: "country","gabon" %} {% for page in gabon %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign gambia = site.pages | where: "index","primary" | where: "country","gambia" %} {% for page in gambia %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign ghana = site.pages | where: "index","primary" | where: "country","ghana" %} {% for page in ghana %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign guinea = site.pages | where: "index","primary" | where: "country","guinea" %} {% for page in guinea %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign bissau = site.pages | where: "index","primary" | where: "country","guinea bissau" %} {% for page in bissau %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign kenya = site.pages | where: "index","primary" | where: "country","kenya" %} {% for page in kenya %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign lesotho = site.pages | where: "index","primary" | where: "country","lesotho" %} {% for page in lesotho %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign liberia = site.pages | where: "index","primary" | where: "country","liberia" %} {% for page in liberia %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign libya = site.pages | where: "index","primary" | where: "country","libya" %} {% for page in libya %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign madagascar = site.pages | where: "index","primary" | where: "country","madagascar" %} {% for page in madagascar %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign malawi = site.pages | where: "index","primary" | where: "country","malawi" %} {% for page in malawi %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign mali = site.pages | where: "index","primary" | where: "country","mali" %} {% for page in mali %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign mauritania = site.pages | where: "index","primary" | where: "country","mauritania" %} {% for page in mauritania %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign mauritius = site.pages | where: "index","primary" | where: "country","mauritius" %} {% for page in mauritius %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign mayotte = site.pages | where: "index","primary" | where: "country","mayotte" %} {% for page in mayotte %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign morocco = site.pages | where: "index","primary" | where: "country","morocco" %} {% for page in morocco %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign mozambique = site.pages | where: "index","primary" | where: "country","mozambique" %} {% for page in mozambique %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign namibia = site.pages | where: "index","primary" | where: "country","namibia" %} {% for page in namibia %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign niger = site.pages | where: "index","primary" | where: "country","niger" %} {% for page in niger %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign nigeria = site.pages | where: "index","primary" | where: "country","nigeria" %} {% for page in nigeria %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign reunion = site.pages | where: "index","primary" | where: "country","reunion" %} {% for page in reunion %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign rwanda = site.pages | where: "index","primary" | where: "country","rwanda" %} {% for page in rwanda %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign helena = site.pages | where: "index","primary" | where: "country","saint helena" %} {% for page in helena %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign tome = site.pages | where: "index","primary" | where: "country","são tomé and príncipe" %} {% for page in tome %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign senegal = site.pages | where: "index","primary" | where: "country","senegal" %} {% for page in senegal %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign seychelles = site.pages | where: "index","primary" | where: "country","seychelles" %} {% for page in seychelles %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign sierra = site.pages | where: "index","primary" | where: "country","sierra leone" %} {% for page in sierra %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign somalia = site.pages | where: "index","primary" | where: "country","somalia" %} {% for page in somalia %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign africa = site.pages | where: "index","primary" | where: "country","south africa" %} {% for page in africa %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign south-s = site.pages | where: "index","primary" | where: "country","south sudan" %} {% for page in south-s %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign sudan = site.pages | where: "index","primary" | where: "country","sudan" %} {% for page in sudan %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign swaziland = site.pages | where: "index","primary" | where: "country","swaziland" %} {% for page in swaziland %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign tanzania = site.pages | where: "index","primary" | where: "country","tanzania" %} {% for page in tanzania %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign togo = site.pages | where: "index","primary" | where: "country","togo" %} {% for page in togo %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign tunisia = site.pages | where: "index","primary" | where: "country","tunisia" %} {% for page in tunisia %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign uganda = site.pages | where: "index","primary" | where: "country","uganda" %} {% for page in uganda %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign sahara = site.pages | where: "index","primary" | where: "country","western sahara" %} {% for page in sahara %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign zambia = site.pages | where: "index","primary" | where: "country","zambia" %} {% for page in zambia %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+{% assign zimbabwe = site.pages | where: "index","primary" | where: "country","zimbabwe" %} {% for page in zimbabwe %}
+{% if page.country != empty %} {% include archive-country-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}

@@ -1,0 +1,356 @@
+/* ==========================================================================
+   MASTHEAD
+   ========================================================================== */
+   .masthead-lang {
+     position: relative;
+     padding: .25em;
+     display:inline-block;
+     float: right !important;
+     height: 1.5em !important;
+     clear: both;
+   }
+   .masthead__inner-wrap-left {
+     @include container;
+     @include clearfix;
+     display: -webkit-box;
+     display: flex;
+     float: right;
+     -webkit-box-pack: justify;
+      justify-content: space-between;
+     padding: 0em 2em 0em;
+     font-family: $sans-serif-narrow;
+     }
+
+     .masthead-en {
+     background-image: url("/assets/images/en-textile.jpg")!important;
+     background-repeat: repeat-x !important;
+     position: relative;
+     -webkit-animation: intro 0.3s both;
+             animation: intro 0.3s both;
+     -webkit-animation-delay: 0.15s;
+             animation-delay: 0.15s;
+     z-index: 20;
+
+     &__inner-wrap {
+       @include container;
+       @include clearfix;
+       display: -webkit-box;
+       display: flex;
+       -webkit-box-pack: justify;
+        justify-content: space-between;
+       padding: 0em 1em 0em;
+       font-family: $sans-serif-narrow;
+
+       @include breakpoint($x-large) {
+         max-width: $x-large;
+       }
+       nav {
+         z-index: 10;
+       }
+
+       a {
+         text-decoration: none;
+       }
+     }
+   }
+   .masthead-fr {
+     background-image: url("/assets/images/fr-textile.jpg")!important;
+     background-repeat: repeat-x !important;
+     position: relative;
+     -webkit-animation: intro 0.3s both;
+             animation: intro 0.3s both;
+     -webkit-animation-delay: 0.15s;
+             animation-delay: 0.15s;
+     z-index: 20;
+
+     &__inner-wrap {
+       @include container;
+       @include clearfix;
+       display: -webkit-box;
+       display: flex;
+       -webkit-box-pack: justify;
+        justify-content: space-between;
+       padding: 0em 1em 0em;
+       font-family: $sans-serif-narrow;
+
+       @include breakpoint($x-large) {
+         max-width: $x-large;
+       }
+       nav {
+         z-index: 10;
+       }
+
+       a {
+         text-decoration: none;
+       }
+     }
+   }
+   .masthead-pt {
+     background-image: url("/assets/images/pt-textile.jpg")!important;
+     background-repeat: repeat-x !important;
+     position: relative;
+     -webkit-animation: intro 0.3s both;
+             animation: intro 0.3s both;
+     -webkit-animation-delay: 0.15s;
+             animation-delay: 0.15s;
+     z-index: 20;
+
+     &__inner-wrap {
+       @include container;
+       @include clearfix;
+       display: -webkit-box;
+       display: flex;
+       -webkit-box-pack: justify;
+        justify-content: space-between;
+       padding: 0em 1em 0em;
+       font-family: $sans-serif-narrow;
+
+       @include breakpoint($x-large) {
+         max-width: $x-large;
+       }
+       nav {
+         z-index: 10;
+       }
+
+       a {
+         text-decoration: none;
+       }
+     }
+   }
+   .masthead-sw {
+     background-image: url("/assets/images/sw-textile.jpg")!important;
+     background-repeat: repeat-x !important;
+     position: relative;
+     -webkit-animation: intro 0.3s both;
+             animation: intro 0.3s both;
+     -webkit-animation-delay: 0.15s;
+             animation-delay: 0.15s;
+     z-index: 20;
+
+     &__inner-wrap {
+       @include container;
+       @include clearfix;
+       display: -webkit-box;
+       display: flex;
+       -webkit-box-pack: justify;
+        justify-content: space-between;
+       padding: 0em 1em 0em;
+       font-family: $sans-serif-narrow;
+
+       @include breakpoint($x-large) {
+         max-width: $x-large;
+       }
+       nav {
+         z-index: 10;
+       }
+
+       a {
+         text-decoration: none;
+       }
+     }
+   }
+
+   .masthead-banner-trans {
+     position: relative;
+     width: 100%;
+     clear: both;
+     z-index: 1;
+     }
+
+   .masthead-banner {
+     background-color: #000;
+     position: relative;
+     width: 100%;
+     clear: both;
+     z-index: 1;
+     }
+  .logo {
+    display: inline-block;
+    padding: 1em 1em 1em;
+    height: 6em;
+    margin: auto;
+  }
+
+
+.masthead-bar-en {
+  background-image: url("/assets/images/en-textile.jpg")!important;
+  background-repeat: repeat-x !important;
+  position: relative;
+  height: 1.5em !important;
+  width: 100%;
+  clear: both;
+  z-index: 1;
+  }
+.masthead-bar-fr {
+    background-image: url("/assets/images/fr-textile.jpg")!important;
+    background-repeat: repeat-x !important;
+    position: relative;
+    height: 1.5em !important;
+    width: 100%;
+    clear: both;
+    z-index: 1;
+    }
+.masthead-bar-pt {
+      background-image: url("/assets/images/pt-textile.jpg")!important;
+      background-repeat: repeat-x !important;
+      position: relative;
+      height: 1.5em !important;
+      width: 100%;
+      clear: both;
+      z-index: 1;
+      }
+.masthead-bar-sw {
+        background-image: url("/assets/images/sw-textile.jpg")!important;
+        background-repeat: repeat-x !important;
+        position: relative;
+        height: 1.5em !important;
+        width: 100%;
+        clear: both;
+        z-index: 1;
+        }
+.masthead {
+  background: #333300;
+  position: relative;
+  -webkit-animation: intro 0.3s both;
+          animation: intro 0.3s both;
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+  z-index: 20;
+
+  &__inner-wrap {
+    @include container;
+    @include clearfix;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+     justify-content: space-between;
+    padding: 0em 1em 0em;
+    font-family: $sans-serif-narrow;
+
+    @include breakpoint($x-large) {
+      max-width: $x-large;
+    }
+
+    nav {
+      z-index: 10;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    margin-top: .35em;
+}
+
+.site-title {
+  display: -webkit-box;
+  display: flex;
+  padding: 0.5rem 0;
+  align-self: stretch;
+  -webkit-box-align: center;
+        align-items: center;
+  font-weight: bold;
+  z-index: 20;
+}
+
+.masthead__menu {
+  width: 100%;
+
+  .site-nav {
+    margin-left: 0;
+
+    @include breakpoint($small) {
+      float: right;
+    }
+  }
+}
+
+.masthead__menu-item {
+  display: block;
+  list-style-type: none;
+  white-space: nowrap;
+
+  &--lg {
+    padding-right: 2em;
+    font-weight: 700;
+  }
+}
+
+/* ==========================================================================
+   DROPDOWN
+   ========================================================================== */
+   ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 0em !important;
+}
+
+li.nav {
+    float: left;
+    padding-right: 50px;
+}
+
+a.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: ".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+    font-size: .8em;
+    font-weight: normal;
+
+}
+
+li.dropdown a:hover {
+    color: #e0c74f;
+}
+
+li.dropdown {
+    display: inline-block;
+    padding-bottom: 0em !important;
+    padding-top: .25em;
+}
+li.dropdown-search {
+    display: inline-block;
+    float: right;
+    margin-top: .5em;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-decoration: none;
+    font-family: ".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+    font-size: .75em;
+    font-weight: normal;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1 !important;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

@@ -1,0 +1,28 @@
+---
+layout: archive
+title: "Latest Stories"
+ref: home
+permalink: /stories/latest-sort/
+lang: en
+languages-available:
+  - en
+  - fr
+  - pt
+  - sw
+---
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}
+{% assign sorted = site.pages | where: "index","primary" | sort:"upload" | reverse %}
+
+<table><thead>
+<th width=15%>{{ site.t[parent_lang].date-added }}</th>
+<th width=30%>{{ site.t[parent_lang].name }}</th>
+<th width=20%>{{ site.t[parent_lang].affiliation }}</th>
+<th width=20%>{{ site.t[parent_lang].country }}</th>
+<th width=15%>{{ site.t[parent_lang].languages }}</th>
+</thead></table>
+
+{% for page in sorted %}
+  {% include date-single-index.html parent_lang=parent_lang %}
+{% endfor %}
+
+{% include paginator.html %}

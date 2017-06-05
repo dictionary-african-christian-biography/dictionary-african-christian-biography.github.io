@@ -1,0 +1,27 @@
+---
+layout: archive
+title: "Evangelist Index"
+permalink: /sw/stories/evangelist-index/
+lang: sw
+languages-available:
+  - en
+  - fr
+  - pt
+  - sw
+---
+
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}
+<table><thead>
+<th width=35%>{{ site.t[page.lang].name }}</th>
+<th width=25%>{{ site.t[page.lang].affiliation }}</th>
+<th width=25%>{{ site.t[page.lang].country }}</th>
+<th width=15%>{{ site.t[page.lang].languages }}</th>
+</thead></table>
+{% assign sorted = site.pages | where: "index","primary" %}
+{% for page in sorted %}
+{% for tag in page.evangelist %}
+{% if tag == "evangelist" %}
+  {% include archive-category-index.html parent_lang=parent_lang %}
+{% endif %}
+{% endfor %}
+{% endfor %}

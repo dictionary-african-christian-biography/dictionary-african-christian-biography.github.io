@@ -1,0 +1,778 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve`. If you change this file, please restart the server process.
+
+# Site Settings
+locale                   : "en"
+title                    : "DACB"
+title_separator          : "-"
+name                     : "Your Name"
+description              : "An amazing website."
+url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : # the subpath of your site, e.g. "/blog"
+repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+breadcrumbs              : # true, false (default)
+words_per_minute         : 200
+search: true
+comments:
+  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  disqus:
+    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+staticman:
+  allowedFields          : ['name', 'email', 'url', 'message']
+  branch                 : "master"
+  commitMessage          : "New comment."
+  filename               : comment-{@timestamp}
+  format                 : "yml"
+  moderation             : true
+  path                   : "docs/_data/comments/{options.slug}" # "/_data/comments/{options.slug}" (default)
+  requiredFields         : ['name', 'email', 'message']
+  transforms:
+    email                : "md5"
+  generatedFields:
+    date:
+      type               : "date"
+      options:
+        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+atom_feed:
+  path                   : # blank (default) uses feed.xml
+
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+alexa_site_verification  :
+yandex_site_verification :
+
+# Social Sharing
+twitter:
+  username               :
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 : # Open Graph/Twitter default site image
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
+
+# Analytics
+analytics:
+  provider               : false # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          :
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: true
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+#Polyglot
+languages: ["en", "fr", "pt", "sw"]
+exclude_from_localization: ["javascript", "images", "css", "public"]
+
+# Plugins
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+
+
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path/my-awesome-category/index.html ~> path: /
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# https://github.com/jekyll/jekyll-archives
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single-bio
+      author_profile: false
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      sidebar:
+        nav: "index-menu"
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single-bio
+      author_profile: false
+      sidebar:
+        nav: "index-menu"
+defaults:
+  # _docs
+  - scope:
+      path: ""
+      type: pages
+    values:
+      sidebar:
+        nav: "index-menu"
+tipue_search:
+  include:
+    pages: true
+
+#================#
+# TRANSLATIONS
+#================#
+t:
+#  COUNTRY TRANSLATIONS
+  algeria:
+    en: Algeria
+    fr: Algérie
+    pt: Argélia
+    sw: Algeria
+  angola:
+    en: Angola
+    fr: Angola
+    pt: Angola
+    sw: Angola
+  benin:
+    en: Benin
+    fr: Bénin
+    pt: Benin
+    sw: Benin
+  botswana:
+    en: Botswana
+    fr: Botswana
+    pt: Botswana
+    sw: Botswana
+  burkina faso:
+    en: Burkina Faso
+    fr: Burkina Faso
+    pt: Burkina Faso
+    sw: Burkina Faso
+  burundi:
+    en: Burundi
+    fr: Burundi
+    pt: Burundi
+    sw: Burundi
+  cameroon:
+    en: Cameroon
+    fr: Cameroun
+    pt: Camarões
+    sw: Cameroon
+  cape verde:
+    en: Cape Verde
+    fr: Cap-Vert
+    pt: Cabo Verde
+    sw: Cape Verde
+  central african republic:
+    en: Central African Republic
+    fr: République Centrafricaine
+    pt: República Centro-Africano
+    sw: Jamhuri ya Afrika ya Kati
+  chad:
+    en: Chad
+    fr: Tchad
+    pt: Chade
+    sw: Chad
+  comoros:
+    en: Comoros
+    fr: Comores
+    pt: Comores
+    sw: Comoro
+  congo-brazzaville:
+    en: Congo-Brazzaville
+    fr: Congo-Brazzaville
+    pt: Congo-Brazzaville
+    sw: Congo-Brazzaville
+  cote divoire:
+    en: Cote d'Ivoire
+    fr: Côte d'Ivoire
+    pt: Cote d'Ivoire
+    sw: Ivory Coast
+  democratic republic of congo:
+    en: Democratic Republic of Congo
+    fr: République Démocratique du Congo
+    pt: República Democrática do Congo
+    sw: Jamhuri Ya Kidemokrasia Ya Kongo
+  djibouti:
+    en: Djibouti
+    fr: Djibouti
+    pt: Djibouti
+    sw: Djibouti
+  egypt:
+    en: Egypt
+    fr: Egypte
+    pt: Egito
+    sw: Misri
+  equatorial guinea:
+    en: Equatorial Guinea
+    fr: Guinée Équatoriale
+    pt: Guiné Equatorial
+    sw: Guinea Ya Ikweta
+  eritrea:
+    en: Eritrea
+    fr: Érythrée
+    pt: Eritrea
+    sw: Eritrea
+  ethiopia:
+    en: Ethiopia
+    fr: Ethiopie
+    pt: Etiópia
+    sw: Ethiopia
+  gabon:
+    en: Gabon
+    fr: Gabon
+    pt: Gabão
+    sw: Gabon
+  gambia:
+    en: Gambia
+    fr: Gambie
+    pt: Gâmbia
+    sw: Gambia
+  ghana:
+    en: Ghana
+    fr: Ghana
+    pt: Gana
+    sw: Ghana
+  guinea:
+    en: Guinea
+    fr: Guinée
+    pt: Guiné
+    sw: Guinea
+  guinea bissau:
+    en: Guinea Bissau
+    fr: La Guinée-Bissau
+    pt: Guiné-Bissau
+    sw: Ginebisau
+  kenya:
+    en: Kenya
+    fr: Kenya
+    pt: Quênia
+    sw: Kenya
+  lesotho:
+    en: Lesotho
+    fr: Lesotho
+    pt: Lesoto
+    sw: Lesotho
+  liberia:
+    en: Liberia
+    fr: Libéria
+    pt: Libéria
+    sw: Liberia
+  libya:
+    en: Libya
+    fr: Libye
+    pt: Líbia
+    sw: Libya
+  madagascar:
+    en: Madagascar
+    fr: Madagascar
+    pt: Madagáscar
+    sw: Madagascar
+  malawi:
+    en: Malawi
+    fr: Malawien
+    pt: Malavi
+    sw: Malawi
+  mali:
+    en: Mali
+    fr: Mali
+    pt: Mali
+    sw: Mali
+  mauritania:
+    en: Mauritania
+    fr: Mauritanie
+    pt: Mauritânia
+    sw: Mauritania
+  mauritius:
+    en: Mauritius
+    fr: Maurice
+    pt: Maurícia
+    sw: Mauritius
+  mayotte:
+    en: Mayotte
+    fr: Mayotte
+    pt: Mayotte
+    sw: Mayotte
+  morocco:
+    en: Morocco
+    fr: Maroc
+    pt: Marrocos
+    sw: Morocco
+  mozambique:
+    en: Mozambique
+    fr: Mozambique
+    pt: Moçambique
+    sw: Mozambique
+  namibia:
+    en: Namibia
+    fr: Namibie
+    pt: Namibia
+    sw: Namibia
+  niger:
+    en: Niger
+    fr: Niger
+    pt: Níger
+    sw: Niger
+  nigeria:
+    en: Nigeria
+    fr: Nigeria
+    pt: Nigéria
+    sw: Nigeria
+  reunion:
+    en: Reunion
+    fr: Réunion
+    pt: Reunião
+    sw: Muungano
+  rwanda:
+    en: Rwanda
+    fr: Rwanda
+    pt: Ruanda
+    sw: Rwanda
+  saint helena:
+    en: Saint Helena
+    fr: Sainte-Hélène
+    pt: Santa Helena
+    sw: Saint Helena
+  sao tome and principe:
+    en: São Tomé and Príncipe
+    fr: São Tomé-et-Principe
+    pt: São Tomé e Príncipe
+    sw: Sao Tome na Principe
+  senegal:
+    en: Senegal
+    fr: Sénégal
+    pt: Senegal
+    sw: Senegal
+  seychelles:
+    en: Seychelles
+    fr: Seychelles
+    pt: Seychelles
+    sw: Shelisheli
+  sierra leone:
+    en: Sierra Leone
+    fr: Sierra Leone
+    pt: Serra Leoa
+    sw: Sierra Leone
+  somalia:
+    en: Somalia
+    fr: Somalie
+    pt: Somália
+    sw: Somalia
+  south africa:
+    en: South Africa
+    fr: Afrique Du Sud
+    pt: África Do Sul
+    sw: Afrika Kusini
+  south sudan:
+    en: South Sudan
+    fr: Sud-Soudan
+    pt: Sudão Do Sul
+    sw: Sudan Kusini
+  sudan:
+    en: Sudan
+    fr: Soudan
+    pt: Sudão
+    sw: Sudan
+  swaziland:
+    en: Swaziland
+    fr: Swaziland
+    pt: Suazilândia
+    sw: Swaziland
+  tanzania:
+    en: Tanzania
+    fr: Tanzanie
+    pt: Tanzânia
+    sw: Tanzania
+  togo:
+    en: Togo
+    fr: Togo
+    pt: Togo
+    sw: Togo
+  tunisia:
+    en: Tunisia
+    fr: Tunisia
+    pt: Tunísia
+    sw: Tunisia
+  uganda:
+    en: Uganda
+    fr: Ouganda
+    pt: Uganda
+    sw: Uganda
+  western sahara:
+    en: Western Sahara
+    fr: Sahara Occidental
+    pt: Sara Ocidental
+    sw: Sahara Ya Magharibi
+  zambia:
+    en: Zambia
+    fr: Zambie
+    pt: Zâmbia
+    sw: Zambia
+  zimbabwe:
+    en: Zimbabwe
+    fr: Zimbabwe
+    pt: Zimbábue
+    sw: Zimbabwe
+#  SIDEBAR NAVIGATION TRANSLATIONS
+  Sort All Stories:
+    en: "Sort All Stories"
+    fr: "Sort All Stories FR"
+    pt: "Sort All Stories PT"
+    sw: "Sort All Stories SW"
+  By Name:
+    en: "By Name"
+    fr: "By Name FR"
+    pt: "By Name PT"
+    sw: "By Name SW"
+  By Most Recent:
+    en: "By Most Recent"
+    fr: "By Most Recent FR"
+    pt: "By Most Recent PT"
+    sw: "By Most Recent SW"
+  By Century:
+    en: "By Century"
+    fr: "By Century FR"
+    pt: "By Century PT"
+    sw: "By Century SW"
+  By Tradition:
+    en: "By Tradition"
+    fr: "By Tradition FR"
+    pt: "By Tradition PT"
+    sw: "By Tradition SW"
+  By Country:
+    en: "By Country"
+    fr: "By Country FR"
+    pt: "By Country PT"
+    sw: "By Country SW"
+  By Author:
+    en: "By Author"
+    fr: "By Author FR"
+    pt: "By Author PT"
+    sw: "By Author SW"
+  By Institution:
+    en: "By Institution"
+    fr: "By Institution FR"
+    pt: "By Institution PT"
+    sw: "By Institution SW"
+  Category Indexes:
+    en: "Category Indexes"
+    fr: "Category Indexes FR"
+    pt: "Category Indexes PT"
+    sw: "Category Indexes SW"
+  Ancient Church:
+    en: "Ancient Church"
+    fr: "Ancient Church FR"
+    pt: "Ancient Church PT"
+    sw: "Ancient Church SW"
+  Artists:
+    en: "Artists"
+    fr: "Artists FR"
+    pt: "Artists PT"
+    sw: "Artists SW"
+  Catechists:
+    en: "Catechists"
+    fr: "Catechists FR"
+    pt: "Catechists PT"
+    sw: "Catechists SW"
+  Clergy:
+    en: "Clergy"
+    fr: "Clergy FR"
+    pt: "Clergy PT"
+    sw: "Clergy SW"
+  Ecumenists:
+    en: "Ecumenists"
+    fr: "Ecumenists FR"
+    pt: "Ecumenists PT"
+    sw: "Ecumenists SW"
+  Evangelists:
+    en: "Evangelists"
+    fr: "Evangelists FR"
+    pt: "Evangelists PT"
+    sw: "Evangelists SW"
+  Martyrs:
+    en: "Martyrs"
+    fr: "Martyrs FR"
+    pt: "Martyrs PT"
+    sw: "Martyrs SW"
+  Medical Practitioners:
+    en: "Medical Practitioners"
+    fr: "Medical Practitioners FR"
+    pt: "Medical Practitioners PT"
+    sw: "Medical Practitioners SW"
+  Missionaries:
+    en: "Missionaries"
+    fr: "Missionaries FR"
+    pt: "Missionaries PT"
+    sw: "Missionaries SW"
+  Musicians:
+    en: "Musicians"
+    fr: "Musicians FR"
+    pt: "Musicians PT"
+    sw: "Musicians SW"
+  Nationalists:
+    en: "Nationalists"
+    fr: "Nationalists FR"
+    pt: "Nationalists PT"
+    sw: "Nationalists SW"
+  Non-Africans:
+    en: "Non-Africans"
+    fr: "Non-Africans FR"
+    pt: "Non-Africans PT"
+    sw: "Non-Africans SW"
+  Non-Christians:
+    en: "Non-Christians"
+    fr: "Non-Christians FR"
+    pt: "Non-Christians PT"
+    sw: "Non-Christians SW"
+  Photos:
+    en: "Photos"
+    fr: "Photos FR"
+    pt: "Photos PT"
+    sw: "Photos SW"
+  Scholars:
+    en: "Scholars"
+    fr: "Scholars FR"
+    pt: "Scholars PT"
+    sw: "Scholars SW"
+  Theologians:
+    en: "Theologians"
+    fr: "Theologians FR"
+    pt: "Theologians PT"
+    sw: "Theologians SW"
+  Translators:
+    en: "Translators"
+    fr: "Translators FR"
+    pt: "Translators PT"
+    sw: "Translators SW"
+  Women:
+    en: "Women"
+    fr: "Women FR"
+    pt: "Women PT"
+    sw: "Women SW"
+  Youth:
+    en: "Youth"
+    fr: "Youth FR"
+    pt: "Youth PT"
+    sw: "Youth SW"
+
+#  SITE WIDE
+  en:
+    name: "Name"
+    affiliation: "Affiliation"
+    country: "Country"
+    languages: "Languages"
+    century: "Century"
+    dates: "Dates"
+    date-added: "Date Added"
+    number-bio: "Number of Biographies"
+    author: "Author"
+    institution: "Institution"
+    ancient: "Ancient"
+    catholic: "Catholic"
+    independent: "Independent"
+    orthodox: "Orthodox"
+    protestant: "Protestant"
+    page-available: "This page is available in:"
+  fr:
+    name: "Nom"
+    affiliation: "Affiliation"
+    country: "Pays"
+    languages: "Langues"
+    century: "Siècle"
+    dates: "Dates"
+    date-added: "Date Ajoutée"
+    number-bio: "Nombre de Biographies"
+    author: "Auteur"
+    institution: "Institution"
+    ancient: "Ancien"
+    catholic: "Catholique"
+    independent: "Indépendante"
+    orthodox: "Orthodoxe"
+    protestant: "Protestant"
+    page-available: "Cette page est disponible en:"
+  pt:
+    name: "Nome"
+    affiliation: "Afiliação"
+    country: "País"
+    languages: "Idiomas"
+    century: "Século"
+    dates: "Datas"
+    date-added: "Data Adicionada"
+    number-bio: "Número de Biografias"
+    author: "Autor"
+    institution: "Instituição"
+    ancient: "Antigo"
+    catholic: "Católico"
+    independent: "Independente"
+    orthodox: "Ortodoxa"
+    protestant: "Protestante"
+    page-available: "Esta página está disponível em:"
+  sw:
+    name: "Jina"
+    affiliation: "Uhusiano"
+    country: "Nchi"
+    languages: "Lugha"
+    century: "Karne"
+    dates: "Tarehe"
+    date-added: "Tarehe Ya Ongezeko"
+    number-bio: "Idadi ya Wasifu"
+    author: "Mwandishi"
+    institution: "Taasisi"
+    ancient: "Kale"
+    catholic: "Katoliki"
+    independent: "Kujitegemea"
+    orthodox: "Halisi"
+    protestant: "Kiprotestanti"
+    page-available: "Ukurasa huu unapatikana katika:"
+
+#  INSTITUTION TRANSLATIONS
+  Africa International University:
+    en: "Africa International University"
+    fr: "Africa International University"
+    pt: "Universidade Internacional de África"
+    sw: "University International Africa"
+  Archbishop Janani Luwum Theological College:
+    en: "Archbishop Janani Luwum Theological College"
+    fr: "Archevêque Janani Luwum Theological College"
+    pt: "Arcebispo Janani Luwum Theological College"
+    sw: "Askofu Mkuu Janani Luwum Theological College"
+  Babcock University:
+    en: "Babcock University"
+    fr: "Babcock University"
+    pt: "Universidade Babcock"
+    sw: "Chuo Kikuu cha Babcock"
+
+#  AFFILIATION TRANSLATIONS
+  Methodist:
+    en: "Methodist"
+    fr: "Méthodiste"
+    pt: "Metodista"
+    sw: "Methodist SW"
+  Catholic:
+    en: "Catholic"
+    fr: "Catholique"
+    pt: "Católico"
+    sw: "Catholic SW"
+  Baptist:
+    en: "Baptist"
+    fr: "Baptiste"
+    pt: "Batista"
+    sw: "Baptist SW"
