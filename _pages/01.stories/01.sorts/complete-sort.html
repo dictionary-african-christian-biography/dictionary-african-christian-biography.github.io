@@ -41,7 +41,7 @@ languages-available:
 </P>
 
 {% capture parent_lang %}{{ page.lang }}{% endcapture %}
-{% assign sorted = site.pages | where: "index","primary" %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}
 {% assign asort = site.pages | where: "categories","a" %}
 {% assign bsort = site.pages | where: "categories","b" %}
 {% assign csort = site.pages | where: "categories","c" %}

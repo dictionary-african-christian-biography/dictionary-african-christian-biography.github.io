@@ -17,7 +17,7 @@ languages-available:
 <th width=25%>{{ site.t[page.lang].country }}</th>
 <th width=15%>{{ site.t[page.lang].languages }}</th>
 </thead></table>
-{% assign sorted = site.pages | where: "index","primary" %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}
 {% for page in sorted %}
 {% for tag in page.translator %}
 {% if tag == "translator" %}

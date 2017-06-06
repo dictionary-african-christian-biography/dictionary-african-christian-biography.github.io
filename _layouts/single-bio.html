@@ -17,7 +17,10 @@ layout: default
 <div id="main" role="main">
   {% include sidebar.html %}
 
+
+
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
@@ -65,12 +68,27 @@ layout: default
             {{ sd }}</br>
             {{ sc }}</br>
           </p>{% endif %}
-
-          {% if page.read_time %}
-            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
-          {% endif %}
         </header>
       {% endunless %}
+
+          {% assign current-short = page.title | remove:'(A)'| remove:'(B)'| remove:'(C)'| remove:'(D)'| remove:'(E)'| remove:'(F)'| remove:'(G)'| remove:'(H)'| remove:'(I)'| remove:'(J)'| remove:'(K)'| remove:'(L)'| remove:'(M)'| remove:'(N)'| remove:'(O)'| remove:'(P)' %}
+          {% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}
+          {% assign current-url = page.url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' %}
+
+          {% capture test %} {% for page in sorted %}{% for tag in page.title %}
+          {% assign short-title = page.title | remove:'(A)'| remove:'(B)'| remove:'(C)'| remove:'(D)'| remove:'(E)'| remove:'(F)'| remove:'(G)'| remove:'(H)'| remove:'(I)'| remove:'(J)'| remove:'(K)'| remove:'(L)'| remove:'(M)'| remove:'(N)'| remove:'(O)'| remove:'(P)' %}
+          {% if short-title == current-short and page.url != current-url %}
+          {% assign check = true %}{% endif %}j{% endfor %}{% endfor %}{% endcapture %}
+
+          {% if check == true %}
+        <div class="alternate">
+          {{ site.t[page.lang].other-available }}
+          {% for page in sorted %}{% for tag in page.title %}{% assign short-title = page.title | remove:'(A)'| remove:'(B)'| remove:'(C)'| remove:'(D)'| remove:'(E)'| remove:'(F)'| remove:'(G)'| remove:'(H)'| remove:'(I)'| remove:'(J)'| remove:'(K)'| remove:'(L)'| remove:'(M)'| remove:'(N)'| remove:'(O)'| remove:'(P)' %}
+          {% if short-title == current-short and page.url != current-url %}
+          <a href="{{ page.url | relative_url }}">{{ page.title | remove: short-title }}</a>
+          {% endif %}{% endfor %}{% endfor %}
+        </div>
+          {% endif %}
 
       <section class="page__content" itemprop="text">
         {{ content }}

@@ -1,6 +1,15 @@
 /* ==========================================================================
    BASE ELEMENTS
    ========================================================================== */
+.alternate {
+  font-size:.75em;
+  background-color: #f5f5f5;
+  padding: .75em;
+  margin-top: .5em;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
 
 img.bio {
   width: 35%;

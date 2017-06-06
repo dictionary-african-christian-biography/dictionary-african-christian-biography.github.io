@@ -1,5 +1,5 @@
 ---
-permalink: /stories/nigeria/africaner-jager-christian-2/
+permalink: /stories/nigeria/africaner-jager-christian-b/
 breadcrumbs: true
 layout: single-bio                           
 upload: 2016-05-17                          
@@ -12,7 +12,7 @@ languages-available:
   - ' '            
 sidebar:
   nav: "index-menu"
-title: "Africaner, Jager Christian (2)"         
+title: "Africaner, Jager Christian (B)"         
 date: c. 1769 to 1822                        
 affiliation: Methodist               
 tradition: protestant             

@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/nigeria/africaner-jager-christian/'
-title: 'Africaner, Jager Christian'
+title: 'Africaner, Jager Christian (A)'
 date: 'c.1769 - 1822'
 century:
   - '16th'

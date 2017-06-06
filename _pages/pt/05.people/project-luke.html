@@ -21,7 +21,7 @@ languages-available:
   2010-2011
 </td></tr></tbody></table><h4>Stories by Dr. Kehinde Olabimtan</h4>
 <table><thead><th width=35%>{{ site.t[page.lang].name }}</th><th width=25%>{{ site.t[page.lang].affiliation }}</th><th width=25%>{{ site.t[page.lang].country }}</th><th width=15%>{{ site.t[page.lang].languages }}</th></thead></table>
-{% assign sorted = site.pages | where: "index","primary" %}{% for page in sorted %}{% for tag in page.author %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% for tag in page.author %}
 {% if tag == "Millard, A.J." %}{% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 <hr>
@@ -38,7 +38,7 @@ languages-available:
   2010-2011
 </td></tr></tbody></table><h4>Stories by Rev. Prof. Watson Omulokoli</h4>
 <table><thead><th width=35%>{{ site.t[page.lang].name }}</th><th width=25%>{{ site.t[page.lang].affiliation }}</th><th width=25%>{{ site.t[page.lang].country }}</th><th width=15%>{{ site.t[page.lang].languages }}</th></thead></table>
-{% assign sorted = site.pages | where: "index","primary" %}{% for page in sorted %}{% for tag in page.author %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% for tag in page.author %}
 {% if tag == "Millard, A.J." %}{% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 <hr>
@@ -51,7 +51,7 @@ languages-available:
   <b>Years in Residency at OSMC:</b><br>
   2008-2009
 </td></tr></tbody></table><h4>Stories by Mrs. Berthe Raminosoa Rasoanalimanga</h4><table><thead><th width=35%>{{ site.t[page.lang].name }}</th><th width=25%>{{ site.t[page.lang].affiliation }}</th><th width=25%>{{ site.t[page.lang].country }}</th><th width=15%>{{ site.t[page.lang].languages }}</th></thead></table>
-{% assign sorted = site.pages | where: "index","primary" %}{% for page in sorted %}{% for tag in page.author %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% for tag in page.author %}
 {% if tag == "Millard, A.J." %}{% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 <hr>
@@ -64,7 +64,7 @@ languages-available:
   <b>Years in Residency at OSMC:</b><br>
   2008-2009
 </td></tr></tbody></table><h4>Stories by Dr. George Sombe Mukuka</h4><table><thead><th width=35%>{{ site.t[page.lang].name }}</th><th width=25%>{{ site.t[page.lang].affiliation }}</th><th width=25%>{{ site.t[page.lang].country }}</th><th width=15%>{{ site.t[page.lang].languages }}</th></thead></table>
-{% assign sorted = site.pages | where: "index","primary" %}{% for page in sorted %}{% for tag in page.author %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% for tag in page.author %}
 {% if tag == "Millard, A.J." %}{% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 <hr>
@@ -78,7 +78,7 @@ languages-available:
   <b>Years in Residency at OSMC:</b><br>
   2007-2008
 </td></tr></tbody></table><h4>Stories by Rev. Robert Adamou Pindzié</h4><table><thead><th width=35%>{{ site.t[page.lang].name }}</th><th width=25%>{{ site.t[page.lang].affiliation }}</th><th width=25%>{{ site.t[page.lang].country }}</th><th width=15%>{{ site.t[page.lang].languages }}</th></thead></table>
-{% assign sorted = site.pages | where: "index","primary" %}{% for page in sorted %}{% for tag in page.author %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% for tag in page.author %}
 {% if tag == "Millard, A.J." %}{% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 <hr>
@@ -91,7 +91,7 @@ languages-available:
   <b>Years in Residency at OSMC:</b><br>
   Spring 2007
 </td></tr></tbody></table><h4>Stories by Rev. Angolowisye Malambug</h4><table><thead><th width=35%>{{ site.t[page.lang].name }}</th><th width=25%>{{ site.t[page.lang].affiliation }}</th><th width=25%>{{ site.t[page.lang].country }}</th><th width=15%>{{ site.t[page.lang].languages }}</th></thead></table>
-{% assign sorted = site.pages | where: "index","primary" %}{% for page in sorted %}{% for tag in page.author %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% for tag in page.author %}
 {% if tag == "Millard, A.J." %}{% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 <hr>
@@ -104,7 +104,7 @@ languages-available:
   <b>Years in Residency at OSMC:</b><br>
   Fall 2006
 </td></tr></tbody></table><h4>Stories by Dr. Musa A. B. Gaiya</h4><table><thead><th width=35%>{{ site.t[page.lang].name }}</th><th width=25%>{{ site.t[page.lang].affiliation }}</th><th width=25%>{{ site.t[page.lang].country }}</th><th width=15%>{{ site.t[page.lang].languages }}</th></thead></table>
-{% assign sorted = site.pages | where: "index","primary" %}{% for page in sorted %}{% for tag in page.author %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% for tag in page.author %}
 {% if tag == "Millard, A.J." %}{% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 <hr>
@@ -118,7 +118,7 @@ languages-available:
   <b>Years in Residency at OSMC:</b><br>
   2005-2006
 </td></tr></tbody></table><h4>Stories by Dr. Kemdirim O. Protus</h4><table><thead><th width=35%>{{ site.t[page.lang].name }}</th><th width=25%>{{ site.t[page.lang].affiliation }}</th><th width=25%>{{ site.t[page.lang].country }}</th><th width=15%>{{ site.t[page.lang].languages }}</th></thead></table>
-{% assign sorted = site.pages | where: "index","primary" %}{% for page in sorted %}{% for tag in page.author %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% for tag in page.author %}
 {% if tag == "Millard, A.J." %}{% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 <hr>
@@ -133,7 +133,7 @@ languages-available:
   <b>Years in Residency at OSMC:</b><br>
   2005-2006
 </td></tr></tbody></table><h4>Stories by Dr. Dirshaye Menberu</h4><table><thead><th width=35%>{{ site.t[page.lang].name }}</th><th width=25%>{{ site.t[page.lang].affiliation }}</th><th width=25%>{{ site.t[page.lang].country }}</th><th width=15%>{{ site.t[page.lang].languages }}</th></thead></table>
-{% assign sorted = site.pages | where: "index","primary" %}{% for page in sorted %}{% for tag in page.author %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% for tag in page.author %}
 {% if tag == "Millard, A.J." %}{% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 <hr>
@@ -147,7 +147,7 @@ languages-available:
   <b>Years in Residency at OSMC:</b><br>
   2005-2006
 </td></tr></tbody></table><h4>Stories by Dr. Christopher Byaruhanga</h4><table><thead><th width=35%>{{ site.t[page.lang].name }}</th><th width=25%>{{ site.t[page.lang].affiliation }}</th><th width=25%>{{ site.t[page.lang].country }}</th><th width=15%>{{ site.t[page.lang].languages }}</th></thead></table>
-{% assign sorted = site.pages | where: "index","primary" %}{% for page in sorted %}{% for tag in page.author %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% for tag in page.author %}
 {% if tag == "Millard, A.J." %}{% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 <hr>
@@ -160,7 +160,7 @@ languages-available:
   <b>Years in Residency at OSMC:</b><br>
   2004-2005
 </td></tr></tbody></table><h4>Stories by Rev. Alfred Sheunda Keyas</h4><table><thead><th width=35%>{{ site.t[page.lang].name }}</th><th width=25%>{{ site.t[page.lang].affiliation }}</th><th width=25%>{{ site.t[page.lang].country }}</th><th width=15%>{{ site.t[page.lang].languages }}</th></thead></table>
-{% assign sorted = site.pages | where: "index","primary" %}{% for page in sorted %}{% for tag in page.author %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% for tag in page.author %}
 {% if tag == "Millard, A.J." %}{% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 <hr>
@@ -174,7 +174,7 @@ languages-available:
   <b>Years in Residency at OSMC:</b><br>
   2004-2005
 </td></tr></tbody></table><h4>Stories by Rev. Dr. Fohle Lygunda li-M</h4><table><thead><th width=35%>{{ site.t[page.lang].name }}</th><th width=25%>{{ site.t[page.lang].affiliation }}</th><th width=25%>{{ site.t[page.lang].country }}</th><th width=15%>{{ site.t[page.lang].languages }}</th></thead></table>
-{% assign sorted = site.pages | where: "index","primary" %}{% for page in sorted %}{% for tag in page.author %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% for tag in page.author %}
 {% if tag == "Millard, A.J." %}{% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 <hr>
@@ -187,7 +187,7 @@ languages-available:
   <b>Years in Residency at OSMC:</b><br>
   2003-2004
 </td></tr></tbody></table><h4>Stories by Rev. Joseph Gisayi</h4><table><thead><th width=35%>{{ site.t[page.lang].name }}</th><th width=25%>{{ site.t[page.lang].affiliation }}</th><th width=25%>{{ site.t[page.lang].country }}</th><th width=15%>{{ site.t[page.lang].languages }}</th></thead></table>
-{% assign sorted = site.pages | where: "index","primary" %}{% for page in sorted %}{% for tag in page.author %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% for tag in page.author %}
 {% if tag == "Millard, A.J." %}{% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 <hr>
@@ -200,7 +200,7 @@ languages-available:
   <b>Years in Residency at OSMC:</b><br>
   Fall 2004
 </td></tr></tbody></table><h4>Stories by Dr. Musa A. B. Gaiya</h4><table><thead><th width=35%>{{ site.t[page.lang].name }}</th><th width=25%>{{ site.t[page.lang].affiliation }}</th><th width=25%>{{ site.t[page.lang].country }}</th><th width=15%>{{ site.t[page.lang].languages }}</th></thead></table>
-{% assign sorted = site.pages | where: "index","primary" %}{% for page in sorted %}{% for tag in page.author %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% for tag in page.author %}
 {% if tag == "Millard, A.J." %}{% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 <hr>
@@ -213,7 +213,7 @@ languages-available:
   <b>Years in Residency at OSMC:</b><br>
   2003-2004
 </td></tr></tbody></table><h4>Stories by Dr. Elijah Olu Akinwumi</h4><table><thead><th width=35%>{{ site.t[page.lang].name }}</th><th width=25%>{{ site.t[page.lang].affiliation }}</th><th width=25%>{{ site.t[page.lang].country }}</th><th width=15%>{{ site.t[page.lang].languages }}</th></thead></table>
-{% assign sorted = site.pages | where: "index","primary" %}{% for page in sorted %}{% for tag in page.author %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% for tag in page.author %}
 {% if tag == "Millard, A.J." %}{% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 <hr>
@@ -226,7 +226,7 @@ languages-available:
   <b>Years in Residency at OSMC:</b><br>
   2002-2003
 </td></tr></tbody></table><h4>Stories by Dr. David John Usoro</h4><table><thead><th width=35%>{{ site.t[page.lang].name }}</th><th width=25%>{{ site.t[page.lang].affiliation }}</th><th width=25%>{{ site.t[page.lang].country }}</th><th width=15%>{{ site.t[page.lang].languages }}</th></thead></table>
-{% assign sorted = site.pages | where: "index","primary" %}{% for page in sorted %}{% for tag in page.author %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% for tag in page.author %}
 {% if tag == "Millard, A.J." %}{% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 <hr>
@@ -239,7 +239,7 @@ languages-available:
   <b>Years in Residency at OSMC:</b><br>
   2002-2003
 </td></tr></tbody></table><h4>Stories by Mr. James Lomole Simeon Muna Esq.</h4><table><thead><th width=35%>{{ site.t[page.lang].name }}</th><th width=25%>{{ site.t[page.lang].affiliation }}</th><th width=25%>{{ site.t[page.lang].country }}</th><th width=15%>{{ site.t[page.lang].languages }}</th></thead></table>
-{% assign sorted = site.pages | where: "index","primary" %}{% for page in sorted %}{% for tag in page.author %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% for tag in page.author %}
 {% if tag == "Millard, A.J." %}{% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 <hr>
@@ -253,7 +253,7 @@ languages-available:
   <b>Years in Residency at OSMC:</b><br>
   2001-2002
 </td></tr></tbody></table><h4>Stories by Rev. Yossa Way</h4><table><thead><th width=35%>{{ site.t[page.lang].name }}</th><th width=25%>{{ site.t[page.lang].affiliation }}</th><th width=25%>{{ site.t[page.lang].country }}</th><th width=15%>{{ site.t[page.lang].languages }}</th></thead></table>
-{% assign sorted = site.pages | where: "index","primary" %}{% for page in sorted %}{% for tag in page.author %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% for tag in page.author %}
 {% if tag == "Millard, A.J." %}{% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 <hr>
@@ -267,7 +267,7 @@ languages-available:
   <b>Years in Residency at OSMC:</b><br>
   2001-2002
 </td></tr></tbody></table><h4>Stories by Dr. Kofi Owusu-Mensa</h4><table><thead><th width=35%>{{ site.t[page.lang].name }}</th><th width=25%>{{ site.t[page.lang].affiliation }}</th><th width=25%>{{ site.t[page.lang].country }}</th><th width=15%>{{ site.t[page.lang].languages }}</th></thead></table>
-{% assign sorted = site.pages | where: "index","primary" %}{% for page in sorted %}{% for tag in page.author %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% for tag in page.author %}
 {% if tag == "Millard, A.J." %}{% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 <hr>
@@ -281,7 +281,7 @@ languages-available:
   <b>Years in Residency at OSMC:</b><br>
   2000-2001
 </td></tr></tbody></table><h4>Stories by Rev. Dr. Emele Mba Uka</h4><table><thead><th width=35%>{{ site.t[page.lang].name }}</th><th width=25%>{{ site.t[page.lang].affiliation }}</th><th width=25%>{{ site.t[page.lang].country }}</th><th width=15%>{{ site.t[page.lang].languages }}</th></thead></table>
-{% assign sorted = site.pages | where: "index","primary" %}{% for page in sorted %}{% for tag in page.author %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% for tag in page.author %}
 {% if tag == "Millard, A.J." %}{% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 <hr>
@@ -294,7 +294,7 @@ languages-available:
   <b>Years in Residency at OSMC:</b><br>
   2000-2001
 </td></tr></tbody></table><h4>Stories by Mr. Bela B. Kalumbete</h4><table><thead><th width=35%>{{ site.t[page.lang].name }}</th><th width=25%>{{ site.t[page.lang].affiliation }}</th><th width=25%>{{ site.t[page.lang].country }}</th><th width=15%>{{ site.t[page.lang].languages }}</th></thead></table>
-{% assign sorted = site.pages | where: "index","primary" %}{% for page in sorted %}{% for tag in page.author %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% for tag in page.author %}
 {% if tag == "Millard, A.J." %}{% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 <hr>
@@ -309,6 +309,6 @@ languages-available:
   1999-2000
 </td></tr></tbody></table><h4>Stories by Dr. Francis Manana</h4>
 <table><thead><th width=35%>{{ site.t[page.lang].name }}</th><th width=25%>{{ site.t[page.lang].affiliation }}</th><th width=25%>{{ site.t[page.lang].country }}</th><th width=15%>{{ site.t[page.lang].languages }}</th></thead></table>
-{% assign sorted = site.pages | where: "index","primary" %}{% for page in sorted %}{% for tag in page.author %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% for tag in page.author %}
 {% if tag == "Millard, A.J." %}{% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}

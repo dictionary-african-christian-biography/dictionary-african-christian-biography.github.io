@@ -11,7 +11,7 @@ languages-available:
   - sw
 ---
 {% capture parent_lang %}{{ page.lang }}{% endcapture %}
-{% assign sorted = site.pages | where: "index","primary" %}
+{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}
 {% assign csort = site.pages | where: "tradition","catholic" %}
 {% assign isort = site.pages | where: "tradition","independent" %}
 {% assign osort = site.pages | where: "tradition","orthodox" %}
