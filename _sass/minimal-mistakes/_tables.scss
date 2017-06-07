@@ -3,6 +3,7 @@
    ========================================================================== */
 
 table {
+  table-layout: fixed;
   margin-bottom: 0em;
   width: 100%;
   font-family: $global-font-family;
@@ -16,6 +17,7 @@ table {
 }
 
 thead {
+  table-layout: fixed;
   background-color: $lighter-gray;
   border-bottom: 1px solid $light-gray;
 }
@@ -25,12 +27,16 @@ th {
   font-weight: bold;
   text-align: left;
   border-right: 1px solid $light-gray;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 td {
   padding: 0.5em;
   border-bottom: 1px solid $light-gray;
   border-right: 1px solid $light-gray;
+  word-wrap: break-word;
 }
 
 tr, td, th {
