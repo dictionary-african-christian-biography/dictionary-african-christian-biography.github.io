@@ -15,146 +15,29 @@
      display: -webkit-box;
      display: flex;
      float: right;
+     margin-right: 0;
+     padding-right: 0em;
      -webkit-box-pack: justify;
       justify-content: space-between;
-     padding: 0em 2em 0em;
      font-family: $sans-serif-narrow;
      }
-
-     .masthead-en {
-     background-image: url("/assets/images/en-textile.jpg")!important;
-     background-repeat: repeat-x !important;
-     position: relative;
-     -webkit-animation: intro 0.3s both;
-             animation: intro 0.3s both;
-     -webkit-animation-delay: 0.15s;
-             animation-delay: 0.15s;
-     z-index: 20;
-
-     &__inner-wrap {
-       @include container;
-       @include clearfix;
-       display: -webkit-box;
-       display: flex;
-       -webkit-box-pack: justify;
-        justify-content: space-between;
-       padding: 0em 1em 0em;
-       font-family: $sans-serif-narrow;
-
-       @include breakpoint($x-large) {
-         max-width: $x-large;
-       }
-       nav {
-         z-index: 10;
-       }
-
-       a {
-         text-decoration: none;
-       }
-     }
-   }
-   .masthead-fr {
-     background-image: url("/assets/images/fr-textile.jpg")!important;
-     background-repeat: repeat-x !important;
-     position: relative;
-     -webkit-animation: intro 0.3s both;
-             animation: intro 0.3s both;
-     -webkit-animation-delay: 0.15s;
-             animation-delay: 0.15s;
-     z-index: 20;
-
-     &__inner-wrap {
-       @include container;
-       @include clearfix;
-       display: -webkit-box;
-       display: flex;
-       -webkit-box-pack: justify;
-        justify-content: space-between;
-       padding: 0em 1em 0em;
-       font-family: $sans-serif-narrow;
-
-       @include breakpoint($x-large) {
-         max-width: $x-large;
-       }
-       nav {
-         z-index: 10;
-       }
-
-       a {
-         text-decoration: none;
-       }
-     }
-   }
-   .masthead-pt {
-     background-image: url("/assets/images/pt-textile.jpg")!important;
-     background-repeat: repeat-x !important;
-     position: relative;
-     -webkit-animation: intro 0.3s both;
-             animation: intro 0.3s both;
-     -webkit-animation-delay: 0.15s;
-             animation-delay: 0.15s;
-     z-index: 20;
-
-     &__inner-wrap {
-       @include container;
-       @include clearfix;
-       display: -webkit-box;
-       display: flex;
-       -webkit-box-pack: justify;
-        justify-content: space-between;
-       padding: 0em 1em 0em;
-       font-family: $sans-serif-narrow;
-
-       @include breakpoint($x-large) {
-         max-width: $x-large;
-       }
-       nav {
-         z-index: 10;
-       }
-
-       a {
-         text-decoration: none;
-       }
-     }
-   }
-   .masthead-sw {
-     background-image: url("/assets/images/sw-textile.jpg")!important;
-     background-repeat: repeat-x !important;
-     position: relative;
-     -webkit-animation: intro 0.3s both;
-             animation: intro 0.3s both;
-     -webkit-animation-delay: 0.15s;
-             animation-delay: 0.15s;
-     z-index: 20;
-
-     &__inner-wrap {
-       @include container;
-       @include clearfix;
-       display: -webkit-box;
-       display: flex;
-       -webkit-box-pack: justify;
-        justify-content: space-between;
-       padding: 0em 1em 0em;
-       font-family: $sans-serif-narrow;
-
-       @include breakpoint($x-large) {
-         max-width: $x-large;
-       }
-       nav {
-         z-index: 10;
-       }
-
-       a {
-         text-decoration: none;
-       }
-     }
+ .masthead__inner-wrap-b {
+   @include container;
+   @include clearfix;
+   display: -webkit-box;
+   background-color: #000;
+   display: flex;
+   -webkit-box-pack: justify;
+    justify-content: space-between;
+  padding: 1em;
+  width: 100%;
+   font-family: $sans-serif-narrow;
    }
 
    .masthead-banner-trans {
      position: relative;
      width: 100%;
      clear: both;
-     z-index: 1;
      }
 
    .masthead-banner {
@@ -164,6 +47,42 @@
      clear: both;
      z-index: 1;
      }
+.masthead-banner-en {
+  background-image: url("/assets/images/en-textile.jpg")!important;
+  background-repeat: repeat !important;
+   position: relative;
+   width: 100%;
+   clear: both;
+   z-index: 1;
+   }
+.masthead-banner-fr {
+   background-image: url("/assets/images/fr-textile.jpg")!important;
+   background-repeat: repeat !important;
+    position: relative;
+    width: 100%;
+    clear: both;
+    z-index: 1;
+    }
+.masthead-banner-pt {
+    background-image: url("/assets/images/pt-textile.jpg")!important;
+    background-repeat: repeat !important;
+     position: relative;
+     width: 100%;
+     clear: both;
+     z-index: 1;
+     }
+.masthead-banner-sw {
+   background-image: url("/assets/images/sw-textile.jpg")!important;
+   background-repeat: repeat !important;
+    position: relative;
+    width: 100%;
+    clear: both;
+    z-index: 1;
+    }
+
+
+
+
   .logo {
     display: inline-block;
     padding: 1em 1em 1em;
@@ -171,43 +90,6 @@
     margin: auto;
   }
 
-
-.masthead-bar-en {
-  background-image: url("/assets/images/en-textile.jpg")!important;
-  background-repeat: repeat-x !important;
-  position: relative;
-  height: 1.5em !important;
-  width: 100%;
-  clear: both;
-  z-index: 1;
-  }
-.masthead-bar-fr {
-    background-image: url("/assets/images/fr-textile.jpg")!important;
-    background-repeat: repeat-x !important;
-    position: relative;
-    height: 1.5em !important;
-    width: 100%;
-    clear: both;
-    z-index: 1;
-    }
-.masthead-bar-pt {
-      background-image: url("/assets/images/pt-textile.jpg")!important;
-      background-repeat: repeat-x !important;
-      position: relative;
-      height: 1.5em !important;
-      width: 100%;
-      clear: both;
-      z-index: 1;
-      }
-.masthead-bar-sw {
-        background-image: url("/assets/images/sw-textile.jpg")!important;
-        background-repeat: repeat-x !important;
-        position: relative;
-        height: 1.5em !important;
-        width: 100%;
-        clear: both;
-        z-index: 1;
-        }
 .masthead {
   background: #333300;
   position: relative;
@@ -224,7 +106,7 @@
     display: flex;
     -webkit-box-pack: justify;
      justify-content: space-between;
-    padding: 0em 1em 0em;
+    padding: 0em 3em 0em;
     font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {
@@ -246,7 +128,7 @@ input[type=text] {
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: .8em;
     background-color: white;
     margin-top: .35em;
 }
@@ -285,72 +167,299 @@ input[type=text] {
   }
 }
 
+nav ul ul.side {
+    display: block !important;
+    position: relative;
+  }
+nav ul ul.side li {
+   display: block !important;
+   background-color: #fff;
+   list-style-type: none;
+   font-family: $sans-serif;
+  }
+nav ul ul.side li a{
+   display: block !important;
+  background-color: #fff;
+  list-style-type: none;
+  font-family: $sans-serif;
+  padding: 0;
+  margin: 0;
+  }
+
 /* ==========================================================================
    DROPDOWN
    ========================================================================== */
-   ul.nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    margin-bottom: 0em !important;
-}
-
-li.nav {
-    float: left;
-    padding-right: 50px;
-}
-
-a.dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: ".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
-    font-size: .8em;
-    font-weight: normal;
-
-}
-
-li.dropdown a:hover {
-    color: #e0c74f;
-}
-
-li.dropdown {
-    display: inline-block;
-    padding-bottom: 0em !important;
-    padding-top: .25em;
-}
 li.dropdown-search {
-    display: inline-block;
     float: right;
-    margin-top: .5em;
+    margin-top: .4em !important;
+    margin-right: .5em;
+    padding-left: .5em;
 }
 
-.dropdown-content {
+input, textarea, select {
+ font-size: .8rem;
+ padding: .2em;
+}
+
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+label {
     display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    text-decoration: none;
+    margin-bottom: 0;
+    color: #494e52;
+    cursor: pointer;
     font-family: ".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
-    font-size: .75em;
-    font-weight: normal;
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+/* Giving a background-color to the nav container. */
+nav {
+	margin:0;
+	padding: 0;
+  z-index: 1;
+  font-family: ".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+  width: 100%
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1 !important;}
+#logo {
+  background-color: #000;
+  display: inline-block;
+  margin: auto;
+}
 
-.dropdown:hover .dropdown-content {
-    display: block;
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+  z-index: 1;
+	}
+
+li.second {
+  background-color: #f9f9f9;
+  color: #303030;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+li.second a{
+  background-color: #f9f9f9;
+  color: #303030
+}
+li.second a:hover{
+  background-color: #e7e7e7;
+  color: #e0c74f
+}
+
+/* Positioning the navigation items inline */
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	float: left;
+	}
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:14px 20px;
+	color:#FFF;
+	font-size: .8rem;
+	text-decoration:none;
+}
+
+
+nav ul li ul li:hover {
+  background-color: #f2f3f3;
+  color: #e0c74f; }
+
+/* Background color change on Hover */
+nav a:hover {
+	color: #e0c74f;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+
+nav ul ul{
+	display: none;
+	position: absolute;
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */
+	left:170px;
+}
+
+
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ''; }
+li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+	#logo {
+    display: inline-block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	nav {
+		margin: 0;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+    padding-bottom: 1em;
+	}
+
+  .toggle-m + a,
+	.menu {
+		display: none;
+    padding-bottom: 1em;
+    text-align: center;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		padding:14px 20px;
+    background-color: #303030;
+		color:#FFF;
+		font-size: .8rem;
+		text-decoration:none;
+		border:none;
+	}
+
+	.toggle:hover {
+		color: #e0c74f;
+	}
+  .toggle-m {
+		display: block;
+		padding:14px 20px;
+		color:#FFF;
+		font-size: .8rem;
+		text-decoration:none;
+		border:none;
+    text-align: center;
+    text-transform:uppercase;
+	}
+
+	.toggle-m:hover {
+		color: #e0c74f;
+	}
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+	}
+
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;
+		color:#FFF;
+		font-size: .8rem;
+	}
+
+
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #212121;
+	}
+
+	/* Hide Dropdowns by Default */
+  nav ul ul.side {
+      display: block !important;
+    }
+
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */
+
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
 }

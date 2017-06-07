@@ -20,7 +20,7 @@
         {% endif %}
 
         {% if nav.children != null %}
-        <ul>
+        <ul class="side">
           {% for child in nav.children %}
             {% comment %} internal/external URL check {% endcomment %}
             {% if child.url contains "://" %}

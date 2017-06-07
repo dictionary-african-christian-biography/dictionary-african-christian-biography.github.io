@@ -1,100 +1,98 @@
-<div class="masthead-banner">
- <div class="masthead__inner-wrap">
-  <div class="logo">
-    <img src="/assets/images/logo-{{page.lang}}.gif" style="height: 4em; width: 4em;">
-    <img src="/assets/images/banner-{{page.lang}}.jpg">
-  </div>
- </div>
+<div class="masthead__inner-wrap-b">
+    <div id="logo">
+  <img src="/assets/images/logo-{{page.lang}}.gif" style="height: 4em; width: 4em;">
+  <img src="/assets/images/banner-{{page.lang}}.jpg">
 </div>
-
-<div class="masthead-{{ page.lang }}">
-  <div class="masthead-{{ page.lang }}__inner-wrap">
-    <div class="masthead__menu">
-       <div class="container">
-<ul class="nav">
-<li class="dropdown">
-    <a href="{{site.url}}{{ page.lang | prepend: '/' | remove: '/en' }}" class="dropbtn">Home</a>
-  </li>
-<li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Stories</a>
-    <div class="dropdown-content">
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/stories/">All Stories</a>
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/stories/latest-sort/">Latest Stories</a>
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/stories/collected-memories/">Collected Memories</a>
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/stories/regional-histories/">Regional Histories</a>
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/stories/potential-subjects/">Potential Subjects</a>
-    </div>
-  </li>
-
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">The Project</a>
-    <div class="dropdown-content">
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/project/what-is-dacb/">What is DACB?</a>
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/project/beginnings/">Beginnings</a>
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/project/vision/">Vision</a>
-    </div>
-  </li>
-
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Resources</a>
-    <div class="dropdown-content">
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/resources/writers/">For Writers</a>
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/resources/educators/">For Educators</a>
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/resources/researchers/">For Further Research</a>
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/resources/video/">Videos</a>
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/resources/links/">Links</a>
-    </div>
-  </li>
-
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Africa Maps</a>
-    <div class="dropdown-content">
-      <a href="/maps/modern/">Modern Africa</a>
-      <a href="/maps/ancient/">Ancient North Africa</a>
-    </div>
-  </li>
-
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">People</a>
-    <div class="dropdown-content">
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/people/advisors/">Advisors</a>
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/people/editorial-committee/">Editorial Committee</a>
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/people/partners/">Partners</a>
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/stories/institution-sort/">Institutions</a>
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/people/project-luke/">Project Luke Fellows</a>
-    </div>
-  </li>
-
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">News</a>
-    <div class="dropdown-content">
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/news/whats-new/">What's New?</a>
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/news/newsletter/">Newsletter</a>
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/news/journal/">Journal</a>
-    </div>
-  </li>
-
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Get Involved</a>
-    <div class="dropdown-content">
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/get-involved/contact/">Contact Us</a>
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/get-involved/contribute/">Contribute</a>
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/get-involved/readers/">From Our Readers</a>
-      <a href="{{ page.lang | prepend: '/' | remove: '/en' }}/get-involved/submit/">Submit Stories</a>
-    </div>
-  </li>
-  <li class="dropdown-search
-">
-    <input type="text" name="search" placeholder="Search..">
-  </li>
-</ul>
-
-      </div>
-    </div>
-  </div>
 </div>
+<div class="masthead-banner-{{page.lang}}">
+<div class="masthead__inner-wrap">
+<nav class="top">
+        <label for="drop" class="toggle-m">{{ site.t[page.lang].menu }}</label>
+        <input type="checkbox" id="drop" />
+        <ul class="menu">
+          <label class="toggle"><a href="#" style="padding: 0px !important">{{ site.t[page.lang].home }}</a></label>
+            <li class="menu"><a href="#">{{ site.t[page.lang].home }}</a></li>
+            <li>
+                <label for="drop-1" class="toggle">{{ site.t[page.lang].stories }} +</label>
+                <a href="#">{{ site.t[page.lang].stories }}</a>
+                <input type="checkbox" id="drop-1"/>
+                <ul class=="top">
+                    <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/stories/">{{ site.t[page.lang].all-stories }}</a></li>
+                    <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/stories/latest-sort/">{{ site.t[page.lang].latest-stories }}</a></li>
+                    <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/stories/collected-memories/">{{ site.t[page.lang].collected-memories }}</a></li>
+                    <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/stories/regional-histories/">{{ site.t[page.lang].regional-histories }}</a></li>
+                    <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/stories/potential-subjects/">{{ site.t[page.lang].potential-subjects }}</a></li>
+                </ul>
 
+            </li>
+            <li>
+            <label for="drop-2" class="toggle">{{ site.t[page.lang].the-project }} +</label>
+            <a href="#">{{ site.t[page.lang].the-project }}</a>
+            <input type="checkbox" id="drop-2"/>
+            <ul class=="top">
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/project/what-is-dacb/">{{ site.t[page.lang].what-is-dacb }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/project/beginnings/">{{ site.t[page.lang].beginnings }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/project/vision/">{{ site.t[page.lang].vision }}</a></li>
+            </ul>
+            </li>
+
+            <li>
+            <label for="drop-3" class="toggle">{{ site.t[page.lang].resources }} +</label>
+            <a href="#">{{ site.t[page.lang].resources }}</a>
+            <input type="checkbox" id="drop-3"/>
+            <ul class=="top">
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/resources/writers/">{{ site.t[page.lang].for-writers }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/resources/educators/">{{ site.t[page.lang].for-educators }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/resources/researchers/">{{ site.t[page.lang].for-further-research }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/resources/video/">{{ site.t[page.lang].videos }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/resources/links/">{{ site.t[page.lang].links }}</a></li>
+            </ul>
+            </li>
+            <li>
+            <label for="drop-4" class="toggle">{{ site.t[page.lang].people }} +</label>
+            <a href="#">{{ site.t[page.lang].people }}</a>
+            <input type="checkbox" id="drop-4"/>
+            <ul class=="top">
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/people/advisors/">{{ site.t[page.lang].advisors }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/people/editorial-committee/">{{ site.t[page.lang].editorial-committee }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/people/partners/">{{ site.t[page.lang].partners }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/stories/institution-sort/">{{ site.t[page.lang].institutions }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/people/project-luke/">{{ site.t[page.lang].project-luke-fellows }}</a></li>
+            </ul>
+            </li>
+            <li>
+            <label for="drop-5" class="toggle">{{ site.t[page.lang].news }} +</label>
+            <a href="#">{{ site.t[page.lang].news }}</a>
+            <input type="checkbox" id="drop-5"/>
+            <ul class=="top">
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/news/whats-new/">{{ site.t[page.lang].whats-new }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/news/newsletter/">{{ site.t[page.lang].newsletter }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/news/journal/">{{ site.t[page.lang].journal }}</a></li>
+            </ul>
+            </li>
+            <li>
+            <label for="drop-6" class="toggle">{{ site.t[page.lang].get-involved }} +</label>
+            <a href="#">{{ site.t[page.lang].get-involved }}</a>
+            <input type="checkbox" id="drop-6"/>
+            <ul class=="top">
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/get-involved/contact/">{{ site.t[page.lang].contact-us }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/get-involved/contribute/">{{ site.t[page.lang].contribute }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/get-involved/readers/">{{ site.t[page.lang].from-our-readers }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/get-involved/submit/">{{ site.t[page.lang].submit-stories }}</a></li>
+            </ul>
+            </li>
+            <li class="dropdown-search ">
+              <form>
+            <input type="search" name="filter.q" results="5" value="" placeholder="Search..."/>
+              </form>
+            </li>
+
+        </ul>
+      </nav>
+</div>
+</div>
 <div class="masthead-banner-trans">
+  <div class="masthead__inner-wrap">
  <div class="masthead__inner-wrap-left">
     <div class="masthead-lang"> <p>{{ site.t[page.lang].page-available }}&nbsp;
       {% if page.languages-available[3] != ' ' %}
@@ -113,6 +111,4 @@
 </div>
 </div>
 </div>
-<!--
-<div class="masthead-bar-{{ page.lang }}"><p>&nbsp;</p></div>
--->
+</div>

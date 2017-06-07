@@ -334,6 +334,7 @@
 
 .nav__list {
   margin-bottom: 1.5em;
+  background-color: #fff;
 
   input[type="checkbox"],
   label {
@@ -355,6 +356,9 @@
       -webkit-transition: 0.2s ease-out;
       transition: 0.2s ease-out;
       cursor: pointer;
+      float:left;
+      width:100%;
+      margin-top: 1em;
 
       &:before,
       &:after {
@@ -435,9 +439,12 @@
 .nav__list .nav__items {
   margin: 0;
   font-size: 1.35rem;
+  background-color: #fff;
+  float: left;
 
   a {
-    color: inherit;
+    color: #7a8288;
+    font-size:.95em;
   }
 
   .active {
@@ -492,12 +499,13 @@
 
 .nav__sub-title {
   display: block;
-  margin: 0.5rem 0;
   padding: 0.5rem 0;
   font-family: $sans-serif-narrow;
   font-size: $type-size-6;
   font-weight: bold;
   text-transform: uppercase;
+  background-color: #fff !important;
+
 }
 
 
