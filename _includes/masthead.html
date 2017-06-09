@@ -11,7 +11,7 @@
         <input type="checkbox" id="drop" />
         <ul class="menu">
           <label class="toggle"><a href="#" style="padding: 0px !important">{{ site.t[page.lang].home }}</a></label>
-            <li class="menu"><a href="#">{{ site.t[page.lang].home }}</a></li>
+            <li class="menu"><a href="{{ site.url }}{{ page.lang | prepend: '/' | remove: '/en' }}">{{ site.t[page.lang].home }}</a></li>
             <li>
                 <label for="drop-1" class="toggle">{{ site.t[page.lang].stories }} +</label>
                 <a href="#">{{ site.t[page.lang].stories }}</a>
@@ -49,9 +49,18 @@
             </ul>
             </li>
             <li>
-            <label for="drop-4" class="toggle">{{ site.t[page.lang].people }} +</label>
-            <a href="#">{{ site.t[page.lang].people }}</a>
+            <label for="drop-4" class="toggle">{{ site.t[page.lang].maps }} +</label>
+            <a href="#">{{ site.t[page.lang].maps }}</a>
             <input type="checkbox" id="drop-4"/>
+            <ul class=="top">
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/maps/modern/">{{ site.t[page.lang].modern }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/maps/ancient/">{{ site.t[page.lang].ancient }}</a></li>
+            </ul>
+            </li>
+            <li>
+            <label for="drop-5" class="toggle">{{ site.t[page.lang].people }} +</label>
+            <a href="#">{{ site.t[page.lang].people }}</a>
+            <input type="checkbox" id="drop-5"/>
             <ul class=="top">
               <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/people/advisors/">{{ site.t[page.lang].advisors }}</a></li>
               <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/people/editorial-committee/">{{ site.t[page.lang].editorial-committee }}</a></li>
@@ -61,9 +70,9 @@
             </ul>
             </li>
             <li>
-            <label for="drop-5" class="toggle">{{ site.t[page.lang].news }} +</label>
+            <label for="drop-6" class="toggle">{{ site.t[page.lang].news }} +</label>
             <a href="#">{{ site.t[page.lang].news }}</a>
-            <input type="checkbox" id="drop-5"/>
+            <input type="checkbox" id="drop-6"/>
             <ul class=="top">
               <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/news/whats-new/">{{ site.t[page.lang].whats-new }}</a></li>
               <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/news/newsletter/">{{ site.t[page.lang].newsletter }}</a></li>
@@ -71,9 +80,9 @@
             </ul>
             </li>
             <li>
-            <label for="drop-6" class="toggle">{{ site.t[page.lang].get-involved }} +</label>
+            <label for="drop-7" class="toggle">{{ site.t[page.lang].get-involved }} +</label>
             <a href="#">{{ site.t[page.lang].get-involved }}</a>
-            <input type="checkbox" id="drop-6"/>
+            <input type="checkbox" id="drop-7"/>
             <ul class=="top">
               <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/get-involved/contact/">{{ site.t[page.lang].contact-us }}</a></li>
               <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/get-involved/contribute/">{{ site.t[page.lang].contribute }}</a></li>
