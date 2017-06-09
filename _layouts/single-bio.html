@@ -73,7 +73,7 @@ layout: default
 
           {% assign current-short = page.title | remove:'(A)'| remove:'(B)'| remove:'(C)'| remove:'(D)'| remove:'(E)'| remove:'(F)'| remove:'(G)'| remove:'(H)'| remove:'(I)'| remove:'(J)'| remove:'(K)'| remove:'(L)'| remove:'(M)'| remove:'(N)'| remove:'(O)'| remove:'(P)' %}
           {% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}
-          {% assign current-url = page.url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' %}
+          {% assign current-url = page.url %}
 
           {% capture test %} {% for page in sorted %}{% for tag in page.title %}
           {% assign short-title = page.title | remove:'(A)'| remove:'(B)'| remove:'(C)'| remove:'(D)'| remove:'(E)'| remove:'(F)'| remove:'(G)'| remove:'(H)'| remove:'(I)'| remove:'(J)'| remove:'(K)'| remove:'(L)'| remove:'(M)'| remove:'(N)'| remove:'(O)'| remove:'(P)' %}
