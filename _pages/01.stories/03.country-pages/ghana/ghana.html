@@ -11,7 +11,7 @@ languages-available:
   - sw
 ---
 {% capture parent_lang %}{{ page.lang }}{% endcapture %}
-{% assign sorted = site.pages | where: "country","Ghana" | where: "index","primary" %}
+{% assign sorted = site.pages | where: "country","ghana" | where: "index","primary" %}
 {% assign asort = sorted | where: "ancient","ancient" %}
 {% assign csort = sorted | where: "tradition","catholic" %}
 {% assign isort = sorted | where: "tradition","independent" %}
