@@ -19,7 +19,7 @@ century:
   - '16th'
   - '17th'                     
 tradition: 'protestant'                       
-affiliation: 'Methodist'
+affiliation: 'methodist'
 country: 'nigeria'
 ancient: 'ancient'
 artist: ''

@@ -44,28 +44,28 @@ layout: default
           {% if page.lang == 'en' %}
           <p class="page__meta">
             {{ page.date }}</br>
-            {{ ed }}</br>
+            {% if ed == nil %} {{ page.affiliation | capitalize }} {% else %} {{ ed }} {% endif %}</br>
             {{ ec }}</br>
           </p>{% endif %}
 
           {% if page.lang == 'fr' %}
           <p class="page__meta">
             {{ page.date }}</br>
-            {{ fd }}</br>
+            {% if fd == nil %} {{ page.affiliation | capitalize }} {% else %} {{ fd }} {% endif %}</br>
             {{ fc }}</br>
           </p>{% endif %}
 
           {% if page.lang == 'pt' %}
           <p class="page__meta">
             {{ page.date }}</br>
-            {{ pd }}</br>
+            {% if pd == nil %} {{ page.affiliation | capitalize }} {% else %} {{ pd }} {% endif %}</br>
             {{ pc }}</br>
           </p>{% endif %}
 
           {% if page.lang == 'sw' %}
           <p class="page__meta">
             {{ page.date }}</br>
-            {{ sd }}</br>
+            {% if sd == nil %} {{ page.affiliation | capitalize }} {% else %} {{ sd }} {% endif %}</br>
             {{ sc }}</br>
           </p>{% endif %}
         </header>

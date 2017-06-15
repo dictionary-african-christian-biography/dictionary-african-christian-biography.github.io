@@ -13,7 +13,7 @@ sidebar:
   nav: "index-menu"     
 title: "Bee, Good"        
 date: c. 1767 to 1790                      
-affiliation: Catholic               
+affiliation: catholic               
 tradition: catholic             
 country: ghana
 century:

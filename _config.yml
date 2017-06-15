@@ -728,6 +728,8 @@ t:
     contribute: "Contribute"
     from-our-readers: "From Our Readers"
     submit-stories: "Submit Stories"
+    non-affiliated: "Non-affiliated"
+    anonymous: "Anonymous"
   fr:
     name: "Nom"
     affiliation: "Affiliation"
@@ -782,6 +784,8 @@ t:
     contribute: "Contribuer"
     from-our-readers: "De nos Lecteurs"
     submit-stories: "Soumettre des Histoires"
+    non-affiliated: "Non Affilié"
+    anonymous: "Anonyme"
   pt:
     name: "Nome"
     affiliation: "Afiliação"
@@ -836,6 +840,8 @@ t:
     contribute: "Contribuir"
     from-our-readers: "De Nossos Leitores"
     submit-stories: "Enviar Histórias"
+    non-affiliated: "Não Afiliado"
+    anonymous: "Anônimo"
   sw:
     name: "Jina"
     affiliation: "Uhusiano"
@@ -890,6 +896,8 @@ t:
     contribute: "Changia"
     from-our-readers: "Kutoka kwa Wasomaji Wetu"
     submit-stories: "Wasilisha Hadithi"
+    non-affiliated: "Zisizo Uhusiano"
+    anonymous: "Bila Majina"
 
 #  INSTITUTION TRANSLATIONS
   Africa International University:
@@ -909,17 +917,17 @@ t:
     sw: "Chuo Kikuu cha Babcock"
 
 #  AFFILIATION TRANSLATIONS
-  Methodist:
+  methodist:
     en: "Methodist"
     fr: "Méthodiste"
     pt: "Metodista"
     sw: "Methodist SW"
-  Catholic:
+  catholic:
     en: "Catholic"
     fr: "Catholique"
     pt: "Católico"
     sw: "Catholic SW"
-  Baptist:
+  baptist:
     en: "Baptist"
     fr: "Baptiste"
     pt: "Batista"

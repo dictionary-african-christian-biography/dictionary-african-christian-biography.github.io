@@ -4,6 +4,11 @@ permalink: /stories/country-sort/
 title: "Country Sort"
 author_profile: false
 lang: en
+languages-available:
+  - en
+  - fr
+  - pt
+  - sw
 ---
 {% capture parent_lang %}{{ page.lang }}{% endcapture %}
 {% assign sorted = site.pages | where: "index","primary" | sort:"country" %}

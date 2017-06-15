@@ -13,7 +13,7 @@ sidebar:
   nav: "index-menu"
 title: "A, Test"         
 date: c. 1769 to 1822                      
-affiliation: Methodist               
+affiliation: methodist               
 tradition: protestant             
 country: cote divoire
 century:

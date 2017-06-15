@@ -11,7 +11,7 @@ languages-available:
   - sw         
 title: "Cee, Me"       
 date: 1937 a 1990                      
-affiliation: Baptist              
+affiliation: baptist              
 tradition: protestant             
 country: cameroon
 century:
