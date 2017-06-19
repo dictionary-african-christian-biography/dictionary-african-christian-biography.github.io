@@ -1,6 +1,20 @@
 /* ==========================================================================
    TABLES
    ========================================================================== */
+   table.country {
+     table-layout: fixed;
+     margin-bottom: 0em;
+     width: 100%;
+     background-color: $lighter-gray;
+     font-family: $global-font-family;
+     font-size: $type-size-7;
+     border-collapse: collapse;
+     border: 1px solid $light-gray;
+   }
+
+   table.country td,th {
+     border: none;
+   }
 
 table {
   table-layout: fixed;
