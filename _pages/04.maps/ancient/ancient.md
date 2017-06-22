@@ -6,8 +6,8 @@ lang: en
 languages-available:                         
   - en
   - fr
-  - pt
-  - sw
+  - ' '
+  - ' '
 ---
 
 **to approx. 650 A.D.**  

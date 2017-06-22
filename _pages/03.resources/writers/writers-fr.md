@@ -1,5 +1,5 @@
 ---
-title: Resources for Writers and Researchers
+title: Ressources pour les Écrivains
 layout: single-full
 permalink: /fr/resources/writers/
 lang: fr
@@ -10,42 +10,26 @@ languages-available:
   - sw
 ---
 
-**1\. Introduction to the Project**  
+### 1\. Introduction au Projet
 
-*   [What is the _DACB_?](what-is-dacb.html)  
+*   [Qu’est-ce que _DIBICA_?]({{site.url}}/fr/project/what-is-dacb/)  
 
-*   ["How the _DACB_ began, and where it is going"](introduction.html): A brief history of the project's beginnings.  
+*   ["Le projet _DIBICA_ - Ses origines et son avenir"]({{site.url}}/fr/project/beginnings/): Une brève histoire des débuts du projet.  
 
-*   ["Ecclesiastical Cartography and the Invisible Continent"](xnmaps.html): The rationale and the vision behind the project, presented in by Dr. Jonathan J. Bonk, Project Director.  
+*   ["Le Dictionnaire Biographique des Chrétiens d’Afrique: La cartographie ecclésiastique et le continent invisible"]({{site.url}}/fr/project/vision/): La raison d'être et la vision derrière le projet, présentée par le Dr Jonathan J. Bonk, Directeur de projet.
 
-*   ["Introduction to the _DACB_"](intro-dacb-web.pdf) (PDF): The PDF of a 30-minute presentation that gives an overview of the project.  
+*   ["Introduction à la _DIBICA_"]({{site.url}}/resources/intro-dacb-web.pdf) (PDF): Une présentation en anglais de 30 minutes qui donne un aperçu du projet.  
 
-*   [DACB Brochure 2016](DACB-brochure2016-web.pdf) (PDF): Introductory brochure for printing and distributing.
+*   [DIBICA Brochure 2016]({{site.url}}/resources/DACB-brochure-2016-web.pdf) (PDF): Une brochure d'introduction en anglais pour l'impression et la distribution.
 
-**2\. Submission Guidelines:**  
+### 2\. Lignes Directrices et Manuels:
 
-*   [Guidelines for Researchers and Writers](guidelines-writers.html) : A general outline of the content expected in a _DACB_ biography.  
+*   [Directives destinées aux rédacteurs d'articles (générales)]({{site.url}}/fr/get-involved/submit/)
 
-*   [The Instructional Manual for Researchers and Writers](FinalInstrManual.pdf) (PDF): The _DACB_ reference manual that contains (1) Instructions for Contributing Writers (technique and format); (2) Oral History Techniques (3) Procedures for Implementing the _DACB_ at Participating Institutions.  
+*   [Manuel d'instructions pour chercheurs et rédacteurs ]({{site.url}}/resources/frenchinstr-manual_web.pdf) (PDF)
 
-*   [Writing biography](resources/writing-biography.html). Two brief articles: "The Strengths and Limitations of Biography" by Dr. Jonathan Bonk, Project Director and "The Craft of Writing Religious Biography," by Dr. Dana Robert, _DACB_ Editorial Committee member.  
+*   [Manuel d'archivistique: Sauvegarder la mémoire de nos peuples]({{site.url}}/resources/archives-manual-french.pdf) (PDF)
 
-*   [Potential Subjects:](stories/potential%20subjects/potsubj_index.html) A suggested list of biographical subjects by country. Check here to see which biographies the _DACB_ already has.
+*   [Sujets Potentiels]({{site.url}}/stories/potential-subjects/) des listes de personnages historiques dont la biographie n'est pas encore inclue sur le site _DIBICA_.
 
-*   [Bibliography:](stories/potential subjects/references.html) A list of Africa-related works useful for background research.
-
-**3\. Oral History materials:**  
-
-*   Complete [Oral History Workshop curriculum](teaching-oral-history.pdf) (PDF): "Doing Oral History: Helping Christians Tell Their Own Story" - Class Curriculum based on original work by Dr. Jean-Paul Wiest and revised by Mrs. Michele Sigg (2015)
-
-*   [Potential subjects submission template](Pot Subj submission template.pdf) (PDF file): This is our form for collecting information on individuals whose lifestory should be documented.  
-
-*   [Guidelines for Researchers and Writers: Template for Collecting Basic Information](Guidelines for RW-Template for Info collecting.pdf) (PDF file); [Word document](Guidelines for RW-Template for Info collecting.doc): This template can serve as a data-collecting tool for oral history research.  
-
-*   [Biography Review Checklist](DACB Biography Review form.pdf) (PDF file): This checklist helps writers to critically review the drafts of their biographies.  
-
-*   [_DACB_ Oral History Booklet](DACB-Oral History Uganda booklet-Kampala 2008.pdf), Kampala, October 2008 (PDF file); booklet [cover](DACB UGANDA booklet cover.pdf) (PDF file): The booklet contains a selection of _DACB_ biographies of the church in Uganda, Rwanda, and Burundi.
-
-**4\. Project Luke Fellowship**
-
-*   The Project Luke Fellowship offers scholarships to African scholars, clergy, and lay people _During the transition period from Overseas Ministries Study Center to the Center for Global Christianity and Mission at Boston University School of Theology (May 2011-2013), the Project Luke Fellowship program will be suspended. It will be reactivated sometime after 2013._
+*   [Bibliography(BROKEN)](stories/potential subjects/references.html) A list of Africa-related works useful for background research.

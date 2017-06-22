@@ -1,5 +1,5 @@
 ---
-title: Beginnings
+title: How the DACB began, and where it is going
 layout: single-full
 permalink: /project/beginnings/
 lang: en

@@ -24,7 +24,8 @@ For information regarding wire transfers, contact Mr. Kevin C. Keith at [kkeith@
 
 Checks should be made out to Boston University School of Theology, and clearly marked as support for the _Dictionary of African Christian Biography._ Funds are administered by the Center for Global Christianity and Mission (CGCM), under the direction of Professor Dana Robert.  
 
-To donate online visit [www.bu.edu/cgcm/donate-2/](http://www.bu.edu/cgcm/donate-2/). After clicking on the red button at the bottom of the page, you will be redirected to a donation page. Then follow these steps:  
+**To donate online:**  
+ Visit [www.bu.edu/cgcm/donate-2/](http://www.bu.edu/cgcm/donate-2/). After clicking on the red button at the bottom of the page, you will be redirected to a donation page. Then follow these steps:  
 
 1) Click on the red button that says "CLICK HERE TO CHOOSE A FUND"  
 2) When the box pops up, scroll down using the arrow or the square scroller to the list of "SCHOOLS AND COLLEGES" and select “School of Theology”  
@@ -33,7 +34,10 @@ To donate online visit [www.bu.edu/cgcm/donate-2/](http://www.bu.edu/cgcm/donate
 5) In the blank box, add “**DACB 93*10201**”  
 6) Choose single or other payment and enter your personal information and credit card information.  
 
-**Canadian Friends of the _DACB_.** The Project Director has established an office at Providence University College in Otterburne, Manitoba. Canadian donations to the enterprise will be routed through this office. The office will provide an annual report to the Managing Editorial Committee in Boston. A small ad hoc Canadian advisory group will counsel the Project Director on DACB fund raising initiatives in Canada  
+***  
+
+**Canadian Friends of the _DACB_.**  
+The Project Director has established an office at Providence University College in Otterburne, Manitoba. Canadian donations to the enterprise will be routed through this office. The office will provide an annual report to the Managing Editorial Committee in Boston. A small ad hoc Canadian advisory group will counsel the Project Director on DACB fund raising initiatives in Canada.  
 
 **Canadian donations should be sent to:**
 

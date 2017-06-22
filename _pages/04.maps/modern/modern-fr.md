@@ -6,8 +6,8 @@ lang: fr
 languages-available:                         
   - en
   - fr
-  - pt
-  - sw
+  - ' '
+  - ' '
 ---
 
 Click on a country name to see a list of biographies. For an alphabetical list of countries, see below the map.  

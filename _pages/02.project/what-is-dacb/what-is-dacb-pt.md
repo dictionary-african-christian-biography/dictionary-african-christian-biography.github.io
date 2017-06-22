@@ -1,5 +1,5 @@
 ---
-title: 'What is DACB?'
+title: 'O que é DIBICA?'
 layout: single-full
 permalink: /pt/project/what-is-dacb/
 lang: pt
@@ -7,16 +7,16 @@ languages-available:
   - en
   - fr
   - pt
-  - sw
+  - ' '
 ---
 
-The DACB is an international undertaking aimed at producing an electronic database containing the essential biographical facts of African Christian leaders, evangelists, and lay workers chiefly responsible for laying the foundations, shaping the character, and advancing the growth of Christian communities across Africa. An international team of African scholars is facilitating the project. Contributors are drawn from academic, church, and mission communities in Africa and elsewhere. Work began in 1995 and is expected to continue through 2020. The Center for Global Christianity and Mission at Boston University School of Theology provides technical and administrative support under the direction of Dr. Jonathan Bonk.
+O DIBICA é um empreendimento internacional com o objetivo de produzir uma base de dados eletrônica que contenha os fatos biográficos essenciais dos líderes cristãos africanos, dos evangelistas e dos trabalhadores leigos, principalmente responsáveis ​​por lançar as bases, moldar o caráter e promover o crescimento das comunidades cristãs em toda a África. Uma equipe internacional de estudiosos africanos está facilitando o projeto. Os contribuintes são provenientes de comunidades acadêmicas, igrejas e missionárias na África e em outros lugares. O trabalho começou em 1995 e deverá continuar até 2020. O Centro de Cristianismo Global e Missão da Universidade de Boston University of Theology fornece apoio técnico e administrativo sob a direção do Dr. Jonathan Bonk.
 
-While the growth and character of Christianity in Africa is without historical precedent, information on the major creative and innovative local figures and leaders of this growth—from local evangelists and pastors to nationally known Christian leaders—does not appear in standard historical and biographical reference works on the continent.
+Embora o crescimento e o caráter do cristianismo na África seja sem precedentes históricos, a informação sobre as principais figuras e líderes locais criativos e inovadores deste crescimento - de evangelistas locais e pastores a líderes cristãos conhecidos a nível nacional - não aparece em obras padrão de referência histórica e biográfica No continente.
 
-The Dictionary covers the whole field of African Christianity from earliest times to the present and over the entire continent. Broadly interconfessional, historically descriptive, and exploiting the full range of oral and written records, the primary language of the Dictionary is English, with growing numbers of entries in the other major lingua franca of African universities: French, Portuguese, and Swahili.
+O Dicionário abrange todo o campo do cristianismo africano desde os primeiros tempos até o presente e em todo o continente. Geralmente interconfessional, historicamente descritivo, e explorando toda a gama de registros orais e escritos, o idioma principal do Dicionário é o inglês, com um número crescente de inscrições nas outras principais lingua franca das universidades africanas: francês, português e swahili.
 
-The Dictionary stimulates local data gathering and input. As a non-proprietary electronic database, it constitutes a uniquely dynamic way to maintain, amend, expand, access, and disseminate information vital to an understanding of African Christianity. Being non-proprietary, it is possible for material within it to be freely reproduced locally in printed form. Being electronic, the material is simultaneously accessible to readers around the world.
+O dicionário estimula a coleta e entrada de dados locais. Como uma base de dados eletrônica não proprietária, constitui uma maneira exclusivamente dinâmica de manter, alterar, expandir, acessar e divulgar informações vitais para a compreensão do cristianismo africano. Sendo não-proprietário, é possível que o material dentro dele seja livremente reproduzido localmente em forma impressa. Sendo eletrônico, o material é simultaneamente acessível aos leitores em todo o mundo.
 
-**Dr. Jonathan Bonk, director**  
-September 2, 2013
+**Dr. Jonathan Bonk, diretor**
+2 de setembro de 2013

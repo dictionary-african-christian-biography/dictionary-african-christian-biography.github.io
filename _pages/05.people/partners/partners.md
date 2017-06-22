@@ -5,9 +5,9 @@ permalink: /people/partners/
 lang: en
 languages-available:                         
   - en
-  - fr
-  - pt
-  - sw
+  - ' '
+  - ' '
+  - ' '
 ---
 
 ### Founding Partners

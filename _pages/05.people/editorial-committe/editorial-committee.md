@@ -5,9 +5,9 @@ permalink: /people/editorial-committee/
 lang: en
 languages-available:                         
   - en
-  - fr
-  - pt
-  - sw
+  - ' '
+  - ' '
+  - ' '
 ---
 
 |---------------|-----------------------------------------------------------|

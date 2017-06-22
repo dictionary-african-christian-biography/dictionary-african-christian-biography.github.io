@@ -1,5 +1,5 @@
 ---
-title: Contact Us
+title: Les Bureaux du DIBICA
 layout: single-full
 permalink: /fr/get-involved/contact/
 lang: fr
@@ -9,70 +9,53 @@ languages-available:
   - pt
   - sw
 ---
-## Feedback
 
-In order to make the DACB the best possible resource, we would like your input. Please write us at [dacb@bu.edu](mailto:dacb@omsc.org) with any comments.  
+### Aux Etats-Unis
 
-If possible, we would also like to know...  
+Contactez-nous directement à cette adresse [DACB@bu.edu](mailto:dacb@omsc.org) ou bien aux coordonnées ci-dessous.
 
-- How you learned about the DACB.  
-- If there are any ways we can improve the DACB.  
-- Who else should know about the DACB.  
-
-Thank you very much for your feedback.  
-
-**Jonathan Bonk and Michèle Sigg**
-
-## U.S. Office
-
-Contact us directly at [DACB@BU.edu](mailto:dacb@bu.edu) or using the address and phone information below.  
-
-**Dr. Jonathan J. Bonk**, Project Director  
-Research Professor of Mission  
-**Michèle Sigg**, Project Manager  
-**_Dictionary of African Christian Biography_**  
-Center for Global Christianity and Mission (CGCM)  
+**Jonathan J. Bonk**, Directeur du projet  
+**Michèle Sigg**, Coordinatrice Internationale  
+**_Dictionnaire Biographique des Chrétiens d'Afrique_**  
+Center for Global Christianity and Mission  
 745 Commonwealth Avenue  
-Boston, Massachussetts 02215, USA  
+Boston, MA 02215 - U.S.A.  
+[DACB@bu.edu](mailto:dacb@omsc.org)
 
-See the DACB page on the CGCM Website: [DACB at CGCM](http://www.bu.edu/cgcm/digital-projects/dictionary-of-african-christian-biography/)  
-**Email: [DACB@BU.edu](mailto:dacb@bu.edu)**  
+### Afrique Occidentale
 
-
-## West Africa  
-
-**Philip Laryea**, Office Coordinator  
-**_Dictionary of African Christian Biography, West Africa_**  
-Akrofi-Christaller Memorial Centre for Mission Research  
+**Philip Laryea**, Coordinateur  
+**_Dictionnaire Biographique des Chrétiens d'Afrique, Afrique Occidentale_**  
+Akrofi Christaller Institute of Theology, Mission, and Culture  
 P.O. Box 76  
 Akropong-Akuapem, GHANA  
 Tel. 011-23-32-755-5718  
-Email: [tlaaye@yahoo.co.uk](mailto:tlaaye@yahoo.co.uk)  
+[acmc@libr.ug.edu.gh](mailto:akrofi@africaonline.com.gh)
 
-## Nigeria  
+### Nigéria
 
-**Dr. Protus Kemdirim**, Regional Coordinator  
-**_Dictionary of African Christian Biography, Nigeria_**  
+**Dr. Protus Kemdirim**, Coordinateur Régional  
+**_Dictionnaire Biographique des Chrétiens d'Afrique, Nigéria_**  
 University of Religious Studies, University of Port Harcourt  
 PMB 5323  
 Port Harcourt, NIGERIA  
-Email:[kempro54@yahoo.com](mailto:kempro54@yahoo.com)  
+[kempro54@yahoo.com](mailto:kempro54@yahoo.com)
 
-## Southern Africa  
+### Afrique Australe
 
-**Dr. Jurie Van Wyk**, Regional Coordinator  
-**_Dictionary of African Christian Biography, Southern and Eastern Africa_**  
+**Jurie Van Wyk**, Coordinateur Régional  
+**_Dictionnaire Biographique des Chrétiens d'Afrique, Régions Est et Australe_**  
 P.O. Box 125  
 Colesberg 9795, SOUTH AFRICA  
 Tel./Fax No. 27 (0)51 7530422  
 Mobile 27 (0)72 4272934  
-Email:[jurievanwyk@mweb.co.za](mailto:jurievanwyk@mweb.co.za)  
+[jurievanwyk@mweb.co.za](mailto:jurievanwyk@mweb.co.za)
 
-## Francophone Africa  
+### Afrique Francophone
 
-**Fohle Lygunda Li-M**, Regional Coordinator  
-**_Dictionary of African Christian Biography, Francophone Africa_**  
+**Fohle Lygunda Li-M**, Coordinateur Régional  
+**_Dictionnaire Biographique des Chrétiens d'Afrique - Afrique Francophone_**  
 International Leadership University  
-PO Box 2330 Bujumbura, BURUNDI  
-Email:[flygunda@yahoo.fr](mailto:flygunda@yahoo.fr "mailto:flygunda@yahoo.fr")   
-[www.iluburundi-ftm.org](http://www.iluburundi-ftm.org "http://www.iluburundi-ftm.org/")[](http://www.cemica.org)  
+PO Box 2330 Bujumbura  
+BURUNDI [flygunda@yahoo.fr](mailto:flygunda@yahoo.fr "mailto:flygunda@yahoo.fr")  
+[www.iluburundi-ftm.org](http://www.iluburundi-ftm.org "http://www.iluburundi-ftm.org/")[](http://www.cemica.org)

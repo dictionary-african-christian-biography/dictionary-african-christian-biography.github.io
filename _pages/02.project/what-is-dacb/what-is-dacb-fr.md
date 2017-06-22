@@ -1,5 +1,5 @@
 ---
-title: 'What is DACB?'
+title: Qu'est-ce que DIBICA?
 layout: single-full
 permalink: /fr/project/what-is-dacb/
 lang: fr
@@ -7,16 +7,16 @@ languages-available:
   - en
   - fr
   - pt
-  - sw
+  - ' '
 ---
 
-The DACB is an international undertaking aimed at producing an electronic database containing the essential biographical facts of African Christian leaders, evangelists, and lay workers chiefly responsible for laying the foundations, shaping the character, and advancing the growth of Christian communities across Africa. An international team of African scholars is facilitating the project. Contributors are drawn from academic, church, and mission communities in Africa and elsewhere. Work began in 1995 and is expected to continue through 2020. The Center for Global Christianity and Mission at Boston University School of Theology provides technical and administrative support under the direction of Dr. Jonathan Bonk.
+Le DIBICA est une entreprise internationale visant à produire une base de données électronique contenant les faits biographiques essentiels des leaders chrétiens africains, des évangélistes et des laïcs chargés principalement de jeter les bases, de façonner le caractère et de faire avancer la croissance des communautés chrétiennes en Afrique. Une équipe internationale d'érudits africains facilite le projet. Les collaborateurs sont issus de communautés universitaires, religieuses et missionnaires en Afrique et ailleurs. Le travail a commencé en 1995 et devrait se poursuivre jusqu'en 2020. Le Centre pour le christianisme mondial et la Mission à l'École de théologie de l'Université de Boston fournit un soutien technique et administratif sous la direction du Dr Jonathan Bonk.
 
-While the growth and character of Christianity in Africa is without historical precedent, information on the major creative and innovative local figures and leaders of this growth—from local evangelists and pastors to nationally known Christian leaders—does not appear in standard historical and biographical reference works on the continent.
+Bien que la croissance et le caractère du christianisme en Afrique ne comportent pas de précédent historique, les informations sur les principales personnalités et dirigeants locaux créatifs et innovateurs de cette croissance - des évangélistes et des pasteurs locaux aux leaders chrétiens connus à l'échelle nationale - n'apparaissent pas dans des travaux de référence historiques et biographiques standard Sur le continent.
 
-The Dictionary covers the whole field of African Christianity from earliest times to the present and over the entire continent. Broadly interconfessional, historically descriptive, and exploiting the full range of oral and written records, the primary language of the Dictionary is English, with growing numbers of entries in the other major lingua franca of African universities: French, Portuguese, and Swahili.
+Le dictionnaire couvre tout le domaine du christianisme africain depuis les temps les plus anciens jusqu'au présent et sur tout le continent. Généralement interconfessionnel, historiquement descriptif et exploitant l'ensemble des enregistrements oraux et écrits, la langue principale du dictionnaire est l'anglais, avec un nombre croissant d'entrées dans l'autre grande lingua franca des universités africaines: le français, le portugais et le swahili.
 
-The Dictionary stimulates local data gathering and input. As a non-proprietary electronic database, it constitutes a uniquely dynamic way to maintain, amend, expand, access, and disseminate information vital to an understanding of African Christianity. Being non-proprietary, it is possible for material within it to be freely reproduced locally in printed form. Being electronic, the material is simultaneously accessible to readers around the world.
+Le dictionnaire stimule la collecte et la saisie des données locales. En tant que base de données électronique non propriétaire, elle constitue un moyen unique de maintenir, de modifier, d'étendre, d'accéder et de diffuser l'information essentielle à la compréhension du christianisme africain. Étant non propriétaire, il est possible de reproduire librement des documents sur le site sous forme imprimée. Étant électronique, le matériel est simultanément accessible aux lecteurs du monde entier.
 
-**Dr. Jonathan Bonk, director**  
-September 2, 2013
+**Dr. Jonathan Bonk, directeur**
+2 septembre 2013

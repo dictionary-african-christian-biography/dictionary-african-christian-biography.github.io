@@ -1,5 +1,5 @@
 ---
-title: Contact Us
+title: Escritórios DIBICA
 layout: single-full
 permalink: /pt/get-involved/contact/
 lang: pt
@@ -9,70 +9,51 @@ languages-available:
   - pt
   - sw
 ---
-## Feedback
 
-In order to make the DACB the best possible resource, we would like your input. Please write us at [dacb@bu.edu](mailto:dacb@omsc.org) with any comments.  
+### Escritório em Boston
 
-If possible, we would also like to know...  
+Contate-nos diretamente no [DACB@bu.edu](mailto:dacb@omsc.org) ou utilize o endereço abaixo.
 
-- How you learned about the DACB.  
-- If there are any ways we can improve the DACB.  
-- Who else should know about the DACB.  
-
-Thank you very much for your feedback.  
-
-**Jonathan Bonk and Michèle Sigg**
-
-## U.S. Office
-
-Contact us directly at [DACB@BU.edu](mailto:dacb@bu.edu) or using the address and phone information below.  
-
-**Dr. Jonathan J. Bonk**, Project Director  
-Research Professor of Mission  
-**Michèle Sigg**, Project Manager  
-**_Dictionary of African Christian Biography_**  
+**Jonathan J. Bonk**, Diretor do projeto  
+**Michèle Sigg**, Coordenadora do projeto  
+**_Dicionario de Biografias Cristãs da África_**  
 Center for Global Christianity and Mission (CGCM)  
 745 Commonwealth Avenue  
 Boston, Massachussetts 02215, USA  
+DACB@bu.edu  
 
-See the DACB page on the CGCM Website: [DACB at CGCM](http://www.bu.edu/cgcm/digital-projects/dictionary-of-african-christian-biography/)  
-**Email: [DACB@BU.edu](mailto:dacb@bu.edu)**  
+### África Ocidental  
 
-
-## West Africa  
-
-**Philip Laryea**, Office Coordinator  
-**_Dictionary of African Christian Biography, West Africa_**  
-Akrofi-Christaller Memorial Centre for Mission Research  
+**_Dicionario de Biografias Cristãs da África, África Ocidental_**  
 P.O. Box 76  
 Akropong-Akuapem, GHANA  
 Tel. 011-23-32-755-5718  
-Email: [tlaaye@yahoo.co.uk](mailto:tlaaye@yahoo.co.uk)  
+tlaaye@yahoo.co.uk
 
-## Nigeria  
+### Nigéria  
 
-**Dr. Protus Kemdirim**, Regional Coordinator  
-**_Dictionary of African Christian Biography, Nigeria_**  
+**Protus Kemdirim**, Coordenador regional  
+**_Dicionario de Biografias Cristãs da África, Nigéria_**  
 University of Religious Studies, University of Port Harcourt  
 PMB 5323  
 Port Harcourt, NIGERIA  
-Email:[kempro54@yahoo.com](mailto:kempro54@yahoo.com)  
+kempro54@yahoo.com
 
-## Southern Africa  
+### Sul e Leste da África  
 
-**Dr. Jurie Van Wyk**, Regional Coordinator  
-**_Dictionary of African Christian Biography, Southern and Eastern Africa_**  
-P.O. Box 125  
+**Jurie Van Wyk**, Coordenador regional  
+**_Dicionario de Biografias Cristãs da África, Sul e Leste da África_**
+P. O. Box 125  
 Colesberg 9795, SOUTH AFRICA  
-Tel./Fax No. 27 (0)51 7530422  
+Tel./Fax No. 27 (0)51 7530422
 Mobile 27 (0)72 4272934  
-Email:[jurievanwyk@mweb.co.za](mailto:jurievanwyk@mweb.co.za)  
+jurievanwyk@mweb.co.za
 
-## Francophone Africa  
+# África de língua francesa  
 
-**Fohle Lygunda Li-M**, Regional Coordinator  
-**_Dictionary of African Christian Biography, Francophone Africa_**  
-International Leadership University  
-PO Box 2330 Bujumbura, BURUNDI  
-Email:[flygunda@yahoo.fr](mailto:flygunda@yahoo.fr "mailto:flygunda@yahoo.fr")   
-[www.iluburundi-ftm.org](http://www.iluburundi-ftm.org "http://www.iluburundi-ftm.org/")[](http://www.cemica.org)  
+**Fohle Lygunda Li-M**, Coordenador regional  
+**_Dicionario de Biografias Cristãs da África, África de língua francesa_**
+International Leadership University
+PO Box 2330 Bujumbura, BURUNDI
+flygunda@yahoo.fr  
+[www.iluburundi-ftm.org](http://www.iluburundi-ftm.org "http://www.iluburundi-ftm.org/")[](http://www.cemica.org)

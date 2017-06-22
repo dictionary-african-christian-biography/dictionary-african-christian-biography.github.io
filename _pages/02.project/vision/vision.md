@@ -7,14 +7,14 @@ languages-available:
   - en
   - fr
   - pt
-  - sw
+  - ' '
 ---
 
-## Ecclesiastical Cartography and the Invisible Continent: _The Dictionary of African Christian Biography_ [1]
+## Ecclesiastical Cartography and the Invisible Continent: <br>_The Dictionary of African Christian Biography_ [1]
 
 The Council on African Studies and the MacMillan Center African Studies Lecture Series October 15, 2008 [Updated 10/19/09]
 
-Jonathan J. Bonk
+**Jonathan J. Bonk**
 
 > There is a natural assumption that maps offer objective depictions of the world. The message of this book is that they do not, and that the innumerable ways in which they do not, serve to place maps as central and significant products of their parent cultures. [2]
 >
@@ -22,7 +22,7 @@ Jonathan J. Bonk
 >
 > A people is defined and unified not by blood but by shared memory…. Deciding to remember, and what to remember, is how we decide who we are. [4]
 
-**A. Africa as _terra incognita_ \-- Christian maps and the invisible continent**
+### A. Africa as _terra incognita_ \-- Christian maps and the invisible continent
 
 Among the better-known medieval maps is the Hereford Mappa Mundi, c.1300, a striking example of historical and theological projection onto an image of the physical world. The map provides an abundance of European and Mediterranean detail, and is congested with familiar towns and cities from Edinburgh and Oxford to Rome and Antioch. It is onto this familiar terrain that all of the significant historical and theological events are projected--the fall of man, the crucifixion, and the apocalypse. As for the rest of the world, the greater part of Africa and Asia blurs into margins featuring elaborately grotesque illustrations of prevailing myths and savage demonic forces. [5]
 
@@ -68,7 +68,7 @@ The editors of these otherwise useful reference tools are not entirely to blame 
 
 Why this should be so is not surprising, given the challenges associated with documenting the lives of persons who, even if literate, leave scarcely any paper trail. [22] But it compounds the troubling tendency of the global Christian reference corpus to perpetuate the illusion of the West as the axis upon which the Christian world revolves. To the notion that it is otherwise, ecclesiastical cartographers today seem as impervious to the factual verities as was the Catholic Church to the once radically new--but correct--cosmology of Copernicus. The fact is, there _are_ no base-line reference tools to which one might turn for information on those whose lives and activities have produced in Africa a Christian revolution unprecedented in the history of our globe.
 
-**B. Mapping ecclesiastical _terra incognita_: _The Dictionary of African Christian Biography_**
+### B. Mapping ecclesiastical _terra incognita_: _The Dictionary of African Christian Biography_
 
 From August 31 to September 2 of 1995, a scholarly consultation of modest proportions was sponsored by the Research Enablement Program (funded by Pew Charitable Trusts) and hosted by the Overseas Ministries Study Center in New Haven. It was convened to discuss the need for an International Dictionary of Non-Western Christian Biography. Volume I: Africa, or An Oral History Christian Biography Register for Africa. The official announcement issued by participants at the conclusion of consultation summarized the _raisons d'être_ and _modus operandi_ of the envisaged _Dictionary_:
 
@@ -82,7 +82,7 @@ From August 31 to September 2 of 1995, a scholarly consultation of modest propor
 
 The prescience of this announcement has been born out by subsequent developments, for the enterprise has crept steadily forward since then, so that as of this writing some 152 research institutions, seminaries, and university departments in twenty African countries have formally joined the effort to produce a base-line, biographical memory base by formally identifying themselves as _DACB_ Participating Institutions. Of these, 39 are new, 24 are active, and 89 have been inactive for the past three years. [24] It is hoped that by 2012 an additional one hundred African educational and research institutions will officially join in the task of researching and recording the stories of their continent's Church fathers and mothers.
 
-**C. The Contours of the _Dictionary_**
+### C. The Contours of the _Dictionary_
 
 **Chronologically**, the _Dictionary_ spans twenty centuries of Christian faith on the African continent, thus counteracting the notion that Christianity in Africa is little more than the religious accretion of 19th and 20th century European influence. "Christianity in Africa," Fr. John Baur aptly reminds his readers, "is not a recent happening, nor it is a by-product of colonialism--its roots go back to the very time of the Apostles." [25] A significant proportion of the database features subjects who lived and died prior to the 13th century. Some 378 names have been associated with the "Ancient Church" section of the database, while some 160 of the over 500 subjects associated with "Ethiopia" lived prior to the twelfth century, as did a majority of the 226 Coptic subjects identified as Egyptian.
 
@@ -110,7 +110,7 @@ Both the legitimacy of the subject and the accuracy of the story are safeguarded
 
 Biographical subjects are identified on the basis of their perceived local, regional, national, or continental or denominational significance. No subject is excluded if, in the opinion of communities of local believers, his or her contribution is deemed singular. In addition, printed materials of all kinds--church and mission archives, church histories, mission histories, denominational histories, doctoral and masters' theses, in-house denominational and mission society magazines, as well as existing reference tools and biographical dictionaries--are routinely culled with a view to discovering the identities and stories of key African Christians.
 
-**E. Publication and Distribution**
+### E. Publication and Distribution
 
 The _Dictionary_ is being produced as a web-based resource and distributed as a CD-ROM in its annually updated form to all African participating institutions. The advantages of electronic publishing are such that academic publications and reference works now routinely appear in digital form. This was the burden of an article by the director of Yale University's Center for Advanced Instructional Media nearly a decade ago, considering the organizational and technical implications of publishing on the World Wide Web:
 
@@ -153,7 +153,7 @@ In September of 2003, I was notified that an editorial team comprised of members
 
 The _DACB_ also inspired the _Biographical Dictionary of Chinese Christianity_ (_BDCC_), playing a key consulting role in the consortia of church leaders and historians that serve on its board, and serving as project incubator while the managing director, Dr. Yading Li, spent two years getting the on-line memory base up and running. This English-language database is now flourishing.
 
-**F. Conclusion**
+### F. Conclusion
 
 Among the several ongoing challenges facing the _Dictionary_, an obvious one is the unevenness of its country, language, and denominational content. It is readily evident that while the numbers of stories in English are relatively plentiful, other-language entries still lag far behind. [40] This is due to neither oversight nor neglect, but to the linguistic limitations of the principals involved, to logistical and financial realities, and to the fact that the _Dictionary_ reflects only those stories that have been submitted. Not _DACB_ facilitators in New Haven, but participating institutions and their duly designated liaison coordinators in Africa, are the key to selecting, researching and writing entries for the dictionary.
 

@@ -1,5 +1,5 @@
 ---
-title: Become a DACB Partner
+title: Torne-se um parceiro DIBICA
 layout: single-full
 permalink: /pt/get-involved/contribute/
 lang: pt
@@ -10,32 +10,36 @@ languages-available:
   - sw
 ---
 
-Discrete accounts have been established for the _DACB_ at both Boston University in the USA and at Providence University College in Canada. These accounts comply with the fiscal accountability and governance standards of both institutions. Donations to both are fully tax deductible.  
+Foram estabelecidas contas discretas para o _DIBICA_ na Universidade de Boston nos EUA e no Providence University College, no Canadá. Essas contas cumprem os padrões de responsabilidade fiscal e governança de ambas as instituições. As doações para ambos são totalmente dedutíveis.  
 
-**American donations should be sent to:**
+**As doações americanas devem ser enviadas para:**
 
 _Dictionary of African Christian Biography_  
 c/o Mr. Kevin C. Keith  
 Boston University School of Theology  
 745 Commonwealth Ave  
-Boston, MA  02215
+Boston, MA  02215  
 
-For information regarding wire transfers, contact Mr. Kevin C. Keith at [kkeith@bu.edu](mailto:kkeith@bu.edu)
+Para obter informações sobre transferências, entre em contato com o Sr. Kevin C. Keith em  [kkeith@bu.edu](mailto:kkeith@bu.edu)
 
-Checks should be made out to Boston University School of Theology, and clearly marked as support for the _Dictionary of African Christian Biography._ Funds are administered by the Center for Global Christianity and Mission (CGCM), under the direction of Professor Dana Robert.  
+s cheques devem ser feitos para a Escola de Teologia da Universidade de Boston, e claramente marcados como suporte para o _Dicionario de Biografias Cristãs da África_. Os fundos são administrados pelo Centro de Cristianismo Global e Missão (CGCM), sob a direção do Professor Dana Robert.
 
-To donate online visit [www.bu.edu/cgcm/donate-2/](http://www.bu.edu/cgcm/donate-2/). After clicking on the red button at the bottom of the page, you will be redirected to a donation page. Then follow these steps:  
+**Para doar online:**  
+Visite [www.bu.edu/cgcm/donate-2/](http://www.bu.edu/cgcm/donate-2/). Depois de clicar no botão vermelho na parte inferior da página, você será redirecionado para uma página de doação. Em seguida, siga estas etapas:
 
-1) Click on the red button that says "CLICK HERE TO CHOOSE A FUND"  
-2) When the box pops up, scroll down using the arrow or the square scroller to the list of "SCHOOLS AND COLLEGES" and select “School of Theology”  
-3) Click "CONTINUE"  
-4) Add the amount you want to donate in U.S. dollars  
-5) In the blank box, add “**DACB 93*10201**”  
-6) Choose single or other payment and enter your personal information and credit card information.  
+1) Clique no botão vermelho que diz "LICK HERE TO CHOOSE A FUND"
+2) Quando a caixa aparecer, role para baixo usando a seta ou o scroller quadrado para a lista de "SCHOOLS AND COLLEGES" e selecione "School of Theology"
+3) Clique em "CONTINUE"
+4) Adicione o valor que deseja doar em dólares americanos
+5) Na caixa em branco, adicione "**DACB 93*10201**"
+6) Escolha pagamento individual ou outro e insira suas informações pessoais e informações de cartão de crédito.
 
-**Canadian Friends of the _DACB_.** The Project Director has established an office at Providence University College in Otterburne, Manitoba. Canadian donations to the enterprise will be routed through this office. The office will provide an annual report to the Managing Editorial Committee in Boston. A small ad hoc Canadian advisory group will counsel the Project Director on DACB fund raising initiatives in Canada  
+***  
 
-**Canadian donations should be sent to:**
+**Amigos Canadenses do _DIBICA.**  
+O Diretor do Projeto estabeleceu um escritório no Providence University College em Otterburne, Manitoba. As doações canadenses para a empresa serão encaminhadas através deste escritório. O escritório fornecerá um relatório anual ao Comitê de Redação Gerencial em Boston. Um pequeno grupo consultivo ad hoc canadense aconselhará o Diretor do Projeto nas iniciativas de angariação de fundos do DIBICA no Canadá
+
+**As doações Canadenses devem ser enviadas para:**
 
 _Dictionary of African Christian Biography_  
 Attn: Business Office  
@@ -43,10 +47,10 @@ Providence University College and Seminary
 Otterburne, MB R0A 1G0  
 Canada
 
-For information regarding wire transfers, contact Mr. John Laugesen at [john.laugesen@prov.ca](mailto:john.laugesen@prov.ca)  
+Para obter informações sobre transferências, entre em contato com o Sr. John Laugesen em [john.laugesen@prov.ca](mailto: john.laugesen@prov.ca)  
 
-Checks should be made out to Providence University College, and clearly marked as support for the _Dictionary of African Christian Biography_. Funds are administered by Providence University College in collaboration with the _DACB_ Project Director.  
+Os cheques devem ser feitos para Providence University College, e claramente marcados como suporte para o _Dicionario de Biografias Cristãs da África_. Os fundos são administrados pelo Providence University College em colaboração com o diretor de projeto _DIBICA_.
 
-For online giving in Canada, visit [www.canadahelps.org/dn/18306](http://www.canadahelps.org/dn/18306).  
+Para receber online no Canadá, visite [www.canadahelps.org/dn/18306](http://www.canadahelps.org/dn/18306).
 
-_All U.S. and Canadian donations are tax deductible._
+_Todas as doações Americanas e Canadenses são dedutíveis de impostos._.

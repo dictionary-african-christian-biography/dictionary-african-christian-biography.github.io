@@ -5,35 +5,35 @@ permalink: /resources/educators/
 lang: en
 languages-available:                         
   - en
-  - fr
-  - pt
-  - sw
+  - ' '
+  - ' '
+  - ' '
 ---
 
-**I. Introductory Materials: Getting to know the project**
+### 1\. Introduction to the Project  
 
-> a. Introduction to the project: [How the _DACB_ began, and where it is going](introduction.html) (short article)  
->   
-> b. Rationale: ["Ecclesiastical Cartography and the Invisible Continent"](xnmaps.html) by Dr. Jonathan J. Bonk, Project Director  
->   
-> c. ["Introduction to the _DACB_"](intro-dacb-web.pdf) (PDF): This PDF of a 30-minute presentation gives an overview of the project.  
->   
-> d. [DACB Brochure 2016](DACB-brochure2016-web.pdf) (PDF): Introductory brochure for printing and distributing.
+*   [What is the _DACB_?]({{site.url}}/project/what-is-dacb/)  
 
-**II. Being a Participating Institution**
+*   ["How the _DACB_ began, and where it is going"]({{site.url}}/project/beginnings/): A brief history of the project's beginnings.  
 
-> 1\. What does it mean to be a "participating institution"? How can my institution sign up?  
->      For answers to those questions, please read our [Guidelines](guidelines.html).  
->   
-> 2\. Additional Guidelines:
->
-> > a. Guidelines for [Non African Participating Institutions](guidelines-nonafrica.html)  
-> >   
-> > b. Guidelines for [Affiliated Research Institutions](guidelines-researchinstit.html)
+*   ["Ecclesiastical Cartography and the Invisible Continent"]({{site.url}}/project/vision/): The rationale and the vision behind the project, presented in by Dr. Jonathan J. Bonk, Project Director.  
 
-**III. Establishing an Institutional Archive**  
+*   ["Introduction to the _DACB_"]({{site.url}}/resources/intro-dacb-web.pdf) (PDF): The PDF of a 30-minute presentation that gives an overview of the project.  
 
-> 1\. Archives Manual: [_Rescuing the Memory of our Peoples_](ArchivesManual-English.pdf) (PDF file)  
->   
->
-> > 2\. Multi-lingual Resources: Archives Manual in Spanish: [_Rescatando la Memoria de Nuestros Pueblos_](ArchivesManual-Spanish.pdf) (PDF file)
+*   [DACB Brochure 2016]({{site.url}}/resources/DACB-brochure-2016-web.pdf) (PDF): Introductory brochure for printing and distributing.
+
+### 2\. Being a Participating Institution
+
+*    What does it mean to be a "participating institution"? How can my institution sign up? For answers to those questions, please read our [Guidelines]({{site.url}}/resources/guidelines-african-part/).
+
+**Additional Guidelines:**  
+
+*   Guidelines for [Non African Participating Institutions]({{site.url}}/resources/guidelines-nonafrican-part/) 
+
+*   Guidelines for [Affiliated Research Institutions]({{site.url}}/resources/guidelines-affiliated/)
+
+### 3\. Establishing an Institutional Archive  
+
+*   Archives Manual: [_Rescuing the Memory of our Peoples_]({{site.url}}/resources/archives-manual-english.pdf) (PDF)  
+
+*   Archives Manual in Spanish: [_Rescatando la Memoria de Nuestros Pueblos_]({{site.url}}/resources/archives-manual-spanish.pdf) (PDF)

@@ -1,5 +1,5 @@
 ---
-title: Guidelines for Writers of Biographies and Christian Histories
+title: Diretrizes para Escritores de Biografias
 layout: single-full
 permalink: /pt/get-involved/submit/
 lang: pt
@@ -10,191 +10,90 @@ languages-available:
   - sw
 ---
 
-<table align="center" width="660" border="1" cellspacing="0" cellpadding="3">
+<table bgcolor="#f5f5f5" style="text-align:center;"><tbody><tr><td markdown="span">
+**Sinta-se livre para baixar e usar qualquer dos nossos manuais:**  
+<br>
+1\. [Manual de instruções para pesquisadores e escritores]({{site.url}}/resources/port_manual_DIBICA.pdf) (PDF)  
+2\. [ Construindo Historia Oral: Ajudar os Cristãos a Contar suas Próprias Histórias]({{site.url}}/resources/doing_oral_history_portuguese.pdf) (PDF)
+</td></tr></tbody></table>
 
-<tbody>
+Na tarefa essencial de documentar a história do cristianismo africano antes de perder a memória humana, o DIBICA está empenhado em colecionar e preservar: 1) as biografias de homens e mulheres africanos, leigos e clérigos, que desempenharam um papel importante No nascimento e crescimento do cristianismo em todo o continente, desde o tempo de Jesus até o presente e 2) as histórias de movimentos religiosos, igrejas e comunidades cristãs.  
 
-<tr>
+### Diretrizes para Pesquisadores e Autores
 
-<td align="center"><span class="style2 style3">Please feel free to download and use either of our manuals:  
+Sempre que possível, incluirá todas as seguintes informações na preparação de biografias para o dicionário. O resultado final será um ** ** Artigo 200 a 3000 palavras.
 
-1\. [_Instructional Manual for Researchers and Writers_](FinalInstrManual.pdf) (PDF file: [Acrobat Reader](http://www.adobe.com/products/acrobat/readstep2.html) or another PDF reader software is needed):  
-Contains (1) Instructions for Contributing Writers (technique and format); (2) Oral History Techniques  
-(3) Procedures for Implementing the _DACB_ at Participating Institutions  
+**1. Nome (s) do sujeito. Se necessário, dar explicações sobre esses nomes**.
 
-2\. Archives Manual: [_Rescuing the Memory of our Peoples_](ArchivesManual-English.pdf) (PDF file)</span>  
-</td>
+* Os nomes de batismo
+* Os nomes de parentesco
+* Apelidos
 
-</tr>
+**2. Sobrenomes. Em casos em que existem múltiplos cônjuges, dar o nome de crianças com o nome de sua mãe ou pai biológico**.
 
-</tbody>
+* Grupo etnolingüísticos
+* Grupo de Relacionamento
+* Pai, mãe
+* esposa / esposas
+* marido / Husbands
+* filhos, netos
 
-</table>
+**3. vida do sujeito.**
 
-In the essential task of documenting the story of African Christianity before it is lost to human memory, the DACB is committed to collecting and preserving: 1) the biographies of African men and women, both lay people and clergy, who have played a significant role in the birth and growth of Christianity over the entire continent, from the time of Jesus to the present and 2) the histories of religious movements, churches, and Christian communities.  
+* Data ou data aproximada de nascimento
+* Local de nascimento: aldeia, cidade, província, nação
+* As circunstâncias excepcionais associada com o nascimento
+* experiências que moldaram o caráter da doença sujeita, infortúnios pessoais, tragédias, visões
+* Educação, graus (com a data dos estudos)
+* Conversão (com a data, se possível)
+* Chamada Departamento de Coordenação (com data)
+* Data ou data aproximada, lugar e circunstâncias da morte
 
-Please follow these guidelines when submitting [biographies](guidelines-writers.html#rwguidelines-bio) and [Christian histories](guidelines-writers.html#rwguidelines-hist). In composing your article, refer to the guidelines for formatting and content found in our [_Instructional Manual (PDF file)_](FinalInstrManual.pdf).  
+**4. Nacionalidade / cidadania.**
 
-Email all submissions to Michèle Sigg, Project Manager, [DACB@BU.edu](mailto:dacb@bu.edu)<a name="rwguidelines-bio">
+**5. Todas as línguas faladas pelo sujeito**.
 
-### A. Biographies
+**6. Membro de uma igreja**.
 
-</a>
+* Católica
+* Ortodoxa; copto
+* Protestante (conciliar, Evangélica, Anabaptiste)
+* Independente (Independent Africano Igreja, Profético Pentecostal / carismático)
 
-<center>
+**7. Nomes, locais e descrições de igrejas fundou e atuou pelo sujeito.**
 
-## Choice of Biographical Subjects
+**8. Detalhes do Departamento:** Place, duração, eventos notáveis, o impacto a longo prazo e de curto prazo.
+(Por favor, forneça informações detalhadas quanto possível, incorporando anedotas, histórias e "o que eles dizem.")
 
-</center>
+**9. A continuação da influência e importância do assunto**.
 
-As you choose biographical subjects for your research, please take into account the following guidelines:  
+**10. Publicações: relatórios, escritos, cartas, composições musicais, contribuições artísticas do assunto**.
 
-1\. Subjects whose stories already appear in the _DACB_ will normally not be considered, unless the proposed article gives significant new material and insight. Therefore it is important to consult the _DACB_ either online or at a _DACB_ participating institution, to ascertain whether or not the _DACB_ already has stories on your proposed subjects.  
-2. Your subjects need not be confined to professional clerics, missionaries, or theologians, but might include laypersons from various walks of life whose stories are essential to an understanding of the church in Africa.  
-3. General suggested length: no longer than 3,000 words and no shorter than 500 words.  
-4\. As the intent and purpose of the _DACB_ is to record the history of African Christianity, we ask that you focus on writing the stories of **deceased** subjects.  
-5\. It is the policy of _DACB_ **NOT** to publish the stories of living subjects. In very few cases, exceptions have been made if the subjects are (a) of a very venerable age (over 70) and (b) they have retired from all active ministry (in other words, their story is complete). Stories of living subjects will be kept on file in the _DACB_ office for future use.  
+**11. Fontes de informação sobre o assunto**.
 
-## Guidelines for Writing a Biography
+* Não publicada
 
-In preparing a biographical study for inclusion in the Dictionary, please insure that your article includes information on as many of the following categories as possible. The author should integrate this information into an **article** between 200 and 3000 words long.  
+1. Os relatos de testemunhas (dar nomes e endereços das testemunhas oculares, incluir detalhes de sua relação com o assunto)
+2. histórias orais e anedóticos (dar os nomes e endereços das testemunhas, incluir detalhes de seu relacionamento com a pessoa).
 
-**1\. Given name(s) of Person. As necessary, provide explanations of these names.**
+* Publicado. Sempre que possível incluir informações completas bibliográfica: título do livro, autor, editora, ano de publicação; sob o capítulo do livro, autor do capítulo, título do livro, nome do editor do livro, informações completas sobre a publicação; título do artigo da revista, o autor do artigo, título da revista, data de publicação, número da página onde o artigo, local de publicação.
 
-*   Baptismal names
-*   Kinship names
-*   Nicknames
+**12. Outras informações importantes**.
 
-**2\. Family names. If there is more than one spouse, list the children under the appropriate mother or father.**
+### Instruções para envio
 
-*   Ethno-linguistic group
-*   Kinship group
-*   Father
-*   Mother
-*   Wife/Wives
-*   Husband/Husbands
-*   Children
-*   Grandchildren
+**Para a atribuição de copyright estão completas, não se esqueça de incluir suas informações pessoais**
 
-**3\. Life Story**
+* Nome e endereço
+* Nome e endereço da igreja ao qual está filiada (e)
+* Nome e endereço da instituição acadêmica ou a missão para a qual você é parceiro (e)
+* Nomes de pessoas principalmente responsáveis pela investigação da biografia de cada sujeito
+* Nome e cargo da pessoa que liderou a pesquisa.
 
-*   Date or approximate date of birth
-*   Place of birth: village, city, province, nation
-*   Unusual circumstances associated with birth
-*   Formative experiences, such as illnesses, personal misfortunes, tragedies, visions, etc.
-*   Education, degrees (including dates)
-*   Conversion (including date, if applicable)
-*   Calling and/or ordination to ministry (including date)
-*   Date or approximate date, place, and circumstances of death
+**Por favor envie itens para o benefício do dicionário para um dos endereços fornecidos nesta brochura.**
 
-**4\. Nationality / citizenship** **5\. Languages, including first, second, third, fourth, fifth, etc.** **6\. Church affiliation**
-
-*   Roman Catholic
-*   Orthodox; Coptic
-*   Protestant (Conciliar, Evangelical, Anabaptist)
-*   Independent (African initiated, Spiritual, Pentecostal / charismatic)
-
-**7\. Names, locations, and descriptions of churches begun or served by the Subject**  
-
-**8\. Ministry details:** Where? How long? What happened? Short term and long term impact? (Please provide detailed information wherever possible, including anecdotes, stories, and hearsay)  
-
-**9\. Continuing influence and significance of the Subject**  
-
-**10\. Publications, reports, writings, letters, musical compositions, artistic contributions by the Subject**  
-
-**11\. Sources of information about the Subject**
-
-*   Unpublished
-
-1.  Eyewitness accounts (give names and addresses of storytellers who are or were eyewitnesses; include details of their relationship to the Subject)
-2.  Oral and anecdotal (give names and addresses of storytellers wherever possible, and include details of their relationship to the Subject)
-
-*   Published (include full bibliographic data wherever possible: book title, author, publisher, year of publication; title of chapter within a book, author of the chapter, title of the book, name of the editor of the book, full publication data; title of article in periodical, author of article, periodical title, date of periodical, page numbers of article, place of publication.)
-
-**12\. Other pertinent information**
-
-* * *
-
-<a name="rwguidelines-hist">
-
-### B. Christian Histories
-
-</a>
-
-<center>
-
-## Guidelines for Writing the History of a Religious Movement, Church, or Christian Community
-
-</center>
-
-In preparing a history of a religious movement, local church or Christian community, please include as much information as possible in the following categories.  
-
-**1. Origins, founders, and key personalities**
-
-*   Original founder(s): Life story and call (see Guidelines for Writing a Biography, above)
-*   Key personalities and their roles in the origins of the movement/church
-*   Significant events that led to the founding of the movement/ church
-*   Key dates, milestones
-*   Writings, sermons, publications
-
-**2. Beliefs and practices**
-
-*   Vision and philosophy of the founder
-*   Central teaching: Main points
-*   Sacred places
-*   Role and place of the Bible; of ancient church practices; of traditional religion
-*   Use of healing and miracles
-*   Practices: Description, origins, and evolution over time
-
-**3. Organizational Structure**
-
-*   Who are the leaders? Describe their roles or functions (apostle, deacon, elder, etc.).
-*   Is there a hierarchy? How are leaders and successors chosen?
-*   How is the church / movement organized? By committees or otherwise?
-*   What is the place given to women? To youth?
-*   Church polity: Is it episcopal, connexional, congregational, presbyterian?
-*   How have the organization and structure of the church evolved over time?
-
-**4. Worship and liturgy**
-
-*   Describe the worship service. How many services are there during the week? Explain the different kinds of worship services.
-*   Languages used in worship.
-*   Liturgical calendar: What important events are celebrated throughout the week, month, year?
-*   Creation of music and religious objects, art
-*   Vestments and religious clothing
-*   How have the worship and liturgy evolved over time?
-
-**5. Impact of the movement / church locally, regionally, nationally, and internationally**
-
-*   Legacy: How has the church /movement impacted society?
-*   Describe the influence and growth of the church on the local, regional, national, and international level.
-*   Is the church is related to larger ecclesiastical blocks, such as the WCC, WEA, AACC, OAIC? If so, in what capacity?
-
-**6. Sources of information**
-
-*   _Unpublished_
-*   Eyewitness accounts (give names and addresses of storytellers who are or were eyewitnesses; include details of their relationship to the church/ movement)
-*   Oral and anecdotal (give names and addresses of storytellers wherever possible, and include details of their relationship to the church / movement)
-*   _Published_ (include full bibliographic data wherever possible: book title, author, publisher, year of publication; title of chapter within a book, author of the chapter, title of the book, name of the editor of the book, full publication data; title of article in periodical, author of article, periodical title, date of periodical, page numbers of article, place of publication.)
-
-**7. Other pertinent information**
-
-* * *
-
-Please submit material intended for the Dictionary to the address below.  For proper credit to be given to you as a contributor, please include:
-
-*   Your name and address
-*   Name and address of the church with which you are affiliated
-*   Name and address of affiliated educational institution of mission agency
-*   Name of individual(s) chiefly responsible for researching the story of each Subject
-*   Name and position of the person supervising the research.
-
-* * *
-
-<div align="CENTER"><a name="address">**Dictionary of African Christian Biography**  
-</a>Center for Global Christianity and Mission (CGCM)  
-745 Commonwealth Avenue  
-Boston, Massachussetts 02215, USA  
-
-See the DACB page on the CGCM Website: [DACB at CGCM](http://www.bu.edu/cgcm/digital-projects/dictionary-of-african-christian-biography/)  
-**Email all submissions to: [DACB@BU.edu](mailto:dacb@bu.edu)**</div>
+_Dictionary de Africano Christian Biography_
+Center for Global de cristianismo e Mission (MCMC)
+745 Commonwealth Avenue
+Boston, Massachusetts 02215, EUA
+_Envoi por e-mail para:[dacb@bu.edu](mailto: dacb@bu.edu)_

@@ -5,9 +5,9 @@ permalink: /people/advisors/
 lang: en
 languages-available:                         
   - en
-  - fr
-  - pt
-  - sw
+  - ' '
+  - ' '
+  - ' '
 ---
 |---|---|
 | ![](/images/advisors/gl-allen.jpg) | **The Reverend Gabriel Leonard Allen** <br> Theologian, Ecumenist & Interfaith Activist  <br> Methodist Church  <br> The Gambia |

@@ -9,43 +9,21 @@ languages-available:
   - pt
   - sw
 ---
-
-<table align="center" width="660" border="1" cellspacing="0" cellpadding="3">
-
-<tbody>
-
-<tr>
-
-<td align="center"><span class="style2 style3">Please feel free to download and use either of our manuals:  
-
-1\. [_Instructional Manual for Researchers and Writers_](FinalInstrManual.pdf) (PDF file: [Acrobat Reader](http://www.adobe.com/products/acrobat/readstep2.html) or another PDF reader software is needed):  
-Contains (1) Instructions for Contributing Writers (technique and format); (2) Oral History Techniques  
-(3) Procedures for Implementing the _DACB_ at Participating Institutions  
-
-2\. Archives Manual: [_Rescuing the Memory of our Peoples_](ArchivesManual-English.pdf) (PDF file)</span>  
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<table bgcolor="#f5f5f5" style="text-align:center;"><tbody><tr><td markdown="span">
+**Please feel free to download and use either of our manuals:**  
+1\. [_The Instructional Manual for Researchers and Writers_]({{site.url}}/resources/final_instr_manual.pdf) (PDF)  
+2\. Archives Manual: [_Rescuing the Memory of our Peoples_]({{site.url}}/resources/archives-manual-english.pdf) (PDF)
+</td></tr></tbody></table>
 
 In the essential task of documenting the story of African Christianity before it is lost to human memory, the DACB is committed to collecting and preserving: 1) the biographies of African men and women, both lay people and clergy, who have played a significant role in the birth and growth of Christianity over the entire continent, from the time of Jesus to the present and 2) the histories of religious movements, churches, and Christian communities.  
 
-Please follow these guidelines when submitting [biographies](guidelines-writers.html#rwguidelines-bio) and [Christian histories](guidelines-writers.html#rwguidelines-hist). In composing your article, refer to the guidelines for formatting and content found in our [_Instructional Manual (PDF file)_](FinalInstrManual.pdf).  
+Please follow these guidelines when submitting [biographies](guidelines-writers.html#rwguidelines-bio) and [Christian histories](guidelines-writers.html#rwguidelines-hist). In composing your article, refer to the guidelines for formatting and content found in our [The Instructional Manual for Researchers and Writers]({{site.url}}/resources/final_instr_manual.pdf).  
 
-Email all submissions to Michèle Sigg, Project Manager, [DACB@BU.edu](mailto:dacb@bu.edu)<a name="rwguidelines-bio">
+Email all submissions to Michèle Sigg, Project Manager, [DACB@BU.edu](mailto:dacb@bu.edu)
 
-### A. Biographies
+## A. Biographies
 
-</a>
-
-<center>
-
-## Choice of Biographical Subjects
-
-</center>
+### Choice of Biographical Subjects
 
 As you choose biographical subjects for your research, please take into account the following guidelines:  
 
@@ -55,7 +33,7 @@ As you choose biographical subjects for your research, please take into account 
 4\. As the intent and purpose of the _DACB_ is to record the history of African Christianity, we ask that you focus on writing the stories of **deceased** subjects.  
 5\. It is the policy of _DACB_ **NOT** to publish the stories of living subjects. In very few cases, exceptions have been made if the subjects are (a) of a very venerable age (over 70) and (b) they have retired from all active ministry (in other words, their story is complete). Stories of living subjects will be kept on file in the _DACB_ office for future use.  
 
-## Guidelines for Writing a Biography
+### Guidelines for Writing a Biography
 
 In preparing a biographical study for inclusion in the Dictionary, please insure that your article includes information on as many of the following categories as possible. The author should integrate this information into an **article** between 200 and 3000 words long.  
 
@@ -87,7 +65,11 @@ In preparing a biographical study for inclusion in the Dictionary, please insure
 *   Calling and/or ordination to ministry (including date)
 *   Date or approximate date, place, and circumstances of death
 
-**4\. Nationality / citizenship** **5\. Languages, including first, second, third, fourth, fifth, etc.** **6\. Church affiliation**
+**4\. Nationality / citizenship**  
+
+**5\. Languages, including first, second, third, fourth, fifth, etc.**   
+
+**6\. Church affiliation**
 
 *   Roman Catholic
 *   Orthodox; Coptic
@@ -113,19 +95,10 @@ In preparing a biographical study for inclusion in the Dictionary, please insure
 
 **12\. Other pertinent information**
 
-* * *
 
-<a name="rwguidelines-hist">
+## B. Christian Histories
 
-### B. Christian Histories
-
-</a>
-
-<center>
-
-## Guidelines for Writing the History of a Religious Movement, Church, or Christian Community
-
-</center>
+### Guidelines for Writing the History of a Religious Movement, Church, or Christian Community  
 
 In preparing a history of a religious movement, local church or Christian community, please include as much information as possible in the following categories.  
 
@@ -179,22 +152,22 @@ In preparing a history of a religious movement, local church or Christian commun
 
 **7. Other pertinent information**
 
-* * *
+## C. Submitting
 
-Please submit material intended for the Dictionary to the address below.  For proper credit to be given to you as a contributor, please include:
+**For proper credit to be given to you as a contributor, please include:**  
 
 *   Your name and address
 *   Name and address of the church with which you are affiliated
 *   Name and address of affiliated educational institution of mission agency
 *   Name of individual(s) chiefly responsible for researching the story of each Subject
-*   Name and position of the person supervising the research.
+*   Name and position of the person supervising the research.  
 
-* * *
+**Please submit material intended for the Dictionary to the address below.** 
 
-<div align="CENTER"><a name="address">**Dictionary of African Christian Biography**  
-</a>Center for Global Christianity and Mission (CGCM)  
+_Dictionary of African Christian Biography_  
+Center for Global Christianity and Mission (CGCM)  
 745 Commonwealth Avenue  
 Boston, Massachussetts 02215, USA  
 
 See the DACB page on the CGCM Website: [DACB at CGCM](http://www.bu.edu/cgcm/digital-projects/dictionary-of-african-christian-biography/)  
-**Email all submissions to: [DACB@BU.edu](mailto:dacb@bu.edu)**</div>
+_Email all submissions to: [dacb@bu.edu](mailto:dacb@bu.edu)_
