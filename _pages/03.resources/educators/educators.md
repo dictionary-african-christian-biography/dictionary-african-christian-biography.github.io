@@ -28,7 +28,7 @@ languages-available:
 
 **Additional Guidelines:**  
 
-*   Guidelines for [Non African Participating Institutions]({{site.url}}/resources/guidelines-nonafrican-part/) 
+*   Guidelines for [Non African Participating Institutions]({{site.url}}/resources/guidelines-nonafrican-part/)
 
 *   Guidelines for [Affiliated Research Institutions]({{site.url}}/resources/guidelines-affiliated/)
 
