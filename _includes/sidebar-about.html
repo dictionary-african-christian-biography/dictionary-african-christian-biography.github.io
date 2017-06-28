@@ -111,12 +111,30 @@ PROJECT LUKE ___________________________________________________________________
 {% endif %}
 
 <!--  ____________________________________________________________________________________________________
-INSTITUTIONS ______ ______________________________________________________________________________________ -->
+INSTITUTIONS _____________________________________________________________________________________________ -->
 
 {% if page.lang == 'en' %}
 <div class="side-box">
         <h4><a href="{{ site.url }}/about/institutions/">Institutions</a></h4>
           <p>Many institutions from around the world contribute to the DACB. See a list of participating institutions <a href="{{ site.url }}/about/institutions/">here</a>.</p>
+</div>
+{% endif %}
+{% if page.lang == 'fr' %}
+<div class="side-box">
+        <h4><a href="{{ site.url }}/fr/about/institutions/">Institutions</a></h4>
+          <p>De nombreuses institutions du monde entier contribuent à la DIBICA. Voir la liste des institutions participantes <a href="{{ site.url }}//frabout/institutions/">ici</a>.</p>
+</div>
+{% endif %}
+{% if page.lang == 'pt' %}
+<div class="side-box">
+        <h4><a href="{{ site.url }}/pt/about/institutions/">Instituição</a></h4>
+          <p>Muitas instituições de todo o mundo contribuem para o DIBICA. Veja uma lista de instituições participantes <a href="{{ site.url }}/pt/about/institutions/">aqui</a>.</p>
+</div>
+{% endif %}
+{% if page.lang == 'sw' %}
+<div class="side-box">
+        <h4><a href="{{ site.url }}/sw/about/institutions/">Taasisi</a></h4>
+          <p>Taasisi nyingi kutoka kote duniani ili contribuer DACB. Angalia orodha ya taasisi za participante <a href="{{ site.url }}/sw/about/institutions/">hapa</a>.</p>
 </div>
 {% endif %}
 

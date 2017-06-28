@@ -534,16 +534,16 @@ t:
 #  SIDEBAR NAVIGATION TRANSLATIONS
   Sort All Stories:
     en: "Sort All Stories By"
-    fr: "Trier Toutes les Histoires Par"
-    pt: "Classifique Todas as Histórias Por"
-    sw: "Weka Hadithi Zote kwa"
+    fr: "Trier Tout Par"
+    pt: "Todas Ordenar por"
+    sw: "Weka Zote kwa"
   By Name:
     en: "Name"
     fr: "Nom"
     pt: "Nome"
     sw: "Jina"
   By Most Recent:
-    en: "Newsest"
+    en: "Newest"
     fr: "Nouveau"
     pt: "Novo"
     sw: "Karibuni Zaidi"
