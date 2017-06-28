@@ -1,20 +1,26 @@
 /* ==========================================================================
    SINGLE PAGE/POST
    ========================================================================== */
+@media all and (max-width : $medium-wide) {
+  #main {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
 
 #main {
   @include container;
   @include clearfix;
   margin-top: 1em;
-  padding-left: 3em;
-  padding-right: 3em;
+  padding-left: 2em;
+  padding-right: 2em;
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.35s;
           animation-delay: 0.35s;
 
-  @include breakpoint($x-large) {
-    max-width: $x-large;
+  @include breakpoint($large ) {
+    max-width: $large ;
   }
 }
 

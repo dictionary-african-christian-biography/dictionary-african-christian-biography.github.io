@@ -1,6 +1,6 @@
 ---
 title: Resources for Research on Christianity and Mission in Africa
-layout: single-full
+layout: single-resources
 permalink: /resources/researchers/
 lang: en
 languages-available:                         

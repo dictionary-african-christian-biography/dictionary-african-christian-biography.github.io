@@ -1,6 +1,6 @@
 ---
 title: Guidelines for Non African Participating Institutions (Second Tier)
-layout: single-full
+layout: single-resources
 permalink: /resources/guidelines-nonafrican-part/
 lang: en
 languages-available:                         

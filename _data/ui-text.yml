@@ -8,7 +8,8 @@ en: &DEFAULT_EN
   pagination_next            : "Next"
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : "/"
-  menu_label                 : "Toggle Menu"
+  menu_label                 : "Sort and Index Menu"
+  sidebar_label              : "Toggle Sidebar"
   toc_label                  : "On This Page"
   ext_link_label             : "Direct Link"
   less_than                  : "less than"
@@ -102,7 +103,8 @@ fr: &DEFAULT_FR
   pagination_next            : "Suivant"
   breadcrumb_home_label      : "Accueil"
   breadcrumb_separator       : "/"
-  menu_label                 :
+  menu_label                 : "Trier et Indexer"
+  sidebar_label              : "Voir le menu secondaire"
   toc_label                  : "Sur cette page"
   ext_link_label             : "Lien direct"
   less_than                  : "moins de"
@@ -193,7 +195,8 @@ pt: &DEFAULT_PT
   pagination_next            : "Seguinte"
   breadcrumb_home_label      : "Início"
   breadcrumb_separator       : "/"
-  menu_label                 :
+  menu_label                 : "Classificar e Indexar"
+  sidebar_label              : "Veja o Menu Lateral"
   toc_label                  : "Nesta Página"
   ext_link_label             : "Link Direto"
   less_than                  : "menos de"
@@ -629,7 +632,7 @@ gr: &DEFAULT_GR
   pagination_next            : "Επόμενo"
   breadcrumb_home_label      : "Κεντρική"
   breadcrumb_separator       : "/"
-  menu_label                 : 
+  menu_label                 :
   toc_label                  : "Πίνακας Περιεχομένων"
   ext_link_label             : "Εξωτερικός Σύνδεσμος"
   less_than                  : "Λιγότερο από"
@@ -709,6 +712,8 @@ sv-SE:
 sv-FI:
   <<: *DEFAULT_SV
 
-# Another locale
-# --------------
-#
+# Swahili
+# -----------------
+sw: &DEFAULT_PT
+    menu_label                 : "Aina na Index"
+    sidebar_label              : "Angalia Orodha ya Upande"

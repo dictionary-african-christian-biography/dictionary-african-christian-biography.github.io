@@ -1,7 +1,7 @@
 ---
 layout: single-full
 title:  "CALL FOR PAPERS: “African Christian Biography: Narratives, Beliefs, and Boundaries”"
-date:   2017-05-17 15:34:41 -0400
+date:   2015-05-17 15:34:41 -0400
 lang: en
 languages-available:
   - en

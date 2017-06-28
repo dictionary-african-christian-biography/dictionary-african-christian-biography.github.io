@@ -1,22 +1,27 @@
 
-
-<div class="masthead__inner-wrap-b">
-    <div id="logo">
-  <img src="/assets/images/logo-{{page.lang}}.gif" style="height: 4em; width: 4em;">
-  <img src="/assets/images/banner-{{page.lang}}.jpg">
-</div>
-</div>
-<div class="masthead-banner-{{page.lang}}">
+<div class="masthead-banner">
 <div class="masthead__inner-wrap">
+  <div class="logo">
+      <img src="/assets/images/logo-{{page.lang}}.gif">
+    </div>
 <nav class="top">
         <label for="drop" class="toggle-m">{{ site.t[page.lang].menu }}</label>
         <input type="checkbox" id="drop" />
         <ul class="menu">
-          <label class="toggle"><a href="#" style="padding: 0px !important">{{ site.t[page.lang].home }}</a></label>
-            <li class="menu"><a href="{{ site.url }}{{ page.lang | prepend: '/' | remove: '/en' }}">{{ site.t[page.lang].home }}</a></li>
+          <li>
+              <label for="drop-0" class="toggle"><div class="drop">{{ site.t[page.lang].home }}</div></label>
+              <a href="#"><div class="drop">{{ site.t[page.lang].home }}</div></a>
+              <input type="checkbox" id="drop-0"/>
+              <ul class=="top">
+                  <li class="second"><a href="{{ site.url }}/">English</a></li>
+                  <li class="second"><a href="{{ site.url }}/fr/">Français</a></li>
+                  <li class="second"><a href="{{ site.url }}/pt/">Português</a></li>
+                  <li class="second"><a href="{{ site.url }}/sw/">Kiswahili</a></li>
+              </ul>
+          </li>
             <li>
-                <label for="drop-1" class="toggle">{{ site.t[page.lang].stories }} +</label>
-                <a href="#">{{ site.t[page.lang].stories }}</a>
+                <label for="drop-1" class="toggle"><div class="drop">{{ site.t[page.lang].stories }}</div></label>
+                <a href="#"><div class="drop">{{ site.t[page.lang].stories }}</div></a>
                 <input type="checkbox" id="drop-1"/>
                 <ul class=="top">
                     <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/stories/">{{ site.t[page.lang].all-stories }}</a></li>
@@ -25,73 +30,45 @@
                     <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/stories/regional-histories/">{{ site.t[page.lang].regional-histories }}</a></li>
                     <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/stories/potential-subjects/">{{ site.t[page.lang].potential-subjects }}</a></li>
                 </ul>
-
             </li>
             <li>
-            <label for="drop-2" class="toggle">{{ site.t[page.lang].the-project }} +</label>
-            <a href="#">{{ site.t[page.lang].the-project }}</a>
-            <input type="checkbox" id="drop-2"/>
-            <ul class=="top">
-              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/project/what-is-dacb/">{{ site.t[page.lang].what-is-dacb }}</a></li>
-              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/project/beginnings/">{{ site.t[page.lang].beginnings }}</a></li>
-            </ul>
-            </li>
-
-            <li>
-            <label for="drop-3" class="toggle">{{ site.t[page.lang].resources }} +</label>
-            <a href="#">{{ site.t[page.lang].resources }}</a>
+            <label for="drop-3" class="toggle"><div class="drop">{{ site.t[page.lang].resources }}</div></label>
+            <a href="#"><div class="drop">{{ site.t[page.lang].resources }}</div></a>
             <input type="checkbox" id="drop-3"/>
             <ul class=="top">
-              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/resources/writers/">{{ site.t[page.lang].for-writers }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/resources/writers-educators/">{{ site.t[page.lang].for-writers-educators }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/resources/bibliographies/">{{ site.t[page.lang].bibliographies }}</a></li>
             </ul>
             </li>
             <li>
-            <label for="drop-6" class="toggle">{{ site.t[page.lang].news }} +</label>
-            <a href="#">{{ site.t[page.lang].news }}</a>
+            <label for="drop-6" class="toggle"><div class="drop">{{ site.t[page.lang].news }}</div></label>
+            <a href="#"><div class="drop">{{ site.t[page.lang].news }}</div></a>
             <input type="checkbox" id="drop-6"/>
             <ul class=="top">
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/stories/latest-sort/">{{ site.t[page.lang].latest-stories }}</a></li>
               <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/news/newsletter/">{{ site.t[page.lang].newsletter }}</a></li>
               <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/news/journal/">{{ site.t[page.lang].journal }}</a></li>
             </ul>
             </li>
             <li>
-            <label for="drop-7" class="toggle">{{ site.t[page.lang].get-involved }} +</label>
-            <a href="#">{{ site.t[page.lang].get-involved }}</a>
+            <label for="drop-7" class="toggle"><div class="drop">{{ site.t[page.lang].contribute }}</div></label>
+            <a href="#"><div class="drop">{{ site.t[page.lang].contribute }}</div></a>
             <input type="checkbox" id="drop-7"/>
             <ul class=="top">
-              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/get-involved/contact/">{{ site.t[page.lang].contact-us }}</a></li>
-              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/get-involved/contribute/">{{ site.t[page.lang].contribute }}</a></li>
-              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/get-involved/submit/">{{ site.t[page.lang].submit-stories }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/contribute/contact/">{{ site.t[page.lang].contact-us }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/contribute/partner/">{{ site.t[page.lang].partner }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/contribute/submit/">{{ site.t[page.lang].submit-stories }}</a></li>
             </ul>
             </li>
-            <li class="dropdown-search ">
-              <form>
-            <input type="search" name="filter.q" results="5" value="" placeholder="Search..."/>
-              </form>
-            </li>
+            <label class="toggle">
+              <a class="search-image" href="{{ page.lang | prepend: '/' | remove: '/en' }}/search/" style="padding: 0px !important"></a></label>
+                <li class="menu">
+                  <a class="search-image" href="{{ page.lang | prepend: '/' | remove: '/en' }}/search/" style="padding: 0px !important"></a>
+                </li>
 
         </ul>
       </nav>
 </div>
-</div>
-<div class="masthead-banner-trans">
-  <div class="masthead__inner-wrap">
- <div class="masthead__inner-wrap-left">
-    <div class="masthead-lang"> <p>{{ site.t[page.lang].page-available }}&nbsp;
-      {% if page.languages-available[3] != ' ' %}
-      <a href="/sw{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink" class="btn-sw">{{ page.languages-available[3] | upcase | strip }}</a>
-      {% endif %}
-      {% if page.languages-available[2] != ' ' %}
-      <a href="/pt{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink" class="btn-pt">{{ page.languages-available[2] | upcase | strip }}</a>
-      {% endif %}
-      {% if page.languages-available[1] != ' ' %}
-      <a href="/fr{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink" class="btn-fr">{{ page.languages-available[1] | upcase | strip }}</a>
-      {% endif %}
-      {% if page.languages-available[0] != ' ' %}
-      <a href="{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink" class="btn-en">{{ page.languages-available[0] | upcase | strip }}</a>
-      {% endif %}
-</p>
-</div>
-</div>
-</div>
+<div class="masthead-bar-{{page.lang}}">  </div>
+
 </div>

@@ -1,6 +1,6 @@
 ---
 title: Guidelines for Participating Institutions
-layout: single-full
+layout: single-resources
 permalink: /resources/guidelines-african-part/
 lang: en
 languages-available:                         

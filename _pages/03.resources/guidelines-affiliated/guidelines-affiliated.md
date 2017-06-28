@@ -1,6 +1,6 @@
 ---
 title: Guidelines for Affiliated Research Institutions
-layout: single-full
+layout: single-resources
 permalink: /resources/guidelines-affiliated/
 lang: en
 languages-available:                         
