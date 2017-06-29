@@ -1,8 +1,53 @@
 <!-- start custom footer snippets -->
-<p>
-  <a href="{{ site.url }}">EN</a> |
-  <a href="{{ site.url }}/fr/">FR</a> |
-  <a href="{{ site.url }}/pt/">PT</a> |
-  <a href="{{ site.url }}/sw/">SW</a>
-</p>
+<div class="foot-box">
+
+<!-- ####################################################
+  FIRST COLUMN
+##################################################### -->
+  <div class="box">
+      <h3 style="color:#e0c74f; margin-top:0px;"> {{ site.t[page.lang].contact-us }}</h3>
+      <p><b>Dictionary of African Christian Biography</b></br>
+      Center for Global Christianity and Mission (CGCM)</br>
+      745 Commonwealth Avenue</br>
+      Boston, Massachussetts 02215, USA</br>
+      Email: dacb@bu.edu</p>
+  </div>
+
+<!-- ####################################################
+  SECOND COLUMN
+  ##################################################### -->
+  <div class="box">
+      <h3 style="color:#e0c74f; margin-top:0px;">{{ site.t[page.lang].submit-stories }}</h3>
+        {% if page.lang == 'en' %}
+          <p>If you would like to submit a story to the DACB, you can find free resources and submission guidelines <a href="{{ site.url }}/contribute/submit/">here</a>.</p>
+        {% endif %}
+        {% if page.lang == 'fr' %}
+          <p>Si vous souhaitez soumettre une histoire au DACB, vous pouvez trouver des ressources gratuites et des directives de soumission <a href="{{ site.url }}/fr/contribute/submit/">ici</a>.</p>
+          {% endif %}
+        {% if page.lang == 'pt' %}
+          <p>Se você gostaria de enviar uma história ao DACB, você pode encontrar recursos gratuitos e diretrizes de submissão <a href="{{ site.url }}/pt/contribute/submit/">aqui</a>.</p>
+        {% endif %}
+        {% if page.lang == 'sw' %}
+          <p>Ikiwa ungependa kuwasilisha hadithi kwa DACB, unaweza kupata rasilimali za bure na miongozo ya kuwasilisha <a href="{{ site.url }}/sw/contribute/submit/">hapa</a>.</p>
+        {% endif %}
+  </div>
+
+<!-- ####################################################
+  THIRD COLUMN
+##################################################### -->
+<div class="box-end">
+    <h3 style="color:#e0c74f; margin-top:0px;">{{ site.t[page.lang].newsletter }}</h3>
+    {% if page.lang == 'en' %}
+        <p>Want to stay updated on new happenings at the DACB? Sign up for our e-newsletter <a href="{{ site.url }}/news/newsletter/">here</a>.</p>
+    {% endif %}
+    {% if page.lang == 'fr' %}
+        <p>WVous voulez rester à jour sur les nouveaux événements au DACB? Inscrivez-vous à notre newsletter électronique <a href="{{ site.url }}/fr/news/newsletter/">ici</a>.</p>
+    {% endif %}
+    {% if page.lang == 'pt' %}
+        <p>Quer ficar atualizado sobre novos acontecimentos no DACB? Inscreva-se no nosso boletim informativo <a href="{{ site.url }}/pt/news/newsletter/">aqui</a>.</p>
+    {% endif %}
+    {% if page.lang == 'sw' %}
+        <p>Unataka kukaa updated juu ya matukio mapya katika DACB? Ishara kwa jarida letu la e-mail <a href="{{ site.url }}/sw/news/newsletter/">hapa</a>.</p>
+    {% endif %}
+</div>
 <!-- end custom footer snippets -->
