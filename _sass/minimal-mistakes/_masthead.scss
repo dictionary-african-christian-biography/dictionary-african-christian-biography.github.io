@@ -362,7 +362,7 @@ li > a:only-child:after { content: ''; }
 /* Media Queries
 --------------------------------------------- */
 
-@media all and (max-width : $medium-wide) {
+@media all and (max-width : $medium) {
 
   .masthead-banner {
     background-image: url('/assets/images/masthead-back.jpg');
