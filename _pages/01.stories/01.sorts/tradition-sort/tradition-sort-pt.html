@@ -37,9 +37,10 @@ languages-available:
 {% for tag in page.tradition %}
 {% if tag == "catholic" %}
   {% include archive-category-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in csort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
 
 {% for page in isort limit:1 %}{% if forloop.first == true %}
 <h2 id="independent">Independent</h2>
@@ -54,9 +55,10 @@ languages-available:
 {% for tag in page.tradition %}
 {% if tag == "independent" %}
   {% include archive-category-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in isort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
 
 {% for page in osort limit:1 %}{% if forloop.first == true %}
 <h2 id="orthodox">Orthodox</h2>
@@ -71,9 +73,10 @@ languages-available:
 {% for tag in page.tradition %}
 {% if tag == "orthodox" %}
   {% include archive-category-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in osort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
 
 {% for page in psort limit:1 %}{% if forloop.first == true %}
 <h2 id="protestant">Protestant</h2>
@@ -88,6 +91,7 @@ languages-available:
 {% for tag in page.tradition %}
 {% if tag == "protestant" %}
   {% include archive-category-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in psort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}

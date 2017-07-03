@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "DACB"
+title                    : "Dictionary of African Christian Biography"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Dictionary of African Christian Biography"
+description              : ""
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -572,6 +572,11 @@ t:
     fr: "Institution"
     pt: "Instituição"
     sw: "Taasisi"
+  By Language:
+    en: "Language"
+    fr: "Langue"
+    pt: "Língua"
+    sw: "Lugha"
   Category Indexes:
     en: "Category Indexes"
     fr: "Catégorie Indexes"
@@ -732,6 +737,11 @@ t:
     anonymous: "Anonymous"
     bibliographies: "Bibliographies"
     sidebar_label: "Toggle Sidebar"
+    back_to_top: "Back to Top"
+    english: "English"
+    french: "French"
+    portuguese: "Portuguese"
+    swahili: "Swahili"
   fr:
     name: "Nom"
     affiliation: "Affiliation"
@@ -790,6 +800,11 @@ t:
     anonymous: "Anonyme"
     bibliographies: "Bibliographies"
     sidebar_label: "Voir le Menu Secondaire"
+    back_to_top: "Haut de Page"
+    english: "Anglais"
+    french: "Français"
+    portuguese: "Portugais"
+    swahili: "Swahili"
   pt:
     name: "Nome"
     affiliation: "Afiliação"
@@ -848,6 +863,11 @@ t:
     anonymous: "Anônimo"
     bibliographies: "Bibliografias"
     sidebar_label: "Veja o Menu Lateral"
+    back_to_top: "Topo da Página"
+    english: "Inglês"
+    french: "Francês"
+    portuguese: "Português"
+    swahili: "Swahili"
   sw:
     name: "Jina"
     affiliation: "Uhusiano"
@@ -906,6 +926,11 @@ t:
     anonymous: "Bila Majina"
     bibliographies: "Bibliografia"
     sidebar_label: "Angalia Orodha ya Upande"
+    back_to_top: "Juu ya Ukurasa"
+    english: "Kiingereza"
+    french: "Kifaransa"
+    portuguese: "Kireno"
+    swahili: "Kiswahili"
 
 #  INSTITUTION TRANSLATIONS
   Africa International University:
@@ -940,3 +965,11 @@ t:
     fr: "Baptiste"
     pt: "Batista"
     sw: "Baptist"
+#  =======================================
+# INDEX NOTE (REMOVE WHEN INDEXES COMPLETE)
+# =========================================
+  ongoing:
+    en: "Part of the recent update to the DACB included an expansion of our indexes. This expansion is an ongoing project. If you think an existing biography belongs on this index, please contact us."
+    fr: "Une partie de la mise à jour récente du DIBICA comprenait une expansion de nos index. Cette expansion est un projet en cours. Si vous pensez qu'une biographie existante appartient à cet index,  contactez-nous."
+    pt: "Parte da atualização recente do DACB incluiu uma expansão de nossos índices. Essa expansão é um projeto em andamento. Se você acha que uma biografia existente pertence a este índice,  entre em contato conosco."
+    sw: "Sehemu ya sasisho la hivi karibuni kwa DACB lilijumuisha upanuzi wa indeba zetu. Upanuzi huu ni mradi unaoendelea. Ikiwa unafikiri kuwa hariri iliyopo iko kwenye index hii, tafadhali  wasiliana nasi."

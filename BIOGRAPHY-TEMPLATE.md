@@ -1,5 +1,5 @@
 ---
-layout: single-bio
+layout: #single-bio (take out #)
 lang: ''
 languages-available:
   - ' '

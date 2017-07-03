@@ -6,4 +6,16 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">
+  {% if page.lang == 'en' %}
+  DACB is a digital resource hosted by the <a href="http://www.bu.edu/cgcm/">Center for Global Christianity and Mission</a> at Boston University School of Theology. &copy; {{ site.time | date: '%Y' }} Dictionary of African Christian Biography.
+  {% endif %}
+  {% if page.lang == 'fr' %}
+  DIBICA une ressource numérique est hébergé par le <a href="http://www.bu.edu/cgcm/">Centre pour le Christianisme Mondial et la Mission</a> à l'École de théologie de l'Université de Boston. &copy; {{ site.time | date: '%Y' }} Dictionnaire Biographique des Chrétienne d'Afrique.
+  {% endif %}
+  {% if page.lang == 'pt' %}
+  DIBICA um recurso digital é hospedado por o<a href="http://www.bu.edu/cgcm/">o Centro para Cristianismo Globais e Missões </a> na Faculdade de Teologia da Universidade de Boston. &copy; {{ site.time | date: '%Y' }} Dicionario de Biografias Cristãs da África.
+  {% endif %}
+  {% if page.lang == 'sw' %}
+  KAWAKIA ni rasilimali digital mwenyeji kwa <a href="http://www.bu.edu/cgcm/"> Kituo cha Global Ukristo na Mission </a> katika Boston Chuo cha Theology. &copy; {{ site.time | date: '%Y' }} Kamusi Ya Wasifu Wa Wakristo Wa Kiafrika.
+  {% endif %}

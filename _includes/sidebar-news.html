@@ -38,27 +38,27 @@
 E-NEWSLETTER _____________________________________________________________________________________________ -->
 
 {% if page.lang == 'en' %}
-<div class="side-box">
+<div onClick="window.open( '{{ site.url }}/news/newsletter/','_top' ); return false;" class="side-box-link">
         <h4><a href="{{ site.url }}/news/newsletter/">E-Newsletter</a></h4>
-          <p>Want to stay updated on new happenings at the DACB? Sign up for our e-newsletter <a href="{{ site.url }}/news/newsletter/">here</a>.</p>
+          <p>Want to stay updated on new happenings at the DACB? Sign up for our e-newsletter here.</p>
 </div>
 {% endif %}
 {% if page.lang == 'fr' %}
-<div class="side-box">
+<div onClick="window.open( '{{ site.url }}/fr/news/newsletter/','_top' ); return false;" class="side-box-link">
         <h4><a href="{{ site.url }}/fr/news/newsletter/">E-Newsletter</a></h4>
-          <p>WVous voulez rester à jour sur les nouveaux événements au DACB? Inscrivez-vous à notre newsletter électronique <a href="{{ site.url }}/fr/news/newsletter/">ici</a>.</p>
+          <p>WVous voulez rester à jour sur les nouveaux événements au DACB? Inscrivez-vous à notre newsletter électronique ici.</p>
 </div>
 {% endif %}
 {% if page.lang == 'pt' %}
-<div class="side-box">
+<div onClick="window.open( '{{ site.url }}/pt/news/newsletter/','_top' ); return false;" class="side-box-link">
         <h4><a href="{{ site.url }}/pt/news/newsletter/">E-Newsletter</a></h4>
-          <p>Quer ficar atualizado sobre novos acontecimentos no DACB? Inscreva-se no nosso boletim informativo <a href="{{ site.url }}/pt/news/newsletter/">aqui</a>.</p>
+          <p>Quer ficar atualizado sobre novos acontecimentos no DACB? Inscreva-se no nosso boletim informativo aqui.</p>
 </div>
 {% endif %}
 {% if page.lang == 'sw' %}
-<div class="side-box">
+<div onClick="window.open( '{{ site.url }}/sw/news/newsletter/','_top' ); return false;" class="side-box-link">
         <h4><a href="{{ site.url }}/sw/news/newsletter/">E-Jarida</a></h4>
-          <p>Unataka kukaa updated juu ya matukio mapya katika DACB? Ishara kwa jarida letu la e-mail <a href="{{ site.url }}/sw/news/newsletter/">hapa</a>.</p>
+          <p>Unataka kukaa updated juu ya matukio mapya katika DACB? Ishara kwa jarida letu la e-mail hapa.</p>
 </div>
 {% endif %}
 
@@ -66,29 +66,12 @@ E-NEWSLETTER ___________________________________________________________________
 JOURNAL __________________________________________________________________________________________________ -->
 
 {% if page.lang == 'en' %}
-<div class="side-box">
+<div onClick="window.open( '{{ site.url }}/news/journal/','_top' ); return false;" class="side-box-link">
         <h4><a href="{{ site.url }}/news/journal/">Journal</a></h4>
-          <p>The DACB regularly publishes the Journal of African Christan Biography. You can vew digital copies <a href="{{ site.url }}/news/journal/">here</a>.</p>
+          <p>The DACB regularly publishes the Journal of African Christan Biography. You can vew digital copies here.</p>
 </div>
 {% endif %}
-{% if page.lang == 'fr' %}
-<div class="side-box">
-        <h4><a href="{{ site.url }}/news/journal/">Journal</a></h4>
-          <p>Le DIBICA publie régulièrement le Journal of African Christian Biography. Vous pouvez visualiser des copies numériques <a href="{{ site.url }}/fr/news/journal/">ici</a>.</p>
-</div>
-{% endif %}
-{% if page.lang == 'pt' %}
-<div class="side-box">
-        <h4><a href="{{ site.url }}/news/journal/">Jornal</a></h4>
-          <p>O DACB publica regularmente a Revista de Biografia Cristã Africana. Você pode ver cópias digitais <a href="{{ site.url }}/pt/news/journal/">aqui</a>.</p>
-</div>
-{% endif %}
-{% if page.lang == 'sw' %}
-<div class="side-box">
-        <h4><a href="{{ site.url }}/news/journal/">Journal</a></h4>
-          <p>DACB mara kwa mara huchapisha Journal ya Biografia ya Kikristo ya Afrika. Unaweza kutafsiri nakala za digital <a href="{{ site.url }}/sw/news/journal/">hapa</a>.</p>
-</div>
-{% endif %}
+
 
       </ul>
     </nav>

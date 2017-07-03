@@ -1,0 +1,97 @@
+---
+layout: archive
+title: "Language Sort"
+permalink: /stories/language-sort/
+lang: en
+languages-available:
+  - en
+  - fr
+  - pt
+  - sw
+---
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}
+{% assign sorted = site.pages | where: "layout","single-bio" | sort:"title" %}
+
+{% assign esort = sorted | where: "lang","en" %}
+{% assign fsort = sorted | where: "lang","fr" %}
+{% assign psort = sorted | where: "lang","pt" %}
+{% assign ssort = sorted | where: "lang","sw" %}
+
+<p>
+<a href="#en">{{ site.t[parent_lang].english }}</a> |
+<a href="#fr">{{ site.t[parent_lang].french }}</a> |
+<a href="#pt">{{ site.t[parent_lang].portuguese }}</a> |
+<a href="#sw">{{ site.t[parent_lang].swahili }}</a>
+</P>
+
+{% for page in esort limit:1 %}{% if forloop.first == true %}
+<h2 id="en">{{ site.t[parent_lang].english }}</h2>
+<table><thead>
+<th width=35%>{{ site.t[parent_lang].name }}</th>
+<th width=25%>{{ site.t[parent_lang].affiliation }}</th>
+<th width=25%>{{ site.t[parent_lang].country }}</th>
+<th width=15%>{{ site.t[parent_lang].languages }}</th>
+</thead></table>
+{% endif %}{% endfor %}
+{% for page in sorted %}
+{% for tag in page.lang %}
+{% if tag == "en" %}
+  {% include archive-category-index.html parent_lang=parent_lang %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in esort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
+
+{% for page in fsort limit:1 %}{% if forloop.first == true %}
+<h2 id="fr">{{ site.t[parent_lang].french }}</h2>
+<table><thead>
+<th width=35%>{{ site.t[parent_lang].name }}</th>
+<th width=25%>{{ site.t[parent_lang].affiliation }}</th>
+<th width=25%>{{ site.t[parent_lang].country }}</th>
+<th width=15%>{{ site.t[parent_lang].languages }}</th>
+</thead></table>
+{% endif %}{% endfor %}
+{% for page in sorted %}
+{% for tag in page.lang %}
+{% if tag == "fr" %}
+  {% include archive-category-index.html parent_lang=parent_lang %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in fsort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
+
+{% for page in psort limit:1 %}{% if forloop.first == true %}
+<h2 id="pt">{{ site.t[parent_lang].portuguese }}</h2>
+<table><thead>
+<th width=35%>{{ site.t[parent_lang].name }}</th>
+<th width=25%>{{ site.t[parent_lang].affiliation }}</th>
+<th width=25%>{{ site.t[parent_lang].country }}</th>
+<th width=15%>{{ site.t[parent_lang].languages }}</th>
+</thead></table>
+{% endif %}{% endfor %}
+{% for page in sorted %}
+{% for tag in page.lang %}
+{% if tag == "pt" %}
+  {% include archive-category-index.html parent_lang=parent_lang %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in psort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
+
+{% for page in ssort limit:1 %}{% if forloop.first == true %}
+<h2 id="sw">{{ site.t[parent_lang].swahili }}</h2>
+<table><thead>
+<th width=35%>{{ site.t[parent_lang].name }}</th>
+<th width=25%>{{ site.t[parent_lang].affiliation }}</th>
+<th width=25%>{{ site.t[parent_lang].country }}</th>
+<th width=15%>{{ site.t[parent_lang].languages }}</th>
+</thead></table>
+{% endif %}{% endfor %}
+{% for page in sorted %}
+{% for tag in page.lang %}
+{% if tag == "sw" %}
+  {% include archive-category-index.html parent_lang=parent_lang %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in ssort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}

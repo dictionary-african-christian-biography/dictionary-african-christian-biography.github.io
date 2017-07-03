@@ -1,7 +1,7 @@
 /* ==========================================================================
    BUTTONS
    ========================================================================== */
-   
+
 /*
    Default button
    ========================================================================== */
@@ -60,6 +60,32 @@
     }
   }
 
+  &--inverse-form {
+    color: $gray !important;
+    border: 1px solid $light-gray !important; /* override*/
+    background-color: #fff;
+    padding: 1.45em;
+    margin-top: .25em;
+
+    &:hover {
+      color: #fff !important;
+      border-color: $gray;
+    }
+  }
+
+  &--inverse-long {
+    color: #e0c74f  !important;
+    border: 1px solid $light-gray !important; /* override*/
+    background-color: $dark-gray;
+    width: 100%;
+    margin-top: .25em;
+
+
+    &:hover {
+      color: $light-gray !important;
+      border-color: $gray;
+    }
+  }
   /* light outline */
 
   &--light-outline {

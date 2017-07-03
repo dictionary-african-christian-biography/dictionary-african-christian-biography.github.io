@@ -36,7 +36,7 @@ en: &DEFAULT_EN
   comment_form_name_label    : "Name"
   comment_form_email_label   : "Email address"
   comment_form_website_label : "Website (optional)"
-  comment_btn_submit         : "Submit Comment"
+  comment_btn_submit         : "Submit"
   comment_btn_submitted      : "Submitted"
   comment_success_msg        : "Thanks for your comment! It will show on the site once it has been approved."
   comment_error_msg          : "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again."
@@ -223,7 +223,7 @@ pt: &DEFAULT_PT
   comment_form_name_label    : "Nome"
   comment_form_email_label   : "Endereço Email"
   comment_form_website_label : "Site (opcional)"
-  comment_btn_submit         : "Sumbeter Comentário"
+  comment_btn_submit         : "Sumbeter"
   comment_btn_submitted      : "Submetido"
   comment_success_msg        : "Obrigado pelo seu comentário! Será visível no site logo que aprovado."
   comment_error_msg          : "Lamento, ocorreu um erro na sua submissão. Por favor verifique se todos os campos obrigatórios estão corretamente preenchidos e tente novamente."
@@ -717,3 +717,4 @@ sv-FI:
 sw: &DEFAULT_PT
     menu_label                 : "Aina na Index"
     sidebar_label              : "Angalia Orodha ya Upande"
+    comment_btn_submit         : "Kutuma"

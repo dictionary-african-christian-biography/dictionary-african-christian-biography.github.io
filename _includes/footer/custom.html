@@ -19,20 +19,20 @@
   <div class="box">
       <h3 style="color:#e0c74f; margin-top:0px;">{{ site.t[page.lang].submit-stories }}</h3>
         {% if page.lang == 'en' %}
-          <p>If you would like to submit a story to the DACB, you can find free resources and submission guidelines <a href="{{ site.url }}/contribute/submit/">here</a>.</p>
-          <a href="{{site.url}}/contribute/submit/" class="btn btn--inverse">{{ site.t[page.lang].submit-stories }}</a>
+          <p style="margin-bottom: 1em;">If you would like to submit a story to the DACB, you can find free resources and submission guidelines <a href="{{ site.url }}/contribute/submit/">here</a>.<br></p>
+          <a href="{{site.url}}/contribute/submit/" class="btn btn--inverse-long">{{ site.t[page.lang].submit-stories }}</a>
         {% endif %}
         {% if page.lang == 'fr' %}
-          <p>Si vous souhaitez soumettre une histoire au DACB, vous pouvez trouver des ressources gratuites et des directives de soumission <a href="{{ site.url }}/fr/contribute/submit/">ici</a>.</p>
-          <a href="{{site.url}}/fr/contribute/submit/" class="btn btn--inverse">{{ site.t[page.lang].submit-stories }}</a>
+          <p style="margin-bottom: 1em;">Si vous souhaitez soumettre une histoire au DACB, vous pouvez trouver des ressources gratuites et des directives de soumission <a href="{{ site.url }}/fr/contribute/submit/">ici</a>.<br></p>
+          <a href="{{site.url}}/fr/contribute/submit/" class="btn btn--inverse-long">{{ site.t[page.lang].submit-stories }}</a>
           {% endif %}
         {% if page.lang == 'pt' %}
-          <p>Se você gostaria de enviar uma história ao DACB, você pode encontrar recursos gratuitos e diretrizes de submissão <a href="{{ site.url }}/pt/contribute/submit/">aqui</a>.</p>
-          <a href="{{site.url}}/pt/contribute/submit/" class="btn btn--inverse">{{ site.t[page.lang].submit-stories }}</a>
+          <p style="margin-bottom: 1em;">Se você gostaria de enviar uma história ao DACB, você pode encontrar recursos gratuitos e diretrizes de submissão <a href="{{ site.url }}/pt/contribute/submit/">aqui</a>.<br></p>
+          <a href="{{site.url}}/pt/contribute/submit/" class="btn btn--inverse-long">{{ site.t[page.lang].submit-stories }}</a>
         {% endif %}
         {% if page.lang == 'sw' %}
-          <p>Ikiwa ungependa kuwasilisha hadithi kwa DACB, unaweza kupata rasilimali za bure na miongozo ya kuwasilisha <a href="{{ site.url }}/sw/contribute/submit/">hapa</a>.</p>
-          <a href="{{site.url}}/sw/contribute/submit/" class="btn btn--inverse">{{ site.t[page.lang].submit-stories }}</a>
+          <p style="margin-bottom: 1em;">Ikiwa ungependa kuwasilisha hadithi kwa DACB, unaweza kupata rasilimali za bure na miongozo ya kuwasilisha <a href="{{ site.url }}/sw/contribute/submit/">hapa</a>.<br></p>
+          <a href="{{site.url}}/sw/contribute/submit/" class="btn btn--inverse-long">{{ site.t[page.lang].submit-stories }}</a>
         {% endif %}
   </div>
 
@@ -43,26 +43,31 @@
     <h3 style="color:#e0c74f; margin-top:0px;">{{ site.t[page.lang].newsletter }}</h3>
     {% if page.lang == 'en' %}
         <p>Want to stay updated on new happenings at the DACB? Sign up for our e-newsletter here.</p>
-        <form action="/action_page.php">
-          Email: <input type="text" name="firstname" value="Email"> <input type="submit" value="Submit">
-        </form>
+        <div style="display:inline-block;width:100%;"><form method="POST" action="http://formspree.io/alexraymay@gmail.com">
+          <div style="float:left;width:100%;"><input type="name" name="Name" placeholder="{{site.t[page.lang].name}}"><input type="email" name="Email" placeholder="Email"></div>
+          <div><button type="submit" class="btn btn--inverse-long">{{site.data.ui-text[page.lang].comment_btn_submit}}</button></div>
+        </form></div>
     {% endif %}
     {% if page.lang == 'fr' %}
         <p>WVous voulez rester à jour sur les nouveaux événements au DACB? Inscrivez-vous à notre newsletter électronique ici.</p>
-        <form action="/action_page.php">
-          Email: <input type="text" name="firstname" value="Email"> <input type="submit" value="Envoyer">
-        </form>
+        <div style="display:inline-block;width:100%;"><form method="POST" action="http://formspree.io/alexraymay@gmail.com">
+          <div style="float:left;width:100%;"><input type="name" name="Name" placeholder="{{site.t[page.lang].name}}"><input type="email" name="Email" placeholder="Email"></div>
+          <div><button type="submit" class="btn btn--inverse-long">{{site.data.ui-text[page.lang].comment_btn_submit}}</button></div>
+        </form></div>
     {% endif %}
     {% if page.lang == 'pt' %}
         <p>Quer ficar atualizado sobre novos acontecimentos no DACB? Inscreva-se no nosso boletim informativo aqui.</p>
-        <form action="/action_page.php">
-          Email: <input type="text" name="firstname" value="Email"> <input type="submit" value="Enviar">
-        </form> {% endif %}
+        <div style="display:inline-block;width:100%;"><form method="POST" action="http://formspree.io/alexraymay@gmail.com">
+          <div style="float:left;width:100%;"><input type="name" name="Name" placeholder="{{site.t[page.lang].name}}"><input type="email" name="Email" placeholder="Email"></div>
+          <div><button type="submit" class="btn btn--inverse-long">{{site.data.ui-text[page.lang].comment_btn_submit}}</button></div>
+        </form></div>
+    {% endif %}
     {% if page.lang == 'sw' %}
         <p>Unataka kukaa updated juu ya matukio mapya katika DACB? Ishara kwa jarida letu la e-mail hapa.</p>
-        <form action="/action_page.php">
-          Email: <input type="text" name="firstname" value="Email"> <input type="submit" value="Kutuma">
-        </form>
+        <div style="display:inline-block;width:100%;"><form method="POST" action="http://formspree.io/alexraymay@gmail.com">
+          <div style="float:left;width:100%;"><input type="name" name="Name" placeholder="{{site.t[page.lang].name}}"><input type="email" name="Email" placeholder="Email"></div>
+          <div><button type="submit" class="btn btn--inverse-long">{{site.data.ui-text[page.lang].comment_btn_submit}}</button></div>
+        </form></div>
     {% endif %}
 </div>
 <!-- end custom footer snippets -->

@@ -613,7 +613,7 @@
   @include breakpoint(max-width ($large - 1px)) {
 
     h4 {
-      color: #883c3c !important;
+      color: #494e52 !important;
       padding-top: 0;
     }
 
@@ -713,13 +713,13 @@
   float: left;
 
   a {
-    color: #883c3c !important;
+    color: #883c3c;
     padding: inherit;
     font-size: inherit;
     display: inline;
   }
   a:hover {
-    color: #e0c74f !important;
+    color: #e0c74f;
   }
 
   .active {

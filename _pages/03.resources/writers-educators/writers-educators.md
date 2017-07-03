@@ -46,13 +46,13 @@ languages-available:
 
 *   [_DACB_ Oral History Booklet]({{site.url}}/resources/DACB-oral-history-uganda-booklet-kampala-2008.pdf), Kampala, October 2008 (PDF); [booklet cover ]({{site.url}}/resources/DACB-oral-history-uganda-booklet-cover.pdf) (PDF file): The booklet contains a selection of _DACB_ biographies of the church in Uganda, Rwanda, and Burundi.
 
-### 4\. Project Luke Fellowship
+### 4\. Project Luke Fellowship  
 
-*   The Project Luke Fellowship offers scholarships to African scholars, clergy, and lay people _During the transition period from Overseas Ministries Study Center to the Center for Global Christianity and Mission at Boston University School of Theology (May 2011-2013), the Project Luke Fellowship program will be suspended. It will be reactivated sometime after 2013._
+The Project Luke Fellowship offers scholarships to African scholars, clergy, and lay people in order to help fund their research and writing of African Chrisitian biographies. A list of these scholars and their stories can be found [here](({{site.url}}/about/project-luke/)).
 
-### 5\. Being a Participating Institution
+### 5\. Being a Participating Institution  
 
-*    What does it mean to be a "participating institution"? How can my institution sign up? For answers to those questions, please read our [Guidelines]({{site.url}}/resources/guidelines-african-part/).
+What does it mean to be a "participating institution"? How can my institution sign up? For answers to those questions, please read our [Guidelines]({{site.url}}/resources/guidelines-african-part/).
 
 **Additional Guidelines:**  
 
