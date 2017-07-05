@@ -18,7 +18,7 @@ date: 'c. 1835 to 1923'
 century:
   - '20th'
   - '19th'
-tradition: ''
+tradition: 'independent'
 affiliation: ''
 country: 'botswana'
 ancient: ''

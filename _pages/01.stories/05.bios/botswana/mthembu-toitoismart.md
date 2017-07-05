@@ -17,7 +17,7 @@ title: 'Mthembu, Toitoi Smart'
 date: '1901 to 1985'
 century:
   - '20th'
-tradition: ''
+tradition: 'protestant'
 affiliation: ''
 country: 'botswana'
 ancient: ''

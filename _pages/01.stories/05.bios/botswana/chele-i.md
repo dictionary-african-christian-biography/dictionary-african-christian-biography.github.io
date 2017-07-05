@@ -17,7 +17,7 @@ title: 'Sechele I'
 date: 'c. 1810 to 1892'
 century:
   - '19th'
-tradition: ''
+tradition: 'independent'
 affiliation: ''
 country: 'botswana'
 ancient: ''

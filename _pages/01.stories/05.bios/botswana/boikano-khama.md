@@ -18,7 +18,7 @@ date: '1840s - 1920s'
 century:
   - '20th'
   - '19th'
-tradition: ''
+tradition: 'catholic'
 affiliation: ''
 country: 'botswana'
 ancient: ''

@@ -18,7 +18,7 @@ date: '1883 to 1916'
 century:
   - '20th'
   - '19th'
-tradition: ''
+tradition: 'orthodox'
 affiliation: ''
 country: 'botswana'
 ancient: ''

@@ -17,7 +17,7 @@ title: 'Hepburn, James Davidson'
 date: '1840 to 1893'
 century:
   - '19th'
-tradition: ''
+tradition: 'protestant'
 affiliation: ''
 country: 'botswana'
 ancient: ''

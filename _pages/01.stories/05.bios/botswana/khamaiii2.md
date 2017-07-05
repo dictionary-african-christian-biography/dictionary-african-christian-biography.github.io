@@ -18,7 +18,7 @@ date: 'c. 1837 to 1923'
 century:
   - '20th'
   - '19th'
-tradition: ''
+tradition: 'catholic'
 affiliation: ''
 country: 'botswana'
 ancient: ''

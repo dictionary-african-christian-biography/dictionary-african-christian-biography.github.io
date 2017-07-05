@@ -1,15 +1,7 @@
 {% assign count = site.pages | where: "index","primary" | where: "country", page.country %}
 
-{% if forloop.first %}
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=70%><a href="{{ include.parent_lang | prepend: '/' | remove_first: '/en' }}/stories/{{page.country}}/">
-        {{ site.t[page.country].[include.parent_lang] }}</a></td>
-      <td width=30%>{{ count.size }}</p></td>
-    </tr></tbody></table>
-</article>
-</div>
+{% if forloop.first == true %}
+{{ count.size }}
 {% else %}
 {% break %}
 {% endif %}
