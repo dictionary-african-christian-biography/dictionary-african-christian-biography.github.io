@@ -184,6 +184,7 @@ input.accordion[type=radio]:checked + label.accordion::after {
 
     &:hover {
       text-decoration: underline;
+      color: #e0c74f;
 
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);

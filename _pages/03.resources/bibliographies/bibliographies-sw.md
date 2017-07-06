@@ -9,4 +9,6 @@ languages-available:
   - pt
   - sw
 ---
-Bibliographies will go here.
+Vitabu hivi kumbukumbu na historia ya kanisa katika Afrika ni chanzo cha kadhaa ya makala yetu KAWAKIA.
+
+{% include bibliography.html %}

@@ -28,7 +28,7 @@
     display: table-row;
   }
   .en {
-    background-color: #c59c4a;
+    background-color: #7f3120;
     display:table-cell;
     margin: .5em;
     &:hover {
@@ -42,7 +42,7 @@
     }
   }
   .fr {
-    background-color: #9d437c;
+    background-color: #333d63;
     display:table-cell;
     margin: .5em;
     &:hover {
@@ -56,7 +56,7 @@
     }
   }
   .pt {
-    background-color: #5e5e5e;
+    background-color: #9f8778;
     display:table-cell;
     margin: .5em;
     &:hover {
@@ -70,7 +70,7 @@
     }
   }
   .sw {
-    background-color: #3e6543;
+    background-color: #595d50;
     display:table-cell;
     margin: .5em;
     &:hover {
@@ -162,19 +162,21 @@
   padding: 1em;
   margin-bottom: 1em;
   background-color: $lighter-gray ;
+  display: inline-block;
 }
 
 .side-box-link {
   padding: 1em;
   margin-bottom: 1em;
   background-color: $lighter-gray ;
+  border: 1px $lighter-gray solid;
 }
 
 .side-box-link:hover {
   padding: 1em;
   margin-bottom: 1em;
-  background-color: $light-gray ;
-  color: #fff;
+  background-color: $lighter-gray ;
+  border: 1px $light-gray solid;
   cursor: pointer;
 }
 
@@ -183,5 +185,5 @@
 }
 
 .side-box-link:hover h4 a{
-  color: #883c3c !important;
+  color: #e0c74f !important;
 }

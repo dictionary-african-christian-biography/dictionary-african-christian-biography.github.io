@@ -1,12 +1,26 @@
 /* ==========================================================================
    MASTHEAD
    ========================================================================== */
+.top {
+  font-family: "LithosPro", ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;    padding: 1vw !important;
+}
+
+.top ul li {
+  padding-left: .5vw !important;
+  padding-right: .5vw !important;
+  padding-top: 3vw;
+}
+.top ul li ul li {
+  padding: .5em !important;
+}
+
+
 .logo {
   display: inline-block;
   padding-top: 1.25em;
   padding-bottom: 1.25em;
   padding-left: 0;
-  width: 22em;
+  width: 30vw;
   padding-left: 0px;
  	}
 
@@ -35,7 +49,7 @@
    @include clearfix;
    display: -webkit-box;
    background-color: #000;
-   display: flex;
+   display: flex;    padding: 1vw !important;
    -webkit-box-pack: justify;
     justify-content: space-between;
   padding: 1em;
@@ -60,7 +74,7 @@
      z-index: 1;
      }
 
-   .drop {
+   /*.drop {
      background-image: url('/assets/images/drop.png');
      background-size: 10px 10px;
      background-position:right center;
@@ -69,21 +83,21 @@
      &:hover {
        background-image: url('/assets/images/drop-hover.png');
      }
-   }
+   }*/
 
    .search-image {
-     height: 1.25em;
-     width: 1.25em;
+     height: 1em;
+     width: 1em;
      margin: auto;
      background-image: url('/assets/images/search.png');
-     background-size: 1.25em 1.25em;
+     background-size: 1em 1em;
    }
    .search-image:hover {
-     height: 1.25em;
-     width: 1.25em;
+     height: 1em;
+     width: 1em;
      margin: auto;
      background-image: url('/assets/images/search-hover.png');
-     background-size: 1.25em 1.25em;
+     background-size: 1em 1em;
    }
 
 
@@ -93,6 +107,8 @@
 .masthead-bar-en {
   background-image: url("/assets/images/en-textile.jpg")!important;
   background-repeat: repeat !important;
+  background-size: 300px;
+  border-top: 4px #e0c74f solid;
    position: relative;
    width: 100%;
    height: 1em;
@@ -102,6 +118,8 @@
   .masthead-bar-fr {
    background-image: url("/assets/images/fr-textile.jpg")!important;
    background-repeat: repeat !important;
+   background-size: 300px;
+   border-top: 4px #e0c74f solid;
     position: relative;
     width: 100%;
     height: 1em;
@@ -111,6 +129,8 @@
 .masthead-bar-pt {
     background-image: url("/assets/images/pt-textile.jpg")!important;
     background-repeat: repeat !important;
+    background-size: 300px;
+    border-top: 4px #e0c74f solid;
      position: relative;
      width: 100%;
      height: 1em;
@@ -120,6 +140,8 @@
   .masthead-bar-sw {
     background-image: url("/assets/images/sw-textile.jpg")!important;
     background-repeat: repeat !important;
+    background-size: 300px;
+    border-top: 4px #e0c74f solid;
      position: relative;
      width: 100%;
      height: 1em;
@@ -187,6 +209,7 @@ input[type=text] {
 
 .masthead__menu {
   width: 100%;
+  font-family: "LithosPro", ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 
   .site-nav {
     margin-left: 0;
@@ -288,11 +311,9 @@ li.second {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 li.second a{
-  background-color: #f9f9f9;
   color: #303030
 }
 li.second a:hover{
-  background-color: #e7e7e7;
   color: #e0c74f
 }
 
@@ -305,7 +326,6 @@ nav ul li {
 /* Styling the links */
 nav a {
 	display:block;
-	padding:1.15vw;
 	color:#FFF;
 	font-size: .7rem;
 	text-decoration:none;
@@ -313,7 +333,6 @@ nav a {
 
 
 nav ul li ul li:hover {
-  background-color: #f2f3f3;
   color: #e0c74f; }
 
 /* Background color change on Hover */
@@ -364,6 +383,10 @@ li > a:only-child:after { content: ''; }
 
 @media all and (max-width : $medium) {
 
+  .top ul li {
+    padding-left: .5vw !important;
+    padding-right: .5vw !important;
+  }
   .masthead-banner {
     background-image: url('/assets/images/masthead-back.jpg');
     background-repeat: repeat-x;
@@ -379,6 +402,7 @@ li > a:only-child:after { content: ''; }
   .logo {
     display: inline-block;
     padding: 1.25em;
+    width: 25em;
     margin-left: auto;
     margin-right: auto;
 	}

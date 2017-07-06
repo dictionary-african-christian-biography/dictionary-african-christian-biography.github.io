@@ -1,6 +1,6 @@
 ---
-title: Beginnings
-layout: single-full
+title: Masomo ya Uwezo
+layout: single-resources
 permalink: /sw/stories/potential-subjects/
 lang: sw
 languages-available:                         
@@ -9,5 +9,6 @@ languages-available:
   - pt
   - sw
 ---
+Nambari zifuatazo zina majina ya masomo ya DACB, Wafrika na wamisionari, waliotajwa hapa kwa ajili ya kumbukumbu, kuwajulisha na kuhamasisha utafiti wa baadaye.
 
-This is where a list of PDFs of potential subjects will be displayed.
+{% include potential-subjects.html%}

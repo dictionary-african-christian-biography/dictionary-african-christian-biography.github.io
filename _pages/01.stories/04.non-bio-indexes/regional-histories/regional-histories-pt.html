@@ -9,20 +9,12 @@ languages-available:
   - pt
   - sw
 ---
-Regional histories will go here.
-
 {% capture parent_lang %}{{ page.lang }}{% endcapture %}
-<table><thead>
-<th width=35%>{{ site.t[page.lang].name }}</th>
-<th width=25%>{{ site.t[page.lang].affiliation }}</th>
-<th width=25%>{{ site.t[page.lang].country }}</th>
-<th width=15%>{{ site.t[page.lang].languages }}</th>
-</thead></table>
-{% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}
+{% assign sorted = site.pages | where: "index","primary" | where: "history","history" | sort:"country" %}
+
 {% for page in sorted %}
-{% for tag in page.history %}
-{% if tag == "history" %}
-  {% include archive-category-index.html parent_lang=parent_lang %}
+{% if page.title != empty %}
+  {% include history-single-index.html parent_lang=parent_lang %}
 {% endif %}
 {% endfor %}
-{% endfor %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>

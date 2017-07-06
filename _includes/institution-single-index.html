@@ -1,18 +1,3 @@
-<!-- <div><article>
-<table width=100%><tbody><tr>
-    <td width=20%>{% if page.institution == '' %}{{ site.t[include.parent_lang].non-affiliated }} {% else %}<a id="{{ page.institution | slugify }}"></a>{{ page.institution }} {% endif %}</td>
-    <td width=20%>{% if page.author == '' %} {{ site.t[include.parent_lang].anonymous }} {% else %} {{ page.author }} {% endif %} </td>
-    <td width=30%><a href="{{ page.url | relative_url}}">{{ page.title }}</a></td>
-    <td width=15%>{{ site.t[page.country].[include.parent_lang] }}</td>
-    <td width=15%>
-      <a href="{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.languages-available[0] | upcase }}</a>
-      <a href="/fr{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.languages-available[1] | upcase }}</a>
-      <a href="/pt{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.languages-available[2] | upcase }}</a>
-      <a href="/sw{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.languages-available[3] | upcase }}</a>
-    </td>
-</tr></tbody></table>
-</article>
-</div> -->
 
 {% if forloop.first %}
 {% assign check = page.institution %}

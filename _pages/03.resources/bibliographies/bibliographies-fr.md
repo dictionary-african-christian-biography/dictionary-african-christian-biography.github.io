@@ -9,4 +9,6 @@ languages-available:
   - pt
   - sw
 ---
-Bibliographies will go here.
+Ces livres de référence sur l'histoire de l'église en Afrique sont la source de plusieurs de nos articles DIBICA.
+
+{% include bibliography.html %}

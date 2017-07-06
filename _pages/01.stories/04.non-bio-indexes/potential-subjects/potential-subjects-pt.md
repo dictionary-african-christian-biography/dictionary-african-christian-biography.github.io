@@ -1,6 +1,6 @@
 ---
-title: Beginnings
-layout: single-full
+title: Assuntos Potenciais
+layout: single-resources
 permalink: /pt/stories/potential-subjects/
 lang: pt
 languages-available:                         
@@ -9,5 +9,6 @@ languages-available:
   - pt
   - sw
 ---
+Os seguintes índices contêm os nomes de sujeitos potenciais, africanos e missionários, alistados aqui para a referência, para informar e incentivar a pesquisa futura.
 
-This is where a list of PDFs of potential subjects will be displayed.
+{% include potential-subjects.html%}

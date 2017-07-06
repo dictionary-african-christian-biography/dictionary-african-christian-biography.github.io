@@ -677,11 +677,17 @@ t:
     fr: "Jeunesse"
     pt: "Juventude"
     sw: "Vijana"
+  other-subjects:
+    en: "Other Subjects"
+    fr: "Autres Sujets"
+    pt: "Outros Assuntos"
+    sw: "Majumbe Mengine"
 
 #  SITE WIDE
   en:
     name: "Name"
     affiliation: "Affiliation"
+    title: "Title"
     country: "Country"
     languages: "Languages"
     century: "Century"
@@ -764,6 +770,7 @@ t:
   fr:
     name: "Nom"
     affiliation: "Affiliation"
+    title: "Titre"
     country: "Pays"
     languages: "Langues"
     century: "Siècle"
@@ -846,6 +853,7 @@ t:
   pt:
     name: "Nome"
     affiliation: "Afiliação"
+    title: "Título"
     country: "País"
     languages: "Idiomas"
     century: "Século"
@@ -928,6 +936,7 @@ t:
   sw:
     name: "Jina"
     affiliation: "Uhusiano"
+    title: "Kichwa"
     country: "Nchi"
     languages: "Lugha"
     century: "Karne"
@@ -1007,8 +1016,20 @@ t:
     sources: "Vyanzo vya Mambo ya Haraka"
     graphic: "Graphic"
     Data: "Data"
+#  =======================================
+# INDEX & MEMORY NOTES
+# =========================================
+  memory:
+    en: "The following text belongs to our collection of eyewitness and fragmentary accounts,that includes eulogies, obituaries, and primary materials. It may lack sources and proper academic verification for accuracy."
+  ongoing:
+    en: "Part of the recent update to the DACB included an expansion of our indexes. This expansion is an ongoing project. If you think an existing biography belongs on this index, please contact us."
+    fr: "Une partie de la mise à jour récente du DIBICA comprenait une expansion de nos index. Cette expansion est un projet en cours. Si vous pensez qu'une biographie existante appartient à cet index,  contactez-nous."
+    pt: "Parte da atualização recente do DACB incluiu uma expansão de nossos índices. Essa expansão é um projeto em andamento. Se você acha que uma biografia existente pertence a este índice,  entre em contato conosco."
+    sw: "Sehemu ya sasisho la hivi karibuni kwa DACB lilijumuisha upanuzi wa indeba zetu. Upanuzi huu ni mradi unaoendelea. Ikiwa unafikiri kuwa hariri iliyopo iko kwenye index hii, tafadhali  wasiliana nasi."
 
+#  =======================================
 #  INSTITUTION TRANSLATIONS
+#  =======================================
   Africa International University:
     en: "Africa International University"
     fr: "Africa International University"
@@ -1025,7 +1046,9 @@ t:
     pt: "Universidade Babcock"
     sw: "Chuo Kikuu cha Babcock"
 
+#  =======================================
 #  AFFILIATION TRANSLATIONS
+#  =======================================
   methodist:
     en: "Methodist"
     fr: "Méthodiste"
@@ -1041,11 +1064,18 @@ t:
     fr: "Baptiste"
     pt: "Batista"
     sw: "Baptist"
-#  =======================================
-# INDEX NOTE (REMOVE WHEN INDEXES COMPLETE)
-# =========================================
-  ongoing:
-    en: "Part of the recent update to the DACB included an expansion of our indexes. This expansion is an ongoing project. If you think an existing biography belongs on this index, please contact us."
-    fr: "Une partie de la mise à jour récente du DIBICA comprenait une expansion de nos index. Cette expansion est un projet en cours. Si vous pensez qu'une biographie existante appartient à cet index,  contactez-nous."
-    pt: "Parte da atualização recente do DACB incluiu uma expansão de nossos índices. Essa expansão é um projeto em andamento. Se você acha que uma biografia existente pertence a este índice,  entre em contato conosco."
-    sw: "Sehemu ya sasisho la hivi karibuni kwa DACB lilijumuisha upanuzi wa indeba zetu. Upanuzi huu ni mradi unaoendelea. Ikiwa unafikiri kuwa hariri iliyopo iko kwenye index hii, tafadhali  wasiliana nasi."
+  presbyterian:
+    en: "Presbyterian"
+    fr: "Presbytérien"
+    pt: "Presbiteriano"
+    sw: "Presbyterian"
+  church missionary society:
+    en: "Church Missionary Society"
+    fr: "Société Missionnaire de l'Église"
+    pt: "Sociedade Missionária da Igreja"
+    sw: "Jamii ya Wasomi wa Kanisa"
+  anglican:
+    en: "Anglican"
+    fr: "Anglican"
+    pt: "Anglicano"
+    sw: "Anglicani"
