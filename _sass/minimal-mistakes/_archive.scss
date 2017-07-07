@@ -31,6 +31,7 @@
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
+    background-color: $lighter-gray;
   }
 }
 
@@ -50,22 +51,52 @@
     margin-top: 1em;
     border-bottom: none;
   }
+  .archive__item-body a:hover {
+
+      text-decoration:none;
+      color: #e0c74f;
+    }
+
+    .archive__item-body h2{
+    margin-top: 0em;
+    font-size: $type-size-6;
+
+    &:hover {
+      text-decoration:none;
+      color: #e0c74f;
+    }
+  }
 }
 
 .archive__item-excerpt {
   margin-top: 0;
-  font-size: $type-size-6;
+  font-size: .65em;
 
   & + p {
     text-indent: 0;
   }
 }
+.archive__item {
+
+}
 
 .archive__item-teaser {
-  border-radius: $border-radius;
-  overflow: hidden;
+    margin-right: .5em;
+    width: 30%;
+    float: left;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
   img {
-    width: 100%;
+    position: absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: auto;
   }
 }
 
@@ -141,7 +172,7 @@
 
     .archive__item-excerpt {
       display: block;
-      font-size: $type-size-6;
+      font-size: .65em;
     }
   }
 }
@@ -150,16 +181,21 @@
 /*
    Features
    ========================================================================== */
+.archive__item .archive__item-body {
+ padding: .5em;
+ }
 
 .feature__wrapper {
   @include clearfix();
-  margin-bottom: 2em;
-  border-bottom: 1px solid $border-color;
+  margin-bottom: 0em;
+  border-bottom: 0px solid $border-color;
 }
 
 .feature__item {
   margin-bottom: 2em;
   font-size: 1.25rem;
+  height: 200px;
+  background-color: $lighter-gray;
 
   @include breakpoint($small) {
     margin-bottom: 0;
@@ -175,6 +211,7 @@
     @include full();
     font-size: 1.25rem;
 
+
     .archive__item-teaser {
       margin-bottom: 2em;
     }
@@ -185,6 +222,13 @@
       }
 
       .archive__item-body {
+        float:left;
+        border-radius: 0;
+        height: 200px;
+        margin-right: 1em;
+        width: 30%;
+        float: left;
+        padding: .5em;
         @include span(7 of 12 last);
         @include prefix(0.5 of 12);
         @include suffix(1 of 12);
@@ -208,6 +252,8 @@
       }
 
       .archive__item-body {
+        float:left;
+        width:70%;
         @include span(7 of 12 last rtl);
         @include prefix(0.5 of 12);
         @include suffix(1 of 12);
@@ -232,6 +278,8 @@
       }
 
       .archive__item-body {
+        float:left;
+        width:70%;
         margin: 0 auto;
         width: span(7 of 12);
       }

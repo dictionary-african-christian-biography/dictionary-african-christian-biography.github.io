@@ -22,7 +22,11 @@ languages-available:
 </thead></table>
 
 {% for page in sorted %}
+{% if page.layout == single-history %}
+  {% continue %}
+{% else %}
   {% include date-single-index.html parent_lang=parent_lang %}
+{% endif %}
 {% endfor %}
 
 {% include paginator.html %}

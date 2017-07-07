@@ -41,7 +41,7 @@
 </div>
 
 {% elsif page.country != check %}
-{% assign check = page.institution %}
+{% assign check = page.country %}
 <p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
 <h2>{{ site.t[page.country].[include.parent_lang] }}</h2>
 <div>

@@ -104,7 +104,7 @@ This church was founded in 1945 by Simeon Mulendi formerly a member of the Afric
 
 The ABC attracted many excommunicated members from the AIM in Ukambani because they accommodated some Akamba traditional practices that were not tolerated in the AIM. The church also gained popularity because it aimed to restore the Akamba brotherhood lost during the colonial period and the coming of missionaries whom they accused of adversely affecting the Akamba brotherhood. The ABC started schools and hospitals which largely attracted the Akamba people and provided scholarships for individuals to attend theological seminaries so they could provide spiritual nourishment for the church. The restoration of Akamba traditional practices--such as polygamy, dowry payment, and traditional marriage ceremonies, to mention a few--made the church popular. The ABC affiliated itself with the Mau Mau and the Kenyan nationalist groups opposed to the colonial government. Consequently, it is classified as a nationalist African Instituted Church. The church has a million followers and has spread to Tanzania, Uganda, and Rwanda. The church partners with local NGOs to address the perennial food security problems and poverty in Ukambani.  
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***  
 
@@ -114,7 +114,7 @@ In 1957 a splinter group from the Anglican Church of Kenya started this church t
 
 The _Mulembe_ Church is a charismatic African church which accommodates African religious worship and rituals. It has many celebrations which include the Easter holiday, _Ukumbusho_, the harvest, the day they formed their splinter group, and many others. These celebration days are marked with drama and dances accompanied by African instruments. It has had many followers in Western Kenya. Accommodation of African traditional practices like polygamy, the use of African worship style, and the use of traditional instruments has made it popular especially to those who do not fit in the mainline churches where these practices are forbidden. The bishop is their top leader followed by the padre, evangelists, and lay leaders.  
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -125,7 +125,7 @@ The _Akorinu_ movement, also known as watu wa mungu, was founded by Joseph Nga'n
 
 The _Akorinu_ Church claims to be guided by the Holy Spirit and the Spirit of Elijah. It mainly bases its teaching on Acts 2:17, Joel 2:28, and Hebrews 8:1,10,13\. They hold to Agikuyu traditional practices like polygamy, circumcision, ritual uncleanness, and communication with ancestral spirits. They practice baptism by the Holy Spirit, and re-interpret the Bible to accommodate the African people's socio-religio-cultural practices. They pray facing Mt. Kenya and believe that God lives on Mt Kenya. The Akorinu Church has had an impact on Kenyan society because of their work ethic, humility, honesty, and a spirituality derived from the African religious worldview. It has given rise to various churches like the Holy Ghost Church of East Africa, God's Word Holy Ghost Church, Foundations of the Prophet Church, Chosen Church of Holy Spirit, Holy Spirit Church of Zion, African Holy Ghost Christian Church, and African Mission of the Holy Ghost Church of East Africa.  
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -134,7 +134,7 @@ The _Akorinu_ Church claims to be guided by the Holy Spirit and the Spirit of El
 
 This charismatic church was started by Bishop Kinoga who was born, raised, and trained as a theologian in the Anglican Church of Kenya. After a period he declined to serve with the Anglican Church of Kenya but chose to work with Bishop Evans Mrima's church called the Gospel Outreach Ministries until Mrima died. Mrima's death caused division in the Gospel Outreach Ministries Church when the pastors failed to elect a bishop because each of them wanted to become bishop. At this point Kinoga started the Bible Way Restoration Ministries, thus named because after the bishop's death each of the pastors went and started a church and the former members were left in darkness and without a leader. According to Kinoga, the Bible Way Restoration Ministries provided restoration and a way for former members of the Gospel Outreach Ministries. The church encourages Bible reading among all members, the giving of tithes, the ministration of the Holy Spirit, praise and worship celebrations, the inclusion of African song and dance in the services, the gift of prophecy, healing, and baptism by immersion. The bishop is the highest leader followed by the pastors and church elders.  
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -143,7 +143,7 @@ This charismatic church was started by Bishop Kinoga who was born, raised, and t
 
 Wole Joseph started Breakthrough Chapel International Mombasa in 1992\. Originally a member of the Winner's Chapel International in Nigeria, Wole Joseph was later posted to Mombasa. This church is part of Dominion Ministries International that Wole Joseph established in 2002\.  
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -158,7 +158,7 @@ The Chrisco Church is founded on New Testament teachings especially the fivefold
 
 _Some details provided by Pastor John Das, son of Harry and Cora Das._
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -167,7 +167,7 @@ _Some details provided by Pastor John Das, son of Harry and Cora Das._
 
 This charismatic church was started in 2007 by Pastor Benson Musau who was formerly a member of the Independent Baptist Church in Makindu District. The church believes in the authenticity of the Bible, baptism by immersion, salvation through Christ alone, and Christian holiness through repentance and cleansing through the Holy Spirit. The church practices prayer and fasting, song and dance for the Lord, and overnight prayer meetings commonly known as _Kesha_. It encourages fellowships of women, young people, and men as a way of strengthening the people's commitment to their faith and spirituality. The pastor is the highest leader followed by other pastors and church elders.  
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -176,7 +176,7 @@ This charismatic church was started in 2007 by Pastor Benson Musau who was forme
 
 Archbishop Dr. Mathews Abednego Ajuoga started this church in 1957\. The church emphasizes the Biblical teaching of love, peace, and unity. It observes baptism as a rite of passage and thus practices infant baptism. Other practices include the unveiling of the cross, the eating of blood, widow inheritance, polygamy, and women's ordination. The worship service is on Sunday and house to house visitations take place on Fridays. The church was established in Dela Hera in Migori Kisumu. Its organizational structure includes the archbishop, bishops, archdeacons, priests, deacons and lay leaders, evangelists, and church elders. Increasingly members who leave the Anglican Church of Kenya join the Church of Christ in Africa. It can be categorized as a spiritual African Initiated Church. Its membership has spread to Uganda, Tanzania, the Democratic Republic of Congo, and Zambia. It has over 900 churches in Kenya alone.  
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -185,7 +185,7 @@ Archbishop Dr. Mathews Abednego Ajuoga started this church in 1957\. The church 
 
 This charismatic church was started in 2001 by Beth Kadole in Takaungu Taita and has its headquarters in Changamwe Mombasa. The church believes in healing through prayer and fasting. The reading and application of the teaching of the Scriptures is highly emphasized. Speaking in tongues, song, and dance occupy a reasonable amount of time in their services. The bishop is the overall leader followed by pastors and elders. Because of the nature of its leadership and celebration styles, the church has largely attracted the young people in Takaungu and other places in Mombasa.  
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -194,7 +194,7 @@ This charismatic church was started in 2001 by Beth Kadole in Takaungu Taita and
 
 Dr. Joe Kayo started this church in 1970 on the basis of his interpretation of Luke 4:18-19\. Originally the church had 56 members in Kenya and subsequently it spread to Uganda, Tanzania, the DRC, and Zambia. In Kenya its branches are mainly in Nairobi, Kisumu, Mombasa, Nakuru, North Rift, Central, and Nyanza provinces. In 1978 Dr. Joe Kayo resigned from the Deliverance Church, handing it over to William Tuimising', and later began the Christian Faith Church and the Kayo Ministries International. The Deliverance Church emphasizes deliverance from the powers of Satan, faithful Christian living, individual holiness, and responsible stewardship. The church's main doctrines include baptism by immersion, speaking in tongues, performing miracles, participation in Holy Communion, and faithful tithing. Tuimising' handed over the church to Mark Kariuki who is currently the presiding bishop of the church (2009). Its organizational structure includes the office of bishop, the Apostolic councils, and the local church councils.
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -203,7 +203,7 @@ Dr. Joe Kayo started this church in 1970 on the basis of his interpretation of L
 
 This charismatic church was started around 1952 in Mombasa by Walter Olson, from Norway, who was assisted by a Kenyan called Jackson Silawa from Luo Nyanza. In 1960, the church expanded to Tanzania and opened many centers. The church seemed to penetrate most parts of East Africa because it is tolerant of aspects of African culture. The church emphasizes the reading of the book of Acts, the ministry of the Holy Spirit, and speaking in tongues. They believe in healing, the giving of tithes and offering to be blessed, miracles, and deliverance from satanic powers. They practice adult baptism, the celebration of the Lord's Supper, and other ordinances. The bishop is their highest leader.
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -212,7 +212,7 @@ This charismatic church was started around 1952 in Mombasa by Walter Olson, from
 
 This charismatic church in Kerugoya Town in Nyeri District was started by Evans Njoroge who was formerly a member of the Assemblies of God Church. After receiving a call, he left the Assemblies of God Church with some members with whom he started the church. The church insists on the ministry of the Holy Spirit and the Trinity in general. They believe in healing through repentance and prayer, salvation, deliverance, prosperity, and freedom from satanic powers. They practice the breaking of bread and Holy Communion, baptism and overnight prayers (_Kesha_). The church conducts ceremonies like burials, weddings, and open air crusades. Members also visit the poor, the sick, the orphaned, and the disadvantaged in the community. The bishop is the highest leader followed by the reverends, pastors, and deacons. Because of the nature of their worship and belief in healing through prayer, prosperity, and the deliverance from satanic powers, the church has attracted a large following among middle class people.
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -221,7 +221,7 @@ This charismatic church in Kerugoya Town in Nyeri District was started by Evans 
 
 Founder Joseph Ngoteo Nimo hails from Gatundu Division in Thika District. The church traces its origins to Ngoteo's death and resurrection experience in 1975\. This charismatic church emphasizes holiness and charismatic experiences. The church has spread to Kiambu, Nyandarua, and Thika Districts.
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -230,7 +230,7 @@ Founder Joseph Ngoteo Nimo hails from Gatundu Division in Thika District. The ch
 
 The church was started in 1963 in South Nyanza by Mama Susana who was formerly a member of the Seventh Day Adventist (SDA) Church. Mama Susana who is referred to as a prophet of the church was eventually joined by Mr. Zedekia Oduma and Mrs. Opiyo Matewa who claimed to have received healing from Mama Susana. They helped in establishing the church in South Nyanza, Yimbo, and Bondo areas. The church's doctrines are similar to those of the SDA church but with very strict observance of the Sabbath. They practice prayer and fasting on designated days and prayer for the sick by special people. They allow some cultural practices like polygamy, an aspect which makes it attractive to members of the mainline churches whose membership was dropped because of polygamy.
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -239,7 +239,7 @@ The church was started in 1963 in South Nyanza by Mama Susana who was formerly a
 
 The founder, Gladys Mwayi, felt she was called to begin a ministry to the widows. This ministry, based in Eldoret, is believed to be non-denominational.
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -250,7 +250,7 @@ Daudi Paul Kivuli and Philemon Orwa started this church in 1941 in Bunyore. Daud
 
 After Daudi's death in 1975, the church split. Under the leadership of Ayago, the Luo community formed their diocese while the Luyha changed the name of the church to the Israel Church of Africa. The church has since then changed its name several times as the leadership has changed. The church has adopted African traditional practices and criticizes any form of Western influence in worship. As a result it has especially penetrated the Luo and the Luyha communities.
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -259,7 +259,7 @@ After Daudi's death in 1975, the church split. Under the leadership of Ayago, th
 
 This charismatic church was started in 2006 in Mtongwe Mombasa by Dennis Dome who had been a popular deacon in the Jesus Celebration Center led by Paul Mulau. Dennis Dome used his position and popularity to start the Jesus Christ Centre - Mtongwe Church.
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -268,7 +268,7 @@ This charismatic church was started in 2006 in Mtongwe Mombasa by Dennis Dome wh
 
 The founder, Bishop Hon. Dr. Margaret Wanjiru Kariuki, born in 1961, was a former member of the Anglican Church of Kenya in her youth. She started this charismatic church in 1993 with a fellowship of over 20,000 members. Even though it is based in Nairobi, the church organizes evangelistic outreach efforts to areas outside Nairobi. It has a vibrant media ministry and branches in the United Kingdom, the U.S.A., South Africa, and Uganda.
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -277,7 +277,7 @@ The founder, Bishop Hon. Dr. Margaret Wanjiru Kariuki, born in 1961, was a forme
 
 Francis Clement Muciri who was born and raised in the Catholic faith, started this church in Gichugu Division in Kirinyaga District in 2006\. Muciri believes he was called by God to deliver demon possessed families and individuals. This charismatic church has its center at Karumandi Market in Gichugu but has now spread to most parts of Gichugu Division. The church emphasizes spiritual deliverance, Christian holiness, salvation through repentance, and belief in Jesus Christ. Organizationally, the overseer is the head of the church, followed by the bishop, the pastor, deacons, and ministers. The church has started various projects in the division which have helped to spread its influence in the area. Their goal is to spread the ministry to all parts of Kenya and even the world.
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -286,7 +286,7 @@ Francis Clement Muciri who was born and raised in the Catholic faith, started th
 
 Jacob Kamere of Gitunguri Kiambu District, born in 1959, started this charismatic church. The genesis of the church can be traced to a vision Jacob had in 1992 to serve Christ. Living Faith Ministries was eventually established in 1997 in Nyeri.
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -295,7 +295,7 @@ Jacob Kamere of Gitunguri Kiambu District, born in 1959, started this charismati
 
 In 2007 Bishop Harrison Ng'ang'a founded this church in Gichugu Division in Kirinyaga East District. Members say that overseer Simon Kamau established the ministry through his visions. The church has more than forty-seven congregations throughout the country basically in Rift Valley province, Central Province, and Eastern Province and in the big cities like Nairobi, Kisumu, and Mombasa. The church also has congregations in Uganda, Tanzania, South Africa, and the U.S.A. The church has attracted a high number of women because it ordains women as ministers and recognizes the role of women in the church. They emphasize Biblical teaching, prayer, proper dressing mannerisms, Christian holiness, and Christian family life.
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -304,7 +304,7 @@ In 2007 Bishop Harrison Ng'ang'a founded this church in Gichugu Division in Kiri
 
 Charles Wang'ombe started this charismatic church in 1994 in Nyeri. Born into the Presbyterian Church of East Africa, he was an active member of the Christian Union while in school. He joined the Deliverance Church in 1980 and established a branch in Nyeri. He organized church meetings and crusades, that brought in many members and prompted tremendous church growth. He was ordained bishop of the Oasis of Love Ministry International in 2004\. He used his widespread reputation to bring about more growth and firmly establish his new church. Oasis of Love Ministry International has established congregations in Nakuru, Nyeri, Nairobi, North America, and Britain.
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -315,7 +315,7 @@ This charismatic church was started by Bishop Francis N. Wanderi in the year 200
 
 The People's Church Ministries' theology is based on Mark 11:17 and Revelation 10:11\. The church belongs to the people of God and teaches self reliance through faithful giving of offerings, evangelism, and biblical theology. They observe Biblical rites like child dedication, marriage, baptism by immersion, the Lord's Supper, anointing oil, the laying on of hands, funeral/burial rites, and speaking in tongues. The church has had a local impact because of its commitment to reach out to people, especially the poor and the marginalized. It contributes money and food to the poor. Its "Grace/ Mercy Ministry" liaises with the Ministry of Health by donating hospital beds and other items needed in the hospitals in the area. These charitable initiatives have made the church popular in the area.
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -324,7 +324,7 @@ The People's Church Ministries' theology is based on Mark 11:17 and Revelation 1
 
 This charismatic church was started in 1974 in the Mathare slums in Nairobi by Bishop Arthur Kitonga who sought asylum from Uganda where he was serving as a pastor of the Anglican Church during the brutal regime of Idi Amin Dada. The same year his close friend Bishop Paul Mutua joined him and helped to start another branch in Machakos. Their preaching method targeted students in schools to teach them the faith so that they would share their faith after school. This preaching method helped to spread the RGC which is now established throughout Kenya and can currently be found in most of Africa. The RGC draws its teachings from the Bible and emphasizes the principle of _sola scriptura_ (the Bible as its own interpreter). It includes women in its ministries and has even ordained women as pastors. The RGC facilitated the ordination of Bishop Margaret Wanjiru of [Jesus Is Alive Ministries](#jiam) (JIAM). RGC doctrine emphasizes the Trinity, prayer, tithes, offerings, and Christian morality. In its organizational structure the bishop is the highest leader, followed by the pastors, evangelists, deacons, and lay leaders. The church has had an impact on society through its inclusion of women in ministry, its special programs for the poor, the widows and orphans, and other marginalized groups.
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -333,7 +333,7 @@ This charismatic church was started in 1974 in the Mathare slums in Nairobi by B
 
 This charismatic Neo-Pentecostal movement was started in 1997 by Rev. Patrick Mulunga who was born and raised in the Catholic Church. He had been a faithful Catholic in his youth, serving as an altar boy during Mass. Before finishing secondary school, he joined bad company that corrupted his morals. As a result, he spent most of his life in prison and in running battles with the police. After several years in prison he became ill and claimed to have had a vision of starting a church and serving God. Mulunga moved to Mumias Town where he began the ministry. The church has attracted the youth in large numbers because of its programs that are dominated by loud music and relaxed rules that the youth can easily follow. Because it has a special ministry to the poor and the orphans, the church has penetrated most of Western Kenya. It accommodates second wives, polygamists, and those who have left the mainline churches for other reasons. Its organization includes the bishop, pastors, and lay leaders. They do not emphasize theological training for their clergy. The church claims to drive away evil spirits and witchcraft, and believes in miracles through prayers from their bishop.
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -342,7 +342,7 @@ This charismatic Neo-Pentecostal movement was started in 1997 by Rev. Patrick Mu
 
 Roho Israel Church is a spiritual African Initiated Church started in the early 1950s near Kisumu by Paul Omumbo Achola. The church is mainly based in Kano Nyakach and South Nyanza. Several churches--Roho Msalaba and Mowar Roho (The Saved), for example--have split from it.
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -351,7 +351,7 @@ Roho Israel Church is a spiritual African Initiated Church started in the early 
 
 This charismatic church was started in 1934 by Alfayo Odongo Mango at Ruwe in Siaya District. Mango was formerly a member of the Church Mission Society (Anglican Church). He became critical of the whites serving the Anglican Church of Kenya during his time. When the ACK excommunicated him, he started a church at Ruwe which he claimed was to be guided by the Holy Spirit of God. In addition the Ruwe Holy Ghost church preaches a theology of eschatology, love for one another, and the authority of the Holy Scriptures. They observe Saturday as the day of worship. The church discourages polygamy and other African traditional practices. They remember and celebrate the death and the resurrection of Jesus Christ. They encourage the participation and ordination of women in the church. The church is popular among the Luo community and up to present has about 15,000 members.
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -360,7 +360,7 @@ This charismatic church was started in 1934 by Alfayo Odongo Mango at Ruwe in Si
 
 Charles Muchira Mugo started this charismatic church in 1993 after leaving the Presbyterian Church of East Africa (PCEA) in which he was born and the Full Gospel Churches of Kenya which he had joined in 1990\. Trinity Revival Ministry was registered in 1997\. It has over two thousand members in Nyeri, Maragwa, Nakuru, and Nairobi.
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -369,7 +369,7 @@ Charles Muchira Mugo started this charismatic church in 1993 after leaving the P
 
 Javan Kimani Thuo, from Nyaranga in Muranga District of Central Kenya, started this charismatic church in 1986\. Previously, Javan had been a primary school teacher committed to religious duties in his place of work. This church uses singing as a preaching method, doing crusades in market centers and general evangelism. It has a special ministry to the poor and the bereaved, a factor which has made it popular among the people living in the slums and among low income people. The church organizes pilgrimages once a year to the mountains and the caves where they believe they interact with God through prayer and fasting. The church observes the traditional pattern of worship which makes it attractive to the traditionalists within its area of influence. In its organizational structure the bishop is the top leader followed by the pastors, lay leaders, church elders, and Sunday school leaders.
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -378,7 +378,7 @@ Javan Kimani Thuo, from Nyaranga in Muranga District of Central Kenya, started t
 
 This church was started in Lugali District by John Wafula, a former pastor of the Pentecostal Church. Wafula defected from the Pentecostal Church, claiming that cultural practices like traditional marriage, initiation, and burial rites were insufficiently observed. The United Pentecostal Church observes all of the above and believes in healing through prayer. The United Pentecostal Church believes that salvation is only through confession of sins and not only through baptism. The church emphasizes Christian faithfulness and blessings through faithful tithing. The church has many followers, mainly in Lugali District, especially in the village where people are still practicing the traditional cultural practices which this church allows. The bishop is its highest leader followed by the pastors and administrators.
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***
 
@@ -387,6 +387,6 @@ This church was started in Lugali District by John Wafula, a former pastor of th
 
 This charismatic church was started in 2006 in Maragwa District by Kellen Kinyua Mutegi who was formerly an active member in the Presbyterian Church of East Africa. The church has spread to Meru Town where it has a total of 169 members. The church believes in deliverance and poverty eradication through prayers. It also believes in the performance of miracles, healing, deliverance from the powers of Satan, and individual transformation. They practice baptism by immersion, open air crusades, and general evangelization. The church accepts women's ordination and their equal participation with men in the church. It has had a big influence because of its acceptance of women and the participation of youth in the church.
 
-[Back to Top](/#top)   
+[Back to Top](#top)   
 
 ***

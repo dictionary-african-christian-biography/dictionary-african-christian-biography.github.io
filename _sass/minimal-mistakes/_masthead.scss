@@ -8,7 +8,7 @@
 .top ul li {
   padding-left: .5vw !important;
   padding-right: .5vw !important;
-  padding-top: 3vw;
+  padding-top: 4vw;
 }
 .top ul li ul li {
   padding: .5em !important;
@@ -273,7 +273,7 @@ label {
     margin-bottom: 0;
     color: #494e52;
     cursor: pointer;
-    font-family: ".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+    font-family: "LithosPro",".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
 }
 
 /* Giving a background-color to the nav container. */
@@ -386,6 +386,7 @@ li > a:only-child:after { content: ''; }
   .top ul li {
     padding-left: .5vw !important;
     padding-right: .5vw !important;
+    padding-top: 0;
   }
   .masthead-banner {
     background-image: url('/assets/images/masthead-back.jpg');
