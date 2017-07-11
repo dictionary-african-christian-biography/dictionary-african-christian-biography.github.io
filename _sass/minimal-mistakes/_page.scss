@@ -1,28 +1,6 @@
 /* ==========================================================================
    SINGLE PAGE/POST
    ========================================================================== */
-/* HOME SORTS */
-.home-select {
-  display: inline-block;
-  float: left;
-  width: 13.28%;
-  min-width:100px;
-  margin-right: .5em;
-  margin-bottom: 1em;
-
-  &-last {
-    display: inline-block;
-    float: left;
-    width: 13.28%;
-    min-width:100px;
-    margin-right: 0px;
-    margin-bottom: 1em;
-  }
-}
-.home-sort {
-  float: left;
-  width: 100%;
-}
 
 /* ACCORDION */
 .tab {
@@ -188,6 +166,11 @@ input.accordion[type=radio]:checked + label.accordion::after {
   li p {
     margin-top: 0px;
     line-height: 1em;
+    font-size: 11pt;
+  }
+
+  ul li {
+    font-size: 11pt;
   }
   /* paragraph indents */
   p {

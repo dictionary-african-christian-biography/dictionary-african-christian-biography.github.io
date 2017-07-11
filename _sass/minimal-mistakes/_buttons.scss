@@ -60,18 +60,25 @@
     }
   }
   &--inverse-home {
-    color: $gray !important;
-    border: 1px solid $light-gray !important; /* override*/
-    background-color: $lighter-gray;
-    padding: 0.25em .5em;
+    color: $light-gray !important;
+    border: 0px; /* override*/
+    background-color: $gray;
     float: right;
-    font-size: .65em;
+    font-size: 9pt;
+    border-radius: 0px;
+    margin-top: 0px;
+    width: 100%;
+    display: block;
+    height: 30px;
 
     &:hover {
-      color: #fff !important;
-      background-color: $gray;
-      border-color: $gray;
-      text-decoration: none;
+      color: $dark-gray !important;
+      background-color: #ffcc66;
+      text-decoration: none !important;
+    }
+
+    &:hover a{
+      text-decoration: none !important;
     }
   }
 

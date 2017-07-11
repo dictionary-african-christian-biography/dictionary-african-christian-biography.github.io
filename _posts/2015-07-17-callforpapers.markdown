@@ -1,5 +1,5 @@
 ---
-layout: single-full
+layout: single-news
 title:  "CALL FOR PAPERS: “African Christian Biography: Narratives, Beliefs, and Boundaries”"
 date:   2015-05-17 15:34:41 -0400
 lang: en

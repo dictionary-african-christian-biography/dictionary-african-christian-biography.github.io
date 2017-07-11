@@ -40,6 +40,9 @@
       width:100%;
       height:100%;
     }
+    a:hover {
+      text-decoration: none;
+    }
   }
   .fr {
     background-color: #333d63;
@@ -53,6 +56,9 @@
       display:block;
       width:100%;
       height:100%;
+    }
+    a:hover {
+      text-decoration: none;
     }
   }
   .pt {
@@ -68,6 +74,9 @@
       width:100%;
       height:100%;
     }
+    a:hover {
+      text-decoration: none;
+    }
   }
   .sw {
     background-color: #595d50;
@@ -82,6 +91,9 @@
       width:100%;
       height:100%;
     }
+    a:hover {
+      text-decoration: none;
+    }
   }
 
 /*
@@ -94,6 +106,10 @@
     padding-right: 0 !important;
   }
 }
+
+article.archive__item {
+    height: auto;
+  }
 
 .sidebar {
   -webkit-transform: translate3d(0, 0 , 0);

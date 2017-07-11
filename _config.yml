@@ -206,11 +206,11 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single-bio
+      layout: single-news
       author_profile: false
       read_time: true
-      comments: true
-      share: true
+      comments: false
+      share: false
       related: true
       sidebar:
         nav: "index-menu"
@@ -532,6 +532,11 @@ t:
     pt: Zimbábue
     sw: Zimbabwe
 #  SIDEBAR NAVIGATION TRANSLATIONS
+  Browse Stories:
+    en: "Browse Stories by"
+    fr: "Parcourir les Histoires par"
+    pt: "Procurar Histórias por"
+    sw: "Vinjari Hadithi kwa"
   Sort All Stories:
     en: "Sort All Stories By"
     fr: "Trier Tout Par"

@@ -7,25 +7,25 @@ languages-available:
   - pt
   - sw
 feature_row:
-  - image_path: assets/home/unsplash-gallery-image-1-th.jpg
-    alt: "placeholder image 1"
-    title: "Placeholder 1"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "#test-link"
+  - image_path: assets/home/shona.jpg
+    alt: "Redesigned Website for Old and New in Shona at Boston University"
+    title: "Old and New in Shona"
+    excerpt: "The website is the fruit of about 6 years of work by graduate students from the Center for Global Christianity and Mission at BU who scanned roughly..."
+    url: "/shona-new/"
     btn_label: "Read More"
     btn_class: "btn--inverse-home"
-  - image_path: /assets/home/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-    title: "Placeholder 2"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "#test-link"
+  - image_path: assets/home/protestantism.jpg
+    alt: "Protestantism has changed in 500 years!"
+    title: "Changing Protestantism"
+    excerpt: "From the Center for the Study of Global Christianity (Gordon-Conwell): For several centuries the Protestant movement was based in Europe, and then North America. In 2017 there are..."
+    url: "/protestantism-has-changed/"
     btn_label: "Read More"
     btn_class: "btn--inverse-home"
-  - image_path: assets/home/unsplash-gallery-image-1-th.jpg
-    alt: "placeholder image 1"
-    title: "Placeholder 1"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "#test-link"
+  - image_path: assets/home/agnes-okloh.jpg
+    alt: "New Journal Issue"
+    title: "New Journal Issue"
+    excerpt: "The latest issue of the Journal of African Christian Biography features articles on Prophetess Agnes Okoh of Nigeria, Anglican witnesses from Uganda..."
+    url: "/news/journal/"
     btn_label: "Read More"
     btn_class: "btn--inverse-home"
 ---
@@ -37,42 +37,13 @@ feature_row:
 
 <hr>
 
-<div width="100%">
-<h3 style="margin-top:0px;">Browse Stories</h3>
-<div class="home-select">
-  <a href="/stories/"><img class="home-sort" src="/assets/images/home-sorts/name.jpg" onmouseover="this.src='/assets/images/home-sorts/name-c.jpg';" onmouseout="this.src='/assets/images/home-sorts/name.jpg';"></a>
-  <h4 style="margin-top:.5em;display:inline-block;"> <a href="/stories/">By Name</a></h4>
+<div width="100%" style="margin-right: -10px;">
+  {% include home-select.html %}
 </div>
 
-<div class="home-select">
-  <a href="/stories/tradition-sort/"><img class="home-sort" src="/assets/images/home-sorts/tradition.jpg" onmouseover="this.src='/assets/images/home-sorts/tradition-c.jpg';" onmouseout="this.src='/assets/images/home-sorts/tradition.jpg';"></a>
-  <h4 style="margin-top:.5em;display:inline-block;"> <a href="/stories/tradition-sort/">By Tradition</a></h4>
-</div>
-
-<div class="home-select">
-  <a href="/stories/century-sort/"><img class="home-sort" src="/assets/images/home-sorts/century.jpg" onmouseover="this.src='/assets/images/home-sorts/century-c.jpg';" onmouseout="this.src='/assets/images/home-sorts/century.jpg';"></a>
-  <h4 style="margin-top:.5em;display:inline-block;"> <a href="/stories/century-sort/">By Century</a></h4>
-</div>
-
-<div class="home-select">
-  <a href="/stories/country-sort/"><img class="home-sort" src="/assets/images/home-sorts/country.jpg" onmouseover="this.src='/assets/images/home-sorts/country-c.jpg';" onmouseout="this.src='/assets/images/home-sorts/country.jpg';"></a>
-  <h4 style="margin-top:.5em;display:inline-block;"> <a href="/stories/country-sort/">By Country</a></h4>
-</div>
-
-<div class="home-select">
-  <a href="/stories/author-sort/"><img class="home-sort" src="/assets/images/home-sorts/author.jpg" onmouseover="this.src='/assets/images/home-sorts/author-c.jpg';" onmouseout="this.src='/assets/images/home-sorts/author.jpg';"></a>
-  <h4 style="margin-top:.5em;display:inline-block;"> <a href="/stories/author-sort/">By Author</a></h4>
-</div>
-
-<div class="home-select">
-  <a href="/stories/institution-sort/"><img class="home-sort" src="/assets/images/home-sorts/institution.jpg" onmouseover="this.src='/assets/images/home-sorts/institution-c.jpg';" onmouseout="this.src='/assets/images/home-sorts/institution.jpg';"></a>
-  <h4 style="margin-top:.5em;display:inline-block;"> <a href="/stories/institution-sort/">By Institution</a></h4>
-</div>
-
-<div class="home-select-last">
-  <a href="/stories/"><img class="home-sort" src="/assets/images/home-sorts/language.jpg" onmouseover="this.src='/assets/images/home-sorts/language-c.jpg';" onmouseout="this.src='/assets/images/home-sorts/language.jpg';"></a>
-  <h4 style="margin-top:.5em;display:inline-block;"> <a href="/stories/">By Language</a></h4>
-</div>
-
-
-</div>
+<div class="language-switch"><div class="lang-head">
+{% if page.languages-available[3] != ' ' %}<div class="sw"><a href="/sw{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">Kiswahili</a></div>{% endif %}
+{% if page.languages-available[2] != ' ' %}<div class="pt"><a href="/pt{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">Português</a></div>{% endif %}
+{% if page.languages-available[1] != ' ' %}<div class="fr"><a href="/fr{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">Français</a></div>{% endif %}
+{% if page.languages-available[0] != ' ' %}<div class="en"><a href="{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">English</a></div>{% endif %}
+</div></div>
