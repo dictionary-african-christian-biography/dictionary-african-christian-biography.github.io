@@ -6,10 +6,21 @@
 ##################################################### -->
   <div class="box">
       <h3 style="color:#e0c74f; margin-top:0px;"> {{ site.t[page.lang].contact-us }}</h3>
-      <p><b>Dictionary of African Christian Biography</b></br>
+    <p>  {% if page.lang == 'en' %}
+          <b>Dictionary of African Christian Biography</b></br>
+      {% endif %}
+      {% if page.lang == 'fr' %}
+            <b>Dictionnaire Biographique des Chrétiens d’Afrique</b></br>
+        {% endif %}
+        {% if page.lang == 'pt' %}
+              <b>Dicionario de Biografias Cristãs da África</b></br>
+          {% endif %}
+          {% if page.lang == 'sw' %}
+                <b>Kamusi ya Wasifu wa Wakristo wa Kiafrika</b></br>
+            {% endif %}
       Center for Global Christianity and Mission</br>
       745 Commonwealth Avenue</br>
-      Boston, Massachussetts 02215, USA</br>
+      Boston, Massachussetts 022, USA</br>
       Email: dacb@bu.edu</p>
   </div>
 
