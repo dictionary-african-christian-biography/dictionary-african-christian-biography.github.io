@@ -1,0 +1,30 @@
+---
+layout: single-about
+permalink: /about/institutions/
+title: "Institutions"
+author_profile: false
+lang: en
+languages-available:
+  - en
+  - fr
+  - pt
+  - sw
+---
+<p mardown='span'>
+Below is a list of institutions that have participated in the DACB. Click on the name of the institution to see a list of stories submitted through that institution.
+</p>
+
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}
+{% assign primary = site.pages | where: "index","primary" %}
+
+<table><thead>
+<th width=70%>{{ site.t[parent_lang].institution }}</th>
+<th width=30%>{{ site.t[parent_lang].number-bio }}</th>
+</thead></table>
+
+{% for page in primary %}
+{% assign cull = primary | where: "institution", page.institution %}
+{% if page.institution != empty and cull.size >= 3 %}
+{% include archive-institution-index.html parent_lang=parent_lang cull=cull%}
+{% endif %}
+{% endfor %}

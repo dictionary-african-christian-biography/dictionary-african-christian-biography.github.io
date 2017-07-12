@@ -12,15 +12,9 @@ languages-available:
 {% capture parent_lang %}{{ page.lang }}{% endcapture %}
 {% assign sorted = site.pages | where: "index","primary" | sort:"institution" %}
 
-<table><thead>
-  <th width=20%>{{ site.t[page.lang].institution }}</th>
-  <th width=20%>{{ site.t[page.lang].author }}</th>
-  <th width=30%>{{ site.t[page.lang].name }}</th>
-  <th width=15%>{{ site.t[page.lang].country }}</th>
-  <th width=15%>{{ site.t[page.lang].languages }}</th>
-  </thead></table>
 {% for page in sorted %}
 {% if page.title != empty %}
   {% include institution-single-index.html parent_lang=parent_lang %}
 {% endif %}
 {% endfor %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>

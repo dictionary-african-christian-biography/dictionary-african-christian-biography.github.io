@@ -1,6 +1,6 @@
 ---
-title: Beginnings
-layout: single-full
+title: Les Sujets Potentiels
+layout: single-resources
 permalink: /fr/stories/potential-subjects/
 lang: fr
 languages-available:                         
@@ -9,5 +9,6 @@ languages-available:
   - pt
   - sw
 ---
+Ces pages contiennent les noms de sujets potentiels, Africains et missionnaires--des personnages importants dont les vies ne sont pas encore documentées.
 
-This is where a list of PDFs of potential subjects will be displayed.
+{% include potential-subjects.html%}

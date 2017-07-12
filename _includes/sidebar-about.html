@@ -1,0 +1,155 @@
+{% if page.sidebar %}
+  {% if page.sidebar.nav %}
+  <div class="sidebar sticky">
+
+  <div class="language-switch2">{{ site.t[page.lang].page-available }}</div>
+  <div class="language-switch"><div class="lang-head">
+  {% if page.languages-available[3] != ' ' %}<div class="sw"><a href="/sw{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.languages-available[3] | upcase | strip }}</a></div>{% endif %}
+  {% if page.languages-available[2] != ' ' %}<div class="pt"><a href="/pt{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.languages-available[2] | upcase | strip }}</a></div>{% endif %}
+  {% if page.languages-available[1] != ' ' %}<div class="fr"><a href="/fr{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.languages-available[1] | upcase | strip }}</a></div>{% endif %}
+  {% if page.languages-available[0] != ' ' %}<div class="en"><a href="{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.languages-available[0] | upcase | strip }}</a></div>{% endif %}
+  </div></div>
+
+  <nav class="nav__list2">
+    {% if page.sidebar.title %}<h3 class="nav__title" style="padding-left: 0;">{{ page.sidebar.title }}</h3>{% endif %}
+    <input id="ac-toc" name="accordion-toc" type="checkbox" />
+    <label for="ac-toc">{{ site.t[page.lang].sidebar_label }}</label>
+    <ul class="nav__items2">
+
+<!--  ____________________________________________________________________________________________________
+EDITORIAL COMMITTEE ______________________________________________________________________________________ -->
+
+{% if page.lang == 'en' %}
+<div class="side-box">
+        <h4><a href="{{ site.url }}/about/editorial-committee/">Editorial Committee</a></h4>
+          <p><a href="{{ site.url }}/about/editorial-committee/#jonathan-bonk">Dr. Jonathan J. Bonk</a>
+            <br>Project Director</p>
+          <p><a href="{{ site.url }}/about/editorial-committee/#dana-robert">Dr. Dana Robert</a>
+            <br>Project Editor</p>
+          <p><a href="{{ site.url }}/about/editorial-committee/#lamin-sanneh">Dr. Lamin Sanneh</a>
+            <br>Project Editor</p>
+          <p><a href="{{ site.url }}/about/editorial-committee/#michele-sigg">Mrs. Michèle Sigg</a>
+            <br>Project Manager</p>
+</div>
+{% endif %}
+{% if page.lang == 'fr' %}
+<div class="side-box">
+        <h4>Editorial Committee</h4>
+          <p><b>Dr. Jonathan J. Bonk</b>
+            <br>Directeur de Projet</p>
+          <p><b>Dr. Dana Robert</b>
+            <br>Éditeur de Projet</p>
+          <p><b>Dr. Lamin Sanneh</b>
+            <br>Éditeur de Projet</p>
+          <p><b>Mme. Michèle Sigg</b>
+            <br>Chef de Projet</p>
+</div>
+{% endif %}
+{% if page.lang == 'pt' %}
+<div class="side-box">
+        <h4>Editorial Committee</h4>
+          <p><b>Dr. Jonathan J. Bonk</b>
+            <br>Diretor de Projeto</p>
+          <p><b>Dr. Dana Robert</b>
+            <br>Editor de Projeto</p>
+          <p><b>Dr. Lamin Sanneh</b>
+            <br>Editor de Projeto</p>
+          <p><b>Sra. Michèle Sigg</b>
+            <br>Gestor de Projeto</p>
+</div>
+{% endif %}
+{% if page.lang == 'sw' %}
+<div class="side-box">
+        <h4> Kamati ya Uhariri </h4>
+           <p><b>Dr. Jonathan J. Bonk</b>
+             <br>Mkurugenzi wa Mradi </p>
+           <p><b>Dr. Dana Robert</b>
+             <br>Mhariri wa Mradi </p>
+           <p><b>Dr. Lamin Sanneh</b>
+             <br>Mhariri wa Mradi </p>
+           <p><b>Bibi. Michèle Sigg</b>
+             <br>Meneja wa Mradi </p>
+</div>
+{% endif %}
+
+<!--  ____________________________________________________________________________________________________
+ADVISORY COUNCIL _________________________________________________________________________________________ -->
+
+{% if page.lang == 'en' %}
+<div onClick="window.open( '{{ site.url }}/about/advisors/','_top' ); return false;" class="side-box-link">
+        <h4><a href="{{ site.url }}/about/advisors/">Advisory Council</a></h4>
+          <p>Our advisory council ensures continutiy in the DACB's mandate. See a list of our Advisory Council members here.</p>
+</div>
+{% endif %}
+{% if page.lang == 'fr' %}
+<div onClick="window.open( '{{ site.url }}/fr/about/advisors/','_top' ); return false;" class="side-box-link">
+        <h4><a href="{{ site.url }}/fr/about/advisors/">Conseil Consultatif</a></h4>
+          <p>Notre conseil consultatif assure la continuité dans le mandat de la BCE. Voir une liste de nos membres du Conseil consultatif ici.</p>
+</div>
+{% endif %}
+{% if page.lang == 'pt' %}
+<div onClick="window.open( '{{ site.url }}/pt/about/advisors/','_top' ); return false;" class="side-box-link">
+        <h4><a href="{{ site.url }}/pt/about/advisors/">Conselho Consultivo</a></h4>
+          <p>Nosso conselho consultivo assegura a continuidade no mandato do BCE. Veja uma lista de nossos membros do Conselho Consultivo aqui.</p>
+</div>
+{% endif %}
+{% if page.lang == 'sw' %}
+<div onClick="window.open( '{{ site.url }}/sw/about/advisors/','_top' ); return false;" class="side-box-link">
+        <h4><a href="{{ site.url }}/sw/about/advisors/">Baraza la Ushauri</a></h4>
+          <p>OBaraza letu la ushauri linahakikisha kuendeleza kwa mamlaka ya ECB. Angalia orodha ya wanachama wa Baraza la Ushauri hapa.</p>
+</div>
+{% endif %}
+
+<!--  ____________________________________________________________________________________________________
+PROJECT LUKE _____________________________________________________________________________________________ -->
+
+{% if page.lang == 'en' %}
+<div onClick="window.open( '{{ site.url }}/about/project-luke/','_top' ); return false;" class="side-box-link">
+        <h4><a href="{{ site.url }}/about/project-luke/">Project Luke Fellows</a></h4>
+          <p>Project Luke supports African scholars in the writing of biographies for the DACB. See a list of Project Luke Fellows and their stories here.</p>
+</div>
+{% endif %}
+
+<!--  ____________________________________________________________________________________________________
+INSTITUTIONS _____________________________________________________________________________________________ -->
+
+{% if page.lang == 'en' %}
+<div onClick="window.open( '{{ site.url }}/about/institutions/','_top' ); return false;" class="side-box-link">
+        <h4><a href="{{ site.url }}/about/institutions/">Institutions</a></h4>
+          <p>Many institutions from around the world contribute to the DACB. See a list of participating institutions here.</p>
+</div>
+{% endif %}
+{% if page.lang == 'fr' %}
+<div onClick="window.open( '{{ site.url }}/fr/about/institutions/','_top' ); return false;" class="side-box-link">
+        <h4><a href="{{ site.url }}/fr/about/institutions/">Institutions</a></h4>
+          <p>De nombreuses institutions du monde entier contribuent à la DIBICA. Voir la liste des institutions participantes ici.</p>
+</div>
+{% endif %}
+{% if page.lang == 'pt' %}
+<div onClick="window.open( '{{ site.url }}/pt/about/institutions/','_top' ); return false;" class="side-box-link">
+        <h4><a href="{{ site.url }}/pt/about/institutions/">Instituição</a></h4>
+          <p>Muitas instituições de todo o mundo contribuem para o DIBICA. Veja uma lista de instituições participantes aqui.</p>
+</div>
+{% endif %}
+{% if page.lang == 'sw' %}
+<div onClick="window.open( '{{ site.url }}/sw/about/institutions/','_top' ); return false;" class="side-box-link">
+        <h4><a href="{{ site.url }}/sw/about/institutions/">Taasisi</a></h4>
+          <p>Taasisi nyingi kutoka kote duniani ili contribuer DACB. Angalia orodha ya taasisi za participante hapa.</p>
+</div>
+{% endif %}
+
+<!--  ____________________________________________________________________________________________________
+PARTNERS _________________________________________________________________________________________________ -->
+
+{% if page.lang == 'en' %}
+<div onClick="window.open( '{{ site.url }}/about/partners/','_top' ); return false;" class="side-box-link">
+        <h4><a href="{{ site.url }}/about/partners/">Partners</a></h4>
+          <p> Through their time and money, partners continue to make the work of the DACB possible. See a list of our partners here.</a></p>
+</div>
+{% endif %}
+
+      </ul>
+    </nav>
+  </div>
+{% endif %}
+{% endif %}

@@ -1,6 +1,6 @@
 ---
 title: Links
-layout: single-full
+layout: single-resources
 permalink: /resources/links/
 lang: en
 languages-available:                         

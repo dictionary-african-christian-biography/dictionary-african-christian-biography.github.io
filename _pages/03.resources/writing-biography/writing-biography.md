@@ -1,6 +1,6 @@
 ---
 title: Writing Biography
-layout: single-full
+layout: single-resources
 permalink: /resources/writing-biography/
 lang: en
 languages-available:                         

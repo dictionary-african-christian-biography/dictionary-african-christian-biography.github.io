@@ -1,7 +1,30 @@
 /* ==========================================================================
    MASTHEAD
    ========================================================================== */
-   .masthead-lang {
+.top {
+  font-family: "LithosPro", ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;    padding: 1vw !important;
+}
+
+.top ul li {
+  padding-left: .5vw !important;
+  padding-right: .5vw !important;
+  padding-top: 4vw;
+}
+.top ul li ul li {
+  padding: .5em !important;
+}
+
+
+.logo {
+  display: inline-block;
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+  padding-left: 0;
+  width: 30vw;
+  padding-left: 0px;
+ 	}
+
+.masthead-lang {
      position: relative;
      padding: .25em;
      display:inline-block;
@@ -26,7 +49,7 @@
    @include clearfix;
    display: -webkit-box;
    background-color: #000;
-   display: flex;
+   display: flex;    padding: 1vw !important;
    -webkit-box-pack: justify;
     justify-content: space-between;
   padding: 1em;
@@ -41,54 +64,92 @@
      }
 
    .masthead-banner {
-     background-color: #000;
+     background-image: url('/assets/images/masthead-back.jpg');
+     background-repeat: repeat-x;
+     background-size: cover;
+     background-position-y: -15px;
      position: relative;
      width: 100%;
      clear: both;
      z-index: 1;
      }
-.masthead-banner-en {
+
+   /*.drop {
+     background-image: url('/assets/images/drop.png');
+     background-size: 10px 10px;
+     background-position:right center;
+     background-repeat:no-repeat;
+     padding-right: 15px;
+     &:hover {
+       background-image: url('/assets/images/drop-hover.png');
+     }
+   }*/
+
+   .search-image {
+     height: 1em;
+     width: 1em;
+     margin: auto;
+     background-image: url('/assets/images/search.png');
+     background-size: 1em 1em;
+   }
+   .search-image:hover {
+     height: 1em;
+     width: 1em;
+     margin: auto;
+     background-image: url('/assets/images/search-hover.png');
+     background-size: 1em 1em;
+   }
+
+
+/* ==========================================================================
+  LANGUAGE BAR
+  ========================================================================== */
+.masthead-bar-en {
   background-image: url("/assets/images/en-textile.jpg")!important;
   background-repeat: repeat !important;
+  background-size: 300px;
+  border-top: 4px #ffcc66 solid;
    position: relative;
    width: 100%;
+   height: 1em;
    clear: both;
    z-index: 1;
    }
-.masthead-banner-fr {
+  .masthead-bar-fr {
    background-image: url("/assets/images/fr-textile.jpg")!important;
    background-repeat: repeat !important;
+   background-size: 300px;
+   border-top: 4px #ffcc66 solid;
     position: relative;
     width: 100%;
+    height: 1em;
     clear: both;
     z-index: 1;
     }
-.masthead-banner-pt {
+.masthead-bar-pt {
     background-image: url("/assets/images/pt-textile.jpg")!important;
     background-repeat: repeat !important;
+    background-size: 300px;
+    border-top: 4px #ffcc66 solid;
      position: relative;
      width: 100%;
+     height: 1em;
      clear: both;
      z-index: 1;
      }
-.masthead-banner-sw {
-   background-image: url("/assets/images/sw-textile.jpg")!important;
-   background-repeat: repeat !important;
-    position: relative;
-    width: 100%;
-    clear: both;
-    z-index: 1;
+  .masthead-bar-sw {
+    background-image: url("/assets/images/sw-textile.jpg")!important;
+    background-repeat: repeat !important;
+    background-size: 300px;
+    border-top: 4px #ffcc66 solid;
+     position: relative;
+     width: 100%;
+     height: 1em;
+     clear: both;
+     z-index: 1;
     }
 
 
-
-
-  .logo {
-    display: inline-block;
-    padding: 1em 1em 1em;
-    height: 6em;
-    margin: auto;
-  }
 
 .masthead {
   background: #333300;
@@ -106,15 +167,17 @@
     display: flex;
     -webkit-box-pack: justify;
      justify-content: space-between;
-    padding: 0em 3em 0em;
+    padding: 0em 2em 0em;
     font-family: $sans-serif-narrow;
 
-    @include breakpoint($x-large) {
-      max-width: $x-large;
+    @include breakpoint($large) {
+      max-width: $large ;
     }
 
     nav {
       z-index: 10;
+      float: right;
+      padding-top: 2em;
     }
 
     a {
@@ -146,6 +209,7 @@ input[type=text] {
 
 .masthead__menu {
   width: 100%;
+  font-family: "LithosPro", ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 
   .site-nav {
     margin-left: 0;
@@ -173,13 +237,11 @@ nav ul ul.side {
   }
 nav ul ul.side li {
    display: block !important;
-   background-color: #fff;
    list-style-type: none;
    font-family: $sans-serif;
   }
 nav ul ul.side li a{
    display: block !important;
-  background-color: #fff;
   list-style-type: none;
   font-family: $sans-serif;
   padding: 0;
@@ -197,7 +259,7 @@ li.dropdown-search {
 }
 
 input, textarea, select {
- font-size: .8rem;
+ font-size: .7em;
  padding: .2em;
 }
 
@@ -211,7 +273,7 @@ label {
     margin-bottom: 0;
     color: #494e52;
     cursor: pointer;
-    font-family: ".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+    font-family: "LithosPro",".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
 }
 
 /* Giving a background-color to the nav container. */
@@ -221,12 +283,6 @@ nav {
   z-index: 1;
   font-family: ".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
   width: 100%
-}
-
-#logo {
-  background-color: #000;
-  display: inline-block;
-  margin: auto;
 }
 
 /* Since we'll have the "ul li" "float:left"
@@ -246,6 +302,7 @@ nav ul {
 	list-style: none;
 	position: relative;
   z-index: 1;
+  float: right;
 	}
 
 li.second {
@@ -254,11 +311,9 @@ li.second {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 li.second a{
-  background-color: #f9f9f9;
   color: #303030
 }
 li.second a:hover{
-  background-color: #e7e7e7;
   color: #e0c74f
 }
 
@@ -266,21 +321,18 @@ li.second a:hover{
 nav ul li {
 	margin: 0px;
 	display:inline-block;
-	float: left;
 	}
 
 /* Styling the links */
 nav a {
 	display:block;
-	padding:14px 20px;
 	color:#FFF;
-	font-size: .8rem;
+	font-size: .7rem;
 	text-decoration:none;
 }
 
 
 nav ul li ul li:hover {
-  background-color: #f2f3f3;
   color: #e0c74f; }
 
 /* Background color change on Hover */
@@ -329,14 +381,54 @@ li > a:only-child:after { content: ''; }
 /* Media Queries
 --------------------------------------------- */
 
-@media all and (max-width : 768px) {
+@media all and (max-width : $medium) {
 
-	#logo {
+  .top ul li {
+    padding-left: .5vw !important;
+    padding-right: .5vw !important;
+    padding-top: 0;
+  }
+  .masthead-banner {
+    background-image: url('/assets/images/masthead-back.jpg');
+    background-repeat: repeat-x;
+    background-size: 100em;
+    background-color: #78261b;
+    background-position-y: -15px;
+    position: relative;
+    width: 100%;
+    clear: both;
+    z-index: 1;
+    }
+
+  .logo {
     display: inline-block;
-		padding: 0;
-		width: 100%;
-		text-align: center;
+    padding: 1.25em;
+    width: 25em;
+    margin-left: auto;
+    margin-right: auto;
 	}
+
+  .flex {
+    float:left;
+    clear:both;
+	}
+
+  .masthead__inner-wrap {
+      flex-wrap: wrap;
+    }
+
+    .masthead__inner-wrap nav {
+        padding-top: 0;
+      }
+
+    nav ul {
+    	padding:0;
+    	margin:0;
+    	list-style: none;
+    	position: relative;
+      z-index: 1;
+      float: none;
+    	}
 
 	nav {
 		margin: 0;
@@ -360,10 +452,10 @@ li > a:only-child:after { content: ''; }
 	/* Stylinf the toggle lable */
 	.toggle {
 		display: block;
-		padding:14px 20px;
+		padding:14px 14px;
     background-color: #303030;
 		color:#FFF;
-		font-size: .8rem;
+		font-size: .7em;
 		text-decoration:none;
 		border:none;
 	}
@@ -373,9 +465,9 @@ li > a:only-child:after { content: ''; }
 	}
   .toggle-m {
 		display: block;
-		padding:14px 20px;
+		padding:14px 14px;
 		color:#FFF;
-		font-size: .8rem;
+		font-size: .7em;
 		text-decoration:none;
 		border:none;
     text-align: center;
@@ -394,6 +486,7 @@ li > a:only-child:after { content: ''; }
 	nav ul li {
 		display: block;
 		width: 100%;
+    border-bottom: 1px #fff solid !important;
 		}
 
 	nav ul ul .toggle,
@@ -412,15 +505,15 @@ li > a:only-child:after { content: ''; }
 	nav ul li ul li .toggle,
 	nav ul ul a,
   nav ul ul ul a{
-		padding:14px 20px;
+		padding:14px 14px;
 		color:#FFF;
-		font-size: .8rem;
+		font-size: .7em;
 	}
 
 
 	nav ul li ul li .toggle,
 	nav ul ul a {
-		background-color: #212121;
+		background-color: none;
 	}
 
 	/* Hide Dropdowns by Default */

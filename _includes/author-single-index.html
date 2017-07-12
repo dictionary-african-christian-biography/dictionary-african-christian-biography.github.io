@@ -1,7 +1,15 @@
 <div><article>
 <table width=100%><tbody><tr>
     <td width=20%>{% if page.author == '' %} {{ site.t[include.parent_lang].anonymous }} {% else %} {{ page.author }} {% endif %}</td>
-    <td width=25%><a href="{{ page.url | relative_url}}">{{ page.title }}</a></td>
+    <td width=25%>
+      {% if page.lang == parent_lang %}
+              <a href="{{ page.url | relative_url}}">{{ page.title }}</a></td>
+      {% elsif page.languages-available contains parent_lang %}
+              <a href="/{{parent_lang}}{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.title }}</a></td>
+      {% else %}
+              <a href="{{ page.url | relative_url}}">{{ page.title }}</a>
+      {% endif %}
+    </td>
     <td width=20%>
       {% assign aff = site.t[page.affiliation].[include.parent_lang] %}
       {% if aff == nil and page.affiliation == '' %} {{ site.t[include.parent_lang].non-affiliated }} {% else %} {{ aff }} {% endif %}

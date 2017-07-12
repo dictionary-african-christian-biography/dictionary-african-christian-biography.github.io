@@ -1,0 +1,107 @@
+{% if page.sidebar %}
+  {% if page.sidebar.nav %}
+  <div class="sidebar sticky">
+
+  <div class="language-switch2">{{ site.t[page.lang].page-available }}</div>
+  <div class="language-switch"><div class="lang-head">
+  {% if page.languages-available[3] != ' ' %}<div class="sw"><a href="/sw{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.languages-available[3] | upcase | strip }}</a></div>{% endif %}
+  {% if page.languages-available[2] != ' ' %}<div class="pt"><a href="/pt{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.languages-available[2] | upcase | strip }}</a></div>{% endif %}
+  {% if page.languages-available[1] != ' ' %}<div class="fr"><a href="/fr{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.languages-available[1] | upcase | strip }}</a></div>{% endif %}
+  {% if page.languages-available[0] != ' ' %}<div class="en"><a href="{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.languages-available[0] | upcase | strip }}</a></div>{% endif %}
+  </div></div>
+
+  <nav class="nav__list2">
+    {% if page.sidebar.title %}<h3 class="nav__title" style="padding-left: 0;">{{ page.sidebar.title }}</h3>{% endif %}
+    <input id="ac-toc" name="accordion-toc" type="checkbox" />
+    <label for="ac-toc">{{ site.t[page.lang].sidebar_label }}</label>
+    <ul class="nav__items2">
+
+  <!--  ____________________________________________________________________________________________________
+  SUBMIT STORIES ___________________________________________________________________________________________ -->
+
+{% if page.lang == 'en' %}
+<div onClick="window.open( '{{ site.url }}/contribute/submit/','_top' ); return false;" class="side-box-link">
+        <h4><a href="{{ site.url }}/contribute/submit/">Submit Stories</a></h4>
+          <p>If you would like to submit a story to the DACB, you can find free resources and submission guidelines here.</p>
+</div>
+{% endif %}
+{% if page.lang == 'fr' %}
+<div onClick="window.open( '{{ site.url }}/fr/contribute/submit/','_top' ); return false;" class="side-box-link">
+        <h4><a href="{{ site.url }}/fr/contribute/submit/">Soumettre des Histoires</a></h4>
+          <p>Si vous souhaitez soumettre une histoire au DACB, vous pouvez trouver des ressources gratuites et des directives de soumission ici.</p>
+</div>
+{% endif %}
+{% if page.lang == 'pt' %}
+<div onClick="window.open( '{{ site.url }}/pt/contribute/submit/','_top' ); return false;" class="side-box-link">
+        <h4><a href="{{ site.url }}/pt/contribute/submit/">Enviar Histórias</a></h4>
+          <p>Se você gostaria de enviar uma história ao DACB, você pode encontrar recursos gratuitos e diretrizes de submissão aqui.</p>
+</div>
+{% endif %}
+{% if page.lang == 'sw' %}
+<div onClick="window.open( '{{ site.url }}/sw/contribute/submit/','_top' ); return false;" class="side-box-link">
+        <h4><a href="{{ site.url }}/sw/contribute/submit/">Wasilisha Hadithi</a></h4>
+          <p>Ikiwa ungependa kuwasilisha hadithi kwa DACB, unaweza kupata rasilimali za bure na miongozo ya kuwasilisha hapa.</p>
+</div>
+{% endif %}
+
+<!--  ____________________________________________________________________________________________________
+PARNTER __________________________________________________________________________________________________ -->
+
+{% if page.lang == 'en' %}
+<div onClick="window.open( '{{ site.url }}/contribute/partner/','_top' ); return false;" class="side-box-link">
+        <h4><a href="{{ site.url }}/contribute/partner/">Partner with Us</a></h4>
+          <p>DACB depends on its partners to continue to fulfill its mission. If you would like to partner with us, find out more here.</p>
+</div>
+{% endif %}
+{% if page.lang == 'fr' %}
+<div class="side-box">
+  <div onClick="window.open( '{{ site.url }}/fr/contribute/partner/','_top' ); return false;" class="side-box-link">
+          <p>DIBICA dépend de ses partenaires pour continuer à remplir sa mission. Si vous souhaitez collaborer avec nous, découvrez plus ici.</p>
+</div>
+{% endif %}
+{% if page.lang == 'pt' %}
+<div onClick="window.open( '{{ site.url }}/pt/contribute/partner/','_top' ); return false;" class="side-box-link">
+        <h4><a href="{{ site.url }}/pt/contribute/partner/">Parceira com a Gente</a></h4>
+          <p>O DIBICA depende dos seus parceiros para continuar a cumprir sua missão. Se você gostaria de fazer parceria com a gente, descubra mais aqui.</p>
+</div>
+{% endif %}
+{% if page.lang == 'sw' %}
+<div onClick="window.open( '{{ site.url }}/sw/contribute/partner/','_top' ); return false;" class="side-box-link">
+        <h4><a href="{{ site.url }}/sw/contribute/partner/">Mshirika na Nasi</a></h4>
+          <p>KAWAKIA inategemea washirika wake kuendelea kufanya kazi yake. Ikiwa ungependa kushirikiana nasi, tafuta zaidi hapa.</p>
+</div>
+{% endif %}
+
+<!--  ____________________________________________________________________________________________________
+CONTACT US _______________________________________________________________________________________________ -->
+
+{% if page.lang == 'en' %}
+<div onClick="window.open( '{{ site.url }}/contribute/contact/','_top' ); return false;" class="side-box-link">
+        <h4><a href="{{ site.url }}/contribute/contact/">Contact Us</a></h4>
+          <p>Questions? Comments? We would like your input. Find out how to contact us here.</p>
+</div>
+{% endif %}
+{% if page.lang == 'fr' %}
+<div onClick="window.open( '{{ site.url }}/fr/contribute/contact/','_top' ); return false;" class="side-box-link">
+        <h4><a href="{{ site.url }}/fr/contribute/contact/">Contactez Nous</a></h4>
+          <p>Des questions? Commentaires? Nous aimerions votre contribution. Découvrez comment nous contacter ici.</p>
+</div>
+{% endif %}
+{% if page.lang == 'pt' %}
+<div onClick="window.open( '{{ site.url }}/pt/contribute/contact/','_top' ); return false;" class="side-box-link">
+        <h4><a href="{{ site.url }}/pt/contribute/contact/">Contate-Nos</a></h4>
+          <p>Questões? Comentários? Gostaríamos da sua contribuição. Saiba como entrar em contato conosco aqui.</p>
+</div>
+{% endif %}
+{% if page.lang == 'sw' %}
+<div onClick="window.open( '{{ site.url }}/sw/contribute/contact/','_top' ); return false;" class="side-box-link">
+        <h4><a href="{{ site.url }}/sw/contribute/contact/">Wasiliana Nasi</a></h4>
+          <p>Maswali? Maoni? Tunataka pembejeo yako. Jua jinsi ya kuwasiliana nasi hapa.</p>
+</div>
+{% endif %}
+
+      </ul>
+    </nav>
+  </div>
+{% endif %}
+{% endif %}

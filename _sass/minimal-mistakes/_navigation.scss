@@ -333,8 +333,7 @@
    ========================================================================== */
 
 .nav__list {
-  margin-bottom: 1.5em;
-  background-color: #fff;
+
 
   input[type="checkbox"],
   label {
@@ -347,18 +346,15 @@
       position: relative;
       display: inline-block;
       padding: 0.5em 2.5em 0.5em 1em;
-      color: $gray;
       font-size: $type-size-6;
       font-weight: bold;
-      border: 1px solid $light-gray;
-      border-radius: $border-radius;
       z-index: 20;
       -webkit-transition: 0.2s ease-out;
       transition: 0.2s ease-out;
       cursor: pointer;
       float:left;
       width:100%;
-      margin-top: 1em;
+      background-color: $lighter-gray ;
 
       &:before,
       &:after {
@@ -387,7 +383,7 @@
 
         &:before,
         &:after {
-          background-color: #fff;
+
         }
       }
     }
@@ -399,7 +395,7 @@
 
       &:before,
       &:after {
-        background-color: #fff;
+
       }
     }
 
@@ -436,15 +432,19 @@
   }
 }
 
+
 .nav__list .nav__items {
   margin: 0;
   font-size: 1.35rem;
-  background-color: #fff;
+
   float: left;
 
   a {
-    color: #7a8288;
-    font-size:.95em;
+    color: #883c3c;
+    font-size:.65em;
+  }
+  a:hover {
+    color: #e0c74f;
   }
 
   .active {
@@ -453,7 +453,7 @@
     padding-right: 0.5em;
     color: #fff;
     font-weight: bold;
-    background: $primary-color;
+    background: #883c3c;
     border-radius: $border-radius;
 
     &:hover {
@@ -489,6 +489,20 @@
   }
 }
 
+@include breakpoint(max-width ($large - 1px)) {
+  .nav__list2 input:checked ~ .nav__items2 {
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    max-height: 9999px; /* exaggerate max-height to accommodate tall lists*/
+    overflow: visible;
+    opacity: 1;
+    margin-top: 1em;
+    -webkit-transform: translate(0, 0);
+            -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+  }
+}
+
 .nav__title {
   margin: 0;
   padding: 0.5rem 1rem;
@@ -503,8 +517,6 @@
   font-family: $sans-serif-narrow;
   font-size: $type-size-6;
   font-weight: bold;
-  text-transform: uppercase;
-  background-color: #fff !important;
 
 }
 
@@ -518,7 +530,7 @@
   color: $gray;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background-color: #fff;
+
   border: 1px solid $border-color;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
@@ -573,4 +585,193 @@
       display: block;
     }
   }
+}
+
+/*
+   Navigation list 2
+   ========================================================================== */
+
+.nav__list2 li {
+     font-size: .9em;
+     line-height: 1.5;
+     padding-bottom: .5em;
+     display: list-item;
+     list-style-type: square;
+     margin-left: 1em;
+     position: relative;
+   }
+
+   .nav__list2 ul {
+        display: inherit;
+        position: relative;
+      }
+
+.nav__list2 {
+
+  input[type="checkbox"],
+  label {
+    display: none;
+  }
+
+  @include breakpoint(max-width ($large - 1px)) {
+
+    h4 {
+      color: #494e52 !important;
+      padding-top: 0;
+    }
+
+    label {
+      position: relative;
+      display: inline-block;
+      padding: 0.5em 2.5em 0.5em 1em;
+      color: $darker-gray ;
+      font-size: $type-size-6;
+      font-weight: bold;
+      z-index: 20;
+      -webkit-transition: 0.2s ease-out;
+      transition: 0.2s ease-out;
+      cursor: pointer;
+      float:left;
+      width:100%;
+      background-color: $lighter-gray ;
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        right: 1em;
+        top: 1.25em;
+        width: 0.75em;
+        height: 0.125em;
+        line-height: 1;
+        background-color: $gray;
+        -webkit-transition: 0.2s ease-out;
+        transition: 0.2s ease-out;
+      }
+
+      &:after {
+        -webkit-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+      }
+
+      &:hover {
+        color: #fff;
+        border-color: $gray;
+        background-color: mix(white, #000, 20%);
+
+        &:before,
+        &:after {
+
+        }
+      }
+    }
+
+    /* selected*/
+    input:checked + label {
+      color: white;
+      background-color: mix(white, #000, 20%);
+
+      &:before,
+      &:after {
+
+      }
+    }
+
+    /* on hover show expand*/
+    label:hover:after {
+      -webkit-transform: rotate(90deg);
+              -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+    }
+
+    input:checked + label:hover:after {
+      -webkit-transform: rotate(0);
+              -ms-transform: rotate(0);
+          transform: rotate(0);
+    }
+
+    ul {
+      margin-bottom: 1em;
+    }
+
+    a {
+      padding: 0;
+
+      @include breakpoint($large) {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      a:hover {
+        color: #e0c74f !important;
+      }
+    }
+  }
+}
+
+.nav__list2 .nav__items2 {
+  margin: 0;
+  font-size: .75rem;
+  float: left;
+
+  a {
+    color: #883c3c;
+    padding: inherit;
+    font-size: inherit;
+    display: inline;
+  }
+  a:hover {
+    color: #e0c74f;
+  }
+
+  .active {
+    margin-left: -0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: #fff;
+    font-weight: bold;
+    background: $primary-color;
+    border-radius: $border-radius;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  @include breakpoint(max-width ($large - 1px)) {
+    position: relative;
+    max-height: 0;
+    opacity: 0%;
+    overflow: hidden;
+    z-index: 10;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transform: translate(0, 10%);
+            -ms-transform: translate(0, 10%);
+        transform: translate(0, 10%);
+  }
+
+  input[type="checkbox"]{
+    position: absolute;
+    left: -9999px;
+  }
+
+  input[type="checkbox"] ~ ul{
+    height: 0;
+    transform: scaleY(0);
+  }
+
+  input[type="checkbox"]:checked ~ ul{
+    height: 100%;
+    transform-origin: top;
+    transition: transform .2s ease-out;
+    transform: scaleY(1);
+  }
+
+  input[type="checkbox"]:checked + label{
+    background: #26C281;
+    border-bottom: 1px solid #fff;
+  }
+
 }

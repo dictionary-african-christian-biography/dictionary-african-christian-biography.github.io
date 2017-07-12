@@ -16,6 +16,8 @@ index-menu:
         url: /stories/author-sort/
       - title: "By Institution"
         url: /stories/institution-sort/
+      - title: "By Language"
+        url: /stories/language-sort/
   - title: Category Indexes
     children:
       - title: "Ancient Church"

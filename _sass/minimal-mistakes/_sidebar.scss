@@ -3,17 +3,123 @@
    ========================================================================== */
 
 /*
+  Language Switch
+  ========================================================================== */
+
+  .language-switch2 {
+    background-color: $lighter-gray;
+    text-align: center;
+    display: table !important;
+    table-layout: fixed;
+    width:100%;
+    font-size:.7em;
+    padding: .5em;
+  }
+   .language-switch {
+    background-color: $lighter-gray;
+    text-align: center;
+    display: table !important;
+    table-layout: fixed;
+    width:100%;
+    font-size:.7em;
+    margin-bottom: 1em;
+  }
+  .lang-head {
+    display: table-row;
+  }
+  .en {
+    background-color: #7f3120;
+    display:table-cell;
+    margin: .5em;
+    &:hover {
+      background-color: mix(white, #000, 20%);
+    }
+    a {
+      color: #fff;
+      display:block;
+      width:100%;
+      height:100%;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+  }
+  .fr {
+    background-color: #333d63;
+    display:table-cell;
+    margin: .5em;
+    &:hover {
+      background-color: mix(white, #000, 20%);
+    }
+    a {
+      color: #fff;
+      display:block;
+      width:100%;
+      height:100%;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+  }
+  .pt {
+    background-color: #9f8778;
+    display:table-cell;
+    margin: .5em;
+    &:hover {
+      background-color: mix(white, #000, 20%);
+    }
+    a {
+      color: #fff;
+      display:block;
+      width:100%;
+      height:100%;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+  }
+  .sw {
+    background-color: #595d50;
+    display:table-cell;
+    margin: .5em;
+    &:hover {
+      background-color: mix(white, #000, 20%);
+    }
+    a {
+      color: #fff;
+      display:block;
+      width:100%;
+      height:100%;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+  }
+
+/*
    Default
    ========================================================================== */
+
+@media all and (max-width : $large) {
+  .sidebar {
+    border-right: 0px !important;
+    padding-right: 0 !important;
+  }
+}
+
+article.archive__item {
+    height: auto;
+  }
 
 .sidebar {
   -webkit-transform: translate3d(0, 0 , 0);
           transform: translate3d(0, 0 , 0);
   background-color: #fff;
-  padding-left: 0em;
+  padding-left: 0;
   @include clearfix();
   margin-bottom: 1em;
-
+  border-right: 1px #883c3c solid;
+  padding-right: 1em;
   @include breakpoint($large) {
     @include span(3 of 12);
     -webkit-transition: opacity 0.2s ease-in-out;
@@ -25,17 +131,25 @@
   }
 
   @include breakpoint($x-large) {
-    padding-right: 0;
+    padding-right: 1em;
   }
 
   h2, h3, h4, h5, h6 {
     margin-bottom: 0;
     font-family: $sans-serif-narrow;
+    font-size: 1.25em;
+    margin: 0em 0 0.5em;
+  }
+  p {
+    font-family: $sans-serif;
+    font-size: .9em;
+    line-height: 1.5;
+    padding-bottom: .5em;
   }
 
-  p, li {
+  li {
     font-family: $sans-serif;
-    font-size: $type-size-6;
+    font-size: .9em;
     line-height: 1.5;
   }
 
@@ -60,172 +174,32 @@
   }
 }
 
-/*
-   Author profile and links
-   ========================================================================== */
-
-.author__avatar {
-  display: table-cell;
-  vertical-align: top;
-  width: 36px;
-  height: 36px;
-
-  @include breakpoint($large) {
-    display: block;
-    width: auto;
-    height: auto;
-  }
-
-  img {
-    max-width: 110px;
-    border-radius: 50%;
-
-    @include breakpoint($large) {
-      padding: 5px;
-      border: 1px solid $border-color;
-    }
-  }
+.side-box {
+  padding: 1em;
+  margin-bottom: 1em;
+  background-color: $lighter-gray ;
+  display: inline-block;
 }
 
-.author__content {
-  display: table-cell;
-  vertical-align: top;
-  padding-left: 15px;
-  padding-right: 25px;
-  line-height: 1;
-
-  @include breakpoint($large) {
-    display: block;
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
+.side-box-link {
+  padding: 1em;
+  margin-bottom: 1em;
+  background-color: $lighter-gray ;
+  border: 1px $lighter-gray solid;
 }
 
-.author__name {
-  margin: 0;
-
-  @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-}
-.sidebar .author__name {
-  font-family: $sans-serif;
-  font-size: $type-size-5;
-}
-
-.author__bio {
-  margin: 0;
-
-  @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-}
-
-.author__urls-wrapper {
-  position: relative;
-  display: table-cell;
-  vertical-align: middle;
-  font-family: $sans-serif;
-  z-index: 10;
-  position: relative;
+.side-box-link:hover {
+  padding: 1em;
+  margin-bottom: 1em;
+  background-color: $lighter-gray ;
+  border: 1px $light-gray solid;
   cursor: pointer;
-
-  li:last-child {
-    a {
-      margin-bottom: 0;
-    }
-  }
-
-  @include breakpoint($large) {
-    display: block;
-  }
-
-  button {
-    margin-bottom: 0;
-
-    @include breakpoint($large) {
-      display: none;
-    }
-  }
 }
 
-.author__urls {
-  display: none;
-  position: absolute;
-  right: 0;
-  margin-top: 15px;
-  padding: 10px;
-  list-style-type: none;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
-  background: #fff;
-  z-index: -1;
-  box-shadow: 0 2px 4px 0 rgba(#000, 0.16), 0 2px 10px 0 rgba(#000, 0.12);
-  cursor: default;
+.side-box-link h4 a{
+  color: #494e52 !important;
+}
 
-  @include breakpoint($large) {
-    display: block;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    box-shadow: none;
-  }
-
-  &:before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: -11px;
-    left: calc(50% - 10px);
-    width: 0;
-    border-style: solid;
-    border-width: 0 10px 10px;
-    border-color: $border-color transparent;
-    z-index: 0;
-
-    @include breakpoint($large) {
-      display: none;
-    }
-  }
-
-  &:after {
-    display: block;
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: calc(50% - 10px);
-    width: 0;
-    border-style: solid;
-    border-width: 0 10px 10px;
-    border-color: #fff transparent;
-    z-index: 1;
-
-    @include breakpoint($large) {
-      display: none;
-    }
-  }
-
-  li {
-    white-space: nowrap;
-  }
-
-  a {
-    display: block;
-    margin-bottom: 5px;
-    padding-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    color: inherit;
-    font-size: $type-size-5;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+.side-box-link:hover h4 a{
+  color: #e0c74f !important;
 }

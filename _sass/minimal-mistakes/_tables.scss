@@ -1,6 +1,21 @@
 /* ==========================================================================
    TABLES
    ========================================================================== */
+.country-data {
+  border: 0px;
+  font-size: $type-size-6;
+  background-color: $lighter-gray;
+  border: 1px solid #bdc1c4;
+
+  & tbody,td,th {
+    display: inline-block;
+    border: 0px;
+  }
+  & p {
+    margin-bottom: .6em;
+  }
+}
+
    table.country {
      table-layout: fixed;
      margin-bottom: 0em;
