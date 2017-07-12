@@ -9,7 +9,7 @@ languages-available:
   - pt
   - sw
 ---
-The following indexes contain the {{site.t[page.lang].potential-subjects}} of potential DACB subjects, both Africans and missionaries, listed here for reference, to inform and encourage future research.  
+The following indexes contain potential DACB subjects, both Africans and missionaries, listed here for reference, to inform and encourage future research.  
 
 **How to use these pages:**  
 
