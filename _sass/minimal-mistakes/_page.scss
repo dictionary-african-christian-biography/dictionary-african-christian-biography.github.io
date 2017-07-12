@@ -2,19 +2,104 @@
    SINGLE PAGE/POST
    ========================================================================== */
 
+/* ACCORDION */
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: $darker-gray;
+  overflow: hidden;
+}
+input.accordion {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+label.accordion {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
+  border-bottom: 1px #494e52 solid;
+  margin-bottom: .5em;
+  margin-top: -.5em;
+}
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+  font-size: .75em;
+}
+
+.tab-content h3 {
+  margin: 0em 0 0.5em;
+  line-height: 1.2;
+  font-family: $header-font-family;
+  font-weight: bold;
+}
+
+.tab-content p {
+  margin: 1em;
+  display: block;
+  overflow: hidden;
+}
+/* :checked */
+input.accordion:checked ~ .tab-content {
+  max-height: 1000000em;
+}
+/* Icon */
+label.accordion::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+input.accordion[type=checkbox] + label.accordion::after {
+  content: "+";
+}
+input.accordion[type=radio] + label.accordion::after {
+  content: "\25BC";
+}
+input.accordion[type=checkbox]:checked + label.accordion::after {
+  transform: rotate(315deg);
+}
+input.accordion[type=radio]:checked + label.accordion::after {
+  transform: rotateX(180deg);
+}
+
+/* PAGE */
+@media all and (max-width : $medium) {
+  #main {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
 #main {
   @include container;
   @include clearfix;
   margin-top: 1em;
-  padding-left: 3em;
-  padding-right: 3em;
+  margin-bottom: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.35s;
           animation-delay: 0.35s;
 
-  @include breakpoint($x-large) {
-    max-width: $x-large;
+  @include breakpoint($large ) {
+    max-width: $large ;
   }
 }
 
@@ -74,10 +159,19 @@
     border-bottom: 1px solid $border-color;
   }
 
-  p, li, dl {
+  p, dl {
     font-size: .75em;
   }
 
+  li p {
+    margin-top: 0px;
+    line-height: 1em;
+    font-size: 11pt;
+  }
+
+  ul li {
+    font-size: 11pt;
+  }
   /* paragraph indents */
   p {
     margin: $indent-var 0 $indent-var;
@@ -96,6 +190,7 @@
 
     &:hover {
       text-decoration: underline;
+      color: #e0c74f;
 
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);

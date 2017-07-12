@@ -72,9 +72,10 @@ languages-available:
 {% for tag in page.century %}
 {% if tag == "1st" %}
   {% include archive-century-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in asort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
 
 {% for page in bsort limit:1 %}{% if forloop.first == true %}
 <h2 id="2nd">2nd</h2>
@@ -90,9 +91,10 @@ languages-available:
 {% for tag in page.century %}
 {% if tag == "2nd" %}
   {% include archive-century-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in bsort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
 
 {% for page in csort limit:1 %}{% if forloop.first == true %}
 <h2 id="3rd">3rd</h2>
@@ -108,9 +110,10 @@ languages-available:
 {% for tag in page.century %}
 {% if tag == "3rd" %}
   {% include archive-century-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in csort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
 
 {% for page in dsort limit:1 %}{% if forloop.first == true %}
 <h2 id="4th">4th</h2>
@@ -126,9 +129,10 @@ languages-available:
 {% for tag in page.century %}
 {% if tag == "4th" %}
   {% include archive-century-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in dsort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
 
 {% for page in esort limit:1 %}{% if forloop.first == true %}
 <h2 id="5th">5th</h2>
@@ -144,9 +148,10 @@ languages-available:
 {% for tag in page.century %}
 {% if tag == "5th" %}
   {% include archive-century-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in esort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
 
 {% for page in fsort limit:1 %}{% if forloop.first == true %}
 <h2 id="6th">6th</h2>
@@ -162,9 +167,10 @@ languages-available:
 {% for tag in page.century %}
 {% if tag == "6th" %}
   {% include archive-century-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in fsort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
 
 {% for page in gsort limit:1 %}{% if forloop.first == true %}
 <h2 id="7th">7th</h2>
@@ -180,9 +186,10 @@ languages-available:
 {% for tag in page.century %}
 {% if tag == "7th" %}
   {% include archive-century-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in gsort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
 
 {% for page in hsort limit:1 %}{% if forloop.first == true %}
 <h2 id="8th">8th</h2>
@@ -198,9 +205,10 @@ languages-available:
 {% for tag in page.century %}
 {% if tag == "8th" %}
   {% include archive-century-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in hsort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
 
 {% for page in isort limit:1 %}{% if forloop.first == true %}
 <h2 id="9th">9th</h2>
@@ -216,9 +224,10 @@ languages-available:
 {% for tag in page.century %}
 {% if tag == "9th" %}
   {% include archive-century-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in isort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
 
 {% for page in jsort limit:1 %}{% if forloop.first == true %}
 <h2 id="10th">10th</h2>
@@ -234,9 +243,10 @@ languages-available:
 {% for tag in page.century %}
 {% if tag == "10th" %}
   {% include archive-century-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in jsort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
 
 {% for page in ksort limit:1 %}{% if forloop.first == true %}
 <h2 id="11th">11th</h2>
@@ -252,9 +262,10 @@ languages-available:
 {% for tag in page.century %}
 {% if tag == "11th" %}
   {% include archive-century-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in ksort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
 
 {% for page in lsort limit:1 %}{% if forloop.first == true %}
 <h2 id="12th">12th</h2>
@@ -270,9 +281,10 @@ languages-available:
 {% for tag in page.century %}
 {% if tag == "12th" %}
   {% include archive-century-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in lsort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
 
 {% for page in msort limit:1 %}{% if forloop.first == true %}
 <h2 id="13th">13th</h2>
@@ -288,9 +300,10 @@ languages-available:
 {% for tag in page.century %}
 {% if tag == "13th" %}
   {% include archive-century-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in msort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
 
 {% for page in nsort limit:1 %}{% if forloop.first == true %}
 <h2 id="14th">14th</h2>
@@ -306,9 +319,10 @@ languages-available:
 {% for tag in page.century %}
 {% if tag == "14th" %}
   {% include archive-century-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in nsort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
 
 {% for page in osort limit:1 %}{% if forloop.first == true %}
 <h2 id="15th">15th</h2>
@@ -324,9 +338,10 @@ languages-available:
 {% for tag in page.century %}
 {% if tag == "15th" %}
   {% include archive-century-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in osort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
 
 {% for page in psort limit:1 %}{% if forloop.first == true %}
 <h2 id="16th">16th</h2>
@@ -342,9 +357,10 @@ languages-available:
 {% for tag in page.century %}
 {% if tag == "16th" %}
   {% include archive-century-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in psort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
 
 {% for page in qsort limit:1 %}{% if forloop.first == true %}
 <h2 id="17th">17th</h2>
@@ -360,9 +376,10 @@ languages-available:
 {% for tag in page.century %}
 {% if tag == "17th" %}
   {% include archive-century-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in qsort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
 
 {% for page in rsort limit:1 %}{% if forloop.first == true %}
 <h2 id="18th">18th</h2>
@@ -378,9 +395,10 @@ languages-available:
 {% for tag in page.century %}
 {% if tag == "18th" %}
   {% include archive-century-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in rsort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
 
 {% for page in ssort limit:1 %}{% if forloop.first == true %}
 <h2 id="19th">19th</h2>
@@ -396,9 +414,10 @@ languages-available:
 {% for tag in page.century %}
 {% if tag == "19th" %}
   {% include archive-century-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in ssort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
 
 {% for page in tsort limit:1 %}{% if forloop.first == true %}
 <h2 id="20th">20th</h2>
@@ -414,9 +433,10 @@ languages-available:
 {% for tag in page.century %}
 {% if tag == "20th" %}
   {% include archive-century-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in tsort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}
 
 {% for page in usort limit:1 %}{% if forloop.first == true %}
 <h2 id="21st">21st</h2>
@@ -432,6 +452,7 @@ languages-available:
 {% for tag in page.century %}
 {% if tag == "21st" %}
   {% include archive-century-index.html parent_lang=parent_lang %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{% endif %}{% endfor %}{% endfor %}
+{% for page in usort limit:1 %}{% if forloop.first == true %}
+<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% endif %}{% endfor %}

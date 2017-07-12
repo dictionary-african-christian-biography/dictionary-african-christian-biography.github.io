@@ -1,7 +1,16 @@
 <div>
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     <table><tbody><tr>
-      <td width=35%><a href="{{ page.url | relative_url}}">{{ page.title }}</a></td>
+      <td width=35%>
+{% if page.lang == parent_lang %}
+        <a href="{{ page.url | relative_url}}">{{ page.title }}</a></td>
+{% elsif page.languages-available contains parent_lang %}
+        <a href="/{{parent_lang}}{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.title }}</a></td>
+{% else %}
+        <a href="{{ page.url | relative_url}}">{{ page.title }}</a>
+{% endif %}
+</td>
+
       <td width=25%>
         {% assign aff = site.t[page.affiliation].[include.parent_lang] %}
         {% if aff == nil and page.affiliation == '' %} {{ site.t[include.parent_lang].non-affiliated }} {% else %} {{ aff }} {% endif %}

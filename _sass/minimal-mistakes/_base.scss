@@ -1,6 +1,11 @@
 /* ==========================================================================
    BASE ELEMENTS
    ========================================================================== */
+@font-face {
+   font-family: LithosPro;
+   src: url(/assets/fonts/LithosPro-Regular.otf);
+   font-weight:400;
+ }
 div.alternate {
   font-size:.75em;
   background-color: #f5f5f5;
@@ -21,6 +26,18 @@ img.bio {
   margin-right: .5em;
   margin-bottom: .5em;
    }
+
+ img.icon {
+   width:120px;
+   height:auto;
+   border-radius: $border-radius;
+   -webkit-transition: $global-transition;
+   transition: $global-transition;
+   float: left;
+   margin-right: .5em;
+   margin-bottom: .5em;
+    }
+
 html {
   /* sticky footer fix */
   position: relative;
@@ -134,15 +151,16 @@ blockquote {
 .splash{
   background-color: #fff;
   padding-right: 2em;
-  padding-top: 2em;
+  padding-top: 0em;
   padding-bottom: 0em;
   padding-left: 2em !important;
   margin-bottom: 2em;
 }
 
 .feature__item {
-  margin-bottom: 1em !important;
+  margin-bottom: 2em !important;
 }
+
 
 /* links */
 
@@ -193,7 +211,7 @@ hr {
   display: block;
   margin: 1em 0;
   border: 0;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid $dark-gray;
 }
 
 /* lists */

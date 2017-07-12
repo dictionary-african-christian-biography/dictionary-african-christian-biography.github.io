@@ -1,6 +1,6 @@
 ---
 title: Video Resources
-layout: single-full
+layout: single-resources
 permalink: /resources/video/
 lang: en
 languages-available:                         

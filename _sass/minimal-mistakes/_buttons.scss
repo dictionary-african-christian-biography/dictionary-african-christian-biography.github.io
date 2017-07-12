@@ -1,91 +1,6 @@
 /* ==========================================================================
    BUTTONS
    ========================================================================== */
-   .btn-en {
-     display: inline-block;
-     float: right;
-     margin: 0em !important;
-     padding: .25em;
-     color: #fff !important;
-     font-family: $sans-serif;
-     font-size: .8em;
-     font-weight: bold;
-     text-align: center;
-     text-decoration: none;
-       background-color: #3a520b;
-     border: 0 !important;
-     cursor: pointer;
-       margin-top: 1em;
-
-     &:hover {
-       background-color: mix(white, #000, 20%);
-     }
-   }
-     .btn-fr {
-       display: inline-block;
-       float: right;
-       margin: 0em !important;
-       padding: .25em;
-       color: #fff !important;
-       font-family: $sans-serif;
-       font-size: .8em;
-       font-weight: bold;
-       text-align: center;
-       text-decoration: none;
-         background-color: #5e2c66;
-       border: 0 !important;
-       cursor: pointer;
-         margin-top: 1em;
-
-       &:hover {
-         background-color: mix(white, #000, 20%);
-       }
-     }
-       .btn-pt {
-         display: inline-block;
-         float: right;
-         margin: 0em !important;
-         padding: .25em;
-         color: #fff !important;
-         font-family: $sans-serif;
-         font-size: .8em;
-         font-weight: bold;
-         text-align: center;
-         text-decoration: none;
-           background-color: #883c3c;
-         border: 0 !important;
-         cursor: pointer;
-           margin-top: 1em;
-
-         &:hover {
-           background-color: mix(white, #000, 20%);
-         }
-       }
-         .btn-sw {
-           display: inline-block;
-           float: right;
-           margin: 0em !important;
-           padding: .25em;
-           color: #fff !important;
-           font-family: $sans-serif;
-           font-size: .8em;
-           font-weight: bold;
-           text-align: center;
-           text-decoration: none;
-             background-color: #86682d;
-           border: 0 !important;
-           cursor: pointer;
-             margin-top: 1em;
-
-           &:hover {
-             background-color: mix(white, #000, 20%);
-           }
-         }
-
-
-
-
-
 
 /*
    Default button
@@ -144,7 +59,55 @@
       border-color: $gray;
     }
   }
+  &--inverse-home {
+    color: $light-gray !important;
+    border: 0px; /* override*/
+    background-color: $gray;
+    float: right;
+    font-size: 9pt;
+    border-radius: 0px;
+    margin-top: 0px;
+    width: 100%;
+    display: block;
+    height: 30px;
 
+    &:hover {
+      color: $dark-gray !important;
+      background-color: #ffcc66;
+      text-decoration: none !important;
+    }
+
+    &:hover a{
+      text-decoration: none !important;
+    }
+  }
+
+  &--inverse-form {
+    color: $gray !important;
+    border: 1px solid $light-gray !important; /* override*/
+    background-color: #fff;
+    padding: 1.45em;
+    margin-top: .25em;
+
+    &:hover {
+      color: #fff !important;
+      border-color: $gray;
+    }
+  }
+
+  &--inverse-long {
+    color: #e0c74f  !important;
+    border: 1px solid $light-gray !important; /* override*/
+    background-color: $dark-gray;
+    width: 100%;
+    margin-top: .25em;
+
+
+    &:hover {
+      color: $light-gray !important;
+      border-color: $gray;
+    }
+  }
   /* light outline */
 
   &--light-outline {

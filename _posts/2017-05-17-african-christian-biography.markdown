@@ -1,5 +1,5 @@
 ---
-layout: single-full
+layout: single-news
 title:  "African Christian Biography: Narratives, Beliefs, and Boundaries"
 date:   2017-05-17 15:34:41 -0400
 lang: en

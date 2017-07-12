@@ -8,7 +8,8 @@ en: &DEFAULT_EN
   pagination_next            : "Next"
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : "/"
-  menu_label                 : "Toggle Menu"
+  menu_label                 : "Sort and Index Menu"
+  sidebar_label              : "Toggle Sidebar"
   toc_label                  : "On This Page"
   ext_link_label             : "Direct Link"
   less_than                  : "less than"
@@ -35,7 +36,7 @@ en: &DEFAULT_EN
   comment_form_name_label    : "Name"
   comment_form_email_label   : "Email address"
   comment_form_website_label : "Website (optional)"
-  comment_btn_submit         : "Submit Comment"
+  comment_btn_submit         : "Submit"
   comment_btn_submitted      : "Submitted"
   comment_success_msg        : "Thanks for your comment! It will show on the site once it has been approved."
   comment_error_msg          : "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again."
@@ -102,7 +103,8 @@ fr: &DEFAULT_FR
   pagination_next            : "Suivant"
   breadcrumb_home_label      : "Accueil"
   breadcrumb_separator       : "/"
-  menu_label                 :
+  menu_label                 : "Trier et Indexer"
+  sidebar_label              : "Voir le menu secondaire"
   toc_label                  : "Sur cette page"
   ext_link_label             : "Lien direct"
   less_than                  : "moins de"
@@ -193,7 +195,8 @@ pt: &DEFAULT_PT
   pagination_next            : "Seguinte"
   breadcrumb_home_label      : "Início"
   breadcrumb_separator       : "/"
-  menu_label                 :
+  menu_label                 : "Classificar e Indexar"
+  sidebar_label              : "Veja o Menu Lateral"
   toc_label                  : "Nesta Página"
   ext_link_label             : "Link Direto"
   less_than                  : "menos de"
@@ -220,7 +223,7 @@ pt: &DEFAULT_PT
   comment_form_name_label    : "Nome"
   comment_form_email_label   : "Endereço Email"
   comment_form_website_label : "Site (opcional)"
-  comment_btn_submit         : "Sumbeter Comentário"
+  comment_btn_submit         : "Sumbeter"
   comment_btn_submitted      : "Submetido"
   comment_success_msg        : "Obrigado pelo seu comentário! Será visível no site logo que aprovado."
   comment_error_msg          : "Lamento, ocorreu um erro na sua submissão. Por favor verifique se todos os campos obrigatórios estão corretamente preenchidos e tente novamente."
@@ -629,7 +632,7 @@ gr: &DEFAULT_GR
   pagination_next            : "Επόμενo"
   breadcrumb_home_label      : "Κεντρική"
   breadcrumb_separator       : "/"
-  menu_label                 : 
+  menu_label                 :
   toc_label                  : "Πίνακας Περιεχομένων"
   ext_link_label             : "Εξωτερικός Σύνδεσμος"
   less_than                  : "Λιγότερο από"
@@ -709,6 +712,9 @@ sv-SE:
 sv-FI:
   <<: *DEFAULT_SV
 
-# Another locale
-# --------------
-#
+# Swahili
+# -----------------
+sw: &DEFAULT_PT
+    menu_label                 : "Aina na Index"
+    sidebar_label              : "Angalia Orodha ya Upande"
+    comment_btn_submit         : "Kutuma"
