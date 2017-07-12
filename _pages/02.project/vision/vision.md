@@ -10,7 +10,7 @@ languages-available:
   - ' '
 ---
 
-## Ecclesiastical Cartography and the Invisible Continent: <br>_The Dictionary of African Christian Biography_ [1]
+## Ecclesiastical Cartography and the Invisible Continent: _The Dictionary of African Christian Biography_ [1]
 
 The Council on African Studies and the MacMillan Center African Studies Lecture Series October 15, 2008 [Updated 10/19/09]
 
