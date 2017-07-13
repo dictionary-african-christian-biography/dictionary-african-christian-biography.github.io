@@ -19,8 +19,12 @@ century:
   - ''
   - ''                     
 tradition: ''                       
-affiliation: ''
-country: ''
+affiliation:
+  - ''
+  - ''   
+country:
+  - ''
+  - ''   
 ancient: ''
 artist: ''
 catechist: ''
