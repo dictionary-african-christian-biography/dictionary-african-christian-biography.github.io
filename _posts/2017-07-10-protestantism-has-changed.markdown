@@ -1,4 +1,5 @@
 ---
+layout: single-news
 title:  "Protestantism has changed in 500 years!"
 date:   2017-07-10
 lang: en

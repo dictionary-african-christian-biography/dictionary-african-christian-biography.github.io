@@ -1,7 +1,3 @@
-{% assign count = site.pages | where: "index","primary" | where: "country", page.country %}
-
-{% if forloop.first == true %}
-{{ count.size }}
-{% else %}
-{% break %}
+{% if include.include_country != empty and forloop.first == true %}
+{{ include.include_country.size }}
 {% endif %}

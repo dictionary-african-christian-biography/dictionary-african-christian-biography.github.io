@@ -79,8 +79,8 @@ languages-available:
 {% capture parent_lang %}{{ page.lang }}{% endcapture %}
 
 <table><thead>
-  <th width=70%>{{ site.data.site-trans[parent_lang].country }}</th>
-  <th width=30%>{{ site.data.site-trans[parent_lang].number-bio }}</th>
+<th width=70%>{{ site.data.site-trans[parent_lang].country }}</th>
+<th width=30%>{{ site.data.site-trans[parent_lang].number-bio }}</th>
 </thead></table>
 
 <table><tbody><tr><td width=70%>
@@ -88,7 +88,7 @@ languages-available:
 {{ site.data.country-trans.algeria[page.lang] }}</a></td>
 <td width=30%>
 {% assign algeria = site.pages | where: "index","primary" | where: "country","algeria" %}
-{% for page in algeria %}{% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+{% for page in algeria %}{% include archive-country-index.html include_country=algeria  %}{% endfor %}
 {% if algeria == empty %}0{% endif %}
 </td></tr></tbody></table>
 
@@ -97,7 +97,7 @@ languages-available:
 {{ site.data.country-trans.angola[parent_lang] }}</a></td>
 <td width=30%>
 {% assign angola = site.pages | where: "index","primary" | where: "country","angola" %} {% for page in angola %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=angola  %}{% endfor %}
 {% if angola == empty %}0{% endif %}
 </td></tr></tbody></table>
 
@@ -106,7 +106,7 @@ languages-available:
 {{ site.data.country-trans.benin[parent_lang] }}</a></td>
 <td width=30%>
 {% assign benin = site.pages | where: "index","primary" | where: "country","benin" %} {% for page in benin %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=benin  %}{% endfor %}
 {% if benin == empty %}0{% endif %}
 </td></tr></tbody></table>
 
@@ -115,7 +115,7 @@ languages-available:
 {{ site.data.country-trans.botswana[parent_lang] }}</a></td>
 <td width=30%>
 {% assign botswana = site.pages | where: "index","primary" | where: "country","botswana" %} {% for page in botswana %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=botswana  %}{% endfor %}
 {% if botwana == empty %}0{% endif %}
 </td></tr></tbody></table>
 
@@ -124,7 +124,7 @@ languages-available:
 {% assign burkina-faso = "burkina faso" %}{{ site.data.country-trans[burkina-faso][parent_lang] }}</a></td>
 <td width=30%>
 {% assign burkina = site.pages | where: "index","primary" | where: "country","burkina faso" %} {% for page in burkina %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=burkina  %}{% endfor %}
 {% if burkina == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -133,7 +133,7 @@ languages-available:
 {{ site.data.country-trans.burundi[parent_lang] }}</a></td>
 <td width=30%>
 {% assign burundi = site.pages | where: "index","primary" | where: "country","burundi" %} {% for page in burundi %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=burundi  %}{% endfor %}
 {% if burundi == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -142,7 +142,7 @@ languages-available:
 {{ site.data.country-trans.cameroon[parent_lang] }}</a></td>
 <td width=30%>
 {% assign cameroon = site.pages | where: "index","primary" | where: "country","cameroon" %} {% for page in cameroon %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=cameroon  %}{% endfor %}
 {% if cameroon == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -151,7 +151,7 @@ languages-available:
 {% assign cape-verde = "cape verde" %}{{ site.data.country-trans[cape-verde][parent_lang] }}</a></td>
 <td width=30%>
 {% assign cape = site.pages | where: "index","primary" | where: "country","cape verde" %} {% for page in cape %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=cape-verde  %}{% endfor %}
 {% if cape == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -160,7 +160,7 @@ languages-available:
 {% assign central-african-republic = "central african republic" %}{{ site.data.country-trans[central-african-republic][parent_lang] }}</a></td>
 <td width=30%>
 {% assign central = site.pages | where: "index","primary" | where: "country","central african republic" %} {% for page in central %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=central %}{% endfor %}
 {% if central == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -169,7 +169,7 @@ languages-available:
 {{ site.data.country-trans.chad[parent_lang] }}</a></td>
 <td width=30%>
 {% assign chad = site.pages | where: "index","primary" | where: "country","chad" %} {% for page in chad %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=chad  %}{% endfor %}
 {% if chad == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -178,7 +178,7 @@ languages-available:
 {{ site.data.country-trans.comoros[parent_lang] }}</a></td>
 <td width=30%>
 {% assign comoros = site.pages | where: "index","primary" | where: "country","comoros" %} {% for page in comoros %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=comoros  %}{% endfor %}
 {% if comoros == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -187,7 +187,7 @@ languages-available:
 {{ site.data.country-trans.congo-brazzaville[parent_lang] }}</a></td>
 <td width=30%>
 {% assign congo-brazzaville = site.pages | where: "index","primary" | where: "country","congo-brazzaville" %} {% for page in congo-brazzaville %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=congo-brazzaville  %}{% endfor %}
 {% if congo-brazzaville == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -196,7 +196,7 @@ languages-available:
 {% assign cote-divoire = "cote divoire" %}{{ site.data.country-trans[cote-divoire][parent_lang] }}</a></td>
 <td width=30%>
 {% assign cote = site.pages | where: "index","primary" | where: "country","cote divoire" %} {% for page in cote %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=cote  %}{% endfor %}
 {% if cote == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -205,7 +205,7 @@ languages-available:
 {% assign democratic-republic-of-congo = "democratic republic of congo" %}{{ site.data.country-trans[democratic-republic-of-congo][parent_lang] }}</a></td>
 <td width=30%>
 {% assign democratic = site.pages | where: "index","primary" | where: "country","democratic republic of congo" %} {% for page in democratic %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=democratic  %}{% endfor %}
 {% if democratic == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -214,7 +214,7 @@ languages-available:
 {{ site.data.country-trans.djibouti[parent_lang] }}</a></td>
 <td width=30%>
 {% assign djibouti = site.pages | where: "index","primary" | where: "country","djibouti" %} {% for page in djibouti %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=djibouti  %}{% endfor %}
 {% if djibouti == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -223,7 +223,7 @@ languages-available:
 {{ site.data.country-trans.egypt[parent_lang] }}</a></td>
 <td width=30%>
 {% assign egypt = site.pages | where: "index","primary" | where: "country","egypt" %} {% for page in egypt %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=egypt  %}{% endfor %}
 {% if egypt == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -232,7 +232,7 @@ languages-available:
 {% assign equatorial-guinea = "equatorial guinea" %}{{ site.data.country-trans[equatorial-guinea][parent_lang] }}</a></td>
 <td width=30%>
 {% assign equatorial = site.pages | where: "index","primary" | where: "country","equatorial guinea" %} {% for page in equatorial %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=equatorial  %}{% endfor %}
 {% if equatorial == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -241,7 +241,7 @@ languages-available:
 {{ site.data.country-trans.eritrea[parent_lang] }}</a></td>
 <td width=30%>
 {% assign eritrea = site.pages | where: "index","primary" | where: "country","eritrea" %} {% for page in eritrea %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=eritrea  %}{% endfor %}
 {% if eritrea == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -250,7 +250,7 @@ languages-available:
 {{ site.data.country-trans.ethiopia[parent_lang] }}</a></td>
 <td width=30%>
 {% assign ethiopia = site.pages | where: "index","primary" | where: "country","ethiopia" %} {% for page in ethiopia %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=ethiopia  %}{% endfor %}
 {% if ethiopia == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -259,7 +259,7 @@ languages-available:
 {{ site.data.country-trans.gabon[parent_lang] }}</a></td>
 <td width=30%>
 {% assign gabon = site.pages | where: "index","primary" | where: "country","gabon" %} {% for page in gabon %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=gabon  %}{% endfor %}
 {% if gabon == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -268,7 +268,7 @@ languages-available:
 {{ site.data.country-trans.gambia[parent_lang] }}</a></td>
 <td width=30%>
 {% assign gambia = site.pages | where: "index","primary" | where: "country","gambia" %} {% for page in gambia %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=gambia  %}{% endfor %}
 {% if gambia == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -277,7 +277,7 @@ languages-available:
 {{ site.data.country-trans.ghana[parent_lang] }}</a></td>
 <td width=30%>
 {% assign ghana = site.pages | where: "index","primary" | where: "country","ghana" %} {% for page in ghana %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=ghana  %}{% endfor %}
 {% if ghana == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -286,7 +286,7 @@ languages-available:
 {{ site.data.country-trans.guinea[parent_lang] }}</a></td>
 <td width=30%>
 {% assign guinea = site.pages | where: "index","primary" | where: "country","guinea" %} {% for page in guinea %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=guinea  %}{% endfor %}
 {% if guinea == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -295,7 +295,7 @@ languages-available:
 {% assign guinea-bissau = "guinea bissau" %}{{ site.data.country-trans[guinea-bissau][parent_lang] }}</a></td>
 <td width=30%>
 {% assign bissau = site.pages | where: "index","primary" | where: "country","guinea bissau" %} {% for page in bissau %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=bissau  %}{% endfor %}
 {% if bissau == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -304,7 +304,7 @@ languages-available:
 {{ site.data.country-trans.kenya[parent_lang] }}</a></td>
 <td width=30%>
 {% assign kenya = site.pages | where: "index","primary" | where: "country","kenya" %} {% for page in kenya %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=kenya  %}{% endfor %}
 {% if kenya == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -313,7 +313,7 @@ languages-available:
 {{ site.data.country-trans.lesotho[parent_lang] }}</a></td>
 <td width=30%>
 {% assign lesotho = site.pages | where: "index","primary" | where: "country","lesotho" %} {% for page in lesotho %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=lesotho  %}{% endfor %}
 {% if lesotho == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -322,7 +322,7 @@ languages-available:
 {{ site.data.country-trans.liberia[parent_lang] }}</a></td>
 <td width=30%>
 {% assign liberia = site.pages | where: "index","primary" | where: "country","liberia" %} {% for page in liberia %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=liberia  %}{% endfor %}
 {% if liberia == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -331,7 +331,7 @@ languages-available:
 {{ site.data.country-trans.libya[parent_lang] }}</a></td>
 <td width=30%>
 {% assign libya = site.pages | where: "index","primary" | where: "country","libya" %} {% for page in libya %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=libya  %}{% endfor %}
 {% if libya == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -340,7 +340,7 @@ languages-available:
 {{ site.data.country-trans.madagascar[parent_lang] }}</a></td>
 <td width=30%>
 {% assign madagascar = site.pages | where: "index","primary" | where: "country","madagascar" %} {% for page in madagascar %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=madagascar  %}{% endfor %}
 {% if madagascar == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -349,7 +349,7 @@ languages-available:
 {{ site.data.country-trans.malawi[parent_lang] }}</a></td>
 <td width=30%>
 {% assign malawi = site.pages | where: "index","primary" | where: "country","malawi" %} {% for page in malawi %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=malawi  %}{% endfor %}
 {% if malawi == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -358,7 +358,7 @@ languages-available:
 {{ site.data.country-trans.mali[parent_lang] }}</a></td>
 <td width=30%>
 {% assign mali = site.pages | where: "index","primary" | where: "country","mali" %} {% for page in mali %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=mali  %}{% endfor %}
 {% if mali == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -367,7 +367,7 @@ languages-available:
 {{ site.data.country-trans.mauritania[parent_lang] }}</a></td>
 <td width=30%>
 {% assign mauritania = site.pages | where: "index","primary" | where: "country","mauritania" %} {% for page in mauritania %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=mauritania  %}{% endfor %}
 {% if mauritania == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -376,7 +376,7 @@ languages-available:
 {{ site.data.country-trans.mauritius[parent_lang] }}</a></td>
 <td width=30%>
 {% assign mauritius = site.pages | where: "index","primary" | where: "country","mauritius" %} {% for page in mauritius %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=mauritius  %}{% endfor %}
 {% if mauritius == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -385,7 +385,7 @@ languages-available:
 {{ site.data.country-trans.mayotte[parent_lang] }}</a></td>
 <td width=30%>
 {% assign mayotte = site.pages | where: "index","primary" | where: "country","mayotte" %} {% for page in mayotte %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=mayotte  %}{% endfor %}
 {% if mayotte == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -394,7 +394,7 @@ languages-available:
 {{ site.data.country-trans.morocco[parent_lang] }}</a></td>
 <td width=30%>
 {% assign morocco = site.pages | where: "index","primary" | where: "country","morocco" %} {% for page in morocco %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=morocco  %}{% endfor %}
 {% if morocco == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -403,7 +403,7 @@ languages-available:
 {{ site.data.country-trans.mozambique[parent_lang] }}</a></td>
 <td width=30%>
 {% assign mozambique = site.pages | where: "index","primary" | where: "country","mozambique" %} {% for page in mozambique %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=mozambique  %}{% endfor %}
 {% if mozambique == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -412,7 +412,7 @@ languages-available:
 {{ site.data.country-trans.namibia[parent_lang] }}</a></td>
 <td width=30%>
 {% assign namibia = site.pages | where: "index","primary" | where: "country","namibia" %} {% for page in namibia %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=namibia  %}{% endfor %}
 {% if namibia == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -421,7 +421,7 @@ languages-available:
 {{ site.data.country-trans.niger[parent_lang] }}</a></td>
 <td width=30%>
 {% assign niger = site.pages | where: "index","primary" | where: "country","niger" %} {% for page in niger %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=niger  %}{% endfor %}
 {% if niger == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -430,7 +430,7 @@ languages-available:
 {{ site.data.country-trans.nigeria[parent_lang] }}</a></td>
 <td width=30%>
 {% assign nigeria = site.pages | where: "index","primary" | where: "country","nigeria" %} {% for page in nigeria %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=nigeria %}{% endfor %}
 {% if nigeria == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -439,7 +439,7 @@ languages-available:
 {{ site.data.country-trans.reunion[parent_lang] }}</a></td>
 <td width=30%>
 {% assign reunion = site.pages | where: "index","primary" | where: "country","reunion" %} {% for page in reunion %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=reunion  %}{% endfor %}
 {% if reunion == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -448,7 +448,7 @@ languages-available:
 {{ site.data.country-trans.rwanda[parent_lang] }}</a></td>
 <td width=30%>
 {% assign rwanda = site.pages | where: "index","primary" | where: "country","rwanda" %} {% for page in rwanda %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=rwanda  %}{% endfor %}
 {% if rwanda == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -457,7 +457,7 @@ languages-available:
 {% assign saint-helena = "saint helena" %}{{ site.data.country-trans[saint-helena][parent_lang] }}</a></td>
 <td width=30%>
 {% assign helena = site.pages | where: "index","primary" | where: "country","saint helena" %} {% for page in helena %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=helena  %}{% endfor %}
 {% if helena == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -466,7 +466,7 @@ languages-available:
 {% assign sao-tome-and-principe = "sao tome and principe" %}{{ site.data.country-trans[sao-tome-and-principe][parent_lang] }}</a></td>
 <td width=30%>
 {% assign tome = site.pages | where: "index","primary" | where: "country","são tomé and príncipe" %} {% for page in tome %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=tome  %}{% endfor %}
 {% if tome == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -475,7 +475,7 @@ languages-available:
 {{ site.data.country-trans.senegal[parent_lang] }}</a></td>
 <td width=30%>
 {% assign senegal = site.pages | where: "index","primary" | where: "country","senegal" %} {% for page in senegal %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=senegal  %}{% endfor %}
 {% if senegal == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -484,7 +484,7 @@ languages-available:
 {{ site.data.country-trans.seychelles[parent_lang] }}</a></td>
 <td width=30%>
 {% assign seychelles = site.pages | where: "index","primary" | where: "country","seychelles" %} {% for page in seychelles %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=seychelles  %}{% endfor %}
 {% if seychelles == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -493,7 +493,7 @@ languages-available:
 {% assign sierra-leone = "sierra leone" %}{{ site.data.country-trans[sierra-leone][parent_lang] }}</a></td>
 <td width=30%>
 {% assign sierra = site.pages | where: "index","primary" | where: "country","sierra leone" %} {% for page in sierra %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=sierra  %}{% endfor %}
 {% if sierra == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -502,7 +502,7 @@ languages-available:
 {{ site.data.country-trans.somalia[parent_lang] }}</a></td>
 <td width=30%>
 {% assign somalia = site.pages | where: "index","primary" | where: "country","somalia" %} {% for page in somalia %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=somalia  %}{% endfor %}
 {% if somalia == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -511,7 +511,7 @@ languages-available:
 {% assign south-africa = "south africa" %}{{ site.data.country-trans[south-africa][parent_lang] }}</a></td>
 <td width=30%>
 {% assign africa = site.pages | where: "index","primary" | where: "country","south africa" %} {% for page in africa %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=africa  %}{% endfor %}
 {% if africa == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -520,7 +520,7 @@ languages-available:
 {% assign south-sudan = "south sudan" %}{{ site.data.country-trans[south-sudan][parent_lang] }}</a></td>
 <td width=30%>
 {% assign south-s = site.pages | where: "index","primary" | where: "country","south sudan" %} {% for page in south-s %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=south-s  %}{% endfor %}
 {% if south-s == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -529,7 +529,7 @@ languages-available:
 {{ site.data.country-trans.sudan[parent_lang] }}</a></td>
 <td width=30%>
 {% assign sudan = site.pages | where: "index","primary" | where: "country","sudan" %} {% for page in sudan %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=sudan  %}{% endfor %}
 {% if sudan == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -538,7 +538,7 @@ languages-available:
 {{ site.data.country-trans.swaziland[parent_lang] }}</a></td>
 <td width=30%>
 {% assign swaziland = site.pages | where: "index","primary" | where: "country","swaziland" %} {% for page in swaziland %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=swaziland  %}{% endfor %}
 {% if swaziland == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -547,7 +547,7 @@ languages-available:
 {{ site.data.country-trans.tanzania[parent_lang] }}</a></td>
 <td width=30%>
 {% assign tanzania = site.pages | where: "index","primary" | where: "country","tanzania" %} {% for page in tanzania %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=tanzania  %}{% endfor %}
 {% if tanzania == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -556,7 +556,7 @@ languages-available:
 {{ site.data.country-trans.togo[parent_lang] }}</a></td>
 <td width=30%>
 {% assign togo = site.pages | where: "index","primary" | where: "country","togo" %} {% for page in togo %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=togo  %}{% endfor %}
 {% if togo == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -565,7 +565,7 @@ languages-available:
 {{ site.data.country-trans.tunisia[parent_lang] }}</a></td>
 <td width=30%>
 {% assign tunisia = site.pages | where: "index","primary" | where: "country","tunisia" %} {% for page in tunisia %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=tunisia  %}{% endfor %}
 {% if tunisia == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -574,7 +574,7 @@ languages-available:
 {{ site.data.country-trans.uganda[parent_lang] }}</a></td>
 <td width=30%>
 {% assign uganda = site.pages | where: "index","primary" | where: "country","uganda" %} {% for page in uganda %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=uganda  %}{% endfor %}
 {% if uganda == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -583,7 +583,7 @@ languages-available:
 {% assign western-sahara = "western sahara" %}{{ site.data.country-trans[western-sahara][parent_lang] }}</a></td>
 <td width=30%>
 {% assign sahara = site.pages | where: "index","primary" | where: "country","western sahara" %} {% for page in sahara %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=sahara  %}{% endfor %}
 {% if sahara == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -592,7 +592,7 @@ languages-available:
 {{ site.data.country-trans.zambia[parent_lang] }}</a></td>
 <td width=30%>
 {% assign zambia = site.pages | where: "index","primary" | where: "country","zambia" %} {% for page in zambia %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=zambia  %}{% endfor %}
 {% if zambia == empty%}0{% endif %}
 </td></tr></tbody></table>
 
@@ -601,6 +601,6 @@ languages-available:
 {{ site.data.country-trans.zimbabwe[parent_lang] }}</a></td>
 <td width=30%>
 {% assign zimbabwe = site.pages | where: "index","primary" | where: "country","zimbabwe" %} {% for page in zimbabwe %}
- {% include archive-country-index.html parent_lang=parent_lang %}{% endfor %}
+ {% include archive-country-index.html include_country=zimbabwe  %}{% endfor %}
 {% if zimbabwe == empty%}0{% endif %}
 </td></tr></tbody></table>

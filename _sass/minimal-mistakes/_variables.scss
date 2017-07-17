@@ -10,7 +10,7 @@ $doc-font-size              : 16 !default;
 
 /* paragraph indention */
 $paragraph-indent           : false !default; // true, false (default)
-$indent-var                 : .6em !default;
+$indent-var                 : .8em !default;
 
 /* system typefaces */
 $serif                      : Georgia, Times, serif !default;
@@ -36,6 +36,7 @@ $caption-font-family        : $serif !default;
 $type-size-1                : 2em !default;  // ~39.056px
 $type-size-2                : 1.5em !default;  // ~31.248px
 $type-size-3                : 1.25em !default;  // ~25.008px
+$type-size-3b               : 1em !default;  // ~25.008px
 $type-size-4                : .8em !default;   // ~20px
 $type-size-5                : .7em !default;      // ~16px
 $type-size-6                : 0.625em !default;   // ~12px

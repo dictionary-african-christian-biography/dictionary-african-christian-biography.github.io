@@ -1,5 +1,5 @@
 ---
-layout: single-full
+layout: single-news
 title:  "Resources for Research: Newly Redesigned Website for Old & New in Shona at Boston University"
 date:   2017-07-10
 lang: en
