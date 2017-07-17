@@ -3,7 +3,23 @@
     <tr>
       <td colspan=2>
         <h3 style="font-size: 1.25em;margin-top:0px;margin-bottom: 0px;">{{ page.title }}</h3>
-        <p style="font-size: 1em;margin-bottom: 0px;"><b>{{ page.date }}  |  {{ site.t[page.affiliation][page.lang] }}, {{ site.t[page.country][page.lang]  }}</b></p>
+        <p style="font-size: 1em;margin-bottom: 0px;"><b>
+          {{ page.date }}  |
+
+          {% assign a1 = page.affiliation[0] %} {% assign aff1 = site.data.aff-trans[a1].[include.parent_lang] %}
+          {% assign a2 = page.affiliation[1] %} {% assign aff2 = site.data.aff-trans[a2].[include.parent_lang] %}
+          {% assign a3 = page.affiliation[2] %} {% assign aff2 = site.data.aff-trans[a3].[include.parent_lang] %}
+          {% if a1 != nil %}{{ site.data.aff-trans[a1].[include.parent_lang] }}{% endif %}
+          {% if a2 != nil %}, {{ site.data.aff-trans[a2].[include.parent_lang] }}{% endif %}
+          {% if a3 != nil %}, {{ site.data.aff-trans[a3].[include.parent_lang] }}{% endif %}
+          ,
+          {% assign c1 = page.country[0] %} {% assign cn1 = site.data.country-trans[c1].[include.parent_lang] %}
+          {% assign c2 = page.country[1] %} {% assign cn2 = site.data.country-trans[c2].[include.parent_lang] %}
+          {% assign c3 = page.country[2] %} {% assign cn2 = site.data.country-trans[c3].[include.parent_lang] %}
+          {% if c1 != nil %}{{ site.data.country-trans[c1].[include.parent_lang] }}{% endif %}
+          {% if c2 != nil %}, {{ site.data.country-trans[c2].[include.parent_lang] }}{% endif %}
+          {% if c3 != nil %}, {{ site.data.country-trans[c3].[include.parent_lang] }}{% endif %}
+        </b></p>
       </td>
     </tr></thead>
     <tbody style="background-color:#fff;">
@@ -12,7 +28,7 @@
           <img src="{{ page.image }}" class="icon">
         </td>
         <td style="width: 80%; vertical-align: top;">
-          <div style="font-size: 1.25em;">{{ page.content | markdownify | truncatewords: 40 }}</div>
+          <div>{{ page.content | markdownify | | remove: "<p>" | remove: "</p>" | truncatewords: 40 }}</div>
           <a href="{{page.permalink}}" class="btn btn--inverse">Read More</a>
         </td>
   </tr></tbody></table>

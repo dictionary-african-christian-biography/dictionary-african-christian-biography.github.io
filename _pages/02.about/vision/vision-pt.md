@@ -1,5 +1,5 @@
 ---
-title: Visão
+title: 'O _Dicionario de Biografias Cristãs da África_: Cartografia Eclesiástica do Continente Invisível'
 layout: single-about
 permalink: /pt/about/vision/
 lang: pt
@@ -9,8 +9,6 @@ languages-available:
   - pt
   - ' '
 ---
-## O _Dicionario de Biografias Cristãs da África_:<br> Cartografia Eclesiástica do Continente Invisível
-
 **Jonathan J. Bonk, Diretor do Projeto**
 
 >Existe uma suposição tácita que mapas oferecem uma descrição objetiva do mundo. A mensagem deste livro é que não é assim, e as inúmeras maneiras em que eles diferem da realidade, servem para colocar os mapas como produtos centrais e significativos da cultura que os produz. -Peter Whitfield, The Image of the World  

@@ -39,7 +39,7 @@ Apesar dos recursos financeiros risivelmente escassos e da infra-estrutura admin
 **Jonathan J. Bonk,**
 Diretor do Projeto
 
----
+***
 
 **Notes:**
 1. Go to [Africa addresses](http://www.dacb.org/particip_instit.html) for a list of Participating Institutions and designated Liaison Coordinators.

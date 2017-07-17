@@ -1,5 +1,5 @@
 ---
-title: Vision
+title: "Le _Dictionnaire Biographique des Chrétiens d'Afrique_: La cartographie ecclésiastique et le continent invisible"
 layout: single-about
 permalink: /fr/about/vision/
 lang: fr
@@ -9,8 +9,6 @@ languages-available:
   - pt
   - ' '
 ---
-## Le _Dictionnaire Biographique des Chrétiens d'Afrique_:<br> La cartographie ecclésiastique et le continent invisible
-
 **Jonathan J. Bonk**
 
 > On suppose naturellement que les cartes géographiques dépeignent le monde avec objectivité. Le message de ce livre est que cette supposition est fausse et que les innombrables subjectivités de ces cartes servent à les établir comme des produits significatifs et centraux de leurs cultures mères.-Peter Whitfield, The Image of the World (L'image du monde)  

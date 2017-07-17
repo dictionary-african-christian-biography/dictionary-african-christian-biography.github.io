@@ -19,13 +19,13 @@ This two-part series entitled _African Christianity Rising: Stories from Ghana (
 ### [African Christianity Rising: Stories from Ghana (opening)](http://vimeo.com/9292811)  
 from [James Ault](http://vimeo.com/jamesault) on [Vimeo](http://vimeo.com)  
 
-<div align="center"><object width="400" height="300"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=9292811&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1"><embed src="http://vimeo.com/moogaloop.swf?clip_id=9292811&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="300"></object></div>  
+<iframe src="https://player.vimeo.com/video/9292811?color=ff9933&title=0&byline=0&portrait=0" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ***
 ### [African Christianity Rising: Stories from Zimbabwe (opening)](http://vimeo.com/9299661)   
 from [James Ault](http://vimeo.com/jamesault) on [Vimeo](http://vimeo.com)  
 
-<div align="center"><object width="400" height="300"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=9299661&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1"><embed src="http://vimeo.com/moogaloop.swf?clip_id=9299661&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="300"></object></div>
+<iframe src="https://player.vimeo.com/video/9299661?color=ff9933&byline=0&portrait=0" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ***
 

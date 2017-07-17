@@ -19,17 +19,11 @@ A number of valuable resources in the World Council of Chuches archives have bee
 
 **World Council of Churches records:**  
 *   World War II-era records of the World Council of Churches: [http://www.idcpublishers.com/ead/341.xml](http://www.idcpublishers.com/ead/341.xml) (also available digitally now) (Yale Fiche Ms117)  
-
 *   Programme to Combat Racism: [http://www.idcpublishers.com/ead/427.xml](http://www.idcpublishers.com/ead/427.xml)  (Yale Film Ms367)  
-
 *   Dialogue with People of Living Faiths: [http://www.idcpublishers.com/ead/479.xml](http://www.idcpublishers.com/ead/479.xml)  (Yale Film Ms381)  
-
 *   Christian Medical Commission: [http://www.brill.com/world-council-churches-christian-medical-commission](http://www.brill.com/world-council-churches-christian-medical-commission)  (Yale Film Ms516)  
-
 *   Relations with the Roman Catholic Church: [http://www.brill.com/world-council-churches-relations-roman-catholic-church](http://www.brill.com/world-council-churches-relations-roman-catholic-church) (Yale Film Ms517)  
-
 *   Correspondence of the General Secretaries: [http://www.brill.com/world-council-churches-archives-general-secretaries](http://www.brill.com/world-council-churches-archives-general-secretaries) (YaleFilm Ms518)  
-
 *   General correspondence: [http://www.idcpublishers.com/ead/254.xml](http://www.idcpublishers.com/ead/254.xml)  (Yale Fiche Ms113)  
 
 **World Student Christian Federation Archives:**   
@@ -58,13 +52,12 @@ To read our new articles on writing biography: "The Strengths and Limitations of
 ### Programs and Associations
 
 *   [All Africa Council of Churches (AACC)](http://www.oikoumene.org/en/member-churches/africa/aacc)  
-
 *   [Programme for Christian-Muslim Relations in Africa](http://www.procmura-prica.org/en/): "Faithful Christian Witness & Christian Constructive Engagement with Muslims for Peace and Peaceful Co-existence." (from the site)  
 
 ### Doctoral Dissertations
 
 *   [Doctoral Dissertations on Mission](http://www.omscibmr.org/dissertations/index.php)  
- 
+
 ### History of Missiology and AIC Photo Archive  
 
 The Theology Library of Boston University has a collection of missionary biographies, reports, sermons and theologies that provide a rich resource for mission studies.  
@@ -76,7 +69,6 @@ The Theology Library of Boston University has a collection of missionary biograp
 The Yale Divinity Library’s NEH-funded digitization project is now substantially complete. More than 5,500 reports and periodical issues have been digitized. Links to the online materials are available at:  
 
 *   [Day Missions Collection: Periodicals](http://web.library.yale.edu/divinity/day-missions-collection-annual-reports-listing)  
-
 *   [Day Missions Collection: Annual Reports.](http://web.library.yale.edu/divinity/day-missions-collection-periodicals-listing)  
 
 ### Video Resources from James Ault
@@ -90,13 +82,9 @@ The Yale Divinity Library’s NEH-funded digitization project is now substantial
 ### Evaluating Sources
 Guides for evaluating the authority and reliability of information sources found online or in print:  
 *   [How to Evaluate Web Resources](http://www.whoishostingthis.com/resources/evaluating-web-resources/)  
-
 *   [Critically analyzing information sources](http://guides.library.cornell.edu/criticallyanalyzing)  
-
 *   [General evaluation questions](http://www.libraries.psu.edu/psul/lls/students/research_resources/evaluate_info.html)  
-
 *   [Evaluating authority, quality, objectivity, currency, relevancy](https://library.uoregon.edu/guides/findarticles/credibility.html)  
-
 *   [Evaluating Web pages](http://www.lib.berkeley.edu/TeachingLib/Guides/Internet/Evaluate.html)
 
 ### International Mission Photo Archive

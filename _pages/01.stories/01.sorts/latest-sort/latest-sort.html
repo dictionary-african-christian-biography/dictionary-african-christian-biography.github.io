@@ -11,20 +11,18 @@ languages-available:
   - sw
 ---
 {% capture parent_lang %}{{ page.lang }}{% endcapture %}
-{% assign sorted = site.pages | where: "index","primary" | sort:"upload" | reverse %}
+{% assign sorted = site.pages | where: "index","primary" | where: "layout","single-bio" | sort:"upload" | reverse %}
 
 <table><thead>
-<th width=15%>{{ site.t[parent_lang].date-added }}</th>
-<th width=30%>{{ site.t[parent_lang].name }}</th>
-<th width=20%>{{ site.t[parent_lang].affiliation }}</th>
-<th width=20%>{{ site.t[parent_lang].country }}</th>
-<th width=15%>{{ site.t[parent_lang].languages }}</th>
+<th width=15%>{{ site.data.site-trans[parent_lang].date-added }}</th>
+<th width=30%>{{ site.data.site-trans[parent_lang].name }}</th>
+<th width=20%>{{ site.data.site-trans[parent_lang].affiliation }}</th>
+<th width=20%>{{ site.data.site-trans[parent_lang].country }}</th>
+<th width=15%>{{ site.data.site-trans[parent_lang].languages }}</th>
 </thead></table>
 
 {% for page in sorted %}
-{% if page.layout == single-history %}
-  {% continue %}
-{% else %}
+{% if page.upload != nil %}
   {% include date-single-index.html parent_lang=parent_lang %}
 {% endif %}
 {% endfor %}

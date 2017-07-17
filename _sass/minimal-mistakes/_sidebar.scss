@@ -12,7 +12,7 @@
     display: table !important;
     table-layout: fixed;
     width:100%;
-    font-size:.7em;
+    font-size: $type-size-6;
     padding: .5em;
   }
    .language-switch {
@@ -21,7 +21,7 @@
     display: table !important;
     table-layout: fixed;
     width:100%;
-    font-size:.7em;
+    font-size:$type-size-5;
     margin-bottom: 1em;
   }
   .lang-head {
@@ -137,19 +137,19 @@ article.archive__item {
   h2, h3, h4, h5, h6 {
     margin-bottom: 0;
     font-family: $sans-serif-narrow;
-    font-size: 1.25em;
+    font-size: $type-size-3;
     margin: 0em 0 0.5em;
   }
   p {
     font-family: $sans-serif;
-    font-size: .9em;
+    font-size: $type-size-4;
     line-height: 1.5;
     padding-bottom: .5em;
   }
 
   li {
     font-family: $sans-serif;
-    font-size: .9em;
+    font-size: $type-size-4;
     line-height: 1.5;
   }
 
@@ -179,6 +179,7 @@ article.archive__item {
   margin-bottom: 1em;
   background-color: $lighter-gray ;
   display: inline-block;
+  width: 100%;
 }
 
 .side-box-link {

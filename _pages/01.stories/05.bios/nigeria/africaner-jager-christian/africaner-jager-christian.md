@@ -19,8 +19,10 @@ century:
   - '16th'
   - '17th'                     
 tradition: 'protestant'                       
-affiliation: 'methodist'
-country: 'nigeria'
+affiliation:
+  - 'methodist'
+country:
+  - 'nigeria'
 ancient: 'ancient'
 artist: ''
 catechist: ''

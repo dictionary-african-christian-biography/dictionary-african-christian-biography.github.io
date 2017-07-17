@@ -16,58 +16,40 @@ layout: default
 
 <div id="main" role="main"><a name="top"></a>
   {% include sidebar.html %}
-  
+
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
     {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date: "%B %d, %Y" }}">{% endif %}
 
-    {% assign ed = site.t[page.affiliation].en %}
-    {% assign fd = site.t[page.affiliation].fr %}
-    {% assign pd = site.t[page.affiliation].pt %}
-    {% assign sd = site.t[page.affiliation].sw %}
-
-    {% assign ec = site.t[page.country].en %}
-    {% assign fc = site.t[page.country].fr %}
-    {% assign pc = site.t[page.country].pt %}
-    {% assign sc = site.t[page.country].sw %}
-
+<!-- NAME(S), DATE, AFFILIATION, COUNTRY -->
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
           {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
-
-          {% if page.lang == 'en' %}
           <p class="page__meta">
-            {{ page.date }}</br>
-            {% if ed == nil %} {{ page.affiliation | capitalize }} {% else %} {{ ed }} {% endif %}</br>
-            {{ ec }}</br>
-          </p>{% endif %}
-
-          {% if page.lang == 'fr' %}
-          <p class="page__meta">
-            {{ page.date }}</br>
-            {% if fd == nil %} {{ page.affiliation | capitalize }} {% else %} {{ fd }} {% endif %}</br>
-            {{ fc }}</br>
-          </p>{% endif %}
-
-          {% if page.lang == 'pt' %}
-          <p class="page__meta">
-            {{ page.date }}</br>
-            {% if pd == nil %} {{ page.affiliation | capitalize }} {% else %} {{ pd }} {% endif %}</br>
-            {{ pc }}</br>
-          </p>{% endif %}
-
-          {% if page.lang == 'sw' %}
-          <p class="page__meta">
-            {{ page.date }}</br>
-            {% if sd == nil %} {{ page.affiliation | capitalize }} {% else %} {{ sd }} {% endif %}</br>
-            {{ sc }}</br>
-          </p>{% endif %}
+            {% if page.alternate != nil %}
+            <b>{{ site.data.site-trans[page.lang].alternate }}: {{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</b>
+          </br>
+            {% endif %}
+            {{ page.date }}
+          </br>
+            {% assign a1 = page.affiliation[0] %} {% assign a2 = page.affiliation[1] %} {% assign a3 = page.affiliation[2] %}
+            {% if a1 != nil %}{{ site.data.aff-trans[a1][page.lang] }}{% endif %}
+            {% if a2 != nil %}, {{ site.data.aff-trans[a2][page.lang] }}{% endif %}
+            {% if a3 != nil %}, {{ site.data.aff-trans[a3][page.lang] }}{% endif %}
+          </br>
+            {% assign c1 = page.country[0] %}{% assign c2 = page.country[1] %}{% assign c3 = page.country[2] %}
+            {% if c1 != nil %}{{ site.data.country-trans[c1][page.lang] }}{% endif %}
+            {% if c2 != nil %}, {{ site.data.country-trans[c2][page.lang] }}{% endif %}
+            {% if c3 != nil %}, {{ site.data.country-trans[c3][page.lang] }}{% endif %}
+          </br>
+          </p>
         </header>
       {% endunless %}
 
+<!-- ALTERNATE VERSION CHECK AND DISPLAY -->
           {% assign current-short = page.title | remove:'(A)'| remove:'(B)'| remove:'(C)'| remove:'(D)'| remove:'(E)'| remove:'(F)'| remove:'(G)'| remove:'(H)'| remove:'(I)'| remove:'(J)'| remove:'(K)'| remove:'(L)'| remove:'(M)'| remove:'(N)'| remove:'(O)'| remove:'(P)' %}
           {% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}
           {% assign current-url = page.url %}
@@ -79,7 +61,7 @@ layout: default
 
           {% if check == true %}
         <div class="alternate">
-          {{ site.t[page.lang].other-available }}
+          {{ site.data.site-trans[page.lang].other-available }}
           {% for page in sorted %}{% for tag in page.title %}{% assign short-title = page.title | remove:'(A)'| remove:'(B)'| remove:'(C)'| remove:'(D)'| remove:'(E)'| remove:'(F)'| remove:'(G)'| remove:'(H)'| remove:'(I)'| remove:'(J)'| remove:'(K)'| remove:'(L)'| remove:'(M)'| remove:'(N)'| remove:'(O)'| remove:'(P)' %}
           {% if short-title == current-short and page.url != current-url %}
           <a href="{{ page.url | relative_url }}">{{ page.title | remove: short-title }}</a>
@@ -87,30 +69,14 @@ layout: default
         </div>
           {% endif %}
 
+<!-- CONTENT -->
       <section class="page__content" itemprop="text">
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
-      {% if page.share %}{% include social-share.html %}{% endif %}
 
       {% include post_pagination.html %}
     </div>
-
-    {% if site.comments.provider and page.comments %}
-      {% include comments.html %}
-    {% endif %}
   </article>
-
-  {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
-  {% if page.id and page.related and site.related_posts.size > 0 %}
-    <div class="page__related">
-      <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
-      <div class="grid__wrapper">
-        {% for post in site.related_posts limit:4 %}
-          {% include archive-single.html type="grid" %}
-        {% endfor %}
-      </div>
-    </div>
-  {% endif %}
 </div>

@@ -37,8 +37,8 @@ En dépit des ressources financières dérisoires du DIBICA et de l'infrastructu
 **Jonathan J. Bonk,**  
 directeur du projet
 
----
+***
 
 **Notes:**
-1.Pour la liste des institutions affiliées et des coordinateurs de liaison, voir cette page: [Africa addresses](http://www.dacb.org/particip_instit.html).
+1. Pour la liste des institutions affiliées et des coordinateurs de liaison, voir cette page: [Africa addresses](http://www.dacb.org/particip_instit.html).
 2. Ce chiffre représente seulement le nombre de visiteurs au site pour les mois de novembre et de décembre 2008 en l'absence de statistiques pour les autres mois.

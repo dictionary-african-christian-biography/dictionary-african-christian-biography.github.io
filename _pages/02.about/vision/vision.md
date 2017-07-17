@@ -1,5 +1,5 @@
 ---
-title: Vision
+title: 'Ecclesiastical Cartography and the Invisible Continent: The _Dictionary of African Christian Biography_'
 layout: single-about
 permalink: /about/vision/
 lang: en
@@ -9,9 +9,7 @@ languages-available:
   - pt
   - ' '
 ---
-## Ecclesiastical Cartography and the Invisible Continent: <br>_The Dictionary of African Christian Biography_ [1]
-
-The Council on African Studies and the MacMillan Center African Studies Lecture Series October 15, 2008 [Updated 10/19/09]
+The Council on African Studies and the MacMillan Center African Studies Lecture Series October 15, 2008 [Updated 10/19/09] [1]
 
 **Jonathan J. Bonk**
 

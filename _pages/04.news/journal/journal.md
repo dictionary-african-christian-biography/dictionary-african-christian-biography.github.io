@@ -9,8 +9,22 @@ languages-available:
   - ' '
   - ' '
 ---
-The Journal of African Christian Biography is a publication of the Dictionary of African Christian Biography, appearing in quarterly fascicles, starting in 2017. These issues are then assembled in a cumulative volume at the end of the year. The purpose of the JACB is to showcase, interpret, and make more readily accessible biographical and historical resources in the field of African Christianity. These resources are intended for use in the classroom and in the church to foster a deeper understanding of the history of African Christianity at a local, regional, national, and continental level. The JACB will thus provide tools to undergird the development of contextual African theologies.
+<img src="{{site.url}}/resources/journal/1-A/annualcover-black-sm.jpg" style="float:left;padding-right:1em;"> The Journal of African Christian Biography is a publication of the Dictionary of African Christian Biography, appearing in quarterly fascicles, starting in 2017. These issues are then assembled in a cumulative volume at the end of the year. The purpose of the JACB is to showcase, interpret, and make more readily accessible biographical and historical resources in the field of African Christianity. These resources are intended for use in the classroom and in the church to foster a deeper understanding of the history of African Christianity at a local, regional, national, and continental level. The JACB will thus provide tools to undergird the development of contextual African theologies.  
 
+<br>
+
+<!--CONTACT FORM -->
+<div class="side-box" style="display:inline-block;width:100%;"><form method="POST" action="http://formspree.io/alexraymay@gmail.com">
+<h3 style="margin-top:0px;">Subscribe</h3>
+<p>Sign up here for a free subscription to the <i>Journal of African Christian Biography</i>, appearing in quarterly installments, then assembled in a cumulative volume at the end of the year (December). Subscribers will also receive the bi-yearly <i>DACB</i> News Link.</p>
+    <div style="float:left;width:80%;padding-right:1em;">
+      <input type="name" name="Name" placeholder="{{site.data.site-trans[page.lang].name}}">
+      <input type="email" name="Email" placeholder="Email">
+    </div>
+    <div style="float:left;width:20%:">
+      <button type="submit" class="btn btn--inverse-form">{{site.data.ui-text[page.lang].comment_btn_submit}}</button>
+    </div>
+</form></div>
 
 **The journal is made available in several formats: as an e-journal for direct reading, and in several booklet formats (A4 and 8.5 x 11) for local printing and distribution.**
 
@@ -244,16 +258,3 @@ The Journal of African Christian Biography is a publication of the Dictionary of
     </div>
 </div>
 </div>  
-
-<!--CONTACT FORM -->
-<div class="side-box" style="display:inline-block;width:100%;"><form method="POST" action="http://formspree.io/alexraymay@gmail.com">
-<h3 style="margin-top:0px;">Subscribe</h3>
-<p>Sign up here for a free subscription to the <i>Journal of African Christian Biography</i>, appearing in quarterly installments, then assembled in a cumulative volume at the end of the year (December). Subscribers will also receive the bi-yearly <i>DACB</i> News Link.</p>
-    <div style="float:left;width:80%;padding-right:1em;">
-      <input type="name" name="Name" placeholder="{{site.t[page.lang].name}}">
-      <input type="email" name="Email" placeholder="Email">
-    </div>
-    <div style="float:left;width:20%:">
-      <button type="submit" class="btn btn--inverse-form">{{site.data.ui-text[page.lang].comment_btn_submit}}</button>
-    </div>
-</form></div>

@@ -37,7 +37,7 @@ Pamoja na rasilimali za kifedha za KAWAKIA za chini na miundombinu minimalist ya
 **Jonathan J. Bonk,**
 Mkurugenzi wa Mradi
 
----
+***
 
 **Maelezo:**
 1. Nenda kwa [anwani za Afrika](http://www.KAWAKIA.org/particip_instit.html) kwa orodha ya Taasisi za Kushiriki na Wakurugenzi wa Uhusiano.  

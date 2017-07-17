@@ -18,8 +18,10 @@ date: '1840 to 1893'
 century:
   - '19th'
 tradition: 'protestant'
-affiliation: ''
-country: 'botswana'
+affiliation:
+  - 'anglican (cms)'
+country:
+  - 'botswana'
 ancient: ''
 artist: ''
 catechist: ''

@@ -11,9 +11,11 @@ languages-available:
   - ' '        
 title: "Bee, Good"        
 date: c. 1767 a 1790                      
-affiliation: catholic              
+affiliation:
+  - 'catholic'             
 tradition: catholic             
-country: ghana
+country:
+  - 'ghana'
 century:
   - 16th
 categories: 'b'

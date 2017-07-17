@@ -14,9 +14,9 @@
           {% else %}
             {% assign domain = site.url | append: site.baseurl %}
           {% endif %}
-          <a href="{{ domain }}{{ page.lang | prepend: '/' | remove: '/en' }}{{ nav.url }}"><span class="nav__sub-title">{{ site.t[nav.title].[page.lang] }}</span></a>
+          <a href="{{ domain }}{{ page.lang | prepend: '/' | remove: '/en' }}{{ nav.url }}"><span class="nav__sub-title">{{ site.data.side-sorts[nav.title].[page.lang] }}</span></a>
         {% else %}
-          <span class="nav__sub-title">{{ site.t[nav.title].[page.lang] }}</span>
+          <span class="nav__sub-title">{{ site.data.side-sorts[nav.title].[page.lang] }}</span>
         {% endif %}
 
         {% if nav.children != null %}
@@ -36,7 +36,7 @@
               {% assign active = "" %}
             {% endif %}
 
-            <li><a href="{{ domain }}{{ page.lang | prepend: '/' | remove: '/en' }}{{ child.url }}" class="{{ active }}">{{ site.t[child.title].[page.lang] }}</a></li>
+            <li><a href="{{ domain }}{{ page.lang | prepend: '/' | remove: '/en' }}{{ child.url }}" class="{{ active }}">{{ site.data.side-sorts[child.title].[page.lang] }}</a></li>
           {% endfor %}
         </ul>
         {% endif %}

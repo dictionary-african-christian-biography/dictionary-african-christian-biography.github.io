@@ -13,9 +13,11 @@ sidebar:
   nav: "index-menu"         
 title: "Cee, Me"       
 date: 1937 to 1990                      
-affiliation: baptist              
+affiliation:
+  - 'baptist'             
 tradition: protestant             
-country: cameroon
+country:
+  - 'cameroon'
 century:
   - 20th
 categories: 'c'

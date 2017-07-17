@@ -18,8 +18,8 @@ Below is a list of institutions that have participated in the DACB. Click on the
 {% assign primary = site.pages | where: "index","primary" %}
 
 <table><thead>
-<th width=70%>{{ site.t[parent_lang].institution }}</th>
-<th width=30%>{{ site.t[parent_lang].number-bio }}</th>
+<th width=70%>{{ site.data.site-trans[parent_lang].institution }}</th>
+<th width=30%>{{ site.data.site-trans[parent_lang].number-bio }}</th>
 </thead></table>
 
 {% for page in primary %}

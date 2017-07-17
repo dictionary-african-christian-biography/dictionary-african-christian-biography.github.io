@@ -14,13 +14,15 @@ memory: 'memory'
 obituary: ''
 permalink: '/memories/pirouet-louise/'
 title: 'Pirouet, Louise'
-date: '1928 – December 21, 2012'
+date: '1928 – 2012'
 century:
   - '21st'
   - ''                     
 tradition: 'protestant'                       
-affiliation: 'church missionary society'
-country: 'uganda'
+affiliation:
+  - 'anglican (cms)'
+country:
+  - 'uganda'
 ancient: ''
 artist: ''
 catechist: ''

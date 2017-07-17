@@ -18,8 +18,10 @@ date: 'c. 1810 to 1892'
 century:
   - '19th'
 tradition: 'independent'
-affiliation: ''
-country: 'botswana'
+affiliation:
+  - 'anglican (cms)'
+country:
+  - 'botswana'
 ancient: ''
 artist: ''
 catechist: ''

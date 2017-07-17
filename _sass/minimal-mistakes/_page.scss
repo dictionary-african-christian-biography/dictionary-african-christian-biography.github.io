@@ -32,7 +32,7 @@ label.accordion {
   -webkit-transition: max-height .35s;
   -o-transition: max-height .35s;
   transition: max-height .35s;
-  font-size: .75em;
+  font-size: $type-size-5;
 }
 
 .tab-content h3 {
@@ -160,17 +160,17 @@ input.accordion[type=radio]:checked + label.accordion::after {
   }
 
   p, dl {
-    font-size: .75em;
+    font-size: $type-size-6;
   }
 
   li p {
     margin-top: 0px;
     line-height: 1em;
-    font-size: 11pt;
+    font-size: $type-size-6;
   }
 
   ul li {
-    font-size: 11pt;
+    font-size: $type-size-6;
   }
   /* paragraph indents */
   p {
@@ -269,7 +269,7 @@ input.accordion[type=radio]:checked + label.accordion::after {
     }
 
     .page__title {
-      font-size: $type-size-2;
+      font-size: $type-size-1;
 
       @include breakpoint($small) {
         font-size: $type-size-1;

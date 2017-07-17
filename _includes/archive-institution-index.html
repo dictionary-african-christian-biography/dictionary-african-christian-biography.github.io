@@ -4,7 +4,7 @@
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       <table><tbody><tr>
         <td width=70%><a href="{{ include.parent_lang | prepend: '/' | remove_first: '/en' }}/stories/institution-sort/#{{ page.institution | slugify }}">
-          {{ site.t[page.institution].[include.parent_lang] }}</a></td>
+          {{ site.data.site-trans[page.institution].[include.parent_lang] }}</a></td>
         <td width=30%>{{ cull.size }} </p></td>
       </tr></tbody></table>
   </article>
@@ -17,7 +17,7 @@
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       <table><tbody><tr>
         <td width=70%><a href="{{ include.parent_lang | prepend: '/' | remove_first: '/en' }}/stories/institution-sort/#{{ page.institution | slugify }}">
-          {{ site.t[page.institution].[include.parent_lang] }}</a></td>
+          {{ page.institution }}</a></td>
         <td width=30%>{{ cull.size }} </p></td>
       </tr></tbody></table>
   </article>

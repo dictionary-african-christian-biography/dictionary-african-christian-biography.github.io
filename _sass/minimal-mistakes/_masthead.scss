@@ -191,7 +191,7 @@ input[type=text] {
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
-    font-size: .8em;
+    font-size: $type-size-4;
     background-color: white;
     margin-top: .35em;
 }
@@ -259,7 +259,7 @@ li.dropdown-search {
 }
 
 input, textarea, select {
- font-size: .7em;
+ font-size: $type-size-5;
  padding: .2em;
 }
 
@@ -327,7 +327,7 @@ nav ul li {
 nav a {
 	display:block;
 	color:#FFF;
-	font-size: .7rem;
+	font-size: $type-size-5;
 	text-decoration:none;
 }
 
@@ -455,7 +455,7 @@ li > a:only-child:after { content: ''; }
 		padding:14px 14px;
     background-color: #303030;
 		color:#FFF;
-		font-size: .7em;
+		font-size: $type-size-5;
 		text-decoration:none;
 		border:none;
 	}
@@ -467,7 +467,7 @@ li > a:only-child:after { content: ''; }
 		display: block;
 		padding:14px 14px;
 		color:#FFF;
-		font-size: .7em;
+		font-size: $type-size-5;
 		text-decoration:none;
 		border:none;
     text-align: center;
@@ -507,7 +507,7 @@ li > a:only-child:after { content: ''; }
   nav ul ul ul a{
 		padding:14px 14px;
 		color:#FFF;
-		font-size: .7em;
+		font-size: $type-size-5;
 	}
 
 

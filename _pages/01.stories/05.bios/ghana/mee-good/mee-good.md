@@ -13,9 +13,11 @@ sidebar:
   nav: "index-menu"     
 title: "Mee, Good"        
 date: c. 1767 to 1790                      
-affiliation: catholic               
+affiliation:
+  - 'catholic'               
 tradition: catholic             
-country: ghana
+country:
+  - 'ghana'
 century:
   - 16th
 categories: 'm'

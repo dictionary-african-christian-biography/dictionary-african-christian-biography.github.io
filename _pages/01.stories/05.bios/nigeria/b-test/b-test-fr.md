@@ -11,9 +11,11 @@ languages-available:
   - ' '            
 title: "B, Test"         
 date: c. 1769 a 1822                        
-affiliation: methodist                
+affiliation:
+  - 'methodist'                
 tradition: protestant             
-country: nigeria
+country:
+  - 'nigeria'
 century:
   - 16th
   - 17th

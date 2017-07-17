@@ -39,7 +39,12 @@
           </div>
       </div>
       {% if f.url %}
-        <div class="archive__item-btn"><a href="{{ f_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>
+        <div class="archive__item-btn">
+        {% if f.url contains "://" %}
+        <a href="{{ f_url }}" class="btn {{ f.btn_class }}" rel="noopener noreferrer" target="_blank">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>
+        {% else %}
+        <a href="{{ f_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>
+        {% endif %}
         </div>
       {% endif %}
     </div>

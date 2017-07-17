@@ -6,8 +6,6 @@
    Default button
    ========================================================================== */
 
-
-
 .btn {
   /* default button */
   display: inline-block;
@@ -53,6 +51,9 @@
     color: $gray !important;
     border: 1px solid $light-gray !important; /* override*/
     background-color: #fff;
+    font-size: small;
+    font-style: normal;
+    width: 100%;
 
     &:hover {
       color: #fff !important;
@@ -88,6 +89,7 @@
     background-color: #fff;
     padding: 1.45em;
     margin-top: .25em;
+    height: 5em;
 
     &:hover {
       color: #fff !important;

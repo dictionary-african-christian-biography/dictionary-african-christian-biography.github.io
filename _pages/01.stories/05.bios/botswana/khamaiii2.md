@@ -19,8 +19,10 @@ century:
   - '20th'
   - '19th'
 tradition: 'catholic'
-affiliation: ''
-country: 'botswana'
+affiliation:
+  - 'church of the lord (aladura)'
+country:
+  - 'botswana'
 ancient: ''
 artist: ''
 catechist: ''

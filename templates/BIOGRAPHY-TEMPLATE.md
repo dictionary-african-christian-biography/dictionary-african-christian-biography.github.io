@@ -14,6 +14,7 @@ memory: ''
 obituary: ''
 permalink: '/example/example/'
 title: ''
+alternate: ''
 date: ''
 century:
   - ''

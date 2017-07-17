@@ -9,7 +9,7 @@ languages-available:
   - pt
   - sw
 ---
-<div class="side-box" style="font-size:.6em;font-style:italic;">{{ site.t.ongoing[page.lang] }}</div>
+<div class="side-box" style="font-size:.6em;font-style:italic;">{{ site.data.site-trans.ongoing[page.lang] }}</div>
 <br>
 <div>
 <table align="center" ><tr><td>
@@ -31,10 +31,10 @@ languages-available:
 <br>
 {% capture parent_lang %}{{ page.lang }}{% endcapture %}
 <table><thead>
-<th width=35%>{{ site.t[page.lang].name }}</th>
-<th width=25%>{{ site.t[page.lang].affiliation }}</th>
-<th width=25%>{{ site.t[page.lang].country }}</th>
-<th width=15%>{{ site.t[page.lang].languages }}</th>
+<th width=35%>{{ site.data.site-trans[page.lang].name }}</th>
+<th width=25%>{{ site.data.site-trans[page.lang].affiliation }}</th>
+<th width=25%>{{ site.data.site-trans[page.lang].country }}</th>
+<th width=15%>{{ site.data.site-trans[page.lang].languages }}</th>
 </thead></table>
 {% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}
 {% for page in sorted %}

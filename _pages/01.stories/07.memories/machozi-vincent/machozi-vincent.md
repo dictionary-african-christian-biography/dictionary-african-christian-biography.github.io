@@ -19,8 +19,10 @@ century:
   - '21st'
   - ''                     
 tradition: 'catholic'                       
-affiliation: 'catholic'
-country: 'democratic republic of congo'
+affiliation:
+  - 'catholic'
+country:
+  - 'democratic republic of congo'
 ancient: ''
 artist: ''
 catechist: ''

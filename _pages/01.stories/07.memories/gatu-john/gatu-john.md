@@ -14,13 +14,15 @@ memory: 'memory'
 obituary: ''
 permalink: '/memories/gatu-john/'
 title: 'Gatu, John'
-date: 'March 3, 1925 - May 11, 2017'
+date: '1925 - 2017'
 century:
   - '21st'
   - ''                     
 tradition: 'protestant'                       
-affiliation: 'presbyterian'
-country: 'kenya'
+affiliation:
+  - 'presbyterian'
+country:
+  - 'kenya'
 ancient: ''
 artist: ''
 catechist: ''

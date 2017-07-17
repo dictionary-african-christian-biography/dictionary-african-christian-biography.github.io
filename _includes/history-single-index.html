@@ -1,16 +1,16 @@
 {% if forloop.first %}
 {% assign check = page.country %}
-  <h2>{{ site.t[page.country].[include.parent_lang] }}</h2>
+  <h2>{{ site.data.country-trans[page.country].[include.parent_lang] }}</h2>
   <div>
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       <table><thead>
-        <th width=15%>{{ site.t[page.lang].country }}</th>
-        <th width=45%>{{ site.t[page.lang].title }}</th>
-        <th width=25%>{{ site.t[page.lang].author }}</th>
-        <th width=15%>{{ site.t[page.lang].languages }}</th>
+        <th width=15%>{{ site.data.site-trans[page.lang].country }}</th>
+        <th width=45%>{{ site.data.site-trans[page.lang].title }}</th>
+        <th width=25%>{{ site.data.site-trans[page.lang].author }}</th>
+        <th width=15%>{{ site.data.site-trans[page.lang].languages }}</th>
         </thead></table>
         <table width=100%><tbody><tr>
-            <td width=15%>{{ site.t[page.country].[include.parent_lang] }}</td>
+            <td width=15%>{{ site.data.country-trans[page.country].[include.parent_lang] }}</td>
             <td width=45%><a href="{{ page.url | relative_url}}">{{ page.title }}</a></td>
             <td width=25%>{{ page.author }}</td>
             <td width=15%>
@@ -27,7 +27,7 @@
 <div>
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     <table width=100%><tbody><tr>
-        <td width=15%>{{ site.t[page.country].[include.parent_lang] }}</td>
+        <td width=15%>{{ site.data.country-trans[page.country].[include.parent_lang] }}</td>
         <td width=45%><a href="{{ page.url | relative_url}}">{{ page.title }}</a></td>
         <td width=25%>{{ page.author }}</td>
         <td width=15%>
@@ -42,18 +42,18 @@
 
 {% elsif page.country != check %}
 {% assign check = page.country %}
-<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
-<h2>{{ site.t[page.country].[include.parent_lang] }}</h2>
+{% include back-to-top %}
+<h2>{{ site.data.country-trans[page.country].[include.parent_lang] }}</h2>
 <div>
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     <table><thead>
-      <th width=15%>{{ site.t[page.lang].country }}</th>
-      <th width=45%>{{ site.t[page.lang].title }}</th>
-      <th width=25%>{{ site.t[page.lang].author }}</th>
-      <th width=15%>{{ site.t[page.lang].languages }}</th>
+      <th width=15%>{{ site.data.site-trans[page.lang].country }}</th>
+      <th width=45%>{{ site.data.site-trans[page.lang].title }}</th>
+      <th width=25%>{{ site.data.site-trans[page.lang].author }}</th>
+      <th width=15%>{{ site.data.site-trans[page.lang].languages }}</th>
       </thead></table>
       <table width=100%><tbody><tr>
-          <td width=15%>{{ site.t[page.country].[include.parent_lang] }}</td>
+          <td width=15%>{{ site.data.country-trans[page.country].[include.parent_lang] }}</td>
           <td width=45%><a href="{{ page.url | relative_url}}">{{ page.title }}</a></td>
           <td width=25%>{{ page.author }}</td>
           <td width=15%>

@@ -11,4 +11,5 @@ languages-available:
 ---
 Vitabu hivi kumbukumbu na historia ya kanisa katika Afrika ni chanzo cha kadhaa ya makala yetu KAWAKIA.
 
-{% include bibliography.html %}
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}
+{% include bibliography.html parent_lang=parent_lang %}

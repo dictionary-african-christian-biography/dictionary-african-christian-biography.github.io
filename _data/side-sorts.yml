@@ -1,0 +1,158 @@
+#  =======================================
+#  SIDEBAR NAVIGATION TRANSLATIONS
+#  =======================================
+Browse Stories:
+  en: "Browse Stories by"
+  fr: "Parcourir les Histoires par"
+  pt: "Procurar Histórias por"
+  sw: "Vinjari Hadithi kwa"
+Sort All Stories:
+  en: "Sort All Stories By"
+  fr: "Trier Tout Par"
+  pt: "Todas Ordenar por"
+  sw: "Weka Zote kwa"
+By Name:
+  en: "Name"
+  fr: "Nom"
+  pt: "Nome"
+  sw: "Jina"
+By Most Recent:
+  en: "Newest"
+  fr: "Nouveau"
+  pt: "Novo"
+  sw: "Karibuni Zaidi"
+By Century:
+  en: "Century"
+  fr: "Siècle"
+  pt: "Século"
+  sw: "Karne"
+By Tradition:
+  en: "Tradition"
+  fr: "Tradition"
+  pt: "Tradição"
+  sw: "Hadithi"
+By Country:
+  en: "Country"
+  fr: "Pays"
+  pt: "País"
+  sw: "Nchi"
+By Author:
+  en: "Author"
+  fr: "Auteur"
+  pt: "Autor"
+  sw: "Mwandishi"
+By Institution:
+  en: "Institution"
+  fr: "Institution"
+  pt: "Instituição"
+  sw: "Taasisi"
+By Language:
+  en: "Language"
+  fr: "Langue"
+  pt: "Língua"
+  sw: "Lugha"
+Category Indexes:
+  en: "Category Indexes"
+  fr: "Catégorie Indexes"
+  pt: "Categoria Índices"
+  sw: "Nakala za Jamii"
+Ancient Church:
+  en: "Ancient Christians"
+  fr: "Chrétiens Anciens"
+  pt: "Cristãos antigos"
+  sw: "Wakristo wa Kale"
+Artists:
+  en: "Artists"
+  fr: "Artistes"
+  pt: "Artistas"
+  sw: "Wasanii"
+Catechists:
+  en: "Catechists"
+  fr: "Catéchistes"
+  pt: "Catequistas"
+  sw: "Makatekististi"
+Clergy:
+  en: "Clergy"
+  fr: "Clergé"
+  pt: "Clero"
+  sw: "Makanisa"
+Ecumenists:
+  en: "Ecumenists"
+  fr: "Ecuménistes"
+  pt: "Ecumenistas"
+  sw: "Ecumenists"
+Evangelists:
+  en: "Evangelists"
+  fr: "Évangélistes"
+  pt: "Evangelistas"
+  sw: "Wainjilisti"
+Martyrs:
+  en: "Martyrs"
+  fr: "Martyrs"
+  pt: "Mártires"
+  sw: "Waaminifu"
+Medical Practitioners:
+  en: "Medical Practitioners"
+  fr: "Praticiens médicaux"
+  pt: "Praticantes de Medicina"
+  sw: "Wataalamu wa Dawa"
+Missionaries:
+  en: "Missionaries"
+  fr: "Missionnaires"
+  pt: "Missionários"
+  sw: "Wamisionari"
+Musicians:
+  en: "Musicians"
+  fr: "Musiciens"
+  pt: "Músicos"
+  sw: "Wataziki"
+Nationalists:
+  en: "Nationalists"
+  fr: "Nationalistes"
+  pt: "Nacionalistas"
+  sw: "Wanasiasa"
+Non-Africans:
+  en: "Non-Africans"
+  fr: "Non-Africains"
+  pt: "Não-Africanos"
+  sw: "Wasio Waafrika"
+Non-Christians:
+  en: "Non-Christians"
+  fr: "Non-Chrétiens"
+  pt: "Não-Cristãos"
+  sw: "Wasio Wakristo"
+Photos:
+  en: "Photos"
+  fr: "Photos"
+  pt: "Fotos"
+  sw: "Picha"
+Scholars:
+  en: "Scholars"
+  fr: "Savants"
+  pt: "Estudiosos"
+  sw: "Wasomi"
+Theologians:
+  en: "Theologians"
+  fr: "Théologiens"
+  pt: "Teólogos"
+  sw: "Wanasomojia"
+Translators:
+  en: "Translators"
+  fr: "Traducteurs"
+  pt: "Tradutores"
+  sw: "Watafsiri"
+Women:
+  en: "Women"
+  fr: "Femmes"
+  pt: "Mulheres"
+  sw: "Wanawake"
+Youth:
+  en: "Youth"
+  fr: "Jeunesse"
+  pt: "Juventude"
+  sw: "Vijana"
+other-subjects:
+  en: "Other Subjects"
+  fr: "Autres Sujets"
+  pt: "Outros Assuntos"
+  sw: "Majumbe Mengine"

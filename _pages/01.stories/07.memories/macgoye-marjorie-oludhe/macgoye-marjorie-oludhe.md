@@ -14,13 +14,15 @@ memory: 'memory'
 obituary: ''
 permalink: '/memories/macgoye-marjorie-oludhe/'
 title: 'Macgoye (nee King), Marjorie Oludhe'
-date: '21 October 1928 – 1 December 2015'
+date: '1928 – 2015'
 century:
   - '21st'
   - ''                     
 tradition: 'protestant'                       
-affiliation: 'anglican'
-country: 'kenya'
+affiliation:
+  - 'anglican'
+country:
+  - 'kenya'
 ancient: ''
 artist: ''
 catechist: ''

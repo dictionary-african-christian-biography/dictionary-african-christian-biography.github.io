@@ -11,4 +11,5 @@ languages-available:
 ---
  Estes livros de referência sobre a história da igreja na África é a fonte de vários dos nossos artigos DIBICA.
 
-{% include bibliography.html %}
+ {% capture parent_lang %}{{ page.lang }}{% endcapture %}
+ {% include bibliography.html parent_lang=parent_lang %}

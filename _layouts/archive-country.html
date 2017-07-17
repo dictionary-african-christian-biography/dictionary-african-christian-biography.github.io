@@ -13,14 +13,13 @@ layout: default
     {% include breadcrumbs.html %}
   {% endunless %}
 {% endif %}
-
-<div id="main" role="main"><a name="#top"></a>
+<div id="main" role="main">
   {% include sidebar.html %}
 
   <div class="archive">
 
     {% unless page.header.overlay_color or page.header.overlay_image %}
-      <h1 class="page__title">{{ site.t[page.title][page.lang] }}</h1>
+      <h1 class="page__title">{{ site.data.country-trans[page.title][page.lang] }}</h1>
     {% endunless %}
     {{ content }}
   </div>

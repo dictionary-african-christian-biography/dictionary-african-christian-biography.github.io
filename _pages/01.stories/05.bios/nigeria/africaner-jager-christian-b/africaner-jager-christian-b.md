@@ -14,9 +14,11 @@ sidebar:
   nav: "index-menu"
 title: "Africaner, Jager Christian (B)"         
 date: c. 1769 to 1822                        
-affiliation: methodist               
+affiliation:
+  - 'methodist'               
 tradition: protestant             
-country: nigeria
+country:
+  - 'nigeria'
 century:
   - 16th
   - 17th

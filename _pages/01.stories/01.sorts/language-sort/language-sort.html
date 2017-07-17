@@ -18,19 +18,19 @@ languages-available:
 {% assign ssort = sorted | where: "lang","sw" %}
 
 <p>
-<a href="#en">{{ site.t[parent_lang].english }}</a> |
-<a href="#fr">{{ site.t[parent_lang].french }}</a> |
-<a href="#pt">{{ site.t[parent_lang].portuguese }}</a> |
-<a href="#sw">{{ site.t[parent_lang].swahili }}</a>
+<a href="#en">{{ site.data.site-trans[parent_lang].english }}</a> |
+<a href="#fr">{{ site.data.site-trans[parent_lang].french }}</a> |
+<a href="#pt">{{ site.data.site-trans[parent_lang].portuguese }}</a> |
+<a href="#sw">{{ site.data.site-trans[parent_lang].swahili }}</a>
 </P>
 
 {% for page in esort limit:1 %}{% if forloop.first == true %}
-<h2 id="en">{{ site.t[parent_lang].english }}</h2>
+<h2 id="en">{{ site.data.site-trans[parent_lang].english }}</h2>
 <table><thead>
-<th width=35%>{{ site.t[parent_lang].name }}</th>
-<th width=25%>{{ site.t[parent_lang].affiliation }}</th>
-<th width=25%>{{ site.t[parent_lang].country }}</th>
-<th width=15%>{{ site.t[parent_lang].languages }}</th>
+<th width=35%>{{ site.data.site-trans[parent_lang].name }}</th>
+<th width=25%>{{ site.data.site-trans[parent_lang].affiliation }}</th>
+<th width=25%>{{ site.data.site-trans[parent_lang].country }}</th>
+<th width=15%>{{ site.data.site-trans[parent_lang].languages }}</th>
 </thead></table>
 {% endif %}{% endfor %}
 {% for page in sorted %}
@@ -39,16 +39,16 @@ languages-available:
   {% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 {% for page in esort limit:1 %}{% if forloop.first == true %}
-<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% include back-to-top %}
 {% endif %}{% endfor %}
 
 {% for page in fsort limit:1 %}{% if forloop.first == true %}
-<h2 id="fr">{{ site.t[parent_lang].french }}</h2>
+<h2 id="fr">{{ site.data.site-trans[parent_lang].french }}</h2>
 <table><thead>
-<th width=35%>{{ site.t[parent_lang].name }}</th>
-<th width=25%>{{ site.t[parent_lang].affiliation }}</th>
-<th width=25%>{{ site.t[parent_lang].country }}</th>
-<th width=15%>{{ site.t[parent_lang].languages }}</th>
+<th width=35%>{{ site.data.site-trans[parent_lang].name }}</th>
+<th width=25%>{{ site.data.site-trans[parent_lang].affiliation }}</th>
+<th width=25%>{{ site.data.site-trans[parent_lang].country }}</th>
+<th width=15%>{{ site.data.site-trans[parent_lang].languages }}</th>
 </thead></table>
 {% endif %}{% endfor %}
 {% for page in sorted %}
@@ -57,16 +57,16 @@ languages-available:
   {% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 {% for page in fsort limit:1 %}{% if forloop.first == true %}
-<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% include back-to-top %}
 {% endif %}{% endfor %}
 
 {% for page in psort limit:1 %}{% if forloop.first == true %}
-<h2 id="pt">{{ site.t[parent_lang].portuguese }}</h2>
+<h2 id="pt">{{ site.data.site-trans[parent_lang].portuguese }}</h2>
 <table><thead>
-<th width=35%>{{ site.t[parent_lang].name }}</th>
-<th width=25%>{{ site.t[parent_lang].affiliation }}</th>
-<th width=25%>{{ site.t[parent_lang].country }}</th>
-<th width=15%>{{ site.t[parent_lang].languages }}</th>
+<th width=35%>{{ site.data.site-trans[parent_lang].name }}</th>
+<th width=25%>{{ site.data.site-trans[parent_lang].affiliation }}</th>
+<th width=25%>{{ site.data.site-trans[parent_lang].country }}</th>
+<th width=15%>{{ site.data.site-trans[parent_lang].languages }}</th>
 </thead></table>
 {% endif %}{% endfor %}
 {% for page in sorted %}
@@ -75,16 +75,16 @@ languages-available:
   {% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 {% for page in psort limit:1 %}{% if forloop.first == true %}
-<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% include back-to-top %}
 {% endif %}{% endfor %}
 
 {% for page in ssort limit:1 %}{% if forloop.first == true %}
-<h2 id="sw">{{ site.t[parent_lang].swahili }}</h2>
+<h2 id="sw">{{ site.data.site-trans[parent_lang].swahili }}</h2>
 <table><thead>
-<th width=35%>{{ site.t[parent_lang].name }}</th>
-<th width=25%>{{ site.t[parent_lang].affiliation }}</th>
-<th width=25%>{{ site.t[parent_lang].country }}</th>
-<th width=15%>{{ site.t[parent_lang].languages }}</th>
+<th width=35%>{{ site.data.site-trans[parent_lang].name }}</th>
+<th width=25%>{{ site.data.site-trans[parent_lang].affiliation }}</th>
+<th width=25%>{{ site.data.site-trans[parent_lang].country }}</th>
+<th width=15%>{{ site.data.site-trans[parent_lang].languages }}</th>
 </thead></table>
 {% endif %}{% endfor %}
 {% for page in sorted %}
@@ -93,5 +93,5 @@ languages-available:
   {% include archive-category-index.html parent_lang=parent_lang %}
 {% endif %}{% endfor %}{% endfor %}
 {% for page in ssort limit:1 %}{% if forloop.first == true %}
-<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% include back-to-top %}
 {% endif %}{% endfor %}

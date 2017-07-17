@@ -37,7 +37,7 @@ Despite the DACB's laughably meager financial resources and minimalist administr
 **Jonathan J. Bonk,**
 Project Director
 
----
+***
 
 **Notes:**
 1. Go to [Africa addresses](http://www.dacb.org/particip_instit.html) for a list of Participating Institutions and designated Liaison Coordinators.

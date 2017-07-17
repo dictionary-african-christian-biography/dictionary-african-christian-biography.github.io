@@ -10,11 +10,11 @@ languages-available:
   - sw
 ---
 {% capture parent_lang %}{{ page.lang }}{% endcapture %}
-{% assign sorted = site.pages | where: "index","primary" | sort:"institution" %}
+{% assign sorted = site.pages | where: "index","primary" | where: "layout","single-bio" | sort:"institution" %}
 
 {% for page in sorted %}
-{% if page.title != empty %}
+{% if page.institution != nil %}
   {% include institution-single-index.html parent_lang=parent_lang %}
 {% endif %}
 {% endfor %}
-<p style="padding-top:.5em;"><a href="#top" style="font-weight:normal;">{{ site.t[parent_lang].back_to_top }}</a></p>
+{% include back-to-top %}

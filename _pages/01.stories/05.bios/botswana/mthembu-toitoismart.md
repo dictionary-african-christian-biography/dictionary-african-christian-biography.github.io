@@ -18,8 +18,10 @@ date: '1901 to 1985'
 century:
   - '20th'
 tradition: 'protestant'
-affiliation: ''
-country: 'botswana'
+affiliation:
+  - 'presbyterian'
+country:
+  - 'botswana'
 ancient: ''
 artist: ''
 catechist: ''

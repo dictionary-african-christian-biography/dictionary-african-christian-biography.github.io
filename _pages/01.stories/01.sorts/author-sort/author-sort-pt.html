@@ -10,17 +10,19 @@ languages-available:
   - sw
 ---
 {% capture parent_lang %}{{ page.lang }}{% endcapture %}
-{% assign sorted = site.pages | where: "index","primary" | sort:"author" %}
+{% assign sorted = site.pages | where: "index","primary" | where: "layout","single-bio" | sort:"author" %}
 
 <table><thead>
-  <th width=20%>{{ site.t[page.lang].author }}</th>
-  <th width=25%>{{ site.t[page.lang].name }}</th>
-  <th width=20%>{{ site.t[page.lang].affiliation }}</th>
-  <th width=20%>{{ site.t[page.lang].country }}</th>
-  <th width=15%>{{ site.t[page.lang].languages }}</th>
+  <th width=20%>{{ site.data.site-trans[page.lang].author }}</th>
+  <th width=25%>{{ site.data.site-trans[page.lang].name }}</th>
+  <th width=20%>{{ site.data.site-trans[page.lang].affiliation }}</th>
+  <th width=20%>{{ site.data.site-trans[page.lang].country }}</th>
+  <th width=15%>{{ site.data.site-trans[page.lang].languages }}</th>
   </thead></table>
 {% for page in sorted %}
+{% if page.layout != single-history %}
 {% if page.title != empty %}
   {% include author-single-index.html parent_lang=parent_lang %}
+{% endif %}
 {% endif %}
 {% endfor %}

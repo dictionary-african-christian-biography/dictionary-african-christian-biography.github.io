@@ -20,9 +20,7 @@ Non African educational or research institutions catering to African students on
 2\.  As the _DACB_ is essentially an African endeavor, it is important that any student at a non African participating institution who chooses to write for the _DACB_ be someone who  
 
 *   Is African, residing in Africa, OR  
-
 *   Has spent a significant amount of time in Africa, OR  
-
 *   Has devoted a significant amount of his or her academic career to the study of Africa.  
 
 3\.  Each contributor will undertake this study under the auspices of the participating institution to ensure accuracy of detail and conformity to the standards laid out in the _Instructional Manual for Researchers and Writers._ Having collected these stories, and having determined the adequate merit of those selected for inclusion in the dictionary, the designated supervisor will submit these to the institution's liaison coordinator, who shall forward them to _DACB_ offices at OMSC.   
@@ -32,9 +30,7 @@ Non African educational or research institutions catering to African students on
 5\.  Stories submitted must conform to the guidelines in _DACB_'s _Instructional Manual for Researchers and Writers._
 
 *   **Forwarding biographical stories to the _DACB_ central office.** The designated _DACB_ liaison coordinator will see that the completed stories are forwarded to the New Haven offices of the _DACB_.  
-
 *   **Receiving a copy of the _DACB_ CD-ROM.** Once the stories have been entered into the electronic database, a copy of the entire database on a CD-ROM will be returned to the non African participating institution via the _DACB_ liaison coordinator.  
-
 *   **Register of participating institutions.** Denominations, schools and institutions participating in the _DACB_ will be listed on the _DACB_ website's annually revised _DACB_ Register of Participating Institutions.
 
 * * *
@@ -44,13 +40,9 @@ Non African educational or research institutions catering to African students on
 **Liaison coordinators are expected to:**
 
 *   Serve as official liaison between their institutions and _DACB_ offices at OMSC  
-
 *   Encourage the researching and recording of the biographies of Christians (lay and clerical, indigenous and foreign) who are deemed to have made a significant contribution to the founding, nurture and vitality of a church or churches in an African nation  
-
 *   Function as the institutional depository of all such stories  
-
 *   Forward the collected biographical studies to the _DACB_ offices at OMSC  
-
 *   Provide _DACB_ information on request to those interested in participating in the project  
 
 **Services rendered by liaison coordinators are on a strictly voluntary basis, and there is no provision for remuneration. Nevertheless--**
