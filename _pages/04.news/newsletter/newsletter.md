@@ -10,19 +10,8 @@ languages-available:
   - sw
 ---
 <!--CONTACT FORM -->
-<div class="side-box" style="display:inline-block;width:100%;">
-<form method="POST" action="http://formspree.io/alexraymay@gmail.com">
-  <h3 style="margin-top:0px;">Subscribe</h3>
-    <p>Sign up here for a free subscription to the <i>DACB</i> News Link, appearing in monthly installments, then assembled in a cumulative volume at the end of the year. Subscribers will also receive the quarterly <i>Journal of African Christian Biography</i>.</p>
-  <div style="float:left;width:80%;padding-right:1em;">
-    <input type="name" name="Name" placeholder="{{site.data.site-trans[page.lang].name}}">
-    <input type="email" name="Email" placeholder="Email">
-  </div>
-  <div style="float:left;width:20%:">
-  <button type="submit" class="btn btn--inverse-form">{{site.data.ui-text[page.lang].comment_btn_submit}}</button>
-  </div>
-</form>
-</div>
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}
+{% include mailchimp-form.html parent_lang=parent_lang %}
 
 <!-- PAST ISSUES -->
 For those who prefer the _DACB_ newsletter  in PDF form, it will be available for download from this page. Each electronic newsletter will contain a link to the PDF version of the current newsletter.  

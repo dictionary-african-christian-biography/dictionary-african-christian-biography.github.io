@@ -54,31 +54,19 @@
     <h3 style="color:#e0c74f; margin-top:0px;">{{ site.data.site-trans[page.lang].newsletter }}</h3>
     {% if page.lang == 'en' %}
         <p>Want to stay updated on new happenings at the DACB? Sign up for our e-newsletter here.</p>
-        <div style="display:inline-block;width:100%;"><form method="POST" action="http://formspree.io/alexraymay@gmail.com">
-          <div style="float:left;width:100%;"><input type="name" name="Name" placeholder="{{site.data.site-trans[page.lang].name}}"><input type="email" name="Email" placeholder="Email"></div>
-          <div><button type="submit" class="btn btn--inverse-long">{{site.data.ui-text[page.lang].comment_btn_submit}}</button></div>
-        </form></div>
+        {% include mailchimp-mini-form.html %}
     {% endif %}
     {% if page.lang == 'fr' %}
         <p>WVous voulez rester à jour sur les nouveaux événements au DACB? Inscrivez-vous à notre newsletter électronique ici.</p>
-        <div style="display:inline-block;width:100%;"><form method="POST" action="http://formspree.io/alexraymay@gmail.com">
-          <div style="float:left;width:100%;"><input type="name" name="Name" placeholder="{{site.data.site-trans[page.lang].name}}"><input type="email" name="Email" placeholder="Email"></div>
-          <div><button type="submit" class="btn btn--inverse-long">{{site.data.ui-text[page.lang].comment_btn_submit}}</button></div>
-        </form></div>
+        {% include mailchimp-mini-form.html %}
     {% endif %}
     {% if page.lang == 'pt' %}
         <p>Quer ficar atualizado sobre novos acontecimentos no DACB? Inscreva-se no nosso boletim informativo aqui.</p>
-        <div style="display:inline-block;width:100%;"><form method="POST" action="http://formspree.io/alexraymay@gmail.com">
-          <div style="float:left;width:100%;"><input type="name" name="Name" placeholder="{{site.data.site-trans[page.lang].name}}"><input type="email" name="Email" placeholder="Email"></div>
-          <div><button type="submit" class="btn btn--inverse-long">{{site.data.ui-text[page.lang].comment_btn_submit}}</button></div>
-        </form></div>
+        {% include mailchimp-mini-form.html %}
     {% endif %}
     {% if page.lang == 'sw' %}
         <p>Unataka kukaa updated juu ya matukio mapya katika DACB? Ishara kwa jarida letu la e-mail hapa.</p>
-        <div style="display:inline-block;width:100%;"><form method="POST" action="http://formspree.io/alexraymay@gmail.com">
-          <div style="float:left;width:100%;"><input type="name" name="Name" placeholder="{{site.data.site-trans[page.lang].name}}"><input type="email" name="Email" placeholder="Email"></div>
-          <div><button type="submit" class="btn btn--inverse-long">{{site.data.ui-text[page.lang].comment_btn_submit}}</button></div>
-        </form></div>
+        {% include mailchimp-mini-form.html %}
     {% endif %}
 </div>
 <!-- end custom footer snippets -->

@@ -1,6 +1,177 @@
 /* ==========================================================================
-   Forms
+   Mailchimp Form - SMALL
    ========================================================================== */
+
+   #mc_embed_signup_small form {
+     display: block;
+     position: relative;
+     text-align: left;
+     padding: 0px;
+   }
+   #mc_embed_signup_small .mc-field-group label {
+     font-family: ".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif !important;
+     font-size: $type-size-6;
+     display: block;
+     margin-bottom: 3px
+   }
+   #mc_embed_signup_small .mc-field-group {
+     float: left;
+     position: relative;
+     width: 50%;
+     padding-right: .25em;
+   }
+   #mc_embed_signup_small .mc-field-group input {
+     display: block;
+     width: 100%;
+     padding: 4px 0;
+     text-indent: 2%;
+     font-size: $type-size-6;
+   }
+   #mc_embed_signup_small .mc-field-group2 {
+     float: left;
+     position: relative;
+     width: 50%;
+     padding-left:.25em;
+   }
+
+   #mc_embed_signup_small .mc-field-group2 input {
+     display: block;
+     width: 100%;
+     padding: 4px 0;
+     text-indent: 2%;
+     font-size: $type-size-6;
+   }
+   #mc_embed_signup_small .mc-field-wide {
+     float: left;
+     position: relative;
+     width: 100%;
+     padding-left:.5em;
+     padding-bottom: 3%;
+     min-height: 50px;
+   }
+   #mc_embed_signup_small .mc-field-wide input {
+     display: block;
+     width: 100%;
+     padding: 4px 0;
+     text-indent: 2%;
+     font-size: $type-size-4;
+   }
+   #mc_embed_signup_small div.mc-field-wide div.required {
+     color: #ee5f5b;
+     margin-top: .35em;
+   }
+   #mc_embed_signup_small div.indicates-required {
+     font-size: $type-size-7;
+     display: block;
+     text-align: right;
+     width: 100%;
+   }
+   #mc_embed_signup_small div.mce_inline_error {
+    margin: 0 0 1em 0;
+    padding: 5px 10px;
+    border: 1px solid #6B0505;
+    background-color: #d29999;
+    border-radius: 3px;
+    z-index: 1;
+    color: #6B0505;
+    font-size: $type-size-6;
+  }
+
+/* ==========================================================================
+   Mailchimp Form - BIG
+   ========================================================================== */
+   #mc_embed_signup form {
+     display: block;
+     position: relative;
+     text-align: left;
+     padding: 0px;
+   }
+   #mc_embed_signup .mc-field-group label {
+     font-family: ".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif !important;
+     font-size: $type-size-6;
+     display: block;
+     margin-bottom: 3px
+   }
+   #mc_embed_signup .mc-field-group {
+     float: left;
+     position: relative;
+     width: 50%;
+     padding-right: .5em;
+     padding-bottom: 3%;
+     min-height: 50px;
+   }
+   #mc_embed_signup .mc-field-group input {
+     display: block;
+     width: 100%;
+     padding: 4px 0;
+     text-indent: 2%;
+     font-size: $type-size-4;
+   }
+   #mc_embed_signup .mc-field-group2 {
+     float: left;
+     position: relative;
+     width: 50%;
+     padding-left:.5em;
+     padding-bottom: 3%;
+     min-height: 50px;
+   }
+   #mc_embed_signup .mc-field-group2 label {
+     font-family: ".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif !important;
+     font-size: $type-size-6;
+     display: block;
+     margin-bottom: 3px
+   }
+   #mc_embed_signup .mc-field-group2 input {
+     display: block;
+     width: 100%;
+     padding: 4px 0;
+     text-indent: 2%;
+     font-size: $type-size-4;
+   }
+   #mc_embed_signup .mc-field-wide {
+     float: left;
+     position: relative;
+     width: 100%;
+     padding-left:.5em;
+     padding-bottom: 3%;
+     min-height: 50px;
+   }
+   #mc_embed_signup .mc-field-wide label {
+     font-family: ".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif !important;
+     font-size: .625em;
+     display: block;
+     margin-bottom: 3px
+   }
+   #mc_embed_signup .mc-field-wide input {
+     display: block;
+     width: 100%;
+     padding: 4px 0;
+     text-indent: 2%;
+     font-size: $type-size-4;
+   }
+   .required {
+     color: #ee5f5b;
+     margin-top: .35em;
+   }
+   .indicates-required {
+     font-size: $type-size-7;
+     display: block;
+     text-align: right;
+     width: 100%;
+   }
+   #mc_embed_signup div.mce_inline_error {
+    margin: 0 0 1em 0;
+    padding: 5px 10px;
+    border: 1px solid #6B0505;
+    background-color: #d29999;
+    border-radius: 3px;
+    z-index: 1;
+    color: #6B0505;
+    font-size: $type-size-6;
+  }
+/* ==========================================================================
+Forms
+========================================================================== */
 
 form {
   margin: 0 0 5px 0;

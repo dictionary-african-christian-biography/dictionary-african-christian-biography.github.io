@@ -84,12 +84,14 @@
   }
 
   &--inverse-form {
-    color: $gray !important;
-    border: 1px solid $light-gray !important; /* override*/
+    color: #7a8288 !important;
+    border: 1px solid #bdc1c4 !important;
     background-color: #fff;
-    padding: 1.45em;
-    margin-top: .25em;
-    height: 5em;
+    font-size: small;
+    font-style: normal;
+    width: 100% !important;
+    margin-top: .5em;
+    padding: .75em;
 
     &:hover {
       color: #fff !important;
@@ -101,7 +103,7 @@
     color: #e0c74f  !important;
     border: 1px solid $light-gray !important; /* override*/
     background-color: $dark-gray;
-    width: 100%;
+    width: 100% !important;
     margin-top: .25em;
 
 

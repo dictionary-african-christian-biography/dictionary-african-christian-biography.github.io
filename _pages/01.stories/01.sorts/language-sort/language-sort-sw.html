@@ -17,12 +17,14 @@ languages-available:
 {% assign psort = site.pages | where: "lang","pt" %}
 {% assign ssort = site.pages | where: "lang","sw" %}
 
-<p>
-<a href="#en">{{ site.data.site-trans[parent_lang].english }}</a> |
-<a href="#fr">{{ site.data.site-trans[parent_lang].french }}</a> |
-<a href="#pt">{{ site.data.site-trans[parent_lang].portuguese }}</a> |
-<a href="#sw">{{ site.data.site-trans[parent_lang].swahili }}</a>
-</P>
+<table class="sort"><tbody>
+  <tr>
+    <td><a href="#en">{{ site.data.site-trans[parent_lang].english }}</a></td>
+    <td><a href="#fr">{{ site.data.site-trans[parent_lang].french }}</a></td>
+    <td><a href="#pt">{{ site.data.site-trans[parent_lang].portuguese }}</a></td>
+    <td><a href="#sw">{{ site.data.site-trans[parent_lang].swahili }}</a></td>
+  </tr>
+</tbody></table>
 
 {% for page in esort limit:1 %}{% if forloop.first == true %}
 <h2 id="en">{{ site.data.site-trans[parent_lang].english }}</h2>

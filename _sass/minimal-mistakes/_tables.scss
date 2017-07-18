@@ -1,6 +1,24 @@
 /* ==========================================================================
    TABLES
    ========================================================================== */
+.sort {
+  width: 100%;
+  text-align: center;
+  font-size: $type-size-5;
+
+  & tbody,tr {
+    border: 0px;
+  }
+  & td {
+    border: 0px;
+    padding: .25em;
+  }
+  & td a {
+    display: block;
+    width: 100%;
+  }
+}
+
 .country-data {
   border: 0px;
   font-size: $type-size-3b;

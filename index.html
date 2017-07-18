@@ -7,21 +7,21 @@ languages-available:
   - pt
   - sw
 feature_row:
-  - image_path: assets/home/shona.jpg
+  - image_path: images/home/shona.jpg
     alt: "Redesigned Website for Old and New in Shona at Boston University"
     title: "Old and New in Shona"
     excerpt: "The website is the fruit of about 6 years of work by graduate students from the Center for Global Christianity and Mission at BU who scanned roughly..."
     url: "/shona-new/"
     btn_label: "Read More"
     btn_class: "btn--inverse-home"
-  - image_path: assets/home/protestantism.jpg
+  - image_path: images/home/protestantism.jpg
     alt: "Protestantism has changed in 500 years!"
     title: "Changing Protestantism"
     excerpt: "From the Center for the Study of Global Christianity (Gordon-Conwell): For several centuries the Protestant movement was based in Europe, and then North America. In 2017 there are..."
     url: "http://www.gordonconwell.edu/ockenga/research/Resources-and-Downloads.cfm"
     btn_label: "Read More"
     btn_class: "btn--inverse-home"
-  - image_path: assets/home/agnes-okloh.jpg
+  - image_path: images/home/agnes-okloh.jpg
     alt: "New Journal Issue"
     title: "New Journal Issue"
     excerpt: "The latest issue of the Journal of African Christian Biography features articles on Prophetess Agnes Okoh of Nigeria, Anglican witnesses from Uganda..."
@@ -42,8 +42,8 @@ feature_row:
 </div>
 
 <div class="language-switch"><div class="lang-head">
-{% if page.languages-available[3] != ' ' %}<div class="sw"><a href="/sw{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">Kiswahili</a></div>{% endif %}
-{% if page.languages-available[2] != ' ' %}<div class="pt"><a href="/pt{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">Português</a></div>{% endif %}
-{% if page.languages-available[1] != ' ' %}<div class="fr"><a href="/fr{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">Français</a></div>{% endif %}
-{% if page.languages-available[0] != ' ' %}<div class="en"><a href="{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">English</a></div>{% endif %}
+  {% if page.languages-available[0] != ' ' %}<div class="en"><a href="{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">English</a></div>{% endif %}
+  {% if page.languages-available[1] != ' ' %}<div class="fr"><a href="/fr{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">Français</a></div>{% endif %}
+  {% if page.languages-available[2] != ' ' %}<div class="pt"><a href="/pt{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">Português</a></div>{% endif %}
+  {% if page.languages-available[3] != ' ' %}<div class="sw"><a href="/sw{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">Kiswahili</a></div>{% endif %}
 </div></div>

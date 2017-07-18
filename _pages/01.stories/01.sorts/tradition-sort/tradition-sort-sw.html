@@ -17,12 +17,14 @@ languages-available:
 {% assign osort = site.pages | where: "tradition","orthodox" %}
 {% assign psort = site.pages | where: "tradition","protestant" %}
 
-<p>
-<a href="#catholic">{{ site.data.site-trans[parent_lang].catholic }}</a> |
-<a href="#independent">{{ site.data.site-trans[parent_lang].independent }}</a> |
-<a href="#orthodox">{{ site.data.site-trans[parent_lang].orthodox }}</a> |
-<a href="#protestant">{{ site.data.site-trans[parent_lang].protestant }}</a>
-</P>
+<table class="sort"><tbody>
+  <tr>
+    <td><a href="#catholic">{{ site.data.site-trans[parent_lang].catholic }}</a></td>
+    <td><a href="#independent">{{ site.data.site-trans[parent_lang].independent }}</a></td>
+    <td><a href="#orthodox">{{ site.data.site-trans[parent_lang].orthodox }}</a></td>
+    <td><a href="#protestant">{{ site.data.site-trans[parent_lang].protestant }}</a></td>
+  </tr>
+</tbody></table>
 
 {% for page in csort limit:1 %}{% if forloop.first == true %}
 <h2 id="catholic">Catholic</h2>

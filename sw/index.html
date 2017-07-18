@@ -7,26 +7,26 @@ languages-available:
   - pt
   - sw
 feature_row:
-  - image_path: assets/home/shona.jpg
-    alt: "Redesigned Website for Old and New in Shona at Boston University"
-    title: "Old and New in Shona"
-    excerpt: "The website is the fruit of about 6 years of work by graduate students from the Center for Global Christianity and Mission at BU who scanned roughly..."
-    url: "/shona-new/"
-    btn_label: "Read More"
+  - image_path: images/home/kiswaphone.jpg
+    alt: "Soma Hadithi kwa Kiswahili"
+    title: "Soma Hadithi kwa Kiswahili"
+    excerpt: "Kugundua watu wa ajabu katika mkusanyiko wetu wa maandishi yaliyoandikwa kwa Kiswahili..."
+    url: "/sw/stories/language-sort/#sw"
+    btn_label: "Soma Zaidi"
     btn_class: "btn--inverse-home"
-  - image_path: assets/home/protestantism.jpg
-    alt: "Protestantism has changed in 500 years!"
-    title: "Changing Protestantism"
-    excerpt: "From the Center for the Study of Global Christianity (Gordon-Conwell): For several centuries the Protestant movement was based in Europe, and then North America. In 2017 there are..."
-    url: "/protestantism-has-changed/"
-    btn_label: "Read More"
+  - image_path: images/home/yakobo.jpg
+    alt: "Soma Kuhusu Yakobo Lumwe"
+    title: "Soma Kuhusu Yakobo Lumwe"
+    excerpt: "Yakobo Lumwe, ambaye pia aliitwa Yakobo Ng'ombe, alikuwa ni Mchungaji wa kwanza mwenyeji wa kanisa la kiprotestanti pwani ya kaskazini mwa Tanganyika. Alitumika ndani na katika mzunguko wa maeneo..."
+    url: "/sw/stories/cameroon/cee-me/"
+    btn_label: "Soma Zaidi"
     btn_class: "btn--inverse-home"
-  - image_path: assets/home/agnes-okloh.jpg
-    alt: "New Journal Issue"
-    title: "New Journal Issue"
-    excerpt: "The latest issue of the Journal of African Christian Biography features articles on Prophetess Agnes Okoh of Nigeria, Anglican witnesses from Uganda..."
-    url: "/news/journal/"
-    btn_label: "Read More"
+  - image_path: images/home/participate.jpg
+    alt: "Vifaa kwa Watafiti na Waandishi"
+    title: "Vifaa kwa Watafiti na Waandishi"
+    excerpt: "Kutimiliza Historia Simulizi ni warsha ya utendaji kazi inayodhamiriwa mahitaji ya watu wanaohitaji kutumia historia simulizi katika kuandika historia ya kanisa na misheni..."
+    url: "/resources/oral-history-sw-manual.pdf"
+    btn_label: "Soma Zaidi"
     btn_class: "btn--inverse-home"
 ---
 <p style="text-align: center;"><i>KAWAKIA lengo ni kukusanya, kuhifadhi, na kufanya kupatikana hadithi maisha na hadithi ya makanisa &ndash; kutoka vyanzo mdomo na maandishi &ndash; bila ambayo itakuwa vigumu kuelewa Ukristo Kusini katika uadilifu wake.</i></p>
@@ -42,8 +42,8 @@ feature_row:
 </div>
 
 <div class="language-switch"><div class="lang-head">
-{% if page.languages-available[3] != ' ' %}<div class="sw"><a href="/sw{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">Kiswahili</a></div>{% endif %}
-{% if page.languages-available[2] != ' ' %}<div class="pt"><a href="/pt{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">Português</a></div>{% endif %}
-{% if page.languages-available[1] != ' ' %}<div class="fr"><a href="/fr{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">Français</a></div>{% endif %}
-{% if page.languages-available[0] != ' ' %}<div class="en"><a href="{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">English</a></div>{% endif %}
+  {% if page.languages-available[0] != ' ' %}<div class="en"><a href="{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">English</a></div>{% endif %}
+  {% if page.languages-available[1] != ' ' %}<div class="fr"><a href="/fr{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">Français</a></div>{% endif %}
+  {% if page.languages-available[2] != ' ' %}<div class="pt"><a href="/pt{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">Português</a></div>{% endif %}
+  {% if page.languages-available[3] != ' ' %}<div class="sw"><a href="/sw{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">Kiswahili</a></div>{% endif %}
 </div></div>
