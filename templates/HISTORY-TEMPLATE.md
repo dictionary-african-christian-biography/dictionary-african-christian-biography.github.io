@@ -1,4 +1,5 @@
 ---
+template: 'template' #remove this
 layout: #single-history (take out #)
 lang: 'en'
 languages-available:

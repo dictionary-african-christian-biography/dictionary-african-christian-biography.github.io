@@ -17,7 +17,6 @@ repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-m
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
-search: true
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
@@ -194,6 +193,7 @@ defaults:
     values:
       layout: single-news
       author_profile: false
+      tipue_search_active: true
       sidebar:
         nav: "index-menu"
 defaults:
@@ -204,5 +204,6 @@ defaults:
     values:
       layout: single-bio
       author_profile: false
+      tipue_search_active: true
       sidebar:
         nav: "index-menu"

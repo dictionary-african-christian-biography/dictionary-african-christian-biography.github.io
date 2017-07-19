@@ -3,7 +3,7 @@ permalink: /fr/stories/ghana/bee-good/
 layout: single-bio                         
 upload: 2014-05-17                         
 lang: fr                                    
-index:
+index: secondary
 languages-available:                         
   - en
   - fr

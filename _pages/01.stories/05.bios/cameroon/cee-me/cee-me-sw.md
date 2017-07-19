@@ -3,7 +3,7 @@ permalink: /sw/stories/cameroon/cee-me/
 layout: single-bio                          
 upload: 2017-07-17                          
 lang: sw                                     
-index:
+index: secondary
 languages-available:                         
   - en
   - fr

@@ -3,6 +3,8 @@
 # English (default)
 # -----------------
 en: &DEFAULT_EN
+  read-more                  : "Read More"
+  keywords                   : "Keywords"
   page                       : "Page"
   pagination_previous        : "Previous"
   pagination_next            : "Next"
@@ -98,6 +100,8 @@ es-CO:
 # French
 # -----------------
 fr: &DEFAULT_FR
+  read-more                  : "Lire Plus"
+  keywords                   : "Mots Clés"
   page                       : "Page"
   pagination_previous        : "Précédent"
   pagination_next            : "Suivant"
@@ -190,6 +194,8 @@ tr-TR:
 # Portuguese
 # -----------------
 pt: &DEFAULT_PT
+  read-more                  : "Leia Mais"
+  keywords                   : "Palavras-chave"
   page                       : "Página"
   pagination_previous        : "Anterior"
   pagination_next            : "Seguinte"
@@ -715,6 +721,8 @@ sv-FI:
 # Swahili
 # -----------------
 sw: &DEFAULT_PT
+    read-more                  : "Soma Zaidi"
+    keywords                   : "Maneno"
     menu_label                 : "Aina na Index"
     sidebar_label              : "Angalia Orodha ya Upande"
     comment_btn_submit         : "Kutuma"

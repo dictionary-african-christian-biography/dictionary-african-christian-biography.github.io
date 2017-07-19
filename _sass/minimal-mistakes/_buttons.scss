@@ -17,14 +17,14 @@
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  background-color: $primary-color;
+  background-color: mix(white, #000, 20%);
   border: 0 !important;
   border-radius: $border-radius;
   cursor: pointer;
   margin-top: 1em;
 
   &:hover {
-    background-color: mix(white, #000, 20%);
+    background-color: #7d291e;
   }
   .icon {
     margin-right: 0.5em;

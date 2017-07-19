@@ -1,4 +1,5 @@
 ---
+template: 'template' #remove this
 layout: #single-bio (take out #)
 lang: ''
 languages-available:

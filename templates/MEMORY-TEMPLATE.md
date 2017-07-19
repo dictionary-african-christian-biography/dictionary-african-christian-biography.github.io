@@ -1,4 +1,5 @@
 ---
+template: 'template' #remove this
 layout: #single-memory (take out #)
 lang: 'en'
 languages-available:
