@@ -5,25 +5,33 @@
     {% endif %}
   </ul>
 </div>
-{% assign count = site.pages | where: "index","primary" | where: "layout","single-bio" %}
+{% assign ecount = site.pages | where: "lang","en" | where: "layout","single-bio" %}
+{% assign fcount = site.pages | where: "lang","fr" | where: "layout","single-bio" %}
+{% assign pcount = site.pages | where: "lang","pt" | where: "layout","single-bio" %}
+{% assign scount = site.pages | where: "lang","sw" | where: "layout","single-bio" %}
+
 
 <div class="page__footer-copyright">
   {% if page.lang == 'en' %}
   DACB is a digital resource hosted by the <a href="http://www.bu.edu/cgcm/">Center for Global Christianity and Mission</a> at Boston University School of Theology. <br>
-  &copy; {{ site.time | date: '%Y' }} Dictionary of African Christian Biography. Last updated: {{ site.time | date_to_long_string }}. Total number of stories: {{count.size}}.
+  Last updated: {{ site.time | date_to_long_string }}. English stories: {{ecount.size}}. French Stories: {{fcount.size}}. Portugeuse Stories: {{pcount.size}}. Swahili Stories: {{scount.size}}.<br>
+  &copy; {{ site.time | date: '%Y' }} Dictionary of African Christian Biography.
   {% endif %}
 
   {% if page.lang == 'fr' %}
   DIBICA une ressource numérique est hébergé par le <a href="http://www.bu.edu/cgcm/">Centre pour le Christianisme Mondial et la Mission</a> à l'École de théologie de l'Université de Boston. <br>
-  &copy; {{ site.time | date: '%Y' }} Dictionnaire Biographique des Chrétienne d'Afrique. Dernière Mise à Jour: {{ site.time | date_to_long_string }}. Nombre total d'histoires: {{count.size}}.
+  Dernière Mise à Jour: {{ site.time | date_to_long_string }}. Histoires d'Anglais: {{ecount.size}}. Histoires Françaises: {{fcount.size}}. Histoires Portugaises: {{pcount.size}}. Histoires Swahili: {{scount.size}}.<br>
+  &copy; {{ site.time | date: '%Y' }} Dictionnaire Biographique des Chrétienne d'Afrique.
   {% endif %}
 
   {% if page.lang == 'pt' %}
   DIBICA um recurso digital é hospedado por o<a href="http://www.bu.edu/cgcm/">o Centro para Cristianismo Globais e Missões </a> na Faculdade de Teologia da Universidade de Boston. <br>
-  &copy; {{ site.time | date: '%Y' }} Dicionario de Biografias Cristãs da África. Ultima Atualização: {{ site.time | date_to_long_string }}. Número total de histórias: {{count.size}}.
+  Ultima Atualização: {{ site.time | date_to_long_string }}. Histórias de Inglês: {{ecount.size}}. Histórias Francesas: {{fcount.size}}. Histórias Portuguesas: {{pcount.size}}. Histórias do Swahili: {{scount.size}}.<br>
+  &copy; {{ site.time | date: '%Y' }} Dicionario de Biografias Cristãs da África.
   {% endif %}
 
   {% if page.lang == 'sw' %}
   KAWAKIA ni rasilimali digital mwenyeji kwa <a href="http://www.bu.edu/cgcm/"> Kituo cha Global Ukristo na Mission </a> katika Boston Chuo cha Theology. <br>
-  &copy; {{ site.time | date: '%Y' }} Kamusi Ya Wasifu Wa Wakristo Wa Kiafrika. Ilibadilishwa Mwisho: {{ site.time | date_to_long_string }}. Jumla ya hadithi: {{count.size}}.
+  Ilibadilishwa Mwisho: {{ site.time | date_to_long_string }}. Hadithi za Kiingereza: {{ecount.size}}. Hadithi za Kifaransa: {{fcount.size}}. Hadithi za Kireno: {{pcount.size}}. Hadithi za Kiswahili: {{scount.size}}.<br>
+  &copy; {{ site.time | date: '%Y' }} Kamusi Ya Wasifu Wa Wakristo Wa Kiafrika.
   {% endif %}

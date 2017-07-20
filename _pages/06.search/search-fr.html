@@ -9,50 +9,8 @@ languages-available:
   - pt
   - sw
 ---
-<p><i>Please be patient, our search feature may take a few moments to load properly.</i></p>
+<p><i>Soyez patient, notre fonction de recherche peut prendre quelques instants pour être correctement chargée.</i></p>
 <br>
-<p>DACB is committed to the principles of <a href="http://go-dh.github.io/mincomp/about/" rel="noopener noreferrer" target="_blank">minimal computing</a> and open humanities. Part of this entails a committment to passing out periodic versions of the dictionary via USB or CD-ROM. This means our search feature must load a minified version of the dictionary in order to run on your browser.</p>
-<br>
+<p>DIBICA s'engage à respecter les principes de <a href="http://go-dh.github.io/mincomp/about/" rel="noopener noreferrer" target="_blank"> calcul minimal </a> et <a href="https://en.wikipedia.org/wiki/Open_access" rel="noopener noreferrer" target="_blank"> accès ouvert </a>. Une partie de cet engagement implique la diffusion de versions périodiques du dictionnaire en Afrique via USB ou CD-ROM. Cela signifie que notre fonction de recherche fonctionne indépendamment de notre serveur et qu'il doit charger une version minifiée du dictionnaire afin de fonctionner sur votre navigateur.<br>
 
-<!-- Search form -->
-<form method="get" action="/search" data-search-form>
-  <label for="q">Search term</label>
-  <input class="search-btn" type="submit" value="Search" />
-  <input class="bar" type="search" name="q" id="q" placeholder="Enter search term" data-search-input />
-</form>
-
-<!-- Search results placeholder -->
-<p data-search-found>
-  <span data-search-found-count></span>   {% if page.lang == 'en' %} result(s) found for {% endif %}
-    {% if page.lang == 'fr' %} résultat(s) trouvés pour {% endif %}
-    {% if page.lang == 'pt' %} resultado(s) encontrados para r {% endif %}
-    {% if page.lang == 'sw' %} result(s) found for {% endif %} &ldquo;<span data-search-found-term></span>&rdquo;.
-</p>
-<div data-search-results></div>
-
-<!-- Search result template -->
-<script type="text/x-template" id="search-result">
-  <div class="search">
-    <h2><a href="##Url##">##Title##</a></h2>
-    <p><i>By ##Author##</i></p>
-    <div class="meta-box">{{ site.data.ui-text[page.lang].keywords }}: ##Category##</div>
-    <p>##Excerpt##</p>
-    <a href="##Url##" class="btn btn">{{ site.data.ui-text[page.lang].read-more }}</a>
-  </div>
-</script>
-
-<!-- jQuery - required but can be moved to the <head> -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-<!-- Search script - Must appear after template -->
-<script src="/assets/js/search.js"></script>
-
-<style>
-  .search {width: 100%; border-bottom: 1px solid #333; padding-bottom: 1em;}
-  .search h2 {font-size: 1em;margin-bottom: 0px;}
-  .search p {color: #333;}
-  .meta-box {font-size: .5em; padding-top: .5em; padding-bottom: .5em; color: #bdc1c4; font-style: italic;}
-  .bar { width:75%; height: 2em; margin-top:0em; margin-left:.5em;}
-  .search-btn {width:20% !important; height: 2.5em !important; margin-top:0em; margin-right:.5em; color: #333; border: 1px solid #333; background-color: #fff; font-style: normal; border-radius: 4px; padding:.5em;}
-  .search-btn:hover {background-color: #7d291e; color: #fff; }
-</style>
+{% include search.html %}

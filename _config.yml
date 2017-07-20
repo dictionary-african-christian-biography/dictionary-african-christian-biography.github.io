@@ -193,7 +193,6 @@ defaults:
     values:
       layout: single-news
       author_profile: false
-      tipue_search_active: true
       sidebar:
         nav: "index-menu"
 defaults:
@@ -204,6 +203,5 @@ defaults:
     values:
       layout: single-bio
       author_profile: false
-      tipue_search_active: true
       sidebar:
         nav: "index-menu"
