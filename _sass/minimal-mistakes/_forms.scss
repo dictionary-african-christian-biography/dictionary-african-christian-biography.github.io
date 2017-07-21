@@ -252,7 +252,7 @@ select {
   margin-bottom: 0.5em;
   color: $text-color;
   background-color: #fff;
-  border: 1px solid mix(#fff, #000, 80%);
+  border: 1px solid mix(#fff, #000, 80%) !important;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
 
