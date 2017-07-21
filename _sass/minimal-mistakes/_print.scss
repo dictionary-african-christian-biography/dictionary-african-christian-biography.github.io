@@ -25,6 +25,12 @@
       clear: both;
       z-index: 1;
     }
+    .logo {
+    display: inline-block;
+    padding: 1em 0em 0em 0em;
+    width: 10em;
+    float: left;
+}
   html {
     font-size: 16px;
     margin: 0;
