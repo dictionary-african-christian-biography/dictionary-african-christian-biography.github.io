@@ -1,7 +1,7 @@
 ---
-layout: archive
-permalink: /sw/search/
+layout: search
 title: "Search"
+permalink: '/search-sw.html'
 lang: sw
 languages-available:
   - en
@@ -9,9 +9,19 @@ languages-available:
   - pt
   - sw
 ---
-<p><i>Tafadhali subira, kipengele cha utafutaji wetu kinaweza kuchukua muda mfupi kupakia vizuri.</i></p>
-<br>
+<p><b><i>Tafadhali subira, kipengele cha utafutaji wetu kinaweza kuchukua muda mfupi kupakia vizuri.</i></b></p>
 <p>KAWAKIA imejiunga na kanuni za <a href="http://go-dh.github.io/mincomp/about/" rel="noopener noreferrer" target="_blank"> kompyuta ndogo </a> na <a href="https://en.wikipedia.org/wiki/Open_access" rel="noopener noreferrer" target="_blank"> upatikanaji wa wazi </a>. Sehemu ya malipo haya inahusisha kutoa matoleo ya mara kwa mara ya kamusi katika Afrika kupitia USB au CD-ROM. Hii inamaanisha kipengele cha utafutaji wetu kinatumika kwa kujitegemea kwa seva yetu na kwamba inapaswa kupakia toleo la minified ya kamusi ili kuendesha kivinjari chako.</p>
 <br>
 
-{% include search.html %}
+<form action="search-sw.html">
+<div class="tipue_search_left"><img src="tipuesearch/search.png" class="tipue_search_icon"></div>
+<div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required></div>
+<div style="clear: both;"></div>
+</form>
+<div id="tipue_search_content"></div>
+
+<script>
+$(document).ready(function() {
+     $('#tipue_search_input').tipuesearch();
+});
+</script>
