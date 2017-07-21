@@ -1,7 +1,7 @@
 <div style="padding-bottom:.5em;">
   <table class="country-data" stlye="padding:.5em"><thead style="border-bottom: 1px solid #bdc1c4">
     <tr>
-      <td colspan=2>
+      <td colspan=2 style="font-size: .625em;">
         <h3 style="font-size: 1.25em;margin-top:0px;margin-bottom: 0px;">{{ page.title }}</h3>
         <p style="font-size: 1em;margin-bottom: 0px;"><b>
           {{ page.date }}  |
@@ -22,13 +22,13 @@
         </b></p>
       </td>
     </tr></thead>
-    <tbody style="background-color:#fff;">
+    <tbody style="background-color:#fff;font-size: .625em;">
       <tr>
         <td style="width: 20%; vertical-align: top;">
           <img src="{{ page.image }}" class="icon">
         </td>
         <td style="width: 80%; vertical-align: top;">
-          <div>{{ page.content | markdownify | | remove: "<p>" | remove: "</p>" | truncatewords: 40 }}</div>
+          <div>{{ page.content | markdownify | | remove: "<p>" | remove: "</p>" | truncatewords: 60 }}</div>
           <a href="{{page.permalink}}" class="btn btn--inverse">Read More</a>
         </td>
   </tr></tbody></table>
