@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/krestos-moa/'
-title: 'Krestos-Mo'a'
+title: "Krestos-Mo'a"
 alternate: ''
 date: '1200s-1300s'
 century:

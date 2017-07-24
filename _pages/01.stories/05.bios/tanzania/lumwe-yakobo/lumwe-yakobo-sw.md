@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/sw/stories/tanzania/lumwe-yakobo/'
-title: 'Lumwe Ng'ombe, Yakobo '
+title: "Lumwe Ng'ombe, Yakobo"
 alternate: ''
 date: '1888-1976'
 century:

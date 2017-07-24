@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/haylena-ab/'
-title: 'Haylena-'Ab'
+title: "Haylena-'Ab"
 alternate: ''
 date: '500s'
 century:

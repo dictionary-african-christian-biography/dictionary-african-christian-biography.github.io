@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/ba-eda/'
-title: 'Maryam, Ba'eda'
+title: "Maryam, Ba'eda"
 alternate: ''
 date: '1446-1478'
 century:

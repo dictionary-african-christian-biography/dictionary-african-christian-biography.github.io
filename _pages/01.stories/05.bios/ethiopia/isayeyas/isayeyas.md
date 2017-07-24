@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/isayeyas/'
-title: ''Isayeyas'
+title: "'Isayeyas"
 alternate: ''
 date: '1200s-1300s'
 century:

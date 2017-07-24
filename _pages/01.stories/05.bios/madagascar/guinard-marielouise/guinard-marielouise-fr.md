@@ -13,8 +13,8 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/fr/stories/madagascar/guinard-marielouise/'
-title: 'Guinard, Marie-Louise '
-alternate: 'mère saint-louis de gonzague'
+title: "Guinard, Marie-Louise"
+alternate: "mère saint-louis de gonzague"
 date: '1872-1943'
 century:
   - '19th'
@@ -44,7 +44,7 @@ theologian: ''
 translator: ''
 women: ''
 youth: ''
-author: 'de l'Assomption, Marie '
+author: "de l'Assomption, Marie"
 institution: ''
 liaison: ''
 project-luke: ''

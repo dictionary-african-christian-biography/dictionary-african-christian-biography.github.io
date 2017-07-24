@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/lama-zaazeb/'
-title: 'Zä-'Azéb, Sälama'
+title: "Zä-'Azéb, Sälama"
 alternate: ''
 date: '800s900s'
 century:

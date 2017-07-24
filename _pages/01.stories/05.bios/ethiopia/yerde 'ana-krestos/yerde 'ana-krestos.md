@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/yerde ana-krestos/'
-title: 'Yerde'Anä-Krestos'
+title: "Yerde'Anä-Krestos"
 alternate: ''
 date: '1200s'
 century:

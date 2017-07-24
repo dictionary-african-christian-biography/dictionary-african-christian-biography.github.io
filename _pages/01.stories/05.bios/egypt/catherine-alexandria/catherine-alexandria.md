@@ -13,8 +13,8 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/egypt/catherine-alexandria/'
-title: 'Catherine (Alexandria)'
-alternate: 'st. catherine of alexandria'
+title: "Catherine (Alexandria)"
+alternate: "St. Catherine of Alexandria"
 date: '300s'
 century:
   - '4th'
@@ -60,7 +60,7 @@ The monastery has always had a symbiotic relationship with the local Muslim comm
 During the Middle Ages, Catherine became a cult figure, and pilgrimages were made from all over Europe to her resting place. But gradually interest waned, and the resident number of religious dwindled. Only a few aged monks remain as guardians of this once-popular international shrine, which distributed daily food for four hundred persons and bread for another thousand. A priceless collection of icons, some of them dating to the eighth century, are housed on the premises, as are thousands of manuscripts containing texts of the early church.
 
 > *Almighty God, by whose grace and power the holy martyr Catherine triumphed over suffering and was faithful unto death, strengthen us with your grace, that we may endure reproach and persecution and faithfully bear witness to the same through Jesus Christ our Lord. Amen.*
-> 
+>
 > --*Celebrating Common Prayer*, 484
 
 Frederick Quinn

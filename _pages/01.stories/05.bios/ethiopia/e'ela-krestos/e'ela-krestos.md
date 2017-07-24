@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/eela-krestos/'
-title: 'Krestos, Se'ela'
+title: "Krestos, Se'ela"
 alternate: ''
 date: '1500s-1636'
 century:

@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/del-naad/'
-title: 'Del-Nä'ad'
+title: "Del-Nä'ad"
 alternate: ''
 date: '800s900s'
 century:

@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/kenya/mwatha-samuel/'
-title: 'Mwatha, Samuel Kang'ethe'
+title: "Mwatha, Samuel Kang'ethe"
 alternate: ''
 date: '1931'
 century:

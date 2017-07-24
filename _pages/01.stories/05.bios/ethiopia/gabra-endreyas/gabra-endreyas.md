@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/gabra-endreyas/'
-title: 'Gäbrä-'Endreyas'
+title: "Gäbrä-'Endreyas"
 alternate: ''
 date: '1200s'
 century:

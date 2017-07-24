@@ -13,8 +13,8 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/fr/stories/egypt/catherine-alexandria/'
-title: 'Catherine (Alexandria)'
-alternate: 'catherine d'alexandrie'
+title: "Catherine (Alexandria)"
+alternate: "Catherine d'Alexandrie"
 date: '300s'
 century:
   - '4th'
@@ -60,8 +60,8 @@ Le monastère a toujours eu un rapport symbiotique avec la communauté musulmane
 Au Moyen Age, le culte de Ste. Catherine s'est développé, et les pèlerinages depuis l'Europe entière ont été faites pour visiter sa tombe. Petit à petit, cependant, moins de gens s'y intéressaient et le nombre de résidents monastiques a baissé. Il y reste seulement quelques vieux moines pour garder cet ancien lieu de pèlerinage international, jadis populaire, qui distribuait des repas à quatre cent personnes tous les jours, et du pain à encore mille autres. Le monastère abrite une collection d'icônes inestimable, dont certains remontent jusqu'au huitième siècle. Il s'y trouve aussi des milliers de manuscrits de l'église primitive.
 
 > Dieu tout-puissant, par ta grâce et ton pouvoir la sainte martyre Catherine a triomphé de la souffrance et a été fidèle jusqu'à la mort. Donne-nous des forces par ta grâce pour que nous puissions souffrir avec patience les reproches et la persécution, et ainsi rendre témoignage fidèlement grâce à notre Seigneur Jésus-Christ. Amen.
-> 
-> 
+>
+>
 > --Célébrons la Prière en Commun, 484
 
 Frederick Quinn

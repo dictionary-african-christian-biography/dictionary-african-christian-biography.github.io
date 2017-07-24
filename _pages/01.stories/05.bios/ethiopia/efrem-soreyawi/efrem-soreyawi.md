@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/sefrem-soreyawi/'
-title: 'Soreyawi, 'Éfrém'
+title: "Soreyawi, 'Éfrém"
 alternate: ''
 date: '306-c. 375'
 century:

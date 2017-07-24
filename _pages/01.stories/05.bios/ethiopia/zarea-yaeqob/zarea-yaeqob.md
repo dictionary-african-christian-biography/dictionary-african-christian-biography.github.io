@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/zarea-yaeqob/'
-title: 'Ya'eqob, Zare'a'
+title: "Ya'eqob, Zare'a"
 alternate: ''
 date: '1399-1468'
 century:

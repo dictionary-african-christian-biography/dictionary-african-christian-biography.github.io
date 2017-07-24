@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopiadreyas/'
-title: ''Éndreyas'
+title: "'Éndreyas"
 alternate: ''
 date: '1100s-1200s'
 century:

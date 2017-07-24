@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/za-mikael-aragawi/'
-title: 'Arägawi, Zä-Mika'él (B)'
+title: "Arägawi, Zä-Mika'él (B)"
 alternate: ''
 date: '400s500s'
 century:

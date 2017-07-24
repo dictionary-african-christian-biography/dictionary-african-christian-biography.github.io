@@ -14,7 +14,7 @@ memory: ''
 obituary: ''
 permalink: '/fr/stories/egypt/anthony-egypt/'
 title: 'Antonius'
-alternate: 'saint antoine d'egypte'
+alternate: "saint antoine d'egypte"
 date: '250-lan 356'
 century:
   - '4th'

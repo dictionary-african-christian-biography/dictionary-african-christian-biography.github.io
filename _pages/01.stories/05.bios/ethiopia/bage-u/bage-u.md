@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/bage-u/'
-title: 'Bäge'u'
+title: "Bäge'u"
 alternate: ''
 date: '1200s'
 century:

@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/fr/stories/democratic-republic-of-congo/etsea-raphael/'
-title: 'Etsea Kila, Raphaël Ang'apoza'
+title: "Etsea Kila, Raphaël Ang'apoza"
 alternate: ''
 date: '1935-2002'
 century:

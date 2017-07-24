@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/arayana-sagahu/'
-title: 'Ar'ayänä-Sägahu'
+title: "Ar'ayänä-Sägahu"
 alternate: ''
 date: '1200s'
 century:

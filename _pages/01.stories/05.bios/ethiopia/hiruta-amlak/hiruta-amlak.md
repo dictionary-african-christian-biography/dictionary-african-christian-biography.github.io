@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/hiruta-amlak/'
-title: 'Hirutä-'Amlak'
+title: "Hirutä-'Amlak"
 alternate: ''
 date: '1200s'
 century:

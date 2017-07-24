@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/sudan/ibrahim-abdu-elmasir/'
-title: 'el-Masīh, Ibrahīm 'Abdu'
+title: "el-Masīh, Ibrahīm 'Abdu'"
 alternate: ''
 date: '1855-1935'
 century:

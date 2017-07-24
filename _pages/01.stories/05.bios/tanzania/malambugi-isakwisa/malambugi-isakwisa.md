@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/tanzania/malambugi-isakwisa/'
-title: 'Malambugi, Isakwisa Lupogo Malang'ombe'
+title: "Malambugi, Isakwisa Lupogo Malang'ombe"
 alternate: ''
 date: '1922-1986'
 century:

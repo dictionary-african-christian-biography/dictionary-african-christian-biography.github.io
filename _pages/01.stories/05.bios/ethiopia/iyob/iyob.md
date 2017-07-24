@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/iyob/'
-title: ''Iyob'
+title: "'Iyob"
 alternate: ''
 date: '1200s-1300s'
 century:

@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/os/'
-title: ''Os'
+title: "'Os"
 alternate: ''
 date: '400s500s'
 century:

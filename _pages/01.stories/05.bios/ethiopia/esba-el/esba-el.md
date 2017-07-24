@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/esba-el/'
-title: 'Esba'él'
+title: "Esba'él"
 alternate: ''
 date: '400s500s'
 century:

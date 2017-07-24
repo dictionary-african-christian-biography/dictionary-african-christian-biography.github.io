@@ -44,7 +44,7 @@ theologian: ''
 translator: ''
 women: ''
 youth: ''
-author: 'de l'Assomption, Marie & Raymond Delval'
+author: "de l'Assomption, Marie & Raymond Delval"
 institution: ''
 liaison: ''
 project-luke: ''

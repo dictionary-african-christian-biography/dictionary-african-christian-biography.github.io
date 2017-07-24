@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/egzie-kebra/'
-title: ''Egzi'e-Kebra'
+title: "'Egzi'e-Kebra"
 alternate: ''
 date: '1200s'
 century:

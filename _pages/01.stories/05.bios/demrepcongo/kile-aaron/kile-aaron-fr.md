@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/fr/stories/democratic-republic-of-congo/kile-aaron/'
-title: 'Kile, Lorod'u Aaron'
+title: "Kile, Lorod'u Aaron"
 alternate: ''
 date: '1937-2002'
 century:

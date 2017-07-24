@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/asbeha/'
-title: ''Asbeha'
+title: "Asbeha"
 alternate: ''
 date: '300s'
 century:

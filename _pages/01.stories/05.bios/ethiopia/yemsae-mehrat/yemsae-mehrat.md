@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/yemsae-mehrat/'
-title: 'Yemsa'e-Mehrät'
+title: "Yemsa'e-Mehrät"
 alternate: ''
 date: '1200s'
 century:

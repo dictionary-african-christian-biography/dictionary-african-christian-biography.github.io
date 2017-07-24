@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/fr/stories/democratic-republic-of-congo/lubuimi-denis/'
-title: 'Lubuimi Nsung'Ampay, Denis'
+title: "Lubuimi Nsung'Ampay, Denis"
 alternate: ''
 date: '1932-2005'
 century:

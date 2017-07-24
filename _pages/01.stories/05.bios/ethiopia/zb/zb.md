@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/zb/'
-title: 'W'zb'
+title: "W'zb"
 alternate: ''
 date: '500s'
 century:

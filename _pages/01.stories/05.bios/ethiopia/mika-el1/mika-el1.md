@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/mika-el1/'
-title: 'Mika'él I'
+title: "Mika'él I"
 alternate: ''
 date: '1100s'
 century:

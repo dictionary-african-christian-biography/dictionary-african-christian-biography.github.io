@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/egzie-haraya/'
-title: 'Egzi'e-Haräya'
+title: "Egzi'e-Haräya"
 alternate: ''
 date: '1200s'
 century:

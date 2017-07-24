@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/abreham/'
-title: ''Abreham'
+title: "'Abreham"
 alternate: ''
 date: '300s400s'
 century:

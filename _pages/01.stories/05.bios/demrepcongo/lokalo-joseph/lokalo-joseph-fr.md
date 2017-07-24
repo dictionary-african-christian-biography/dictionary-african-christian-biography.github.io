@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/fr/stories/democratic-republic-of-congo/lokalo-joseph/'
-title: 'Lokalo, Joseph Is'a Mama'
+title: "Lokalo, Joseph Is'a Mama"
 alternate: ''
 date: '1917-1964'
 century:

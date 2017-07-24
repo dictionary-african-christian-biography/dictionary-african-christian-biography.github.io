@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/dan-el/'
-title: 'Dan'él'
+title: "Dan'él"
 alternate: ''
 date: '900s'
 century:

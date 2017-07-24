@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/ariat/'
-title: ''Ariat'
+title: "'Ariat"
 alternate: ''
 date: '500s'
 century:

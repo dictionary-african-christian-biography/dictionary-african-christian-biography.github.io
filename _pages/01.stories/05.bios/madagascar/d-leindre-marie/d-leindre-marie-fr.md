@@ -13,8 +13,8 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/fr/stories/madagascar/d-leindre-marie/'
-title: 'd'Leindre, Marie '
-alternate: 'mère marie de jésus crucifié'
+title: "d'Leindre, Marie"
+alternate: "mère marie de jésus crucifié"
 date: '1852-1926'
 century:
   - '19th'

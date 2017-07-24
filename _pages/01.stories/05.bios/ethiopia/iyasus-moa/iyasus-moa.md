@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/iyasus-moa/'
-title: 'Iyäsus-Mo'a (A)'
+title: "Iyäsus-Mo'a (A)"
 alternate: ''
 date: '1214-1294'
 century:

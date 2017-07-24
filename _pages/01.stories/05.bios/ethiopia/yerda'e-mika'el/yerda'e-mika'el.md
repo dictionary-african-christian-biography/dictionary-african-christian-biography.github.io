@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/yerdae-mikael/'
-title: 'Yerda'e-Mika'él'
+title: "Yerda'e-Mika'él"
 alternate: ''
 date: '1100s-1200s'
 century:

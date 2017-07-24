@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/edna/'
-title: ''Edna'
+title: "'Edna"
 alternate: ''
 date: '400s500s'
 century:

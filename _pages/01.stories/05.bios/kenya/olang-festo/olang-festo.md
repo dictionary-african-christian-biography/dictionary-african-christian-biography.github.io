@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/kenya/olang-festo/'
-title: 'Olang', Habakkuk Festo'
+title: "Olang', Habakkuk Festo"
 alternate: ''
 date: '1914-2004'
 century:

@@ -14,7 +14,7 @@ memory: ''
 obituary: ''
 permalink: '/fr/stories/tunisia/augustine/'
 title: 'Augustinus, Aurelius'
-alternate: 'augustin d'hippone '
+alternate: "augustin d'hippone"
 date: '354-430'
 century:
   - '4th'

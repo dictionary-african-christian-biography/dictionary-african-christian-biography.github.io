@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/sudan/ngalamu-elinana/'
-title: 'Ngalamu Dudu, Elinana Ja'bi '
+title: "Ngalamu Dudu, Elinana Ja'bi"
 alternate: ''
 date: '1918-1992'
 century:
@@ -85,11 +85,11 @@ He consolidated Bishop Gwynne College by creating conditions that allowed people
 As archbishop, Ngalamu played a pivotal role in the establishment of the Sudan Council of Churches in 1976. He also contributed to the liturgical development of indigenous worship and wrote many hymns for the Moru Hymn Book. One of the popular ones has the following first stanza:
 
 > Hear (listen to) your Savior's call;
-> 
+>
 > Jesus says come near to me;
-> 
+>
 > In times of tribulations Jesus deserts not;
-> 
+>
 > in times of sorrow, Jesus is ever near.
 
 Ngalamu was not only a national figure but also an international networker. He succeeded in building bridges of love, trust, and unity among the various Christian churches in the Sudan. He fostered the understanding of church and state relations on a national level. Internationally, he built good relations with the ECS partners and the Anglican Communion worldwide. As a new leader, he was able to create strong links between the ECS and Canterbury. [4] He linked the ECS with the Diocese of Salisbury in England, with the Council of Anglican Provinces of Africa (CAPA), as well as with the Protestant Episcopal Church in the United States of America (PECUSA), and with the Anglican Church of Canada.

@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/kenya/otsuong-o/'
-title: 'Otsuong'o, Onzee Peter'
+title: "Otsuong'o, Onzee Peter"
 alternate: ''
 date: '1904-2005'
 century:

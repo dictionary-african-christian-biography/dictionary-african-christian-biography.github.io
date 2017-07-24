@@ -14,7 +14,7 @@ memory: ''
 obituary: ''
 permalink: '/fr/stories/madagascar/ravaoarisoa-emilie/'
 title: 'Ravaoarisoa, Émilie '
-alternate: 'marie-bernard de l'immaculée'
+alternate: "marie-bernard de l'immaculée"
 date: '1940-1978'
 century:
   - '20th'

@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/elmeyas/'
-title: ''Élmeyas'
+title: "'Élmeyas"
 alternate: ''
 date: '900s b.c.'
 century:

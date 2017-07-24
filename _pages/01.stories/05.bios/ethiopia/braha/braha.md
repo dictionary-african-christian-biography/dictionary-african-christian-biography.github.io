@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/abraha/'
-title: ''Abraha'
+title: "'Abraha"
 alternate: ''
 date: '500s'
 century:

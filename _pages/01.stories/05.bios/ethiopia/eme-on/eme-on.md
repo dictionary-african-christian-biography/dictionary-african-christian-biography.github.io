@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/seme-on/'
-title: 'Seme'on'
+title: "Seme'on"
 alternate: ''
 date: '1200s-1300s'
 century:

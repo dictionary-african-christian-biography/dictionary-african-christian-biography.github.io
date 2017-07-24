@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/abreha/'
-title: ''Abreha'
+title: "'Abreha"
 alternate: ''
 date: '300s'
 century:

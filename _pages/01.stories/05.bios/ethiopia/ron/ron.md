@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/aron/'
-title: ''Aron'
+title: "'Aron"
 alternate: ''
 date: '1200s-1300s'
 century:

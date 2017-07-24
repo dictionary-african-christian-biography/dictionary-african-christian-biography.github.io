@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/naakweto-laab/'
-title: 'Nä'akweto-Lä'Ab'
+title: "Nä'akweto-Lä'Ab"
 alternate: ''
 date: '1200s'
 century:

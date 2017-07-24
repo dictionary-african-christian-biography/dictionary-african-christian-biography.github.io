@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/taklai/'
-title: 'Täklä-'Iyäsus'
+title: "Täklä-'Iyäsus"
 alternate: ''
 date: '1200s'
 century:

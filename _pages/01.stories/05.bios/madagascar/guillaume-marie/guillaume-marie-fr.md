@@ -13,8 +13,8 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/fr/stories/madagascar/guillaume-marie/'
-title: 'Guillaume, Marie '
-alternate: 'mère marie de l'eucharistie'
+title: "Guillaume, Marie"
+alternate: "mère marie de l'eucharistie"
 date: '1881-1950'
 century:
   - '19th'

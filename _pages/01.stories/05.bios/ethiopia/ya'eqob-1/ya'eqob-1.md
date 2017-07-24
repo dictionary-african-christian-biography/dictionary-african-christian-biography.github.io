@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/yaeqob-1/'
-title: 'Ya'eqob I'
+title: "Ya'eqob I"
 alternate: ''
 date: '800s'
 century:

@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/alef/'
-title: ''Aléf'
+title: "'Aléf"
 alternate: ''
 date: '400s500s'
 century:

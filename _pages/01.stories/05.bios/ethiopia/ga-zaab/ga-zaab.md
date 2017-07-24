@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/saga-zaab/'
-title: 'Säga-Zä-'Ab'
+title: "Säga-Zä-'Ab"
 alternate: ''
 date: '1100s-1200s'
 century:

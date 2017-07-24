@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/madhanina-egzie/'
-title: 'Mädhaninä-Egzi'e'
+title: "Mädhaninä-Egzi'e"
 alternate: ''
 date: '1200s'
 century:

@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/masqal-moa/'
-title: 'Mäsqäl-Mo'a'
+title: "Mäsqäl-Mo'a"
 alternate: ''
 date: '1200s'
 century:

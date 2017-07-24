@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/yam-ata/'
-title: 'Yäm'ata'
+title: "Yäm'ata"
 alternate: ''
 date: '400s-500s'
 century:

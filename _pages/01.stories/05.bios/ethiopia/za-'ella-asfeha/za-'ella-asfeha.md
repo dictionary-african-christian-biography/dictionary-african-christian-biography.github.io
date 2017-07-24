@@ -13,7 +13,7 @@ history: ''
 memory: ''
 obituary: ''
 permalink: '/stories/ethiopia/za-ella-asfeha/'
-title: 'Zä-'Ellä-'Asfeha'
+title: "Zä-'Ellä-'Asfeha"
 alternate: ''
 date: '200s'
 century:
