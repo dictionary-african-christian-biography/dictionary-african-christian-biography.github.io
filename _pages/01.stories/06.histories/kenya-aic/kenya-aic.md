@@ -6,7 +6,7 @@ languages-available:
   - ' '
   - ' '
   - ' '
-index: 'primary'
+index: 'main'
 history: 'history'
 permalink: '/histories/kenya-aic/'
 title: 'African Initiated Churches Originating in Kenya'

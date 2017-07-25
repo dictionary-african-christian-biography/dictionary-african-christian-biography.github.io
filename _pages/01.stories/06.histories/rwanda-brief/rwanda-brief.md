@@ -6,7 +6,7 @@ languages-available:
   - 'fr'
   - ' '
   - ' '
-index: 'primary'
+index: 'main'
 categories: ''
 eulogy: ''
 history: 'history'

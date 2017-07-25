@@ -1,14 +1,224 @@
 ---
-layout: default-search
 ---
-<div id="main" role="main"><a name="#top"></a>
-  {% include sidebar-search.html %}
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
 
-  <div class="archive">
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                  HEADER
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <head>
+    <meta charset="utf-8">
 
-    {% unless page.header.overlay_color or page.header.overlay_image %}
-      <h1 class="page__title">{{ page.title }}</h1>
-    {% endunless %}
-    {{ content }}
-  </div>
+<!-- http://t.co/dKP3o1e -->
+    <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="tipuesearch/css/normalize.css">
+    <script type="text/javascript" src="tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="tipuesearch/tipuesearch_content.js"></script>
+    <link rel="stylesheet" type="text/css" href="tipuesearch/css/tipuesearch.css">
+    <script type="text/javascript" src="tipuesearch/tipuesearch.min.js"></script>
+
+<!-- For all browsers -->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | absolute_url }}">
+    <meta http-equiv="cleartype" content="on">
+
+    <a name="#top"></a>
+  </head>
+
+  <body class="layout--archive" style="zoom: 1; margin-bottom: 354px;">
+
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                    MASTHEAD
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+  {% include masthead-{{page.lang}}.html %}
+
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                    CONTENT
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <div id="main" role="main"><a name="#top"></a>
+    <!-- SIDEBAR -->
+      {% if page.sidebar %}
+      <div class="sidebar sticky">
+
+        <div class="language-switch2">{{ site.data.site-trans[page.lang].page-available }}</div>
+        <div class="language-switch"><div class="lang-head">
+          {% if page.languages-available[0] != ' ' %}<div class="en"><a href="{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.languages-available[0] | upcase | strip }}</a></div>{% endif %}
+          {% if page.languages-available[1] != ' ' %}<div class="fr"><a href="/fr{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.languages-available[1] | upcase | strip }}</a></div>{% endif %}
+          {% if page.languages-available[2] != ' ' %}<div class="pt"><a href="/pt{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.languages-available[2] | upcase | strip }}</a></div>{% endif %}
+          {% if page.languages-available[3] != ' ' %}<div class="sw"><a href="/sw{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.languages-available[3] | upcase | strip }}</a></div>{% endif %}
+      </div></div>
+
+        <!-- SORTS & INDEXES -->
+          {% if page.sidebar %}
+            {% if page.sidebar.nav %}
+              {% assign navigation = site.data.navigation[page.sidebar.nav] %}
+
+              <nav class="nav__list">
+                {% if page.sidebar.title %}<h3 class="nav__title" style="padding-left: 0;">{{ page.sidebar.title }}</h3>{% endif %}
+                <input id="ac-toc" name="accordion-toc" type="checkbox" />
+                <label for="ac-toc">{{ site.data.ui-text[page.lang].menu_label | default: "Toggle Menu" }}</label>
+                <ul class="nav__items">
+                  {% for nav in navigation %}
+                    <li>
+                      {% if nav.url %}
+                        {% comment %} internal/external URL check {% endcomment %}
+                        {% if nav.url contains "://" %}
+                          {% assign domain = "" %}
+                        {% else %}
+                          {% assign domain = site.url | append: site.baseurl %}
+                        {% endif %}
+                        <a href="{{ domain }}{{ page.lang | prepend: '/' | remove: '/en' }}{{ nav.url }}"><span class="nav__sub-title">{{ site.data.side-sorts[nav.title][page.lang] }}</span></a>
+                      {% else %}
+                        <span class="nav__sub-title">{{ site.data.side-sorts[nav.title][page.lang] }}</span>
+                      {% endif %}
+
+                      {% if nav.children != null %}
+                      <ul class="side">
+                        {% for child in nav.children %}
+                          {% comment %} internal/external URL check {% endcomment %}
+                          {% if child.url contains "://" %}
+                            {% assign domain = "" %}
+                          {% else %}
+                            {% assign domain = site.url | append: site.baseurl %}
+                          {% endif %}
+
+                          {% comment %} set "active" class on current page {% endcomment %}
+                          {% if child.url == page.url %}
+                            {% assign active = "active" %}
+                          {% else %}
+                            {% assign active = "" %}
+                          {% endif %}
+
+                          <li><a href="{{ domain }}{{ page.lang | prepend: '/' | remove: '/en' }}{{ child.url }}" class="{{ active }}">{{ site.data.side-sorts[child.title][page.lang] }}</a></li>
+                        {% endfor %}
+                      </ul>
+                      {% endif %}
+                    </li>
+                  {% endfor %}
+                </ul>
+              </nav>
+            {% endif %}
+          {% endif %}
+        </div>
+        {% endif %}
+
+      <!-- CONTENT -->
+    <div class="archive">
+
+      {% unless page.header.overlay_color or page.header.overlay_image %}
+        <h1 class="page__title">{{ page.title }}</h1>
+      {% endunless %}
+  {{ content }}
 </div>
+</div>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                    FOOTER
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+  <div class="page__footer"> <footer><div class="foot-box">
+  <!-- FIRST COLUMN #################################################### -->
+  <div class="box">
+    <h3 style="color:#e0c74f; margin-top:0px;"> {{ site.data.site-trans[page.lang].contact-us }}</h3>
+    <p>  {% if page.lang == 'en' %}
+          <b>Dictionary of African Christian Biography</b></br>
+      {% endif %}
+      {% if page.lang == 'fr' %}
+            <b>Dictionnaire Biographique des Chrétiens d’Afrique</b></br>
+        {% endif %}
+        {% if page.lang == 'pt' %}
+              <b>Dicionario de Biografias Cristãs da África</b></br>
+          {% endif %}
+          {% if page.lang == 'sw' %}
+                <b>Kamusi ya Wasifu wa Wakristo wa Kiafrika</b></br>
+            {% endif %}
+      Center for Global Christianity and Mission</br>
+      745 Commonwealth Avenue</br>
+      Boston, Massachussetts 022, USA</br>
+      Email: dacb@bu.edu</p>
+      <form action="https://www.facebook.com/DictionaryofAfricanChristianBiography">
+          <input type="submit" class="btn-facebook"/>
+      </form>
+  </div>
+
+  <!-- SECOND COLUMN #################################################### -->
+  <div class="box">
+    <h3 style="color:#e0c74f; margin-top:0px;">{{ site.data.site-trans[page.lang].submit-stories }}</h3>
+    {% if page.lang == 'en' %}
+      <p style="margin-bottom: 1em;">If you would like to submit a story to the DACB, you can find free resources and submission guidelines <a href="{{ site.url }}/contribute/submit/">here</a>.<br></p>
+      <a href="{{site.url}}/contribute/submit/" class="btn btn--inverse-long">{{ site.data.site-trans[page.lang].submit-stories }}</a>
+    {% endif %}
+    {% if page.lang == 'fr' %}
+      <p style="margin-bottom: 1em;">Si vous souhaitez soumettre une histoire au DACB, vous pouvez trouver des ressources gratuites et des directives de soumission <a href="{{ site.url }}/fr/contribute/submit/">ici</a>.<br></p>
+      <a href="{{site.url}}/fr/contribute/submit/" class="btn btn--inverse-long">{{ site.data.site-trans[page.lang].submit-stories }}</a>
+      {% endif %}
+    {% if page.lang == 'pt' %}
+      <p style="margin-bottom: 1em;">Se você gostaria de enviar uma história ao DACB, você pode encontrar recursos gratuitos e diretrizes de submissão <a href="{{ site.url }}/pt/contribute/submit/">aqui</a>.<br></p>
+      <a href="{{site.url}}/pt/contribute/submit/" class="btn btn--inverse-long">{{ site.data.site-trans[page.lang].submit-stories }}</a>
+    {% endif %}
+    {% if page.lang == 'sw' %}
+      <p style="margin-bottom: 1em;">Ikiwa ungependa kuwasilisha hadithi kwa DACB, unaweza kupata rasilimali za bure na miongozo ya kuwasilisha <a href="{{ site.url }}/sw/contribute/submit/">hapa</a>.<br></p>
+      <a href="{{site.url}}/sw/contribute/submit/" class="btn btn--inverse-long">{{ site.data.site-trans[page.lang].submit-stories }}</a>
+    {% endif %}
+  </div>
+
+  <!-- THIRD COLUMN ####################################################-->
+  <div class="box-end">
+    <h3 style="color:#e0c74f; margin-top:0px;">{{ site.data.site-trans[page.lang].newsletter }}</h3>
+    {% if page.lang == 'en' %}
+        <p>Want to stay updated on new happenings at the DACB? Sign up for our e-newsletter here.</p>
+        {% include mailchimp-mini-form.html %}
+    {% endif %}
+    {% if page.lang == 'fr' %}
+        <p>WVous voulez rester à jour sur les nouveaux événements au DACB? Inscrivez-vous à notre newsletter électronique ici.</p>
+        {% include mailchimp-mini-form.html %}
+    {% endif %}
+    {% if page.lang == 'pt' %}
+        <p>Quer ficar atualizado sobre novos acontecimentos no DACB? Inscreva-se no nosso boletim informativo aqui.</p>
+        {% include mailchimp-mini-form.html %}
+    {% endif %}
+    {% if page.lang == 'sw' %}
+        <p>Unataka kukaa updated juu ya matukio mapya katika DACB? Ishara kwa jarida letu la e-mail hapa.</p>
+        {% include mailchimp-mini-form.html %}
+    {% endif %}
+  </div>
+
+  <!-- COPYRIGHT AND COUNTS #################################################### -->
+  <div class="page__footer-copyright">
+    {% if page.lang == 'en' %}
+    {% assign ecount = site.pages | where: "lang","en" | where: "layout","single-bio" %}
+    DACB is a digital resource hosted by the <a href="http://www.bu.edu/cgcm/">Center for Global Christianity and Mission</a> at Boston University School of Theology. <br>
+    Last updated: {{ site.time | date_to_long_string }}. English stories: {{ecount.size}}.<br>
+    &copy; {{ site.time | date: '%Y' }} Dictionary of African Christian Biography.
+    {% endif %}
+
+    {% if page.lang == 'fr' %}
+    {% assign fcount = site.pages | where: "lang","fr" | where: "layout","single-bio" %}
+    DIBICA une ressource numérique est hébergé par le <a href="http://www.bu.edu/cgcm/">Centre pour le Christianisme Mondial et la Mission</a> à l'École de théologie de l'Université de Boston. <br>
+    Dernière Mise à Jour: {{ site.time | date_to_long_string }}. Histoires Françaises: {{fcount.size}}.<br>
+    &copy; {{ site.time | date: '%Y' }} Dictionnaire Biographique des Chrétienne d'Afrique.
+    {% endif %}
+
+    {% if page.lang == 'pt' %}
+    {% assign pcount = site.pages | where: "lang","pt" | where: "layout","single-bio" %}
+    DIBICA um recurso digital é hospedado por o<a href="http://www.bu.edu/cgcm/">o Centro para Cristianismo Globais e Missões </a> na Faculdade de Teologia da Universidade de Boston. <br>
+    Ultima Atualização: {{ site.time | date_to_long_string }}. Histórias Portuguesas: {{pcount.size}}.<br>
+    &copy; {{ site.time | date: '%Y' }} Dicionario de Biografias Cristãs da África.
+    {% endif %}
+
+    {% if page.lang == 'sw' %}
+    {% assign scount = site.pages | where: "lang","sw" | where: "layout","single-bio" %}
+    KAWAKIA ni rasilimali digital mwenyeji kwa <a href="http://www.bu.edu/cgcm/"> Kituo cha Global Ukristo na Mission </a> katika Boston Chuo cha Theology. <br>
+    Ilibadilishwa Mwisho: {{ site.time | date_to_long_string }}. Hadithi za Kiswahili: {{scount.size}}.<br>
+    &copy; {{ site.time | date: '%Y' }} Kamusi Ya Wasifu Wa Wakristo Wa Kiafrika.
+    {% endif %}
+  </footer></div>
+
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                    SCRIPTS
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    </body>
+  </html>

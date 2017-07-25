@@ -10,7 +10,7 @@ languages-available:
   - sw
 ---
 {% capture parent_lang %}{{ page.lang }}{% endcapture %}
-{% assign sorted = site.pages | where: "index","primary" | where: "history","history" | sort:"upload" %}
+{% assign sorted = site.pages | where: "index","main" | where: "history","history" | sort:"upload" %}
 
 {% for page in sorted %}
 {% if page.title != empty %}
