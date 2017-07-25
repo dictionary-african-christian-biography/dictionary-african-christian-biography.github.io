@@ -12,17 +12,17 @@
 </td>
 
       <td width=25%>
-        {% assign a1 = page.affiliation[0] %} {% assign aff1 = site.data.aff-trans[a1].[include.parent_lang] %}
-        {% assign a2 = page.affiliation[1] %} {% assign aff2 = site.data.aff-trans[a2].[include.parent_lang] %}
-        {% assign a3 = page.affiliation[2] %} {% assign aff2 = site.data.aff-trans[a3].[include.parent_lang] %}
+        {% assign a1 = page.affiliation[0] %}
+        {% assign a2 = page.affiliation[1] %}
+        {% assign a3 = page.affiliation[2] %}
         {% if a1 != nil %}{{ site.data.aff-trans[a1].[include.parent_lang] }}{% endif %}
         {% if a2 != nil %}, {{ site.data.aff-trans[a2].[include.parent_lang] }}{% endif %}
         {% if a3 != nil %}, {{ site.data.aff-trans[a3].[include.parent_lang] }}{% endif %}
       </td>
       <td width=25%>
-        {% assign c1 = page.country[0] %} {% assign cn1 = site.data.country-trans[c1].[include.parent_lang] %}
-        {% assign c2 = page.country[1] %} {% assign cn2 = site.data.country-trans[c2].[include.parent_lang] %}
-        {% assign c3 = page.country[2] %} {% assign cn2 = site.data.country-trans[c3].[include.parent_lang] %}
+        {% assign c1 = page.country[0] %}
+        {% assign c2 = page.country[1] %}
+        {% assign c3 = page.country[2] %}
         {% if c1 != nil %}{{ site.data.country-trans[c1].[include.parent_lang] }}{% endif %}
         {% if c2 != nil %}, {{ site.data.country-trans[c2].[include.parent_lang] }}{% endif %}
         {% if c3 != nil %}, {{ site.data.country-trans[c3].[include.parent_lang] }}{% endif %}
