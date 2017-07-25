@@ -29,7 +29,7 @@ layout: default
         <header>
           {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
           <p class="page__meta">
-            {% if page.alternate != nil %}
+            {% if page.alternate != ' ' %}
             <b>{{ site.data.site-trans[page.lang].alternate }}: {{ page.alternate | markdownify | remove: "<p>" | remove: "</p>" }}</b>
           </br>
             {% endif %}
