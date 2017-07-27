@@ -83,27 +83,7 @@
     <a href="{{site.url}}/fr/contribute/submit/" class="btn btn--inverse-long">{{ site.data.site-trans[page.lang].submit-stories }}</a>
     {% endif %}
 
-    -<!-- THIRD COLUMN ####################################################-->
--<div class="box-end">
--  <h3 style="color:#e0c74f; margin-top:0px;">{{ site.data.site-trans[page.lang].newsletter }}</h3>
--  {% if page.lang == 'en' %}
--      <p>Want to stay updated on new happenings at the DACB? Sign up for our e-newsletter here.</p>
--      {% include mailchimp-mini-form.html %}
--  {% endif %}
--  {% if page.lang == 'fr' %}
--      <p>WVous voulez rester à jour sur les nouveaux événements au DACB? Inscrivez-vous à notre newsletter électronique ici.</p>
--      {% include mailchimp-mini-form.html %}
--  {% endif %}
--  {% if page.lang == 'pt' %}
--      <p>Quer ficar atualizado sobre novos acontecimentos no DACB? Inscreva-se no nosso boletim informativo aqui.</p>
--      {% include mailchimp-mini-form.html %}
--  {% endif %}
--  {% if page.lang == 'sw' %}
--      <p>Unataka kukaa updated juu ya matukio mapya katika DACB? Ishara kwa jarida letu la e-mail hapa.</p>
--      {% include mailchimp-mini-form.html %}
--  {% endif %}
--</div>
-
+    
     {% if page.lang == 'fr' %}
     {% assign fcount = site.pages | where: "lang","fr" | where: "layout","single-bio" %}
     DIBICA une ressource numérique est hébergé par le <a href="http://www.bu.edu/cgcm/">Centre pour le Christianisme Mondial et la Mission</a> à l'École de théologie de l'Université de Boston. <br>
