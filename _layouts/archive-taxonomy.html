@@ -2,73 +2,10 @@
 layout: default
 author_profile: false
 ---
-<!-- SIDEBAR -->
-  {% if page.sidebar %}
-  <div class="sidebar sticky">
 
-    <div class="language-switch2">{{ site.data.site-trans[page.lang].page-available }}</div>
-    <div class="language-switch"><div class="lang-head">
-      {% if page.languages-available[0] != ' ' %}<div class="en"><a href="{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.languages-available[0] | upcase | strip }}</a></div>{% endif %}
-      {% if page.languages-available[1] != ' ' %}<div class="fr"><a href="/fr{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.languages-available[1] | upcase | strip }}</a></div>{% endif %}
-      {% if page.languages-available[2] != ' ' %}<div class="pt"><a href="/pt{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.languages-available[2] | upcase | strip }}</a></div>{% endif %}
-      {% if page.languages-available[3] != ' ' %}<div class="sw"><a href="/sw{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.languages-available[3] | upcase | strip }}</a></div>{% endif %}
-  </div></div>
+<div id="main" role="main">
+  {% include sidebar.html %}
 
-    <!-- SORTS & INDEXES -->
-      {% if page.sidebar %}
-        {% if page.sidebar.nav %}
-          {% assign navigation = site.data.navigation[page.sidebar.nav] %}
-
-          <nav class="nav__list">
-            {% if page.sidebar.title %}<h3 class="nav__title" style="padding-left: 0;">{{ page.sidebar.title }}</h3>{% endif %}
-            <input id="ac-toc" name="accordion-toc" type="checkbox" />
-            <label for="ac-toc">{{ site.data.ui-text[page.lang].menu_label | default: "Toggle Menu" }}</label>
-            <ul class="nav__items">
-              {% for nav in navigation %}
-                <li>
-                  {% if nav.url %}
-                    {% comment %} internal/external URL check {% endcomment %}
-                    {% if nav.url contains "://" %}
-                      {% assign domain = "" %}
-                    {% else %}
-                      {% assign domain = site.url | append: site.baseurl %}
-                    {% endif %}
-                    <a href="{{ domain }}{{ page.lang | prepend: '/' | remove: '/en' }}{{ nav.url }}"><span class="nav__sub-title">{{ site.data.side-sorts[nav.title][page.lang] }}</span></a>
-                  {% else %}
-                    <span class="nav__sub-title">{{ site.data.side-sorts[nav.title][page.lang] }}</span>
-                  {% endif %}
-
-                  {% if nav.children != null %}
-                  <ul class="side">
-                    {% for child in nav.children %}
-                      {% comment %} internal/external URL check {% endcomment %}
-                      {% if child.url contains "://" %}
-                        {% assign domain = "" %}
-                      {% else %}
-                        {% assign domain = site.url | append: site.baseurl %}
-                      {% endif %}
-
-                      {% comment %} set "active" class on current page {% endcomment %}
-                      {% if child.url == page.url %}
-                        {% assign active = "active" %}
-                      {% else %}
-                        {% assign active = "" %}
-                      {% endif %}
-
-                      <li><a href="{{ domain }}{{ page.lang | prepend: '/' | remove: '/en' }}{{ child.url }}" class="{{ active }}">{{ site.data.side-sorts[child.title][page.lang] }}</a></li>
-                    {% endfor %}
-                  </ul>
-                  {% endif %}
-                </li>
-              {% endfor %}
-            </ul>
-          </nav>
-        {% endif %}
-      {% endif %}
-    </div>
-    {% endif %}
-
-  <!-- CONTENT -->
   <div class="archive">
     <h1 class="page__title">{{ page.title }}</h1>
     {% for post in page.posts %}
