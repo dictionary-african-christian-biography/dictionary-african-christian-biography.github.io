@@ -134,7 +134,7 @@
 
     {% if page.lang == 'pt' %}
     {% assign pcount = site.pages | where: "lang","pt" | where: "layout","single-bio" %}
-    DIBICA um recurso digital é hospedado por o<a href="http://www.bu.edu/cgcm/">o Centro para Cristianismo Globais e Missões </a> na Faculdade de Teologia da Universidade de Boston. <br>
+    DIBICA é um recurso digital do<a href="http://www.bu.edu/cgcm/">Centro para Cristianismo Globais e Missões </a> na Faculdade de Teologia da Universidade de Boston. <br>
     Ultima Atualização: {{ site.time | date_to_long_string }}. Histórias Portuguesas: {{pcount.size}}.<br>
     &copy; {{ site.time | date: '%Y' }} Dicionario de Biografias Cristãs da África.
     {% endif %}
