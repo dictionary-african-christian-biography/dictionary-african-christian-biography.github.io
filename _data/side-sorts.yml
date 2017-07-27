@@ -3,13 +3,13 @@
 #  =======================================
 Browse Stories:
   en: "Browse Stories by"
-  fr: "Parcourir les Histoires par"
-  pt: "Procurar Histórias por"
+  fr: "Biographies organisées par"
+  pt: "Relatos organizados por"
   sw: "Vinjari Hadithi kwa"
 Sort All Stories:
-  en: "Sort All Stories By"
-  fr: "Trier Tout Par"
-  pt: "Todas Ordenar por"
+  en: "Sort Stories By"
+  fr: "Trier Par"
+  pt: "Ordenar por"
   sw: "Weka Zote kwa"
 By Name:
   en: "Name"
@@ -18,8 +18,8 @@ By Name:
   sw: "Jina"
 By Most Recent:
   en: "Newest"
-  fr: "Nouveau"
-  pt: "Novo"
+  fr: "Plus Récents"
+  pt: "Mais Recentes"
   sw: "Karibuni Zaidi"
 By Century:
   en: "Century"
@@ -53,8 +53,8 @@ By Language:
   sw: "Lugha"
 Category Indexes:
   en: "Category Indexes"
-  fr: "Catégorie Indexes"
-  pt: "Categoria Índices"
+  fr: "Indexes de Catégories"
+  pt: "Índice de Categorias"
   sw: "Nakala za Jamii"
 Ancient Church:
   en: "Ancient Christians"
@@ -78,7 +78,7 @@ Clergy:
   sw: "Makanisa"
 Ecumenists:
   en: "Ecumenists"
-  fr: "Ecuménistes"
+  fr: "Oecuménistes"
   pt: "Ecumenistas"
   sw: "Ecumenists"
 Evangelists:
@@ -93,7 +93,7 @@ Martyrs:
   sw: "Waaminifu"
 Medical Practitioners:
   en: "Medical Practitioners"
-  fr: "Praticiens médicaux"
+  fr: "Profession médicale"
   pt: "Praticantes de Medicina"
   sw: "Wataalamu wa Dawa"
 Missionaries:
