@@ -86,11 +86,11 @@
       <a href="{{site.url}}/fr/contribute/submit/" class="btn btn--inverse-long">{{ site.data.site-trans[page.lang].submit-stories }}</a>
       {% endif %}
     {% if page.lang == 'pt' %}
-      <p style="margin-bottom: 1em;">Se você gostaria de enviar uma história ao DACB, você pode encontrar recursos gratuitos e diretrizes de submissão <a href="{{ site.url }}/pt/contribute/submit/">aqui</a>.<br></p>
+      <p style="margin-bottom: 1em;">Se você gostaria de enviar um relato ao DIBICA, você pode encontrar recursos gratuitos e diretrizes de submissão <a href="{{ site.url }}/pt/contribute/submit/">aqui</a>.<br></p>
       <a href="{{site.url}}/pt/contribute/submit/" class="btn btn--inverse-long">{{ site.data.site-trans[page.lang].submit-stories }}</a>
     {% endif %}
     {% if page.lang == 'sw' %}
-      <p style="margin-bottom: 1em;">Ikiwa ungependa kuwasilisha hadithi kwa DACB, unaweza kupata rasilimali za bure na miongozo ya kuwasilisha <a href="{{ site.url }}/sw/contribute/submit/">hapa</a>.<br></p>
+      <p style="margin-bottom: 1em;">Ikiwa ungependa kuwasilisha hadithi kwa KAWAKIA, unaweza kupata rasilimali za bure na miongozo ya kuwasilisha <a href="{{ site.url }}/sw/contribute/submit/">hapa</a>.<br></p>
       <a href="{{site.url}}/sw/contribute/submit/" class="btn btn--inverse-long">{{ site.data.site-trans[page.lang].submit-stories }}</a>
     {% endif %}
   </div>
@@ -107,11 +107,11 @@
         {% include mailchimp-mini-form.html %}
     {% endif %}
     {% if page.lang == 'pt' %}
-        <p>Quer ficar atualizado sobre novos acontecimentos no DACB? Inscreva-se no nosso boletim informativo aqui.</p>
+        <p>Você quer receber notícias do DIBICA? Inscreva-se no nosso boletim informativo aqui.</p>
         {% include mailchimp-mini-form.html %}
     {% endif %}
     {% if page.lang == 'sw' %}
-        <p>Unataka kukaa updated juu ya matukio mapya katika DACB? Ishara kwa jarida letu la e-mail hapa.</p>
+        <p>Unataka kukaa updated juu ya matukio mapya katika KAWAKIA? Ishara kwa jarida letu la e-mail hapa.</p>
         {% include mailchimp-mini-form.html %}
     {% endif %}
   </div>
@@ -127,16 +127,16 @@
 
     {% if page.lang == 'fr' %}
     {% assign fcount = site.pages | where: "lang","fr" | where: "layout","single-bio" %}
-    Le DIBICA est une ressource numérique du <a href="http://www.bu.edu/cgcm/">Center for Global Christianity and Mission (Centre pour la Mission et le Christianisme Global)</a> à la Faculté de Théologie de l'Université de Boston. <br>
+    Le DIBICA est une ressource numérique du <a href="http://www.bu.edu/cgcm/">Center for Global Christianity and Mission (Centre pour le Christianisme Global et la Mission)</a> à la Faculté de Théologie de l'Université de Boston. <br>
     Dernière Mise à Jour: {{ site.time | date_to_long_string }}. Articles en Français: {{fcount.size}}.<br>
     &copy; {{ site.time | date: '%Y' }} Dictionnaire Biographique des Chrétiens d'Afrique.
     {% endif %}
 
     {% if page.lang == 'pt' %}
     {% assign pcount = site.pages | where: "lang","pt" | where: "layout","single-bio" %}
-    DIBICA é um recurso digital do<a href="http://www.bu.edu/cgcm/"> Centro para Cristianismo Globais e Missões </a> na Faculdade de Teologia da Universidade de Boston. <br>
-    Ultima Atualização: {{ site.time | date_to_long_string }}. Histórias Portuguesas: {{pcount.size}}.<br>
-    &copy; {{ site.time | date: '%Y' }} Dicionario de Biografias Cristãs da África.
+    DIBICA é um recurso digital do<a href="http://www.bu.edu/cgcm/"> Center for Global Christianity and Mission (Centro para Cristianismo Globais e Missões) </a> na Faculdade de Teologia da Universidade de Boston. <br>
+    Ultima Atualização: {{ site.time | date_to_long_string }}. Relatos em Portugues: {{pcount.size}}.<br>
+    &copy; {{ site.time | date: '%Y' }} Dicionário Biográfico de Cristãos da África.
     {% endif %}
 
     {% if page.lang == 'sw' %}
