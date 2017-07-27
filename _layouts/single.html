@@ -1,21 +1,75 @@
 ---
 layout: default
 ---
-
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
-{% elsif page.header.video.id and page.header.video.provider %}
-  {% include page__hero_video.html %}
-{% endif %}
-
-{% if page.url != "/" and site.breadcrumbs %}
-  {% unless paginator %}
-    {% include breadcrumbs.html %}
-  {% endunless %}
-{% endif %}
-
 <div id="main" role="main">
-  {% include sidebar.html %}
+  <!-- SIDEBAR -->
+    {% if page.sidebar %}
+    <div class="sidebar sticky">
+
+      <div class="language-switch2">{{ site.data.site-trans[page.lang].page-available }}</div>
+      <div class="language-switch"><div class="lang-head">
+        {% if page.languages-available[0] != ' ' %}<div class="en"><a href="{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.languages-available[0] | upcase | strip }}</a></div>{% endif %}
+        {% if page.languages-available[1] != ' ' %}<div class="fr"><a href="/fr{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.languages-available[1] | upcase | strip }}</a></div>{% endif %}
+        {% if page.languages-available[2] != ' ' %}<div class="pt"><a href="/pt{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.languages-available[2] | upcase | strip }}</a></div>{% endif %}
+        {% if page.languages-available[3] != ' ' %}<div class="sw"><a href="/sw{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">{{ page.languages-available[3] | upcase | strip }}</a></div>{% endif %}
+    </div></div>
+    {% if page.sidebar %} {% if page.sidebar.nav %}<!-- SORTS & INDEXES -->
+      {% if page.sidebar %}
+        {% if page.sidebar.nav %}
+          {% assign nav = page.sidebar.nav %}
+          {% assign navigation = site.data.navigation[nav] %}
+
+          <nav class="nav__list">
+            {% if page.sidebar.title %}<h3 class="nav__title" style="padding-left: 0;">{{ page.sidebar.title }}</h3>{% endif %}
+            <input id="ac-toc" name="accordion-toc" type="checkbox" />
+            <label for="ac-toc">{{ site.data.ui-text[page.lang].menu_label | default: "Toggle Menu" }}</label>
+            <ul class="nav__items">
+              {% for nav in navigation %}
+                <li>
+                  {% if nav.url %}
+                    {% comment %} internal/external URL check {% endcomment %}
+                    {% if nav.url contains "://" %}
+                      {% assign domain = "" %}
+                    {% else %}
+                      {% assign domain = site.url | append: site.baseurl %}
+                    {% endif %}
+                    <a href="{{ domain }}{{ page.lang | prepend: '/' | remove: '/en' }}{{ nav.url }}"><span class="nav__sub-title">{{ site.data.side-sorts[nav.title].[page.lang] }}</span></a>
+                  {% else %}
+                    <span class="nav__sub-title">{{ site.data.side-sorts[nav.title].[page.lang] }}</span>
+                  {% endif %}
+
+                  {% if nav.children != null %}
+                  <ul class="side">
+                    {% for child in nav.children %}
+                      {% comment %} internal/external URL check {% endcomment %}
+                      {% if child.url contains "://" %}
+                        {% assign domain = "" %}
+                      {% else %}
+                        {% assign domain = site.url | append: site.baseurl %}
+                      {% endif %}
+
+                      {% comment %} set "active" class on current page {% endcomment %}
+                      {% if child.url == page.url %}
+                        {% assign active = "active" %}
+                      {% else %}
+                        {% assign active = "" %}
+                      {% endif %}
+
+                      <li><a href="{{ domain }}{{ page.lang | prepend: '/' | remove: '/en' }}{{ child.url }}" class="{{ active }}">{{ site.data.side-sorts[child.title].[page.lang] }}</a></li>
+                    {% endfor %}
+                  </ul>
+                  {% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          </nav>
+        {% endif %}
+      {% endif %}
+{% endif %}{% endif %}
+    </div>
+    {% endif %}
+
+  <!-- CONTENT -->
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
@@ -49,26 +103,7 @@ layout: default
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
         {% endif %}
       </footer>
-
-      {% if page.share %}{% include social-share.html %}{% endif %}
-
-      {% include post_pagination.html %}
     </div>
 
-    {% if site.comments.provider and page.comments %}
-      {% include comments.html %}
-    {% endif %}
   </article>
-
-  {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
-  {% if page.id and page.related and site.related_posts.size > 0 %}
-    <div class="page__related">
-      <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
-      <div class="grid__wrapper">
-        {% for post in site.related_posts limit:4 %}
-          {% include archive-single.html type="grid" %}
-        {% endfor %}
-      </div>
-    </div>
-  {% endif %}
 </div>
