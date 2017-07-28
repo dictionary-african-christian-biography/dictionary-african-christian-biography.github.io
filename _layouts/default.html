@@ -60,7 +60,7 @@
             <b>Dictionnaire Biographique des Chrétiens d’Afrique</b></br>
         {% endif %}
         {% if page.lang == 'pt' %}
-              <b>Dicionario de Biografias Cristãs da África</b></br>
+              <b>Dicionário Biográfico de Cristãos da África</b></br>
           {% endif %}
           {% if page.lang == 'sw' %}
                 <b>Kamusi ya Wasifu wa Wakristo wa Kiafrika</b></br>
@@ -86,7 +86,7 @@
       <a href="{{site.url}}/fr/contribute/submit/" class="btn btn--inverse-long">{{ site.data.site-trans[page.lang].submit-stories }}</a>
       {% endif %}
     {% if page.lang == 'pt' %}
-      <p style="margin-bottom: 1em;">Se você gostaria de enviar um relato ao DIBICA, você pode encontrar recursos gratuitos e diretrizes de submissão <a href="{{ site.url }}/pt/contribute/submit/">aqui</a>.<br></p>
+      <p style="margin-bottom: 1em;">Se você gostaria de enviar um artigo ao DIBICA, você pode encontrar recursos gratuitos e diretrizes de submissão <a href="{{ site.url }}/pt/contribute/submit/">aqui</a>.<br></p>
       <a href="{{site.url}}/pt/contribute/submit/" class="btn btn--inverse-long">{{ site.data.site-trans[page.lang].submit-stories }}</a>
     {% endif %}
     {% if page.lang == 'sw' %}
@@ -134,7 +134,7 @@
 
     {% if page.lang == 'pt' %}
     {% assign pcount = site.pages | where: "lang","pt" | where: "layout","single-bio" %}
-    DIBICA é um recurso digital do<a href="http://www.bu.edu/cgcm/"> Center for Global Christianity and Mission (Centro para Cristianismo Globais e Missões) </a> na Faculdade de Teologia da Universidade de Boston. <br>
+    O DIBICA é um recurso digital do<a href="http://www.bu.edu/cgcm/"> Center for Global Christianity and Mission (Centro para Cristianismo Globais e Missões) </a> na Faculdade de Teologia da Universidade de Boston. <br>
     Ultima Atualização: {{ site.time | date_to_long_string }}. Relatos em Portugues: {{pcount.size}}.<br>
     &copy; {{ site.time | date: '%Y' }} Dicionário Biográfico de Cristãos da África.
     {% endif %}
