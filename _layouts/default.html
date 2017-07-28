@@ -127,14 +127,14 @@
 
     {% if page.lang == 'fr' %}
     {% assign fcount = site.pages | where: "lang","fr" | where: "layout","single-bio" %}
-    Le DIBICA est une ressource numérique du <a href="http://www.bu.edu/cgcm/">Center for Global Christianity and Mission (Centre pour le Christianisme Global et la Mission)</a> à la Faculté de Théologie de l'Université de Boston. <br>
+    Le DIBICA est une ressource numérique du <a href="http://www.bu.edu/cgcm/">Center for Global Christianity and Mission</a> à la Faculté de Théologie de l'Université de Boston. <br>
     Dernière Mise à Jour: {{ site.time | date_to_long_string }}. Articles en Français: {{fcount.size}}.<br>
     &copy; {{ site.time | date: '%Y' }} Dictionnaire Biographique des Chrétiens d'Afrique.
     {% endif %}
 
     {% if page.lang == 'pt' %}
     {% assign pcount = site.pages | where: "lang","pt" | where: "layout","single-bio" %}
-    O DIBICA é um recurso digital do<a href="http://www.bu.edu/cgcm/"> Center for Global Christianity and Mission (Centro para Cristianismo Globais e Missões) </a> na Faculdade de Teologia da Universidade de Boston. <br>
+    O DIBICA é um recurso digital do<a href="http://www.bu.edu/cgcm/"> Center for Global Christianity and Mission </a> na Faculdade de Teologia da Universidade de Boston. <br>
     Ultima Atualização: {{ site.time | date_to_long_string }}. Relatos em Portugues: {{pcount.size}}.<br>
     &copy; {{ site.time | date: '%Y' }} Dicionário Biográfico de Cristãos da África.
     {% endif %}
