@@ -11,7 +11,7 @@ languages-available:
 ---
 ### 1\. Introdução ao Projeto
 
-*   [O que é DIBICA?]({{site.url}}/pt/about/what-is-dacb/)  
+*   [O que é o DIBICA?]({{site.url}}/pt/about/what-is-dacb/)  
 *   ["Como começou o DIBICA, e qual o seu futuro" ]({{site.url}}/pt/about/beginnings/): Uma breve história do início do projeto.  
 *   ["O _Dicionario de Biografias Cristãs da África_: Cartografia Eclesiástica do Continente Invisível"]({{site.url}}/pt/about/vision/): A lógica ea visão por trás do projeto, apresentado em pelo Dr. Jonathan J. Bonk, Diretor do Projeto.
 *   ["Introdução ao _DIBICA_"]({{site.url}}/resources/intro-dacb-web.pdf) (PDF): PDF em Inglês de uma apresentação de 30 minutos que dá uma visão geral do projeto.
