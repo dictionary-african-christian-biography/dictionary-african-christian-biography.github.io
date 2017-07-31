@@ -27,6 +27,7 @@ Requested paper topics include the following:
 •	African biography in World Christianity
 
 Please send a one page description of the proposed topic and a brief vita to Ms. Michele Sigg, Project Manager, _Dictionary of African Christian Biography_ by Friday February 27, 2015. Email: dacb@bu.edu
+
 Mailing address:
 African Christian Biography Conference
 Center for Global Christianity and Mission
