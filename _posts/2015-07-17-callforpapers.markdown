@@ -13,7 +13,7 @@ _Updated October 2015_
 
 October 29-31, 2015. Boston, Massachusetts. Sponsored by the _Dictionary of African Christian Biography_ (www.dacb.org ); the Center for Global Christianity and Mission (www.bu.edu/cgcm/), the African Studies Center (www.bu.edu/africa/), and the African Studies Library (www.bu.edu/library/african-studies/ ), Boston University. Keynote Speaker: Professor Lamin Sanneh, Yale University. Hosts: Professors Dana L. Robert, Jonathan Bonk, and M.L. Daneel, Boston University.
 The writing of biography has become a major form of documentation for the growing world Christian movement. The purpose of this conference is to reflect upon the progress made by the first twenty years of the _Dictionary of African Christian Biography_, the award-winning web-based documentation project founded in 1995, and to identify new directions in the use of biography and autobiography for the study of African Christianity. The goal of the conference is to produce an edited volume.<br/>
-For those giving papers, travel and participation will be subsidized by the Center for Global Christianity and Mission at the Boston University School of Theology. The African Studies Library at Boston University will host a reception and special exhibits on the scholarship of African Christianity.
+For those giving papers, travel and participation will be subsidized by the Center for Global Christianity and Mission at the Boston University School of Theology. The African Studies Library at Boston University will host a reception and special exhibits on the scholarship of African Christianity.<br/>
 
 Requested paper topics include the following:<br/>
 •	Narrative as history in the documentation of African Christianity<br/>
