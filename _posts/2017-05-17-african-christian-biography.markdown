@@ -16,3 +16,5 @@ In the opening plenary, DACB Project Director Jonathan Bonk presented a brief hi
 In the concurrent sessions, questions raised either in the papers or in the subsequent discussion included the role of biography in pedagogy, orality and memory in biography, the use of photography and film in biography, and the use of biography for highlighting the stories of women the Global South. Almost a third of the papers examined the stories of African women, exploring their roles as helpers and leaders, most often unrecognized in the historical record. The discussions also looked at the role of biographers as portrait artists who must paint their subjects with humility and empathy.
 
 In the closing session, the progress of the DACB was praised and many participants offered ideas and challenges for new developments in the future. Conference organizer Dana Robert offered a few words about the book that will be published as a fruit of the conference.
+
+View the [ACB Conference booklet]({{site.url}}/news/ACBprogram2015).
