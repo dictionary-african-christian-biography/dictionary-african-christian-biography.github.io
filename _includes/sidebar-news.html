@@ -1,3 +1,5 @@
+{% if page.sidebar %}
+  {% if page.sidebar.nav %}
 <div class="sidebar sticky">
 
   <div class="language-switch2">{{ site.data.site-trans[page.lang].page-available }}</div>
@@ -20,7 +22,7 @@
 {% if page.lang == 'en' %}
 <div class="side-box">
   <div onClick="window.open( '{{ site.url }}/news/whats-new/','_top' ); return false;" class="side-box-link">
-          <h4><a href="{{ site.url }}/news/whats-new/"><h4>What's New? Archives</a></h4>
+          <h4><a href="{{ site.url }}/news/whats-new/">What's New? Archives</a></h4>
           <p>Read past posts of ongoing developments with the project.</p>
 </div>
 {% endif %}
