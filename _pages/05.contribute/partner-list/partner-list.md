@@ -8,43 +8,43 @@ languages-available:
   - ' '
   - ' '
   - ' '
----
-##Founding Partners
+  ---
+  ### Founding Partners
 
-_Permanent recognition as a Founding Partner for those whose accumulated gifts equal or exceed $15,000._
+  _Permanent recognition as a Founding Partner for those whose accumulated gifts equal or exceed $15,000\._  
 
-Akrofi-Christaller Memorial Center for Mission Research and Applied Theology, Ghana
-Rev. Dr. Jonathan J. Bonk
-Mr. and Mrs. Robert T. Coote
-[Christian History Institute](https://www.christianhistoryinstitute.org/)
-The Fieldstead Foundation
-Justo Mwale Theological College, Zambia
-The Lundman Family Foundation
-The Ochs Family Charitable Fund
-Office of Anglican and Global Relations
-The Pew Charitable Trusts
-Trinity Grants Program of Trinity Wall Street Episcopal Church
+  Akrofi-Christaller Memorial Center for Mission Research and Applied Theology, Ghana  
+  Rev. Dr. Jonathan J. Bonk  
+  Mr. and Mrs. Robert T. Coote  
+  [Christian History Institute](https://www.christianhistoryinstitute.org/)  
+  The Fieldstead Foundation  
+  Justo Mwale Theological College, Zambia  
+  The Lundman Family Foundation  
+  The Ochs Family Charitable Fund  
+  Office of Anglican and Global Relations  
+  The Pew Charitable Trusts  
+  Trinity Grants Program of Trinity Wall Street Episcopal Church  
 
-##DACB Supporting Agencies
+  ### DACB Supporting Agencies
 
-_Denominations and Mission Agencies that have given $1,000 or more annually and who promote the use of the DACB among their colleagues._
+  _Denominations and Mission Agencies giving $1,000 or more annually and who promote the use of the DACB among their colleagues._  
 
-American Baptist Churches, USA
-BILD International
-Church Publishing Company
-Eastern Mennonite Missions
-The Episcopal Church USA
-First Fruit, Inc.
-Frontiers
-Habitat for Humanity International
-LCMS World Mission
-Parker Foundation
-Partners International
-Seventh-Day Adventist General Conference
-[Sofa Logic, Inc.](http://sofalogic.com/)
-The Foreign Mission Board
-World Vision International
-Wycliffe International
+  American Baptist Churches, USA  
+  BILD International  
+  Church Publishing Company  
+  Eastern Mennonite Missions  
+  The Episcopal Church USA  
+  First Fruit, Inc.  
+  Frontiers  
+  Habitat for Humanity International  
+  LCMS World Mission  
+  Parker Foundation  
+  Partners International  
+  Seventh-Day Adventist General Conference  
+  [Sofa Logic, Inc.](http://sofalogic.com/)  
+  The Foreign Mission Board  
+  World Vision International  
+  Wycliffe International  
 
 ##Sustaining Partners
 
