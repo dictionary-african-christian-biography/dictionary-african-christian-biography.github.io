@@ -8,7 +8,7 @@ languages-available:
   - ' '
   - ' '
   - ' '
-  ---
+---
   ### Founding Partners
 
   _Permanent recognition as a Founding Partner for those whose accumulated gifts equal or exceed $15,000\._  
