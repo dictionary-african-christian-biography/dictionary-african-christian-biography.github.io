@@ -78,5 +78,5 @@ Africa Center for Interdisciplinary Studies
 PO Box 9834 Kinshasa, DEMOCRATIC REPUBLIC OF CONGO
 
 
-Email:[flygunda@yahoo.fr](mailto:flygunda@yahoo.fr "mailto:flygunda@yahoo.fr")   
+Email:[flygunda50@gmail.com](mailto:flygunda50@gmail.com "mailto:flygunda50@gmail.com")   
 [www.acis-ca.org](http://www.acis-ca.org "http://www.acis-ca.org")  
