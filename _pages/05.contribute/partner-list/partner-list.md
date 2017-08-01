@@ -9,44 +9,44 @@ languages-available:
   - ' '
   - ' '
 ---
-  ### Founding Partners
+### Founding Partners
 
-  _Permanent recognition as a Founding Partner for those whose accumulated gifts equal or exceed $15,000\._  
+_Permanent recognition as a Founding Partner for those whose accumulated gifts equal or exceed $15,000\._  
 
-  Akrofi-Christaller Memorial Center for Mission Research and Applied Theology, Ghana  
-  Rev. Dr. Jonathan J. Bonk  
-  Mr. and Mrs. Robert T. Coote  
-  [Christian History Institute](https://www.christianhistoryinstitute.org/)  
-  The Fieldstead Foundation  
-  Justo Mwale Theological College, Zambia  
-  The Lundman Family Foundation  
-  The Ochs Family Charitable Fund  
-  Office of Anglican and Global Relations  
-  The Pew Charitable Trusts  
-  Trinity Grants Program of Trinity Wall Street Episcopal Church  
+Akrofi-Christaller Memorial Center for Mission Research and Applied Theology, Ghana  
+Rev. Dr. Jonathan J. Bonk  
+Mr. and Mrs. Robert T. Coote  
+[Christian History Institute](https://www.christianhistoryinstitute.org/)  
+The Fieldstead Foundation  
+Justo Mwale Theological College, Zambia  
+The Lundman Family Foundation  
+The Ochs Family Charitable Fund  
+Office of Anglican and Global Relations  
+The Pew Charitable Trusts  
+Trinity Grants Program of Trinity Wall Street Episcopal Church  
 
-  ### DACB Supporting Agencies
+### DACB Supporting Agencies
 
-  _Denominations and Mission Agencies giving $1,000 or more annually and who promote the use of the DACB among their colleagues._  
+_Denominations and Mission Agencies giving $1,000 or more annually and who promote the use of the DACB among their colleagues._  
 
-  American Baptist Churches, USA  
-  BILD International  
-  Church Publishing Company  
-  Eastern Mennonite Missions  
-  The Episcopal Church USA  
-  First Fruit, Inc.  
-  Frontiers  
-  Habitat for Humanity International  
-  LCMS World Mission  
-  Parker Foundation  
-  Partners International  
-  Seventh-Day Adventist General Conference  
-  [Sofa Logic, Inc.](http://sofalogic.com/)  
-  The Foreign Mission Board  
-  World Vision International  
-  Wycliffe International  
+American Baptist Churches, USA  
+BILD International  
+Church Publishing Company  
+Eastern Mennonite Missions  
+The Episcopal Church USA  
+First Fruit, Inc.  
+Frontiers  
+Habitat for Humanity International  
+LCMS World Mission  
+Parker Foundation  
+Partners International  
+Seventh-Day Adventist General Conference  
+[Sofa Logic, Inc.](http://sofalogic.com/)  
+The Foreign Mission Board  
+World Vision International  
+Wycliffe International  
 
-##Sustaining Partners
+## Sustaining Partners
 
 __All other annual financial and in-kind donors to the DACB.__
 
@@ -70,7 +70,7 @@ Dr. Debela Birri (Ethiopian Graduate School of Theology)
 Becka Sisti, _Office Assistant, Coder, 2008-2012_  
 Sam Sigg, _Translator_
 
-##Web Site Photo Credits
+## Web Site Photo Credits
 
 Bruce Adams  
 Lila Balisky  
@@ -81,7 +81,7 @@ Sellassie Cyber University site, _for use of Lalibela photo_
 [Vatican Web site](http://www.vatican.va/roman_curia/pontifical_academies/cult-martyrum/martiri/index.html), _for use of photos of Catholic martyrs_  
 Maria Vidale, _Salvare l'Africa con l'Africa: Fortunata Quasce/ la prima Pia Madre della Nigrizia Africana_, Archivio Madri Nigrizia, 6:9 (March 2005), _for photo of Bakhita (nun)_  
 
-##DACB Staff and Collaborators, Boston University
+## DACB Staff and Collaborators, Boston University
 
 Jeremy Hegi, _Editorial Assistant, Summer 2014_  
 Jean-Luc Enyegue, _Editorial Assistant, Fall 2015_  
