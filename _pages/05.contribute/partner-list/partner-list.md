@@ -81,14 +81,14 @@ Sellassie Cyber University site, _for use of Lalibela photo_
 [Vatican Web site](http://www.vatican.va/roman_curia/pontifical_academies/cult-martyrum/martiri/index.html), _for use of photos of Catholic martyrs_  
 Maria Vidale, _Salvare l'Africa con l'Africa: Fortunata Quasce/ la prima Pia Madre della Nigrizia Africana_, Archivio Madri Nigrizia, 6:9 (March 2005), _for photo of Bakhita (nun)_  
 
-## DACB Staff and Collaborators, Boston University
+## DACB Staff and Collaborators, Boston University  
 
+Samantha (Sam) Roebuck, _Editorial Assistant, 2014-2016_  
 Jeremy Hegi, _Editorial Assistant, Summer 2014_  
 Jean-Luc Enyegue, _Editorial Assistant, Fall 2015_  
 Laura Chevalier, _Editorial Assistant, Summer 2015 and Summer 2016_  
 Alex Mayfield, _Web Developer, Summer 2016-2017_  
-Daryl Ireland, _Grant Writer_  
-Samantha (Sam) Roebuck, _Editorial Assistant, 2014-2016_  
+Daryl Ireland, _Grant Writer_   
 Trevor Persaud, _Editorial Assistant, 2016-2017_  
 Dave Restrick, _Portuguese Translator_  
 
