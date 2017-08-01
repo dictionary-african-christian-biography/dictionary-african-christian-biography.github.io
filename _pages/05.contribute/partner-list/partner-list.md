@@ -80,10 +80,14 @@ Maria Vidale, _Salvare l'Africa con l'Africa: Fortunata Quasce/ la prima Pia Mad
 
 ***DACB Staff and Collaborators, Boston University***
 
-Samantha (Sam) Roebuck, _Editorial Assistant, 2014-2016_
-Trevor Persaud, _Editorial Assistant, 2016-2017_
+Jeremy Hegi, _Editorial Assistant, Summer 2014_
+Jean-Luc Enyegue, _Editorial Assistant, Fall 2015_
 Laura Chevalier, _Editorial Assistant, Summer 2015 and Summer 2016_
 Alex Mayfield, _Web Developer, Summer 2016-2017_
 Daryl Ireland, _Grant Writer_
+Samantha (Sam) Roebuck, _Editorial Assistant, 2014-2016_
+Trevor Persaud, _Editorial Assistant, 2016-2017_
+Dave Restrick, _Portuguese Translator_
+
 
 _Many people have contributed to the advancement of the DACB project and are recognized elsewhere on our website._
