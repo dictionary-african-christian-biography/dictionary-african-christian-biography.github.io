@@ -50,8 +50,8 @@ __All other annual financial and in-kind donors to the DACB.__
 Calvin Missions Institute (Calvin Theological Seminary)
 Dr. and Mrs. Joel A. Carpenter
 Ed and Wendy Peterson
-James M. Schaffer, development, consulting
-Adire African Textiles Gallery for the use of the textiles images on the homepage and index pages
+James M. Schaffer, _development, consulting_
+Adire African Textiles Gallery _for the use of the textiles images on the homepage and index pages_
 The Chancel Opera of Connecticut
 Ray Dirks, use of paintings
 Dr. Steve Strauss, _use of photos for logo_
@@ -71,12 +71,12 @@ Sam Sigg, _Translator_
 
 Bruce Adams
 Lila Balisky
-M. L. Daneel and the Center for Global Christianity and Mission Web site, for photos of evangelists
+M. L. Daneel and the Center for Global Christianity and Mission Web site, _for photos of evangelists_
 Stephen Hayes
-Richard McLellan, for use of photos of Ethiopian evangelists
-Sellassie Cyber University site for use of Lalibela photo.
-The Vatican Web site for use of photos of Catholic martyrs
-Maria Vidale, _Salvare l'Africa con l'Africa: Fortunata Quasce/ la prima Pia Madre della Nigrizia Africana_, Archivio Madri Nigrizia, 6:9 (March 2005), for photo of Bakhita (nun)
+Richard McLellan, _for use of photos of Ethiopian evangelists_
+Sellassie Cyber University site, _for use of Lalibela photo_
+The Vatican Web site, _for use of photos of Catholic martyrs_
+Maria Vidale, _Salvare l'Africa con l'Africa: Fortunata Quasce/ la prima Pia Madre della Nigrizia Africana_, Archivio Madri Nigrizia, 6:9 (March 2005), _for photo of Bakhita (nun)_
 
 ***DACB Staff and Collaborators, Boston University***
 
