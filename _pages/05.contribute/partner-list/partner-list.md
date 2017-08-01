@@ -1,7 +1,7 @@
 ---
 title: Our DACB Partners
 layout: single-contribute
-permalink: /partners/partner-list/
+permalink: /contribute/partner-list/
 lang: en
 languages-available:
   - en
