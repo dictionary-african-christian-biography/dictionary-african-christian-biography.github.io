@@ -74,7 +74,9 @@ Email:[jurievanwyk@mweb.co.za](mailto:jurievanwyk@mweb.co.za)
 
 **Fohle Lygunda Li-M**, Regional Coordinator  
 **_Dictionary of African Christian Biography, Francophone Africa_**  
-International Leadership University  
-PO Box 2330 Bujumbura, BURUNDI  
+Africa Center for Interdisciplinary Studies
+PO Box 9834 Kinshasa, DEMOCRATIC REPUBLIC OF CONGO
+
+
 Email:[flygunda@yahoo.fr](mailto:flygunda@yahoo.fr "mailto:flygunda@yahoo.fr")   
-[www.iluburundi-ftm.org](http://www.iluburundi-ftm.org "http://www.iluburundi-ftm.org/")[](http://www.cemica.org)  
+[www.acis-ca.org](http://www.acis-ca.org "http://www.acis-ca.org")  
