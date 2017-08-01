@@ -87,7 +87,7 @@ Samantha (Sam) Roebuck, _Editorial Assistant, 2014-2016_
 Jeremy Hegi, _Editorial Assistant, Summer 2014_  
 Jean-Luc Enyegue, _Editorial Assistant, Fall 2015_  
 Laura Chevalier, _Editorial Assistant, Summer 2015 and Summer 2016_  
-Alex Mayfield, _Web Developer, Summer 2016-2017_  
+Alex Mayfield, _Web Developer, Summer 2017_  
 Daryl Ireland, _Grant Writer_   
 Trevor Persaud, _Editorial Assistant, 2016-2017_  
 Dave Restrick, _Portuguese Translator_  
