@@ -28,14 +28,14 @@ languages-available:
 
 ### 3\. Oral History materials:  
 
-*   Complete [Oral History Workshop Curriculum]({{site.url}}/resources/teaching-oral-history.pdf) (PDF): "Doing Oral History: Helping Christians Tell Their Own Story" - Class Curriculum based on original work by Dr. Jean-Paul Wiest and revised by Mrs. Michele Sigg (2015) 
+*   Complete [Oral History Workshop Curriculum]({{site.url}}/resources/teaching-oral-history.pdf) (PDF): "Doing Oral History: Helping Christians Tell Their Own Story" - Class Curriculum based on original work by Dr. Jean-Paul Wiest and revised by Mrs. Michele Sigg (2015)
 *   [Guidelines for Researchers and Writers: Template for Collecting Basic Information]({{site.url}}/resources/guidelines-for-rw-template-for-info-collecting.pdf) (PDF); [Word]({{site.url}}/resources/guidelines-for-rw-template-for-info-collecting.doc): This template can serve as a data-collecting tool for oral history research.  
 *   [Biography Review Checklist]({{site.url}}/resources/DACB-biography-review-form.pdf) (PDF): This checklist helps writers to critically review the drafts of their biographies.  
 *   [_DACB_ Oral History Booklet]({{site.url}}/resources/DACB-oral-history-uganda-booklet-kampala-2008.pdf), Kampala, October 2008 (PDF); [booklet cover ]({{site.url}}/resources/DACB-oral-history-uganda-booklet-cover.pdf) (PDF file): The booklet contains a selection of _DACB_ biographies of the church in Uganda, Rwanda, and Burundi.
 
 ### 4\. Project Luke Fellowship  
 
-The Project Luke Fellowship offers scholarships to African scholars, clergy, and lay people in order to help fund their research and writing of African Chrisitian biographies. A list of these scholars and their stories can be found [here](({{site.url}}/about/project-luke/)).
+The Project Luke Fellowship offers scholarships to African scholars, clergy, and lay people in order to help fund their research and writing of African Christian biographies. A list of these scholars and their stories can be found [here](({{site.url}}/about/project-luke/)).
 
 ### 5\. Being a Participating Institution  
 

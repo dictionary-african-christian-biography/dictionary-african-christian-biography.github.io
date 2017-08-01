@@ -17,4 +17,4 @@ In the concurrent sessions, questions raised either in the papers or in the subs
 
 In the closing session, the progress of the DACB was praised and many participants offered ideas and challenges for new developments in the future. Conference organizer Dana Robert offered a few words about the book that will be published as a fruit of the conference.
 
-View the [ACB Conference booklet]({{site.url}}/ACBprogram2015.pdf).
+View the [ACB Conference booklet]({{site.url}}/resources/ACBprogram2015.pdf).
