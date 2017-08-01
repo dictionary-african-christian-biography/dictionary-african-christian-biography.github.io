@@ -5,9 +5,9 @@ permalink: /contribute/readers/
 lang: en
 languages-available:                         
   - en
-  - fr
-  - pt
-  - sw
+  - 
+  -
+  -
 ---
 
 _We love to hear from our readers. Here are some comments and stories we have collected.  
