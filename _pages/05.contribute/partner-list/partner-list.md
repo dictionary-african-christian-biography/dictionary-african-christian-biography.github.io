@@ -50,47 +50,47 @@ languages-available:
 
 __All other annual financial and in-kind donors to the DACB.__
 
-Calvin Missions Institute (Calvin Theological Seminary)
-Dr. and Mrs. Joel A. Carpenter
-Ed and Wendy Peterson
-James M. Schaffer, _development, consulting_
-[Adire African Textiles Gallery](http://www.adireafricantextiles.com/) _for the use of the textiles images on the homepage and index pages_
-[The Chancel Opera of Connecticut](http://www.chancelopera.com)
-Ray Dirks, _use of paintings_
-Dr. Steve Strauss, _use of photos for logo_
-Tibebe Eshete, _use of paintings for logo_
-Lucie Brown, _translation_
-Rev. Dan Nicholas, _consulting_
-Eugenia Dilg, _consulting_
-Matthew Kustenbauder, _translation_
-Rev. Dr. and Mrs. Gerald H. Anderson
-Mr. and Mrs. Erik Burnett
-Mr. and Mrs. Raymond Sola
-Dr. Debela Birri (Ethiopian Graduate School of Theology)
-Becka Sisti, _Office Assistant, Coder, 2008-2012_
+Calvin Missions Institute (Calvin Theological Seminary)  
+Dr. and Mrs. Joel A. Carpenter  
+Ed and Wendy Peterson  
+James M. Schaffer, _development, consulting_  
+[Adire African Textiles Gallery](http://www.adireafricantextiles.com/) _for the use of the textiles images on the homepage and index pages_  
+[The Chancel Opera of Connecticut](http://www.chancelopera.com)  
+Ray Dirks, _use of paintings_  
+Dr. Steve Strauss, _use of photos for logo_  
+Tibebe Eshete, _use of paintings for logo_  
+Lucie Brown, _translation_  
+Rev. Dan Nicholas, _consulting_  
+Eugenia Dilg, _consulting_  
+Matthew Kustenbauder, _translation_  
+Rev. Dr. and Mrs. Gerald H. Anderson  
+Mr. and Mrs. Erik Burnett  
+Mr. and Mrs. Raymond Sola  
+Dr. Debela Birri (Ethiopian Graduate School of Theology)  
+Becka Sisti, _Office Assistant, Coder, 2008-2012_  
 Sam Sigg, _Translator_
 
 ##Web Site Photo Credits
 
-Bruce Adams
-Lila Balisky
-M. L. Daneel and the [Center for Global Christianity and Mission](http://www.bu.edu/cgcm/), _for photos of evangelists_
-Stephen Hayes
-Richard McLellan, _for use of photos of Ethiopian evangelists_
-Sellassie Cyber University site, _for use of Lalibela photo_
-[Vatican Web site](http://www.vatican.va/roman_curia/pontifical_academies/cult-martyrum/martiri/index.html), _for use of photos of Catholic martyrs_
-Maria Vidale, _Salvare l'Africa con l'Africa: Fortunata Quasce/ la prima Pia Madre della Nigrizia Africana_, Archivio Madri Nigrizia, 6:9 (March 2005), _for photo of Bakhita (nun)_
+Bruce Adams  
+Lila Balisky  
+M. L. Daneel and the [Center for Global Christianity and Mission](http://www.bu.edu/cgcm/), _for photos of evangelists_  
+Stephen Hayes  
+Richard McLellan, _for use of photos of Ethiopian evangelists_  
+Sellassie Cyber University site, _for use of Lalibela photo_  
+[Vatican Web site](http://www.vatican.va/roman_curia/pontifical_academies/cult-martyrum/martiri/index.html), _for use of photos of Catholic martyrs_  
+Maria Vidale, _Salvare l'Africa con l'Africa: Fortunata Quasce/ la prima Pia Madre della Nigrizia Africana_, Archivio Madri Nigrizia, 6:9 (March 2005), _for photo of Bakhita (nun)_  
 
 ##DACB Staff and Collaborators, Boston University
 
-Jeremy Hegi, _Editorial Assistant, Summer 2014_
-Jean-Luc Enyegue, _Editorial Assistant, Fall 2015_
-Laura Chevalier, _Editorial Assistant, Summer 2015 and Summer 2016_
-Alex Mayfield, _Web Developer, Summer 2016-2017_
-Daryl Ireland, _Grant Writer_
-Samantha (Sam) Roebuck, _Editorial Assistant, 2014-2016_
-Trevor Persaud, _Editorial Assistant, 2016-2017_
-Dave Restrick, _Portuguese Translator_
+Jeremy Hegi, _Editorial Assistant, Summer 2014_  
+Jean-Luc Enyegue, _Editorial Assistant, Fall 2015_  
+Laura Chevalier, _Editorial Assistant, Summer 2015 and Summer 2016_  
+Alex Mayfield, _Web Developer, Summer 2016-2017_  
+Daryl Ireland, _Grant Writer_  
+Samantha (Sam) Roebuck, _Editorial Assistant, 2014-2016_  
+Trevor Persaud, _Editorial Assistant, 2016-2017_  
+Dave Restrick, _Portuguese Translator_  
 
 
 _Many people have contributed to the advancement of the DACB project and are recognized elsewhere on our website._

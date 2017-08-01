@@ -74,10 +74,10 @@ Email:[jurievanwyk@mweb.co.za](mailto:jurievanwyk@mweb.co.za)
 
 **Fohle Lygunda Li-M**, Regional Coordinator  
 **_Dictionary of African Christian Biography, Francophone Africa_**  
-Africa Center for Interdisciplinary Studies
-PO Box 9834 Kinshasa, DEMOCRATIC REPUBLIC OF CONGO
-skype: fohle.lygunda.lim
-WhatsApp: +257-71736955
-Mobile: +27-793320127
+Africa Center for Interdisciplinary Studies  
+PO Box 9834 Kinshasa, DEMOCRATIC REPUBLIC OF CONGO  
+skype: fohle.lygunda.lim  
+WhatsApp: +257-71736955  
+Mobile: +27-793320127  
 Email:[flygunda50@gmail.com](mailto:flygunda50@gmail.com "mailto:flygunda50@gmail.com")   
 [www.acis-ca.org](http://www.acis-ca.org "http://www.acis-ca.org")  
