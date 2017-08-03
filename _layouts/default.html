@@ -90,7 +90,7 @@
       <a href="{{site.url}}/pt/contribute/submit/" class="btn btn--inverse-long">{{ site.data.site-trans[page.lang].submit-stories }}</a>
     {% endif %}
     {% if page.lang == 'sw' %}
-      <p style="margin-bottom: 1em;">Ikiwa ungependa kuwasilisha hadithi kwa KAWAKIA, unaweza kupata rasilimali za bure na miongozo ya kuwasilisha <a href="{{ site.url }}/sw/contribute/submit/">hapa</a>.<br></p>
+      <p style="margin-bottom: 1em;">Ikiwa ungependa kuwasilisha hadithi kwa KAWAKIA, unaweza kupata vitendea kazi vya bure na mwongozo wa kuwasilisha hapa. <a href="{{ site.url }}/sw/contribute/submit/">hapa</a>.<br></p>
       <a href="{{site.url}}/sw/contribute/submit/" class="btn btn--inverse-long">{{ site.data.site-trans[page.lang].submit-stories }}</a>
     {% endif %}
   </div>
@@ -111,7 +111,7 @@
         {% include mailchimp-mini-form.html %}
     {% endif %}
     {% if page.lang == 'sw' %}
-        <p>Unataka kukaa updated juu ya matukio mapya katika KAWAKIA? Ishara kwa jarida letu la e-mail hapa.</p>
+        <p>Unataka kujulishwa habari yamatukio mapya kutoka KAWAKIA? Jiunge na jarida letu la barua pepe.</p>
         {% include mailchimp-mini-form.html %}
     {% endif %}
   </div>
@@ -141,7 +141,7 @@
 
     {% if page.lang == 'sw' %}
     {% assign scount = site.pages | where: "lang","sw" | where: "layout","single-bio" %}
-    KAWAKIA ni rasilimali digital mwenyeji kwa <a href="http://www.bu.edu/cgcm/"> Kituo cha Global Ukristo na Mission </a> katika Boston Chuo cha Theology. <br>
+    KAWAKIA ni vitendea Kazi ya digital mwenyeji kwa <a href="http://www.bu.edu/cgcm/"> Kituo cha Global Ukristo na Mission </a> katika Boston Chuo cha Theology. <br>
     Ilibadilishwa Mwisho: {{ site.time | date_to_long_string }}. Hadithi za Kiswahili: {{scount.size}}.<br>
     &copy; {{ site.time | date: '%Y' }} Kamusi Ya Wasifu Wa Wakristo Wa Kiafrika.
     {% endif %}
