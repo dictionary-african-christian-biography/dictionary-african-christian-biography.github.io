@@ -724,5 +724,5 @@ sw: &DEFAULT_PT
     read-more                  : "Soma Zaidi"
     keywords                   : "Maneno"
     menu_label                 : "Aina na Index"
-    sidebar_label              : "Angalia Orodha ya Upande"
-    comment_btn_submit         : "Kutuma"
+    sidebar_label              : "Angalia Menyu ya Upande"
+    comment_btn_submit         : "Tuma"
