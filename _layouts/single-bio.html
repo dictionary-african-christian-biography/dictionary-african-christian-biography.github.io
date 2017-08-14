@@ -37,7 +37,7 @@ layout: default
       {% endunless %}
 
 <!-- ALTERNATE VERSION CHECK AND DISPLAY -->
-{% if page.title contains "(" %}
+<!-- {% if page.title contains "(" %}
   {% assign current-short = page.title | remove:'(A)'| remove:'(B)'| remove:'(C)'| remove:'(D)'| remove:'(E)'| remove:'(F)'| remove:'(G)'| remove:'(H)'| remove:'(I)'| remove:'(J)'| remove:'(K)'| remove:'(L)'| remove:'(M)'| remove:'(N)'| remove:'(O)'| remove:'(P)' %}
   {% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}
   {% assign current-url = page.url %}
@@ -50,7 +50,7 @@ layout: default
       {% else %} {% continue %}
       {% endif %}{% endfor %}
     </div>
-{% endif %}
+{% endif %} -->
 
 <!-- CONTENT -->
       <section class="page__content" itemprop="text">

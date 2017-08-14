@@ -43,8 +43,9 @@ exclude:
   - _pages/01.stories/02.indexes/
   - _pages/01.stories/03.country-pages/
   - _pages/01.stories/04.non-bio-indexes/
-  - _pages/01.stories/0.histories/
+  - _pages/01.stories/06.histories/
   - _pages/01.stories/07.memories/
+
 keep_files:
   - .git
   - .svn
