@@ -34,6 +34,17 @@ exclude:
   - Rakefile
   - README
   - tmp
+  - _pages/02.about/
+  - _pages/03.resources/
+  - _pages/04.news/
+  - _pages/05.contribute/
+  - _pages/06.search/
+  - _pages/01.stories/01.sorts/
+  - _pages/01.stories/02.indexes/
+  - _pages/01.stories/03.country-pages/
+  - _pages/01.stories/04.non-bio-indexes/
+  - _pages/01.stories/0.histories/
+  - _pages/01.stories/07.memories/
 keep_files:
   - .git
   - .svn

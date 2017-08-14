@@ -37,20 +37,21 @@ layout: default
       {% endunless %}
 
 <!-- ALTERNATE VERSION CHECK AND DISPLAY -->
-          {% assign current-short = page.title | remove:'(A)'| remove:'(B)'| remove:'(C)'| remove:'(D)'| remove:'(E)'| remove:'(F)'| remove:'(G)'| remove:'(H)'| remove:'(I)'| remove:'(J)'| remove:'(K)'| remove:'(L)'| remove:'(M)'| remove:'(N)'| remove:'(O)'| remove:'(P)' %}
-          {% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}
-          {% assign current-url = page.url %}
+{% if page.title contains "(" %}
+  {% assign current-short = page.title | remove:'(A)'| remove:'(B)'| remove:'(C)'| remove:'(D)'| remove:'(E)'| remove:'(F)'| remove:'(G)'| remove:'(H)'| remove:'(I)'| remove:'(J)'| remove:'(K)'| remove:'(L)'| remove:'(M)'| remove:'(N)'| remove:'(O)'| remove:'(P)' %}
+  {% assign sorted = site.pages | where: "index","primary" | sort: 'title' %}
+  {% assign current-url = page.url %}
+    <div class="alternate">
+      {{ site.data.site-trans[page.lang].other-available }}
+      {% for page in sorted %}
+      {% assign short-title = page.title | remove:'(A)'| remove:'(B)'| remove:'(C)'| remove:'(D)'| remove:'(E)'| remove:'(F)'| remove:'(G)'| remove:'(H)'| remove:'(I)'| remove:'(J)'| remove:'(K)'| remove:'(L)'| remove:'(M)'| remove:'(N)'| remove:'(O)'| remove:'(P)' %}
+      {% if short-title == current-short and page.url != current-url %}
+      <a href="{{ page.url | relative_url }}">{{ page.title | remove: short-title }}</a>
+      {% else %} {% continue %}
+      {% endif %}{% endfor %}
+    </div>
+{% endif %}
 
-          <div class="alternate">
-            {{ site.data.site-trans[page.lang].other-available }}
-            {% for page in sorted %}
-            {% assign short-title = page.title | remove:'(A)'| remove:'(B)'| remove:'(C)'| remove:'(D)'| remove:'(E)'| remove:'(F)'| remove:'(G)'| remove:'(H)'| remove:'(I)'| remove:'(J)'| remove:'(K)'| remove:'(L)'| remove:'(M)'| remove:'(N)'| remove:'(O)'| remove:'(P)' %}
-            {% if short-title == current-short and page.url != current-url %}
-            <a href="{{ page.url | relative_url }}">{{ page.title | remove: short-title }}</a>
-            {% else %} {% continue %}
-            {% endif %}{% endfor %}
-          </div>
-        
 <!-- CONTENT -->
       <section class="page__content" itemprop="text">
         {{ content }}
