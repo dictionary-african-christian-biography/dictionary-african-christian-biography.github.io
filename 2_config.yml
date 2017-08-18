@@ -3,8 +3,8 @@ title                    : "Dictionary of African Christian Biography"
 title_separator          : "-"
 name                     : "Dictionary of African Christian Biography"
 description              : ""
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+url                      : "https://dictionary-african-christian-biography.github.io/"
+baseurl                  : #"/base"
 
 # Reading Files
 include:
