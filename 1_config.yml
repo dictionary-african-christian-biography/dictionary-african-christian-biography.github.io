@@ -3,7 +3,7 @@ title                    : "Dictionary of African Christian Biography"
 title_separator          : "-"
 name                     : "Dictionary of African Christian Biography"
 description              : ""
-url                      : "https://dictionary-african-christian-biography.github.io"
+url                      : #"/base"
 baseurl                  : #"/base"
 
 # Reading Files
