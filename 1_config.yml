@@ -44,6 +44,7 @@ exclude:
   - _pages/03.resources
   - _pages/04.news
   - _pages/05.contribute
+  - _pages/09.datasheets
 
 keep_files:
   - .git
