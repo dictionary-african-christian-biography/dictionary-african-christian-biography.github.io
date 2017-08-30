@@ -743,9 +743,6 @@
 <loc>/fr/stories/democratic-republic-of-congo/ayidini-abala/</loc>
 </url>
 <url>
-<loc>/stories/democratic-republic-of-congo/ayidini-details/</loc>
-</url>
-<url>
 <loc>/fr/stories/democratic-republic-of-congo/ayidini-pefa/</loc>
 </url>
 <url>
@@ -1004,7 +1001,7 @@
 <loc>/stories/uganda/bec-joseph/</loc>
 </url>
 <url>
-<loc>/stories/congo/becker-carl/</loc>
+<loc>/stories/democratic-republic-of-congo/becker-carl/</loc>
 </url>
 <url>
 <loc>/fr/stories/ghana/bediako-kwame/</loc>
@@ -1031,7 +1028,7 @@
 <loc>/fr/stories/madagascar/benignus-pierre/</loc>
 </url>
 <url>
-<loc>/stories/congo/bentley-william/</loc>
+<loc>/stories/democratic-republic-of-congo/bentley-william/</loc>
 </url>
 <url>
 <loc>/stories/ethiopia/benyam/</loc>
@@ -1418,7 +1415,7 @@
 <loc>/fr/stories/democratic-republic-of-congo/butso-bulo/</loc>
 </url>
 <url>
-<loc>/stories/congo/buxton-alfred/</loc>
+<loc>/stories/democratic-republic-of-congo/buxton-alfred/</loc>
 </url>
 <url>
 <loc>/stories/nonafricans/legacy-buxton/</loc>
@@ -1808,10 +1805,10 @@
 <loc>/fr/stories/zambia/coisson-augusto/</loc>
 </url>
 <url>
-<loc>/stories/sierra-leone/coker-daniel/</loc>
+<loc>/stories/nigeria/coker-daniel/</loc>
 </url>
 <url>
-<loc>/stories/nigeria/coker-daniel/</loc>
+<loc>/stories/sierra-leone/coker-daniel/</loc>
 </url>
 <url>
 <loc>/stories/sierra-leone/coker-danielj/</loc>
@@ -2789,7 +2786,7 @@
 <loc>/stories/ethiopia/flad-j2/</loc>
 </url>
 <url>
-<loc>/stories/congo/fleming-louise/</loc>
+<loc>/stories/democratic-republic-of-congo/fleming-louise/</loc>
 </url>
 <url>
 <loc>/stories/uganda/forbes-john/</loc>
@@ -3038,7 +3035,7 @@
 <loc>/pt/stories/capeverde/gomesdejesus-antonio/</loc>
 </url>
 <url>
-<loc>/stories/congo/gordon-simeon/</loc>
+<loc>/stories/democratic-republic-of-congo/gordon-simeon/</loc>
 </url>
 <url>
 <loc>/stories/liberia/gorham-sarah/</loc>
@@ -3188,7 +3185,7 @@
 <loc>/stories/ethiopia/hakalla-amale/</loc>
 </url>
 <url>
-<loc>/stories/congo/hall-elizabeth/</loc>
+<loc>/stories/democratic-republic-of-congo/hall-elizabeth/</loc>
 </url>
 <url>
 <loc>/pt/stories/namibia/hambuindja-thusnelda/</loc>
@@ -3374,16 +3371,16 @@
 <loc>/stories/nigeria/ilori-joseph/</loc>
 </url>
 <url>
-<loc>/fr/</loc>
-</url>
-<url>
 <loc>/</loc>
 </url>
 <url>
-<loc>/sw/</loc>
+<loc>/pt/</loc>
 </url>
 <url>
-<loc>/pt/</loc>
+<loc>/fr/</loc>
+</url>
+<url>
+<loc>/sw/</loc>
 </url>
 <url>
 <loc>/stories/nigeria/inuwa-ayuba/</loc>
@@ -4379,7 +4376,7 @@
 <loc>/stories/democratic-republic-of-congo/lankwan-adolphe/</loc>
 </url>
 <url>
-<loc>/stories/congo/lapsley-samuel/</loc>
+<loc>/stories/democratic-republic-of-congo/lapsley-samuel/</loc>
 </url>
 <url>
 <loc>/stories/nigeria/lar-marynanwor/</loc>
