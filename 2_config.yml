@@ -66,6 +66,7 @@ keep_files:
   - robots.txt
   - sitemap.xml
   - feed.xml
+  - site-content-build.yml
 
 # ===========
 # ===========
