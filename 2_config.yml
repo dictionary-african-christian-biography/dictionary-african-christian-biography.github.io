@@ -168,4 +168,4 @@ defaults:
       layout: single-bio
       author_profile: false
       sidebar:
-nav: "index-menu"
+        nav: "index-menu"
