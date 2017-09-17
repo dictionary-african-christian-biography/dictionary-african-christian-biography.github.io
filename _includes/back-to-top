@@ -1,5 +1,0 @@
-{% if parent_lang != nil %}
-  <a href="#" class="btn btn--inverse">{{ site.data.site-trans[parent_lang].back_to_top }}</a>
-{% else %}
-  <a href="#" class="btn btn--inverse">{{ site.data.site-trans[page.lang].back_to_top }}</a>
-{% endif %}
