@@ -1,0 +1,52 @@
+<!-- Search Styling -->
+<style>
+  .search {width: 100%; border-bottom: 1px solid #333; padding-bottom: 1em; margin-top: 1em;}
+  .search h2 {font-size: 1em;margin-bottom: 0px; display: inline;}
+  .search p {color: #333;}
+  .meta-box {font-size: .5em; padding-top: .5em; padding-bottom: .5em; color: #bdc1c4; font-style: italic;}
+  .bar { width:70%; height: 2em; margin-top:0em; margin-left:.5em;}
+  .search-btn {width:20% !important; height: 2.5em !important; margin-top:0em; margin-right:.5em; color: #333; border: 1px solid #333; background-color: #fff; font-style: normal; border-radius: 4px; padding:.5em;}
+  .search-btn:hover {background-color: #7d291e; color: #fff; }
+  .en-search {background-color: #7f3120; display: inline;font-size: .8em;color: #fff;text-transform: uppercase;font-style: normal;padding: .125em .5em;}
+  .fr-search {background-color: #333d63; display: inline;font-size: .8em;color: #fff;text-transform: uppercase;font-style: normal;padding: .125em .5em;}
+  .pt-search {background-color: #9f8778; display: inline;font-size: .8em;color: #fff;text-transform: uppercase;font-style: normal;padding: .125em .5em;}
+  .sw-search {background-color: #595d50; display: inline;font-size: .8em;color: #fff;text-transform: uppercase;font-style: normal;padding: .125em .5em;}
+  .pagination li {display:inline-block; padding:5px;}
+  #test-list ul.list li {display: block;}
+  #test-list ul.list {padding: 0px;}
+</style>
+
+<!-- Search form -->
+<form method="get" action="/search" data-search-form>
+  <label for="q">Search term</label>
+  <input class="search-btn" type="submit" value="Search" />
+  <input class="bar" type="search" name="q" id="q" placeholder="Enter search term" data-search-input />
+</form>
+
+<!-- Search results placeholder -->
+<p data-search-found>
+  <span data-search-found-count></span>   {% if page.lang == 'en' %} result(s) found for {% endif %}
+    {% if page.lang == 'fr' %} résultat(s) trouvés pour {% endif %}
+    {% if page.lang == 'pt' %} resultado(s) encontrados para r {% endif %}
+    {% if page.lang == 'sw' %} result(s) found for {% endif %} &ldquo;<span data-search-found-term></span>&rdquo;.
+</p>
+<div id="test-list">
+<ul class="list" data-search-results></ul>
+</div>
+
+<!-- Search result template -->
+<script type="text/x-template" id="search-result">
+  <li>
+    <div class="search">
+    <h2 class="name"><a href="##Url##">##Title##</a>&nbsp; &nbsp;<div class="##Lang##-search">##Lang##</div></h2>
+    <p><i>By ##Author##</i></p>
+    <div class="meta-box">{{ site.data.ui-text[page.lang].keywords }}: ##Category##</div>
+    <p>##Excerpt##</p>
+    <a href="##Url##" class="btn btn">{{ site.data.ui-text[page.lang].read-more }}</a>
+    </div>
+  </li>
+</script>
+
+
+<!-- Search script - Must appear after template -->
+<script src="/assets/js/search.js"></script>

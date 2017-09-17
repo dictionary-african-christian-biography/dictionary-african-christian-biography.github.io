@@ -1,0 +1,1053 @@
+---
+layout: archive
+permalink: /datasheets/
+title: "DACB Data"
+author_profile: false
+lang: en
+languages-available:
+  - en
+  - ' '
+  - ' '
+  - ' '
+---
+<table class="sort"><tbody>
+  <tr>
+    <td><a href="/datasheets/" style="color:#e0c74f;">Totals</a></td>
+    <td><a href="/datasheets/country">Country Data</a></td>
+    <td><a href="/datasheets/indexes">Index Data</a></td>
+  </tr>
+</tbody></table>
+
+<!-- GRAPH ----------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------------->
+
+<h3> Number of Biographies for Each Country </h3>
+<p><i>Note: Some biographies are counted in multiple countries.</i> <br>&nbsp;</p>
+
+<table><thead>
+<th width=30%>{{ site.data.site-trans[page.lang].country }}</th>
+<th width=70%>{{ site.data.site-trans[page.lang].number-bio }}</th>
+</thead></table>
+
+<table style="font-size: 1em;"> <tbody> <tr> <td style="padding: 0px;">
+
+  <table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left"></td>
+  <td width=70% class="graph-right">
+    <div style="text-align:right; display:block; float:left; width:100px; padding-right:5px;">100</div>
+    <div style="text-align:right; display:block; float:left; width:100px; padding-right:5px;">200</div>
+    <div style="text-align:right; display:block; float:left; width:100px; padding-right:5px;">300</div>
+    <div style="text-align:right; display:block; float:left; width:100px; padding-right:5px;">400</div>
+  </td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.algeria[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","algeria" %}
+{% assign country2 = site.data.site-content | where: "country1","algeria" %}
+{% assign country3 = site.data.site-content | where: "country2","algeria" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.angola[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","angola" %}
+{% assign country2 = site.data.site-content | where: "country1","angola" %}
+{% assign country3 = site.data.site-content | where: "country2","angola" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.benin[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","benin" %}
+{% assign country2 = site.data.site-content | where: "country1","benin" %}
+{% assign country3 = site.data.site-content | where: "country2","benin" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.botswana[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","botswana" %}
+{% assign country2 = site.data.site-content | where: "country1","botswana" %}
+{% assign country3 = site.data.site-content | where: "country2","botswana" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+{% assign burkina-faso = "burkina faso" %}
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans[burkina-faso][page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","burkina faso" %}
+{% assign country2 = site.data.site-content | where: "country1","burkina faso" %}
+{% assign country3 = site.data.site-content | where: "country2","burkina faso" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.burundi[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","burundi" %}
+{% assign country2 = site.data.site-content | where: "country1","burundi" %}
+{% assign country3 = site.data.site-content | where: "country2","burundi" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.cameroon[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","cameroon" %}
+{% assign country2 = site.data.site-content | where: "country1","cameroon" %}
+{% assign country3 = site.data.site-content | where: "country2","cameroon" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+{% assign cape-verde = "cape verde" %}
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans[cape-verde][page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","cape verde" %}
+{% assign country2 = site.data.site-content | where: "country1","cape verde" %}
+{% assign country3 = site.data.site-content | where: "country2","cape verde" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+{% assign central-african-republic = "central african republic" %}
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans[central-african-republic][page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","central african republic" %}
+{% assign country2 = site.data.site-content | where: "country1","central african republic" %}
+{% assign country3 = site.data.site-content | where: "country2","central african republic" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.chad[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","chad" %}
+{% assign country2 = site.data.site-content | where: "country1","chad" %}
+{% assign country3 = site.data.site-content | where: "country2","chad" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.comoros[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","comoros" %}
+{% assign country2 = site.data.site-content | where: "country1","comoros" %}
+{% assign country3 = site.data.site-content | where: "country2","comoros" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.congo[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","congo" %}
+{% assign country2 = site.data.site-content | where: "country1","algeria" %}
+{% assign country3 = site.data.site-content | where: "country2","algeria" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+{% assign cote-divoire = "cote divoire" %}
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans[cote-divoire][page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","cote divoire" %}
+{% assign country2 = site.data.site-content | where: "country1","cote divoire" %}
+{% assign country3 = site.data.site-content | where: "country2","cote divoire" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+{% assign democratic-republic-of-congo = "democratic republic of congo" %}
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans[democratic-republic-of-congo][page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","democratic republic of congo" %}
+{% assign country2 = site.data.site-content | where: "country1","democratic republic of congo" %}
+{% assign country3 = site.data.site-content | where: "country2","democratic republic of congo" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.djibouti[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","djibouti" %}
+{% assign country2 = site.data.site-content | where: "country1","djibouti" %}
+{% assign country3 = site.data.site-content | where: "country2","djibouti" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.egypt[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","egypt" %}
+{% assign country2 = site.data.site-content | where: "country1","egypt" %}
+{% assign country3 = site.data.site-content | where: "country2","egypt" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+{% assign equatorial-guinea = "equatorial guinea" %}
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans[equatorial-guinea][page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","equatorial guinea" %}
+{% assign country2 = site.data.site-content | where: "country1","equatorial guinea" %}
+{% assign country3 = site.data.site-content | where: "country2","equatorial guinea" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.eritrea[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","eritrea" %}
+{% assign country2 = site.data.site-content | where: "country1","eritrea" %}
+{% assign country3 = site.data.site-content | where: "country2","eritrea" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.ethiopia[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","ethiopia" %}
+{% assign country2 = site.data.site-content | where: "country1","ethiopia" %}
+{% assign country3 = site.data.site-content | where: "country2","ethiopia" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.gabon[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","gabon" %}
+{% assign country2 = site.data.site-content | where: "country1","gabon" %}
+{% assign country3 = site.data.site-content | where: "country2","gabon" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.gambia[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","gambia" %}
+{% assign country2 = site.data.site-content | where: "country1","gambia" %}
+{% assign country3 = site.data.site-content | where: "country2","gambia" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.ghana[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","ghana" %}
+{% assign country2 = site.data.site-content | where: "country1","ghana" %}
+{% assign country3 = site.data.site-content | where: "country2","ghana" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.guinea[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","guinea" %}
+{% assign country2 = site.data.site-content | where: "country1","guinea" %}
+{% assign country3 = site.data.site-content | where: "country2","guinea" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+{% assign guinea-bissau = "guinea bissau" %}
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans[guinea-bissau][page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","guinea bissau" %}
+{% assign country2 = site.data.site-content | where: "country1","guinea bissau" %}
+{% assign country3 = site.data.site-content | where: "country2","guinea bissau" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.kenya[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","kenya" %}
+{% assign country2 = site.data.site-content | where: "country1","kenya" %}
+{% assign country3 = site.data.site-content | where: "country2","kenya" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.lesotho[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","lesotho" %}
+{% assign country2 = site.data.site-content | where: "country1","lesotho" %}
+{% assign country3 = site.data.site-content | where: "country2","lesotho" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.liberia[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","liberia" %}
+{% assign country2 = site.data.site-content | where: "country1","liberia" %}
+{% assign country3 = site.data.site-content | where: "country2","liberia" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.libya[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","libya" %}
+{% assign country2 = site.data.site-content | where: "country1","libya" %}
+{% assign country3 = site.data.site-content | where: "country2","libya" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.madagascar[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","madagascar" %}
+{% assign country2 = site.data.site-content | where: "country1","madagascar" %}
+{% assign country3 = site.data.site-content | where: "country2","madagascar" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.malawi[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","malawi" %}
+{% assign country2 = site.data.site-content | where: "country1","malawi" %}
+{% assign country3 = site.data.site-content | where: "country2","malawi" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.mali[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","mali" %}
+{% assign country2 = site.data.site-content | where: "country1","mali" %}
+{% assign country3 = site.data.site-content | where: "country2","mali" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.mauritania[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","mauritania" %}
+{% assign country2 = site.data.site-content | where: "country1","mauritania" %}
+{% assign country3 = site.data.site-content | where: "country2","mauritania" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.mauritius[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","mauritius" %}
+{% assign country2 = site.data.site-content | where: "country1","mauritius" %}
+{% assign country3 = site.data.site-content | where: "country2","mauritius" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.mayotte[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","mayotte" %}
+{% assign country2 = site.data.site-content | where: "country1","mayotte" %}
+{% assign country3 = site.data.site-content | where: "country2","mayotte" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.morocco[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","morocco" %}
+{% assign country2 = site.data.site-content | where: "country1","morocco" %}
+{% assign country3 = site.data.site-content | where: "country2","morocco" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.mozambique[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","mozambique" %}
+{% assign country2 = site.data.site-content | where: "country1","mozambique" %}
+{% assign country3 = site.data.site-content | where: "country2","mozambique" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.namibia[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","namibia" %}
+{% assign country2 = site.data.site-content | where: "country1","namibia" %}
+{% assign country3 = site.data.site-content | where: "country2","namibia" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.niger[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","niger" %}
+{% assign country2 = site.data.site-content | where: "country1","niger" %}
+{% assign country3 = site.data.site-content | where: "country2","niger" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.nigeria[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","nigeria" %}
+{% assign country2 = site.data.site-content | where: "country1","nigeria" %}
+{% assign country3 = site.data.site-content | where: "country2","nigeria" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.reunion[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","reunion" %}
+{% assign country2 = site.data.site-content | where: "country1","reunion" %}
+{% assign country3 = site.data.site-content | where: "country2","reunion" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.rwanda[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","rwanda" %}
+{% assign country2 = site.data.site-content | where: "country1","rwanda" %}
+{% assign country3 = site.data.site-content | where: "country2","rwanda" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+{% assign saint-helena = "saint helena" %}
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans[saint-helena][page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","saint helena" %}
+{% assign country2 = site.data.site-content | where: "country1","saint helena" %}
+{% assign country3 = site.data.site-content | where: "country2","saint helena" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+{% assign sao-tome-and-principe = "sao tome and principe" %}
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans[sao-tome-and-principe][page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","sao tome and principe" %}
+{% assign country2 = site.data.site-content | where: "country1","sao tome and principe" %}
+{% assign country3 = site.data.site-content | where: "country2","sao tome and principe" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.senegal[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","senegal" %}
+{% assign country2 = site.data.site-content | where: "country1","senegal" %}
+{% assign country3 = site.data.site-content | where: "country2","senegal" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.seychelles[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","seychelles" %}
+{% assign country2 = site.data.site-content | where: "country1","seychelles" %}
+{% assign country3 = site.data.site-content | where: "country2","seychelles" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+{% assign sierra-leone = "sierra leone" %}
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans[sierra-leone][page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","sierra leone" %}
+{% assign country2 = site.data.site-content | where: "country1","sierra leone" %}
+{% assign country3 = site.data.site-content | where: "country2","sierra leone" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.somalia[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","somalia" %}
+{% assign country2 = site.data.site-content | where: "country1","somalia" %}
+{% assign country3 = site.data.site-content | where: "country2","somalia" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+{% assign south-africa = "south africa" %}
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans[south-africa][page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","south africa" %}
+{% assign country2 = site.data.site-content | where: "country1","south africa" %}
+{% assign country3 = site.data.site-content | where: "country2","south africa" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+{% assign south-sudan = "south sudan" %}
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans[south-sudan][page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","south sudan" %}
+{% assign country2 = site.data.site-content | where: "country1","south sudan" %}
+{% assign country3 = site.data.site-content | where: "country2","south sudan" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.sudan[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","sudan" %}
+{% assign country2 = site.data.site-content | where: "country1","sudan" %}
+{% assign country3 = site.data.site-content | where: "country2","sudan" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.swaziland[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","swaziland" %}
+{% assign country2 = site.data.site-content | where: "country1","swaziland" %}
+{% assign country3 = site.data.site-content | where: "country2","swaziland" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.tanzania[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","tanzania" %}
+{% assign country2 = site.data.site-content | where: "country1","tanzania" %}
+{% assign country3 = site.data.site-content | where: "country2","tanzania" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.togo[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","togo" %}
+{% assign country2 = site.data.site-content | where: "country1","togo" %}
+{% assign country3 = site.data.site-content | where: "country2","togo" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.tunisia[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","tunisia" %}
+{% assign country2 = site.data.site-content | where: "country1","tunisia" %}
+{% assign country3 = site.data.site-content | where: "country2","tunisia" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.uganda[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","uganda" %}
+{% assign country2 = site.data.site-content | where: "country1","uganda" %}
+{% assign country3 = site.data.site-content | where: "country2","uganda" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+{% assign western-sahara = "western sahara" %}
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans[western-sahara][page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","western sahara" %}
+{% assign country2 = site.data.site-content | where: "country1","western sahara" %}
+{% assign country3 = site.data.site-content | where: "country2","western sahara" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.zambia[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","zambia" %}
+{% assign country2 = site.data.site-content | where: "country1","zambia" %}
+{% assign country3 = site.data.site-content | where: "country2","zambia" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+<table style="border: 0px solid #fff;"><tbody><tr><td width=30% class="graph-left">
+{{ site.data.country-trans.zimbabwe[page.lang] }}</td>
+<td width=70% class="graph-right">
+{% assign country1 = site.data.site-content | where: "country0","zimbabwe" %}
+{% assign country2 = site.data.site-content | where: "country1","zimbabwe" %}
+{% assign country3 = site.data.site-content | where: "country2","zimbabwe" %}
+{% assign countrya = country1 | concat:country2 %}{% assign country = countrya  | concat:country3 | sort: 'lang' %}
+{% for item in country %}
+  {% if item.lang == 'en'  %}<div style="height:18px;float:left;display:block; width:1px; background: #7d291e;"></div>
+  {% elsif item.lang == 'fr'  %}<div style="height:18px;float:left;display:block; width:1px; background: #333d63;"></div>
+  {% elsif item.lang == 'pt'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+  {% elsif item.lang == 'sw'  %}<div style="height:18px;float:left;display:block; width:1px; background: #9f8778;"></div>
+{% endif %}{% endfor %}
+<div style="float:left;display:block;">&nbsp;{{ country.size }}</div>
+</td></tr></tbody></table>
+
+</td></tr></tbody></table>
+
+<!-------------------------------------------------------------------------------------------------------------------------------->
+<!-- GRAPH ----------------------------------------------------------------------------------------------------------------------->
+
+
+<!-- TOTALS ---------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------------->
+
+<h3>Biography Totals</h3>
+<table>
+  <thead>
+    <th width=33.33%>Total Biographies</th>
+    <th width=33.33%>Total Unique Biographies</th>
+    <th width=33.33%>Total Subjects</th>
+  </thead>
+  <tbody><tr>
+    <td>
+      {% assign totala = site.data.site-content | where: "index","primary" %}
+      {% assign totalb = site.data.site-content | where: "index","secondary" %}
+      {{ totala.size | plus: totalb.size }}
+    </td>
+    <td>
+      {% assign total2 = site.data.site-content | where: "index","primary" %}
+      {% if total2 != empty %}{{ total2.size }}
+      {% elsif total2 == empty %}0{% endif %}
+    </td>
+    <td>
+      {% assign total3 = site.data.site-content | where: "index","primary" %}
+      {% capture unique %}{% for item in total3 %}{% if item.title contains "(A)" %}1{% elsif item.title contains "(B)" %}{%continue%}{% elsif item.title contains "(C)" %}{%continue%}{% elsif item.title contains "(D)" %}{%continue%}{% elsif item.title contains "(E)" %}{%continue%}{% elsif item.title contains "(F)" %}{%continue%}{% elsif item.title contains "(G)" %}{%continue%}{% elsif item.title contains "(H)" %}{%continue%}{% elsif item.title contains "(I)" %}{%continue%}{% elsif item.title contains "(J)" %}{%continue%}{% elsif item.title contains "(K)" %}{%continue%}{% elsif item.title contains "(L)" %}{%continue%}{% else %}1
+      {% endif %}{% endfor %}{% endcapture %}
+      {{ unique | number_of_words }}
+    </td>
+  </tr>
+</tbody></table>
+
+<h3>History Totals</h3>
+<table>
+  <thead>
+    <th width=50%>Total Histories</th>
+    <th width=50%>Total Unique Histories</th>
+  </thead>
+  <tbody><tr>
+    <td>
+      {% assign totalc = site.data.site-content | where: "index","main" | where: "history","history" %}
+      {% assign totald = site.data.site-content | where: "index","notmain" | where: "history","history" %}
+      {{ totalc.size | plus: totald.size }}
+    </td>
+    <td>
+      {% assign total5 = site.data.site-content | where: "index","main" | where: "history","history" %}
+      {% if total5 != empty %}{{ total5.size }}
+      {% elsif total5 == empty %}0{% endif %}
+    </td>
+  </tr>
+</tbody></table>
+
+<h3>Collected Memories Totals</h3>
+<table>
+  <thead>
+    <th width=100%>Total Collected Memories</th>
+  </thead>
+  <tbody><tr>
+    <td>
+      {% assign total6 = site.data.site-content | where: "memory","memory" %}
+      {{ total6.size }}
+    </td>
+  </tr>
+</tbody></table>
+
+<!-------------------------------------------------------------------------------------------------------------------------------->
+<!-- TOTALS ---------------------------------------------------------------------------------------------------------------------->

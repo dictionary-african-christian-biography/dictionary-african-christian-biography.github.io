@@ -1,0 +1,51 @@
+---
+layout: archive
+permalink: /sw/sort/stories/century-sort4/
+title: "Panga kwa Century: 6-1"
+author_profile: false
+lang: sw
+languages-available:
+  - en
+  - fr
+  - pt
+  - sw
+---
+<table class="sort"><tbody>
+  <tr>
+    <td><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/sort/stories/century-sort/">21-20</a></td>
+    <td><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/sort/stories/century-sort2/">19-14</a></td>
+    <td><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/sort/stories/century-sort3/">13-7</a></td>
+    <td><a href="#6th" style="color:#e0c74f;">6th</a></td>
+    <td><a href="#5th" style="color:#e0c74f;">5th</a></td>
+    <td><a href="#4th" style="color:#e0c74f;">4th</a></td>
+    <td><a href="#3rd" style="color:#e0c74f;">3rd</a></td>
+    <td><a href="#2nd" style="color:#e0c74f;">2nd</a></td>
+    <td><a href="#1st" style="color:#e0c74f;">1st</a></td>
+  </tr>
+</tbody></table>
+
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}
+
+<h2 id="6th">6th</h2>
+<table><thead><th width=30%>{{ site.data.site-trans[parent_lang].name }}</th><th width=15%>{{ site.data.site-trans[parent_lang].dates }}</th><th width=20%>{{ site.data.site-trans[parent_lang].affiliation }}</th><th width=20%>{{ site.data.site-trans[parent_lang].country }}</th><th width=15%>{{ site.data.site-trans[parent_lang].languages }}</th></thead></table>
+{% assign sorted = site.data.site-content | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% if page.century contains "16th" %}{% continue %}{% elsif page.century contains "6th" %}{% include json-century-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}{% include back-to-top %}
+
+<h2 id="5th">5th</h2>
+<table><thead><th width=30%>{{ site.data.site-trans[parent_lang].name }}</th><th width=15%>{{ site.data.site-trans[parent_lang].dates }}</th><th width=20%>{{ site.data.site-trans[parent_lang].affiliation }}</th><th width=20%>{{ site.data.site-trans[parent_lang].country }}</th><th width=15%>{{ site.data.site-trans[parent_lang].languages }}</th></thead></table>
+{% assign sorted = site.data.site-content | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% if page.century contains "15th" %}{% continue %}{% elsif page.century contains "5th" %}{% include json-century-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}{% include back-to-top %}
+
+<h2 id="4th">4th</h2>
+<table><thead><th width=30%>{{ site.data.site-trans[parent_lang].name }}</th><th width=15%>{{ site.data.site-trans[parent_lang].dates }}</th><th width=20%>{{ site.data.site-trans[parent_lang].affiliation }}</th><th width=20%>{{ site.data.site-trans[parent_lang].country }}</th><th width=15%>{{ site.data.site-trans[parent_lang].languages }}</th></thead></table>
+{% assign sorted = site.data.site-content | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% if page.century contains "14th" %}{% continue %}{% elsif page.century contains "4th" %}{% include json-century-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}{% include back-to-top %}
+
+<h2 id="3rd">3rd</h2>
+<table><thead><th width=30%>{{ site.data.site-trans[parent_lang].name }}</th><th width=15%>{{ site.data.site-trans[parent_lang].dates }}</th><th width=20%>{{ site.data.site-trans[parent_lang].affiliation }}</th><th width=20%>{{ site.data.site-trans[parent_lang].country }}</th><th width=15%>{{ site.data.site-trans[parent_lang].languages }}</th></thead></table>
+{% assign sorted = site.data.site-content | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% if page.century contains "3rd" %}{% include json-century-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}{% include back-to-top %}
+
+<h2 id="2nd">2nd</h2>
+<table><thead><th width=30%>{{ site.data.site-trans[parent_lang].name }}</th><th width=15%>{{ site.data.site-trans[parent_lang].dates }}</th><th width=20%>{{ site.data.site-trans[parent_lang].affiliation }}</th><th width=20%>{{ site.data.site-trans[parent_lang].country }}</th><th width=15%>{{ site.data.site-trans[parent_lang].languages }}</th></thead></table>
+{% assign sorted = site.data.site-content | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% if page.century contains "2nd" %}{% include json-century-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}{% include back-to-top %}
+
+<h2 id="1st">1st</h2>
+<table><thead><th width=30%>{{ site.data.site-trans[parent_lang].name }}</th><th width=15%>{{ site.data.site-trans[parent_lang].dates }}</th><th width=20%>{{ site.data.site-trans[parent_lang].affiliation }}</th><th width=20%>{{ site.data.site-trans[parent_lang].country }}</th><th width=15%>{{ site.data.site-trans[parent_lang].languages }}</th></thead></table>
+{% assign sorted = site.data.site-content | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% if page.century contains "21st" %}{% continue %}{% elsif page.century contains "1st" %}{% include json-century-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}{% include back-to-top %}

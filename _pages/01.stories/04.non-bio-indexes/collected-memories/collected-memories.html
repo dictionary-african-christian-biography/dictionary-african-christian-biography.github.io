@@ -1,0 +1,22 @@
+---
+layout: archive
+title: "Collected Memories"
+permalink: /sort/stories/collected-memories/
+lang: en
+languages-available:
+  - 'en'
+  - 'fr'
+  - ' '
+  - ' '
+---
+<p>The urgent task of the DACB is to retrieve and preserve the memory of individuals who have played a role in the birth and growth of African Christianity. This index serves as a repository of memories that do not yet qualify as full biographies.
+<br><br>
+<b>Disclaimer: This is a collection of eyewitness and fragmentary accounts, including eulogies, obituaries, and primary materials, sometimes lacking sources and proper academic verification for accuracy.</b></p>
+<br>
+
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}
+{% assign sorted = site.data.site-content | where: "memory","memory" | where: "lang","en" | sort: 'upload' | reverse %}
+
+{% for item in sorted %}
+{% include json-memory-index.html parent_lang=parent_lang %}
+{% endfor %}

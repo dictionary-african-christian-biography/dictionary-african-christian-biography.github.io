@@ -1,0 +1,303 @@
+#  =======================================
+#  COUNTRY TRANSLATIONS
+#  =======================================
+algeria:
+  en: Algeria
+  fr: Algérie
+  pt: Argélia
+  sw: Algeria
+angola:
+  en: Angola
+  fr: Angola
+  pt: Angola
+  sw: Angola
+benin:
+  en: Benin
+  fr: Bénin
+  pt: Benin
+  sw: Benin
+botswana:
+  en: Botswana
+  fr: Botswana
+  pt: Botswana
+  sw: Botswana
+burkina faso:
+  en: Burkina Faso
+  fr: Burkina Faso
+  pt: Burkina Faso
+  sw: Burkina Faso
+burundi:
+  en: Burundi
+  fr: Burundi
+  pt: Burundi
+  sw: Burundi
+cameroon:
+  en: Cameroon
+  fr: Cameroun
+  pt: Camarões
+  sw: Cameroon
+cape verde:
+  en: Cape Verde
+  fr: Cap-Vert
+  pt: Cabo Verde
+  sw: Cape Verde
+central african republic:
+  en: Central African Republic
+  fr: République Centrafricaine
+  pt: República Centro-Africano
+  sw: Jamhuri ya Afrika ya Kati
+chad:
+  en: Chad
+  fr: Tchad
+  pt: Chade
+  sw: Chad
+comoros:
+  en: Comoros
+  fr: Comores
+  pt: Comores
+  sw: Comoro
+congo:
+  en: Congo
+  fr: Congo
+  pt: Congo
+  sw: Congo
+cote divoire:
+  en: Côte d’Ivoire
+  fr: Côte d'Ivoire
+  pt: Côte d’Ivoire
+  sw: Ivory Coast
+democratic republic of congo:
+  en: Democratic Republic of Congo
+  fr: République Démocratique du Congo
+  pt: República Democrática do Congo
+  sw: Jamhuri Ya Kidemokrasia Ya Kongo
+djibouti:
+  en: Djibouti
+  fr: Djibouti
+  pt: Djibouti
+  sw: Djibouti
+egypt:
+  en: Egypt
+  fr: Egypte
+  pt: Egito
+  sw: Misri
+equatorial guinea:
+  en: Equatorial Guinea
+  fr: Guinée Équatoriale
+  pt: Guiné Equatorial
+  sw: Guinea Ya Ikweta
+eritrea:
+  en: Eritrea
+  fr: Érythrée
+  pt: Eritrea
+  sw: Eritrea
+ethiopia:
+  en: Ethiopia
+  fr: Ethiopie
+  pt: Etiópia
+  sw: Ethiopia
+gabon:
+  en: Gabon
+  fr: Gabon
+  pt: Gabão
+  sw: Gabon
+gambia:
+  en: Gambia
+  fr: Gambie
+  pt: Gâmbia
+  sw: Gambia
+ghana:
+  en: Ghana
+  fr: Ghana
+  pt: Gana
+  sw: Ghana
+guinea:
+  en: Guinea
+  fr: Guinée
+  pt: Guiné
+  sw: Guinea
+guinea bissau:
+  en: Guinea Bissau
+  fr: La Guinée-Bissau
+  pt: Guiné-Bissau
+  sw: Ginebisau
+kenya:
+  en: Kenya
+  fr: Kenya
+  pt: Quênia
+  sw: Kenya
+lesotho:
+  en: Lesotho
+  fr: Lesotho
+  pt: Lesoto
+  sw: Lesotho
+liberia:
+  en: Liberia
+  fr: Libéria
+  pt: Libéria
+  sw: Liberia
+libya:
+  en: Libya
+  fr: Libye
+  pt: Líbia
+  sw: Libya
+madagascar:
+  en: Madagascar
+  fr: Madagascar
+  pt: Madagáscar
+  sw: Madagascar
+malawi:
+  en: Malawi
+  fr: Malawi
+  pt: Malavi
+  sw: Malawi
+mali:
+  en: Mali
+  fr: Mali
+  pt: Mali
+  sw: Mali
+mauritania:
+  en: Mauritania
+  fr: Mauritanie
+  pt: Mauritânia
+  sw: Mauritania
+mauritius:
+  en: Mauritius
+  fr: Maurice
+  pt: Maurícia
+  sw: Mauritius
+mayotte:
+  en: Mayotte
+  fr: Mayotte
+  pt: Mayotte
+  sw: Mayotte
+morocco:
+  en: Morocco
+  fr: Maroc
+  pt: Marrocos
+  sw: Morocco
+mozambique:
+  en: Mozambique
+  fr: Mozambique
+  pt: Moçambique
+  sw: Mozambique
+namibia:
+  en: Namibia
+  fr: Namibie
+  pt: Namibia
+  sw: Namibia
+niger:
+  en: Niger
+  fr: Niger
+  pt: Níger
+  sw: Niger
+nigeria:
+  en: Nigeria
+  fr: Nigeria
+  pt: Nigéria
+  sw: Nigeria
+nonafricans:
+  en: Non Africans
+  fr: Non Africains
+  pt: Não Africanos
+  sw: Wasio Waafrika
+other-subjects:
+  en: Other Subjects
+  fr: Autres Sujets
+  pt: Outros Assuntos
+  sw: Masomo Mengine
+reunion:
+  en: Reunion
+  fr: Réunion
+  pt: Reunião
+  sw: Reunion
+rwanda:
+  en: Rwanda
+  fr: Rwanda
+  pt: Ruanda
+  sw: Rwanda
+saint helena:
+  en: Saint Helena
+  fr: Sainte-Hélène
+  pt: Santa Helena
+  sw: Saint Helena
+sao tome and principe:
+  en: São Tomé and Príncipe
+  fr: São Tomé-et-Principe
+  pt: São Tomé e Príncipe
+  sw: Sao Tome na Principe
+senegal:
+  en: Senegal
+  fr: Sénégal
+  pt: Senegal
+  sw: Senegal
+seychelles:
+  en: Seychelles
+  fr: Seychelles
+  pt: Seychelles
+  sw: Shelisheli
+sierra leone:
+  en: Sierra Leone
+  fr: Sierra Leone
+  pt: Serra Leoa
+  sw: Sierra Leone
+somalia:
+  en: Somalia
+  fr: Somalie
+  pt: Somália
+  sw: Somalia
+south africa:
+  en: South Africa
+  fr: Afrique Du Sud
+  pt: África Do Sul
+  sw: Afrika Kusini
+south sudan:
+  en: South Sudan
+  fr: Sud-Soudan
+  pt: Sudão Do Sul
+  sw: Sudan Kusini
+sudan:
+  en: Sudan
+  fr: Soudan
+  pt: Sudão
+  sw: Sudan
+swaziland:
+  en: Swaziland
+  fr: Swaziland
+  pt: Suazilândia
+  sw: Swaziland
+tanzania:
+  en: Tanzania
+  fr: Tanzanie
+  pt: Tanzânia
+  sw: Tanzania
+togo:
+  en: Togo
+  fr: Togo
+  pt: Togo
+  sw: Togo
+tunisia:
+  en: Tunisia
+  fr: Tunisia
+  pt: Tunísia
+  sw: Tunisia
+uganda:
+  en: Uganda
+  fr: Ouganda
+  pt: Uganda
+  sw: Uganda
+western sahara:
+  en: Western Sahara
+  fr: Sahara Occidental
+  pt: Sara Ocidental
+  sw: Sahara Ya Magharibi
+zambia:
+  en: Zambia
+  fr: Zambie
+  pt: Zâmbia
+  sw: Zambia
+zimbabwe:
+  en: Zimbabwe
+  fr: Zimbabwe
+  pt: Zimbábue
+  sw: Zimbabwe

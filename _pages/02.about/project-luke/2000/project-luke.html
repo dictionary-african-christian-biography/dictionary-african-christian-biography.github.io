@@ -1,0 +1,38 @@
+---
+layout: archive
+title: "Project Luke Fellows: 2000-2001"
+layout: single-about
+permalink: /about/project-luke-2000/
+lang: en
+languages-available:
+  - en
+  - ' '
+  - ' '
+  - ' '
+---
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}{% assign sorted = site.data.site-content | sort: 'title' %}
+
+<h3>Rev. Dr. Emele Mba Uka</h3><table bgcolor="#f5f5f5"><tbody><tr>
+<td width=20% style="border-right: 0px !important"><img src="/images/project-luke/Uka-Emele-Mba.jpg"></td><td width=80%>
+  <b>Years in Residency at OSMC:</b><br>
+  2000-2001<br><br>
+  <b>Positions:</b><br>
+   Professor of Theology in the Department of Religion and Philosophy <br>
+   The Federal University of Calabar, Nigeria (UNICAL)
+</td></tr></tbody></table><h4>Stories by Rev. Dr. Emele Mba Uka</h4><table><thead><th width=35%>{{ site.data.site-trans[page.lang].name }}</th><th width=25%>{{ site.data.site-trans[page.lang].affiliation }}</th><th width=25%>{{ site.data.site-trans[page.lang].country }}</th><th width=15%>{{ site.data.site-trans[page.lang].languages }}</th></thead></table>
+{% for page in sorted %}
+{% if page.author == "Uka, Emele Mba" %}{% include json-category-index.html parent_lang=parent_lang %}
+{% endif %}{% endfor %}
+<hr>
+
+
+<h3>Mr. Bela B. Kalumbete</h3><table bgcolor="#f5f5f5"><tbody><tr>
+<td width=20% style="border-right: 0px !important"><img src="/images/project-luke/Bela-Kalumbete-05-08-01.jpg"></td><td width=80%>
+  <b>Years in Residency at OSMC:</b><br>
+  2000-2001<br><br>
+  <b>Positions:</b><br>
+  Africa Inland Church, Tanzania
+</td></tr></tbody></table><h4>Stories by Mr. Bela B. Kalumbete</h4><table><thead><th width=35%>{{ site.data.site-trans[page.lang].name }}</th><th width=25%>{{ site.data.site-trans[page.lang].affiliation }}</th><th width=25%>{{ site.data.site-trans[page.lang].country }}</th><th width=15%>{{ site.data.site-trans[page.lang].languages }}</th></thead></table>
+{% for page in sorted %}
+{% if page.author == "Kalumbete, Bela B." %}{% include json-category-index.html parent_lang=parent_lang %}
+{% endif %}{% endfor %}

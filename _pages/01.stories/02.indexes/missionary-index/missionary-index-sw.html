@@ -1,0 +1,25 @@
+---
+layout: archive
+title: "Orodha ya Wamisionari"
+permalink: /sw/sort/stories/missionary-index/
+lang: sw
+languages-available:
+  - en
+  - fr
+  - pt
+  - sw
+---
+<div class="side-box" style="font-size:.6em;font-style:italic;">{{ site.data.site-trans.ongoing[page.lang] }}</div>
+
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}
+<table><thead>
+<th width=35%>{{ site.data.site-trans[page.lang].name }}</th>
+<th width=25%>{{ site.data.site-trans[page.lang].affiliation }}</th>
+<th width=25%>{{ site.data.site-trans[page.lang].country }}</th>
+<th width=15%>{{ site.data.site-trans[page.lang].languages }}</th>
+</thead></table>
+{% assign sorted = site.data.site-content | where: "index","primary" | sort: 'title' %}{% for page in sorted %}
+{% if page.tags contains "missionary" %}
+{% include json-category-index.html parent_lang=parent_lang %}
+{% endif %}{% endfor %}
+{% include back-to-top %}

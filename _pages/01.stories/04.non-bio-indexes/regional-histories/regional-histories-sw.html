@@ -1,0 +1,18 @@
+---
+layout: archive
+title: "Regional Histories"
+permalink: /sw/sort/stories/regional-histories/
+lang: sw
+languages-available:
+  - en
+  - fr
+  - pt
+  - sw
+---
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}
+{% assign sorted = site.data.site-content | where: "history","history" | where: "index","main" | sort:"country" %}
+
+{% for page in sorted %}
+  {% include json-history-index.html parent_lang=parent_lang %}
+{% endfor %}
+{% include back-to-top %}

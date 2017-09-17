@@ -1,0 +1,60 @@
+{% if include.id %}
+  {% assign feature_row = page.[include.id] %}
+{% else %}
+  {% assign feature_row = page.feature_row %}
+{% endif %}
+
+<div class="feature__wrapper">
+
+  {% for f in feature_row %}
+
+    {% if f.url contains "://" %}
+      {% capture f_url %}{{ f.url }}{% endcapture %}
+    {% else %}
+      {% capture f_url %}{{ f.url | absolute_url }}{% endcapture %}
+    {% endif %}
+
+    <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
+      <div class="archive__item">
+        {% if f.image_path %}
+          <div class="archive__item-teaser">
+            <img src=
+              {% if f.image_path contains "://" %}
+                "{{ f.image_path }}"
+              {% else %}
+                "{{ f.image_path | absolute_url }}"
+              {% endif %}
+            alt="{% if f.alt %}{{ f.alt }}{% endif %}">
+          </div>
+        {% endif %}
+
+        <div class="archive__item-body">
+          {% if f.title %}
+            <h2 class="archive__item-title">{{ f.title }}</h2>
+          {% endif %}
+
+          {% if f.excerpt %}
+            {% if f.excerpt contains '#count' %}
+              <p class="archive__item-excerpt">{{ f.excerpt | markdownify | remove: '#count' | truncate: 130 }}</p>
+              <p class="archive__item-excerpt">{{ include.count | markdownify }}</p>
+            {% else %}
+              <p class="archive__item-excerpt">{{ f.excerpt | markdownify | truncate: 130 }}</p>
+          {% endif %}
+
+          {% endif %}
+
+          </div>
+      </div>
+      {% if f.url %}
+        <div class="archive__item-btn">
+        {% if f.url contains "://" %}
+        <a href="{{ f_url }}" class="btn {{ f.btn_class }}" rel="noopener noreferrer" target="_blank">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>
+        {% else %}
+        <a href="{{ f_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>
+        {% endif %}
+        </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+
+</div>

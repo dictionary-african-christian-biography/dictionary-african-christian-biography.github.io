@@ -1,0 +1,34 @@
+---
+layout: archive
+title: "Sort by Language: French"
+permalink: /sort/stories/language-sort2/
+lang: en
+languages-available:
+  - en
+  - fr
+  - pt
+  - sw
+---
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}
+
+<table class="sort"><tbody>
+  <tr>
+    <td><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/sort/stories/language-sort/">{{ site.data.site-trans[parent_lang].english }}</a></td>
+    <td><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/sort/stories/language-sort2/">{{ site.data.site-trans[parent_lang].french }}</a></td>
+    <td><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/sort/stories/language-sort3/">{{ site.data.site-trans[parent_lang].portuguese }}</a></td>
+    <td><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/sort/stories/language-sort4/">{{ site.data.site-trans[parent_lang].swahili }}</a></td>
+  </tr>
+</tbody></table>
+
+<h2 id="fr">{{ site.data.site-trans[parent_lang].french }}</h2>
+<table><thead>
+<th width=35%>{{ site.data.site-trans[parent_lang].name }}</th>
+<th width=25%>{{ site.data.site-trans[parent_lang].affiliation }}</th>
+<th width=25%>{{ site.data.site-trans[parent_lang].country }}</th>
+<th width=15%>{{ site.data.site-trans[parent_lang].languages }}</th>
+</thead></table>
+{% assign fr-sort = site.data.site-content | where: "lang","fr" | sort: 'title' %}
+{% for page in fr-sort %}{% if page.history != 'history' and page.memory != 'memory' and page.title != 'none' %}
+  {% include json-category-index.html parent_lang=parent_lang %}
+{% endif %}{% endfor %}
+{% include back-to-top %}

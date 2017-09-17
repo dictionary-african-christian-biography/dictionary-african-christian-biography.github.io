@@ -1,0 +1,26 @@
+---
+layout: archive
+title: "Project Luke Fellows: 1999-2000"
+layout: single-about
+permalink: /about/project-luke-1999/
+lang: en
+languages-available:
+  - en
+  - ' '
+  - ' '
+  - ' '
+---
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}{% assign sorted = site.data.site-content | sort: 'title' %}
+
+<h3>Dr. Francis Manana</h3><table bgcolor="#f5f5f5"><tbody><tr>
+<td>
+  <b>Years in Residency at OSMC:</b><br>
+  1999-2000<br><br>
+  <b>Positions:</b><br>
+  Professor of Evangelism and Missions, <br>
+  Pan African Christian College, Nairobi, Kenya.
+</td></tr></tbody></table><h4>Stories by Dr. Francis Manana</h4>
+<table><thead><th width=35%>{{ site.data.site-trans[page.lang].name }}</th><th width=25%>{{ site.data.site-trans[page.lang].affiliation }}</th><th width=25%>{{ site.data.site-trans[page.lang].country }}</th><th width=15%>{{ site.data.site-trans[page.lang].languages }}</th></thead></table>
+{% for page in sorted %}
+{% if page.author == "Manana, Francis" %}{% include json-category-index.html parent_lang=parent_lang %}
+{% endif %}{% endfor %}

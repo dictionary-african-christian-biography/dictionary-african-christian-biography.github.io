@@ -1,0 +1,24 @@
+---
+layout: archive
+title: "Project Luke Fellows: 2006-2007"
+layout: single-about
+permalink: /about/project-luke-2006/
+lang: en
+languages-available:
+  - en
+  - ' '
+  - ' '
+  - ' '
+---
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}{% assign sorted = site.data.site-content | sort: 'title' %}
+
+<h3>Dr. Musa A. B. Gaiya</h3><table bgcolor="#f5f5f5"><tbody><tr>
+<td width=20% style="border-right: 0px !important"><img src="/images/project-luke/Gaiya-Musa1.jpg"></td><td width=80%>
+  <b>Years in Residency at OSMC:</b><br>
+  Fall 2006<br><br>
+  <b>Positions:</b><br>
+  Professor of Church History at the University of Jos, Nigeria
+</td></tr></tbody></table><h4>Stories by Dr. Musa A. B. Gaiya</h4><table><thead><th width=35%>{{ site.data.site-trans[page.lang].name }}</th><th width=25%>{{ site.data.site-trans[page.lang].affiliation }}</th><th width=25%>{{ site.data.site-trans[page.lang].country }}</th><th width=15%>{{ site.data.site-trans[page.lang].languages }}</th></thead></table>
+{% for page in sorted %}
+{% if page.author == "Gaiya, Musa A. B." %}{% include json-category-index.html parent_lang=parent_lang %}
+{% endif %}{% endfor %}

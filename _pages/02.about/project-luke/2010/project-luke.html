@@ -1,0 +1,43 @@
+---
+layout: archive
+title: "Project Luke Fellows: 2010-2011"
+layout: single-about
+permalink: /about/project-luke-2010/
+lang: en
+languages-available:
+  - en
+  - ' '
+  - ' '
+  - ' '
+---
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}{% assign sorted = site.data.site-content | sort: 'title' %}
+
+<h3>Dr. Kehinde Olabimtan</h3><table bgcolor="#f5f5f5"><tbody><tr>
+<td width=20% style="border-right: 0px !important"><img src="/images/project-luke/Kehinde-Olabimtan.jpg"></td><td width=80%>
+  <b>Years in Residency at OSMC:</b><br>
+  2010-2011<br><br>
+  <b>Positions:</b><br>
+  Coordinator of Educational Ministries, Good News Baptist Church <br>
+  Adjunct Teacher, Akrofi-Christaller Institute, Ghana
+</td></tr></tbody></table><h4>Stories by Dr. Kehinde Olabimtan</h4>
+<table><thead><th width=35%>{{ site.data.site-trans[page.lang].name }}</th><th width=25%>{{ site.data.site-trans[page.lang].affiliation }}</th><th width=25%>{{ site.data.site-trans[page.lang].country }}</th><th width=15%>{{ site.data.site-trans[page.lang].languages }}</th></thead></table>
+{% for page in sorted %}
+{% if page.author == "Olabimtan, Kehinde" %}{% include json-category-index.html parent_lang=parent_lang %}
+{% endif %}{% endfor %}
+<hr>
+
+
+<h3>Rev. Prof. Watson Omulokoli</h3><table bgcolor="#f5f5f5"><tbody><tr>
+<td width=20% style="border-right: 0px !important"><img src="/images/project-luke/Watson-Omulokoli.jpg"></td><td width=80%>
+  <b>Years in Residency at OSMC:</b><br>
+  2010-2011<br><br>
+  <b>Positions:</b><br>
+  Professor of Church History, <br>
+  Department of Philosophy and Religious Studies, Kenyatta University, Kenya; <br>
+  Adjunct Professor, Akrofi-Christaller Institute, Accra, Ghana;<br>
+  Chancellor, Africa International University, Nairobi, Kenya
+</td></tr></tbody></table><h4>Stories by Rev. Prof. Watson Omulokoli</h4>
+<table><thead><th width=35%>{{ site.data.site-trans[page.lang].name }}</th><th width=25%>{{ site.data.site-trans[page.lang].affiliation }}</th><th width=25%>{{ site.data.site-trans[page.lang].country }}</th><th width=15%>{{ site.data.site-trans[page.lang].languages }}</th></thead></table>
+{% for page in sorted %}
+{% if page.author == "Omulokoli, Watson" %}{% include json-category-index.html parent_lang=parent_lang %}
+{% endif %}{% endfor %}

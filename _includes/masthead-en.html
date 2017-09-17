@@ -1,0 +1,114 @@
+
+<div class="masthead-banner">
+<div class="masthead__inner-wrap">
+  <div class="logo">
+      <img src="/assets/images/logo-{{page.lang}}.gif">
+    </div>
+<nav class="top">
+        <label for="drop" class="toggle-m">{{ site.data.site-trans[page.lang].menu }}</label>
+        <input type="checkbox" id="drop" />
+        <ul class="menu">
+<!----------------------------------------------------------------------------------------------------------->
+<!-- HOME --------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------->
+          <li>
+              <label for="drop-0" class="toggle"><div class="drop">{{ site.data.site-trans[page.lang].home }}</div></label>
+              <a href="#"><div class="drop">{{ site.data.site-trans[page.lang].home }}</div></a>
+              <input type="checkbox" id="drop-0"/>
+              <ul class=="top">
+                  <li class="second"><a href="{{ site.url }}/">English</a></li>
+                  <li class="second"><a href="{{ site.url }}/fr/">Français</a></li>
+                  <li class="second"><a href="{{ site.url }}/pt/">Português</a></li>
+                  <li class="second"><a href="{{ site.url }}/sw/">Kiswahili</a></li>
+              </ul>
+          </li>
+<!----------------------------------------------------------------------------------------------------------->
+<!-- STORIES ------------------------------------------------------------------------------------------------>
+<!----------------------------------------------------------------------------------------------------------->
+            <li>
+                <label for="drop-1" class="toggle"><div class="drop">{{ site.data.site-trans[page.lang].stories }}</div></label>
+                <a href="#"><div class="drop">{{ site.data.site-trans[page.lang].stories }}</div></a>
+                <input type="checkbox" id="drop-1"/>
+                <ul class=="top">
+                    <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/sort/stories/">{{ site.data.site-trans[page.lang].all-stories }}</a></li>
+                    <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/sort/stories/latest-sort/">{{ site.data.site-trans[page.lang].latest-stories }}</a></li>
+                    <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/sort/stories/collected-memories/">{{ site.data.site-trans[page.lang].collected-memories }}</a></li>
+                    <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/sort/stories/regional-histories/">{{ site.data.site-trans[page.lang].regional-histories }}</a></li>
+                    <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/sort/stories/country-sort/">{{ site.data.site-trans[page.lang].modern }}</a></li>
+                    <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/sort/stories/ancient-church-index/">{{ site.data.site-trans[page.lang].ancient-map }}</a></li>
+                  </ul>
+            </li>
+<!----------------------------------------------------------------------------------------------------------->
+<!-- ABOUT -------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------->
+            <li>
+            <label for="drop-2" class="toggle"><div class="drop">{{ site.data.site-trans[page.lang].about }}</div></label>
+            <a href="#"><div class="drop">{{ site.data.site-trans[page.lang].about }}</div></a>
+            <input type="checkbox" id="drop-2"/>
+            <ul class=="top">
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/about/what-is-dacb/">{{ site.data.site-trans[page.lang].what-is-dacb }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/about/beginnings/">{{ site.data.site-trans[page.lang].beginnings }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/about/vision/">{{ site.data.site-trans[page.lang].vision }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/about/advisors/">{{ site.data.site-trans[page.lang].advisors }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/about/partner-list/">{{ site.data.site-trans[page.lang].partner-list }}</a></li>
+            </ul>
+            </li>
+<!----------------------------------------------------------------------------------------------------------->
+<!-- RESOURCES  --------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------->
+            <li>
+            <label for="drop-3" class="toggle"><div class="drop">{{ site.data.site-trans[page.lang].resources }}</div></label>
+            <a href="#"><div class="drop">{{ site.data.site-trans[page.lang].resources }}</div></a>
+            <input type="checkbox" id="drop-3"/>
+            <ul class=="top">
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/resources/writers-educators/">{{ site.data.site-trans[page.lang].for-writers-educators }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/resources/researchers/">{{ site.data.site-trans[page.lang].for-further-research }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/resources/bibliographies/">{{ site.data.site-trans[page.lang].bibliographies }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/resources/video/">{{ site.data.site-trans[page.lang].videos }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/resources/links/">{{ site.data.site-trans[page.lang].links }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/resources/potential-subjects/">{{ site.data.site-trans[page.lang].potential-subjects }}</a></li>
+            </ul>
+            </li>
+<!----------------------------------------------------------------------------------------------------------->
+<!-- NEWS --------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------->
+            <li>
+            <label for="drop-6" class="toggle"><div class="drop">{{ site.data.site-trans[page.lang].news }}</div></label>
+            <a href="#"><div class="drop">{{ site.data.site-trans[page.lang].news }}</div></a>
+            <input type="checkbox" id="drop-6"/>
+            <ul class=="top">
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/news/whats-new/">{{ site.data.site-trans[page.lang].whats-new }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/sort/stories/latest-sort/">{{ site.data.site-trans[page.lang].latest-stories }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/news/newsletter/">{{ site.data.site-trans[page.lang].newsletter }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/news/journal/">{{ site.data.site-trans[page.lang].journal }}</a></li>
+            </ul>
+            </li>
+<!----------------------------------------------------------------------------------------------------------->
+<!-- CONTRIBUTE --------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------->
+            <li>
+            <label for="drop-7" class="toggle"><div class="drop">{{ site.data.site-trans[page.lang].contribute }}</div></label>
+            <a href="#"><div class="drop">{{ site.data.site-trans[page.lang].contribute }}</div></a>
+            <input type="checkbox" id="drop-7"/>
+            <ul class=="top">
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/contribute/contact/">{{ site.data.site-trans[page.lang].contact-us }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/contribute/partner/">{{ site.data.site-trans[page.lang].partner }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/contribute/readers/">{{ site.data.site-trans[page.lang].from-our-readers }}</a></li>
+              <li class="second"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/contribute/submit/">{{ site.data.site-trans[page.lang].submit-stories }}</a></li>
+            </ul>
+            </li>
+<!----------------------------------------------------------------------------------------------------------->
+<!-- SEARCH ------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------->
+            <label class="toggle">
+              <a class="search-image" href="/search{{ page.lang | prepend: '-' | remove: '-en' }}.html" style="padding: 0px !important"></a></label>
+                <li class="menu">
+                  <a class="search-image" href="/search{{ page.lang | prepend: '-' | remove: '-en' }}.html" style="padding: 0px !important"></a>
+                </li>
+
+        </ul>
+      </nav>
+</div>
+<div class="masthead-bar-{{page.lang}}">  </div>
+
+</div>

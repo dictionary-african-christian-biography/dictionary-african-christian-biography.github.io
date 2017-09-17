@@ -1,0 +1,75 @@
+<!-- start custom footer snippets -->
+<div class="foot-box">
+
+<!-- ####################################################
+  FIRST COLUMN
+##################################################### -->
+  <div class="box">
+      <h3 style="color:#e0c74f; margin-top:0px;"> {{ site.data.site-trans[page.lang].contact-us }}</h3>
+    <p>  {% if page.lang == 'en' %}
+          <b>Dictionary of African Christian Biography</b></br>
+      {% endif %}
+      {% if page.lang == 'fr' %}
+            <b>Dictionnaire Biographique des Chrétiens d’Afrique</b></br>
+        {% endif %}
+        {% if page.lang == 'pt' %}
+              <b>Dicionario de Biografias Cristãs da África</b></br>
+          {% endif %}
+          {% if page.lang == 'sw' %}
+                <b>Kamusi ya Wasifu wa Wakristo wa Kiafrika</b></br>
+            {% endif %}
+      Center for Global Christianity and Mission</br>
+      745 Commonwealth Avenue</br>
+      Boston, Massachussetts 022, USA</br>
+      Email: dacb@bu.edu</p>
+      <form action="https://www.facebook.com/DictionaryofAfricanChristianBiography">
+          <input type="submit" class="btn-facebook"/>
+      </form>
+  </div>
+
+<!-- ####################################################
+  SECOND COLUMN
+  ##################################################### -->
+  <div class="box">
+      <h3 style="color:#e0c74f; margin-top:0px;">{{ site.data.site-trans[page.lang].submit-stories }}</h3>
+        {% if page.lang == 'en' %}
+          <p style="margin-bottom: 1em;">If you would like to submit a story to the DACB, you will find free resources and submission guidelines <a href="{{ site.url }}/contribute/submit/">here</a>.<br></p>
+          <a href="{{site.url}}/contribute/submit/" class="btn btn--inverse-long">{{ site.data.site-trans[page.lang].submit-stories }}</a>
+        {% endif %}
+        {% if page.lang == 'fr' %}
+          <p style="margin-bottom: 1em;">Si vous souhaitez soumettre un article au DIBICA, vous trouverez des ressources gratuites et des directives de soumission <a href="{{ site.url }}/fr/contribute/submit/">ici</a>.<br></p>
+          <a href="{{site.url}}/fr/contribute/submit/" class="btn btn--inverse-long">{{ site.data.site-trans[page.lang].submit-stories }}</a>
+          {% endif %}
+        {% if page.lang == 'pt' %}
+          <p style="margin-bottom: 1em;">Se você gostaria de enviar uma história ao DACB, você pode encontrar recursos gratuitos e diretrizes de submissão <a href="{{ site.url }}/pt/contribute/submit/">aqui</a>.<br></p>
+          <a href="{{site.url}}/pt/contribute/submit/" class="btn btn--inverse-long">{{ site.data.site-trans[page.lang].submit-stories }}</a>
+        {% endif %}
+        {% if page.lang == 'sw' %}
+          <p style="margin-bottom: 1em;">Ikiwa ungependa kuwasilisha hadithi kwa DACB, unaweza kupata rasilimali za bure na miongozo ya kuwasilisha <a href="{{ site.url }}/sw/contribute/submit/">hapa</a>.<br></p>
+          <a href="{{site.url}}/sw/contribute/submit/" class="btn btn--inverse-long">{{ site.data.site-trans[page.lang].submit-stories }}</a>
+        {% endif %}
+  </div>
+
+<!-- ####################################################
+  THIRD COLUMN
+##################################################### -->
+<div class="box-end">
+    <h3 style="color:#e0c74f; margin-top:0px;">{{ site.data.site-trans[page.lang].newsletter }}</h3>
+    {% if page.lang == 'en' %}
+        <p>Want to stay updated on new happenings at the DACB? Sign up for our e-newsletter here.</p>
+        {% include mailchimp-mini-form.html %}
+    {% endif %}
+    {% if page.lang == 'fr' %}
+        <p>Vous voulez rester à jour sur les nouveaux événements au DIBICA? Inscrivez-vous à notre bulletin électronique ici.</p>
+        {% include mailchimp-mini-form.html %}
+    {% endif %}
+    {% if page.lang == 'pt' %}
+        <p>Quer ficar atualizado sobre novos acontecimentos no DACB? Inscreva-se no nosso boletim informativo aqui.</p>
+        {% include mailchimp-mini-form.html %}
+    {% endif %}
+    {% if page.lang == 'sw' %}
+        <p>Unataka kukaa updated juu ya matukio mapya katika DACB? Ishara kwa jarida letu la e-mail hapa.</p>
+        {% include mailchimp-mini-form.html %}
+    {% endif %}
+</div>
+<!-- end custom footer snippets -->
