@@ -1,0 +1,58 @@
+-
+layout: splash
+lang: en
+languages-available:
+  - en
+  - fr
+  - pt
+  - sw
+feature_row:
+  - image_path: images/home/mveng-resurrection.jpg
+    alt: "The Art and Life of Engelbert Mveng SJ (1930-1995)"
+    title: "The Art of Engelbert Mveng SJ"
+    excerpt: "Fr. Engelbert Mveng SJ was a Cameroonian Jesuit priest, artist and scholar, who researched and published in theology, history and anthropology..."
+    url: "/memories/mveng-engelbert/"
+    btn_label: "Read More"
+    btn_class: "btn--inverse-home"
+  - image_path: images/home/aslibrary.jpg
+    alt: "African Studies Research Guides at Boston University"
+    title: "BU African Studies library"
+    excerpt: "The African Studies Library at Boston University offers many resources, online and offline, to facilitate research on Africa. "
+    url: "http://www.bu.edu/library/african-studies/research/guides/"
+    btn_label: "Read More"
+    btn_class: "btn--inverse-home"
+  - image_path: images/home/octJACB.jpg
+    alt: "The Journal of African Christian Biography"
+    title: "The Journal of African Christian Biography"
+    excerpt: "...October issue is here, featuring articles on Bernard Mizeki, Manche Masemola, and A. Luthuli."
+    url: "/news/journal/"
+    btn_label: "Read More"
+    btn_class: "btn--inverse-home"
+---
+{%capture count%}{% assign ecount = site.data.site-content | where: "lang","en" %}English stories: {{ecount.size}}{% endcapture %}
+
+<p style="text-align: center;"><i>The mission of the DACB is to collect, preserve, and make freely accessible biographical accounts and church histories &ndash; from oral and written sources &ndash; integral to a scholarly understanding of African Christianity.</i></p>
+
+<hr>
+
+{% include feature_row count=count %}
+
+<hr>
+
+<div width="100%" style="margin-right: -10px;">
+  {% include home-select.html %}
+</div>
+
+<div class="language-switch-main"><div class="lang-head">
+  {% if page.languages-available[0] != ' ' %}<div class="en"><a href="{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">English</a></div>{% endif %}
+  {% if page.languages-available[1] != ' ' %}<div class="fr"><a href="/fr{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">Français</a></div>{% endif %}
+  {% if page.languages-available[2] != ' ' %}<div class="pt"><a href="/pt{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">Português</a></div>{% endif %}
+  {% if page.languages-available[3] != ' ' %}<div class="sw"><a href="/sw{{ page.url | relative_url | remove_first:'en/' | remove_first:'fr/' | remove_first:'pt/' | remove_first:'sw/' }}" rel="permalink">Kiswahili</a></div>{% endif %}
+</div></div>
+
+<div class="language-switch"><div class="lang-head">
+<div class="en-light">{% assign ecount = site.data.site-content | where: "lang","en" %}{{site.data.site-trans.en.total}}: {{ecount.size}}</div>
+<div class="fr-light">{% assign fcount = site.data.site-content | where: "lang","fr" %}{{site.data.site-trans.en.total}}: {{fcount.size}}</div>
+<div class="pt-light"> {% assign pcount = site.data.site-content | where: "lang","pt" %}{{site.data.site-trans.en.total}}: {{pcount.size}}</div>
+<div class="sw-light">{% assign scount = site.data.site-content | where: "lang","sw" %}{{site.data.site-trans.en.total}}: {{scount.size}}</div>
+</div></div>
