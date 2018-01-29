@@ -502,10 +502,10 @@
 <loc>/pt/stories/south-africa/anderson-william/</loc>
 </url>
 <url>
-<loc>/stories/nigeria/anderson-william/</loc>
+<loc>/stories/south-africa/anderson-william/</loc>
 </url>
 <url>
-<loc>/stories/south-africa/anderson-william/</loc>
+<loc>/stories/nigeria/anderson-william/</loc>
 </url>
 <url>
 <loc>/fr/stories/capeverde/andrade-alvaro/</loc>
@@ -3172,6 +3172,9 @@
 <loc>/stories/sudan/gwynne-llewellynh2/</loc>
 </url>
 <url>
+<loc>/stories/egypt/habib-samuel/</loc>
+</url>
+<url>
 <loc>/fr/stories/mali/hacquard-prosper/</loc>
 </url>
 <url>
@@ -3400,6 +3403,9 @@
 <loc>/stories/nigeria/ilori-joseph/</loc>
 </url>
 <url>
+<loc>/</loc>
+</url>
+<url>
 <loc>/sw/</loc>
 </url>
 <url>
@@ -3407,9 +3413,6 @@
 </url>
 <url>
 <loc>/pt/</loc>
-</url>
-<url>
-<loc>/</loc>
 </url>
 <url>
 <loc>/stories/nigeria/inuwa-ayuba/</loc>
