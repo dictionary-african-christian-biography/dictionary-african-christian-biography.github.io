@@ -99,7 +99,7 @@ languages: ["en", "fr", "pt", "sw"]
 exclude_from_localization: ["javascript", "images", "css", "public"]
 
 # Plugins
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
