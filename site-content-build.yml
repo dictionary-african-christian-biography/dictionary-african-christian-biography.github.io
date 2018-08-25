@@ -140,6 +140,29 @@
   tags: ""
   url: "/stories/uganda/pirouet-appendixa-sources/"
 
+- title : "title"
+  date: "2017-10-12"
+  index: ""
+  century: ""
+  tradition: ""
+  affiliation0: ""
+  affiliation1: ""
+  affiliation2: ""
+  categories: ""
+  lang: "en"
+  languages-available0: " "
+  languages-available1: " "
+  languages-available2: " "
+  languages-available3: " "
+  author: ""
+  institution: ""
+  upload: ""
+  country0: ""
+  country1: ""
+  country2: ""
+  tags: ""
+  url: ""
+
 - title : "Abayomi-Cole, John Augustus"
   date: "1846-1943"
   index: "primary"
@@ -621,7 +644,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/adams-george/"
+  url: "/stories/southafrica/adams-george/"
 
 - title : "Ade Ajayi, Jacob"
   date: "1929-2014"
@@ -1518,7 +1541,7 @@
   country1: ""
   country2: ""
   tags: "photo, "
-  url: "/fr/stories/south-africa/africaner-christian/"
+  url: "/fr/stories/southafrica/africaner-christian/"
 
 - title : "Africaner, Jager Christian"
   date: "1769-1822"
@@ -1541,7 +1564,7 @@
   country1: ""
   country2: ""
   tags: "photo, "
-  url: "/pt/stories/south-africa/africaner-christian/"
+  url: "/pt/stories/southafrica/africaner-christian/"
 
 - title : "Africaner, Jager Christian"
   date: "1769-1822"
@@ -1564,7 +1587,7 @@
   country1: ""
   country2: ""
   tags: "photo, "
-  url: "/stories/south-africa/africaner-christian/"
+  url: "/stories/southafrica/africaner-christian/"
 
 - title : "Afsé (&#39;Afsé)"
   date: "400s-500s"
@@ -2875,7 +2898,7 @@
   country1: ""
   country2: ""
   tags: "photo, women, "
-  url: "/stories/south-africa/alexander-june/"
+  url: "/stories/southafrica/alexander-june/"
 
 - title : "Aleyideino, Habila"
   date: "1907-1992"
@@ -3381,7 +3404,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/fr/stories/south-africa/andersen-oscar/"
+  url: "/fr/stories/southafrica/andersen-oscar/"
 
 - title : "Andersen, Oscar"
   date: "1931-1996"
@@ -3404,7 +3427,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/pt/stories/south-africa/andersen-oscar/"
+  url: "/pt/stories/southafrica/andersen-oscar/"
 
 - title : "Andersen, Oscar"
   date: "1931-1996"
@@ -3427,7 +3450,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/andersen-oscar/"
+  url: "/stories/southafrica/andersen-oscar/"
 
 - title : "Anderson, Anton C."
   date: "1888-1956"
@@ -3496,7 +3519,7 @@
   country1: "zimbabwe"
   country2: "botswana"
   tags: "missionary, "
-  url: "/pt/stories/south-africa/anderson-wh/"
+  url: "/pt/stories/southafrica/anderson-wh/"
 
 - title : "Anderson, William Harrison (A)"
   date: "1870-1950"
@@ -3519,7 +3542,7 @@
   country1: "zimbabwe"
   country2: "botswana"
   tags: "missionary, "
-  url: "/stories/south-africa/anderson-wh/"
+  url: "/stories/southafrica/anderson-wh/"
 
 - title : "Anderson, William Harrison (B)"
   date: "1870-1950"
@@ -3542,7 +3565,7 @@
   country1: "zimbabwe"
   country2: "botswana"
   tags: "missionary, "
-  url: "/stories/south-africa/anderson-wh2/"
+  url: "/stories/southafrica/anderson-wh2/"
 
 - title : "Anderson, William (South Africa)"
   date: "1769-1852"
@@ -3565,30 +3588,7 @@
   country1: ""
   country2: ""
   tags: "missionary, "
-  url: "/pt/stories/south-africa/anderson-william/"
-
-- title : "Anderson, William (South Africa)"
-  date: "1769-1852"
-  index: "primary"
-  century: "19th, 18th"
-  tradition: "protestant"
-  affiliation0: "london missionary society"
-  affiliation1: ""
-  affiliation2: ""
-  categories: "a"
-  lang: "en"
-  languages-available0: "en"
-  languages-available1: " "
-  languages-available2: "pt"
-  languages-available3: " "
-  author: "Ross, Andrew C."
-  institution: "none"
-  upload: "2011-01-01"
-  country0: "south africa"
-  country1: ""
-  country2: ""
-  tags: "missionary, "
-  url: "/stories/south-africa/anderson-william/"
+  url: "/pt/stories/southafrica/anderson-william/"
 
 - title : "Anderson, William (Nigeria)"
   date: "1812-1895"
@@ -3612,6 +3612,29 @@
   country2: ""
   tags: ""
   url: "/stories/nigeria/anderson-william/"
+
+- title : "Anderson, William (South Africa)"
+  date: "1769-1852"
+  index: "primary"
+  century: "19th, 18th"
+  tradition: "protestant"
+  affiliation0: "london missionary society"
+  affiliation1: ""
+  affiliation2: ""
+  categories: "a"
+  lang: "en"
+  languages-available0: "en"
+  languages-available1: " "
+  languages-available2: "pt"
+  languages-available3: " "
+  author: "Ross, Andrew C."
+  institution: "none"
+  upload: "2011-01-01"
+  country0: "south africa"
+  country1: ""
+  country2: ""
+  tags: "missionary, "
+  url: "/stories/southafrica/anderson-william/"
 
 - title : "Andrade, Álvaro Barbosa"
   date: "1900s-2000s"
@@ -4186,7 +4209,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/stories/south-africa/apie-hans/"
+  url: "/stories/southafrica/apie-hans/"
 
 - title : "Apollonius"
   date: "183"
@@ -4347,7 +4370,7 @@
   country1: "botswana"
   country2: "lesotho"
   tags: "missionary, translator, "
-  url: "/stories/south-africa/archbell-james/"
+  url: "/stories/southafrica/archbell-james/"
 
 - title : "Aragawi, Mikael (B)"
   date: "1848-1931"
@@ -4439,7 +4462,7 @@
   country1: ""
   country2: ""
   tags: "missionary, "
-  url: "/stories/south-africa/armitage-frank/"
+  url: "/stories/southafrica/armitage-frank/"
 
 - title : "Arnot, Frederick Stanley (A)"
   date: "1858-1914"
@@ -4738,7 +4761,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, photo, "
-  url: "/fr/stories/south-africa/asia-abel/"
+  url: "/fr/stories/southafrica/asia-abel/"
 
 - title : "Asia, Abel Johannes"
   date: "died 1978"
@@ -4761,7 +4784,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, photo, "
-  url: "/stories/south-africa/asia-abel/"
+  url: "/stories/southafrica/asia-abel/"
 
 - title : "Asqä-Léwi (&#39;Asqä-Léwi)"
   date: "800s-900s"
@@ -6509,7 +6532,7 @@
   country1: ""
   country2: ""
   tags: ""
-  url: "/pt/stories/south-africa/balfour-noyi/"
+  url: "/pt/stories/southafrica/balfour-noyi/"
 
 - title : "Balfour, Noyi"
   date: "1783-1873"
@@ -6532,7 +6555,7 @@
   country1: ""
   country2: ""
   tags: ""
-  url: "/stories/south-africa/balfour-noyi/"
+  url: "/stories/southafrica/balfour-noyi/"
 
 - title : "Balikudembe, Yokana Mukasa"
   date: "1917-2005"
@@ -7958,7 +7981,7 @@
   country1: ""
   country2: ""
   tags: "missionary, translator, "
-  url: "/pt/stories/south-africa/berthoud-creux/"
+  url: "/pt/stories/southafrica/berthoud-creux/"
 
 - title : "Creux, Ernest and Paul Berthoud"
   date: "1845-1929; 1847-1930"
@@ -7981,7 +8004,7 @@
   country1: "mozambique"
   country2: ""
   tags: "medical, missionary, translator, "
-  url: "/stories/south-africa/berthoud-creux/"
+  url: "/stories/southafrica/berthoud-creux/"
 
 - title : "Berthoud, Henri"
   date: "1855-1904"
@@ -8004,7 +8027,7 @@
   country1: "mozambique"
   country2: ""
   tags: "missionary, translator, "
-  url: "/fr/stories/south-africa/berthoud-henri/"
+  url: "/fr/stories/southafrica/berthoud-henri/"
 
 - title : "Berthoud, Paul (A)"
   date: "1847-1930"
@@ -8027,7 +8050,7 @@
   country1: "mozambique"
   country2: ""
   tags: "medical, missionary, translator, "
-  url: "/fr/stories/south-africa/berthoud-paul/"
+  url: "/fr/stories/southafrica/berthoud-paul/"
 
 - title : "Berthoud, Paul (B)"
   date: "1847-1930"
@@ -8050,7 +8073,7 @@
   country1: "mozambique"
   country2: ""
   tags: "medical, missionary, translator, "
-  url: "/stories/south-africa/berthoud-paul2/"
+  url: "/stories/southafrica/berthoud-paul2/"
 
 - title : "Bertrou, Marie"
   date: "1857-1933"
@@ -8303,7 +8326,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/stories/south-africa/bhengu-nicholas/"
+  url: "/stories/southafrica/bhengu-nicholas/"
 
 - title : "Biayenda, Emile"
   date: "1927-1977"
@@ -8648,7 +8671,7 @@
   country1: ""
   country2: ""
   tags: "missionary, "
-  url: "/pt/stories/south-africa/bisseux-isaac/"
+  url: "/pt/stories/southafrica/bisseux-isaac/"
 
 - title : "Bisseux, Isaac (A)"
   date: "1807-1896"
@@ -8671,7 +8694,7 @@
   country1: ""
   country2: ""
   tags: "missionary, "
-  url: "/stories/south-africa/bisseux-isaac/"
+  url: "/stories/southafrica/bisseux-isaac/"
 
 - title : "Bisseux, Isaac (B)"
   date: "1807-1896"
@@ -8694,7 +8717,7 @@
   country1: ""
   country2: ""
   tags: "missionary, "
-  url: "/fr/stories/south-africa/bisseux-isaac2/"
+  url: "/fr/stories/southafrica/bisseux-isaac2/"
 
 - title : "Bitaka, Petero"
   date: "1938"
@@ -8786,7 +8809,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/biyase-dela/"
+  url: "/stories/southafrica/biyase-dela/"
 
 - title : "Blackledge, George Robert"
   date: "1869-1945"
@@ -8832,7 +8855,7 @@
   country1: ""
   country2: ""
   tags: ""
-  url: "/fr/stories/south-africa/blamey-cyril/"
+  url: "/fr/stories/southafrica/blamey-cyril/"
 
 - title : "Blamey, Cyril"
   date: "1898-1968"
@@ -8855,7 +8878,7 @@
   country1: ""
   country2: ""
   tags: "missionary, photo, "
-  url: "/stories/south-africa/blamey-cyril/"
+  url: "/stories/southafrica/blamey-cyril/"
 
 - title : "Bohner, Heinrich"
   date: "1842-1905"
@@ -9039,7 +9062,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, musician, "
-  url: "/stories/south-africa/bokwe-john-knox/"
+  url: "/stories/southafrica/bokwe-john-knox/"
 
 - title : "Bokwe, John Knox (A)"
   date: "1855-1922"
@@ -9062,7 +9085,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, musician, "
-  url: "/fr/stories/south-africa/bokwe-johnknox/"
+  url: "/fr/stories/southafrica/bokwe-johnknox/"
 
 - title : "Bokwe, John Knox (A)"
   date: "1855-1922"
@@ -9085,7 +9108,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, musician, "
-  url: "/pt/stories/south-africa/bokwe-johnknox/"
+  url: "/pt/stories/southafrica/bokwe-johnknox/"
 
 - title : "Bokwe, John Knox (A)"
   date: "1855-1922"
@@ -9108,7 +9131,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, musician, "
-  url: "/stories/south-africa/bokwe-johnknox/"
+  url: "/stories/southafrica/bokwe-johnknox/"
 
 - title : "Bompete Ekeka, Robert"
   date: "1963-2000"
@@ -9430,7 +9453,7 @@
   country1: ""
   country2: ""
   tags: "ecumenist, missionary, scholar, theologian, "
-  url: "/stories/south-africa/bosch-legacy/"
+  url: "/stories/southafrica/bosch-legacy/"
 
 - title : "Bosch, David Jacobus (A)"
   date: "1929-1992"
@@ -9453,7 +9476,7 @@
   country1: ""
   country2: ""
   tags: "ecumenist, missionary, scholar, theologian, "
-  url: "/pt/stories/south-africa/bosch2-david/"
+  url: "/pt/stories/southafrica/bosch2-david/"
 
 - title : "Bosch, David Jacobus (A)"
   date: "1929-1992"
@@ -9476,7 +9499,7 @@
   country1: ""
   country2: ""
   tags: "ecumenist, missionary, scholar, theologian, "
-  url: "/stories/south-africa/bosch2-david/"
+  url: "/stories/southafrica/bosch2-david/"
 
 - title : "Bosompem, Joseph"
   date: "1848-193?"
@@ -9568,7 +9591,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/fr/stories/south-africa/botha-christopher/"
+  url: "/fr/stories/southafrica/botha-christopher/"
 
 - title : "Botha, Christopher"
   date: "1916-1986"
@@ -9591,7 +9614,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/pt/stories/south-africa/botha-christopher/"
+  url: "/pt/stories/southafrica/botha-christopher/"
 
 - title : "Botha, Christopher"
   date: "1916-1986"
@@ -9614,7 +9637,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/botha-christopher/"
+  url: "/stories/southafrica/botha-christopher/"
 
 - title : "Boucheix, Noël"
   date: "1900-1985"
@@ -10097,7 +10120,7 @@
   country1: ""
   country2: ""
   tags: "catechist, clergy, "
-  url: "/fr/stories/south-africa/brander-samuel/"
+  url: "/fr/stories/southafrica/brander-samuel/"
 
 - title : "Brander, Samuel James"
   date: "1851-"
@@ -10120,7 +10143,7 @@
   country1: ""
   country2: ""
   tags: "catechist, clergy, "
-  url: "/stories/south-africa/brander-samuel/"
+  url: "/stories/southafrica/brander-samuel/"
 
 - title : "Brandsma, Gorgonius"
   date: "1874-1935"
@@ -10304,7 +10327,7 @@
   country1: ""
   country2: ""
   tags: "scholar, "
-  url: "/stories/south-africa/brookes-edgar/"
+  url: "/stories/southafrica/brookes-edgar/"
 
 - title : "Brownlee, John"
   date: "1791-1871"
@@ -10327,7 +10350,7 @@
   country1: ""
   country2: ""
   tags: "missionary, "
-  url: "/stories/south-africa/brownlee-john/"
+  url: "/stories/southafrica/brownlee-john/"
 
 - title : "Brubaker, Henry Heisey"
   date: "1900-1972"
@@ -10580,7 +10603,7 @@
   country1: ""
   country2: ""
   tags: "clergy, nationalist, photo, "
-  url: "/stories/south-africa/burgers-thomas/"
+  url: "/stories/southafrica/burgers-thomas/"
 
 - title : "Lungundu, Bushiri"
   date: "1911-1945"
@@ -10672,7 +10695,7 @@
   country1: ""
   country2: ""
   tags: "clergy, nationalist, photo, "
-  url: "/stories/south-africa/butelezi-peter/"
+  url: "/stories/southafrica/butelezi-peter/"
 
 - title : "Buthelezi, Manas"
   date: "1935-"
@@ -10695,7 +10718,7 @@
   country1: ""
   country2: ""
   tags: "clergy, ecumenist, scholar, theologian, "
-  url: "/stories/south-africa/buthelezi-manas/"
+  url: "/stories/southafrica/buthelezi-manas/"
 
 - title : "Shukai, Butrus Tia"
   date: "1931-1985"
@@ -10994,7 +11017,7 @@
   country1: ""
   country2: ""
   tags: "clergy, nationalist, persecuted, "
-  url: "/stories/south-africa/calata-james/"
+  url: "/stories/southafrica/calata-james/"
 
 - title : "Camboué, Paul"
   date: "1849-1929"
@@ -11155,7 +11178,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/campbell-john/"
+  url: "/stories/southafrica/campbell-john/"
 
 - title : "Campbell, John (B)"
   date: "1766-1840"
@@ -11178,7 +11201,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/campbell-john2/"
+  url: "/stories/southafrica/campbell-john2/"
 
 - title : "Camphor, Alexander Priestly"
   date: "1865-1919"
@@ -11569,7 +11592,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, translator, "
-  url: "/stories/south-africa/casalis-eugene/"
+  url: "/stories/southafrica/casalis-eugene/"
 
 - title : "Casalis, Eugène (B)"
   date: "1812-1891"
@@ -11592,7 +11615,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, translator, "
-  url: "/stories/south-africa/casalis-eugene2/"
+  url: "/stories/southafrica/casalis-eugene2/"
 
 - title : "Cash, William Wilson"
   date: "1880-1955"
@@ -11753,7 +11776,7 @@
   country1: ""
   country2: ""
   tags: "women, "
-  url: "/stories/south-africa/cecile-mother/"
+  url: "/stories/southafrica/cecile-mother/"
 
 - title : "Cekwane, Timothy (A)"
   date: "1893-1949"
@@ -11776,7 +11799,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/fr/stories/south-africa/cekwane-timothy/"
+  url: "/fr/stories/southafrica/cekwane-timothy/"
 
 - title : "Cekwane, Timothy (A)"
   date: "1893-1949"
@@ -11799,7 +11822,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/stories/south-africa/cekwane-timothy/"
+  url: "/stories/southafrica/cekwane-timothy/"
 
 - title : "Cekwane, Timothy (B)"
   date: "1873-1949"
@@ -11822,7 +11845,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/stories/south-africa/cekwane-timothy2/"
+  url: "/stories/southafrica/cekwane-timothy2/"
 
 - title : "Celadion"
   date: "153?-167?"
@@ -11937,7 +11960,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/chabalala-johannes/"
+  url: "/stories/southafrica/chabalala-johannes/"
 
 - title : "Chabert, Jean-Marie"
   date: "1874-1933"
@@ -12811,7 +12834,7 @@
   country1: ""
   country2: ""
   tags: ""
-  url: "/stories/south-africa/chirwa-florence-goodwin/"
+  url: "/stories/southafrica/chirwa-florence-goodwin/"
 
 - title : "Chissale, Bernardo"
   date: "1962-2002"
@@ -13570,7 +13593,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, missionary, photo, "
-  url: "/stories/south-africa/coetzer-christiaan/"
+  url: "/stories/southafrica/coetzer-christiaan/"
 
 - title : "Coillard, François (B)"
   date: "1834-1904"
@@ -13961,7 +13984,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, photo, theologian, "
-  url: "/pt/stories/south-africa/colenso-john/"
+  url: "/pt/stories/southafrica/colenso-john/"
 
 - title : "Colenso, John William (A)"
   date: "1814-1893"
@@ -13984,7 +14007,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, photo, theologian, "
-  url: "/stories/south-africa/colenso-john/"
+  url: "/stories/southafrica/colenso-john/"
 
 - title : "Colenso, John William (B)"
   date: "1814-1883"
@@ -14007,7 +14030,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, photo, theologian, "
-  url: "/stories/south-africa/colenso-john2/"
+  url: "/stories/southafrica/colenso-john2/"
 
 - title : "Colenso, John William (C)"
   date: "1814-1883"
@@ -14030,7 +14053,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, photo, theologian, "
-  url: "/stories/south-africa/colenso-john3/"
+  url: "/stories/southafrica/colenso-john3/"
 
 - title : "Colin, Élie"
   date: "1852-1923"
@@ -14812,7 +14835,7 @@
   country1: ""
   country2: ""
   tags: "medical, missionary, "
-  url: "/stories/south-africa/creux-ernest/"
+  url: "/stories/southafrica/creux-ernest/"
 
 - title : "Creux, Ernest (B)"
   date: "1845-1929"
@@ -14835,7 +14858,7 @@
   country1: ""
   country2: ""
   tags: "medical, missionary, "
-  url: "/fr/stories/south-africa/creux-ernest2/"
+  url: "/fr/stories/southafrica/creux-ernest2/"
 
 - title : "Cripps, Arthur Shearly (A)"
   date: "1869-1952"
@@ -15824,7 +15847,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, photo, "
-  url: "/stories/south-africa/danker-albert/"
+  url: "/stories/southafrica/danker-albert/"
 
 - title : "Dankwa, Samuel"
   date: "1903-1958"
@@ -15939,7 +15962,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/david-gabriel/"
+  url: "/stories/southafrica/david-gabriel/"
 
 - title : "Davidson, Andrew"
   date: "1836-1918"
@@ -16974,7 +16997,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, women, "
-  url: "/stories/south-africa/dibakwane-jandl/"
+  url: "/stories/southafrica/dibakwane-jandl/"
 
 - title : "Dibble, Raymond T."
   date: "1900-1967"
@@ -17161,7 +17184,7 @@
   url: "/fr/stories/democratic-republic-of-congo/djimbo-kubala/"
 
 - title : "Dlamini, Bonaventure"
-  date: "1981"
+  date: "?-1981"
   index: "secondary"
   century: "20th"
   tradition: "catholic"
@@ -17181,7 +17204,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, photo, "
-  url: "/fr/stories/south-africa/dlamini-bonaventure/"
+  url: "/fr/stories/southafrica/dlamini-bonaventure/"
 
 - title : "Dlamini, Bonaventure"
   date: "?-1981"
@@ -17204,7 +17227,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, photo, "
-  url: "/stories/south-africa/dlamini-bonaventure/"
+  url: "/stories/southafrica/dlamini-bonaventure/"
 
 - title : "Dlamini, Dan"
   date: "1922-1977"
@@ -17480,7 +17503,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/dlamini-simon/"
+  url: "/stories/southafrica/dlamini-simon/"
 
 - title : "Dlamini, Titus Bukani"
   date: "1899-1988"
@@ -17503,7 +17526,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/stories/south-africa/dlamini-titus/"
+  url: "/stories/southafrica/dlamini-titus/"
 
 - title : "Dobinson, Henry Hughes"
   date: "1863-1897"
@@ -17618,7 +17641,7 @@
   country1: "zambia"
   country2: ""
   tags: "clergy, missionary, translator, "
-  url: "/stories/south-africa/doke-clement/"
+  url: "/stories/southafrica/doke-clement/"
 
 - title : "Doke, Clement Martyn (B)"
   date: "1893-1980"
@@ -17641,7 +17664,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, translator, "
-  url: "/stories/south-africa/doke-clement2/"
+  url: "/stories/southafrica/doke-clement2/"
 
 - title : "Doke, Joseph John (A)"
   date: "1861-1913"
@@ -17664,7 +17687,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/doke-jj/"
+  url: "/stories/southafrica/doke-jj/"
 
 - title : "Doke, Joseph John (B)"
   date: "1861-1913"
@@ -17687,7 +17710,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/doke-jj2/"
+  url: "/stories/southafrica/doke-jj2/"
 
 - title : "Kambeke, Doko"
   date: "1922-1999"
@@ -18124,7 +18147,7 @@
   country1: ""
   country2: ""
   tags: "clergy, nationalist, photo, "
-  url: "/pt/stories/south-africa/dube-john/"
+  url: "/pt/stories/southafrica/dube-john/"
 
 - title : "Dube, John Langalibalele (A)"
   date: "1871-1946"
@@ -18147,7 +18170,7 @@
   country1: ""
   country2: ""
   tags: "clergy, nationalist, photo, "
-  url: "/stories/south-africa/dube-john/"
+  url: "/stories/southafrica/dube-john/"
 
 - title : "Dube, John Langalibalele (C)"
   date: "1871-1949"
@@ -18170,7 +18193,7 @@
   country1: ""
   country2: ""
   tags: "clergy, nationalist, photo, "
-  url: "/stories/south-africa/dube-john2/"
+  url: "/stories/southafrica/dube-john2/"
 
 - title : "Dube, John Langalibalele (B)"
   date: "1871-1946"
@@ -18193,7 +18216,7 @@
   country1: ""
   country2: ""
   tags: "clergy, nationalist, photo, "
-  url: "/stories/south-africa/dube1-johnl/"
+  url: "/stories/southafrica/dube1-johnl/"
 
 - title : "Ducard, Télesphore"
   date: "1826-1904"
@@ -18285,7 +18308,7 @@
   country1: "zimbabwe"
   country2: "namibia"
   tags: "clergy, evangelist, "
-  url: "/stories/south-africa/duma-william/"
+  url: "/stories/southafrica/duma-william/"
 
 - title : "Du Mas de Paysac, Pierre"
   date: "1884-1948"
@@ -18377,7 +18400,7 @@
   country1: ""
   country2: ""
   tags: "clergy, scholar, theologian, "
-  url: "/stories/south-africa/duplessis-johannes/"
+  url: "/stories/southafrica/duplessis-johannes/"
 
 - title : "Dupont, Joseph"
   date: "1850-1930"
@@ -18515,7 +18538,7 @@
   country1: ""
   country2: ""
   tags: "nationalist, photo, translator, "
-  url: "/stories/south-africa/dutoit-stephanus/"
+  url: "/stories/southafrica/dutoit-stephanus/"
 
 - title : "Du Toit, Stephanus Jacobus (B)"
   date: "1867-1911"
@@ -18538,7 +18561,7 @@
   country1: ""
   country2: ""
   tags: "nationalist, photo, translator, "
-  url: "/stories/south-africa/dutoit-stephanus2/"
+  url: "/stories/southafrica/dutoit-stephanus2/"
 
 - title : "Dwakaikara, Andereya"
   date: "1863-1965"
@@ -18584,7 +18607,7 @@
   country1: ""
   country2: ""
   tags: "clergy, evangelist, "
-  url: "/fr/stories/south-africa/dwane-james/"
+  url: "/fr/stories/southafrica/dwane-james/"
 
 - title : "Dwane, James Mata (A)"
   date: "1848-1916"
@@ -18607,7 +18630,7 @@
   country1: ""
   country2: ""
   tags: "clergy, evangelist, "
-  url: "/stories/south-africa/dwane-james/"
+  url: "/stories/southafrica/dwane-james/"
 
 - title : "Dwane, James Mata (B)"
   date: "1848-1915"
@@ -18630,7 +18653,7 @@
   country1: ""
   country2: ""
   tags: "clergy, evangelist, "
-  url: "/stories/south-africa/dwane2-james/"
+  url: "/stories/southafrica/dwane2-james/"
 
 - title : "Dwane, James Mata (C)"
   date: "1848-1915"
@@ -18653,7 +18676,7 @@
   country1: ""
   country2: ""
   tags: "clergy, evangelist, "
-  url: "/stories/south-africa/dwane3-james/"
+  url: "/stories/southafrica/dwane3-james/"
 
 - title : "Dwatuka, Gabriel"
   date: "1922-1990"
@@ -18860,7 +18883,7 @@
   country1: ""
   country2: ""
   tags: "missionary, women, "
-  url: "/stories/south-africa/edwards-mary/"
+  url: "/stories/southafrica/edwards-mary/"
 
 - title : "Éfrém Soreyawi (&#39;Éfrém Soreyawi)"
   date: "306-c. 375"
@@ -19527,7 +19550,7 @@
   country1: ""
   country2: ""
   tags: "missionary, photo, "
-  url: "/stories/south-africa/emslie-rex/"
+  url: "/stories/southafrica/emslie-rex/"
 
 - title : "Enbaqom"
   date: "1561"
@@ -20861,7 +20884,7 @@
   country1: ""
   country2: ""
   tags: "missionary, women, "
-  url: "/stories/south-africa/ferguson-bliss/"
+  url: "/stories/southafrica/ferguson-bliss/"
 
 - title : "Ferguson, Samuel David"
   date: "1842-1916"
@@ -21068,7 +21091,7 @@
   country1: ""
   country2: ""
   tags: "clergy, persecuted, "
-  url: "/stories/south-africa/ffrench-beytagh/"
+  url: "/stories/southafrica/ffrench-beytagh/"
 
 - title : "Fiandrino, Giovanni"
   date: "1903-1974"
@@ -21344,7 +21367,7 @@
   country1: ""
   country2: ""
   tags: "missionary, women, "
-  url: "/stories/south-africa/forsyth-christina/"
+  url: "/stories/southafrica/forsyth-christina/"
 
 - title : "Frachey, Jacques"
   date: "1617-1667"
@@ -22747,7 +22770,7 @@
   country1: "lesotho"
   country2: ""
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/gerard-joseph/"
+  url: "/stories/southafrica/gerard-joseph/"
 
 - title : "Gersem"
   date: "700s"
@@ -23069,7 +23092,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/goduka-jonas/"
+  url: "/stories/southafrica/goduka-jonas/"
 
 - title : "Gollmer, Carl Anders"
   date: "1812-1886"
@@ -23322,7 +23345,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/govan-william/"
+  url: "/stories/southafrica/govan-william/"
 
 - title : "Gowon, Yohanna"
   date: "1882-1973"
@@ -23391,7 +23414,7 @@
   country1: ""
   country2: ""
   tags: "scholar, "
-  url: "/stories/south-africa/gqoba-william/"
+  url: "/stories/southafrica/gqoba-william/"
 
 - title : "Graf, John Ulrich"
   date: "1811-1887"
@@ -23483,7 +23506,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/gray-robert/"
+  url: "/stories/southafrica/gray-robert/"
 
 - title : "Gray, Robert (B)"
   date: "1809-1872"
@@ -23506,7 +23529,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/gray-robert2/"
+  url: "/stories/southafrica/gray-robert2/"
 
 - title : "Green, George (Jr.)"
   date: "1872-1962"
@@ -24081,7 +24104,7 @@
   country1: ""
   country2: ""
   tags: "medical, missionary, photo, "
-  url: "/stories/south-africa/gutsche-carl/"
+  url: "/stories/southafrica/gutsche-carl/"
 
 - title : "Gwynne, Llewellyn Henry (A)"
   date: "1863-1957"
@@ -24655,7 +24678,7 @@
   country0: "liberia"
   country1: "ghana"
   country2: "cote divoire"
-  tags: "clergy, ecumenist, evangelist, missionary, photo, "
+  tags: "clergy, evangelist, missionary, photo, "
   url: "/fr/stories/liberia/legacy-harris/"
 
 - title : "Harris, William Wadé (D)"
@@ -24678,7 +24701,7 @@
   country0: "liberia"
   country1: "ghana"
   country2: "cote divoire"
-  tags: "clergy, ecumenist, evangelist, missionary, photo, "
+  tags: "clergy, evangelist, missionary, photo, "
   url: "/stories/liberia/legacy-harris/"
 
 - title : "Harris, William Wadé (A)"
@@ -24701,7 +24724,7 @@
   country0: "liberia"
   country1: "ghana"
   country2: "cote divoire"
-  tags: "clergy, ecumenist, evangelist, missionary, photo, "
+  tags: "clergy, evangelist, missionary, photo, "
   url: "/stories/liberia/harris-william/"
 
 - title : "Harris, William Wadé (B)"
@@ -24724,7 +24747,7 @@
   country0: "liberia"
   country1: "ghana"
   country2: "cote divoire"
-  tags: "clergy, ecumenist, evangelist, missionary, photo, "
+  tags: "clergy, evangelist, missionary, photo, "
   url: "/stories/liberia/harris1-william/"
 
 - title : "Harris, William Wadé (C)"
@@ -24747,7 +24770,7 @@
   country0: "liberia"
   country1: "ghana"
   country2: "cote divoire"
-  tags: "clergy, ecumenist, evangelist, missionary, photo, "
+  tags: "clergy, evangelist, missionary, photo, "
   url: "/pt/stories/liberia/harris4-william/"
 
 - title : "Harris, William Wadé (C)"
@@ -24770,7 +24793,7 @@
   country0: "liberia"
   country1: "ghana"
   country2: "cote divoire"
-  tags: "clergy, ecumenist, evangelist, missionary, photo, "
+  tags: "clergy, evangelist, missionary, photo, "
   url: "/stories/liberia/harris4-william/"
 
 - title : "Harris, William Wadé (E)"
@@ -24793,7 +24816,7 @@
   country0: "liberia"
   country1: "ghana"
   country2: "cote divoire"
-  tags: "clergy, ecumenist, evangelist, missionary, photo, "
+  tags: "clergy, evangelist, missionary, photo, "
   url: "/stories/liberia/harris5-william/"
 
 - title : "Hatäz"
@@ -25001,7 +25024,7 @@
   country1: ""
   country2: ""
   tags: "missionary, "
-  url: "/stories/south-africa/henderson-james/"
+  url: "/stories/southafrica/henderson-james/"
 
 - title : "Henrique (Dom)"
   date: "1495-c.1526"
@@ -25277,7 +25300,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/hlatshwayo-daniel/"
+  url: "/stories/southafrica/hlatshwayo-daniel/"
 
 - title : "Hlatshwayo, Joseph"
   date: "1948-2002"
@@ -25300,7 +25323,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/hlatshwayo-joseph/"
+  url: "/stories/southafrica/hlatshwayo-joseph/"
 
 - title : "Hofmeyr, Stefanus"
   date: "1839-1905"
@@ -25323,7 +25346,7 @@
   country1: ""
   country2: ""
   tags: "missionary, "
-  url: "/stories/south-africa/hofmeyr-stefanus/"
+  url: "/stories/southafrica/hofmeyr-stefanus/"
 
 - title : "Holmes, Sydney"
   date: "1929-1987"
@@ -25346,7 +25369,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/holmes-sydney/"
+  url: "/stories/southafrica/holmes-sydney/"
 
 - title : "Hopa, Ephraim Langton Mzamo"
   date: "1900s"
@@ -25369,7 +25392,7 @@
   country1: ""
   country2: ""
   tags: ""
-  url: "/stories/south-africa/hopa-ephraim/"
+  url: "/stories/southafrica/hopa-ephraim/"
 
 - title : "Horton, James Africanus B."
   date: "1830s-"
@@ -25438,7 +25461,7 @@
   country1: "tanzania"
   country2: "mauritius"
   tags: "clergy, missionary, "
-  url: "/fr/stories/south-africa/huddleston-trevor/"
+  url: "/fr/stories/southafrica/huddleston-trevor/"
 
 - title : "Huddleston, Trevor (A)"
   date: "1913"
@@ -25461,7 +25484,7 @@
   country1: "tanzania"
   country2: "mauritius"
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/huddleston-trevor/"
+  url: "/stories/southafrica/huddleston-trevor/"
 
 - title : "Huddleston, Trevor (B)"
   date: "1913-1998"
@@ -25484,7 +25507,7 @@
   country1: "tanzania"
   country2: "mauritius"
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/huddleston-trevor2/"
+  url: "/stories/southafrica/huddleston-trevor2/"
 
 - title : "Huguet, Marie"
   date: "1864-1932"
@@ -25990,7 +26013,7 @@
   country1: ""
   country2: ""
   tags: "women, "
-  url: "/stories/south-africa/isherwood-annie/"
+  url: "/stories/southafrica/isherwood-annie/"
 
 - title : "Isidore"
   date: "100s"
@@ -26243,7 +26266,7 @@
   country1: ""
   country2: ""
   tags: "scholar, "
-  url: "/stories/south-africa/jabavu-davidson/"
+  url: "/stories/southafrica/jabavu-davidson/"
 
 - title : "Jabavu, John Tengo"
   date: "1859-1921"
@@ -26266,7 +26289,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/stories/south-africa/jabavu-johntengo/"
+  url: "/stories/southafrica/jabavu-johntengo/"
 
 - title : "Jackson, Wanalo William"
   date: "1930-2007"
@@ -26657,7 +26680,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/jennings-jeremiah/"
+  url: "/stories/southafrica/jennings-jeremiah/"
 
 - title : "Jobe, Thomas Gregory"
   date: "1906-1995"
@@ -26749,7 +26772,7 @@
   country1: ""
   country2: ""
   tags: "missionary, "
-  url: "/stories/south-africa/johanson-bernard/"
+  url: "/stories/southafrica/johanson-bernard/"
 
 - title : "Johanssen, Ernst"
   date: "1864-1934"
@@ -27572,7 +27595,7 @@
   languages-available3: " "
   author: "Amanze, James"
   institution: "University of Botswana (Gaborone)"
-  upload: ""
+  upload: "2018-08-17"
   country0: "botswana"
   country1: ""
   country2: ""
@@ -27692,7 +27715,7 @@
   country1: ""
   country2: ""
   tags: "nonchristian, scholar, translator, "
-  url: "/stories/south-africa/jordan-archibald/"
+  url: "/stories/southafrica/jordan-archibald/"
 
 - title : "Jörgensen, Simon Emmanuel"
   date: "1846-1937"
@@ -28704,7 +28727,7 @@
   country1: ""
   country2: ""
   tags: ""
-  url: "/stories/south-africa/kama-william/"
+  url: "/stories/southafrica/kama-william/"
 
 - title : "Kamala, Christina"
   date: "1930-2008"
@@ -29992,7 +30015,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, translator, "
-  url: "/stories/south-africa/kestell-john/"
+  url: "/stories/southafrica/kestell-john/"
 
 - title : "Kgwadi, Johannes and Maria"
   date: "1945-; 1945-2011"
@@ -30015,7 +30038,7 @@
   country1: ""
   country2: ""
   tags: "clergy, evangelist, photo, women, "
-  url: "/stories/south-africa/kgwadi-johannes/"
+  url: "/stories/southafrica/kgwadi-johannes/"
 
 - title : "Khama Boikano (A)"
   date: "1835-1923"
@@ -30084,7 +30107,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/stories/south-africa/khambule-george/"
+  url: "/stories/southafrica/khambule-george/"
 
 - title : "Khamis, Mubarak Korkel"
   date: "1942-1996"
@@ -30176,7 +30199,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/stories/south-africa/khoza-ben/"
+  url: "/stories/southafrica/khoza-ben/"
 
 - title : "Khoza, Katrina"
   date: "1914-2006"
@@ -30199,7 +30222,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, medical, women, "
-  url: "/stories/south-africa/khoza-katrina/"
+  url: "/stories/southafrica/khoza-katrina/"
 
 - title : "Khumalo, Alice Vabayi"
   date: "1900s"
@@ -30245,7 +30268,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/khumalo-dominicjoseph/"
+  url: "/stories/southafrica/khumalo-dominicjoseph/"
 
 - title : "Khumalo, Salome"
   date: "1909-2002"
@@ -30958,7 +30981,7 @@
   country1: ""
   country2: ""
   tags: "missionary, "
-  url: "/stories/south-africa/kircherer-johannes/"
+  url: "/stories/southafrica/kircherer-johannes/"
 
 - title : "Kironde, Yasoni"
   date: "1800s20th"
@@ -31073,7 +31096,7 @@
   country1: ""
   country2: ""
   tags: "clergy, ecumenist, persecuted, theologian, "
-  url: "/stories/south-africa/kistner-wolfram/"
+  url: "/stories/southafrica/kistner-wolfram/"
 
 - title : "Kisula, Jeremiah Mahalu"
   date: "1902-1984"
@@ -31855,7 +31878,7 @@
   country1: "zimbabwe"
   country2: ""
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/knight-bruce-george/"
+  url: "/stories/southafrica/knight-bruce-george/"
 
 - title : "Knight, Charles"
   date: "1799-1879"
@@ -31970,7 +31993,7 @@
   country1: ""
   country2: ""
   tags: "nonchristian, "
-  url: "/stories/south-africa/kok-adam-ii/"
+  url: "/stories/southafrica/kok-adam-ii/"
 
 - title : "Kok I, Cornelius"
   date: "1746-1820"
@@ -31993,7 +32016,7 @@
   country1: ""
   country2: ""
   tags: "nonchristian, "
-  url: "/stories/south-africa/kok-cornelius-i/"
+  url: "/stories/southafrica/kok-cornelius-i/"
 
 - title : "Kolawole, Abel"
   date: "1894-1986"
@@ -32039,7 +32062,7 @@
   country1: ""
   country2: ""
   tags: "clergy, nationalist, "
-  url: "/stories/south-africa/kolisang-tlameo/"
+  url: "/stories/southafrica/kolisang-tlameo/"
 
 - title : "Konigmacher, Samuel"
   date: "1877-1952"
@@ -33856,7 +33879,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/stories/south-africa/lebakeng/"
+  url: "/stories/southafrica/lebakeng/"
 
 - title : "Lechaptois, Adolphe"
   date: "1852-1917"
@@ -33902,7 +33925,7 @@
   country1: ""
   country2: ""
   tags: "missionary, translator, "
-  url: "/stories/south-africa/legacy-schreuder/"
+  url: "/stories/southafrica/legacy-schreuder/"
 
 - title : "Zahn, Franz Michael"
   date: "1833-1900"
@@ -33971,7 +33994,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/lemue-prosper/"
+  url: "/stories/southafrica/lemue-prosper/"
 
 - title : "Lennon, Lackland Augustus"
   date: "1886-1964"
@@ -34132,7 +34155,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/leroux-pieter/"
+  url: "/stories/southafrica/leroux-pieter/"
 
 - title : "Le Roy, Alexandre (A)"
   date: "1854-1938"
@@ -34224,7 +34247,7 @@
   country1: ""
   country2: ""
   tags: "photo, "
-  url: "/fr/stories/south-africa/letswalo-mmashila/"
+  url: "/fr/stories/southafrica/letswalo-mmashila/"
 
 - title : "Letswalo, Mmashila"
   date: "1962"
@@ -34247,7 +34270,7 @@
   country1: ""
   country2: ""
   tags: "photo, "
-  url: "/stories/south-africa/letswalo-mmashila/"
+  url: "/stories/southafrica/letswalo-mmashila/"
 
 - title : "Liaba, Laurent Abekami"
   date: "1953-2012"
@@ -34385,7 +34408,7 @@
   country1: ""
   country2: ""
   tags: "medical, missionary, "
-  url: "/stories/south-africa/liebenberg-derek/"
+  url: "/stories/southafrica/liebenberg-derek/"
 
 - title : "Liengme, Georges"
   date: "1859-1936"
@@ -34569,7 +34592,7 @@
   country1: ""
   country2: ""
   tags: "missionary, "
-  url: "/stories/south-africa/lindley-daniel/"
+  url: "/stories/southafrica/lindley-daniel/"
 
 - title : "Lindö, Knud"
   date: "1844-1913"
@@ -34638,7 +34661,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, martyr, persecuted, "
-  url: "/fr/stories/south-africa/links-jacob/"
+  url: "/fr/stories/southafrica/links-jacob/"
 
 - title : "Links, Jacob"
   date: "1799-1825"
@@ -34661,7 +34684,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, martyr, persecuted, "
-  url: "/stories/south-africa/links-jacob/"
+  url: "/stories/southafrica/links-jacob/"
 
 - title : "Linyime, Eustace"
   date: "1965-2004"
@@ -34822,7 +34845,7 @@
   country1: "zimbabwe"
   country2: ""
   tags: "clergy, missionary, photo, women, "
-  url: "/pt/stories/south-africa/litswele-enochruth/"
+  url: "/pt/stories/southafrica/litswele-enochruth/"
 
 - title : "Litswele, Enoch and Ruth"
   date: "1935-2010"
@@ -34845,7 +34868,7 @@
   country1: "zimbabwe"
   country2: ""
   tags: "clergy, missionary, photo, women, "
-  url: "/stories/south-africa/litswele-enochruth/"
+  url: "/stories/southafrica/litswele-enochruth/"
 
 - title : "Livingstone, David (A)"
   date: "1813-1873"
@@ -34868,7 +34891,7 @@
   country1: "zambia"
   country2: "tanzania"
   tags: "clergy, medical, missionary, photo, "
-  url: "/stories/south-africa/livingstone-david/"
+  url: "/stories/southafrica/livingstone-david/"
 
 - title : "Livingstone, David (C)"
   date: "1813-1873"
@@ -34891,7 +34914,7 @@
   country1: "zambia"
   country2: "tanzania"
   tags: "clergy, medical, missionary, photo, "
-  url: "/stories/south-africa/legacy-livingstone/"
+  url: "/stories/southafrica/legacy-livingstone/"
 
 - title : "Livingstone, Mary"
   date: "1821-1862"
@@ -34914,7 +34937,7 @@
   country1: ""
   country2: ""
   tags: "women, "
-  url: "/pt/stories/south-africa/livingstone-mary/"
+  url: "/pt/stories/southafrica/livingstone-mary/"
 
 - title : "Livingstone, Mary"
   date: "1821-1862"
@@ -34937,7 +34960,7 @@
   country1: ""
   country2: ""
   tags: "women, "
-  url: "/stories/south-africa/livingstone-mary/"
+  url: "/stories/southafrica/livingstone-mary/"
 
 - title : "Livingstone, David (B)"
   date: "1813 f.1873"
@@ -34960,7 +34983,7 @@
   country1: "zambia"
   country2: "tanzania"
   tags: "clergy, medical, missionary, photo, "
-  url: "/pt/stories/south-africa/livingstone1-david/"
+  url: "/pt/stories/southafrica/livingstone1-david/"
 
 - title : "Livingstone, David (B)"
   date: "1813-1873"
@@ -34983,7 +35006,7 @@
   country1: "zambia"
   country2: "tanzania"
   tags: "clergy, medical, missionary, photo, "
-  url: "/stories/south-africa/livingstone1-david/"
+  url: "/stories/southafrica/livingstone1-david/"
 
 - title : "Livingstone, David (D)"
   date: "1813-1873"
@@ -35006,7 +35029,7 @@
   country1: "zambia"
   country2: "tanzania"
   tags: "clergy, medical, missionary, photo, "
-  url: "/stories/south-africa/livingstone3-david/"
+  url: "/stories/southafrica/livingstone3-david/"
 
 - title : "Livinhac, Auguste Simon Léon (A)"
   date: "1846-1922"
@@ -35903,7 +35926,7 @@
   country1: ""
   country2: ""
   tags: "nationalist, photo, "
-  url: "/stories/south-africa/luthuli-albert/"
+  url: "/stories/southafrica/luthuli-albert/"
 
 - title : "Luthuli, Albert John Mvumbi (B)"
   date: "1898-1967"
@@ -35926,7 +35949,7 @@
   country1: ""
   country2: ""
   tags: "nationalist, photo, "
-  url: "/stories/south-africa/luthuli-albert2/"
+  url: "/stories/southafrica/luthuli-albert2/"
 
 - title : "Luthuli, Albert John Mvumbi (C)"
   date: "1898-1967"
@@ -35949,7 +35972,7 @@
   country1: ""
   country2: ""
   tags: "nationalist, photo, "
-  url: "/stories/south-africa/luthuli-albert3/"
+  url: "/stories/southafrica/luthuli-albert3/"
 
 - title : "Luthuli, Albert John Mvumbi (D)"
   date: "1898-1967"
@@ -35972,7 +35995,7 @@
   country1: ""
   country2: ""
   tags: "nationalist, photo, "
-  url: "/stories/south-africa/luthuli-albert4/"
+  url: "/stories/southafrica/luthuli-albert4/"
 
 - title : "Luwum, Janani Jakaliya (B)"
   date: "1924-1977"
@@ -36179,7 +36202,7 @@
   country1: ""
   country2: ""
   tags: "clergy, evangelist, photo, "
-  url: "/stories/south-africa/maake-charles/"
+  url: "/stories/southafrica/maake-charles/"
 
 - title : "Mabathoana, Emmanuel Gregory"
   date: "1904-1966"
@@ -36294,7 +36317,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, translator, "
-  url: "/stories/south-africa/maboee-austin/"
+  url: "/stories/southafrica/maboee-austin/"
 
 - title : "Macaulay, Thomas Babington (B)"
   date: "1826-1878"
@@ -36662,7 +36685,7 @@
   country1: ""
   country2: ""
   tags: "missionary, "
-  url: "/stories/south-africa/mackenzie-john/"
+  url: "/stories/southafrica/mackenzie-john/"
 
 - title : "Mackenzie, John (B)"
   date: "1835-1899"
@@ -36685,7 +36708,7 @@
   country1: ""
   country2: ""
   tags: "missionary, "
-  url: "/stories/south-africa/mackenzie-john2/"
+  url: "/stories/southafrica/mackenzie-john2/"
 
 - title : "MacLachlan, Josias"
   date: "1905-1988"
@@ -36708,7 +36731,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/maclachlan-josias/"
+  url: "/stories/southafrica/maclachlan-josias/"
 
 - title : "MacVicar, Neil"
   date: "1871-1949"
@@ -36869,7 +36892,7 @@
   country1: "lesotho"
   country2: ""
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/maekane-patrick/"
+  url: "/stories/southafrica/maekane-patrick/"
 
 - title : "Maenetja, Dalton Chenchi"
   date: "1925-1996"
@@ -36892,7 +36915,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, translator, "
-  url: "/stories/south-africa/maenetja-dalton/"
+  url: "/stories/southafrica/maenetja-dalton/"
 
 - title : "Maenetja, Josefa Monare"
   date: "1881-1963"
@@ -36915,7 +36938,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, photo, "
-  url: "/fr/stories/south-africa/maenetja-josefa/"
+  url: "/fr/stories/southafrica/maenetja-josefa/"
 
 - title : "Maenetja, Josefa Monare"
   date: "1881-1963"
@@ -36938,7 +36961,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, photo, "
-  url: "/stories/south-africa/maenetja-josefa/"
+  url: "/stories/southafrica/maenetja-josefa/"
 
 - title : "Maenetsha, Abram"
   date: "1927-2003"
@@ -36961,7 +36984,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/maenetsha-abram1/"
+  url: "/stories/southafrica/maenetsha-abram1/"
 
 - title : "Magagula, Hobart"
   date: "1916-1992"
@@ -37076,7 +37099,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/magaya-edward/"
+  url: "/stories/southafrica/magaya-edward/"
 
 - title : "Magoke, Elias Msuka"
   date: "1919-1991"
@@ -37122,7 +37145,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/magrath-oswin/"
+  url: "/stories/southafrica/magrath-oswin/"
 
 - title : "Mahabane, Zaccheus Richard"
   date: "1881-1970"
@@ -37145,7 +37168,7 @@
   country1: ""
   country2: ""
   tags: "clergy, nationalist, "
-  url: "/stories/south-africa/mahabane-zaccheus/"
+  url: "/stories/southafrica/mahabane-zaccheus/"
 
 - title : "Mahadayas"
   date: "400s"
@@ -37191,7 +37214,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/mahlatji-josias/"
+  url: "/stories/southafrica/mahlatji-josias/"
 
 - title : "Mahlayeye, Jona"
   date: "1893-1979"
@@ -37398,7 +37421,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/makamu-ernesto/"
+  url: "/stories/southafrica/makamu-ernesto/"
 
 - title : "Makeda"
   date: "900s b.c."
@@ -37444,7 +37467,7 @@
   country1: ""
   country2: ""
   tags: "nonchristian, "
-  url: "/stories/south-africa/makhanda/"
+  url: "/stories/southafrica/makhanda/"
 
 - title : "Makhetha, Fortescue"
   date: "1920-1991"
@@ -37467,7 +37490,7 @@
   country1: "lesotho"
   country2: ""
   tags: ""
-  url: "/stories/south-africa/makhetha-fortescue/"
+  url: "/stories/southafrica/makhetha-fortescue/"
 
 - title : "Makiwane, Elijah (A)"
   date: "1850-1928"
@@ -37490,7 +37513,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/fr/stories/south-africa/makiwane-elijah/"
+  url: "/fr/stories/southafrica/makiwane-elijah/"
 
 - title : "Makiwane, Elijah (A)"
   date: "1850-1928"
@@ -37513,7 +37536,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/makiwane-elijah/"
+  url: "/stories/southafrica/makiwane-elijah/"
 
 - title : "Makiwane, Elijah (B)"
   date: "1850-1939"
@@ -37536,7 +37559,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/makiwane-elijah2/"
+  url: "/stories/southafrica/makiwane-elijah2/"
 
 - title : "Makola, Jeanne Mbembo"
   date: "1963-2006"
@@ -37789,7 +37812,7 @@
   country1: ""
   country2: ""
   tags: "clergy, nationalist, photo, "
-  url: "/stories/south-africa/malan-daniel/"
+  url: "/stories/southafrica/malan-daniel/"
 
 - title : "Malan, Daniel Francois (B)"
   date: "1874-1959"
@@ -37812,7 +37835,7 @@
   country1: ""
   country2: ""
   tags: "clergy, nationalist, photo, "
-  url: "/stories/south-africa/malan-daniel2/"
+  url: "/stories/southafrica/malan-daniel2/"
 
 - title : "Malenfant, Augustin-Marie"
   date: "1819-1867"
@@ -37927,7 +37950,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, photo, "
-  url: "/stories/south-africa/malomane-willias/"
+  url: "/stories/southafrica/malomane-willias/"
 
 - title : "Maluka, Beta"
   date: "1912-2004"
@@ -38157,7 +38180,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, missionary, photo, "
-  url: "/stories/south-africa/mamiane-richard/"
+  url: "/stories/southafrica/mamiane-richard/"
 
 - title : "Manan Janterar Asfaw"
   date: "1891-1962"
@@ -38847,7 +38870,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, photo, "
-  url: "/stories/south-africa/marais-christopher/"
+  url: "/stories/southafrica/marais-christopher/"
 
 - title : "Maranke, John"
   date: "1912-1963"
@@ -39353,7 +39376,7 @@
   country1: ""
   country2: ""
   tags: "martyr, persecuted, photo, women, youth, "
-  url: "/stories/south-africa/masemola-manche/"
+  url: "/stories/southafrica/masemola-manche/"
 
 - title : "Masemola, Manche (B)"
   date: "1913-1928"
@@ -39376,7 +39399,7 @@
   country1: ""
   country2: ""
   tags: "martyr, persecuted, photo, women, youth, "
-  url: "/stories/south-africa/masemola-manche2/"
+  url: "/stories/southafrica/masemola-manche2/"
 
 - title : "Mashaba, Robert Ndevu"
   date: "1861-1935"
@@ -39767,7 +39790,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, persecuted, "
-  url: "/stories/south-africa/mathabathe-samuel/"
+  url: "/stories/southafrica/mathabathe-samuel/"
 
 - title : "Mathebula, Madambi Aaron"
   date: "1921-1987"
@@ -39790,7 +39813,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/mathebula-aaron/"
+  url: "/stories/southafrica/mathebula-aaron/"
 
 - title : "Matthews, Zachariah Keodirelang (A)"
   date: "1901-1968"
@@ -39813,7 +39836,7 @@
   country1: "botwana"
   country2: ""
   tags: "ecumenist, photo, scholar, "
-  url: "/stories/south-africa/mathews-zk/"
+  url: "/stories/southafrica/mathews-zk/"
 
 - title : "Mathusse, Ana"
   date: "1908-2000"
@@ -39951,7 +39974,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/matshai-solomon/"
+  url: "/stories/southafrica/matshai-solomon/"
 
 - title : "Matshedisho, Andrew"
   date: "1914-1990"
@@ -39974,7 +39997,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/fr/stories/south-africa/matshedisho-andrew/"
+  url: "/fr/stories/southafrica/matshedisho-andrew/"
 
 - title : "Matshedisho, Andrew"
   date: "1914-1990"
@@ -39997,7 +40020,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/matshedisho-andrew/"
+  url: "/stories/southafrica/matshedisho-andrew/"
 
 - title : "Matsheng, Joseph Shadrack"
   date: " 1937- 2016"
@@ -40112,7 +40135,7 @@
   country1: ""
   country2: ""
   tags: "ecumenist, photo, scholar, "
-  url: "/stories/south-africa/matthews-zachariah/"
+  url: "/stories/southafrica/matthews-zachariah/"
 
 - title : "Mätto-Mäsqäl"
   date: "500s"
@@ -40204,7 +40227,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/mavhetha-piet/"
+  url: "/stories/southafrica/mavhetha-piet/"
 
 - title : "Mavungu Va Fwita, Joseph"
   date: "1920-2005"
@@ -40296,7 +40319,7 @@
   country1: ""
   country2: ""
   tags: "photo, women, "
-  url: "/pt/stories/south-africa/maxeke-charlotte/"
+  url: "/pt/stories/southafrica/maxeke-charlotte/"
 
 - title : "Maxeke, Charlotte Manye"
   date: "1872-1939"
@@ -40319,7 +40342,7 @@
   country1: ""
   country2: ""
   tags: "photo, women, "
-  url: "/stories/south-africa/maxeke-charlotte/"
+  url: "/stories/southafrica/maxeke-charlotte/"
 
 - title : "Maxwell, Joseph Renner"
   date: "1857-1901"
@@ -40457,7 +40480,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, photo, scholar, translator, "
-  url: "/stories/south-africa/mayr-franz/"
+  url: "/stories/southafrica/mayr-franz/"
 
 - title : "Mazivila/Mazibuko, John Mayiwane"
   date: "1895-1972"
@@ -40618,7 +40641,7 @@
   country1: ""
   country2: ""
   tags: "clergy, persecuted, missionary, photo, translator, "
-  url: "/stories/south-africa/mbhele-julius/"
+  url: "/stories/southafrica/mbhele-julius/"
 
 - title : "Mbila, Ochu"
   date: "1908-1993"
@@ -40894,7 +40917,7 @@
   country1: ""
   country2: ""
   tags: "missionary, women, "
-  url: "/stories/south-africa/meeuwsen-johanna/"
+  url: "/stories/southafrica/meeuwsen-johanna/"
 
 - title : "Negera, Mekonnen"
   date: "1953-1996"
@@ -41193,7 +41216,7 @@
   country1: ""
   country2: ""
   tags: "medical, missionary, scholar, "
-  url: "/stories/south-africa/merensky-alexander/"
+  url: "/stories/southafrica/merensky-alexander/"
 
 - title : "Merensky, Alexander (B)"
   date: "1837-1918"
@@ -41216,7 +41239,7 @@
   country1: ""
   country2: ""
   tags: "medical, missionary, scholar, "
-  url: "/stories/south-africa/merensky-alexander2/"
+  url: "/stories/southafrica/merensky-alexander2/"
 
 - title : "Meropius"
   date: "300s"
@@ -41285,7 +41308,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/meyers-george/"
+  url: "/stories/southafrica/meyers-george/"
 
 - title : "Mgbatou, Étienne"
   date: "1924-1975"
@@ -41331,7 +41354,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/fr/stories/south-africa/mgijima-enoch/"
+  url: "/fr/stories/southafrica/mgijima-enoch/"
 
 - title : "Mgijima, Enoch Josiah (A)"
   date: "1858-1929"
@@ -41354,7 +41377,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/stories/south-africa/mgijima-enoch/"
+  url: "/stories/southafrica/mgijima-enoch/"
 
 - title : "Mgijima, Enoch Josiah (B)"
   date: "1868-1928"
@@ -41377,7 +41400,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/stories/south-africa/mgijima-enoch2/"
+  url: "/stories/southafrica/mgijima-enoch2/"
 
 - title : "Mhlauli, Petros Mayengani"
   date: "1880"
@@ -41653,7 +41676,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/miller-william/"
+  url: "/stories/southafrica/miller-william/"
 
 - title : "Miller, Walter Richard Samuel"
   date: "1872-1952"
@@ -41883,7 +41906,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, women, "
-  url: "/stories/south-africa/mkabela-esther/"
+  url: "/stories/southafrica/mkabela-esther/"
 
 - title : "Mkabela, Ezrom"
   date: "1901-1979"
@@ -41906,7 +41929,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/mkabela-ezrom/"
+  url: "/stories/southafrica/mkabela-ezrom/"
 
 - title : "Mkabela, Samson D."
   date: "1905-1985"
@@ -41929,7 +41952,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/mkabela-samson/"
+  url: "/stories/southafrica/mkabela-samson/"
 
 - title : "Mkhonta, Elias Bateni"
   date: "1954-2001"
@@ -41975,7 +41998,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/mkhonto1-thompson/"
+  url: "/stories/southafrica/mkhonto1-thompson/"
 
 - title : "Mkhwanazi, Josefa Mncina"
   date: "1886-1965"
@@ -42067,7 +42090,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, photo, "
-  url: "/stories/south-africa/mlambo-amon/"
+  url: "/stories/southafrica/mlambo-amon/"
 
 - title : "Mlotsa, Simon"
   date: "1940-2009"
@@ -42113,7 +42136,7 @@
   country1: ""
   country2: ""
   tags: "clergy, persecuted, missionary, photo, "
-  url: "/stories/south-africa/mncadi-alois/"
+  url: "/stories/southafrica/mncadi-alois/"
 
 - title : "Mncube, Sipho"
   date: "1945-2003"
@@ -42136,7 +42159,7 @@
   country1: ""
   country2: ""
   tags: "clergy, evangelist, "
-  url: "/stories/south-africa/mncube-sipho/"
+  url: "/stories/southafrica/mncube-sipho/"
 
 - title : "Mnganga, Edward Müller Kece"
   date: "1872-1945"
@@ -42159,7 +42182,7 @@
   country1: ""
   country2: ""
   tags: "clergy, persecuted, missionary, photo, "
-  url: "/fr/stories/south-africa/mnganga-edward/"
+  url: "/fr/stories/southafrica/mnganga-edward/"
 
 - title : "Mnganga, Edward Müller Kece"
   date: "1872-1945"
@@ -42182,7 +42205,7 @@
   country1: ""
   country2: ""
   tags: "clergy, persecuted, missionary, photo, "
-  url: "/stories/south-africa/mnganga-edward/"
+  url: "/stories/southafrica/mnganga-edward/"
 
 - title : "Mngoma, Themba Paul"
   date: "1941-2005"
@@ -42205,7 +42228,7 @@
   country1: ""
   country2: ""
   tags: "clergy, nationalist, missionary, photo, "
-  url: "/stories/south-africa/mngoma/"
+  url: "/stories/southafrica/mngoma/"
 
 - title : "Mnisi, Caiphas and Joan"
   date: "1924-2013"
@@ -42251,7 +42274,7 @@
   country1: ""
   country2: ""
   tags: "photo, "
-  url: "/fr/stories/south-africa/mnisi-jones/"
+  url: "/fr/stories/southafrica/mnisi-jones/"
 
 - title : "Mnisi, Jones"
   date: "1927-2003"
@@ -42274,7 +42297,7 @@
   country1: ""
   country2: ""
   tags: "photo, "
-  url: "/stories/south-africa/mnisi-jones/"
+  url: "/stories/southafrica/mnisi-jones/"
 
 - title : "Moagi, Godfrey"
   date: "1941-2005"
@@ -42297,7 +42320,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/moagi-godfrey/"
+  url: "/stories/southafrica/moagi-godfrey/"
 
 - title : "Moalosi, Robert"
   date: "1868-1926"
@@ -42343,7 +42366,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/mochochoko/"
+  url: "/stories/southafrica/mochochoko/"
 
 - title : "Modi Din, Jacob"
   date: "1876-c. 1950"
@@ -42435,7 +42458,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, women, "
-  url: "/stories/south-africa/modiba-elina/"
+  url: "/stories/southafrica/modiba-elina/"
 
 - title : "Moe, Malla"
   date: "1863-1953"
@@ -42481,7 +42504,7 @@
   country1: ""
   country2: ""
   tags: "clergy, nationalist, photo, "
-  url: "/stories/south-africa/moetapele-david/"
+  url: "/stories/southafrica/moetapele-david/"
 
 - title : "Moffat, John Smith (A)"
   date: "1835-1918"
@@ -42504,7 +42527,7 @@
   country1: "zimbabwe"
   country2: ""
   tags: "missionary, "
-  url: "/stories/south-africa/moffat-johnsmith/"
+  url: "/stories/southafrica/moffat-johnsmith/"
 
 - title : "Moffat, John Smith (B)"
   date: "1835-1919"
@@ -42527,7 +42550,7 @@
   country1: "zimbabwe"
   country2: ""
   tags: "missionary, "
-  url: "/stories/south-africa/moffat-johnsmith2/"
+  url: "/stories/southafrica/moffat-johnsmith2/"
 
 - title : "Moffat, Robert (A)"
   date: "1795-1883"
@@ -42550,7 +42573,7 @@
   country1: ""
   country2: ""
   tags: "missionary, photo, translator, "
-  url: "/stories/south-africa/moffat-robert/"
+  url: "/stories/southafrica/moffat-robert/"
 
 - title : "Moffat, Robert (B)"
   date: "1795-1883"
@@ -42573,7 +42596,7 @@
   country1: ""
   country2: ""
   tags: "missionary, photo, translator, "
-  url: "/stories/south-africa/moffat1-robert/"
+  url: "/stories/southafrica/moffat1-robert/"
 
 - title : "Moffat, Robert (C)"
   date: "1795-1883"
@@ -42596,7 +42619,7 @@
   country1: ""
   country2: ""
   tags: "missionary, photo, translator, "
-  url: "/stories/south-africa/moffatt-robert2/"
+  url: "/stories/southafrica/moffatt-robert2/"
 
 - title : "Moffat, Robert (D)"
   date: "1795-1883"
@@ -42619,7 +42642,7 @@
   country1: ""
   country2: ""
   tags: "missionary, photo, translator, "
-  url: "/stories/south-africa/moffatt4-robert/"
+  url: "/stories/southafrica/moffatt4-robert/"
 
 - title : "Mogatla, David Modibane"
   date: "1814-1874"
@@ -42642,7 +42665,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, missionary, "
-  url: "/stories/south-africa/mogatla-david/"
+  url: "/stories/southafrica/mogatla-david/"
 
 - title : "Mohoti, Elizabeth"
   date: "1982"
@@ -42665,7 +42688,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, photo, women, "
-  url: "/stories/south-africa/mohoti-elizabeth/"
+  url: "/stories/southafrica/mohoti-elizabeth/"
 
 - title : "Mokili Bolemba Bolema, François"
   date: "1937-1996"
@@ -42711,7 +42734,7 @@
   country1: ""
   country2: ""
   tags: "clergy, evangelist, "
-  url: "/stories/south-africa/moko-richard/"
+  url: "/stories/southafrica/moko-richard/"
 
 - title : "Mokoena, Enos"
   date: "1903-1999"
@@ -42734,7 +42757,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/pt/stories/south-africa/mokoena-enos/"
+  url: "/pt/stories/southafrica/mokoena-enos/"
 
 - title : "Mokoena, Enos"
   date: "1903-1999"
@@ -42757,7 +42780,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/mokoena-enos/"
+  url: "/stories/southafrica/mokoena-enos/"
 
 - title : "Mokoka, Gobi Clement"
   date: "1940-"
@@ -42780,7 +42803,7 @@
   country1: ""
   country2: ""
   tags: "clergy, nationalist, photo, "
-  url: "/stories/south-africa/mokoka/"
+  url: "/stories/southafrica/mokoka/"
 
 - title : "Mokone, Mangena Maake (A)"
   date: "1851-1931"
@@ -42803,7 +42826,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/fr/stories/south-africa/mokone-mangena/"
+  url: "/fr/stories/southafrica/mokone-mangena/"
 
 - title : "Mokone, Mangena Maake (A)"
   date: "1851-1931"
@@ -42826,7 +42849,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/stories/south-africa/mokone-mangena/"
+  url: "/stories/southafrica/mokone-mangena/"
 
 - title : "Mokone, Mangena Maake (B)"
   date: "1851-1936"
@@ -42849,7 +42872,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/stories/south-africa/mokone-mangena2/"
+  url: "/stories/southafrica/mokone-mangena2/"
 
 - title : "Mokone, Mangena Maake (C)"
   date: "1851-c. 1936"
@@ -42872,7 +42895,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/stories/south-africa/mokone-mangena3/"
+  url: "/stories/southafrica/mokone-mangena3/"
 
 - title : "Mokone, Priscilla"
   date: "1906-"
@@ -42895,7 +42918,7 @@
   country1: ""
   country2: ""
   tags: "women, "
-  url: "/stories/south-africa/mokone-priscilla/"
+  url: "/stories/southafrica/mokone-priscilla/"
 
 - title : "Molelekua, Gerhard and E. Kangootui"
   date: "1942-1978"
@@ -43378,7 +43401,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/fr/stories/south-africa/mooki-david/"
+  url: "/fr/stories/southafrica/mooki-david/"
 
 - title : "Mooki, David"
   date: "1876-1927"
@@ -43401,7 +43424,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/stories/south-africa/mooki-david/"
+  url: "/stories/southafrica/mooki-david/"
 
 - title : "Moore, Obadiah"
   date: "1800s"
@@ -43470,7 +43493,7 @@
   country1: ""
   country2: ""
   tags: "photo, women, "
-  url: "/stories/south-africa/morgan-mary/"
+  url: "/stories/southafrica/morgan-mary/"
 
 - title : "Morgan, William"
   date: "1892"
@@ -43539,7 +43562,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/morris-georgefb/"
+  url: "/stories/southafrica/morris-georgefb/"
 
 - title : "Moshi, Stefano Reuben"
   date: "1906-1976"
@@ -43609,6 +43632,29 @@
   country2: ""
   tags: "ecumenist, photo, "
   url: "/stories/botswana/motsepe-cuthbert/"
+
+- title : "Motsete, Ruth Ketlhapile"
+  date: "1949- 2008"
+  index: "primary"
+  century: "20th, 21st"
+  tradition: "catholic"
+  affiliation0: "catholic"
+  affiliation1: ""
+  affiliation2: ""
+  categories: "m"
+  lang: "en"
+  languages-available0: "en"
+  languages-available1: " "
+  languages-available2: " "
+  languages-available3: " "
+  author: "Amanze, James"
+  institution: "University of Botswana (Gaborone)"
+  upload: "2018-08-17"
+  country0: "botswana"
+  country1: ""
+  country2: ""
+  tags: "ecumenist, photo, women, "
+  url: "/stories/botswana/motsete-ruth/"
 
 - title : "Moules, Edith"
   date: "1948"
@@ -43907,7 +43953,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/mqoboli-ej/"
+  url: "/stories/southafrica/mqoboli-ej/"
 
 - title : "Msane, Saul"
   date: "1856-1932"
@@ -43930,7 +43976,7 @@
   country1: ""
   country2: ""
   tags: "nationalist, "
-  url: "/stories/south-africa/msane-saul/"
+  url: "/stories/southafrica/msane-saul/"
 
 - title : "Msinjili, Tulinawo Luhomano"
   date: "1924-1995"
@@ -44091,7 +44137,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/mthethwa-johanne/"
+  url: "/stories/southafrica/mthethwa-johanne/"
 
 - title : "Mtuwana, Vito"
   date: "1897-1982"
@@ -44967,6 +45013,29 @@
   tags: "clergy, evangelist, "
   url: "/stories/namibia/murangi-kukuri/"
 
+- title : "Murphy, Urban Charles Joseph"
+  date: "1919-1981"
+  index: "primary"
+  century: "20th"
+  tradition: "catholic"
+  affiliation0: "catholic"
+  affiliation1: ""
+  affiliation2: ""
+  categories: "m"
+  lang: "en"
+  languages-available0: "en"
+  languages-available1: " "
+  languages-available2: " "
+  languages-available3: " "
+  author: "Amanze, James"
+  institution: "University of Botswana (Gaborone)"
+  upload: "2018-08-25"
+  country0: "botswana"
+  country1: ""
+  country2: ""
+  tags: "clergy, ecumenist, missionary, photo, "
+  url: "/stories/botswana/murphy-urban/"
+
 - title : "Murray (Jr.), Andrew (A)"
   date: "1828-1917"
   index: "primary"
@@ -44988,7 +45057,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, photo, theologian, "
-  url: "/stories/south-africa/murray-andrew-jr/"
+  url: "/stories/southafrica/murray-andrew-jr/"
 
 - title : "Murray (Jr.), Andrew (B)"
   date: "1828-1917"
@@ -45011,7 +45080,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, photo, theologian, "
-  url: "/stories/south-africa/murray-andrew-jr2/"
+  url: "/stories/southafrica/murray-andrew-jr2/"
 
 - title : "Murray (Sr.), Andrew"
   date: "1794-1866"
@@ -45034,7 +45103,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/murray-andrew-sr/"
+  url: "/stories/southafrica/murray-andrew-sr/"
 
 - title : "Murray, William Hoppe"
   date: "1866-1947"
@@ -45057,7 +45126,7 @@
   country1: "malawi"
   country2: ""
   tags: "missionary, translator, "
-  url: "/stories/south-africa/murray-williamh/"
+  url: "/stories/southafrica/murray-williamh/"
 
 - title : "Musä"
   date: "300s"
@@ -45632,7 +45701,7 @@
   country1: "mzimbatite church"
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/mzimba-pambani/"
+  url: "/stories/southafrica/mzimba-pambani/"
 
 - title : "Nä&#39;akweto-Lä&#39;Ab"
   date: "1200s"
@@ -45793,7 +45862,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, photo, "
-  url: "/stories/south-africa/naidoo-nana/"
+  url: "/stories/southafrica/naidoo-nana/"
 
 - title : "Naidoo, Stephen"
   date: "1937-1989"
@@ -45816,7 +45885,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/naidoo-stephen/"
+  url: "/stories/southafrica/naidoo-stephen/"
 
 - title : "Nakakeeto, Maria Levocata"
   date: "1960-2014"
@@ -45977,7 +46046,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/stories/south-africa/napo-joseph/"
+  url: "/stories/southafrica/napo-joseph/"
 
 - title : "Nartzalus"
   date: "100s"
@@ -46069,7 +46138,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/nathan-joseph/"
+  url: "/stories/southafrica/nathan-joseph/"
 
 - title : "Naudé, Christiaan Frederick Beyers (A)"
   date: "1915-"
@@ -46092,7 +46161,7 @@
   country1: ""
   country2: ""
   tags: "clergy, ecumenist, "
-  url: "/fr/stories/south-africa/naude-beyers/"
+  url: "/fr/stories/southafrica/naude-beyers/"
 
 - title : "Naudé, Christiaan Frederick Beyers (A)"
   date: "1915-"
@@ -46115,7 +46184,7 @@
   country1: ""
   country2: ""
   tags: "clergy, ecumenist, "
-  url: "/stories/south-africa/naude-beyers/"
+  url: "/stories/southafrica/naude-beyers/"
 
 - title : "Naudé, Christiaan Frederick Beyers (B)"
   date: "1915"
@@ -46138,7 +46207,7 @@
   country1: ""
   country2: ""
   tags: "clergy, ecumenist, "
-  url: "/stories/south-africa/naude2-beyers/"
+  url: "/stories/southafrica/naude2-beyers/"
 
 - title : "Navigius"
   date: "300s"
@@ -46253,7 +46322,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/ndhlovu-samuel/"
+  url: "/stories/southafrica/ndhlovu-samuel/"
 
 - title : "Ndlovu, Thomas Zameya L."
   date: "1913-1999"
@@ -46598,7 +46667,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/stories/south-africa/ngcayiya-henryreed/"
+  url: "/stories/southafrica/ngcayiya-henryreed/"
 
 - title : "Gabriel, Ngeza"
   date: "1914-1972"
@@ -46644,7 +46713,7 @@
   country1: ""
   country2: ""
   tags: "clergy, persecuted, missionary, photo, translator, "
-  url: "/stories/south-africa/ngidi-andreas/"
+  url: "/stories/southafrica/ngidi-andreas/"
 
 - title : "Ngobeni, Zephania D."
   date: "1900-1961"
@@ -46667,7 +46736,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/ngobeni-zephania/"
+  url: "/stories/southafrica/ngobeni-zephania/"
 
 - title : "Ngobeni, Nelson"
   date: "1910-1995"
@@ -46690,7 +46759,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/ngobeni1-nelson/"
+  url: "/stories/southafrica/ngobeni1-nelson/"
 
 - title : "Ngomane, Barnabas"
   date: "1942-2008"
@@ -46713,7 +46782,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/ngomane-barnabas/"
+  url: "/stories/southafrica/ngomane-barnabas/"
 
 - title : "Ngoumbe, Zacharie"
   date: "1918-1986"
@@ -46759,7 +46828,7 @@
   country1: ""
   country2: ""
   tags: "women, "
-  url: "/stories/south-africa/ngubelanga-ruth/"
+  url: "/stories/southafrica/ngubelanga-ruth/"
 
 - title : "Ngwele Palla, Rémy"
   date: "1931-2007"
@@ -47288,7 +47357,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, photo, women, "
-  url: "/stories/south-africa/nku-christinah/"
+  url: "/stories/southafrica/nku-christinah/"
 
 - title : "Noujaim, Selim Elias"
   date: "1898-1966"
@@ -47426,7 +47495,7 @@
   country1: ""
   country2: ""
   tags: "clergy, evangelist, photo, women, "
-  url: "/stories/south-africa/ntimane-idah/"
+  url: "/stories/southafrica/ntimane-idah/"
 
 - title : "Ntsama, Charles Atangana (A)"
   date: "1876-1945"
@@ -47518,7 +47587,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, musician, "
-  url: "/fr/stories/south-africa/ntsikana-gaba/"
+  url: "/fr/stories/southafrica/ntsikana-gaba/"
 
 - title : "Ntsikana (D)"
   date: "1780-1820"
@@ -47541,7 +47610,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, musician, "
-  url: "/pt/stories/south-africa/ntsikana-gaba/"
+  url: "/pt/stories/southafrica/ntsikana-gaba/"
 
 - title : "Ntsikana (D)"
   date: "1780-1820"
@@ -47564,7 +47633,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, musician, "
-  url: "/stories/south-africa/ntsikana-gaba/"
+  url: "/stories/southafrica/ntsikana-gaba/"
 
 - title : "Ntsikana (A)"
   date: "1760-1821"
@@ -47587,7 +47656,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, musician, "
-  url: "/stories/south-africa/ntsikana/"
+  url: "/stories/southafrica/ntsikana/"
 
 - title : "Ntsikana (B)"
   date: "1780-c.1821"
@@ -47610,7 +47679,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, musician, "
-  url: "/stories/south-africa/ntsikana2/"
+  url: "/stories/southafrica/ntsikana2/"
 
 - title : "Ntsikana (C)"
   date: "1780-1821"
@@ -47633,7 +47702,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, musician, "
-  url: "/stories/south-africa/ntsikana3/"
+  url: "/stories/southafrica/ntsikana3/"
 
 - title : "Ntsiko, Jonas A."
   date: "1860-1915"
@@ -47656,7 +47725,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, musician, "
-  url: "/stories/south-africa/ntsiko-jonas/"
+  url: "/stories/southafrica/ntsiko-jonas/"
 
 - title : "Nunemo, Abagole"
   date: "1894-2001"
@@ -49818,7 +49887,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, photo, "
-  url: "/stories/south-africa/oscar-henry/"
+  url: "/stories/southafrica/oscar-henry/"
 
 - title : "Oschoffa, Samuel Bilewu"
   date: "1909-1985"
@@ -50577,7 +50646,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/pamla-charles/"
+  url: "/stories/southafrica/pamla-charles/"
 
 - title : "Pamla, Charles (B)"
   date: "1834-1917"
@@ -50600,7 +50669,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/pamla2-charles/"
+  url: "/stories/southafrica/pamla2-charles/"
 
 - title : "Pantaenus"
   date: "100s"
@@ -50761,7 +50830,7 @@
   country1: ""
   country2: ""
   tags: "photo, "
-  url: "/stories/south-africa/paton-alan/"
+  url: "/stories/southafrica/paton-alan/"
 
 - title : "Paton, Alan (B)"
   date: "1903-1988"
@@ -50784,7 +50853,7 @@
   country1: ""
   country2: ""
   tags: "photo, "
-  url: "/stories/south-africa/paton-alan2/"
+  url: "/stories/southafrica/paton-alan2/"
 
 - title : "Patricius"
   date: "315-371"
@@ -51198,7 +51267,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/pfanner-franz/"
+  url: "/stories/southafrica/pfanner-franz/"
 
 - title : "Pfanner, Franz (B)"
   date: "1825-1909"
@@ -51221,7 +51290,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/pfanner-franz2/"
+  url: "/stories/southafrica/pfanner-franz2/"
 
 - title : "Philip, John (A)"
   date: "1775-1851"
@@ -51244,7 +51313,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/philip-john/"
+  url: "/stories/southafrica/philip-john/"
 
 - title : "Philip, John (D)"
   date: "1775-1851"
@@ -51267,7 +51336,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/legacy-philip/"
+  url: "/stories/southafrica/legacy-philip/"
 
 - title : "Philip, John (B)"
   date: "1775-1851"
@@ -51290,7 +51359,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/philip1-john/"
+  url: "/stories/southafrica/philip1-john/"
 
 - title : "Philip, John (C)"
   date: "1775-1851"
@@ -51313,7 +51382,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/philip2-john/"
+  url: "/stories/southafrica/philip2-john/"
 
 - title : "Philips, Edward"
   date: "1800s"
@@ -51520,7 +51589,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/phiri-thomas/"
+  url: "/stories/southafrica/phiri-thomas/"
 
 - title : "Phiri, Tomás"
   date: "1934-2005"
@@ -51819,7 +51888,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/porthen-michael/"
+  url: "/stories/southafrica/porthen-michael/"
 
 - title : "Prazan, Robert Louis Ceslaus"
   date: "1936-1998"
@@ -52072,7 +52141,7 @@
   country1: ""
   country2: ""
   tags: "photo, "
-  url: "/stories/south-africa/qoboza-percy/"
+  url: "/stories/southafrica/qoboza-percy/"
 
 - title : "Qozmos"
   date: "500s"
@@ -53889,7 +53958,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/read-james/"
+  url: "/stories/southafrica/read-james/"
 
 - title : "Rebmann, Johannes"
   date: "1820-1876"
@@ -54556,7 +54625,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, photo, "
-  url: "/stories/south-africa/roux-clarence1/"
+  url: "/stories/southafrica/roux-clarence1/"
 
 - title : "Rubusana, Walter Benson"
   date: "1858-1936"
@@ -54579,7 +54648,7 @@
   country1: ""
   country2: ""
   tags: "clergy, nationalist, musician, photo, "
-  url: "/stories/south-africa/rubusana-wb/"
+  url: "/stories/southafrica/rubusana-wb/"
 
 - title : "Ludwig, Rufo Christian Paulus"
   date: "1848-1871"
@@ -55315,7 +55384,7 @@
   country1: ""
   country2: ""
   tags: "clergy, nationalist, "
-  url: "/stories/south-africa/samkange-thompson/"
+  url: "/stories/southafrica/samkange-thompson/"
 
 - title : "Samu&#39;él"
   date: "1100s-1200s"
@@ -55407,7 +55476,7 @@
   country1: ""
   country2: ""
   tags: "musician, photo, translator, "
-  url: "/stories/south-africa/saoli-russell/"
+  url: "/stories/southafrica/saoli-russell/"
 
 - title : "Sapeto, Giuseppe"
   date: "1811-1895"
@@ -55936,7 +56005,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, photo, "
-  url: "/stories/south-africa/scott-michael/"
+  url: "/stories/southafrica/scott-michael/"
 
 - title : "Scott, Peter Cameron"
   date: "1867-1896"
@@ -56028,7 +56097,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/sebati-hannibal/"
+  url: "/stories/southafrica/sebati-hannibal/"
 
 - title : "Sebidi, Lebamang John"
   date: "1930"
@@ -56051,7 +56120,7 @@
   country1: ""
   country2: ""
   tags: "nationalist, "
-  url: "/stories/south-africa/sebidi/"
+  url: "/stories/southafrica/sebidi/"
 
 - title : "Sebit, Michael K."
   date: "1948-1980"
@@ -56166,7 +56235,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/sekgobela-elmon/"
+  url: "/stories/southafrica/sekgobela-elmon/"
 
 - title : "Selepe, Alfred Dledleni"
   date: "1928-2009"
@@ -56189,7 +56258,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/selepe-alfred/"
+  url: "/stories/southafrica/selepe-alfred/"
 
 - title : "Selwanos"
   date: "1200s"
@@ -56373,7 +56442,7 @@
   country1: "lesotho"
   country2: "namibia"
   tags: "clergy, photo, "
-  url: "/pt/stories/south-africa/senatle-harold/"
+  url: "/pt/stories/southafrica/senatle-harold/"
 
 - title : "Senatle, Harold Benjamin"
   date: "1900s"
@@ -56396,7 +56465,7 @@
   country1: "lesotho"
   country2: "namibia"
   tags: "clergy, photo, "
-  url: "/stories/south-africa/senatle-harold/"
+  url: "/stories/southafrica/senatle-harold/"
 
 - title : "Senekal, Hendrik"
   date: "1900s"
@@ -56419,7 +56488,7 @@
   country1: ""
   country2: ""
   tags: ""
-  url: "/stories/south-africa/senekal-hendrik/"
+  url: "/stories/southafrica/senekal-hendrik/"
 
 - title : "Senfuma, Thomas Lugudde"
   date: "1861-1929"
@@ -56534,7 +56603,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/sentsho-johannes/"
+  url: "/stories/southafrica/sentsho-johannes/"
 
 - title : "Senyagwa, Yeremia"
   date: "1890s-1908"
@@ -56695,7 +56764,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/shabangu-enoch/"
+  url: "/stories/southafrica/shabangu-enoch/"
 
 - title : "Ojo, Shadrack Omo"
   date: "1903-2000"
@@ -56787,7 +56856,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, photo, "
-  url: "/stories/south-africa/shembe-isiah/"
+  url: "/stories/southafrica/shembe-isiah/"
 
 - title : "Shembe, Isaiah Mdliwamafa (A)"
   date: "1869-1935"
@@ -56810,7 +56879,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, photo, "
-  url: "/fr/stories/south-africa/shembe2-isaiah/"
+  url: "/fr/stories/southafrica/shembe2-isaiah/"
 
 - title : "Shembe, Isaiah Mdliwamafa (A)"
   date: "1869 f.1935"
@@ -56833,7 +56902,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, photo, "
-  url: "/pt/stories/south-africa/shembe2-isaiah/"
+  url: "/pt/stories/southafrica/shembe2-isaiah/"
 
 - title : "Shembe, Isaiah Mdliwamafa (A)"
   date: "1869-1935"
@@ -56856,7 +56925,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, photo, "
-  url: "/stories/south-africa/shembe2-isaiah/"
+  url: "/stories/southafrica/shembe2-isaiah/"
 
 - title : "Shenoute"
   date: "466"
@@ -57155,7 +57224,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/siebbeles-willem/"
+  url: "/stories/southafrica/siebbeles-willem/"
 
 - title : "Sikatana, Eleazare"
   date: "1902-1955"
@@ -57316,7 +57385,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, photo, women, "
-  url: "/stories/south-africa/simelane-freda/"
+  url: "/stories/southafrica/simelane-freda/"
 
 - title : "Simon"
   date: "0000s"
@@ -57454,7 +57523,7 @@
   country1: "lesotho"
   country2: "swaziland"
   tags: "clergy, theologian, "
-  url: "/stories/south-africa/skhakhane-jerome/"
+  url: "/stories/southafrica/skhakhane-jerome/"
 
 - title : "Slessor, Mary (A)"
   date: "1848-1915"
@@ -57592,7 +57661,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, women, "
-  url: "/stories/south-africa/smith-matilda/"
+  url: "/stories/southafrica/smith-matilda/"
 
 - title : "Soga, John Henderson (A)"
   date: "1860-1941"
@@ -57615,7 +57684,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, scholar, translator, "
-  url: "/stories/south-africa/soga-jh/"
+  url: "/stories/southafrica/soga-jh/"
 
 - title : "Soga, John Henderson (B)"
   date: "1860-1941"
@@ -57638,7 +57707,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, scholar, translator, "
-  url: "/stories/south-africa/soga-johnh/"
+  url: "/stories/southafrica/soga-johnh/"
 
 - title : "Soga, Mina Tembeka"
   date: "1893-1981?"
@@ -57661,7 +57730,7 @@
   country1: ""
   country2: ""
   tags: "theologian, women, "
-  url: "/stories/south-africa/soga-mina/"
+  url: "/stories/southafrica/soga-mina/"
 
 - title : "Soga, Tiyo (A)"
   date: "1829-1871"
@@ -57684,7 +57753,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, photo, translator, "
-  url: "/stories/south-africa/soga-tiyo/"
+  url: "/stories/southafrica/soga-tiyo/"
 
 - title : "Soga, Tiyo (B)"
   date: "1829 f.1871"
@@ -57707,7 +57776,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, photo, translator, "
-  url: "/pt/stories/south-africa/soga1-tiyo/"
+  url: "/pt/stories/southafrica/soga1-tiyo/"
 
 - title : "Soga, Tiyo (B)"
   date: "1829-1871"
@@ -57730,7 +57799,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, photo, translator, "
-  url: "/stories/south-africa/soga1-tiyo/"
+  url: "/stories/southafrica/soga1-tiyo/"
 
 - title : "Soga, Tiyo (C)"
   date: "1829-1871"
@@ -57753,7 +57822,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, photo, translator, "
-  url: "/stories/south-africa/soga2-tiyo/"
+  url: "/stories/southafrica/soga2-tiyo/"
 
 - title : "Soga, Tiyo (D)"
   date: "1829-1871"
@@ -57776,7 +57845,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, photo, translator, "
-  url: "/stories/south-africa/soga4-tiyo/"
+  url: "/stories/southafrica/soga4-tiyo/"
 
 - title : "Soga, Tiyo (E)"
   date: "1829-1871"
@@ -57799,7 +57868,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, photo, translator, "
-  url: "/stories/south-africa/soga5-tiyo/"
+  url: "/stories/southafrica/soga5-tiyo/"
 
 - title : "Solages, Henri de"
   date: "1786-1832"
@@ -58351,7 +58420,7 @@
   country1: ""
   country2: ""
   tags: "nationalist, photo, "
-  url: "/stories/south-africa/steyn-marthinus/"
+  url: "/stories/southafrica/steyn-marthinus/"
 
 - title : "Stone, Moses Ladejo"
   date: "1850-1913"
@@ -58604,7 +58673,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/suter-fred/"
+  url: "/stories/southafrica/suter-fred/"
 
 - title : "Swatson, John"
   date: "1855-c. 1925"
@@ -58650,7 +58719,7 @@
   country1: ""
   country2: ""
   tags: ""
-  url: "/stories/south-africa/swellengrebel-hendrik/"
+  url: "/stories/southafrica/swellengrebel-hendrik/"
 
 - title : "Sywulka, Emil"
   date: "1879-1944"
@@ -59156,7 +59225,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/taylor-george/"
+  url: "/stories/southafrica/taylor-george/"
 
 - title : "Taylor, John Christopher (D)"
   date: "1815-1880"
@@ -59227,29 +59296,6 @@
   tags: "clergy, "
   url: "/stories/sierra-leone/taylor-johnc1st/"
 
-- title : "Taylor, John C. "
-  date: "1800s"
-  index: "primary"
-  century: "19th"
-  tradition: "protestant"
-  affiliation0: "anglican (cms)"
-  affiliation1: ""
-  affiliation2: ""
-  categories: "t"
-  lang: "en"
-  languages-available0: "en"
-  languages-available1: " "
-  languages-available2: " "
-  languages-available3: " "
-  author: "Unavailable"
-  institution: "none"
-  upload: "2011-01-01"
-  country0: "sierra leone"
-  country1: ""
-  country2: ""
-  tags: "clergy, translator, "
-  url: "/stories/sierra-leone/taylor-johnc2nd/"
-
 - title : "Taylor, John Christopher (B)"
   date: "1800s"
   index: "primary"
@@ -59272,6 +59318,29 @@
   country2: ""
   tags: ""
   url: "/stories/nigeria/taylor-johnc2nd/"
+
+- title : "Taylor, John C. "
+  date: "1800s"
+  index: "primary"
+  century: "19th"
+  tradition: "protestant"
+  affiliation0: "anglican (cms)"
+  affiliation1: ""
+  affiliation2: ""
+  categories: "t"
+  lang: "en"
+  languages-available0: "en"
+  languages-available1: " "
+  languages-available2: " "
+  languages-available3: " "
+  author: "Unavailable"
+  institution: "none"
+  upload: "2011-01-01"
+  country0: "sierra leone"
+  country1: ""
+  country2: ""
+  tags: "clergy, translator, "
+  url: "/stories/sierra-leone/taylor-johnc2nd/"
 
 - title : "Taylor, John Eldred"
   date: "1800s"
@@ -59777,7 +59846,7 @@
   country1: ""
   country2: ""
   tags: "clergy, "
-  url: "/stories/south-africa/theunissen-daniel/"
+  url: "/stories/southafrica/theunissen-daniel/"
 
 - title : "Thewo, Samuel"
   date: "1905-1974"
@@ -59984,7 +60053,7 @@
   country1: "namibia"
   country2: "mozambique"
   tags: "missionary, photo, "
-  url: "/pt/stories/south-africa/threlfall-william/"
+  url: "/pt/stories/southafrica/threlfall-william/"
 
 - title : "Threlfall, William"
   date: "1799-1825"
@@ -60007,7 +60076,7 @@
   country1: "namibia"
   country2: "mozambique"
   tags: "missionary, photo, "
-  url: "/stories/south-africa/threlfall-william/"
+  url: "/stories/southafrica/threlfall-william/"
 
 - title : "Tibafa Mugera, Sylvestre"
   date: "1925-2000"
@@ -60076,7 +60145,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, women, "
-  url: "/fr/stories/south-africa/tikhuie-vmagdalena/"
+  url: "/fr/stories/southafrica/tikhuie-vmagdalena/"
 
 - title : "Tikhuie, Vehettge Magdalena"
   date: "1800"
@@ -60099,7 +60168,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, women, "
-  url: "/stories/south-africa/tikhuie-vmagdalena/"
+  url: "/stories/southafrica/tikhuie-vmagdalena/"
 
 - title : "Tile, Nehemiah (A)"
   date: "1850s-1891"
@@ -60122,7 +60191,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/stories/south-africa/tile-nehemiah/"
+  url: "/stories/southafrica/tile-nehemiah/"
 
 - title : "Tile, Nehemiah (C)"
   date: "1850s-1891"
@@ -60145,7 +60214,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/stories/south-africa/tile-nehemiah2/"
+  url: "/stories/southafrica/tile-nehemiah2/"
 
 - title : "Tile, Nehemiah (B)"
   date: "1850s-1891"
@@ -60168,7 +60237,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/pt/stories/south-africa/tile1-nehemiah/"
+  url: "/pt/stories/southafrica/tile1-nehemiah/"
 
 - title : "Tile, Nehemiah (B)"
   date: "1850s-1891"
@@ -60191,7 +60260,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/stories/south-africa/tile1-nehemiah/"
+  url: "/stories/southafrica/tile1-nehemiah/"
 
 - title : "Tile, Nehemiah (D)"
   date: "1891"
@@ -60214,7 +60283,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/stories/south-africa/tile3-nehemiah/"
+  url: "/stories/southafrica/tile3-nehemiah/"
 
 - title : "Timneng, Michael"
   date: "1898-1968"
@@ -60766,7 +60835,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, "
-  url: "/stories/south-africa/tshatsu-jan/"
+  url: "/stories/southafrica/tshatsu-jan/"
 
 - title : "Tsizehena, John"
   date: "1840-1912"
@@ -61318,7 +61387,7 @@
   country1: ""
   country2: ""
   tags: "translator, women, "
-  url: "/stories/south-africa/van-meerhof-eva/"
+  url: "/stories/southafrica/van-meerhof-eva/"
 
 - title : "Van Wyk, Wiesie"
   date: "1913-2007"
@@ -61341,7 +61410,7 @@
   country1: ""
   country2: ""
   tags: "women, "
-  url: "/stories/south-africa/van-wyk-w/"
+  url: "/stories/southafrica/van-wyk-w/"
 
 - title : "Van der Kemp, Johannes Theodorus (A)"
   date: "1747-1811"
@@ -61364,7 +61433,7 @@
   country1: ""
   country2: ""
   tags: "missionary, photo, "
-  url: "/fr/stories/south-africa/vanderkemp-johannes/"
+  url: "/fr/stories/southafrica/vanderkemp-johannes/"
 
 - title : "Van der Kemp, Johannes Theodorus (A)"
   date: "1747-1811"
@@ -61387,7 +61456,7 @@
   country1: ""
   country2: ""
   tags: "missionary, photo, "
-  url: "/stories/south-africa/vanderkemp-johannes/"
+  url: "/stories/southafrica/vanderkemp-johannes/"
 
 - title : "van der Kemp, Johannes Theodorus (B)"
   date: "1747-1811"
@@ -61410,7 +61479,7 @@
   country1: ""
   country2: ""
   tags: "missionary, photo, "
-  url: "/stories/south-africa/vanderkemp-johannes2/"
+  url: "/stories/southafrica/vanderkemp-johannes2/"
 
 - title : "Van der Merwe, Maartjie"
   date: "1906-1994"
@@ -61433,7 +61502,7 @@
   country1: ""
   country2: ""
   tags: "photo, women, "
-  url: "/stories/south-africa/vandermerwe-maartjie/"
+  url: "/stories/southafrica/vandermerwe-maartjie/"
 
 - title : "Van der Merwe, Willem Jacobus"
   date: "1906-1990"
@@ -61456,7 +61525,7 @@
   country1: "zimbabwe"
   country2: ""
   tags: "missionary, scholar, theologian, "
-  url: "/stories/south-africa/vandermerwe-willem/"
+  url: "/stories/southafrica/vandermerwe-willem/"
 
 - title : "Van der Walt, P. J."
   date: "1900s"
@@ -61709,7 +61778,7 @@
   country1: ""
   country2: ""
   tags: "clergy, scholar, "
-  url: "/stories/south-africa/vilakazi-benedict/"
+  url: "/stories/southafrica/vilakazi-benedict/"
 
 - title : "Vilakazi, George Boy Fanyana"
   date: "1948-2009"
@@ -61732,7 +61801,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/vilakazi-george/"
+  url: "/stories/southafrica/vilakazi-george/"
 
 - title : "Villèle, Joseph de"
   date: "1851-1939"
@@ -61824,7 +61893,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, missionary, "
-  url: "/stories/south-africa/vonstaden-hans/"
+  url: "/stories/southafrica/vonstaden-hans/"
 
 - title : "Vos, Michiel Christian"
   date: "1759-1825"
@@ -61847,7 +61916,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, "
-  url: "/stories/south-africa/vos-michiel/"
+  url: "/stories/southafrica/vos-michiel/"
 
 - title : "Vou Gyang Bot Dung"
   date: "1908-1966"
@@ -62284,7 +62353,7 @@
   country1: ""
   country2: ""
   tags: "clergy, missionary, photo, "
-  url: "/stories/south-africa/waters-henry/"
+  url: "/stories/southafrica/waters-henry/"
 
 - title : "Watson, Minnie Cumming"
   date: "1867-1949"
@@ -62468,7 +62537,7 @@
   country1: ""
   country2: ""
   tags: "missionary, translator, "
-  url: "/stories/south-africa/white-john/"
+  url: "/stories/southafrica/white-john/"
 
 - title : "Wilberforce, Daniel Flickinger"
   date: "1856-1927"
@@ -62675,7 +62744,7 @@
   country1: ""
   country2: ""
   tags: "clergy, photo, "
-  url: "/stories/south-africa/williams-neville/"
+  url: "/stories/southafrica/williams-neville/"
 
 - title : "Williams, Pythias James"
   date: "1800s"
@@ -64216,7 +64285,7 @@
   country1: ""
   country2: ""
   tags: "evangelist, women, "
-  url: "/stories/south-africa/zwane-minaar-grace/"
+  url: "/stories/southafrica/zwane-minaar-grace/"
 
 - title : "Zwemer, Samuel Marinus"
   date: "1867-1952"
