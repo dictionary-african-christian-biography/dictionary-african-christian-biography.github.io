@@ -45,6 +45,10 @@
 <lastmod>2019-01-08T00:00:00-05:00</lastmod>
 </url>
 <url>
+<loc>/JHIA-newpartner/</loc>
+<lastmod>2019-01-30T00:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>/stories/nigeria/ladeji-deborah/</loc>
 </url>
 <url>
@@ -510,10 +514,10 @@
 <loc>/pt/stories/southafrica/anderson-william/</loc>
 </url>
 <url>
-<loc>/stories/southafrica/anderson-william/</loc>
+<loc>/stories/nigeria/anderson-william/</loc>
 </url>
 <url>
-<loc>/stories/nigeria/anderson-william/</loc>
+<loc>/stories/southafrica/anderson-william/</loc>
 </url>
 <url>
 <loc>/fr/stories/capeverde/andrade-alvaro/</loc>
@@ -3438,7 +3442,7 @@
 <loc>/stories/nigeria/ilori-joseph/</loc>
 </url>
 <url>
-<loc>/pt/</loc>
+<loc>/</loc>
 </url>
 <url>
 <loc>/fr/</loc>
@@ -3447,7 +3451,7 @@
 <loc>/sw/</loc>
 </url>
 <url>
-<loc>/</loc>
+<loc>/pt/</loc>
 </url>
 <url>
 <loc>/stories/nigeria/inuwa-ayuba/</loc>
@@ -5658,6 +5662,9 @@
 <loc>/stories/southafrica/mogatla-david/</loc>
 </url>
 <url>
+<loc>/stories/botswana/mogodi-khukhwi/</loc>
+</url>
+<url>
 <loc>/stories/southafrica/mohoti-elizabeth/</loc>
 </url>
 <url>
@@ -5689,6 +5696,12 @@
 </url>
 <url>
 <loc>/stories/southafrica/mokone-priscilla/</loc>
+</url>
+<url>
+<loc>/stories/botswana/molefane-paulo/</loc>
+</url>
+<url>
+<loc>/stories/botswana/molehabangwe-mebalwe/</loc>
 </url>
 <url>
 <loc>/stories/namibia/molelekua-kangootui/</loc>
@@ -7471,6 +7484,9 @@
 </url>
 <url>
 <loc>/stories/southafrica/sekgobela-elmon/</loc>
+</url>
+<url>
+<loc>/stories/botswana/sekopo-sebubi/</loc>
 </url>
 <url>
 <loc>/stories/southafrica/selepe-alfred/</loc>
