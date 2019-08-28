@@ -15,6 +15,7 @@
 
 <!-- For all browsers -->
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
     <meta http-equiv="cleartype" content="on">
 <!-- ANALYTICS -->
 <!-- Global Site Tag (gtag.js) - Google Analytics -->
@@ -37,10 +38,23 @@
                                     MASTHEAD
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-  <div class="masthead-banner">
+  
+<div class="masthead-banner">
 <div class="masthead__inner-wrap">
+
+  <!------ LANGAUGE SWITCHER
+  <div class="lang-switch">
+    <div class="switcher">
+      <div class="home"> </div>
+      <div class="en"><a href="/#">EN</a></div>
+      <div class="fr"><a href="/fr">FR</a></div>
+      <div class="pt"><a href="/pt">PT</a></div>
+      <div class="sw"><a href="/sw">SW</a></div>
+    </div>
+  </div> -->
+
   <div class="logo">
-      <img src="/assets/images/logo-sw.gif">
+      <a href="/sw/#"><img src="/assets/images/logo-new-sw.png"></a>
     </div>
 <nav class="top">
         <label for="drop" class="toggle-m">Menyu</label>
@@ -49,86 +63,105 @@
 <!----------------------------------------------------------------------------------------------------------->
 <!-- HOME --------------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------->
-          <li>
-              <label for="drop-0" class="toggle"><div class="drop">Mwanzo</div></label>
-              <a href="#"><div class="drop">Mwanzo</div></a>
-              <input type="checkbox" id="drop-0"/>
-              <ul class=="top">
-                  <li class="second"><a href="/">English</a></li>
-                  <li class="second"><a href="/fr/">Français</a></li>
-                  <li class="second"><a href="/pt/">Português</a></li>
-                  <li class="second"><a href="/sw/">Kiswahili</a></li>
-              </ul>
-          </li>
+            <li>
+            <label for="drop-2" class="toggle"><div class="drop"><a href="/sw/">Mwanzo</a></div></label>
+            <a href="/sw/"><div class="drop">Mwanzo</div></a>
+            <input type="checkbox" id="drop-2"/>
+            <ul class=="top">
+              <li class="second"><a href="/">English</a></li>
+              <li class="second"><a href="/fr/">Français</a></li>
+              <li class="second"><a href="/pt/">Português</a></li>
+              <li class="second"><a href="/sw/">Kiswahili</a></li>
+            </ul>
+            </li>
+
+<!----------------------------------------------------------------------------------------------------------->
+<!-- ABOUT -------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------->
+            <li>
+            <label for="drop-2" class="toggle"><div class="drop"><a href="/sw/about/">Kuhusu</a></div></label>
+            <a href="/sw/about/"><div class="drop">Kuhusu</div></a>
+            <input type="checkbox" id="drop-2"/>
+            <ul class=="top">
+              <li class="second"><a href="/sw/about/vision/">Maono</a></li>
+              <li class="second"><a href="/sw/about/advisors/">Washauri</a></li>
+              <li class="second"><a href="/about/editorial-committee/">Kamati ya Utendaji</a></li>
+              <li class="second"><a href="/about/donor-list/">Wafadhili Wetu</a></li>
+              <li class="second"><a href="/sw/about/partners/">Washirika</a></li>
+              <li class="second"><a href="/about/usage/">Matumizi ya Tovuti</a></li>
+            </ul>
+            </li>
+
 <!----------------------------------------------------------------------------------------------------------->
 <!-- STORIES ------------------------------------------------------------------------------------------------>
 <!----------------------------------------------------------------------------------------------------------->
             <li>
-                <label for="drop-1" class="toggle"><div class="drop">Hadithi</div></label>
-                <a href="#"><div class="drop">Hadithi</div></a>
-                <input type="checkbox" id="drop-1"/>
-                <ul class=="top">
-                    <li class="second"><a href="/sw/sort/stories/">Kila Hadithi</a></li>
-                    <li class="second"><a href="/sw/sort/stories/latest-sort/">Hadithi Mpya Zaidi</a></li>
-                    <li class="second"><a href="/sw/sort/stories/regional-histories/">Hadithi za Mkoa</a></li>
-                </ul>
-            </li>
-<!----------------------------------------------------------------------------------------------------------->
-<!-- ABOUT -------------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------------->
-            <!-- <li>
-            <label for="drop-2" class="toggle"><div class="drop">Kuhusu</div></label>
-            <a href="#"><div class="drop">Kuhusu</div></a>
-            <input type="checkbox" id="drop-2"/>
+            <label for="drop-0" class="toggle"><div class="drop"><a href="/sw/sort/stories/">Hadithi</a></div></label>
+            <a href="/sw/sort/stories/"><div class="drop">Hadithi</div></a>
+            <input type="checkbox" id="drop-0"/>
             <ul class=="top">
-              <li class="second"><a href="/sw/about/what-is-dacb/">KAWAKIA ni Nini?</a></li>
-              <li class="second"><a href="/sw/about/beginnings/">Mwanzo</a></li>
-              <li class="second"><a href="/sw/about/vision/">Maono</a></li>
-              <li class="second"><a href="/sw/about/advisors/">Washauri</a></li>
+              <li class="second"><a href="/sw/sort/stories/latest-sort/">Hadithi Mpya Zaidi</a></li>
+              <li class="second"><a href="/sw/sort/stories/collected-memories/">Zilizokusanywa Kumbukumbu</a></li>
+              <li class="second"><a href="/sw/sort/stories/regional-histories/">Hadithi za Mkoa</a></li>
+              <li class="second"><a href="/sw/sort/stories/country-sort/">Kisasa Afrika</a></li>
+              <li class="second"><a href="/sw/sort/stories/ancient-church-index/">Afrika ya Zamani</a></li>
             </ul>
-            </li> -->
+            </li>
+
+<!----------------------------------------------------------------------------------------------------------->
+<!-- PROJECTS ------------------------------------------------------------------------------------------------>
+<!----------------------------------------------------------------------------------------------------------->
+            <li>
+              <label for="drop-1" class="toggle"><div class="drop"><a href="/sw/projects/">Miradi</a></div></label>
+              <a href="/sw/projects/"><div class="drop">Miradi</div></a>
+              <input type="checkbox" id="drop-1"/>
+            <ul class=="top">
+              <li class="second"><a href="/projects/women/">Wanawake</a></li>
+              <li class="second"><a href="/projects/music-art/">Wataalamu na Wasanii</a></li>
+              <li class="second"><a href="/projects/diaspora">Diaspora</a></li>
+
+            </ul>
+            </li>
 <!----------------------------------------------------------------------------------------------------------->
 <!-- RESOURCES  --------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------->
             <li>
-            <label for="drop-3" class="toggle"><div class="drop">Vitendea Kazi</div></label>
-            <a href="#"><div class="drop">Vitendea Kazi</div></a>
+            <label for="drop-3" class="toggle"><div class="drop"><a href="/sw/resources">Vitendea Kazi</a></div></label>
+            <a href="/sw/resources"><div class="drop">Vitendea Kazi</div></a>
             <input type="checkbox" id="drop-3"/>
             <ul class=="top">
-              <li class="second"><a href="/sw/resources/writers-educators/">Kwa Waandishi na Waelimishaji</a></li>
-              <li class="second"><a href="/sw/resources/bibliographies/">Bibliografia</a></li>
-              <li class="second"><a href="/sw/resources/potential-subjects/">Watu Uwezo</a></li>
+              <li class="second"><a href="/sw/resources/introductory/">Rasilimali za Utangulizi</a></li>
+              <li class="second"><a href="/sw/resources/educational/">Rasilimali za Elimu</a></li>
+              <li class="second"><a href="/sw/resources/bibliographic/">Rasilimali za Bibliographic</a></li>
+              <li class="second"><a href="/sw/resources/oral-history/">Historia Rasilimali Rasilimali</a></li>
             </ul>
             </li>
 <!----------------------------------------------------------------------------------------------------------->
-<!-- NEWS --------------------------------------------------------------------------------------------------->
+<!-- JOURNAL --------------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------->
             <li>
-            <label for="drop-6" class="toggle"><div class="drop">Habari</div></label>
-            <a href="#"><div class="drop">Habari</div></a>
-            <input type="checkbox" id="drop-6"/>
-            <ul class=="top">
-              <li class="second"><a href="/sw/sort/stories/latest-sort/">Hadithi Mpya Zaidi</a></li>
-              <li class="second"><a href="/sw/news/newsletter/">Jarida</a></li>
-            </ul>
+            <label for="drop-6" class="toggle"><div class="drop"><a href="/journal/">Journal</a></div></label>
+            <a href="/journal/"><div class="drop">Journal</div></a>
             </li>
+
 <!----------------------------------------------------------------------------------------------------------->
-<!-- CONTRIBUTE --------------------------------------------------------------------------------------------->
+<!-- CONNECT --------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------->
             <li>
-            <label for="drop-7" class="toggle"><div class="drop">Mawasiliano</div></label>
-            <a href="#"><div class="drop">Mawasiliano</div></a>
+            <label for="drop-7" class="toggle"><div class="drop"><a href="/sw/connect/">Unganisha</a></div></label>
+            <a href="/sw/connect/"><div class="drop">Unganisha</div></a>
             <input type="checkbox" id="drop-7"/>
             <ul class=="top">
-              <li class="second"><a href="/sw/contribute/contact/">Wasiliana Nasi</a></li>
-              <li class="second"><a href="/sw/contribute/partner/">Kushirikiana</a></li>
-              <li class="second"><a href="/sw/contribute/submit/">Wasilisha Hadithi</a></li>
+              <li class="second"><a href="/connect/news/">Habari</a></li>
+              <li class="second"><a href="/sw/connect/submit/">Wasilisha Hadithi</a></li>
+              <li class="second"><a href="/sw/connect/collaborate/">Kushirikiana</a></li>
+              <li class="second"><a href="/sw/connect/contact/">Wasiliana Nasi</a></li>
             </ul>
             </li>
 <!----------------------------------------------------------------------------------------------------------->
 <!-- SEARCH ------------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------->
-            <label class="toggle">
+            <label class="toggle" style="margin-left: .5vw !important; margin-right: .5vw !important;">
               <a class="search-image" href="/search-sw.html" style="padding: 0px !important"></a></label>
                 <li class="menu">
                   <a class="search-image" href="/search-sw.html" style="padding: 0px !important"></a>
@@ -145,6 +178,7 @@
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                                     CONTENT
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  
 
   <div id="main" role="main"><a name="#top"></a>
   <!-- SIDEBAR -->
@@ -277,6 +311,14 @@
                         
 
                         <li><a href="/sw/sort/stories/catechist-index/" class="">Makatekististi</a></li>
+                      
+                        
+                        
+
+                        
+                        
+
+                        <li><a href="/sw/sort/stories/classic-index/" class="">Classic</a></li>
                       
                         
                         
@@ -437,6 +479,11 @@
   <div class="archive">
 
     
+
+    
+
+
+
       <h1 class="page__title">Hadithi za hivi Karibuni: 2011</h1>
     
     <table class="sort"><tbody><tr>
@@ -455,8 +502,6 @@
 
 
 <table><thead><th width=15%>Tarehe Ya Ongezeko</th><th width=30%>Jina</th><th width=20%>Uhusiano</th><th width=20%>Nchi</th><th width=15%>Lugha</th></thead></table>
-
-
 
 
 
@@ -700,6 +745,50 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
+                <a href="/fr/stories/nigeria/abiodun-christiana/">Abiodun Emmanuel, Christiana</a>
+        
+      </td>
+      <td width=20%>
+        Society Cherubim na Seraphim (Aladura)
+        
+        
+      </td>
+      <td width=20%>
+        Nigeria
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/nigeria/abiodun-christiana/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/nigeria/abiodun-christiana/" rel="permalink">FR</a>
+        
+        
+        
+        
+        <a href="/pt/stories/nigeria/abiodun-christiana/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
                 <a href="/pt/stories/nigeria/abiodun-christiana/">Abiodun Emmanuel, Christiana</a>
         
       </td>
@@ -745,50 +834,6 @@
       <td width=30%>
         
                 <a href="/stories/nigeria/abiodun-christiana/">Abiodun Emmanuel, Christiana</a>
-        
-      </td>
-      <td width=20%>
-        Society Cherubim na Seraphim (Aladura)
-        
-        
-      </td>
-      <td width=20%>
-        Nigeria
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/nigeria/abiodun-christiana/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/nigeria/abiodun-christiana/" rel="permalink">FR</a>
-        
-        
-        
-        
-        <a href="/pt/stories/nigeria/abiodun-christiana/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
-                <a href="/fr/stories/nigeria/abiodun-christiana/">Abiodun Emmanuel, Christiana</a>
         
       </td>
       <td width=20%>
@@ -1098,7 +1143,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/ghana/acquaah-gr/">Acquaah, Gaddiel Robert</a>
+                <a href="/stories/ghana/acquaah-gr/">Acquaah, Gaddiel Robert</a>
         
       </td>
       <td width=20%>
@@ -1142,7 +1187,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/ghana/acquaah-gr/">Acquaah, Gaddiel Robert</a>
+                <a href="/fr/stories/ghana/acquaah-gr/">Acquaah, Gaddiel Robert</a>
         
       </td>
       <td width=20%>
@@ -1584,7 +1629,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/nigeria/adejobi-emmanuel/">Adejobi, Emmanuel Owoade Adeleke</a>
+                <a href="/stories/nigeria/adejobi-emmanuel/">Adejobi, Emmanuel Owoade Adeleke</a>
         
       </td>
       <td width=20%>
@@ -1628,7 +1673,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/nigeria/adejobi-emmanuel/">Adejobi, Emmanuel Owoade Adeleke</a>
+                <a href="/fr/stories/nigeria/adejobi-emmanuel/">Adejobi, Emmanuel Owoade Adeleke</a>
         
       </td>
       <td width=20%>
@@ -2201,7 +2246,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/nigeria/adetiloye-joseph2/">Adetiloye, Joseph Abiodun (B)</a>
+                <a href="/fr/stories/nigeria/adetiloye-joseph2/">Adetiloye, Joseph Abiodun (B)</a>
         
       </td>
       <td width=20%>
@@ -2245,7 +2290,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/nigeria/adetiloye-joseph2/">Adetiloye, Joseph Abiodun (B)</a>
+                <a href="/stories/nigeria/adetiloye-joseph2/">Adetiloye, Joseph Abiodun (B)</a>
         
       </td>
       <td width=20%>
@@ -2511,7 +2556,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/congo/afonso1/">Afonso I (A)</a>
+                <a href="/fr/stories/congo/afonso1/">Afonso I (A)</a>
         
       </td>
       <td width=20%>
@@ -2599,7 +2644,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/congo/afonso1/">Afonso I (A)</a>
+                <a href="/pt/stories/congo/afonso1/">Afonso I (A)</a>
         
       </td>
       <td width=20%>
@@ -2776,7 +2821,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/southafrica/africaner-christian/">Africaner, Jager Christian</a>
+                <a href="/fr/stories/southafrica/africaner-christian/">Africaner, Jager Christian</a>
         
       </td>
       <td width=20%>
@@ -2820,7 +2865,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/southafrica/africaner-christian/">Africaner, Jager Christian</a>
+                <a href="/stories/southafrica/africaner-christian/">Africaner, Jager Christian</a>
         
       </td>
       <td width=20%>
@@ -3308,7 +3353,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/cote-divoire/ahui-2john/">Ahui, John</a>
+                <a href="/fr/stories/cote-divoire/ahui-2john/">Ahui, John</a>
         
       </td>
       <td width=20%>
@@ -3352,7 +3397,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/cote-divoire/ahui-2john/">Ahui, John</a>
+                <a href="/stories/cote-divoire/ahui-2john/">Ahui, John</a>
         
       </td>
       <td width=20%>
@@ -3528,50 +3573,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/ailloud-laurent/">Ailloud, Laurent</a>
-        
-      </td>
-      <td width=20%>
-        Kanisa Katoliki
-        
-        
-      </td>
-      <td width=20%>
-        Madagascar
-        Reunion
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/madagascar/ailloud-laurent/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/madagascar/ailloud-laurent/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/fr/stories/madagascar/ailloud-laurent/">Ailloud, Laurent</a>
         
       </td>
@@ -3616,7 +3617,51 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/nigeria/aina-j-ade/">Aina, J. Ade</a>
+                <a href="/stories/madagascar/ailloud-laurent/">Ailloud, Laurent</a>
+        
+      </td>
+      <td width=20%>
+        Kanisa Katoliki
+        
+        
+      </td>
+      <td width=20%>
+        Madagascar
+        Reunion
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/madagascar/ailloud-laurent/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/madagascar/ailloud-laurent/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/fr/stories/nigeria/aina-j-ade/">Aina, J. Ade</a>
         
       </td>
       <td width=20%>
@@ -3660,7 +3705,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/nigeria/aina-j-ade/">Aina, J. Ade</a>
+                <a href="/stories/nigeria/aina-j-ade/">Aina, J. Ade</a>
         
       </td>
       <td width=20%>
@@ -5870,6 +5915,50 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
+                <a href="/pt/stories/southafrica/andersen-oscar/">Andersen, Oscar</a>
+        
+      </td>
+      <td width=20%>
+        Kanisa la Nazarene
+        
+        
+      </td>
+      <td width=20%>
+        Afrika Kusini
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/southafrica/andersen-oscar/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/southafrica/andersen-oscar/" rel="permalink">FR</a>
+        
+        
+        
+        
+        <a href="/pt/stories/southafrica/andersen-oscar/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
                 <a href="/stories/southafrica/andersen-oscar/">Andersen, Oscar</a>
         
       </td>
@@ -5915,50 +6004,6 @@
       <td width=30%>
         
                 <a href="/fr/stories/southafrica/andersen-oscar/">Andersen, Oscar</a>
-        
-      </td>
-      <td width=20%>
-        Kanisa la Nazarene
-        
-        
-      </td>
-      <td width=20%>
-        Afrika Kusini
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/southafrica/andersen-oscar/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/southafrica/andersen-oscar/" rel="permalink">FR</a>
-        
-        
-        
-        
-        <a href="/pt/stories/southafrica/andersen-oscar/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
-                <a href="/pt/stories/southafrica/andersen-oscar/">Andersen, Oscar</a>
         
       </td>
       <td width=20%>
@@ -6091,7 +6136,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/southafrica/anderson-william/">Anderson, William (South Africa)</a>
+                <a href="/stories/southafrica/anderson-william/">Anderson, William (South Africa)</a>
         
       </td>
       <td width=20%>
@@ -6135,7 +6180,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/southafrica/anderson-william/">Anderson, William (South Africa)</a>
+                <a href="/pt/stories/southafrica/anderson-william/">Anderson, William (South Africa)</a>
         
       </td>
       <td width=20%>
@@ -6311,50 +6356,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/capeverde/andrade-alvaro/">Andrade, Álvaro Barbosa</a>
-        
-      </td>
-      <td width=20%>
-        Kanisa la Nazarene
-        
-        
-      </td>
-      <td width=20%>
-        Cape Verde
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/capeverde/andrade-alvaro/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/capeverde/andrade-alvaro/" rel="permalink">FR</a>
-        
-        
-        
-        
-        <a href="/pt/stories/capeverde/andrade-alvaro/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/stories/capeverde/andrade-alvaro/">Andrade, Álvaro Barbosa</a>
         
       </td>
@@ -6400,6 +6401,50 @@
       <td width=30%>
         
                 <a href="/fr/stories/capeverde/andrade-alvaro/">Andrade, Álvaro Barbosa</a>
+        
+      </td>
+      <td width=20%>
+        Kanisa la Nazarene
+        
+        
+      </td>
+      <td width=20%>
+        Cape Verde
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/capeverde/andrade-alvaro/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/capeverde/andrade-alvaro/" rel="permalink">FR</a>
+        
+        
+        
+        
+        <a href="/pt/stories/capeverde/andrade-alvaro/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/pt/stories/capeverde/andrade-alvaro/">Andrade, Álvaro Barbosa</a>
         
       </td>
       <td width=20%>
@@ -6575,50 +6620,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/andriambelo/">Andriambelo</a>
-        
-      </td>
-      <td width=20%>
-        London Missionary Society
-        
-        
-      </td>
-      <td width=20%>
-        Madagascar
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/madagascar/andriambelo/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/madagascar/andriambelo/" rel="permalink">FR</a>
-        
-        
-        
-        
-        <a href="/pt/stories/madagascar/andriambelo/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/pt/stories/madagascar/andriambelo/">Andriambelo</a>
         
       </td>
@@ -6663,11 +6664,55 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/andrianaivoravelona-j/">Andrianaivoravelona, Josefa</a>
+                <a href="/fr/stories/madagascar/andriambelo/">Andriambelo</a>
         
       </td>
       <td width=20%>
-        Kanisa la Kiprotestanti la Yesu Kristo lililobadilishwa huko Madagascar
+        London Missionary Society
+        
+        
+      </td>
+      <td width=20%>
+        Madagascar
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/madagascar/andriambelo/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/madagascar/andriambelo/" rel="permalink">FR</a>
+        
+        
+        
+        
+        <a href="/pt/stories/madagascar/andriambelo/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/stories/madagascar/andrianaivoravelona-j/">Andrianaivoravelona, Josefa</a>
+        
+      </td>
+      <td width=20%>
+        Kanisa la Yesu Kristo huko Madagascar
         
         
       </td>
@@ -6707,11 +6752,11 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/andrianaivoravelona-j/">Andrianaivoravelona, Josefa</a>
+                <a href="/fr/stories/madagascar/andrianaivoravelona-j/">Andrianaivoravelona, Josefa</a>
         
       </td>
       <td width=20%>
-        Kanisa la Yesu Kristo huko Madagascar
+        Kanisa la Kiprotestanti la Yesu Kristo lililobadilishwa huko Madagascar
         
         
       </td>
@@ -6885,7 +6930,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/egypt/anthony-egypt/">Antonius</a>
+                <a href="/stories/egypt/anthony-egypt/">Anthony of Egypt</a>
         
       </td>
       <td width=20%>
@@ -6929,7 +6974,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/egypt/anthony-egypt/">Antonius</a>
+                <a href="/fr/stories/egypt/anthony-egypt/">Antoine d&#39;Égypte</a>
         
       </td>
       <td width=20%>
@@ -7020,7 +7065,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/nigeria/anyogu-johncross/">Anyogu, John Cross</a>
+                <a href="/stories/nigeria/anyogu-johncross/">Anyogu, John Cross</a>
         
       </td>
       <td width=20%>
@@ -7064,7 +7109,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/nigeria/anyogu-johncross/">Anyogu, John Cross</a>
+                <a href="/pt/stories/nigeria/anyogu-johncross/">Anyogu, John Cross</a>
         
       </td>
       <td width=20%>
@@ -7597,50 +7642,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/democratic-republic-of-congo/arnot-stanley/">Arnot, Frederick Stanley (A)</a>
-        
-      </td>
-      <td width=20%>
-        Fungua Waume (Misaada ya Kikristo Katika Nchi nyingi)
-        
-        
-      </td>
-      <td width=20%>
-        Jamhuri Ya Kidemokrasia Ya Kongo
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/democratic-republic-of-congo/arnot-stanley/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/arnot-stanley/" rel="permalink">FR</a>
-        
-        
-        
-        
-        <a href="/pt/stories/democratic-republic-of-congo/arnot-stanley/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/pt/stories/democratic-republic-of-congo/arnot-stanley/">Arnot, Frederick Stanley (A)</a>
         
       </td>
@@ -7686,6 +7687,50 @@
       <td width=30%>
         
                 <a href="/fr/stories/democratic-republic-of-congo/arnot-stanley/">Arnot, Frederick Stanley (A)</a>
+        
+      </td>
+      <td width=20%>
+        Fungua Waume (Misaada ya Kikristo Katika Nchi nyingi)
+        
+        
+      </td>
+      <td width=20%>
+        Jamhuri Ya Kidemokrasia Ya Kongo
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/democratic-republic-of-congo/arnot-stanley/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/arnot-stanley/" rel="permalink">FR</a>
+        
+        
+        
+        
+        <a href="/pt/stories/democratic-republic-of-congo/arnot-stanley/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/stories/democratic-republic-of-congo/arnot-stanley/">Arnot, Frederick Stanley (A)</a>
         
       </td>
       <td width=20%>
@@ -8125,7 +8170,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/southafrica/asia-abel/">Asia, Abel Johannes</a>
+                <a href="/stories/southafrica/asia-abel/">Asia, Abel Johannes</a>
         
       </td>
       <td width=20%>
@@ -8169,7 +8214,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/southafrica/asia-abel/">Asia, Abel Johannes</a>
+                <a href="/fr/stories/southafrica/asia-abel/">Asia, Abel Johannes</a>
         
       </td>
       <td width=20%>
@@ -9010,50 +9055,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/tunisia/augustine/">Augustinus, Aurelius</a>
-        
-      </td>
-      <td width=20%>
-        Kanisa la kale la Kikristo
-        
-        
-      </td>
-      <td width=20%>
-        Tunisia
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/tunisia/augustine/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/tunisia/augustine/" rel="permalink">FR</a>
-        
-        
-        
-        
-        <a href="/pt/stories/tunisia/augustine/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/fr/stories/tunisia/augustine/">Augustinus, Aurelius</a>
         
       </td>
@@ -9099,6 +9100,50 @@
       <td width=30%>
         
                 <a href="/stories/tunisia/augustine/">Augustinus, Aurelius</a>
+        
+      </td>
+      <td width=20%>
+        Kanisa la kale la Kikristo
+        
+        
+      </td>
+      <td width=20%>
+        Tunisia
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/tunisia/augustine/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/tunisia/augustine/" rel="permalink">FR</a>
+        
+        
+        
+        
+        <a href="/pt/stories/tunisia/augustine/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/pt/stories/tunisia/augustine/">Augustinus, Aurelius</a>
         
       </td>
       <td width=20%>
@@ -9497,7 +9542,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/capeverde/azevedo-maria/">Azevedo, Maria</a>
+                <a href="/pt/stories/capeverde/azevedo-maria/">Azevedo, Maria</a>
         
       </td>
       <td width=20%>
@@ -9541,7 +9586,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/capeverde/azevedo-maria/">Azevedo, Maria</a>
+                <a href="/stories/capeverde/azevedo-maria/">Azevedo, Maria</a>
         
       </td>
       <td width=20%>
@@ -9717,50 +9762,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/nigeria/babalola-joseph/">Babalola, Joseph Ayodele (A)</a>
-        
-      </td>
-      <td width=20%>
-        Kanisa la Kristo Apostolic (Aladura)
-        
-        
-      </td>
-      <td width=20%>
-        Nigeria
-        Ghana
-        
-      </td>
-      <td width=15%>
-        
-        
-        
-        
-        
-        <a href="/fr/stories/nigeria/babalola-joseph/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/stories/nigeria/babalola-joseph/">Babalola, Joseph Ayodele (A)</a>
         
       </td>
@@ -9805,7 +9806,51 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/nigeria/babalola1-joseph/">Babalola, Joseph Ayodele (B)</a>
+                <a href="/fr/stories/nigeria/babalola-joseph/">Babalola, Joseph Ayodele (A)</a>
+        
+      </td>
+      <td width=20%>
+        Kanisa la Kristo Apostolic (Aladura)
+        
+        
+      </td>
+      <td width=20%>
+        Nigeria
+        Ghana
+        
+      </td>
+      <td width=15%>
+        
+        
+        
+        
+        
+        <a href="/fr/stories/nigeria/babalola-joseph/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/stories/nigeria/babalola1-joseph/">Babalola, Joseph Ayodele (B)</a>
         
       </td>
       <td width=20%>
@@ -9893,7 +9938,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/sw/stories/nigeria/babalola1-joseph/">Babalola, Joseph Ayodele (B)</a></td>
+                <a href="/pt/stories/nigeria/babalola1-joseph/">Babalola, Joseph Ayodele (B)</a>
         
       </td>
       <td width=20%>
@@ -9937,7 +9982,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/nigeria/babalola1-joseph/">Babalola, Joseph Ayodele (B)</a>
+                <a href="/sw/stories/nigeria/babalola1-joseph/">Babalola, Joseph Ayodele (B)</a></td>
         
       </td>
       <td width=20%>
@@ -10388,7 +10433,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/southafrica/balfour-noyi/">Balfour, Noyi</a>
+                <a href="/stories/southafrica/balfour-noyi/">Balfour, Noyi</a>
         
       </td>
       <td width=20%>
@@ -10432,7 +10477,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/southafrica/balfour-noyi/">Balfour, Noyi</a>
+                <a href="/pt/stories/southafrica/balfour-noyi/">Balfour, Noyi</a>
         
       </td>
       <td width=20%>
@@ -10872,7 +10917,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/uganda/banabakintu-luke/">Banabakintu, Luke</a>
+                <a href="/fr/stories/uganda/banabakintu-luke/">Banabakintu, Luke</a>
         
       </td>
       <td width=20%>
@@ -10916,7 +10961,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/uganda/banabakintu-luke/">Banabakintu, Luke</a>
+                <a href="/stories/uganda/banabakintu-luke/">Banabakintu, Luke</a>
         
       </td>
       <td width=20%>
@@ -10951,6 +10996,50 @@
 </article>
 </div>
 
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/stories/zambia/banda-isaac/">Banda, Isaac</a>
+        
+      </td>
+      <td width=20%>
+        Kanisa la Nazarene
+        
+        
+      </td>
+      <td width=20%>
+        Zambia
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/zambia/banda-isaac/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/zambia/banda-isaac/" rel="permalink">FR</a>
+        
+        
+        
+        
+        <a href="/pt/stories/zambia/banda-isaac/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
 
 
 
@@ -11006,50 +11095,6 @@
       <td width=30%>
         
                 <a href="/pt/stories/zambia/banda-isaac/">Banda, Isaac</a>
-        
-      </td>
-      <td width=20%>
-        Kanisa la Nazarene
-        
-        
-      </td>
-      <td width=20%>
-        Zambia
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/zambia/banda-isaac/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/zambia/banda-isaac/" rel="permalink">FR</a>
-        
-        
-        
-        
-        <a href="/pt/stories/zambia/banda-isaac/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
-                <a href="/stories/zambia/banda-isaac/">Banda, Isaac</a>
         
       </td>
       <td width=20%>
@@ -11361,7 +11406,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/baron-richard/">Baron, Richard</a>
+                <a href="/fr/stories/madagascar/baron-richard/">Baron, Richard</a>
         
       </td>
       <td width=20%>
@@ -11405,7 +11450,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/baron-richard/">Baron, Richard</a>
+                <a href="/stories/madagascar/baron-richard/">Baron, Richard</a>
         
       </td>
       <td width=20%>
@@ -11846,7 +11891,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/democratic-republic-of-congo/semopa-bavon/">Bavon, Semopa</a>
+                <a href="/stories/democratic-republic-of-congo/semopa-bavon/">Bavon, Semopa</a>
         
       </td>
       <td width=20%>
@@ -11890,7 +11935,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/democratic-republic-of-congo/semopa-bavon/">Bavon, Semopa</a>
+                <a href="/fr/stories/democratic-republic-of-congo/semopa-bavon/">Bavon, Semopa</a>
         
       </td>
       <td width=20%>
@@ -12022,7 +12067,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/ghana/baeta-christian/">Baëta, Christian Goncalves Kwami</a>
+                <a href="/fr/stories/ghana/baeta-christian/">Baëta, Christian Goncalves Kwami</a>
         
       </td>
       <td width=20%>
@@ -12066,7 +12111,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/ghana/baeta-christian/">Baëta, Christian Goncalves Kwami</a>
+                <a href="/stories/ghana/baeta-christian/">Baëta, Christian Goncalves Kwami</a>
         
       </td>
       <td width=20%>
@@ -12235,6 +12280,7 @@
 
 
 
+
   
 <div>
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
@@ -12276,7 +12322,6 @@
     </tr></tbody></table>
 </article>
 </div>
-
 
 
 
@@ -12641,7 +12686,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/angola/bernardino-ignazio/">Bernardino, Ignazio da Asti</a>
+                <a href="/pt/stories/angola/bernardino-ignazio/">Bernardino, Ignazio da Asti</a>
         
       </td>
       <td width=20%>
@@ -12685,7 +12730,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/angola/bernardino-ignazio/">Bernardino, Ignazio da Asti</a>
+                <a href="/stories/angola/bernardino-ignazio/">Bernardino, Ignazio da Asti</a>
         
       </td>
       <td width=20%>
@@ -12773,7 +12818,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/berthieu-jacques/">Berthieu, Jacques</a>
+                <a href="/fr/stories/madagascar/berthieu-jacques/">Berthieu, Jacques</a>
         
       </td>
       <td width=20%>
@@ -12787,12 +12832,12 @@
         
       </td>
       <td width=15%>
-        <a href="/stories/madagascar/berthieu-jacques/" rel="permalink">EN</a>
         
         
         
         
         
+        <a href="/fr/stories/madagascar/berthieu-jacques/" rel="permalink">FR</a>
         
         
         
@@ -12817,7 +12862,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/berthieu-jacques/">Berthieu, Jacques</a>
+                <a href="/stories/madagascar/berthieu-jacques/">Berthieu, Jacques</a>
         
       </td>
       <td width=20%>
@@ -12831,12 +12876,12 @@
         
       </td>
       <td width=15%>
+        <a href="/stories/madagascar/berthieu-jacques/" rel="permalink">EN</a>
         
         
         
         
         
-        <a href="/fr/stories/madagascar/berthieu-jacques/" rel="permalink">FR</a>
         
         
         
@@ -13213,7 +13258,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/beyzim-jean/">Beyzim, Jean (A)</a>
+                <a href="/stories/madagascar/beyzim-jean/">Beyzim, Jean (A)</a>
         
       </td>
       <td width=20%>
@@ -13257,7 +13302,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/beyzim-jean/">Beyzim, Jean (A)</a>
+                <a href="/fr/stories/madagascar/beyzim-jean/">Beyzim, Jean (A)</a>
         
       </td>
       <td width=20%>
@@ -13831,7 +13876,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/birkeli-emil-otto/">Birkeli, Emil Otto</a>
+                <a href="/stories/madagascar/birkeli-emil-otto/">Birkeli, Emil Otto</a>
         
       </td>
       <td width=20%>
@@ -13875,7 +13920,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/birkeli-emil-otto/">Birkeli, Emil Otto</a>
+                <a href="/fr/stories/madagascar/birkeli-emil-otto/">Birkeli, Emil Otto</a>
         
       </td>
       <td width=20%>
@@ -14537,7 +14582,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/senegal/boilat-abbepierre/">Boilat, Abbé Pierre D. (A)</a>
+                <a href="/stories/senegal/boilat-abbepierre/">Boilat, Abbé Pierre D. (A)</a>
         
       </td>
       <td width=20%>
@@ -14581,7 +14626,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/senegal/boilat-abbepierre/">Boilat, Abbé Pierre D. (A)</a>
+                <a href="/fr/stories/senegal/boilat-abbepierre/">Boilat, Abbé Pierre D. (A)</a>
         
       </td>
       <td width=20%>
@@ -14670,7 +14715,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/southafrica/bokwe-johnknox/">Bokwe, John Knox (A)</a>
+                <a href="/pt/stories/southafrica/bokwe-johnknox/">Bokwe, John Knox (A)</a>
         
       </td>
       <td width=20%>
@@ -14758,7 +14803,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/southafrica/bokwe-johnknox/">Bokwe, John Knox (A)</a>
+                <a href="/stories/southafrica/bokwe-johnknox/">Bokwe, John Knox (A)</a>
         
       </td>
       <td width=20%>
@@ -15863,7 +15908,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/bourdaise-toussaint/">Bourdaise, Toussaint</a>
+                <a href="/stories/madagascar/bourdaise-toussaint/">Bourdaise, Toussaint</a>
         
       </td>
       <td width=20%>
@@ -15907,7 +15952,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/bourdaise-toussaint/">Bourdaise, Toussaint</a>
+                <a href="/fr/stories/madagascar/bourdaise-toussaint/">Bourdaise, Toussaint</a>
         
       </td>
       <td width=20%>
@@ -16173,7 +16218,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/nigeria/braide1-garrick/">Braide, Garrick Sokari Marian (A)</a>
+                <a href="/fr/stories/nigeria/braide1-garrick/">Braide, Garrick Sokari Marian (A)</a>
         
       </td>
       <td width=20%>
@@ -16217,7 +16262,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/nigeria/braide1-garrick/">Braide, Garrick Sokari Marian (A)</a>
+                <a href="/stories/nigeria/braide1-garrick/">Braide, Garrick Sokari Marian (A)</a>
         
       </td>
       <td width=20%>
@@ -16437,7 +16482,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/southafrica/brander-samuel/">Brander, Samuel James</a>
+                <a href="/fr/stories/southafrica/brander-samuel/">Brander, Samuel James</a>
         
       </td>
       <td width=20%>
@@ -16481,7 +16526,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/southafrica/brander-samuel/">Brander, Samuel James</a>
+                <a href="/stories/southafrica/brander-samuel/">Brander, Samuel James</a>
         
       </td>
       <td width=20%>
@@ -16614,7 +16659,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/guinea-bissau/brierley-bessie-leslie/">Brierley, Bessie Fricker and Leslie</a>
+                <a href="/stories/guinea-bissau/brierley-bessie-leslie/">Brierley, Bessie Fricker and Leslie</a>
         
       </td>
       <td width=20%>
@@ -16658,7 +16703,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/guinea-bissau/brierley-bessie-leslie/">Brierley, Bessie Fricker and Leslie</a>
+                <a href="/pt/stories/guinea-bissau/brierley-bessie-leslie/">Brierley, Bessie Fricker and Leslie</a>
         
       </td>
       <td width=20%>
@@ -16879,7 +16924,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/buchsenschutz-paul/">Buchsenschutz, Paul</a>
+                <a href="/fr/stories/madagascar/buchsenschutz-paul/">Buchsenschutz, Paul</a>
         
       </td>
       <td width=20%>
@@ -16923,7 +16968,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/buchsenschutz-paul/">Buchsenschutz, Paul</a>
+                <a href="/stories/madagascar/buchsenschutz-paul/">Buchsenschutz, Paul</a>
         
       </td>
       <td width=20%>
@@ -17941,50 +17986,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/camboue-paul/">Camboué, Paul</a>
-        
-      </td>
-      <td width=20%>
-        Kanisa Katoliki
-        
-        
-      </td>
-      <td width=20%>
-        Madagascar
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/madagascar/camboue-paul/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/madagascar/camboue-paul/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/fr/stories/madagascar/camboue-paul/">Camboué, Paul</a>
         
       </td>
@@ -18029,7 +18030,51 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/cameron-james/">Cameron, James</a>
+                <a href="/stories/madagascar/camboue-paul/">Camboué, Paul</a>
+        
+      </td>
+      <td width=20%>
+        Kanisa Katoliki
+        
+        
+      </td>
+      <td width=20%>
+        Madagascar
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/madagascar/camboue-paul/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/madagascar/camboue-paul/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/stories/madagascar/cameron-james/">Cameron, James</a>
         
       </td>
       <td width=20%>
@@ -18073,7 +18118,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/cameron-james/">Cameron, James</a>
+                <a href="/fr/stories/madagascar/cameron-james/">Cameron, James</a>
         
       </td>
       <td width=20%>
@@ -18381,7 +18426,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/campos-martinho/">Campos, Martinho Waphala</a>
+                <a href="/pt/stories/mozambique/campos-martinho/">Campos, Martinho Waphala</a>
         
       </td>
       <td width=20%>
@@ -18425,7 +18470,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/mozambique/campos-martinho/">Campos, Martinho Waphala</a>
+                <a href="/stories/mozambique/campos-martinho/">Campos, Martinho Waphala</a>
         
       </td>
       <td width=20%>
@@ -19134,50 +19179,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/cazet-jean-baptiste/">Cazet, Jean-Baptiste</a>
-        
-      </td>
-      <td width=20%>
-        Kanisa Katoliki
-        
-        
-      </td>
-      <td width=20%>
-        Madagascar
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/madagascar/cazet-jean-baptiste/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/madagascar/cazet-jean-baptiste/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/stories/madagascar/cazet-jean-baptiste/">Cazet, Jean-Baptiste</a>
         
       </td>
@@ -19222,7 +19223,51 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/southafrica/cekwane-timothy/">Cekwane, Timothy (A)</a>
+                <a href="/fr/stories/madagascar/cazet-jean-baptiste/">Cazet, Jean-Baptiste</a>
+        
+      </td>
+      <td width=20%>
+        Kanisa Katoliki
+        
+        
+      </td>
+      <td width=20%>
+        Madagascar
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/madagascar/cazet-jean-baptiste/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/madagascar/cazet-jean-baptiste/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/fr/stories/southafrica/cekwane-timothy/">Cekwane, Timothy (A)</a>
         
       </td>
       <td width=20%>
@@ -19266,7 +19311,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/southafrica/cekwane-timothy/">Cekwane, Timothy (A)</a>
+                <a href="/stories/southafrica/cekwane-timothy/">Cekwane, Timothy (A)</a>
         
       </td>
       <td width=20%>
@@ -19622,50 +19667,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/chaia-andre/">Chaia, André</a>
-        
-      </td>
-      <td width=20%>
-        Kanisa la Nazarene
-        
-        
-      </td>
-      <td width=20%>
-        Mozambique
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/mozambique/chaia-andre/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <a href="/pt/stories/mozambique/chaia-andre/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/pt/stories/mozambique/chaia-andre/">Chaia, André</a>
         
       </td>
@@ -19710,7 +19711,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/chaia-nehemias/">Chaia, Nehemias</a>
+                <a href="/stories/mozambique/chaia-andre/">Chaia, André</a>
         
       </td>
       <td width=20%>
@@ -19724,7 +19725,7 @@
         
       </td>
       <td width=15%>
-        <a href="/stories/mozambique/chaia-nehemias/" rel="permalink">EN</a>
+        <a href="/stories/mozambique/chaia-andre/" rel="permalink">EN</a>
         
         
         
@@ -19734,7 +19735,7 @@
         
         
         
-        <a href="/pt/stories/mozambique/chaia-nehemias/" rel="permalink">PT</a>
+        <a href="/pt/stories/mozambique/chaia-andre/" rel="permalink">PT</a>
         
         
         
@@ -19798,7 +19799,51 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/chambaron-etienne/">Chambaron, Etienne</a>
+                <a href="/stories/mozambique/chaia-nehemias/">Chaia, Nehemias</a>
+        
+      </td>
+      <td width=20%>
+        Kanisa la Nazarene
+        
+        
+      </td>
+      <td width=20%>
+        Mozambique
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/mozambique/chaia-nehemias/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="/pt/stories/mozambique/chaia-nehemias/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/fr/stories/madagascar/chambaron-etienne/">Chambaron, Etienne</a>
         
       </td>
       <td width=20%>
@@ -19842,7 +19887,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/chambaron-etienne/">Chambaron, Etienne</a>
+                <a href="/stories/madagascar/chambaron-etienne/">Chambaron, Etienne</a>
         
       </td>
       <td width=20%>
@@ -20238,50 +20283,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/malawi/chilembwe-john/">Chilembwe, John (A)</a>
-        
-      </td>
-      <td width=20%>
-        Baptist
-        Huru
-        
-      </td>
-      <td width=20%>
-        Malawi
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/malawi/chilembwe-john/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/pt/stories/malawi/chilembue-john/">Chilembwe, John (A)</a>
         
       </td>
@@ -20307,6 +20308,50 @@
         
         
         <a href="/pt/stories/malawi/chilembue-john/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/stories/malawi/chilembwe-john/">Chilembwe, John (A)</a>
+        
+      </td>
+      <td width=20%>
+        Baptist
+        Huru
+        
+      </td>
+      <td width=20%>
+        Malawi
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/malawi/chilembwe-john/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -20458,7 +20503,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/mozambique/chilengue-samuel/">Chilengue, Samuel</a>
+                <a href="/stories/mozambique/chilengue-samuel/">Chilengue, Samuel</a>
         
       </td>
       <td width=20%>
@@ -20502,7 +20547,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/chilengue-samuel/">Chilengue, Samuel</a>
+                <a href="/pt/stories/mozambique/chilengue-samuel/">Chilengue, Samuel</a>
         
       </td>
       <td width=20%>
@@ -21041,7 +21086,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/ghana/christaller-johannes/">Christaller, Johannes Gottlieb (B)</a>
+                <a href="/stories/ghana/christaller-johannes/">Christaller, Johannes Gottlieb (B)</a>
         
       </td>
       <td width=20%>
@@ -21085,7 +21130,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/ghana/christaller-johannes/">Christaller, Johannes Gottlieb (B)</a>
+                <a href="/fr/stories/ghana/christaller-johannes/">Christaller, Johannes Gottlieb (B)</a>
         
       </td>
       <td width=20%>
@@ -21174,50 +21219,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/rwanda/church-johne/">Church, John and Decima (A)</a>
-        
-      </td>
-      <td width=20%>
-        Ushirika wa Anglican (Kanisa la Uganda)
-        Kikanisa cha Anglikani (Kanisa la Rwanda)
-        Mwendo wa Balokole
-      </td>
-      <td width=20%>
-        Rwanda
-        Uganda
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/rwanda/church-johne/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/rwanda/church-johne/" rel="permalink">FR</a>
-        
-        
-        
-        
-        <a href="/pt/stories/rwanda/church-johne/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/stories/rwanda/church-johne/">Church, John and Decima (A)</a>
         
       </td>
@@ -21263,6 +21264,50 @@
       <td width=30%>
         
                 <a href="/fr/stories/rwanda/church-johne/">Church, John and Decima (A)</a>
+        
+      </td>
+      <td width=20%>
+        Ushirika wa Anglican (Kanisa la Uganda)
+        Kikanisa cha Anglikani (Kanisa la Rwanda)
+        Mwendo wa Balokole
+      </td>
+      <td width=20%>
+        Rwanda
+        Uganda
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/rwanda/church-johne/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/rwanda/church-johne/" rel="permalink">FR</a>
+        
+        
+        
+        
+        <a href="/pt/stories/rwanda/church-johne/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/pt/stories/rwanda/church-johne/">Church, John and Decima (A)</a>
         
       </td>
       <td width=20%>
@@ -21574,7 +21619,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/clerget-clara/">Clerget, Clara</a>
+                <a href="/fr/stories/madagascar/clerget-clara/">Clerget, Clara</a>
         
       </td>
       <td width=20%>
@@ -21618,7 +21663,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/clerget-clara/">Clerget, Clara</a>
+                <a href="/stories/madagascar/clerget-clara/">Clerget, Clara</a>
         
       </td>
       <td width=20%>
@@ -22499,7 +22544,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/southafrica/colenso-john/">Colenso, John William (A)</a>
+                <a href="/pt/stories/southafrica/colenso-john/">Colenso, John William (A)</a>
         
       </td>
       <td width=20%>
@@ -22543,7 +22588,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/southafrica/colenso-john/">Colenso, John William (A)</a>
+                <a href="/stories/southafrica/colenso-john/">Colenso, John William (A)</a>
         
       </td>
       <td width=20%>
@@ -22852,7 +22897,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/sudan/comboni1-daniel/">Comboni, Anthony Daniel (B)</a>
+                <a href="/fr/stories/sudan/comboni1-daniel/">Comboni, Anthony Daniel (B)</a>
         
       </td>
       <td width=20%>
@@ -22940,7 +22985,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/sudan/comboni1-daniel/">Comboni, Anthony Daniel (B)</a>
+                <a href="/stories/sudan/comboni1-daniel/">Comboni, Anthony Daniel (B)</a>
         
       </td>
       <td width=20%>
@@ -23160,6 +23205,50 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
+                <a href="/stories/uganda/cook3-albert/">Cook, Albert Ruskin (C)</a>
+        
+      </td>
+      <td width=20%>
+        Ushirika wa Anglican (Church Missionary Society)
+        
+        
+      </td>
+      <td width=20%>
+        Uganda
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/uganda/cook3-albert/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
                 <a href="/stories/uganda/cook-john/">Cook, John Howard</a>
         
       </td>
@@ -23336,7 +23425,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/corbet-francois/">Corbet, François-Xavier</a>
+                <a href="/stories/madagascar/corbet-francois/">Corbet, François-Xavier</a>
         
       </td>
       <td width=20%>
@@ -23380,7 +23469,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/corbet-francois/">Corbet, François-Xavier</a>
+                <a href="/fr/stories/madagascar/corbet-francois/">Corbet, François-Xavier</a>
         
       </td>
       <td width=20%>
@@ -24484,50 +24573,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/nigeria/legacy-crowther/">Crowther, Samuel Ajayi (A)</a>
-        
-      </td>
-      <td width=20%>
-        Ushirika wa Anglican
-        
-        
-      </td>
-      <td width=20%>
-        Nigeria
-        Sierra Leone
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/nigeria/legacy-crowther/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/nigeria/legacy-crowther/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/fr/stories/nigeria/legacy-crowther/">Crowther, Samuel Ajayi (A)</a>
         
       </td>
@@ -24572,7 +24617,51 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/nigeria/crowther-samwel/">Crowther, Samuel Ajayi (B)</a>
+                <a href="/stories/nigeria/legacy-crowther/">Crowther, Samuel Ajayi (A)</a>
+        
+      </td>
+      <td width=20%>
+        Ushirika wa Anglican
+        
+        
+      </td>
+      <td width=20%>
+        Nigeria
+        Sierra Leone
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/nigeria/legacy-crowther/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/nigeria/legacy-crowther/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/stories/nigeria/crowther-samwel/">Crowther, Samuel Ajayi (B)</a>
         
       </td>
       <td width=20%>
@@ -24616,7 +24705,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/nigeria/crowther-samwel/">Crowther, Samuel Ajayi (B)</a>
+                <a href="/pt/stories/nigeria/crowther-samwel/">Crowther, Samuel Ajayi (B)</a>
         
       </td>
       <td width=20%>
@@ -26471,7 +26560,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/algeria/defoucauld-charles/">De Foucauld, Charles Eugène (A)</a>
+                <a href="/fr/stories/algeria/defoucauld-charles/">De Foucauld, Charles Eugène (A)</a>
         
       </td>
       <td width=20%>
@@ -26515,7 +26604,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/algeria/defoucauld-charles/">De Foucauld, Charles Eugène (A)</a>
+                <a href="/stories/algeria/defoucauld-charles/">De Foucauld, Charles Eugène (A)</a>
         
       </td>
       <td width=20%>
@@ -27044,7 +27133,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/rwanda/delhove-david/">Delhove, David E.</a>
+                <a href="/stories/rwanda/delhove-david/">Delhove, David E.</a>
         
       </td>
       <td width=20%>
@@ -27088,7 +27177,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/rwanda/delhove-david/">Delhove, David E.</a>
+                <a href="/fr/stories/rwanda/delhove-david/">Delhove, David E.</a>
         
       </td>
       <td width=20%>
@@ -27401,50 +27490,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/democratic-republic-of-congo/diangienda-joseph/">Diangienda, Joseph</a>
-        
-      </td>
-      <td width=20%>
-        Kanisa la Yesu Kristo duniani Kupitia Mtume Simon Kimbangu
-        
-        
-      </td>
-      <td width=20%>
-        Jamhuri Ya Kidemokrasia Ya Kongo
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/democratic-republic-of-congo/diangienda-joseph/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/diangienda-joseph/" rel="permalink">FR</a>
-        
-        
-        
-        
-        <a href="/pt/stories/democratic-republic-of-congo/diangienda-joseph/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/fr/stories/democratic-republic-of-congo/diangienda-joseph/">Diangienda, Joseph</a>
         
       </td>
@@ -27533,7 +27578,51 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/capeverde/dias-joao/">Dias, João José</a>
+                <a href="/stories/democratic-republic-of-congo/diangienda-joseph/">Diangienda, Joseph</a>
+        
+      </td>
+      <td width=20%>
+        Kanisa la Yesu Kristo duniani Kupitia Mtume Simon Kimbangu
+        
+        
+      </td>
+      <td width=20%>
+        Jamhuri Ya Kidemokrasia Ya Kongo
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/democratic-republic-of-congo/diangienda-joseph/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/diangienda-joseph/" rel="permalink">FR</a>
+        
+        
+        
+        
+        <a href="/pt/stories/democratic-republic-of-congo/diangienda-joseph/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/stories/capeverde/dias-joao/">Dias, João José</a>
         
       </td>
       <td width=20%>
@@ -27577,7 +27666,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/capeverde/dias-joao/">Dias, João José</a>
+                <a href="/pt/stories/capeverde/dias-joao/">Dias, João José</a>
         
       </td>
       <td width=20%>
@@ -30450,11 +30539,11 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/ebbell-bendix/">Ebbell, Bendix</a>
+                <a href="/stories/madagascar/ebbell-bendix/">Ebbell, Bendix</a>
         
       </td>
       <td width=20%>
-        Lutheran
+        Lutheran (Jamii ya Ujumbe wa Norway)
         
         
       </td>
@@ -30494,11 +30583,11 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/ebbell-bendix/">Ebbell, Bendix</a>
+                <a href="/fr/stories/madagascar/ebbell-bendix/">Ebbell, Bendix</a>
         
       </td>
       <td width=20%>
-        Lutheran (Jamii ya Ujumbe wa Norway)
+        Lutheran
         
         
       </td>
@@ -30936,7 +31025,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/einrem-johannes/">Einrem, Johannes</a>
+                <a href="/stories/madagascar/einrem-johannes/">Einrem, Johannes</a>
         
       </td>
       <td width=20%>
@@ -30980,7 +31069,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/einrem-johannes/">Einrem, Johannes</a>
+                <a href="/fr/stories/madagascar/einrem-johannes/">Einrem, Johannes</a>
         
       </td>
       <td width=20%>
@@ -31200,7 +31289,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/nigeria/ekong/">Ekong, Jonathan Udo</a>
+                <a href="/stories/nigeria/ekong/">Ekong, Jonathan Udo</a>
         
       </td>
       <td width=20%>
@@ -31244,7 +31333,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/nigeria/ekong/">Ekong, Jonathan Udo</a>
+                <a href="/fr/stories/nigeria/ekong/">Ekong, Jonathan Udo</a>
         
       </td>
       <td width=20%>
@@ -31422,11 +31511,11 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/elle-bjorn/">Elle, Björn</a>
+                <a href="/stories/madagascar/elle-bjorn/">Elle, Björn</a>
         
       </td>
       <td width=20%>
-        Lutheran
+        Lutheran (Jamii ya Ujumbe wa Norway)
         
         
       </td>
@@ -31466,11 +31555,11 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/elle-bjorn/">Elle, Björn</a>
+                <a href="/fr/stories/madagascar/elle-bjorn/">Elle, Björn</a>
         
       </td>
       <td width=20%>
-        Lutheran (Jamii ya Ujumbe wa Norway)
+        Lutheran
         
         
       </td>
@@ -32082,11 +32171,11 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/engh-john/">Engh, John</a>
+                <a href="/stories/madagascar/engh-john/">Engh, John</a>
         
       </td>
       <td width=20%>
-        Lutheran
+        Lutheran (Jamii ya Ujumbe wa Norway)
         
         
       </td>
@@ -32126,11 +32215,11 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/engh-john/">Engh, John</a>
+                <a href="/fr/stories/madagascar/engh-john/">Engh, John</a>
         
       </td>
       <td width=20%>
-        Lutheran (Jamii ya Ujumbe wa Norway)
+        Lutheran
         
         
       </td>
@@ -32523,7 +32612,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mauritius/ernest-john/">Ernest, John</a>
+                <a href="/fr/stories/mauritius/ernest-john/">Ernest, John</a>
         
       </td>
       <td width=20%>
@@ -32567,7 +32656,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/mauritius/ernest-john/">Ernest, John</a>
+                <a href="/stories/mauritius/ernest-john/">Ernest, John</a>
         
       </td>
       <td width=20%>
@@ -32835,7 +32924,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/ethiopia/ezana/">Ezana (&#39;Ezana) (B)</a>
+                <a href="/fr/stories/ethiopia/ezana/">Ezana (&#39;Ezana) (B)</a>
         
       </td>
       <td width=20%>
@@ -32879,7 +32968,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/ethiopia/ezana/">Ezana (&#39;Ezana) (B)</a>
+                <a href="/stories/ethiopia/ezana/">Ezana (&#39;Ezana) (B)</a>
         
       </td>
       <td width=20%>
@@ -33408,11 +33497,11 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/fagereng-martha/">Fagereng, Martha Kristine</a>
+                <a href="/fr/stories/madagascar/fagereng-martha/">Fagereng, Martha Kristine</a>
         
       </td>
       <td width=20%>
-        Lutheran (Jamii ya Ujumbe wa Norway)
+        Lutheran
         
         
       </td>
@@ -33452,11 +33541,11 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/fagereng-martha/">Fagereng, Martha Kristine</a>
+                <a href="/stories/madagascar/fagereng-martha/">Fagereng, Martha Kristine</a>
         
       </td>
       <td width=20%>
-        Lutheran
+        Lutheran (Jamii ya Ujumbe wa Norway)
         
         
       </td>
@@ -33942,50 +34031,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/capeverde/ferreira-francisco/">Ferreira, Francisco Xavier</a>
-        
-      </td>
-      <td width=20%>
-        Kanisa la Nazarene
-        
-        
-      </td>
-      <td width=20%>
-        Cape Verde
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/capeverde/ferreira-francisco/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <a href="/pt/stories/capeverde/ferreira-francisco/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/pt/stories/capeverde/ferreira-francisco/">Ferreira, Francisco Xavier</a>
         
       </td>
@@ -34030,7 +34075,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/capeverde/ferreira-humberto/">Ferreira, Humberto Pires</a>
+                <a href="/stories/capeverde/ferreira-francisco/">Ferreira, Francisco Xavier</a>
         
       </td>
       <td width=20%>
@@ -34044,7 +34089,7 @@
         
       </td>
       <td width=15%>
-        <a href="/stories/capeverde/ferreira-humberto/" rel="permalink">EN</a>
+        <a href="/stories/capeverde/ferreira-francisco/" rel="permalink">EN</a>
         
         
         
@@ -34054,7 +34099,7 @@
         
         
         
-        <a href="/pt/stories/capeverde/ferreira-humberto/" rel="permalink">PT</a>
+        <a href="/pt/stories/capeverde/ferreira-francisco/" rel="permalink">PT</a>
         
         
         
@@ -34118,7 +34163,51 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/guinea-bissau/ferreiro/">Ferreiro</a>
+                <a href="/stories/capeverde/ferreira-humberto/">Ferreira, Humberto Pires</a>
+        
+      </td>
+      <td width=20%>
+        Kanisa la Nazarene
+        
+        
+      </td>
+      <td width=20%>
+        Cape Verde
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/capeverde/ferreira-humberto/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="/pt/stories/capeverde/ferreira-humberto/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/stories/guinea-bissau/ferreiro/">Ferreiro</a>
         
       </td>
       <td width=20%>
@@ -34162,7 +34251,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/guinea-bissau/ferreiro/">Ferreiro</a>
+                <a href="/pt/stories/guinea-bissau/ferreiro/">Ferreiro</a>
         
       </td>
       <td width=20%>
@@ -35178,7 +35267,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/ethiopia/frumentius/">Frumentius (B)</a>
+                <a href="/fr/stories/ethiopia/frumentius/">Frumentius (B)</a>
         
       </td>
       <td width=20%>
@@ -35222,7 +35311,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/ethiopia/frumentius/">Frumentius (B)</a>
+                <a href="/pt/stories/ethiopia/frumentius/">Frumentius (B)</a>
         
       </td>
       <td width=20%>
@@ -38101,7 +38190,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/griffiths-david/">Griffiths, David</a>
+                <a href="/fr/stories/madagascar/griffiths-david/">Griffiths, David</a>
         
       </td>
       <td width=20%>
@@ -38145,7 +38234,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/griffiths-david/">Griffiths, David</a>
+                <a href="/stories/madagascar/griffiths-david/">Griffiths, David</a>
         
       </td>
       <td width=20%>
@@ -39827,7 +39916,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/namibia/hausiku-bonifatius/">Hausiku, Bonifatius</a>
+                <a href="/stories/namibia/hausiku-bonifatius/">Hausiku, Bonifatius</a>
         
       </td>
       <td width=20%>
@@ -39915,7 +40004,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/namibia/hausiku-bonifatius/">Hausiku, Bonifatius</a>
+                <a href="/pt/stories/namibia/hausiku-bonifatius/">Hausiku, Bonifatius</a>
         
       </td>
       <td width=20%>
@@ -41281,7 +41370,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/nigeria/ibiam2-akanu/">Ibiam, Francis Akanu (B)</a>
+                <a href="/stories/nigeria/ibiam2-akanu/">Ibiam, Francis Akanu (B)</a>
         
       </td>
       <td width=20%>
@@ -41325,7 +41414,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/nigeria/ibiam2-akanu/">Ibiam, Francis Akanu (B)</a>
+                <a href="/fr/stories/nigeria/ibiam2-akanu/">Ibiam, Francis Akanu (B)</a>
         
       </td>
       <td width=20%>
@@ -42296,7 +42385,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/ethiopia/iyasus-moa2/">Iyäsus-Mo&#39;a (&#39;Iyäsus-Mo&#39;a) (B)</a>
+                <a href="/stories/ethiopia/iyasus-moa2/">Iyäsus-Mo&#39;a (&#39;Iyäsus-Mo&#39;a) (B)</a>
         
       </td>
       <td width=20%>
@@ -42340,7 +42429,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/ethiopia/iyasus-moa2/">Iyäsus-Mo&#39;a (&#39;Iyäsus-Mo&#39;a) (B)</a>
+                <a href="/fr/stories/ethiopia/iyasus-moa2/">Iyäsus-Mo&#39;a (&#39;Iyäsus-Mo&#39;a) (B)</a>
         
       </td>
       <td width=20%>
@@ -43313,7 +43402,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/johns-david/">Johns, David</a>
+                <a href="/fr/stories/madagascar/johns-david/">Johns, David</a>
         
       </td>
       <td width=20%>
@@ -43357,7 +43446,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/johns-david/">Johns, David</a>
+                <a href="/stories/madagascar/johns-david/">Johns, David</a>
         
       </td>
       <td width=20%>
@@ -44150,7 +44239,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/nigeria/johnson-1samuel/">Johnson, Samuel (B)</a>
+                <a href="/fr/stories/nigeria/johnson-1samuel/">Johnson, Samuel (B)</a>
         
       </td>
       <td width=20%>
@@ -44194,7 +44283,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/nigeria/johnson-1samuel/">Johnson, Samuel (B)</a>
+                <a href="/stories/nigeria/johnson-1samuel/">Johnson, Samuel (B)</a>
         
       </td>
       <td width=20%>
@@ -44992,7 +45081,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/mozambique/junod-henrialex/">Junod, Henri-Alexandre</a>
+                <a href="/stories/mozambique/junod-henrialex/">Junod, Henri-Alexandre</a>
         
       </td>
       <td width=20%>
@@ -45006,12 +45095,12 @@
         
       </td>
       <td width=15%>
+        <a href="/stories/mozambique/junod-henrialex/" rel="permalink">EN</a>
         
         
         
         
         
-        <a href="/fr/stories/mozambique/junod-henrialex/" rel="permalink">FR</a>
         
         
         
@@ -45036,7 +45125,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/junod-henrialex/">Junod, Henri-Alexandre</a>
+                <a href="/fr/stories/mozambique/junod-henrialex/">Junod, Henri-Alexandre</a>
         
       </td>
       <td width=20%>
@@ -45050,12 +45139,12 @@
         
       </td>
       <td width=15%>
-        <a href="/stories/mozambique/junod-henrialex/" rel="permalink">EN</a>
         
         
         
         
         
+        <a href="/fr/stories/mozambique/junod-henrialex/" rel="permalink">FR</a>
         
         
         
@@ -45302,6 +45391,50 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
+                <a href="/fr/stories/rwanda/kagame-alexis/">Kagamé, Alexis (A)</a>
+        
+      </td>
+      <td width=20%>
+        Kanisa Katoliki
+        
+        
+      </td>
+      <td width=20%>
+        Rwanda
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/rwanda/kagame-alexis/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/rwanda/kagame-alexis/" rel="permalink">FR</a>
+        
+        
+        
+        
+        <a href="/pt/stories/rwanda/kagame-alexis/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
                 <a href="/pt/stories/rwanda/kagame-alexis/">Kagamé, Alexis (A)</a>
         
       </td>
@@ -45347,50 +45480,6 @@
       <td width=30%>
         
                 <a href="/stories/rwanda/kagame-alexis/">Kagamé, Alexis (A)</a>
-        
-      </td>
-      <td width=20%>
-        Kanisa Katoliki
-        
-        
-      </td>
-      <td width=20%>
-        Rwanda
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/rwanda/kagame-alexis/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/rwanda/kagame-alexis/" rel="permalink">FR</a>
-        
-        
-        
-        
-        <a href="/pt/stories/rwanda/kagame-alexis/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
-                <a href="/fr/stories/rwanda/kagame-alexis/">Kagamé, Alexis (A)</a>
         
       </td>
       <td width=20%>
@@ -45610,7 +45699,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/uganda/kaggwa-andrew/">Kaggwa, Andrew</a>
+                <a href="/fr/stories/uganda/kaggwa-andrew/">Kaggwa, Andrew</a>
         
       </td>
       <td width=20%>
@@ -45698,7 +45787,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/uganda/kaggwa-andrew/">Kaggwa, Andrew</a>
+                <a href="/pt/stories/uganda/kaggwa-andrew/">Kaggwa, Andrew</a>
         
       </td>
       <td width=20%>
@@ -46008,7 +46097,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/uganda/kalemba-matthias/">Kalemba, Matthias Mulumba</a>
+                <a href="/stories/uganda/kalemba-matthias/">Kalemba, Matthias Mulumba</a>
         
       </td>
       <td width=20%>
@@ -46052,7 +46141,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/uganda/kalemba-matthias/">Kalemba, Matthias Mulumba</a>
+                <a href="/fr/stories/uganda/kalemba-matthias/">Kalemba, Matthias Mulumba</a>
         
       </td>
       <td width=20%>
@@ -46761,50 +46850,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/namibia/kanambunga-alfeus/">Kanambunga, Alfeus</a>
-        
-      </td>
-      <td width=20%>
-        Kanisa la Umoja wa Kiprotestanti (Oruuano)
-        
-        
-      </td>
-      <td width=20%>
-        Namibia
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/namibia/kanambunga-alfeus/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/namibia/kanambunga-alfeus/" rel="permalink">FR</a>
-        
-        
-        
-        
-        <a href="/pt/stories/namibia/kanambunga-alfeus/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/fr/stories/namibia/kanambunga-alfeus/">Kanambunga, Alfeus</a>
         
       </td>
@@ -46854,6 +46899,50 @@
       </td>
       <td width=20%>
         Kanisa la Kiprotestanti la Umoja
+        
+        
+      </td>
+      <td width=20%>
+        Namibia
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/namibia/kanambunga-alfeus/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/namibia/kanambunga-alfeus/" rel="permalink">FR</a>
+        
+        
+        
+        
+        <a href="/pt/stories/namibia/kanambunga-alfeus/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/stories/namibia/kanambunga-alfeus/">Kanambunga, Alfeus</a>
+        
+      </td>
+      <td width=20%>
+        Kanisa la Umoja wa Kiprotestanti (Oruuano)
         
         
       </td>
@@ -47474,7 +47563,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/namibia/kauluma-james/">Kauluma, James</a>
+                <a href="/stories/namibia/kauluma-james/">Kauluma, James</a>
         
       </td>
       <td width=20%>
@@ -47518,7 +47607,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/namibia/kauluma-james/">Kauluma, James</a>
+                <a href="/pt/stories/namibia/kauluma-james/">Kauluma, James</a>
         
       </td>
       <td width=20%>
@@ -48361,7 +48450,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/khossa-magipa/">Khossa, Magipa</a>
+                <a href="/pt/stories/mozambique/khossa-magipa/">Khossa, Magipa</a>
         
       </td>
       <td width=20%>
@@ -48405,7 +48494,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/mozambique/khossa-magipa/">Khossa, Magipa</a>
+                <a href="/stories/mozambique/khossa-magipa/">Khossa, Magipa</a>
         
       </td>
       <td width=20%>
@@ -48716,7 +48805,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/rwanda/kigozi-blasio/">Kigozi, Blasio</a>
+                <a href="/pt/stories/rwanda/kigozi-blasio/">Kigozi, Blasio</a>
         
       </td>
       <td width=20%>
@@ -48760,7 +48849,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/rwanda/kigozi-blasio/">Kigozi, Blasio</a>
+                <a href="/stories/rwanda/kigozi-blasio/">Kigozi, Blasio</a>
         
       </td>
       <td width=20%>
@@ -48894,7 +48983,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/democratic-republic-of-congo/kimbangu-simon/">Kimbangu, Simon (A)</a>
+                <a href="/pt/stories/democratic-republic-of-congo/kimbangu-simon/">Kimbangu, Simon (A)</a>
         
       </td>
       <td width=20%>
@@ -48938,7 +49027,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/democratic-republic-of-congo/kimbangu-simon/">Kimbangu, Simon (A)</a>
+                <a href="/stories/democratic-republic-of-congo/kimbangu-simon/">Kimbangu, Simon (A)</a>
         
       </td>
       <td width=20%>
@@ -49116,7 +49205,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/congo/kimpa-vita/">Kimpa Vita (A)</a>
+                <a href="/stories/congo/kimpa-vita/">Kimpa Vita (A)</a>
         
       </td>
       <td width=20%>
@@ -49126,8 +49215,8 @@
       </td>
       <td width=20%>
         Congo
-        
-        
+        Jamhuri Ya Kidemokrasia Ya Kongo
+        Angola
       </td>
       <td width=15%>
         <a href="/stories/congo/kimpa-vita/" rel="permalink">EN</a>
@@ -49160,7 +49249,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/congo/kimpa-vita/">Kimpa Vita (A)</a>
+                <a href="/pt/stories/congo/kimpa-vita/">Kimpa Vita (A)</a>
         
       </td>
       <td width=20%>
@@ -49170,8 +49259,8 @@
       </td>
       <td width=20%>
         Congo
-        Jamhuri Ya Kidemokrasia Ya Kongo
-        Angola
+        
+        
       </td>
       <td width=15%>
         <a href="/stories/congo/kimpa-vita/" rel="permalink">EN</a>
@@ -50268,6 +50357,50 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
+                <a href="/fr/stories/uganda/kivengere2-festo/">Kivengere, Festo (B)</a>
+        
+      </td>
+      <td width=20%>
+        Ushirika wa Anglican
+        Mwendo wa Balokole
+        
+      </td>
+      <td width=20%>
+        Uganda
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/uganda/kivengere2-festo/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/uganda/kivengere2-festo/" rel="permalink">FR</a>
+        
+        
+        
+        
+        <a href="/pt/stories/uganda/kivengere2-festo/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
                 <a href="/pt/stories/uganda/kivengere2-festo/">Kivengere, Festo (B)</a>
         
       </td>
@@ -50313,50 +50446,6 @@
       <td width=30%>
         
                 <a href="/stories/uganda/kivengere2-festo/">Kivengere, Festo (B)</a>
-        
-      </td>
-      <td width=20%>
-        Ushirika wa Anglican
-        Mwendo wa Balokole
-        
-      </td>
-      <td width=20%>
-        Uganda
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/uganda/kivengere2-festo/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/uganda/kivengere2-festo/" rel="permalink">FR</a>
-        
-        
-        
-        
-        <a href="/pt/stories/uganda/kivengere2-festo/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
-                <a href="/fr/stories/uganda/kivengere2-festo/">Kivengere, Festo (B)</a>
         
       </td>
       <td width=20%>
@@ -51193,7 +51282,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/senegal/kobes-aloys/">Kobès, Aloÿs</a>
+                <a href="/fr/stories/senegal/kobes-aloys/">Kobès, Aloÿs</a>
         
       </td>
       <td width=20%>
@@ -51237,7 +51326,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/senegal/kobes-aloys/">Kobès, Aloÿs</a>
+                <a href="/stories/senegal/kobes-aloys/">Kobès, Aloÿs</a>
         
       </td>
       <td width=20%>
@@ -52702,7 +52791,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/ethiopia/lalibela/">Lalibäla (A)</a>
+                <a href="/stories/ethiopia/lalibela/">Lalibäla (A)</a>
         
       </td>
       <td width=20%>
@@ -52790,7 +52879,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/ethiopia/lalibela/">Lalibäla (A)</a>
+                <a href="/pt/stories/ethiopia/lalibela/">Lalibäla (A)</a>
         
       </td>
       <td width=20%>
@@ -53274,7 +53363,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/guinea-bissau/lamine-barbosa/">Lamine, Barbosa</a>
+                <a href="/stories/guinea-bissau/lamine-barbosa/">Lamine, Barbosa</a>
         
       </td>
       <td width=20%>
@@ -53318,7 +53407,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/guinea-bissau/lamine-barbosa/">Lamine, Barbosa</a>
+                <a href="/pt/stories/guinea-bissau/lamine-barbosa/">Lamine, Barbosa</a>
         
       </td>
       <td width=20%>
@@ -53495,7 +53584,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/mozambique/langa-joao/">Langa, João Chihesse</a>
+                <a href="/stories/mozambique/langa-joao/">Langa, João Chihesse</a>
         
       </td>
       <td width=20%>
@@ -53539,7 +53628,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/langa-joao/">Langa, João Chihesse</a>
+                <a href="/pt/stories/mozambique/langa-joao/">Langa, João Chihesse</a>
         
       </td>
       <td width=20%>
@@ -55263,7 +55352,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/capeverde/lima-antao/">Lima, Antão Melo</a>
+                <a href="/pt/stories/capeverde/lima-antao/">Lima, Antão Melo</a>
         
       </td>
       <td width=20%>
@@ -55307,7 +55396,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/capeverde/lima-antao/">Lima, Antão Melo</a>
+                <a href="/stories/capeverde/lima-antao/">Lima, Antão Melo</a>
         
       </td>
       <td width=20%>
@@ -55395,11 +55484,11 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/lindo-knud/">Lindö, Knud</a>
+                <a href="/fr/stories/madagascar/lindo-knud/">Lindö, Knud</a>
         
       </td>
       <td width=20%>
-        Lutheran (Jamii ya Ujumbe wa Norway)
+        Lutheran
         
         
       </td>
@@ -55439,11 +55528,11 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/lindo-knud/">Lindö, Knud</a>
+                <a href="/stories/madagascar/lindo-knud/">Lindö, Knud</a>
         
       </td>
       <td width=20%>
-        Lutheran
+        Lutheran (Jamii ya Ujumbe wa Norway)
         
         
       </td>
@@ -55660,50 +55749,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/mozambique/lishale-philip/">Lishale, Philip</a>
-        
-      </td>
-      <td width=20%>
-        Kanisa la Nazarene
-        
-        
-      </td>
-      <td width=20%>
-        Mozambique
-        
-        
-      </td>
-      <td width=15%>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <a href="/pt/stories/mozambique/lishale-philip/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/stories/mozambique/lishale-philip/">Lishale, Philip</a>
         
       </td>
@@ -55729,6 +55774,50 @@
         
         
         
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/pt/stories/mozambique/lishale-philip/">Lishale, Philip</a>
+        
+      </td>
+      <td width=20%>
+        Kanisa la Nazarene
+        
+        
+      </td>
+      <td width=20%>
+        Mozambique
+        
+        
+      </td>
+      <td width=15%>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="/pt/stories/mozambique/lishale-philip/" rel="permalink">PT</a>
         
         
         
@@ -56100,7 +56189,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/southafrica/livingstone-mary/">Livingstone, Mary</a>
+                <a href="/pt/stories/southafrica/livingstone-mary/">Livingstone, Mary</a>
         
       </td>
       <td width=20%>
@@ -56144,7 +56233,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/southafrica/livingstone-mary/">Livingstone, Mary</a>
+                <a href="/stories/southafrica/livingstone-mary/">Livingstone, Mary</a>
         
       </td>
       <td width=20%>
@@ -56544,7 +56633,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/uganda/lourdel-simeon/">Lourdel, Siméon (A)</a>
+                <a href="/fr/stories/uganda/lourdel-simeon/">Lourdel, Siméon (A)</a>
         
       </td>
       <td width=20%>
@@ -56588,7 +56677,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/uganda/lourdel-simeon/">Lourdel, Siméon (A)</a>
+                <a href="/stories/uganda/lourdel-simeon/">Lourdel, Siméon (A)</a>
         
       </td>
       <td width=20%>
@@ -58541,50 +58630,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/mozambique/machava-esaya/">Machava, Esaya</a>
-        
-      </td>
-      <td width=20%>
-        Kanisa la Nazarene
-        
-        
-      </td>
-      <td width=20%>
-        Mozambique
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/mozambique/machava-esaya/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <a href="/pt/stories/mozambique/machava-esaya/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/stories/mozambique/machava-esaya/">Machava, Esaya</a>
         
       </td>
@@ -58629,7 +58674,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/mozambique/machava-simao/">Machava, Simão</a>
+                <a href="/pt/stories/mozambique/machava-esaya/">Machava, Esaya</a>
         
       </td>
       <td width=20%>
@@ -58643,7 +58688,7 @@
         
       </td>
       <td width=15%>
-        <a href="/stories/mozambique/machava-simao/" rel="permalink">EN</a>
+        <a href="/stories/mozambique/machava-esaya/" rel="permalink">EN</a>
         
         
         
@@ -58653,7 +58698,7 @@
         
         
         
-        <a href="/pt/stories/mozambique/machava-simao/" rel="permalink">PT</a>
+        <a href="/pt/stories/mozambique/machava-esaya/" rel="permalink">PT</a>
         
         
         
@@ -58710,8 +58755,6 @@
 
 
 
-
-
   
 <div>
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
@@ -58719,7 +58762,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/macie-solomao/">Macie, Salomão</a>
+                <a href="/pt/stories/mozambique/machava-simao/">Machava, Simão</a>
         
       </td>
       <td width=20%>
@@ -58733,7 +58776,7 @@
         
       </td>
       <td width=15%>
-        <a href="/stories/mozambique/macie-solomao/" rel="permalink">EN</a>
+        <a href="/stories/mozambique/machava-simao/" rel="permalink">EN</a>
         
         
         
@@ -58743,7 +58786,7 @@
         
         
         
-        
+        <a href="/pt/stories/mozambique/machava-simao/" rel="permalink">PT</a>
         
         
         
@@ -58753,6 +58796,8 @@
     </tr></tbody></table>
 </article>
 </div>
+
+
 
 
 
@@ -58788,6 +58833,50 @@
         
         
         <a href="/pt/stories/mozambique/macie-salomao/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/stories/mozambique/macie-solomao/">Macie, Salomão</a>
+        
+      </td>
+      <td width=20%>
+        Kanisa la Nazarene
+        
+        
+      </td>
+      <td width=20%>
+        Mozambique
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/mozambique/macie-solomao/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -59866,7 +59955,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/mainga-lea/">Mainga, Lea</a>
+                <a href="/pt/stories/mozambique/mainga-lea/">Mainga, Lea</a>
         
       </td>
       <td width=20%>
@@ -59910,7 +59999,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/mozambique/mainga-lea/">Mainga, Lea</a>
+                <a href="/stories/mozambique/mainga-lea/">Mainga, Lea</a>
         
       </td>
       <td width=20%>
@@ -60218,7 +60307,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/southafrica/makiwane-elijah/">Makiwane, Elijah (A)</a>
+                <a href="/stories/southafrica/makiwane-elijah/">Makiwane, Elijah (A)</a>
         
       </td>
       <td width=20%>
@@ -60262,7 +60351,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/southafrica/makiwane-elijah/">Makiwane, Elijah (A)</a>
+                <a href="/fr/stories/southafrica/makiwane-elijah/">Makiwane, Elijah (A)</a>
         
       </td>
       <td width=20%>
@@ -60439,7 +60528,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/uganda/malaki-musaj1/">Malaki, Musajjakawa (B)</a>
+                <a href="/stories/uganda/malaki-musaj1/">Malaki, Musajjakawa (B)</a>
         
       </td>
       <td width=20%>
@@ -60483,7 +60572,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/uganda/malaki-musaj1/">Malaki, Musajjakawa (B)</a>
+                <a href="/fr/stories/uganda/malaki-musaj1/">Malaki, Musajjakawa (B)</a>
         
       </td>
       <td width=20%>
@@ -61146,7 +61235,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/democratic-republic-of-congo/malutama-remy/">Malutama, Rémy</a>
+                <a href="/fr/stories/democratic-republic-of-congo/malutama-remy/">Malutama, Rémy</a>
         
       </td>
       <td width=20%>
@@ -61190,7 +61279,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/democratic-republic-of-congo/malutama-remy/">Malutama, Rémy</a>
+                <a href="/stories/democratic-republic-of-congo/malutama-remy/">Malutama, Rémy</a>
         
       </td>
       <td width=20%>
@@ -61366,50 +61455,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/mandlate-isaka/">Mandlate, Isaka</a>
-        
-      </td>
-      <td width=20%>
-        Kanisa la Nazarene
-        
-        
-      </td>
-      <td width=20%>
-        Mozambique
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/mozambique/mandlate-isaka/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <a href="/pt/stories/mozambique/mandlate-isaka/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/pt/stories/mozambique/mandlate-isaka/">Mandlate, Isaka</a>
         
       </td>
@@ -61454,7 +61499,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/mandlate-miguel/">Mandlate, Miguel</a>
+                <a href="/stories/mozambique/mandlate-isaka/">Mandlate, Isaka</a>
         
       </td>
       <td width=20%>
@@ -61468,7 +61513,7 @@
         
       </td>
       <td width=15%>
-        <a href="/stories/mozambique/mandlate-miguel/" rel="permalink">EN</a>
+        <a href="/stories/mozambique/mandlate-isaka/" rel="permalink">EN</a>
         
         
         
@@ -61478,7 +61523,7 @@
         
         
         
-        <a href="/pt/stories/mozambique/mandlate-miguel/" rel="permalink">PT</a>
+        <a href="/pt/stories/mozambique/mandlate-isaka/" rel="permalink">PT</a>
         
         
         
@@ -61542,7 +61587,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/mandlate-rabeca/">Mandlate, Rabeca</a>
+                <a href="/stories/mozambique/mandlate-miguel/">Mandlate, Miguel</a>
         
       </td>
       <td width=20%>
@@ -61556,17 +61601,17 @@
         
       </td>
       <td width=15%>
-        <a href="/stories/mozambique/mandlate-rabeca/" rel="permalink">EN</a>
+        <a href="/stories/mozambique/mandlate-miguel/" rel="permalink">EN</a>
         
         
         
         
-        <a href="/fr/stories/mozambique/mandlate-rabeca/" rel="permalink">FR</a>
         
         
         
         
-        <a href="/pt/stories/mozambique/mandlate-rabeca/" rel="permalink">PT</a>
+        
+        <a href="/pt/stories/mozambique/mandlate-miguel/" rel="permalink">PT</a>
         
         
         
@@ -61674,7 +61719,51 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/mozambique/mandlate-simeao/">Mandlate, Simeão</a>
+                <a href="/stories/mozambique/mandlate-rabeca/">Mandlate, Rabeca</a>
+        
+      </td>
+      <td width=20%>
+        Kanisa la Nazarene
+        
+        
+      </td>
+      <td width=20%>
+        Mozambique
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/mozambique/mandlate-rabeca/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/mozambique/mandlate-rabeca/" rel="permalink">FR</a>
+        
+        
+        
+        
+        <a href="/pt/stories/mozambique/mandlate-rabeca/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/stories/mozambique/mandlate-simeao/">Mandlate, Simeão</a>
         
       </td>
       <td width=20%>
@@ -61718,7 +61807,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/mandlate-simeao/">Mandlate, Simeão</a>
+                <a href="/pt/stories/mozambique/mandlate-simeao/">Mandlate, Simeão</a>
         
       </td>
       <td width=20%>
@@ -61982,7 +62071,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/manhique-lucas/">Manhique, Lucas</a>
+                <a href="/pt/stories/mozambique/manhique-lucas/">Manhique, Lucas</a>
         
       </td>
       <td width=20%>
@@ -62026,7 +62115,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/mozambique/manhique-lucas/">Manhique, Lucas</a>
+                <a href="/stories/mozambique/manhique-lucas/">Manhique, Lucas</a>
         
       </td>
       <td width=20%>
@@ -62158,7 +62247,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/manhique-samuel/">Manhique, Samuel Hlambelane Macuyane</a>
+                <a href="/pt/stories/mozambique/manhique-samuel/">Manhique, Samuel Hlambelane Macuyane</a>
         
       </td>
       <td width=20%>
@@ -62202,7 +62291,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/mozambique/manhique-samuel/">Manhique, Samuel Hlambelane Macuyane</a>
+                <a href="/stories/mozambique/manhique-samuel/">Manhique, Samuel Hlambelane Macuyane</a>
         
       </td>
       <td width=20%>
@@ -62599,7 +62688,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/zimbabwe/maranke-john/">Maranke, John</a>
+                <a href="/pt/stories/zimbabwe/maranke-john/">Maranke, John</a>
         
       </td>
       <td width=20%>
@@ -62643,7 +62732,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/zimbabwe/maranke-john/">Maranke, John</a>
+                <a href="/stories/zimbabwe/maranke-john/">Maranke, John</a>
         
       </td>
       <td width=20%>
@@ -62911,50 +63000,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/capeverde/marques-jose/">Marques, José Neves Caldeira</a>
-        
-      </td>
-      <td width=20%>
-        Kanisa la Nazarene
-        
-        
-      </td>
-      <td width=20%>
-        Cape Verde
-        
-        
-      </td>
-      <td width=15%>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <a href="/pt/stories/capeverde/marques-jose/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/stories/capeverde/marques-jose/">Marques, José Neves Caldeira</a>
         
       </td>
@@ -62980,6 +63025,50 @@
         
         
         
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/pt/stories/capeverde/marques-jose/">Marques, José Neves Caldeira</a>
+        
+      </td>
+      <td width=20%>
+        Kanisa la Nazarene
+        
+        
+      </td>
+      <td width=20%>
+        Cape Verde
+        
+        
+      </td>
+      <td width=15%>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="/pt/stories/capeverde/marques-jose/" rel="permalink">PT</a>
         
         
         
@@ -63755,50 +63844,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/mozambique/mathusse-catarina/">Mathusse, Catarina</a>
-        
-      </td>
-      <td width=20%>
-        Kanisa la Nazarene
-        
-        
-      </td>
-      <td width=20%>
-        Mozambique
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/mozambique/mathusse-catarina/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <a href="/pt/stories/mozambique/mathusse-catarina/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/stories/mozambique/mathusse-catarina/">Mathusse, Catarina</a>
         
       </td>
@@ -63836,6 +63881,50 @@
 
 
 
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/pt/stories/mozambique/mathusse-catarina/">Mathusse, Catarina</a>
+        
+      </td>
+      <td width=20%>
+        Kanisa la Nazarene
+        
+        
+      </td>
+      <td width=20%>
+        Mozambique
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/mozambique/mathusse-catarina/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="/pt/stories/mozambique/mathusse-catarina/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
 
 
   
@@ -63845,7 +63934,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/southafrica/matshedisho-andrew/">Matshedisho, Andrew</a>
+                <a href="/stories/southafrica/matshedisho-andrew/">Matshedisho, Andrew</a>
         
       </td>
       <td width=20%>
@@ -63889,7 +63978,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/southafrica/matshedisho-andrew/">Matshedisho, Andrew</a>
+                <a href="/fr/stories/southafrica/matshedisho-andrew/">Matshedisho, Andrew</a>
         
       </td>
       <td width=20%>
@@ -64244,7 +64333,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/uganda/mawaggali-noe/">Mawaggali, Noé</a>
+                <a href="/fr/stories/uganda/mawaggali-noe/">Mawaggali, Noé</a>
         
       </td>
       <td width=20%>
@@ -64288,7 +64377,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/uganda/mawaggali-noe/">Mawaggali, Noé</a>
+                <a href="/stories/uganda/mawaggali-noe/">Mawaggali, Noé</a>
         
       </td>
       <td width=20%>
@@ -65040,7 +65129,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/congo/mboungou-mouyabi-emilienne/">Mboungou-Mouyabi, Émilienne (née  Niangui Loubota)</a>
+                <a href="/stories/congo/mboungou-mouyabi-emilienne/">Mboungou-Mouyabi, Émilienne (née  Niangui Loubota)</a>
         
       </td>
       <td width=20%>
@@ -65084,7 +65173,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/congo/mboungou-mouyabi-emilienne/">Mboungou-Mouyabi, Émilienne (née  Niangui Loubota)</a>
+                <a href="/fr/stories/congo/mboungou-mouyabi-emilienne/">Mboungou-Mouyabi, Émilienne (née  Niangui Loubota)</a>
         
       </td>
       <td width=20%>
@@ -65307,7 +65396,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/ethiopia/gebremichael-mekonnen/">Mekonnen, Gebre Michael</a>
+                <a href="/pt/stories/ethiopia/gebremichael-mekonnen/">Mekonnen, Gebre Michael</a>
         
       </td>
       <td width=20%>
@@ -65351,7 +65440,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/ethiopia/gebremichael-mekonnen/">Mekonnen, Gebre Michael</a>
+                <a href="/stories/ethiopia/gebremichael-mekonnen/">Mekonnen, Gebre Michael</a>
         
       </td>
       <td width=20%>
@@ -65712,7 +65801,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/southafrica/mgijima-enoch/">Mgijima, Enoch Josiah (A)</a>
+                <a href="/stories/southafrica/mgijima-enoch/">Mgijima, Enoch Josiah (A)</a>
         
       </td>
       <td width=20%>
@@ -65756,7 +65845,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/southafrica/mgijima-enoch/">Mgijima, Enoch Josiah (A)</a>
+                <a href="/fr/stories/southafrica/mgijima-enoch/">Mgijima, Enoch Josiah (A)</a>
         
       </td>
       <td width=20%>
@@ -65888,50 +65977,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/mhlauli-petros/">Mhlauli, Petros Mayengani</a>
-        
-      </td>
-      <td width=20%>
-        Kanisa la Ethiopia la Gazaland nchini Zimbabwe
-        Kanisa la Ethiopia la Afrika Kusini
-        Kanisa la Methodist la Wesleyan la Afrika Kusini
-      </td>
-      <td width=20%>
-        Mozambique
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/mozambique/mhlauli-petros/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/mozambique/mhlauli-petros/" rel="permalink">FR</a>
-        
-        
-        
-        
-        <a href="/pt/stories/mozambique/mhlauli-petros/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/fr/stories/mozambique/mhlauli-petros/">Mhlauli, Petros Mayengani</a>
         
       </td>
@@ -65976,7 +66021,51 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/mozambique/mhula-jacinto/">Mhula, Jacinto</a>
+                <a href="/stories/mozambique/mhlauli-petros/">Mhlauli, Petros Mayengani</a>
+        
+      </td>
+      <td width=20%>
+        Kanisa la Ethiopia la Gazaland nchini Zimbabwe
+        Kanisa la Ethiopia la Afrika Kusini
+        Kanisa la Methodist la Wesleyan la Afrika Kusini
+      </td>
+      <td width=20%>
+        Mozambique
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/mozambique/mhlauli-petros/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/mozambique/mhlauli-petros/" rel="permalink">FR</a>
+        
+        
+        
+        
+        <a href="/pt/stories/mozambique/mhlauli-petros/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/stories/mozambique/mhula-jacinto/">Mhula, Jacinto</a>
         
       </td>
       <td width=20%>
@@ -66020,7 +66109,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/mhula-jacinto/">Mhula, Jacinto</a>
+                <a href="/pt/stories/mozambique/mhula-jacinto/">Mhula, Jacinto</a>
         
       </td>
       <td width=20%>
@@ -66240,7 +66329,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/ethiopia/gebhre-michael2/">Michael, Gebhre (B)</a>
+                <a href="/fr/stories/ethiopia/gebhre-michael2/">Michael, Gebhre (B)</a>
         
       </td>
       <td width=20%>
@@ -66284,7 +66373,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/ethiopia/gebhre-michael2/">Michael, Gebhre (B)</a>
+                <a href="/stories/ethiopia/gebhre-michael2/">Michael, Gebhre (B)</a>
         
       </td>
       <td width=20%>
@@ -66640,7 +66729,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/zimbabwe/mizeki-bernard/">Mizeki, Bernard (A)</a>
+                <a href="/pt/stories/zimbabwe/mizeki-bernard/">Mizeki, Bernard (A)</a>
         
       </td>
       <td width=20%>
@@ -66684,7 +66773,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/zimbabwe/mizeki-bernard/">Mizeki, Bernard (A)</a>
+                <a href="/stories/zimbabwe/mizeki-bernard/">Mizeki, Bernard (A)</a>
         
       </td>
       <td width=20%>
@@ -67974,11 +68063,11 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/southafrica/mokone-mangena/">Mokone, Mangena Maake (A)</a>
+                <a href="/fr/stories/southafrica/mokone-mangena/">Mokone, Mangena Maake (A)</a>
         
       </td>
       <td width=20%>
-        Kanisa la Ethiopia la Afrika Kusini
+        Kanisa la Ethiopia
         
         
       </td>
@@ -68018,11 +68107,11 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/southafrica/mokone-mangena/">Mokone, Mangena Maake (A)</a>
+                <a href="/stories/southafrica/mokone-mangena/">Mokone, Mangena Maake (A)</a>
         
       </td>
       <td width=20%>
-        Kanisa la Ethiopia
+        Kanisa la Ethiopia la Afrika Kusini
         
         
       </td>
@@ -68244,7 +68333,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/mondain-gustavestephane/">Mondain, Gustave Stéphane</a>
+                <a href="/stories/madagascar/mondain-gustavestephane/">Mondain, Gustave Stéphane</a>
         
       </td>
       <td width=20%>
@@ -68288,7 +68377,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/mondain-gustavestephane/">Mondain, Gustave Stéphane</a>
+                <a href="/fr/stories/madagascar/mondain-gustavestephane/">Mondain, Gustave Stéphane</a>
         
       </td>
       <td width=20%>
@@ -69348,7 +69437,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/congo/moussounga-jacques/">Moussounga, Jacques</a>
+                <a href="/fr/stories/congo/moussounga-jacques/">Moussounga, Jacques</a>
         
       </td>
       <td width=20%>
@@ -69392,7 +69481,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/congo/moussounga-jacques/">Moussounga, Jacques</a>
+                <a href="/stories/congo/moussounga-jacques/">Moussounga, Jacques</a>
         
       </td>
       <td width=20%>
@@ -69481,6 +69570,50 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
+                <a href="/pt/stories/democratic-republic-of-congo/mpadi-simon/">Mpadi, Simon-Pierre</a>
+        
+      </td>
+      <td width=20%>
+        Kanisa la Wazungu
+        
+        
+      </td>
+      <td width=20%>
+        Jamhuri Ya Kidemokrasia Ya Kongo
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/democratic-republic-of-congo/mpadi-simon/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/mpadi-simon/" rel="permalink">FR</a>
+        
+        
+        
+        
+        <a href="/pt/stories/democratic-republic-of-congo/mpadi-simon/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
                 <a href="/fr/stories/democratic-republic-of-congo/mpadi-simon/">Mpadi, Simon-Pierre</a>
         
       </td>
@@ -69526,50 +69659,6 @@
       <td width=30%>
         
                 <a href="/stories/democratic-republic-of-congo/mpadi-simon/">Mpadi, Simon-Pierre</a>
-        
-      </td>
-      <td width=20%>
-        Kanisa la Wazungu
-        
-        
-      </td>
-      <td width=20%>
-        Jamhuri Ya Kidemokrasia Ya Kongo
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/democratic-republic-of-congo/mpadi-simon/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/mpadi-simon/" rel="permalink">FR</a>
-        
-        
-        
-        
-        <a href="/pt/stories/democratic-republic-of-congo/mpadi-simon/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
-                <a href="/pt/stories/democratic-republic-of-congo/mpadi-simon/">Mpadi, Simon-Pierre</a>
         
       </td>
       <td width=20%>
@@ -70410,7 +70499,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/muiane-elias/">Muiane, Elias</a>
+                <a href="/pt/stories/mozambique/muiane-elias/">Muiane, Elias</a>
         
       </td>
       <td width=20%>
@@ -70454,7 +70543,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/mozambique/muiane-elias/">Muiane, Elias</a>
+                <a href="/stories/mozambique/muiane-elias/">Muiane, Elias</a>
         
       </td>
       <td width=20%>
@@ -71658,7 +71747,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/zimbabwe/muzorewa-abel/">Muzorewa, Abel Tendekayi</a>
+                <a href="/stories/zimbabwe/muzorewa-abel/">Muzorewa, Abel Tendekayi</a>
         
       </td>
       <td width=20%>
@@ -71702,7 +71791,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/zimbabwe/muzorewa-abel/">Muzorewa, Abel Tendekayi</a>
+                <a href="/pt/stories/zimbabwe/muzorewa-abel/">Muzorewa, Abel Tendekayi</a>
         
       </td>
       <td width=20%>
@@ -72280,11 +72369,11 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/uganda/nagenda-william/">Nagenda, William (A)</a>
+                <a href="/fr/stories/uganda/nagenda-william/">Nagenda, William (A)</a>
         
       </td>
       <td width=20%>
-        Ushirika wa Anglican
+        Ushirika wa Anglican (Kanisa la Uganda)
         Mwendo wa Balokole
         
       </td>
@@ -72324,11 +72413,11 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/uganda/nagenda-william/">Nagenda, William (A)</a>
+                <a href="/stories/uganda/nagenda-william/">Nagenda, William (A)</a>
         
       </td>
       <td width=20%>
-        Ushirika wa Anglican (Kanisa la Uganda)
+        Ushirika wa Anglican
         Mwendo wa Balokole
         
       </td>
@@ -72898,7 +72987,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/southafrica/naude-beyers/">Naudé, Christiaan Frederick Beyers (A)</a>
+                <a href="/stories/southafrica/naude-beyers/">Naudé, Christiaan Frederick Beyers (A)</a>
         
       </td>
       <td width=20%>
@@ -72942,7 +73031,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/southafrica/naude-beyers/">Naudé, Christiaan Frederick Beyers (A)</a>
+                <a href="/fr/stories/southafrica/naude-beyers/">Naudé, Christiaan Frederick Beyers (A)</a>
         
       </td>
       <td width=20%>
@@ -73519,50 +73608,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/nenilava/">Nenilava</a>
-        
-      </td>
-      <td width=20%>
-        Lutheran
-        
-        
-      </td>
-      <td width=20%>
-        Madagascar
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/madagascar/nenilava/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/madagascar/nenilava/" rel="permalink">FR</a>
-        
-        
-        
-        
-        <a href="/pt/stories/madagascar/nenilava/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/pt/stories/madagascar/nenilava/">Nenilava</a>
         
       </td>
@@ -73608,6 +73653,50 @@
       <td width=30%>
         
                 <a href="/stories/madagascar/nenilava/">Nenilava</a>
+        
+      </td>
+      <td width=20%>
+        Lutheran
+        
+        
+      </td>
+      <td width=20%>
+        Madagascar
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/madagascar/nenilava/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/madagascar/nenilava/" rel="permalink">FR</a>
+        
+        
+        
+        
+        <a href="/pt/stories/madagascar/nenilava/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/fr/stories/madagascar/nenilava/">Nenilava</a>
         
       </td>
       <td width=20%>
@@ -73966,6 +74055,50 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
+                <a href="/stories/sierra-leone/nicol-george/">Nicol, George</a>
+        
+      </td>
+      <td width=20%>
+        Ushirika wa Anglican (Church Missionary Society)
+        
+        
+      </td>
+      <td width=20%>
+        Sierra Leone
+        Gambia
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/sierra-leone/nicol-george/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/sierra-leone/nicol-george/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="/sw/stories/sierra-leone/nicol-george/" rel="permalink">SW</a>
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
                 <a href="/sw/stories/sierra-leone/nicol-george/">Nicol, George</a></td>
         
       </td>
@@ -74011,50 +74144,6 @@
       <td width=30%>
         
                 <a href="/fr/stories/sierra-leone/nicol-george/">Nicol, George</a>
-        
-      </td>
-      <td width=20%>
-        Ushirika wa Anglican (Church Missionary Society)
-        
-        
-      </td>
-      <td width=20%>
-        Sierra Leone
-        Gambia
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/sierra-leone/nicol-george/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/sierra-leone/nicol-george/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <a href="/sw/stories/sierra-leone/nicol-george/" rel="permalink">SW</a>
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
-                <a href="/stories/sierra-leone/nicol-george/">Nicol, George</a>
         
       </td>
       <td width=20%>
@@ -74588,7 +74677,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/southafrica/nku-christinah/">Nku, Christinah</a>
+                <a href="/stories/southafrica/nku-christinah/">Nku, Christinah (A)</a>
         
       </td>
       <td width=20%>
@@ -74622,6 +74711,7 @@
     </tr></tbody></table>
 </article>
 </div>
+
 
 
 
@@ -74842,6 +74932,7 @@
     </tr></tbody></table>
 </article>
 </div>
+
 
 
 
@@ -75118,7 +75209,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/southafrica/ntsikana-gaba/">Ntsikana (D)</a>
+                <a href="/pt/stories/southafrica/ntsikana-gaba/">Ntsikana (D)</a>
         
       </td>
       <td width=20%>
@@ -75162,7 +75253,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/southafrica/ntsikana-gaba/">Ntsikana (D)</a>
+                <a href="/stories/southafrica/ntsikana-gaba/">Ntsikana (D)</a>
         
       </td>
       <td width=20%>
@@ -75430,7 +75521,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/sierra-leone/nylander-gustavus/">Nyländer, Gustavus Reinhold</a>
+                <a href="/stories/sierra-leone/nylander-gustavus/">Nyländer, Gustavus Reinhold</a>
         
       </td>
       <td width=20%>
@@ -75474,7 +75565,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/sierra-leone/nylander-gustavus/">Nyländer, Gustavus Reinhold</a>
+                <a href="/fr/stories/sierra-leone/nylander-gustavus/">Nyländer, Gustavus Reinhold</a>
         
       </td>
       <td width=20%>
@@ -76533,7 +76624,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/nigeria/okoh-agnes/">Okoh, Agnes</a>
+                <a href="/fr/stories/nigeria/okoh-agnes/">Okoh, Agnes</a>
         
       </td>
       <td width=20%>
@@ -76577,7 +76668,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/nigeria/okoh-agnes/">Okoh, Agnes</a>
+                <a href="/pt/stories/nigeria/okoh-agnes/">Okoh, Agnes</a>
         
       </td>
       <td width=20%>
@@ -78341,7 +78432,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/nigeria/orimolade2-moses/">Orimolade Tunolase, Moses (B)</a>
+                <a href="/stories/nigeria/orimolade2-moses/">Orimolade Tunolase, Moses (B)</a>
         
       </td>
       <td width=20%>
@@ -78429,7 +78520,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/nigeria/orimolade2-moses/">Orimolade Tunolase, Moses (B)</a>
+                <a href="/fr/stories/nigeria/orimolade2-moses/">Orimolade Tunolase, Moses (B)</a>
         
       </td>
       <td width=20%>
@@ -81043,7 +81134,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/phiri-chibanga/">Phiri, Chibanga</a>
+                <a href="/fr/stories/mozambique/phiri-chibanga/">Phiri, Chibanga</a>
         
       </td>
       <td width=20%>
@@ -81087,7 +81178,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/mozambique/phiri-chibanga/">Phiri, Chibanga</a>
+                <a href="/stories/mozambique/phiri-chibanga/">Phiri, Chibanga</a>
         
       </td>
       <td width=20%>
@@ -81219,50 +81310,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/phiri-tomas/">Phiri, Tomás</a>
-        
-      </td>
-      <td width=20%>
-        Kanisa la Nazarene
-        
-        
-      </td>
-      <td width=20%>
-        Mozambique
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/mozambique/phiri-tomas/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/pt/stories/mozambique/phiri-tomas/">Phiri, Tomás</a>
         
       </td>
@@ -81288,6 +81335,50 @@
         
         
         <a href="/pt/stories/mozambique/phiri-tomas/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/stories/mozambique/phiri-tomas/">Phiri, Tomás</a>
+        
+      </td>
+      <td width=20%>
+        Kanisa la Nazarene
+        
+        
+      </td>
+      <td width=20%>
+        Mozambique
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/mozambique/phiri-tomas/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -81532,7 +81623,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/pope-gladys/">Pope, Gladys</a>
+                <a href="/fr/stories/mozambique/pope-gladys/">Pope, Gladys</a>
         
       </td>
       <td width=20%>
@@ -81576,7 +81667,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/mozambique/pope-gladys/">Pope, Gladys</a>
+                <a href="/stories/mozambique/pope-gladys/">Pope, Gladys</a>
         
       </td>
       <td width=20%>
@@ -82192,7 +82283,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/ethiopia/petros2-abuna/">Pétros (Abuna) (A)</a>
+                <a href="/stories/ethiopia/petros2-abuna/">Pétros (Abuna)</a>
         
       </td>
       <td width=20%>
@@ -82226,7 +82317,6 @@
     </tr></tbody></table>
 </article>
 </div>
-
 
 
 
@@ -82898,50 +82988,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/rafaralahy-andriamazoto/">Rafaralahy, Andriamazoto</a>
-        
-      </td>
-      <td width=20%>
-        London Missionary Society
-        
-        
-      </td>
-      <td width=20%>
-        Madagascar
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/madagascar/rafaralahy-andriamazoto/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/madagascar/rafaralahy-andriamazoto/" rel="permalink">FR</a>
-        
-        
-        
-        
-        <a href="/pt/stories/madagascar/rafaralahy-andriamazoto/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/fr/stories/madagascar/rafaralahy-andriamazoto/">Rafaralahy, Andriamazoto</a>
         
       </td>
@@ -82986,7 +83032,51 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/rafaravavy-marie/">Rafaravavy, Marie (A)</a>
+                <a href="/stories/madagascar/rafaralahy-andriamazoto/">Rafaralahy, Andriamazoto</a>
+        
+      </td>
+      <td width=20%>
+        London Missionary Society
+        
+        
+      </td>
+      <td width=20%>
+        Madagascar
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/madagascar/rafaralahy-andriamazoto/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/madagascar/rafaralahy-andriamazoto/" rel="permalink">FR</a>
+        
+        
+        
+        
+        <a href="/pt/stories/madagascar/rafaralahy-andriamazoto/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/fr/stories/madagascar/rafaravavy-marie/">Rafaravavy, Marie (A)</a>
         
       </td>
       <td width=20%>
@@ -83030,7 +83120,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/rafaravavy-marie/">Rafaravavy, Marie (A)</a>
+                <a href="/stories/madagascar/rafaravavy-marie/">Rafaravavy, Marie (A)</a>
         
       </td>
       <td width=20%>
@@ -83470,11 +83560,11 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/rainisoalambo2/">Rainisoalambo (B)</a>
+                <a href="/fr/stories/madagascar/rainisoalambo2/">Rainisoalambo (B)</a>
         
       </td>
       <td width=20%>
-        Lutheran
+        Waprotestanti
         
         
       </td>
@@ -83514,11 +83604,11 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/rainisoalambo2/">Rainisoalambo (B)</a>
+                <a href="/stories/madagascar/rainisoalambo2/">Rainisoalambo (B)</a>
         
       </td>
       <td width=20%>
-        Waprotestanti
+        Lutheran
         
         
       </td>
@@ -83691,11 +83781,11 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/rajaofera-daniel/">Rajaofera, Daniel</a>
+                <a href="/fr/stories/madagascar/rajaofera-daniel/">Rajaofera, Daniel</a>
         
       </td>
       <td width=20%>
-        Lutheran (Jamii ya Ujumbe wa Norway)
+        Lutheran
         
         
       </td>
@@ -83735,11 +83825,11 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/rajaofera-daniel/">Rajaofera, Daniel</a>
+                <a href="/stories/madagascar/rajaofera-daniel/">Rajaofera, Daniel</a>
         
       </td>
       <td width=20%>
-        Lutheran
+        Lutheran (Jamii ya Ujumbe wa Norway)
         
         
       </td>
@@ -83955,7 +84045,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/rakotovao-johanesa/">Rakotovao, Johanesa</a>
+                <a href="/fr/stories/madagascar/rakotovao-johanesa/">Rakotovao, Johanesa</a>
         
       </td>
       <td width=20%>
@@ -83999,7 +84089,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/rakotovao-johanesa/">Rakotovao, Johanesa</a>
+                <a href="/stories/madagascar/rakotovao-johanesa/">Rakotovao, Johanesa</a>
         
       </td>
       <td width=20%>
@@ -84087,7 +84177,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/ralinoro-mariehenri/">Ralinoro, Justine</a>
+                <a href="/stories/madagascar/ralinoro-mariehenri/">Ralinoro, Justine</a>
         
       </td>
       <td width=20%>
@@ -84131,7 +84221,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/ralinoro-mariehenri/">Ralinoro, Justine</a>
+                <a href="/fr/stories/madagascar/ralinoro-mariehenri/">Ralinoro, Justine</a>
         
       </td>
       <td width=20%>
@@ -84263,50 +84353,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/ramarosandratana-ignace/">Ramarosandratana, Ignace</a>
-        
-      </td>
-      <td width=20%>
-        Kanisa Katoliki
-        
-        
-      </td>
-      <td width=20%>
-        Madagascar
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/madagascar/ramarosandratana-ignace/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/madagascar/ramarosandratana-ignace/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/fr/stories/madagascar/ramarosandratana-ignace/">Ramarosandratana, Ignace</a>
         
       </td>
@@ -84351,7 +84397,51 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/ramasindraibe-symphorose/">Ramasindraibe, Symphorose</a>
+                <a href="/stories/madagascar/ramarosandratana-ignace/">Ramarosandratana, Ignace</a>
+        
+      </td>
+      <td width=20%>
+        Kanisa Katoliki
+        
+        
+      </td>
+      <td width=20%>
+        Madagascar
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/madagascar/ramarosandratana-ignace/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/madagascar/ramarosandratana-ignace/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/fr/stories/madagascar/ramasindraibe-symphorose/">Ramasindraibe, Symphorose</a>
         
       </td>
       <td width=20%>
@@ -84395,7 +84485,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/ramasindraibe-symphorose/">Ramasindraibe, Symphorose</a>
+                <a href="/stories/madagascar/ramasindraibe-symphorose/">Ramasindraibe, Symphorose</a>
         
       </td>
       <td width=20%>
@@ -84837,7 +84927,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/rasalama-raf/">Rasalama, Rafaravavy</a>
+                <a href="/pt/stories/madagascar/rasalama-raf/">Rasalama, Rafaravavy</a>
         
       </td>
       <td width=20%>
@@ -84925,7 +85015,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/madagascar/rasalama-raf/">Rasalama, Rafaravavy</a>
+                <a href="/fr/stories/madagascar/rasalama-raf/">Rasalama, Rafaravavy</a>
         
       </td>
       <td width=20%>
@@ -85013,7 +85103,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/rasoamanarivo-v/">Rasoamanarivo, Victoire (A)</a>
+                <a href="/stories/madagascar/rasoamanarivo-v/">Rasoamanarivo, Victoire (A)</a>
         
       </td>
       <td width=20%>
@@ -85057,7 +85147,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/rasoamanarivo-v/">Rasoamanarivo, Victoire (A)</a>
+                <a href="/fr/stories/madagascar/rasoamanarivo-v/">Rasoamanarivo, Victoire (A)</a>
         
       </td>
       <td width=20%>
@@ -85453,7 +85543,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/razafindrasoa/">Razafindrasoa</a>
+                <a href="/stories/madagascar/razafindrasoa/">Razafindrasoa</a>
         
       </td>
       <td width=20%>
@@ -85497,7 +85587,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/razafindrasoa/">Razafindrasoa</a>
+                <a href="/fr/stories/madagascar/razafindrasoa/">Razafindrasoa</a>
         
       </td>
       <td width=20%>
@@ -85938,7 +86028,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/mozambique/reis-francisco/">Reis, Francisco</a>
+                <a href="/stories/mozambique/reis-francisco/">Reis, Francisco</a>
         
       </td>
       <td width=20%>
@@ -85982,7 +86072,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/reis-francisco/">Reis, Francisco</a>
+                <a href="/pt/stories/mozambique/reis-francisco/">Reis, Francisco</a>
         
       </td>
       <td width=20%>
@@ -86382,7 +86472,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/rolland-claude/">Rolland, Claude</a>
+                <a href="/fr/stories/madagascar/rolland-claude/">Rolland, Claude</a>
         
       </td>
       <td width=20%>
@@ -86426,7 +86516,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/rolland-claude/">Rolland, Claude</a>
+                <a href="/stories/madagascar/rolland-claude/">Rolland, Claude</a>
         
       </td>
       <td width=20%>
@@ -87091,11 +87181,11 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/uganda/sabiti-erica/">Sabiti, Erica</a>
+                <a href="/fr/stories/uganda/sabiti-erica/">Sabiti, Erica</a>
         
       </td>
       <td width=20%>
-        Ushirika wa Anglican
+        Ushirika wa Anglican (Kanisa la Uganda)
         Mwendo wa Balokole
         
       </td>
@@ -87135,11 +87225,11 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/uganda/sabiti-erica/">Sabiti, Erica</a>
+                <a href="/stories/uganda/sabiti-erica/">Sabiti, Erica</a>
         
       </td>
       <td width=20%>
-        Ushirika wa Anglican (Kanisa la Uganda)
+        Ushirika wa Anglican
         Mwendo wa Balokole
         
       </td>
@@ -88463,7 +88553,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/gabon/schweitzer1-albert/">Schweitzer, Albert (B)</a>
+                <a href="/stories/gabon/schweitzer1-albert/">Schweitzer, Albert (B)</a>
         
       </td>
       <td width=20%>
@@ -88507,7 +88597,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/gabon/schweitzer1-albert/">Schweitzer, Albert (B)</a>
+                <a href="/fr/stories/gabon/schweitzer1-albert/">Schweitzer, Albert (B)</a>
         
       </td>
       <td width=20%>
@@ -89084,7 +89174,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/mozambique/semler-ishmaelm/">Semler, Ishmael Michael</a>
+                <a href="/stories/mozambique/semler-ishmaelm/">Semler, Ishmael Michael</a>
         
       </td>
       <td width=20%>
@@ -89128,7 +89218,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/semler-ishmaelm/">Semler, Ishmael Michael</a>
+                <a href="/pt/stories/mozambique/semler-ishmaelm/">Semler, Ishmael Michael</a>
         
       </td>
       <td width=20%>
@@ -89791,7 +89881,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/southafrica/shembe2-isaiah/">Shembe, Isaiah Mdliwamafa (A)</a>
+                <a href="/stories/southafrica/shembe2-isaiah/">Shembe, Isaiah Mdliwamafa (A)</a>
         
       </td>
       <td width=20%>
@@ -89835,7 +89925,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/southafrica/shembe2-isaiah/">Shembe, Isaiah Mdliwamafa (A)</a>
+                <a href="/pt/stories/southafrica/shembe2-isaiah/">Shembe, Isaiah Mdliwamafa (A)</a>
         
       </td>
       <td width=20%>
@@ -90061,50 +90151,6 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/swaziland/sibandze-leonard/">Sibandze, Leonard C.</a>
-        
-      </td>
-      <td width=20%>
-        Kanisa la Nazarene
-        
-        
-      </td>
-      <td width=20%>
-        Swaziland
-        
-        
-      </td>
-      <td width=15%>
-        <a href="/stories/swaziland/sibandze-leonard/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <a href="/pt/stories/swaziland/sibandze-leonard/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-      </td>
-    </tr></tbody></table>
-</article>
-</div>
-
-
-
-  
-<div>
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <table><tbody><tr>
-      <td width=15%>2011-01-01</td>
-      <td width=30%>
-        
                 <a href="/pt/stories/swaziland/sibandze-leonard/">Sibandze, Leonard C.</a>
         
       </td>
@@ -90149,7 +90195,51 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/swaziland/sibandze-patricia/">Sibandze, Patrícia Phetfwayini (Matfunjwa)</a>
+                <a href="/stories/swaziland/sibandze-leonard/">Sibandze, Leonard C.</a>
+        
+      </td>
+      <td width=20%>
+        Kanisa la Nazarene
+        
+        
+      </td>
+      <td width=20%>
+        Swaziland
+        
+        
+      </td>
+      <td width=15%>
+        <a href="/stories/swaziland/sibandze-leonard/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="/pt/stories/swaziland/sibandze-leonard/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+      </td>
+    </tr></tbody></table>
+</article>
+</div>
+
+
+
+  
+<div>
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <table><tbody><tr>
+      <td width=15%>2011-01-01</td>
+      <td width=30%>
+        
+                <a href="/pt/stories/swaziland/sibandze-patricia/">Sibandze, Patrícia Phetfwayini (Matfunjwa)</a>
         
       </td>
       <td width=20%>
@@ -90193,7 +90283,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/swaziland/sibandze-patricia/">Sibandze, Patrícia Phetfwayini (Matfunjwa)</a>
+                <a href="/stories/swaziland/sibandze-patricia/">Sibandze, Patrícia Phetfwayini (Matfunjwa)</a>
         
       </td>
       <td width=20%>
@@ -90589,7 +90679,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/mozambique/siweia-paulo/">Siweia, Paulo</a>
+                <a href="/stories/mozambique/siweia-paulo/">Siweia, Paulo</a>
         
       </td>
       <td width=20%>
@@ -90633,7 +90723,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/siweia-paulo/">Siweia, Paulo</a>
+                <a href="/pt/stories/mozambique/siweia-paulo/">Siweia, Paulo</a>
         
       </td>
       <td width=20%>
@@ -91118,7 +91208,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/southafrica/soga1-tiyo/">Soga, Tiyo (B)</a>
+                <a href="/pt/stories/southafrica/soga1-tiyo/">Soga, Tiyo (B)</a>
         
       </td>
       <td width=20%>
@@ -91162,7 +91252,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/southafrica/soga1-tiyo/">Soga, Tiyo (B)</a>
+                <a href="/stories/southafrica/soga1-tiyo/">Soga, Tiyo (B)</a>
         
       </td>
       <td width=20%>
@@ -91382,7 +91472,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/ethiopia/solan-gidada/">Solan, Gidada</a>
+                <a href="/pt/stories/ethiopia/solan-gidada/">Solan, Gidada</a>
         
       </td>
       <td width=20%>
@@ -91470,7 +91560,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/ethiopia/solan-gidada/">Solan, Gidada</a>
+                <a href="/stories/ethiopia/solan-gidada/">Solan, Gidada</a>
         
       </td>
       <td width=20%>
@@ -91605,7 +91695,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/uganda/spartas2-chris/">Spartas, Christopher Reuben (A)</a>
+                <a href="/stories/uganda/spartas2-chris/">Spartas, Christopher Reuben (A)</a>
         
       </td>
       <td width=20%>
@@ -91649,7 +91739,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/uganda/spartas2-chris/">Spartas, Christopher Reuben (A)</a>
+                <a href="/fr/stories/uganda/spartas2-chris/">Spartas, Christopher Reuben (A)</a>
         
       </td>
       <td width=20%>
@@ -92091,7 +92181,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/mozambique/steenkamp-rosa/">Steenkamp, Rosa</a>
+                <a href="/pt/stories/mozambique/steenkamp-rosa/">Steenkamp, Rosa</a>
         
       </td>
       <td width=20%>
@@ -92135,7 +92225,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/mozambique/steenkamp-rosa/">Steenkamp, Rosa</a>
+                <a href="/stories/mozambique/steenkamp-rosa/">Steenkamp, Rosa</a>
         
       </td>
       <td width=20%>
@@ -93768,7 +93858,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/tunisia/tertullian/">Tertullianus</a>
+                <a href="/fr/stories/tunisia/tertullian/">Tertullianus</a>
         
       </td>
       <td width=20%>
@@ -93812,7 +93902,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/tunisia/tertullian/">Tertullianus</a>
+                <a href="/stories/tunisia/tertullian/">Tertullianus</a>
         
       </td>
       <td width=20%>
@@ -94481,7 +94571,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/southafrica/threlfall-william/">Threlfall, William</a>
+                <a href="/pt/stories/southafrica/threlfall-william/">Threlfall, William</a>
         
       </td>
       <td width=20%>
@@ -94525,7 +94615,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/southafrica/threlfall-william/">Threlfall, William</a>
+                <a href="/stories/southafrica/threlfall-william/">Threlfall, William</a>
         
       </td>
       <td width=20%>
@@ -94614,7 +94704,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/southafrica/tikhuie-vmagdalena/">Tikhuie, Vehettge Magdalena</a>
+                <a href="/fr/stories/southafrica/tikhuie-vmagdalena/">Tikhuie, Vehettge Magdalena</a>
         
       </td>
       <td width=20%>
@@ -94658,7 +94748,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/southafrica/tikhuie-vmagdalena/">Tikhuie, Vehettge Magdalena</a>
+                <a href="/stories/southafrica/tikhuie-vmagdalena/">Tikhuie, Vehettge Magdalena</a>
         
       </td>
       <td width=20%>
@@ -94746,7 +94836,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/southafrica/tile1-nehemiah/">Tile, Nehemiah (B)</a>
+                <a href="/stories/southafrica/tile1-nehemiah/">Tile, Nehemiah (B)</a>
         
       </td>
       <td width=20%>
@@ -94790,7 +94880,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/southafrica/tile1-nehemiah/">Tile, Nehemiah (B)</a>
+                <a href="/pt/stories/southafrica/tile1-nehemiah/">Tile, Nehemiah (B)</a>
         
       </td>
       <td width=20%>
@@ -95056,7 +95146,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/namibia/tobias-george/">Tobias, George W. R.</a>
+                <a href="/fr/stories/namibia/tobias-george/">Tobias, George W. R.</a>
         
       </td>
       <td width=20%>
@@ -95100,7 +95190,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/namibia/tobias-george/">Tobias, George W. R.</a>
+                <a href="/stories/namibia/tobias-george/">Tobias, George W. R.</a>
         
       </td>
       <td width=20%>
@@ -95675,7 +95765,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/tsizehena-john/">Tsizehena, John</a>
+                <a href="/fr/stories/madagascar/tsizehena-john/">Tsizehena, John</a>
         
       </td>
       <td width=20%>
@@ -95719,7 +95809,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/tsizehena-john/">Tsizehena, John</a>
+                <a href="/stories/madagascar/tsizehena-john/">Tsizehena, John</a>
         
       </td>
       <td width=20%>
@@ -96030,7 +96120,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/ethiopia/takla1-haymanot/">Täklä-Haymanot (C)</a>
+                <a href="/stories/ethiopia/takla1-haymanot/">Täklä-Haymanot (C)</a>
         
       </td>
       <td width=20%>
@@ -96074,7 +96164,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/ethiopia/takla1-haymanot/">Täklä-Haymanot (C)</a>
+                <a href="/fr/stories/ethiopia/takla1-haymanot/">Täklä-Haymanot (C)</a>
         
       </td>
       <td width=20%>
@@ -96427,7 +96517,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/nigeria/udo-okonakpan/">Udo, Okon Akpan</a>
+                <a href="/fr/stories/nigeria/udo-okonakpan/">Udo, Okon Akpan</a>
         
       </td>
       <td width=20%>
@@ -96471,7 +96561,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/nigeria/udo-okonakpan/">Udo, Okon Akpan</a>
+                <a href="/stories/nigeria/udo-okonakpan/">Udo, Okon Akpan</a>
         
       </td>
       <td width=20%>
@@ -97180,7 +97270,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/nonafricans/legacy-venn/">Venn, Henry</a>
+                <a href="/stories/nonafricans/legacy-venn/">Venn, Henry</a>
         
       </td>
       <td width=20%>
@@ -97189,7 +97279,7 @@
         
       </td>
       <td width=20%>
-        
+        Wasio Waafrika
         
         
       </td>
@@ -97224,7 +97314,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/nonafricans/legacy-venn/">Venn, Henry</a>
+                <a href="/pt/stories/nonafricans/legacy-venn/">Venn, Henry</a>
         
       </td>
       <td width=20%>
@@ -97233,7 +97323,7 @@
         
       </td>
       <td width=20%>
-        Wasio Waafrika
+        
         
         
       </td>
@@ -97535,7 +97625,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/madagascar/villele-josephde/">Villèle, Joseph de</a>
+                <a href="/fr/stories/madagascar/villele-josephde/">Villèle, Joseph de</a>
         
       </td>
       <td width=20%>
@@ -97579,7 +97669,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/madagascar/villele-josephde/">Villèle, Joseph de</a>
+                <a href="/stories/madagascar/villele-josephde/">Villèle, Joseph de</a>
         
       </td>
       <td width=20%>
@@ -99704,7 +99794,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/fr/stories/ethiopia/yared2/">Yared (B)</a>
+                <a href="/stories/ethiopia/yared2/">Yared (B)</a>
         
       </td>
       <td width=20%>
@@ -99748,7 +99838,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/ethiopia/yared2/">Yared (B)</a>
+                <a href="/fr/stories/ethiopia/yared2/">Yared (B)</a>
         
       </td>
       <td width=20%>
@@ -100761,7 +100851,6 @@
 
 
 
-
   
 <div>
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
@@ -100803,6 +100892,7 @@
     </tr></tbody></table>
 </article>
 </div>
+
 
 
 
@@ -101171,7 +101261,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/pt/stories/zimbabwe/zwimba-matthew/">Zwimba, Matthew Chigaga</a>
+                <a href="/stories/zimbabwe/zwimba-matthew/">Zwimba, Matthew Chigaga</a>
         
       </td>
       <td width=20%>
@@ -101215,7 +101305,7 @@
       <td width=15%>2011-01-01</td>
       <td width=30%>
         
-                <a href="/stories/zimbabwe/zwimba-matthew/">Zwimba, Matthew Chigaga</a>
+                <a href="/pt/stories/zimbabwe/zwimba-matthew/">Zwimba, Matthew Chigaga</a>
         
       </td>
       <td width=20%>
@@ -101357,46 +101447,47 @@
                                     FOOTER
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-  <div class="page__footer"> <footer><div class="foot-box">
+  <div class="page__footer">
+
+<!-- AWARDS ROW #################################################### -->
+<div class="awards-wrap">
+<div class="awards">
+
+  <a style="width:33%;disaply:block;float:right" href="/about/awards/">
+    <img class="awards__icon" src="/assets/images/asa-award.png"/>
+  </a>
+  <a style="width:33%;disaply:block;float:right"  href="/about/awards/">
+    <img class="awards__icon" src="/assets/images/neh-award.png"/>
+  </a>
+  <a style="width:33%;disaply:block;float:right"  href="/about/awards/">
+    <img class="awards__icon" src="/assets/images/eb-award.png"/>
+  </a>
+
+</div>
+</div>
+
+    <footer><div class="foot-box">
   <!-- FIRST COLUMN #################################################### -->
   <div class="box">
-    <h3 style="color:#e0c74f; margin-top:0px;"> Wasiliana Nasi</h3>
-    <p>  
-      
-        
-          
-                <b>Kamusi ya Wasifu wa Wakristo wa Kiafrika</b></br>
-            
-      Center for Global Christianity and Mission</br>
-      745 Commonwealth Avenue</br>
-      Boston, Massachussetts 02215, USA</br>
-      Email: dacb@bu.edu</p>
-      <form action="https://www.facebook.com/DictionaryofAfricanChristianBiography">
-          <input type="submit" class="btn-facebook"/>
-      </form>
-  </div>
-
-  <!-- SECOND COLUMN #################################################### -->
-  <div class="box">
-    <h3 style="color:#e0c74f; margin-top:0px;">Wasilisha Hadithi</h3>
+    <h3>Wasilisha Hadithi</h3>
     
     
     
     
-      <p style="margin-bottom: 1em;">Ikiwa ungependa kuwasilisha hadithi kwa KAWAKIA, unaweza kupata vitendea kazi vya bure na mwongozo wa kuwasilisha hapa. <a href="/sw/contribute/submit/">hapa</a>.<br></p>
-      <a href="/sw/contribute/submit/" class="btn btn--inverse-long">Wasilisha Hadithi</a>
+      <p style="margin-bottom: 1em;"><br>Ikiwa ungependa kuwasilisha hadithi kwa KAWAKIA, unaweza kupata vitendea kazi vya bure na mwongozo wa kuwasilisha hapa. <a href="/sw/connect/submit/">hapa</a>.</p>
+      <a href="/sw/connect/submit/" class="btn btn--inverse-long">Wasilisha Hadithi</a>
     
   </div>
 
-  <!-- THIRD COLUMN ####################################################-->
-  <div class="box-end">
-    <h3 style="color:#e0c74f; margin-top:0px;">Journal</h3>
+  <!-- SECOND COLUMN ####################################################-->
+  <div class="box__end">
+    <h3>Journal</h3>
     
     
     
     
         <p>Kujiandikisha hapa ili upokea jarida letu na habari za DACB.</p>
-        <div>
+        <div style="margin-top: .5em;">
   <div id="mc_embed_signup_small">
   <form action="//dacb.us3.list-manage.com/subscribe/post?u=485445b23ed18ff0163e2d7a1&amp;id=68e419fc0f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
       <div id="mc_embed_signup_scroll">
@@ -101426,17 +101517,29 @@
 
   <!-- COPYRIGHT AND COUNTS #################################################### -->
   <div class="page__footer-copyright">
-    
+
+    <div class="box_one"><a href="https://www.facebook.com/DictionaryofAfricanChristianBiography">
+      <img src="/assets/images/fb-full-white.png" class="facebook"/>
+    </a></div>
 
     
 
     
 
     
-    KAWAKIA ni vitendea Kazi ya digital mwenyeji kwa <a href="http://www.bu.edu/cgcm/"> Kituo cha Global Ukristo na Mission </a> katika Boston Chuo cha Theology. <br>
-    Site iliyoboreshwa na Alex Mayfield na Michèle Sigg. Ilibadilishwa Mwisho: 10 July 2019. &copy; 2019 Kamusi Ya Wasifu Wa Wakristo Wa Kiafrika.
+
     
-  </footer></div>
+    <div class="box_two">
+    Site iliyoboreshwa na Alex Mayfield na Michèle Sigg. Ilibadilishwa Mwisho: 27 August 2019.<br>&copy; 2019 Kamusi Ya Wasifu Wa Wakristo Wa Kiafrika.<br><a href="/sw/connect/contact/">Wasiliana Nasi</a> | <a href="/about/usage/">Matumizi na Habari ya Kunuhusu</a>
+    </div>
+    
+
+    <div class="box_three"><a href="https://www.bu.edu/cgcm/">
+      <img src="/assets/images/cgcm.png" class="facebook"/>
+    </a></div>
+
+  </div>
+</footer>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                                     SCRIPTS
@@ -101447,12 +101550,11 @@
         var BASE_URL = '';
       </script>
 
-  <!-- NON LOCAL JQUERY VERSION -->
-      <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-
   <!-- LOCAL JQUERY VERSION -->
-      <!-- <script src="/assets/js/jquery-1.9.1.min.js"></script>
-      <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script> -->
+      <script src="/assets/js/jquery.min.js"></script>
+
+  <!-- Bootstrap -->
+      <script src="/assets/js/bootstrap.min.js"></script>
 
   <!-- Asynchronous Google Analytics snippet -->
       

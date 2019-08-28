@@ -15,6 +15,7 @@
 
 <!-- For all browsers -->
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
     <meta http-equiv="cleartype" content="on">
 <!-- ANALYTICS -->
 <!-- Global Site Tag (gtag.js) - Google Analytics -->
@@ -37,10 +38,23 @@
                                     MASTHEAD
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-  <div class="masthead-banner">
+  
+<div class="masthead-banner">
 <div class="masthead__inner-wrap">
+
+  <!------ LANGAUGE SWITCHER
+  <div class="lang-switch">
+    <div class="switcher">
+      <div class="home"> </div>
+      <div class="en"><a href="/#">EN</a></div>
+      <div class="fr"><a href="/fr">FR</a></div>
+      <div class="pt"><a href="/pt">PT</a></div>
+      <div class="sw"><a href="/sw">SW</a></div>
+    </div>
+  </div> -->
+
   <div class="logo">
-      <img src="/assets/images/logo-fr.gif">
+      <a href="/fr/#"><img src="/assets/images/logo-new-fr.png"></a>
     </div>
 <nav class="top">
         <label for="drop" class="toggle-m">Menu</label>
@@ -49,89 +63,105 @@
 <!----------------------------------------------------------------------------------------------------------->
 <!-- HOME --------------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------->
-          <li>
-              <label for="drop-0" class="toggle"><div class="drop">Accueil</div></label>
-              <a href="#"><div class="drop">Accueil</div></a>
-              <input type="checkbox" id="drop-0"/>
-              <ul class=="top">
-                  <li class="second"><a href="/">English</a></li>
-                  <li class="second"><a href="/fr/">Français</a></li>
-                  <li class="second"><a href="/pt/">Português</a></li>
-                  <li class="second"><a href="/sw/">Kiswahili</a></li>
-              </ul>
-          </li>
-<!----------------------------------------------------------------------------------------------------------->
-<!-- STORIES ------------------------------------------------------------------------------------------------>
-<!----------------------------------------------------------------------------------------------------------->
             <li>
-                <label for="drop-1" class="toggle"><div class="drop">Articles</div></label>
-                <a href="#"><div class="drop">Articles</div></a>
-                <input type="checkbox" id="drop-1"/>
-                <ul class=="top">
-                    <li class="second"><a href="/fr/sort/stories/">Toutes les Biographies</a></li>
-                    <li class="second"><a href="/fr/sort/stories/latest-sort/">Articles Récents</a></li>
-                    <li class="second"><a href="/fr/sort/stories/collected-memories/">Souvenirs Recueillis</a></li>
-                    <li class="second"><a href="/fr/sort/stories/regional-histories/">Histoires Régionales</a></li>
-                    <li class="second"><a href="/fr/sort/stories/country-sort/">L'Afrique Moderne</a></li>
-                    <li class="second"><a href="/fr/sort/stories/ancient-church-index/">L'Afrique Ancienne</a></li>
-                </ul>
+            <label for="drop-2" class="toggle"><div class="drop"><a href="/fr/">Accueil</a></div></label>
+            <a href="/fr/"><div class="drop">Accueil</div></a>
+            <input type="checkbox" id="drop-2"/>
+            <ul class=="top">
+              <li class="second"><a href="/">English</a></li>
+              <li class="second"><a href="/fr/">Français</a></li>
+              <li class="second"><a href="/pt/">Português</a></li>
+              <li class="second"><a href="/sw/">Kiswahili</a></li>
+            </ul>
             </li>
+
 <!----------------------------------------------------------------------------------------------------------->
 <!-- ABOUT -------------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------->
             <li>
-            <label for="drop-2" class="toggle"><div class="drop">Le Projet</div></label>
-            <a href="#"><div class="drop">Le Projet</div></a>
+            <label for="drop-2" class="toggle"><div class="drop"><a href="/fr/about/">Le Projet</a></div></label>
+            <a href="/fr/about/"><div class="drop">Le Projet</div></a>
             <input type="checkbox" id="drop-2"/>
             <ul class=="top">
-              <li class="second"><a href="/fr/about/what-is-dacb/">Qu'est-ce que le DIBICA?</a></li>
-              <li class="second"><a href="/fr/about/beginnings/">Genèse</a></li>
               <li class="second"><a href="/fr/about/vision/">Vision</a></li>
               <li class="second"><a href="/fr/about/advisors/">Conseillers</a></li>
+              <li class="second"><a href="/about/editorial-committee/">Comité exécutif</a></li>
+              <li class="second"><a href="/about/donor-list/">Nos Donateurs</a></li>
+              <li class="second"><a href="/fr/about/partners/">Partenaires</a></li>
+              <li class="second"><a href="/about/usage/">Utilisation du Site</a></li>
+            </ul>
+            </li>
+
+<!----------------------------------------------------------------------------------------------------------->
+<!-- STORIES ------------------------------------------------------------------------------------------------>
+<!----------------------------------------------------------------------------------------------------------->
+            <li>
+            <label for="drop-0" class="toggle"><div class="drop"><a href="/fr/sort/stories/">Articles</a></div></label>
+            <a href="/fr/sort/stories/"><div class="drop">Articles</div></a>
+            <input type="checkbox" id="drop-0"/>
+            <ul class=="top">
+              <li class="second"><a href="/fr/sort/stories/latest-sort/">Articles Récents</a></li>
+              <li class="second"><a href="/fr/sort/stories/collected-memories/">Souvenirs Recueillis</a></li>
+              <li class="second"><a href="/fr/sort/stories/regional-histories/">Histoires Régionales</a></li>
+              <li class="second"><a href="/fr/sort/stories/country-sort/">L'Afrique Moderne</a></li>
+              <li class="second"><a href="/fr/sort/stories/ancient-church-index/">L'Afrique Ancienne</a></li>
+            </ul>
+            </li>
+
+<!----------------------------------------------------------------------------------------------------------->
+<!-- PROJECTS ------------------------------------------------------------------------------------------------>
+<!----------------------------------------------------------------------------------------------------------->
+            <li>
+              <label for="drop-1" class="toggle"><div class="drop"><a href="/fr/projects/">Projets</a></div></label>
+              <a href="/fr/projects/"><div class="drop">Projets</div></a>
+              <input type="checkbox" id="drop-1"/>
+            <ul class=="top">
+              <li class="second"><a href="/projects/women/">Femmes</a></li>
+              <li class="second"><a href="/projects/music-art/">Musiciens et Artistes</a></li>
+              <li class="second"><a href="/projects/diaspora">Diaspora</a></li>
+
             </ul>
             </li>
 <!----------------------------------------------------------------------------------------------------------->
 <!-- RESOURCES  --------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------->
             <li>
-            <label for="drop-3" class="toggle"><div class="drop">Ressources</div></label>
-            <a href="#"><div class="drop">Ressources</div></a>
+            <label for="drop-3" class="toggle"><div class="drop"><a href="/fr/resources">Ressources</a></div></label>
+            <a href="/fr/resources"><div class="drop">Ressources</div></a>
             <input type="checkbox" id="drop-3"/>
             <ul class=="top">
-              <li class="second"><a href="/fr/resources/writers-educators/">Pour les Écrivains et Éducateurs</a></li>
-              <li class="second"><a href="/fr/resources/bibliographies/">Bibliographies</a></li>
-              <li class="second"><a href="/fr/resources/potential-subjects/">Sujets Potentiels</a></li>
+              <li class="second"><a href="/fr/resources/introductory/">Ressources d'Introduction</a></li>
+              <li class="second"><a href="/fr/resources/educational/">Ressources Pédagogiques</a></li>
+              <li class="second"><a href="/fr/resources/bibliographic/">Ressources Bibliographiques</a></li>
+              <li class="second"><a href="/fr/resources/oral-history/">Ressources d'Histoire Orale</a></li>
             </ul>
             </li>
 <!----------------------------------------------------------------------------------------------------------->
-<!-- NEWS --------------------------------------------------------------------------------------------------->
+<!-- JOURNAL --------------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------->
             <li>
-            <label for="drop-6" class="toggle"><div class="drop">Nouvelles</div></label>
-            <a href="#"><div class="drop">Nouvelles</div></a>
-            <input type="checkbox" id="drop-6"/>
-            <ul class=="top">
-              <li class="second"><a href="/fr/sort/stories/latest-sort/">Articles Récents</a></li>
-              <li class="second"><a href="/fr/news/newsletter/">Bulletin</a></li>
-            </ul>
+            <label for="drop-6" class="toggle"><div class="drop"><a href="/journal/">Journal</a></div></label>
+            <a href="/journal/"><div class="drop">Journal</div></a>
             </li>
+
 <!----------------------------------------------------------------------------------------------------------->
-<!-- CONTRIBUTE --------------------------------------------------------------------------------------------->
+<!-- CONNECT --------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------->
             <li>
-            <label for="drop-7" class="toggle"><div class="drop">Contact</div></label>
-            <a href="#"><div class="drop">Contact</div></a>
+            <label for="drop-7" class="toggle"><div class="drop"><a href="/fr/connect/">Relier</a></div></label>
+            <a href="/fr/connect/"><div class="drop">Relier</div></a>
             <input type="checkbox" id="drop-7"/>
             <ul class=="top">
-              <li class="second"><a href="/fr/contribute/contact/">Contactez-nous</a></li>
-              <li class="second"><a href="/fr/contribute/partner/">Collaborer</a></li>
-              <li class="second"><a href="/fr/contribute/submit/">Soumettre des Articles</a></li>
+              <li class="second"><a href="/connect/news/">Nouvelles</a></li>
+              <li class="second"><a href="/fr/connect/submit/">Soumettre des Articles</a></li>
+              <li class="second"><a href="/fr/connect/collaborate/">Collaborer</a></li>
+              <li class="second"><a href="/fr/connect/contact/">Contactez-nous</a></li>
             </ul>
             </li>
 <!----------------------------------------------------------------------------------------------------------->
 <!-- SEARCH ------------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------->
-            <label class="toggle">
+            <label class="toggle" style="margin-left: .5vw !important; margin-right: .5vw !important;">
               <a class="search-image" href="/search-fr.html" style="padding: 0px !important"></a></label>
                 <li class="menu">
                   <a class="search-image" href="/search-fr.html" style="padding: 0px !important"></a>
@@ -148,6 +178,7 @@
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                                     CONTENT
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  
 
   <div id="main" role="main"><a name="#top"></a>
   <!-- SIDEBAR -->
@@ -280,6 +311,14 @@
                         
 
                         <li><a href="/fr/sort/stories/catechist-index/" class="">Catéchistes</a></li>
+                      
+                        
+                        
+
+                        
+                        
+
+                        <li><a href="/fr/sort/stories/classic-index/" class="">Classique</a></li>
                       
                         
                         
@@ -440,16 +479,21 @@
   <div class="archive">
 
     
+
+    
+
+
+
       <h1 class="page__title">Trier par Institution: A-F</h1>
     
     <table class="sort"><tbody>
   <tr>
-    <td><a href="#A" style="color:#e0c74f;">A</a></td>
-    <td><a href="#B" style="color:#e0c74f;">B</a></td>
-    <td><a href="#C" style="color:#e0c74f;">C</a></td>
-    <td><a href="#D" style="color:#e0c74f;">D</a></td>
-    <td><a href="#E" style="color:#e0c74f;">E</a></td>
-    <td><a href="#F" style="color:#e0c74f;">F</a></td>
+    <td><a href="#A" style="color:#ecc068;">A</a></td>
+    <td><a href="#B" style="color:#ecc068;">B</a></td>
+    <td><a href="#C" style="color:#ecc068;">C</a></td>
+    <td><a href="#D" style="color:#ecc068;">D</a></td>
+    <td><a href="#E" style="color:#ecc068;">E</a></td>
+    <td><a href="#F" style="color:#ecc068;">F</a></td>
     <td><a href="/fr/sort/stories/institution-sort2/">G-M</a></td>
     <td><a href="/fr/sort/stories/institution-sort3/">N-S</a></td>
     <td><a href="/fr/sort/stories/institution-sort4/">T-Z</a></td>
@@ -459,21 +503,7 @@
 
 
 
-<a id="A"></a>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+<h3><a id="A">A</a></h3>
 
     
 
@@ -481,10 +511,6 @@
 
     
     
-    
-  <a href="#" class="btn btn--inverse">Haut de Page</a>
-
-
     <a id="africa-international-university"></a>
       <h2>Africa International University</h2>
       <div>
@@ -497,20 +523,20 @@
             <th width=15%>Languages</th>
             </thead></table>
             <table width=100%><tbody><tr>
-                <td width=20%> Kidd, Abram </td>
-                <td width=25%><a href="/stories/tanzania/zebedayo-yohana/">Zebedayo, Yohana Makaranga</a></td>
+                <td width=20%> Owojaiye, Babatomiwa Moses </td>
+                <td width=25%><a href="/stories/kenya/wakhu-james/">Wakhu, James Curtis</a></td>
                 <td width=20%>
-                  Église Continentale d'Afrique
+                  Les Ministères de Sheepfold
                   
                   
                 </td>
                 <td width=20%>
-                  Tanzanie
+                  Kenya
                   
                   
                 </td>
                 <td width=15%>
-                  <a href="/stories/tanzania/zebedayo-yohana/" rel="permalink">EN</a>
+                  <a href="/stories/kenya/wakhu-james/" rel="permalink">EN</a>
         
         
         
@@ -530,47 +556,6 @@
             </tr></tbody></table>
       </article>
       </div>
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Harvey (Kinnerson), Tammie M. </td>
-            <td width=25%><a href="/stories/kenya/chitemo-gresford/">Chitemo, Gresford</a></td>
-            <td width=20%>
-              Communion Anglicane (Société Missionnaire de l'Église)
-              
-              
-            </td>
-            <td width=20%>
-              Kenya
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/kenya/chitemo-gresford/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
     
 
 
@@ -619,10 +604,51 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Njoroge, Allan Muchiri </td>
-            <td width=25%><a href="/stories/kenya/birech-ezekiel/">Birech, Ezekiel Kiprop</a></td>
+            <td width=20%> Kidd, Abram </td>
+            <td width=25%><a href="/stories/tanzania/zebedayo-yohana/">Zebedayo, Yohana Makaranga</a></td>
             <td width=20%>
               Église Continentale d'Afrique
+              
+              
+            </td>
+            <td width=20%>
+              Tanzanie
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/tanzania/zebedayo-yohana/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Harvey (Kinnerson), Tammie M. </td>
+            <td width=25%><a href="/stories/kenya/chitemo-gresford/">Chitemo, Gresford</a></td>
+            <td width=20%>
+              Communion Anglicane (Société Missionnaire de l'Église)
               
               
             </td>
@@ -632,7 +658,89 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/kenya/birech-ezekiel/" rel="permalink">EN</a>
+              <a href="/stories/kenya/chitemo-gresford/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Nguoth, Tut Mai </td>
+            <td width=25%><a href="/stories/sudan/nyoat-moses/">Nyoat, Moses Kuac</a></td>
+            <td width=20%>
+              Église Presbytérienne du Soudan
+              
+              
+            </td>
+            <td width=20%>
+              Soudan
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/sudan/nyoat-moses/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Sumba, Felix Simiyu </td>
+            <td width=25%><a href="/stories/kenya/luchetu-sarah/">Luchetu, Sarah Muganzi</a></td>
+            <td width=20%>
+              Les Assemblées du Dieu du Kenya
+              
+              
+            </td>
+            <td width=20%>
+              Kenya
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/kenya/luchetu-sarah/" rel="permalink">EN</a>
         
         
         
@@ -701,20 +809,61 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Nguoth, Tut Mai </td>
-            <td width=25%><a href="/stories/sudan/nyoat-moses/">Nyoat, Moses Kuac</a></td>
+            <td width=20%> Wegulo, Paul Wafula </td>
+            <td width=25%><a href="/stories/kenya/wambani-elphas/">Wambani, Elphas Odwisah</a></td>
             <td width=20%>
-              Église Presbytérienne du Soudan
+              Église des Amis (Quakers)
               
               
             </td>
             <td width=20%>
-              Soudan
+              Kenya
               
               
             </td>
             <td width=15%>
-              <a href="/stories/sudan/nyoat-moses/" rel="permalink">EN</a>
+              <a href="/stories/kenya/wambani-elphas/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Njoroge, Allan Muchiri </td>
+            <td width=25%><a href="/stories/kenya/birech-ezekiel/">Birech, Ezekiel Kiprop</a></td>
+            <td width=20%>
+              Église Continentale d'Afrique
+              
+              
+            </td>
+            <td width=20%>
+              Kenya
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/kenya/birech-ezekiel/" rel="permalink">EN</a>
         
         
         
@@ -821,134 +970,7 @@
 
 
     
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Owojaiye, Babatomiwa Moses </td>
-            <td width=25%><a href="/stories/kenya/wakhu-james/">Wakhu, James Curtis</a></td>
-            <td width=20%>
-              Les Ministères de Sheepfold
-              
-              
-            </td>
-            <td width=20%>
-              Kenya
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/kenya/wakhu-james/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
     
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Sumba, Felix Simiyu </td>
-            <td width=25%><a href="/stories/kenya/luchetu-sarah/">Luchetu, Sarah Muganzi</a></td>
-            <td width=20%>
-              Les Assemblées du Dieu du Kenya
-              
-              
-            </td>
-            <td width=20%>
-              Kenya
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/kenya/luchetu-sarah/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Wegulo, Paul Wafula </td>
-            <td width=25%><a href="/stories/kenya/wambani-elphas/">Wambani, Elphas Odwisah</a></td>
-            <td width=20%>
-              Église des Amis (Quakers)
-              
-              
-            </td>
-            <td width=20%>
-              Kenya
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/kenya/wambani-elphas/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    
-    
-  <a href="#" class="btn btn--inverse">Haut de Page</a>
-
-
     <a id="akrofi-christaller-institute-ghana"></a>
       <h2>Akrofi-Christaller Institute (Ghana)</h2>
       <div>
@@ -1040,10 +1062,6 @@
 
     
     
-    
-  <a href="#" class="btn btn--inverse">Haut de Page</a>
-
-
     <a id="american-university-in-cairo"></a>
       <h2>American University in Cairo</h2>
       <div>
@@ -1930,63 +1948,47 @@
 
     
 
-    
 
 
-<a id="B"></a>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
   <a href="#" class="btn btn--inverse">Haut de Page</a>
 
 
+<h3><a id="B">B</a></h3>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
     <a id="bishop-allison-theological-college"></a>
       <h2>Bishop Allison Theological College</h2>
       <div>
@@ -2000,7 +2002,7 @@
             </thead></table>
             <table width=100%><tbody><tr>
                 <td width=20%> Duku, Oliver Meru </td>
-                <td width=25%><a href="/stories/south-sudan/kore-dawidi/">Kore, Dawidi Manyango</a></td>
+                <td width=25%><a href="/stories/south-sudan/lawiri-ezra/">Lawiri, Ezra Baya</a></td>
                 <td width=20%>
                   Communion Anglicane (Église du Soudan)
                   
@@ -2012,12 +2014,12 @@
                   
                 </td>
                 <td width=15%>
-                  <a href="/stories/south-sudan/kore-dawidi/" rel="permalink">EN</a>
+                  <a href="/stories/south-sudan/lawiri-ezra/" rel="permalink">EN</a>
         
         
         
         
-        
+        <a href="/fr/stories/south-sudan/lawiri-ezra/" rel="permalink">FR</a>
         
         
         
@@ -2081,7 +2083,7 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Duku, Oliver Meru </td>
-            <td width=25%><a href="/stories/south-sudan/lawiri-ezra/">Lawiri, Ezra Baya</a></td>
+            <td width=25%><a href="/stories/south-sudan/kore-dawidi/">Kore, Dawidi Manyango</a></td>
             <td width=20%>
               Communion Anglicane (Église du Soudan)
               
@@ -2093,12 +2095,12 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/south-sudan/lawiri-ezra/" rel="permalink">EN</a>
+              <a href="/stories/south-sudan/kore-dawidi/" rel="permalink">EN</a>
         
         
         
         
-        <a href="/fr/stories/south-sudan/lawiri-ezra/" rel="permalink">FR</a>
+        
         
         
         
@@ -2119,10 +2121,6 @@
 
     
     
-    
-  <a href="#" class="btn btn--inverse">Haut de Page</a>
-
-
     <a id="boston-university"></a>
       <h2>Boston University</h2>
       <div>
@@ -2135,25 +2133,25 @@
             <th width=15%>Languages</th>
             </thead></table>
             <table width=100%><tbody><tr>
-                <td width=20%> Adugna, Gabeyehu </td>
-                <td width=25%><a href="/stories/ethiopia/yared3/">Yared (C)</a></td>
+                <td width=20%> Yoder, Bruce </td>
+                <td width=25%><a href="/stories/benin/aupiais-francis/">Aupiais, Francis</a></td>
                 <td width=20%>
-                  Église Chrétienne Antique
+                  Église Catholique
                   
                   
                 </td>
                 <td width=20%>
-                  Ethiopie
+                  Bénin
                   
                   
                 </td>
                 <td width=15%>
-                  <a href="/stories/ethiopia/yared3/" rel="permalink">EN</a>
+                  <a href="/stories/benin/aupiais-francis/" rel="permalink">EN</a>
         
         
         
         
-        
+        <a href="/fr/stories/benin/aupiais-francis/" rel="permalink">FR</a>
         
         
         
@@ -2175,88 +2173,6 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Zurlo, Gina </td>
-            <td width=25%><a href="/stories/kenya/barrett-david/">Barrett, David B.</a></td>
-            <td width=20%>
-              Communion Anglicane (Société Missionnaire de l'Église)
-              
-              
-            </td>
-            <td width=20%>
-              Kenya
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/kenya/barrett-david/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Lloyd, Stephen J. </td>
-            <td width=25%><a href="/stories/tanzania/kibira2/">Kibira, Josiah Mutabuzi Isaya (B)</a></td>
-            <td width=20%>
-              Luthérien
-              Mouvement Balokole
-              
-            </td>
-            <td width=20%>
-              Tanzanie
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/tanzania/kibira2/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
             <td width=20%> Persaud, Trevor </td>
             <td width=25%><a href="/stories/kenya/carew-douglas/">Carew, Moses Douglas</a></td>
             <td width=20%>
@@ -2271,6 +2187,47 @@
             </td>
             <td width=15%>
               <a href="/stories/kenya/carew-douglas/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Adugna, Gabeyehu </td>
+            <td width=25%><a href="/stories/ethiopia/yared3/">Yared (C)</a></td>
+            <td width=20%>
+              Église Chrétienne Antique
+              
+              
+            </td>
+            <td width=20%>
+              Ethiopie
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/ethiopia/yared3/" rel="permalink">EN</a>
         
         
         
@@ -2339,61 +2296,20 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Yoder, Bruce </td>
-            <td width=25%><a href="/stories/benin/aupiais-francis/">Aupiais, Francis</a></td>
+            <td width=20%> Lloyd, Stephen J. </td>
+            <td width=25%><a href="/stories/tanzania/kibira2/">Kibira, Josiah Mutabuzi Isaya (B)</a></td>
             <td width=20%>
-              Église Catholique
-              
+              Luthérien
+              Mouvement Balokole
               
             </td>
             <td width=20%>
-              Bénin
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/benin/aupiais-francis/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/benin/aupiais-francis/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Adugna, Gabeyehu </td>
-            <td width=25%><a href="/stories/ethiopia/petros3-abuna/">Pétros (Abuna) (B)</a></td>
-            <td width=20%>
-              Église Orthodoxe
-              
-              
-            </td>
-            <td width=20%>
-              Ethiopie
+              Tanzanie
               
               
             </td>
             <td width=15%>
-              <a href="/stories/ethiopia/petros3-abuna/" rel="permalink">EN</a>
+              <a href="/stories/tanzania/kibira2/" rel="permalink">EN</a>
         
         
         
@@ -2459,42 +2375,45 @@
 
 
     
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Zurlo, Gina </td>
+            <td width=25%><a href="/stories/kenya/barrett-david/">Barrett, David B.</a></td>
+            <td width=20%>
+              Communion Anglicane (Société Missionnaire de l'Église)
+              
+              
+            </td>
+            <td width=20%>
+              Kenya
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/kenya/barrett-david/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
 
     
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
 
     
 
@@ -3276,23 +3195,6 @@
 
     
 
-
-<a id="C"></a>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
     
 
     
@@ -3331,28 +3233,67 @@
 
     
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
 
-    
 
-    
-    
-    
   <a href="#" class="btn btn--inverse">Haut de Page</a>
 
 
+<h3><a id="C">C</a></h3>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
     <a id="cambridge-centre-for-christianity-worldwide"></a>
       <h2>Cambridge Centre for Christianity Worldwide</h2>
       <div>
@@ -3403,66 +3344,8 @@
 
     
     
-    
-  <a href="#" class="btn btn--inverse">Haut de Page</a>
-
-
     <a id="campus-pour-christ-rdcongo"></a>
       <h2>Campus Pour Christ (RDCongo)</h2>
-      <div>
-        <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-          <table><thead>
-            <th width=20%>Auteur</th>
-            <th width=25%>Nom</th>
-            <th width=20%>Affiliation</th>
-            <th width=20%>Pays</th>
-            <th width=15%>Langues</th>
-            </thead></table>
-            <table width=100%><tbody><tr>
-                <td width=20%> Mazunda Mbambu, Benoit </td>
-                <td width=25%><a href="/fr/stories/democratic-republic-of-congo/lukusa-luvungi/">Lukusa Luvungi, Albert</a></td>
-                <td width=20%>
-                  Église Pentecôtiste du Congo
-                  
-                  
-                </td>
-                <td width=20%>
-                  République Démocratique du Congo
-                  
-                  
-                </td>
-                <td width=15%>
-                  
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/lukusa-luvungi/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                      </td>
-            </tr></tbody></table>
-      </article>
-      </div>
-    
-
-
-    
-    
-    
-  <a href="#" class="btn btn--inverse">Haut de Page</a>
-
-
-    <a id="campus-pour-christ-rdcongo"></a>
-      <h2>Campus pour Christ (RDCongo)</h2>
       <div>
         <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
           <table><thead>
@@ -3510,11 +3393,48 @@
 
 
     
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Mazunda Mbambu, Benoit </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/lukusa-luvungi/">Lukusa Luvungi, Albert</a></td>
+            <td width=20%>
+              Église Pentecôtiste du Congo
+              
+              
+            </td>
+            <td width=20%>
+              République Démocratique du Congo
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/lukusa-luvungi/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
     
-    
-  <a href="#" class="btn btn--inverse">Haut de Page</a>
 
 
+    
+    
     <a id="capetown-baptist-seminary"></a>
       <h2>Capetown Baptist Seminary</h2>
       <div>
@@ -3565,10 +3485,6 @@
 
     
     
-    
-  <a href="#" class="btn btn--inverse">Haut de Page</a>
-
-
     <a id="capuchin-franciscan-institute-of-philosophy-and-theology"></a>
       <h2>Capuchin Franciscan Institute of Philosophy and Theology</h2>
       <div>
@@ -3619,10 +3535,6 @@
 
     
     
-    
-  <a href="#" class="btn btn--inverse">Haut de Page</a>
-
-
     <a id="catholic-university-of-cameroon"></a>
       <h2>Catholic University of Cameroon</h2>
       <div>
@@ -3714,10 +3626,6 @@
 
     
     
-    
-  <a href="#" class="btn btn--inverse">Haut de Page</a>
-
-
     <a id="centre-missionnaire-au-coeur-d-afrique"></a>
       <h2>Centre Missionnaire au Coeur d'Afrique</h2>
       <div>
@@ -3731,10 +3639,10 @@
             </thead></table>
             <table width=100%><tbody><tr>
                 <td width=20%> Lygunda li-M, Fohle </td>
-                <td width=25%><a href="/fr/stories/democratic-republic-of-congo/carlson-paul/">Carlson, Paul (B)</a></td>
+                <td width=25%><a href="/fr/stories/democratic-republic-of-congo/johnson-titus/">Johnson, Titus Maunitz</a></td>
                 <td width=20%>
-                  Église de l'Alliance
-                  
+                  Église Libre
+                  Eglise de l'Alliance Suédoise
                   
                 </td>
                 <td width=20%>
@@ -3748,7 +3656,7 @@
         
         
         
-        <a href="/fr/stories/democratic-republic-of-congo/carlson-paul/" rel="permalink">FR</a>
+        <a href="/fr/stories/democratic-republic-of-congo/johnson-titus/" rel="permalink">FR</a>
         
         
         
@@ -3763,6 +3671,88 @@
             </tr></tbody></table>
       </article>
       </div>
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Lygunda li-M, Fohle </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/bonganga/">Bonganga Mosamboko, Alex</a></td>
+            <td width=20%>
+              Eglise du Christ au Congo (Ceum)
+              
+              
+            </td>
+            <td width=20%>
+              République Démocratique du Congo
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/bonganga/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Tshindela, Laurent Kalombo </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/kulukila-rodolphe/">Kulukila Lusasi, Rodolphe</a></td>
+            <td width=20%>
+              Église de Mangembo
+              
+              
+            </td>
+            <td width=20%>
+              République Démocratique du Congo
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/kulukila-rodolphe/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
     
 
 
@@ -3811,49 +3801,8 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Lygunda li-M, Fohle </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/doko-kambeke/">Kambeke, Doko</a></td>
-            <td width=20%>
-              Eglise du Christ au Congo (Ceum)
-              
-              
-            </td>
-            <td width=20%>
-              République Démocratique du Congo
-              
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/doko-kambeke/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Lygunda li-M, Fohle </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/molombo/">Molombo Sitdo, Pierre</a></td>
+            <td width=20%> li-M, Fohle Lygunda </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/pelendo-isaac/">Pelendo, Isaac</a></td>
             <td width=20%>
               Eglise du Christ au Congo (Cecu)
               
@@ -3870,48 +3819,7 @@
         
         
         
-        <a href="/fr/stories/democratic-republic-of-congo/molombo/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Tshindela, Laurent Kalombo </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/kulukila-rodolphe/">Kulukila Lusasi, Rodolphe</a></td>
-            <td width=20%>
-              Église de Mangembo
-              
-              
-            </td>
-            <td width=20%>
-              République Démocratique du Congo
-              
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/kulukila-rodolphe/" rel="permalink">FR</a>
+        <a href="/fr/stories/democratic-republic-of-congo/pelendo-isaac/" rel="permalink">FR</a>
         
         
         
@@ -3976,9 +3884,9 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Lygunda li-M, Fohle </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/bonganga/">Bonganga Mosamboko, Alex</a></td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/westberg-sigurd/">Westberg, Sigurd Fredrik</a></td>
             <td width=20%>
-              Eglise du Christ au Congo (Ceum)
+              Église de l'Alliance
               
               
             </td>
@@ -3993,7 +3901,7 @@
         
         
         
-        <a href="/fr/stories/democratic-republic-of-congo/bonganga/" rel="permalink">FR</a>
+        <a href="/fr/stories/democratic-republic-of-congo/westberg-sigurd/" rel="permalink">FR</a>
         
         
         
@@ -4017,7 +3925,48 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Lygunda li-M, Fohle </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/westberg-sigurd/">Westberg, Sigurd Fredrik</a></td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/doko-kambeke/">Kambeke, Doko</a></td>
+            <td width=20%>
+              Eglise du Christ au Congo (Ceum)
+              
+              
+            </td>
+            <td width=20%>
+              République Démocratique du Congo
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/doko-kambeke/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Lygunda li-M, Fohle </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/carlson-paul/">Carlson, Paul (B)</a></td>
             <td width=20%>
               Église de l'Alliance
               
@@ -4034,7 +3983,7 @@
         
         
         
-        <a href="/fr/stories/democratic-republic-of-congo/westberg-sigurd/" rel="permalink">FR</a>
+        <a href="/fr/stories/democratic-republic-of-congo/carlson-paul/" rel="permalink">FR</a>
         
         
         
@@ -4099,48 +4048,7 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Lygunda li-M, Fohle </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/johnson-titus/">Johnson, Titus Maunitz</a></td>
-            <td width=20%>
-              Église Libre
-              Eglise de l'Alliance Suédoise
-              
-            </td>
-            <td width=20%>
-              République Démocratique du Congo
-              
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/johnson-titus/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> li-M, Fohle Lygunda </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/pelendo-isaac/">Pelendo, Isaac</a></td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/molombo/">Molombo Sitdo, Pierre</a></td>
             <td width=20%>
               Eglise du Christ au Congo (Cecu)
               
@@ -4157,7 +4065,7 @@
         
         
         
-        <a href="/fr/stories/democratic-republic-of-congo/pelendo-isaac/" rel="permalink">FR</a>
+        <a href="/fr/stories/democratic-republic-of-congo/molombo/" rel="permalink">FR</a>
         
         
         
@@ -4178,10 +4086,6 @@
 
     
     
-    
-  <a href="#" class="btn btn--inverse">Haut de Page</a>
-
-
     <a id="centre-universitaire-de-missiologie-kinshasa"></a>
       <h2>Centre Universitaire de Missiologie (Kinshasa)</h2>
       <div>
@@ -4194,10 +4098,10 @@
             <th width=15%>Langues</th>
             </thead></table>
             <table width=100%><tbody><tr>
-                <td width=20%> Mbambi, Josué Makengo </td>
-                <td width=25%><a href="/fr/stories/democratic-republic-of-congo/kapesa-ntuika/">Kapesa Ntuika, Roger</a></td>
+                <td width=20%> Katona Mabana, Yvonne </td>
+                <td width=25%><a href="/fr/stories/democratic-republic-of-congo/mbwakongo-bulu/">Mbwakongo, Bulu Yeme Denis</a></td>
                 <td width=20%>
-                  Église des Frères (Mboka Polo)
+                  Église du Christ au Congo (Cbco)
                   
                   
                 </td>
@@ -4212,7 +4116,7 @@
         
         
         
-        <a href="/fr/stories/democratic-republic-of-congo/kapesa-ntuika/" rel="permalink">FR</a>
+        <a href="/fr/stories/democratic-republic-of-congo/mbwakongo-bulu/" rel="permalink">FR</a>
         
         
         
@@ -4234,10 +4138,10 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Jean-Claude, Efumo Litutuma </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/bakwa-lolema/">Bakwa, Lolema Zacharie</a></td>
+            <td width=20%> Telesphore, Kupula Kusimbidila </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/anderson-anton/">Anderson, Anton C.</a></td>
             <td width=20%>
-              Église du Christ au Congo (Ceac)
+              Mission Continentale d'Afrique
               
               
             </td>
@@ -4252,253 +4156,7 @@
         
         
         
-        <a href="/fr/stories/democratic-republic-of-congo/bakwa-lolema/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Kabanda, Jean-Claude </td>
-            <td width=25%><a href="/stories/democratic-republic-of-congo/kakuni-severine/">Kakuni, Séverine</a></td>
-            <td width=20%>
-              Église du Christ au Congo (Cpco)
-              
-              
-            </td>
-            <td width=20%>
-              République Démocratique du Congo
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/democratic-republic-of-congo/kakuni-severine/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/kakuni-severine/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Nyangi, Rama Kiyendila </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/matie-nsingani/">Matie Nsingani Fréderickson, Marie</a></td>
-            <td width=20%>
-              Église du Christ au Congo (Cbco)
-              
-              
-            </td>
-            <td width=20%>
-              République Démocratique du Congo
-              
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/matie-nsingani/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Makanda, Bostin </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/kanga-jeanpierre/">Kanga, Jean-Pierre</a></td>
-            <td width=20%>
-              Église du Christ au Congo (Cbfc)
-              
-              
-            </td>
-            <td width=20%>
-              République Démocratique du Congo
-              
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/kanga-jeanpierre/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Molekali, Pitsou </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/meme-aubert/">Meme, Aubert</a></td>
-            <td width=20%>
-              Église Évangélique du Congo
-              Mission Gospel du Congo
-              
-            </td>
-            <td width=20%>
-              République Démocratique du Congo
-              
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/meme-aubert/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Mabasi Tietie, Augusto </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/nkenge-mayengo/">Nkenge Mayengo, Thérèse</a></td>
-            <td width=20%>
-              Église du Christ au Congo (Cbfc)
-              
-              
-            </td>
-            <td width=20%>
-              République Démocratique du Congo
-              
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/nkenge-mayengo/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Mundiono Nkosi, Louise </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/massamba-jean/">Massamba, Jean Ma Mpolo</a></td>
-            <td width=20%>
-              Église du Christ au Congo (Cbco)
-              
-              
-            </td>
-            <td width=20%>
-              République Démocratique du Congo
-              
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/massamba-jean/" rel="permalink">FR</a>
+        <a href="/fr/stories/democratic-republic-of-congo/anderson-anton/" rel="permalink">FR</a>
         
         
         
@@ -4562,295 +4220,8 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Samuel, Imbelenge Iluku </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/lokalo-joseph/">Lokalo, Joseph Is&#39;a Mama</a></td>
-            <td width=20%>
-              Église du Christ au Congo (Cadelu)
-              
-              
-            </td>
-            <td width=20%>
-              République Démocratique du Congo
-              
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/lokalo-joseph/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Mbambi, Josué Makengo </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/bompete-ekeka/">Bompete Ekeka, Robert</a></td>
-            <td width=20%>
-              L'Église Évangélique du Son de la Trompette
-              
-              
-            </td>
-            <td width=20%>
-              République Démocratique du Congo
-              
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/bompete-ekeka/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Mpilamosi, Daniel Kuhuna </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/moyo-boloko/">Moyo Boloko, Abraham</a></td>
-            <td width=20%>
-              Eglise du Christ au Congo (Cefmc)
-              
-              
-            </td>
-            <td width=20%>
-              République Démocratique du Congo
-              
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/moyo-boloko/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Assimoa, Basili Raphael </td>
-            <td width=25%><a href="/stories/democratic-republic-of-congo/asimoa-raphael/">Assimoa, Raphael</a></td>
-            <td width=20%>
-              Église Catholique
-              
-              
-            </td>
-            <td width=20%>
-              République Démocratique du Congo
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/democratic-republic-of-congo/asimoa-raphael/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/asimoa-raphael/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Bulongo, Élise Kisungu </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/bilenga-elisabeth/">Bilenga, Élisabeth</a></td>
-            <td width=20%>
-              Centre Missionnaire Le Rocher
-              
-              
-            </td>
-            <td width=20%>
-              République Démocratique du Congo
-              
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/bilenga-elisabeth/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Tshifwakwa, Léonard Katsingu </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/mwatende-kayenda/">Mwatende Kayenda, Pierre</a></td>
-            <td width=20%>
-              Eglise du Christ au Congo (Cmco)
-              
-              
-            </td>
-            <td width=20%>
-              République Démocratique du Congo
-              
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/mwatende-kayenda/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Nyangi, Rama Kiyendila </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/lusoki-simon/">Lusoki Kituki, Simon</a></td>
-            <td width=20%>
-              Eglise du Christ au Congo (Cefmc)
-              
-              
-            </td>
-            <td width=20%>
-              République Démocratique du Congo
-              
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/lusoki-simon/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Katona Mabana, Yvonne </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/mbwakongo-bulu/">Mbwakongo, Bulu Yeme Denis</a></td>
+            <td width=20%> Paulin, Kitiaka Sipol </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/kapini-colon/">Kapini, Aaron Colon</a></td>
             <td width=20%>
               Église du Christ au Congo (Cbco)
               
@@ -4867,7 +4238,48 @@
         
         
         
-        <a href="/fr/stories/democratic-republic-of-congo/mbwakongo-bulu/" rel="permalink">FR</a>
+        <a href="/fr/stories/democratic-republic-of-congo/kapini-colon/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Molekali, Pitsou </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/meme-aubert/">Meme, Aubert</a></td>
+            <td width=20%>
+              Église Évangélique du Congo
+              Mission Gospel du Congo
+              
+            </td>
+            <td width=20%>
+              République Démocratique du Congo
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/meme-aubert/" rel="permalink">FR</a>
         
         
         
@@ -4931,10 +4343,10 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Kamba, Meschac Ndundu </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/makola-jeanne/">Makola, Jeanne Mbembo</a></td>
+            <td width=20%> Nyangi, Rama Kiyendila </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/matie-nsingani/">Matie Nsingani Fréderickson, Marie</a></td>
             <td width=20%>
-              Étape Par Étape Avec Jésus-Christ Église Missionnaire
+              Église du Christ au Congo (Cbco)
               
               
             </td>
@@ -4949,130 +4361,7 @@
         
         
         
-        <a href="/fr/stories/democratic-republic-of-congo/makola-jeanne/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Djoko, Tatiana </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/djimbo-kubala/">Djimbo Kubala, Timothée</a></td>
-            <td width=20%>
-              Eglise du Christ au Congo (Cefmc)
-              
-              
-            </td>
-            <td width=20%>
-              République Démocratique du Congo
-              
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/djimbo-kubala/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Labana, Roger Lembi </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/mombaya-masanicharles/">Mombaya Masani, Charles</a></td>
-            <td width=20%>
-              Église du Christ au Congo (Cbfc)
-              
-              
-            </td>
-            <td width=20%>
-              République Démocratique du Congo
-              
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/mombaya-masanicharles/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Telesphore, Kupula Kusimbidila </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/anderson-anton/">Anderson, Anton C.</a></td>
-            <td width=20%>
-              Mission Continentale d'Afrique
-              
-              
-            </td>
-            <td width=20%>
-              République Démocratique du Congo
-              
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/anderson-anton/" rel="permalink">FR</a>
+        <a href="/fr/stories/democratic-republic-of-congo/matie-nsingani/" rel="permalink">FR</a>
         
         
         
@@ -5136,8 +4425,8 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Paulin, Kitiaka Sipol </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/kapini-colon/">Kapini, Aaron Colon</a></td>
+            <td width=20%> Mundiono Nkosi, Louise </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/massamba-jean/">Massamba, Jean Ma Mpolo</a></td>
             <td width=20%>
               Église du Christ au Congo (Cbco)
               
@@ -5154,7 +4443,622 @@
         
         
         
-        <a href="/fr/stories/democratic-republic-of-congo/kapini-colon/" rel="permalink">FR</a>
+        <a href="/fr/stories/democratic-republic-of-congo/massamba-jean/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Mbambi, Josué Makengo </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/kapesa-ntuika/">Kapesa Ntuika, Roger</a></td>
+            <td width=20%>
+              Église des Frères (Mboka Polo)
+              
+              
+            </td>
+            <td width=20%>
+              République Démocratique du Congo
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/kapesa-ntuika/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Makanda, Bostin </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/kanga-jeanpierre/">Kanga, Jean-Pierre</a></td>
+            <td width=20%>
+              Église du Christ au Congo (Cbfc)
+              
+              
+            </td>
+            <td width=20%>
+              République Démocratique du Congo
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/kanga-jeanpierre/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Kabanda, Jean-Claude </td>
+            <td width=25%><a href="/stories/democratic-republic-of-congo/kakuni-severine/">Kakuni, Séverine</a></td>
+            <td width=20%>
+              Église du Christ au Congo (Cpco)
+              
+              
+            </td>
+            <td width=20%>
+              République Démocratique du Congo
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/democratic-republic-of-congo/kakuni-severine/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/kakuni-severine/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Mbambi, Josué Makengo </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/bompete-ekeka/">Bompete Ekeka, Robert</a></td>
+            <td width=20%>
+              L'Église Évangélique du Son de la Trompette
+              
+              
+            </td>
+            <td width=20%>
+              République Démocratique du Congo
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/bompete-ekeka/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Bulongo, Élise Kisungu </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/bilenga-elisabeth/">Bilenga, Élisabeth</a></td>
+            <td width=20%>
+              Centre Missionnaire Le Rocher
+              
+              
+            </td>
+            <td width=20%>
+              République Démocratique du Congo
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/bilenga-elisabeth/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Samuel, Imbelenge Iluku </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/lokalo-joseph/">Lokalo, Joseph Is&#39;a Mama</a></td>
+            <td width=20%>
+              Église du Christ au Congo (Cadelu)
+              
+              
+            </td>
+            <td width=20%>
+              République Démocratique du Congo
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/lokalo-joseph/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Djoko, Tatiana </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/djimbo-kubala/">Djimbo Kubala, Timothée</a></td>
+            <td width=20%>
+              Eglise du Christ au Congo (Cefmc)
+              
+              
+            </td>
+            <td width=20%>
+              République Démocratique du Congo
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/djimbo-kubala/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Mpilamosi, Daniel Kuhuna </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/moyo-boloko/">Moyo Boloko, Abraham</a></td>
+            <td width=20%>
+              Eglise du Christ au Congo (Cefmc)
+              
+              
+            </td>
+            <td width=20%>
+              République Démocratique du Congo
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/moyo-boloko/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Mabasi Tietie, Augusto </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/nkenge-mayengo/">Nkenge Mayengo, Thérèse</a></td>
+            <td width=20%>
+              Église du Christ au Congo (Cbfc)
+              
+              
+            </td>
+            <td width=20%>
+              République Démocratique du Congo
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/nkenge-mayengo/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Nyangi, Rama Kiyendila </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/lusoki-simon/">Lusoki Kituki, Simon</a></td>
+            <td width=20%>
+              Eglise du Christ au Congo (Cefmc)
+              
+              
+            </td>
+            <td width=20%>
+              République Démocratique du Congo
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/lusoki-simon/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Jean-Claude, Efumo Litutuma </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/bakwa-lolema/">Bakwa, Lolema Zacharie</a></td>
+            <td width=20%>
+              Église du Christ au Congo (Ceac)
+              
+              
+            </td>
+            <td width=20%>
+              République Démocratique du Congo
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/bakwa-lolema/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Tshifwakwa, Léonard Katsingu </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/mwatende-kayenda/">Mwatende Kayenda, Pierre</a></td>
+            <td width=20%>
+              Eglise du Christ au Congo (Cmco)
+              
+              
+            </td>
+            <td width=20%>
+              République Démocratique du Congo
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/mwatende-kayenda/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Assimoa, Basili Raphael </td>
+            <td width=25%><a href="/stories/democratic-republic-of-congo/asimoa-raphael/">Assimoa, Raphael</a></td>
+            <td width=20%>
+              Église Catholique
+              
+              
+            </td>
+            <td width=20%>
+              République Démocratique du Congo
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/democratic-republic-of-congo/asimoa-raphael/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/asimoa-raphael/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Labana, Roger Lembi </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/mombaya-masanicharles/">Mombaya Masani, Charles</a></td>
+            <td width=20%>
+              Église du Christ au Congo (Cbfc)
+              
+              
+            </td>
+            <td width=20%>
+              République Démocratique du Congo
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/mombaya-masanicharles/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Kamba, Meschac Ndundu </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/makola-jeanne/">Makola, Jeanne Mbembo</a></td>
+            <td width=20%>
+              Étape Par Étape Avec Jésus-Christ Église Missionnaire
+              
+              
+            </td>
+            <td width=20%>
+              République Démocratique du Congo
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/makola-jeanne/" rel="permalink">FR</a>
         
         
         
@@ -5175,10 +5079,6 @@
 
     
     
-    
-  <a href="#" class="btn btn--inverse">Haut de Page</a>
-
-
     <a id="chuka-university-kenya"></a>
       <h2>Chuka University (Kenya)</h2>
       <div>
@@ -5192,9 +5092,9 @@
             </thead></table>
             <table width=100%><tbody><tr>
                 <td width=20%> Kagema, Dickson Nkonge </td>
-                <td width=25%><a href="/stories/kenya/m-itirikia/">M&#39;itirikia, Peter</a></td>
+                <td width=25%><a href="/stories/kenya/njagi-diana/">Njagi, Diana Ng&#39;ou</a></td>
                 <td width=20%>
-                  Église africaine pentecôtiste indépendante d'Afrique
+                  Communion Anglicane (Eglise du Kenya)
                   
                   
                 </td>
@@ -5204,7 +5104,7 @@
                   
                 </td>
                 <td width=15%>
-                  <a href="/stories/kenya/m-itirikia/" rel="permalink">EN</a>
+                  <a href="/stories/kenya/njagi-diana/" rel="permalink">EN</a>
         
         
         
@@ -5232,9 +5132,9 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Kagema, Dickson Nkonge </td>
-            <td width=25%><a href="/stories/kenya/njagi-diana/">Njagi, Diana Ng&#39;ou</a></td>
+            <td width=25%><a href="/stories/kenya/m-itirikia/">M&#39;itirikia, Peter</a></td>
             <td width=20%>
-              Communion Anglicane (Eglise du Kenya)
+              Église africaine pentecôtiste indépendante d'Afrique
               
               
             </td>
@@ -5244,7 +5144,7 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/kenya/njagi-diana/" rel="permalink">EN</a>
+              <a href="/stories/kenya/m-itirikia/" rel="permalink">EN</a>
         
         
         
@@ -6038,1061 +5938,1033 @@
     
 
 
-<a id="D"></a>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-
-<a id="E"></a>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
   <a href="#" class="btn btn--inverse">Haut de Page</a>
 
 
+<h3><a id="D">D</a></h3>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+  <a href="#" class="btn btn--inverse">Haut de Page</a>
+
+
+<h3><a id="E">E</a></h3>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
     <a id="ethiopian-graduate-school-of-theology"></a>
       <h2>Ethiopian Graduate School of Theology</h2>
       <div>
@@ -7106,9 +6978,9 @@
             </thead></table>
             <table width=100%><tbody><tr>
                 <td width=20%> Menberu, Dirshaye </td>
-                <td width=25%><a href="/stories/ethiopia/seri-daka/">Seri, Daka</a></td>
+                <td width=25%><a href="/stories/ethiopia/regassa-feysa/">Feysa, Regassa</a></td>
                 <td width=20%>
-                  Église Kale Heywet
+                  Pentecôtiste
                   
                   
                 </td>
@@ -7118,7 +6990,7 @@
                   
                 </td>
                 <td width=15%>
-                  <a href="/stories/ethiopia/seri-daka/" rel="permalink">EN</a>
+                  <a href="/stories/ethiopia/regassa-feysa/" rel="permalink">EN</a>
         
         
         
@@ -7146,9 +7018,9 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Menberu, Dirshaye </td>
-            <td width=25%><a href="/stories/ethiopia/azeb-desta/">Desta, Azeb</a></td>
+            <td width=25%><a href="/stories/ethiopia/abebe-bune/">Bune, Abebe</a></td>
             <td width=20%>
-              Église Meserete Kristos (Mennonite Mission)
+              Église Évangélique Complète (Debre Zeit)
               
               
             </td>
@@ -7158,89 +7030,7 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/ethiopia/azeb-desta/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Menberu, Dirshaye </td>
-            <td width=25%><a href="/stories/ethiopia/morkate-mito/">Mito, Morkate</a></td>
-            <td width=20%>
-              Église Kale Heywet
-              
-              
-            </td>
-            <td width=20%>
-              Ethiopie
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/ethiopia/morkate-mito/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Balisky, E. Paul </td>
-            <td width=25%><a href="/stories/ethiopia/madero-markina/">Madero, Markina Meja</a></td>
-            <td width=20%>
-              Eglise Wolaitta Kale Heywet
-              Mission Luthérienne Norvégienne
-              
-            </td>
-            <td width=20%>
-              Ethiopie
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/ethiopia/madero-markina/" rel="permalink">EN</a>
+              <a href="/stories/ethiopia/abebe-bune/" rel="permalink">EN</a>
         
         
         
@@ -7282,211 +7072,6 @@
             </td>
             <td width=15%>
               <a href="/stories/ethiopia/lambie-thomas3/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Menberu, Dirshaye </td>
-            <td width=25%><a href="/stories/ethiopia/mekonnen-negera/">Negera, Mekonnen</a></td>
-            <td width=20%>
-              Eglise Mekane Yesus
-              
-              
-            </td>
-            <td width=20%>
-              Ethiopie
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/ethiopia/mekonnen-negera/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Balisky, E. Paul </td>
-            <td width=25%><a href="/stories/ethiopia/sawl-salgedo/">Salgédo, Sawl</a></td>
-            <td width=20%>
-              Eglise Wolaitta Kale Heywet
-              
-              
-            </td>
-            <td width=20%>
-              Ethiopie
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/ethiopia/sawl-salgedo/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Balisky, E. Paul </td>
-            <td width=25%><a href="/stories/ethiopia/cain-glen/">Cain, Glenmaye Hall</a></td>
-            <td width=20%>
-              Mission Intérieure du Soudan
-              
-              
-            </td>
-            <td width=20%>
-              Ethiopie
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/ethiopia/cain-glen/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Menberu, Dirshaye </td>
-            <td width=25%><a href="/stories/ethiopia/gebru-desta/">Desta, Kentiba Gebru</a></td>
-            <td width=20%>
-              Protestant
-              
-              
-            </td>
-            <td width=20%>
-              Ethiopie
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/ethiopia/gebru-desta/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Balisky, E. Paul </td>
-            <td width=25%><a href="/stories/ethiopia/gebru-desta2/">Gebru, Desta</a></td>
-            <td width=20%>
-              Luthérien
-              
-              
-            </td>
-            <td width=20%>
-              Ethiopie
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/ethiopia/gebru-desta2/" rel="permalink">EN</a>
         
         
         
@@ -7597,9 +7182,9 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Balisky, E. Paul </td>
-            <td width=25%><a href="/stories/ethiopia/melcamu-shanqo/">Shanqo, Melcamu</a></td>
+            <td width=25%><a href="/stories/ethiopia/sawl-salgedo/">Salgédo, Sawl</a></td>
             <td width=20%>
-              Église Kale Heywet
+              Eglise Wolaitta Kale Heywet
               
               
             </td>
@@ -7609,7 +7194,7 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/ethiopia/melcamu-shanqo/" rel="permalink">EN</a>
+              <a href="/stories/ethiopia/sawl-salgedo/" rel="permalink">EN</a>
         
         
         
@@ -7678,254 +7263,8 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Balisky, E. Paul </td>
-            <td width=25%><a href="/stories/ethiopia/mulu-meja/">Meja, Mulu</a></td>
-            <td width=20%>
-              Église Kale Heywet
-              
-              
-            </td>
-            <td width=20%>
-              Ethiopie
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/ethiopia/mulu-meja/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
             <td width=20%> Menberu, Dirshaye </td>
-            <td width=25%><a href="/stories/ethiopia/estifanos/">Estifanos</a></td>
-            <td width=20%>
-              Eglise Éthiopienne Orthodoxe (Mouvement Stéantiste)
-              
-              
-            </td>
-            <td width=20%>
-              Ethiopie
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/ethiopia/estifanos/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/ethiopia/estifanos/" rel="permalink">FR</a>
-        
-        
-        
-        
-        <a href="/pt/stories/ethiopia/estifanos/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Balisky, E. Paul </td>
-            <td width=25%><a href="/stories/ethiopia/rumi-abu/">Rumi</a></td>
-            <td width=20%>
-              Eglise Orthodoxe Éthiopienne
-              
-              
-            </td>
-            <td width=20%>
-              Ethiopie
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/ethiopia/rumi-abu/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Negash, Teshome </td>
-            <td width=25%><a href="/stories/ethiopia/demelash-damtew/">Demelash, Damtew</a></td>
-            <td width=20%>
-              Église des Croyants de l'Évangile
-              
-              
-            </td>
-            <td width=20%>
-              Ethiopie
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/ethiopia/demelash-damtew/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Menberu, Dirshaye </td>
-            <td width=25%><a href="/stories/ethiopia/gutema-beyene/">Gutema, Beyene</a></td>
-            <td width=20%>
-              Église Meserete Kristos (Mennonite Mission)
-              
-              
-            </td>
-            <td width=20%>
-              Ethiopie
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/ethiopia/gutema-beyene/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Menberu, Dirshaye </td>
-            <td width=25%><a href="/stories/ethiopia/haile-tilahun/">Haile, Tilahun</a></td>
-            <td width=20%>
-              Église Kale Heywet
-              
-              
-            </td>
-            <td width=20%>
-              Ethiopie
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/ethiopia/haile-tilahun/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Menberu, Dirshaye </td>
-            <td width=25%><a href="/stories/ethiopia/eshetu-gebre/">Gebre, Eshetu</a></td>
+            <td width=25%><a href="/stories/ethiopia/berhanu-habte/">Berhanu, Habte</a></td>
             <td width=20%>
               Eglise Berhane Wengel
               
@@ -7937,7 +7276,7 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/ethiopia/eshetu-gebre/" rel="permalink">EN</a>
+              <a href="/stories/ethiopia/berhanu-habte/" rel="permalink">EN</a>
         
         
         
@@ -7966,48 +7305,7 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Menberu, Dirshaye </td>
-            <td width=25%><a href="/stories/ethiopia/alem-tekle/">Tekle, Alem (A)</a></td>
-            <td width=20%>
-              Église Évangélique Complète (Debre Zeit)
-              
-              
-            </td>
-            <td width=20%>
-              Ethiopie
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/ethiopia/alem-tekle/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Menberu, Dirshaye </td>
-            <td width=25%><a href="/stories/ethiopia/bafa-mulatu/">Bafa, Mulatu</a></td>
+            <td width=25%><a href="/stories/ethiopia/berhane-gensa/">Gensa, Berhane</a></td>
             <td width=20%>
               Église Kale Heywet
               
@@ -8019,7 +7317,7 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/ethiopia/bafa-mulatu/" rel="permalink">EN</a>
+              <a href="/stories/ethiopia/berhane-gensa/" rel="permalink">EN</a>
         
         
         
@@ -8047,11 +7345,11 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Menberu, Dirshaye </td>
-            <td width=25%><a href="/stories/ethiopia/regassa-feysa/">Feysa, Regassa</a></td>
+            <td width=20%> Balisky, E. Paul </td>
+            <td width=25%><a href="/stories/ethiopia/madero-markina/">Madero, Markina Meja</a></td>
             <td width=20%>
-              Pentecôtiste
-              
+              Eglise Wolaitta Kale Heywet
+              Mission Luthérienne Norvégienne
               
             </td>
             <td width=20%>
@@ -8060,7 +7358,7 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/ethiopia/regassa-feysa/" rel="permalink">EN</a>
+              <a href="/stories/ethiopia/madero-markina/" rel="permalink">EN</a>
         
         
         
@@ -8089,48 +7387,7 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Menberu, Dirshaye </td>
-            <td width=25%><a href="/stories/ethiopia/mattsson-sanfrid/">Mattsson, Sanfrid</a></td>
-            <td width=20%>
-              Église de Mission de Finlande (Pentecôtiste)
-              
-              
-            </td>
-            <td width=20%>
-              Ethiopie
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/ethiopia/mattsson-sanfrid/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Menberu, Dirshaye </td>
-            <td width=25%><a href="/stories/ethiopia/bafe-hatasa/">Hatasa, Bafe</a></td>
+            <td width=25%><a href="/stories/ethiopia/nunemo-abagole/">Nunemo, Abagole</a></td>
             <td width=20%>
               Église Kale Heywet
               
@@ -8142,48 +7399,7 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/ethiopia/bafe-hatasa/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Meja, Markina </td>
-            <td width=25%><a href="/stories/ethiopia/barlow-nathan/">Barlow, Nathan</a></td>
-            <td width=20%>
-              Mission Intérieure du Soudan
-              
-              
-            </td>
-            <td width=20%>
-              Ethiopie
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/ethiopia/barlow-nathan/" rel="permalink">EN</a>
+              <a href="/stories/ethiopia/nunemo-abagole/" rel="permalink">EN</a>
         
         
         
@@ -8225,6 +7441,47 @@
             </td>
             <td width=15%>
               <a href="/stories/ethiopia/tekle-haimanot/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Menberu, Dirshaye </td>
+            <td width=25%><a href="/stories/ethiopia/bekele-lakew/">Lakew, Bekele</a></td>
+            <td width=20%>
+              Eglise Emmanuel Baptist
+              
+              
+            </td>
+            <td width=20%>
+              Ethiopie
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/ethiopia/bekele-lakew/" rel="permalink">EN</a>
         
         
         
@@ -8334,10 +7591,10 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Menberu, Dirshaye </td>
-            <td width=25%><a href="/stories/ethiopia/bekele-lakew/">Lakew, Bekele</a></td>
+            <td width=20%> Balisky, E. Paul </td>
+            <td width=25%><a href="/stories/ethiopia/rumi-abu/">Rumi</a></td>
             <td width=20%>
-              Eglise Emmanuel Baptist
+              Eglise Orthodoxe Éthiopienne
               
               
             </td>
@@ -8347,7 +7604,7 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/ethiopia/bekele-lakew/" rel="permalink">EN</a>
+              <a href="/stories/ethiopia/rumi-abu/" rel="permalink">EN</a>
         
         
         
@@ -8457,10 +7714,10 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Menberu, Dirshaye </td>
-            <td width=25%><a href="/stories/ethiopia/daffa-jammo/">Jammo, Daffa</a></td>
+            <td width=20%> Meja, Markina </td>
+            <td width=25%><a href="/stories/ethiopia/barlow-nathan/">Barlow, Nathan</a></td>
             <td width=20%>
-              Église Évangélique Éthiopienne Mekane Yesus
+              Mission Intérieure du Soudan
               
               
             </td>
@@ -8470,7 +7727,48 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/ethiopia/daffa-jammo/" rel="permalink">EN</a>
+              <a href="/stories/ethiopia/barlow-nathan/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Menberu, Dirshaye </td>
+            <td width=25%><a href="/stories/ethiopia/mattsson-sanfrid/">Mattsson, Sanfrid</a></td>
+            <td width=20%>
+              Église de Mission de Finlande (Pentecôtiste)
+              
+              
+            </td>
+            <td width=20%>
+              Ethiopie
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/ethiopia/mattsson-sanfrid/" rel="permalink">EN</a>
         
         
         
@@ -8539,10 +7837,10 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Balisky, E. Paul </td>
-            <td width=25%><a href="/stories/ethiopia/warkneh-haile-giorgis/">Warkneh, Haile-Giorgis</a></td>
+            <td width=20%> Menberu, Dirshaye </td>
+            <td width=25%><a href="/stories/ethiopia/alem-tekle/">Tekle, Alem (A)</a></td>
             <td width=20%>
-              Église Éthiopienne Orthodoxe de Tewahido
+              Église Évangélique Complète (Debre Zeit)
               
               
             </td>
@@ -8552,7 +7850,7 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/ethiopia/warkneh-haile-giorgis/" rel="permalink">EN</a>
+              <a href="/stories/ethiopia/alem-tekle/" rel="permalink">EN</a>
         
         
         
@@ -8581,7 +7879,7 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Menberu, Dirshaye </td>
-            <td width=25%><a href="/stories/ethiopia/nunemo-abagole/">Nunemo, Abagole</a></td>
+            <td width=25%><a href="/stories/ethiopia/seri-daka/">Seri, Daka</a></td>
             <td width=20%>
               Église Kale Heywet
               
@@ -8593,130 +7891,7 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/ethiopia/nunemo-abagole/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Menberu, Dirshaye </td>
-            <td width=25%><a href="/stories/ethiopia/yohannes-anshebo/">Ugiebo, Yohannes Anshebo</a></td>
-            <td width=20%>
-              Église Kale Heywet
-              
-              
-            </td>
-            <td width=20%>
-              Ethiopie
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/ethiopia/yohannes-anshebo/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Menberu, Dirshaye </td>
-            <td width=25%><a href="/stories/ethiopia/berhane-gensa/">Gensa, Berhane</a></td>
-            <td width=20%>
-              Église Kale Heywet
-              
-              
-            </td>
-            <td width=20%>
-              Ethiopie
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/ethiopia/berhane-gensa/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Menberu, Dirshaye </td>
-            <td width=25%><a href="/stories/ethiopia/tuomi-aulisandhelmi/">Tuomi, Aulis Ilmari and Helmi Arvokki</a></td>
-            <td width=20%>
-              Mission de Finlande
-              
-              
-            </td>
-            <td width=20%>
-              Ethiopie
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/ethiopia/tuomi-aulisandhelmi/" rel="permalink">EN</a>
+              <a href="/stories/ethiopia/seri-daka/" rel="permalink">EN</a>
         
         
         
@@ -8785,8 +7960,8 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Balisky, E. Paul </td>
-            <td width=25%><a href="/stories/ethiopia/debessa-tadele/">Debessa, Tadele</a></td>
+            <td width=20%> Menberu, Dirshaye </td>
+            <td width=25%><a href="/stories/ethiopia/mekonnen-negera/">Negera, Mekonnen</a></td>
             <td width=20%>
               Eglise Mekane Yesus
               
@@ -8798,7 +7973,7 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/ethiopia/debessa-tadele/" rel="permalink">EN</a>
+              <a href="/stories/ethiopia/mekonnen-negera/" rel="permalink">EN</a>
         
         
         
@@ -8826,10 +8001,10 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Menberu, Dirshaye </td>
-            <td width=25%><a href="/stories/ethiopia/abebe-bune/">Bune, Abebe</a></td>
+            <td width=20%> Balisky, E. Paul </td>
+            <td width=25%><a href="/stories/ethiopia/melcamu-shanqo/">Shanqo, Melcamu</a></td>
             <td width=20%>
-              Église Évangélique Complète (Debre Zeit)
+              Église Kale Heywet
               
               
             </td>
@@ -8839,7 +8014,7 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/ethiopia/abebe-bune/" rel="permalink">EN</a>
+              <a href="/stories/ethiopia/melcamu-shanqo/" rel="permalink">EN</a>
         
         
         
@@ -8909,9 +8084,9 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Menberu, Dirshaye </td>
-            <td width=25%><a href="/stories/ethiopia/onesimus-nesib/">Nesib, Onesimus</a></td>
+            <td width=25%><a href="/stories/ethiopia/tuomi-aulisandhelmi/">Tuomi, Aulis Ilmari and Helmi Arvokki</a></td>
             <td width=20%>
-              Église Évangélique Éthiopienne Mekane Yesus
+              Mission de Finlande
               
               
             </td>
@@ -8921,89 +8096,7 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/ethiopia/onesimus-nesib/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/ethiopia/onesimus-nesib/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Menberu, Dirshaye </td>
-            <td width=25%><a href="/stories/ethiopia/meseret/">Meseret Sebhat Leab</a></td>
-            <td width=20%>
-              Eglise Mekane Yesus
-              
-              
-            </td>
-            <td width=20%>
-              Ethiopie
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/ethiopia/meseret/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Balisky, E. Paul </td>
-            <td width=25%><a href="/stories/ethiopia/urgesa-gammada/">Urgesa, Gammada</a></td>
-            <td width=20%>
-              Eglise Mekane Yesus
-              
-              
-            </td>
-            <td width=20%>
-              Ethiopie
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/ethiopia/urgesa-gammada/" rel="permalink">EN</a>
+              <a href="/stories/ethiopia/tuomi-aulisandhelmi/" rel="permalink">EN</a>
         
         
         
@@ -9072,8 +8165,746 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
+            <td width=20%> Negash, Teshome </td>
+            <td width=25%><a href="/stories/ethiopia/demelash-damtew/">Demelash, Damtew</a></td>
+            <td width=20%>
+              Église des Croyants de l'Évangile
+              
+              
+            </td>
+            <td width=20%>
+              Ethiopie
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/ethiopia/demelash-damtew/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Balisky, E. Paul </td>
+            <td width=25%><a href="/stories/ethiopia/urgesa-gammada/">Urgesa, Gammada</a></td>
+            <td width=20%>
+              Eglise Mekane Yesus
+              
+              
+            </td>
+            <td width=20%>
+              Ethiopie
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/ethiopia/urgesa-gammada/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
             <td width=20%> Menberu, Dirshaye </td>
-            <td width=25%><a href="/stories/ethiopia/berhanu-habte/">Berhanu, Habte</a></td>
+            <td width=25%><a href="/stories/ethiopia/yohannes-anshebo/">Ugiebo, Yohannes Anshebo</a></td>
+            <td width=20%>
+              Église Kale Heywet
+              
+              
+            </td>
+            <td width=20%>
+              Ethiopie
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/ethiopia/yohannes-anshebo/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Menberu, Dirshaye </td>
+            <td width=25%><a href="/stories/ethiopia/haile-tilahun/">Haile, Tilahun</a></td>
+            <td width=20%>
+              Église Kale Heywet
+              
+              
+            </td>
+            <td width=20%>
+              Ethiopie
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/ethiopia/haile-tilahun/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Menberu, Dirshaye </td>
+            <td width=25%><a href="/stories/ethiopia/gutema-beyene/">Gutema, Beyene</a></td>
+            <td width=20%>
+              Église Meserete Kristos (Mennonite Mission)
+              
+              
+            </td>
+            <td width=20%>
+              Ethiopie
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/ethiopia/gutema-beyene/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Menberu, Dirshaye </td>
+            <td width=25%><a href="/stories/ethiopia/bafe-hatasa/">Hatasa, Bafe</a></td>
+            <td width=20%>
+              Église Kale Heywet
+              
+              
+            </td>
+            <td width=20%>
+              Ethiopie
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/ethiopia/bafe-hatasa/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Menberu, Dirshaye </td>
+            <td width=25%><a href="/stories/ethiopia/bafa-mulatu/">Bafa, Mulatu</a></td>
+            <td width=20%>
+              Église Kale Heywet
+              
+              
+            </td>
+            <td width=20%>
+              Ethiopie
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/ethiopia/bafa-mulatu/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Menberu, Dirshaye </td>
+            <td width=25%><a href="/stories/ethiopia/onesimus-nesib/">Nesib, Onesimus</a></td>
+            <td width=20%>
+              Église Évangélique Éthiopienne Mekane Yesus
+              
+              
+            </td>
+            <td width=20%>
+              Ethiopie
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/ethiopia/onesimus-nesib/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/ethiopia/onesimus-nesib/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Balisky, E. Paul </td>
+            <td width=25%><a href="/stories/ethiopia/warkneh-haile-giorgis/">Warkneh, Haile-Giorgis</a></td>
+            <td width=20%>
+              Église Éthiopienne Orthodoxe de Tewahido
+              
+              
+            </td>
+            <td width=20%>
+              Ethiopie
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/ethiopia/warkneh-haile-giorgis/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Balisky, E. Paul </td>
+            <td width=25%><a href="/stories/ethiopia/gebru-desta2/">Gebru, Desta</a></td>
+            <td width=20%>
+              Luthérien
+              
+              
+            </td>
+            <td width=20%>
+              Ethiopie
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/ethiopia/gebru-desta2/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Menberu, Dirshaye </td>
+            <td width=25%><a href="/stories/ethiopia/morkate-mito/">Mito, Morkate</a></td>
+            <td width=20%>
+              Église Kale Heywet
+              
+              
+            </td>
+            <td width=20%>
+              Ethiopie
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/ethiopia/morkate-mito/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Menberu, Dirshaye </td>
+            <td width=25%><a href="/stories/ethiopia/gebru-desta/">Desta, Kentiba Gebru</a></td>
+            <td width=20%>
+              Protestant
+              
+              
+            </td>
+            <td width=20%>
+              Ethiopie
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/ethiopia/gebru-desta/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Menberu, Dirshaye </td>
+            <td width=25%><a href="/stories/ethiopia/azeb-desta/">Desta, Azeb</a></td>
+            <td width=20%>
+              Église Meserete Kristos (Mennonite Mission)
+              
+              
+            </td>
+            <td width=20%>
+              Ethiopie
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/ethiopia/azeb-desta/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Balisky, E. Paul </td>
+            <td width=25%><a href="/stories/ethiopia/cain-glen/">Cain, Glenmaye Hall</a></td>
+            <td width=20%>
+              Mission Intérieure du Soudan
+              
+              
+            </td>
+            <td width=20%>
+              Ethiopie
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/ethiopia/cain-glen/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Balisky, E. Paul </td>
+            <td width=25%><a href="/stories/ethiopia/mulu-meja/">Meja, Mulu</a></td>
+            <td width=20%>
+              Église Kale Heywet
+              
+              
+            </td>
+            <td width=20%>
+              Ethiopie
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/ethiopia/mulu-meja/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Menberu, Dirshaye </td>
+            <td width=25%><a href="/stories/ethiopia/estifanos/">Estifanos</a></td>
+            <td width=20%>
+              Eglise Éthiopienne Orthodoxe (Mouvement Stéantiste)
+              
+              
+            </td>
+            <td width=20%>
+              Ethiopie
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/ethiopia/estifanos/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/ethiopia/estifanos/" rel="permalink">FR</a>
+        
+        
+        
+        
+        <a href="/pt/stories/ethiopia/estifanos/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Menberu, Dirshaye </td>
+            <td width=25%><a href="/stories/ethiopia/daffa-jammo/">Jammo, Daffa</a></td>
+            <td width=20%>
+              Église Évangélique Éthiopienne Mekane Yesus
+              
+              
+            </td>
+            <td width=20%>
+              Ethiopie
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/ethiopia/daffa-jammo/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Balisky, E. Paul </td>
+            <td width=25%><a href="/stories/ethiopia/debessa-tadele/">Debessa, Tadele</a></td>
+            <td width=20%>
+              Eglise Mekane Yesus
+              
+              
+            </td>
+            <td width=20%>
+              Ethiopie
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/ethiopia/debessa-tadele/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Menberu, Dirshaye </td>
+            <td width=25%><a href="/stories/ethiopia/eshetu-gebre/">Gebre, Eshetu</a></td>
             <td width=20%>
               Eglise Berhane Wengel
               
@@ -9085,7 +8916,48 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/ethiopia/berhanu-habte/" rel="permalink">EN</a>
+              <a href="/stories/ethiopia/eshetu-gebre/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Menberu, Dirshaye </td>
+            <td width=25%><a href="/stories/ethiopia/meseret/">Meseret Sebhat Leab</a></td>
+            <td width=20%>
+              Eglise Mekane Yesus
+              
+              
+            </td>
+            <td width=20%>
+              Ethiopie
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/ethiopia/meseret/" rel="permalink">EN</a>
         
         
         
@@ -9111,10 +8983,6 @@
 
     
     
-    
-  <a href="#" class="btn btn--inverse">Haut de Page</a>
-
-
     <a id="evangelical-bible-college-of-malawi"></a>
       <h2>Evangelical Bible College of Malawi</h2>
       <div>
@@ -9128,9 +8996,9 @@
             </thead></table>
             <table width=100%><tbody><tr>
                 <td width=20%> Ndekha, Louis W. </td>
-                <td width=25%><a href="/stories/malawi/chinula-charles/">Chinula, Charles Chidongo</a></td>
+                <td width=25%><a href="/stories/malawi/mwasi-yesaya/">Mwasi, Yesaya Zerenji</a></td>
                 <td width=20%>
-                  Eglise d'Afrique Centrale Presbytérienne
+                  Eglise Blackman
                   
                   
                 </td>
@@ -9140,12 +9008,12 @@
                   
                 </td>
                 <td width=15%>
-                  <a href="/stories/malawi/chinula-charles/" rel="permalink">EN</a>
+                  <a href="/stories/malawi/mwasi-yesaya/" rel="permalink">EN</a>
         
         
         
         
-        <a href="/fr/stories/malawi/chinula-charles/" rel="permalink">FR</a>
+        
         
         
         
@@ -9160,6 +9028,88 @@
             </tr></tbody></table>
       </article>
       </div>
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ndekha, Louis W. </td>
+            <td width=25%><a href="/stories/malawi/munyewe-matias/">Munyewe, Mathias J. (A)</a></td>
+            <td width=20%>
+              Eglise Évangélique Baptiste du Malawi
+              
+              
+            </td>
+            <td width=20%>
+              Malawi
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/malawi/munyewe-matias/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ndekha, Louis W. </td>
+            <td width=25%><a href="/stories/malawi/gudu-wilfred/">Gudu, Wilfred</a></td>
+            <td width=20%>
+              Église Ana A Mulungu (Église des Enfants de Dieu)
+              
+              
+            </td>
+            <td width=20%>
+              Malawi
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/malawi/gudu-wilfred/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/malawi/gudu-wilfred/" rel="permalink">FR</a>
+        
+        
+        
+        
+        <a href="/pt/stories/malawi/gudu-wilfred/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
     
 
 
@@ -9232,6 +9182,47 @@
         
         
         
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ndekha, Louis W. </td>
+            <td width=25%><a href="/stories/malawi/zuze-solomon/">Zuze, Solomon</a></td>
+            <td width=20%>
+              Église Évangélique Africaine
+              Mission Dorothea
+              
+            </td>
+            <td width=20%>
+              Malawi
+              Zimbabwe
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/malawi/zuze-solomon/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="/pt/stories/malawi/zuze-solomon/" rel="permalink">PT</a>
         
         
         
@@ -9332,9 +9323,9 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Ndekha, Louis W. </td>
-            <td width=25%><a href="/stories/malawi/mwasi-yesaya/">Mwasi, Yesaya Zerenji</a></td>
+            <td width=25%><a href="/stories/malawi/chinula-charles/">Chinula, Charles Chidongo</a></td>
             <td width=20%>
-              Eglise Blackman
+              Eglise d'Afrique Centrale Presbytérienne
               
               
             </td>
@@ -9344,135 +9335,12 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/malawi/mwasi-yesaya/" rel="permalink">EN</a>
+              <a href="/stories/malawi/chinula-charles/" rel="permalink">EN</a>
         
         
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ndekha, Louis W. </td>
-            <td width=25%><a href="/stories/malawi/zuze-solomon/">Zuze, Solomon</a></td>
-            <td width=20%>
-              Église Évangélique Africaine
-              Mission Dorothea
-              
-            </td>
-            <td width=20%>
-              Malawi
-              Zimbabwe
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/malawi/zuze-solomon/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <a href="/pt/stories/malawi/zuze-solomon/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ndekha, Louis W. </td>
-            <td width=25%><a href="/stories/malawi/gudu-wilfred/">Gudu, Wilfred</a></td>
-            <td width=20%>
-              Église Ana A Mulungu (Église des Enfants de Dieu)
-              
-              
-            </td>
-            <td width=20%>
-              Malawi
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/malawi/gudu-wilfred/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/malawi/gudu-wilfred/" rel="permalink">FR</a>
-        
-        
-        
-        
-        <a href="/pt/stories/malawi/gudu-wilfred/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ndekha, Louis W. </td>
-            <td width=25%><a href="/stories/malawi/munyewe-matias/">Munyewe, Mathias J. (A)</a></td>
-            <td width=20%>
-              Eglise Évangélique Baptiste du Malawi
-              
-              
-            </td>
-            <td width=20%>
-              Malawi
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/malawi/munyewe-matias/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
+        <a href="/fr/stories/malawi/chinula-charles/" rel="permalink">FR</a>
         
         
         
@@ -9493,10 +9361,6 @@
 
     
     
-    
-  <a href="#" class="btn btn--inverse">Haut de Page</a>
-
-
     <a id="evangelical-theological-college"></a>
       <h2>Evangelical Theological College</h2>
       <div>
@@ -9547,12 +9411,8 @@
 
     
     
-    
-  <a href="#" class="btn btn--inverse">Haut de Page</a>
-
-
-    <a id="evangelical-theological-seminary-cairo"></a>
-      <h2>Evangelical Theological Seminary (Cairo)</h2>
+    <a id="evangelical-theological-seminary-in-cairo"></a>
+      <h2>Evangelical Theological Seminary in Cairo</h2>
       <div>
         <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
           <table><thead>
@@ -9682,13 +9542,927 @@
 
 
     
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Kalo, Yousif K. </td>
+            <td width=25%><a href="/stories/sudan/ibrahim-abdu-elmasir/">El-Masīh, Ibrahīm &#39;Abdu</a></td>
+            <td width=20%>
+              Évangélique
+              
+              
+            </td>
+            <td width=20%>
+              Soudan
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/sudan/ibrahim-abdu-elmasir/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
     
+
+
     
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
   <a href="#" class="btn btn--inverse">Haut de Page</a>
 
 
-    <a id="evangelical-theological-seminary-in-cairo"></a>
-      <h2>Evangelical Theological Seminary in Cairo</h2>
+<h3><a id="F">F</a></h3>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    <a id="faculté-de-théologie-evangélique-du-cameroun"></a>
+      <h2>Faculté de Théologie Evangélique du Cameroun</h2>
       <div>
         <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
           <table><thead>
@@ -9699,951 +10473,8 @@
             <th width=15%>Languages</th>
             </thead></table>
             <table width=100%><tbody><tr>
-                <td width=20%> Kalo, Yousif K. </td>
-                <td width=25%><a href="/stories/sudan/ibrahim-abdu-elmasir/">El-Masīh, Ibrahīm &#39;Abdu</a></td>
-                <td width=20%>
-                  Évangélique
-                  
-                  
-                </td>
-                <td width=20%>
-                  Soudan
-                  
-                  
-                </td>
-                <td width=15%>
-                  <a href="/stories/sudan/ibrahim-abdu-elmasir/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                      </td>
-            </tr></tbody></table>
-      </article>
-      </div>
-    
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-
-<a id="F"></a>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-  <a href="#" class="btn btn--inverse">Haut de Page</a>
-
-
-    <a id="faculté-de-théologie-evangélique-du-cameroun"></a>
-      <h2>Faculté de Théologie Evangélique du Cameroun</h2>
-      <div>
-        <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-          <table><thead>
-            <th width=20%>Auteur</th>
-            <th width=25%>Nom</th>
-            <th width=20%>Affiliation</th>
-            <th width=20%>Pays</th>
-            <th width=15%>Langues</th>
-            </thead></table>
-            <table width=100%><tbody><tr>
-                <td width=20%> Pindzié, Robert Adamou </td>
-                <td width=25%><a href="/fr/stories/cameroon/garba-andre/">Garba, André</a></td>
+                <td width=20%> Pindzié, Robert Amadou </td>
+                <td width=25%><a href="/stories/cameroon/modi-din/">Modi Din, Jacob</a></td>
                 <td width=20%>
                   Eglise Évangélique Luthérienne du Cameroun
                   
@@ -10651,174 +10482,11 @@
                 </td>
                 <td width=20%>
                   Cameroun
-                  République Centrafricaine
+                  
                   
                 </td>
                 <td width=15%>
-                  
-        
-        
-        
-        
-        <a href="/fr/stories/cameroon/garba-andre/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                      </td>
-            </tr></tbody></table>
-      </article>
-      </div>
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Pindzié, Robert Adamou </td>
-            <td width=25%><a href="/fr/stories/cameroon/mbock-pierre/">Mbock, Pierre</a></td>
-            <td width=20%>
-              Église Évangélique du Cameroun
-              
-              
-            </td>
-            <td width=20%>
-              Cameroun
-              
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        <a href="/fr/stories/cameroon/mbock-pierre/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Pindzié, Robert Adamou </td>
-            <td width=25%><a href="/fr/stories/cameroon/ngoumbe-zacharie/">Ngoumbe, Zacharie</a></td>
-            <td width=20%>
-              Eglise Évangélique Luthérienne du Cameroun
-              
-              
-            </td>
-            <td width=20%>
-              Cameroun
-              
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        <a href="/fr/stories/cameroon/ngoumbe-zacharie/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Pindzié, Robert Adamou </td>
-            <td width=25%><a href="/stories/cameroon/mengwelune-lydie/">Mengwelune, Lydie</a></td>
-            <td width=20%>
-              Église Évangélique du Cameroun
-              
-              
-            </td>
-            <td width=20%>
-              Cameroun
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/cameroon/mengwelune-lydie/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/cameroon/mengwelune-lydie/" rel="permalink">FR</a>
-        
-        
-        
-        
-        <a href="/pt/stories/cameroon/mengwelune-lydie/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Pindzié, Robert Amadou </td>
-            <td width=25%><a href="/stories/cameroon/modi-din/">Modi Din, Jacob</a></td>
-            <td width=20%>
-              Eglise Évangélique Luthérienne du Cameroun
-              
-              
-            </td>
-            <td width=20%>
-              Cameroun
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/cameroon/modi-din/" rel="permalink">EN</a>
+                  <a href="/stories/cameroon/modi-din/" rel="permalink">EN</a>
         
         
         
@@ -10834,11 +10502,10 @@
         
         
         
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
+                      </td>
+            </tr></tbody></table>
+      </article>
+      </div>
     
 
 
@@ -10847,7 +10514,7 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Pindzié, Robert Adamou </td>
-            <td width=25%><a href="/fr/stories/cameroon/darman-paul/">Darman, Paul</a></td>
+            <td width=25%><a href="/fr/stories/cameroon/garba-andre/">Garba, André</a></td>
             <td width=20%>
               Eglise Évangélique Luthérienne du Cameroun
               
@@ -10855,7 +10522,7 @@
             </td>
             <td width=20%>
               Cameroun
-              
+              République Centrafricaine
               
             </td>
             <td width=15%>
@@ -10864,7 +10531,7 @@
         
         
         
-        <a href="/fr/stories/cameroon/darman-paul/" rel="permalink">FR</a>
+        <a href="/fr/stories/cameroon/garba-andre/" rel="permalink">FR</a>
         
         
         
@@ -10929,9 +10596,9 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Pindzié, Robert Adamou </td>
-            <td width=25%><a href="/fr/stories/cameroon/othon-houngue/">Othon, Houngue</a></td>
+            <td width=25%><a href="/fr/stories/cameroon/muishe-josue/">Muishe, Josué</a></td>
             <td width=20%>
-              Eglise Évangélique Luthérienne du Cameroun
+              Église Évangélique du Cameroun
               
               
             </td>
@@ -10946,7 +10613,7 @@
         
         
         
-        <a href="/fr/stories/cameroon/othon-houngue/" rel="permalink">FR</a>
+        <a href="/fr/stories/cameroon/muishe-josue/" rel="permalink">FR</a>
         
         
         
@@ -10970,9 +10637,9 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Pindzié, Robert Adamou </td>
-            <td width=25%><a href="/fr/stories/cameroon/muishe-josue/">Muishe, Josué</a></td>
+            <td width=25%><a href="/fr/stories/cameroon/othon-houngue/">Othon, Houngue</a></td>
             <td width=20%>
-              Église Évangélique du Cameroun
+              Eglise Évangélique Luthérienne du Cameroun
               
               
             </td>
@@ -10987,7 +10654,7 @@
         
         
         
-        <a href="/fr/stories/cameroon/muishe-josue/" rel="permalink">FR</a>
+        <a href="/fr/stories/cameroon/othon-houngue/" rel="permalink">FR</a>
         
         
         
@@ -11048,11 +10715,171 @@
 
 
     
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Pindzié, Robert Adamou </td>
+            <td width=25%><a href="/fr/stories/cameroon/mbock-pierre/">Mbock, Pierre</a></td>
+            <td width=20%>
+              Église Évangélique du Cameroun
+              
+              
+            </td>
+            <td width=20%>
+              Cameroun
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/cameroon/mbock-pierre/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
     
-    
-  <a href="#" class="btn btn--inverse">Haut de Page</a>
 
 
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Pindzié, Robert Adamou </td>
+            <td width=25%><a href="/stories/cameroon/mengwelune-lydie/">Mengwelune, Lydie</a></td>
+            <td width=20%>
+              Église Évangélique du Cameroun
+              
+              
+            </td>
+            <td width=20%>
+              Cameroun
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/cameroon/mengwelune-lydie/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/cameroon/mengwelune-lydie/" rel="permalink">FR</a>
+        
+        
+        
+        
+        <a href="/pt/stories/cameroon/mengwelune-lydie/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Pindzié, Robert Adamou </td>
+            <td width=25%><a href="/fr/stories/cameroon/ngoumbe-zacharie/">Ngoumbe, Zacharie</a></td>
+            <td width=20%>
+              Eglise Évangélique Luthérienne du Cameroun
+              
+              
+            </td>
+            <td width=20%>
+              Cameroun
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/cameroon/ngoumbe-zacharie/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Pindzié, Robert Adamou </td>
+            <td width=25%><a href="/fr/stories/cameroon/darman-paul/">Darman, Paul</a></td>
+            <td width=20%>
+              Eglise Évangélique Luthérienne du Cameroun
+              
+              
+            </td>
+            <td width=20%>
+              Cameroun
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/cameroon/darman-paul/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    
     <a id="faculté-de-théologie-Évangélique-de-bangui"></a>
       <h2>Faculté de Théologie Évangélique de Bangui</h2>
       <div>
@@ -11144,10 +10971,6 @@
 
     
     
-    
-  <a href="#" class="btn btn--inverse">Haut de Page</a>
-
-
     <a id="faith-baptist-theological-seminary"></a>
       <h2>Faith Baptist Theological Seminary</h2>
       <div>
@@ -11198,10 +11021,6 @@
 
     
     
-    
-  <a href="#" class="btn btn--inverse">Haut de Page</a>
-
-
     <a id="fondation-tyrannus"></a>
       <h2>Fondation Tyrannus</h2>
       <div>
@@ -11252,10 +11071,6 @@
 
     
     
-    
-  <a href="#" class="btn btn--inverse">Haut de Page</a>
-
-
     <a id="friedensau-university"></a>
       <h2>Friedensau University</h2>
       <div>
@@ -11269,7 +11084,7 @@
             </thead></table>
             <table width=100%><tbody><tr>
                 <td width=20%> Höschele, Stefan </td>
-                <td width=25%><a href="/stories/tanzania/otieno-simeon/">Otieno, Simeon Dea</a></td>
+                <td width=25%><a href="/stories/tanzania/kotz-ernst/">Kotz, Ernst</a></td>
                 <td width=20%>
                   Adventiste du Septième Jour
                   
@@ -11281,7 +11096,7 @@
                   
                 </td>
                 <td width=15%>
-                  <a href="/stories/tanzania/otieno-simeon/" rel="permalink">EN</a>
+                  <a href="/stories/tanzania/kotz-ernst/" rel="permalink">EN</a>
         
         
         
@@ -11350,7 +11165,7 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Höschele, Stefan </td>
-            <td width=25%><a href="/stories/tanzania/kilonzo-paulo/">Kilonzo, Paulo Saburi</a></td>
+            <td width=25%><a href="/stories/tanzania/risase-petro/">Risase, Petro Kime</a></td>
             <td width=20%>
               Adventiste du Septième Jour
               
@@ -11358,11 +11173,11 @@
             </td>
             <td width=20%>
               Tanzanie
-              Malawi
+              
               
             </td>
             <td width=15%>
-              <a href="/stories/tanzania/kilonzo-paulo/" rel="permalink">EN</a>
+              <a href="/stories/tanzania/risase-petro/" rel="permalink">EN</a>
         
         
         
@@ -11391,7 +11206,7 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Höschele, Stefan </td>
-            <td width=25%><a href="/stories/tanzania/kotz-ernst/">Kotz, Ernst</a></td>
+            <td width=25%><a href="/stories/tanzania/otieno-simeon/">Otieno, Simeon Dea</a></td>
             <td width=20%>
               Adventiste du Septième Jour
               
@@ -11403,7 +11218,7 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/tanzania/kotz-ernst/" rel="permalink">EN</a>
+              <a href="/stories/tanzania/otieno-simeon/" rel="permalink">EN</a>
         
         
         
@@ -11473,7 +11288,7 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Höschele, Stefan </td>
-            <td width=25%><a href="/stories/tanzania/risase-petro/">Risase, Petro Kime</a></td>
+            <td width=25%><a href="/stories/tanzania/kilonzo-paulo/">Kilonzo, Paulo Saburi</a></td>
             <td width=20%>
               Adventiste du Septième Jour
               
@@ -11481,11 +11296,11 @@
             </td>
             <td width=20%>
               Tanzanie
-              
+              Malawi
               
             </td>
             <td width=15%>
-              <a href="/stories/tanzania/risase-petro/" rel="permalink">EN</a>
+              <a href="/stories/tanzania/kilonzo-paulo/" rel="permalink">EN</a>
         
         
         
@@ -12124,44 +11939,45 @@
                                     FOOTER
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-  <div class="page__footer"> <footer><div class="foot-box">
+  <div class="page__footer">
+
+<!-- AWARDS ROW #################################################### -->
+<div class="awards-wrap">
+<div class="awards">
+
+  <a style="width:33%;disaply:block;float:right" href="/about/awards/">
+    <img class="awards__icon" src="/assets/images/asa-award.png"/>
+  </a>
+  <a style="width:33%;disaply:block;float:right"  href="/about/awards/">
+    <img class="awards__icon" src="/assets/images/neh-award.png"/>
+  </a>
+  <a style="width:33%;disaply:block;float:right"  href="/about/awards/">
+    <img class="awards__icon" src="/assets/images/eb-award.png"/>
+  </a>
+
+</div>
+</div>
+
+    <footer><div class="foot-box">
   <!-- FIRST COLUMN #################################################### -->
   <div class="box">
-    <h3 style="color:#e0c74f; margin-top:0px;"> Contactez-nous</h3>
-    <p>  
-      
-            <b>Dictionnaire Biographique des Chrétiens d’Afrique</b></br>
-        
-        
-          
-      Center for Global Christianity and Mission</br>
-      745 Commonwealth Avenue</br>
-      Boston, Massachussetts 02215, USA</br>
-      Email: dacb@bu.edu</p>
-      <form action="https://www.facebook.com/DictionaryofAfricanChristianBiography">
-          <input type="submit" class="btn-facebook"/>
-      </form>
-  </div>
-
-  <!-- SECOND COLUMN #################################################### -->
-  <div class="box">
-    <h3 style="color:#e0c74f; margin-top:0px;">Soumettre des Articles</h3>
+    <h3>Soumettre des Articles</h3>
     
     
-      <p style="margin-bottom: 1em;">Si vous souhaitez soumettre un article au DIBICA, vous trouverez des ressources gratuites et des directives <a href="/fr/contribute/submit/">ici</a>.<br></p>
-      <a href="/fr/contribute/submit/" class="btn btn--inverse-long">Soumettre des Articles</a>
+      <p style="margin-bottom: 1em;"><br>Si vous souhaitez soumettre un article au DIBICA, vous trouverez des ressources gratuites et des directives <a href="/fr/connect/submit/">ici</a>.</p>
+      <a href="/fr/connect/submit/" class="btn btn--inverse-long">Soumettre des Articles</a>
       
     
     
   </div>
 
-  <!-- THIRD COLUMN ####################################################-->
-  <div class="box-end">
-    <h3 style="color:#e0c74f; margin-top:0px;">Journal</h3>
+  <!-- SECOND COLUMN ####################################################-->
+  <div class="box__end">
+    <h3>Journal</h3>
     
     
         <p>Inscrivez-vous ici pour recevoir notre journal trimestriel et le bulletin du DIBICA.</p>
-        <div>
+        <div style="margin-top: .5em;">
   <div id="mc_embed_signup_small">
   <form action="//dacb.us3.list-manage.com/subscribe/post?u=485445b23ed18ff0163e2d7a1&amp;id=68e419fc0f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
       <div id="mc_embed_signup_scroll">
@@ -12193,17 +12009,29 @@
 
   <!-- COPYRIGHT AND COUNTS #################################################### -->
   <div class="page__footer-copyright">
+
+    <div class="box_one"><a href="https://www.facebook.com/DictionaryofAfricanChristianBiography">
+      <img src="/assets/images/fb-full-white.png" class="facebook"/>
+    </a></div>
+
     
 
     
-    Le DIBICA est une ressource numérique du <a href="http://www.bu.edu/cgcm/">Center for Global Christianity and Mission</a> à la Faculté de Théologie de l'Université de Boston. <br>
-    Site reconceptualisé par Alex Mayfield et Michèle Sigg. Dernière Mise à Jour: 10 July 2019. &copy; 2019 Dictionnaire Biographique des Chrétiens d'Afrique.
+    <div class="box_two">
+     Site reconceptualisé par Alex Mayfield et Michèle Sigg. Dernière Mise à Jour: 28 August 2019.<br>&copy; 2019 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+    </div>
     
 
     
 
     
-  </footer></div>
+
+    <div class="box_three"><a href="https://www.bu.edu/cgcm/">
+      <img src="/assets/images/cgcm.png" class="facebook"/>
+    </a></div>
+
+  </div>
+</footer>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                                     SCRIPTS
@@ -12211,15 +12039,14 @@
 
       <script src="/assets/js/main.min.js"></script>
       <script type="text/javascript">
-        var BASE_URL = '';
+        var BASE_URL = 'http://localhost:4000';
       </script>
 
-  <!-- NON LOCAL JQUERY VERSION -->
-      <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-
   <!-- LOCAL JQUERY VERSION -->
-      <!-- <script src="/assets/js/jquery-1.9.1.min.js"></script>
-      <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script> -->
+      <script src="/assets/js/jquery.min.js"></script>
+
+  <!-- Bootstrap -->
+      <script src="/assets/js/bootstrap.min.js"></script>
 
   <!-- Asynchronous Google Analytics snippet -->
       

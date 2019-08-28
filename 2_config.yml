@@ -41,9 +41,9 @@ exclude:
   - tmp
   - tipuesearch
   - site-content-build.yml
-  - _pages/06.bios
-  - _pages/07.histories
-  - _pages/08.memories
+  - _pages/XX.bios
+  - _pages/XX.histories
+  - _pages/XX.memories
 
 keep_files:
   - .git

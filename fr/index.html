@@ -15,6 +15,7 @@
 
 <!-- For all browsers -->
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
     <meta http-equiv="cleartype" content="on">
 <!-- ANALYTICS -->
 <!-- Global Site Tag (gtag.js) - Google Analytics -->
@@ -37,10 +38,23 @@
                                     MASTHEAD
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-  <div class="masthead-banner">
+  
+<div class="masthead-banner">
 <div class="masthead__inner-wrap">
+
+  <!------ LANGAUGE SWITCHER
+  <div class="lang-switch">
+    <div class="switcher">
+      <div class="home"> </div>
+      <div class="en"><a href="/#">EN</a></div>
+      <div class="fr"><a href="/fr">FR</a></div>
+      <div class="pt"><a href="/pt">PT</a></div>
+      <div class="sw"><a href="/sw">SW</a></div>
+    </div>
+  </div> -->
+
   <div class="logo">
-      <img src="/assets/images/logo-fr.gif">
+      <a href="/fr/#"><img src="/assets/images/logo-new-fr.png"></a>
     </div>
 <nav class="top">
         <label for="drop" class="toggle-m">Menu</label>
@@ -49,89 +63,105 @@
 <!----------------------------------------------------------------------------------------------------------->
 <!-- HOME --------------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------->
-          <li>
-              <label for="drop-0" class="toggle"><div class="drop">Accueil</div></label>
-              <a href="#"><div class="drop">Accueil</div></a>
-              <input type="checkbox" id="drop-0"/>
-              <ul class=="top">
-                  <li class="second"><a href="/">English</a></li>
-                  <li class="second"><a href="/fr/">Français</a></li>
-                  <li class="second"><a href="/pt/">Português</a></li>
-                  <li class="second"><a href="/sw/">Kiswahili</a></li>
-              </ul>
-          </li>
-<!----------------------------------------------------------------------------------------------------------->
-<!-- STORIES ------------------------------------------------------------------------------------------------>
-<!----------------------------------------------------------------------------------------------------------->
             <li>
-                <label for="drop-1" class="toggle"><div class="drop">Articles</div></label>
-                <a href="#"><div class="drop">Articles</div></a>
-                <input type="checkbox" id="drop-1"/>
-                <ul class=="top">
-                    <li class="second"><a href="/fr/sort/stories/">Toutes les Biographies</a></li>
-                    <li class="second"><a href="/fr/sort/stories/latest-sort/">Articles Récents</a></li>
-                    <li class="second"><a href="/fr/sort/stories/collected-memories/">Souvenirs Recueillis</a></li>
-                    <li class="second"><a href="/fr/sort/stories/regional-histories/">Histoires Régionales</a></li>
-                    <li class="second"><a href="/fr/sort/stories/country-sort/">L'Afrique Moderne</a></li>
-                    <li class="second"><a href="/fr/sort/stories/ancient-church-index/">L'Afrique Ancienne</a></li>
-                </ul>
+            <label for="drop-2" class="toggle"><div class="drop"><a href="/fr/">Accueil</a></div></label>
+            <a href="/fr/"><div class="drop">Accueil</div></a>
+            <input type="checkbox" id="drop-2"/>
+            <ul class=="top">
+              <li class="second"><a href="/">English</a></li>
+              <li class="second"><a href="/fr/">Français</a></li>
+              <li class="second"><a href="/pt/">Português</a></li>
+              <li class="second"><a href="/sw/">Kiswahili</a></li>
+            </ul>
             </li>
+
 <!----------------------------------------------------------------------------------------------------------->
 <!-- ABOUT -------------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------->
             <li>
-            <label for="drop-2" class="toggle"><div class="drop">Le Projet</div></label>
-            <a href="#"><div class="drop">Le Projet</div></a>
+            <label for="drop-2" class="toggle"><div class="drop"><a href="/fr/about/">Le Projet</a></div></label>
+            <a href="/fr/about/"><div class="drop">Le Projet</div></a>
             <input type="checkbox" id="drop-2"/>
             <ul class=="top">
-              <li class="second"><a href="/fr/about/what-is-dacb/">Qu'est-ce que le DIBICA?</a></li>
-              <li class="second"><a href="/fr/about/beginnings/">Genèse</a></li>
               <li class="second"><a href="/fr/about/vision/">Vision</a></li>
               <li class="second"><a href="/fr/about/advisors/">Conseillers</a></li>
+              <li class="second"><a href="/about/editorial-committee/">Comité exécutif</a></li>
+              <li class="second"><a href="/about/donor-list/">Nos Donateurs</a></li>
+              <li class="second"><a href="/fr/about/partners/">Partenaires</a></li>
+              <li class="second"><a href="/about/usage/">Utilisation du Site</a></li>
+            </ul>
+            </li>
+
+<!----------------------------------------------------------------------------------------------------------->
+<!-- STORIES ------------------------------------------------------------------------------------------------>
+<!----------------------------------------------------------------------------------------------------------->
+            <li>
+            <label for="drop-0" class="toggle"><div class="drop"><a href="/fr/sort/stories/">Articles</a></div></label>
+            <a href="/fr/sort/stories/"><div class="drop">Articles</div></a>
+            <input type="checkbox" id="drop-0"/>
+            <ul class=="top">
+              <li class="second"><a href="/fr/sort/stories/latest-sort/">Articles Récents</a></li>
+              <li class="second"><a href="/fr/sort/stories/collected-memories/">Souvenirs Recueillis</a></li>
+              <li class="second"><a href="/fr/sort/stories/regional-histories/">Histoires Régionales</a></li>
+              <li class="second"><a href="/fr/sort/stories/country-sort/">L'Afrique Moderne</a></li>
+              <li class="second"><a href="/fr/sort/stories/ancient-church-index/">L'Afrique Ancienne</a></li>
+            </ul>
+            </li>
+
+<!----------------------------------------------------------------------------------------------------------->
+<!-- PROJECTS ------------------------------------------------------------------------------------------------>
+<!----------------------------------------------------------------------------------------------------------->
+            <li>
+              <label for="drop-1" class="toggle"><div class="drop"><a href="/fr/projects/">Projets</a></div></label>
+              <a href="/fr/projects/"><div class="drop">Projets</div></a>
+              <input type="checkbox" id="drop-1"/>
+            <ul class=="top">
+              <li class="second"><a href="/projects/women/">Femmes</a></li>
+              <li class="second"><a href="/projects/music-art/">Musiciens et Artistes</a></li>
+              <li class="second"><a href="/projects/diaspora">Diaspora</a></li>
+
             </ul>
             </li>
 <!----------------------------------------------------------------------------------------------------------->
 <!-- RESOURCES  --------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------->
             <li>
-            <label for="drop-3" class="toggle"><div class="drop">Ressources</div></label>
-            <a href="#"><div class="drop">Ressources</div></a>
+            <label for="drop-3" class="toggle"><div class="drop"><a href="/fr/resources">Ressources</a></div></label>
+            <a href="/fr/resources"><div class="drop">Ressources</div></a>
             <input type="checkbox" id="drop-3"/>
             <ul class=="top">
-              <li class="second"><a href="/fr/resources/writers-educators/">Pour les Écrivains et Éducateurs</a></li>
-              <li class="second"><a href="/fr/resources/bibliographies/">Bibliographies</a></li>
-              <li class="second"><a href="/fr/resources/potential-subjects/">Sujets Potentiels</a></li>
+              <li class="second"><a href="/fr/resources/introductory/">Ressources d'Introduction</a></li>
+              <li class="second"><a href="/fr/resources/educational/">Ressources Pédagogiques</a></li>
+              <li class="second"><a href="/fr/resources/bibliographic/">Ressources Bibliographiques</a></li>
+              <li class="second"><a href="/fr/resources/oral-history/">Ressources d'Histoire Orale</a></li>
             </ul>
             </li>
 <!----------------------------------------------------------------------------------------------------------->
-<!-- NEWS --------------------------------------------------------------------------------------------------->
+<!-- JOURNAL --------------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------->
             <li>
-            <label for="drop-6" class="toggle"><div class="drop">Nouvelles</div></label>
-            <a href="#"><div class="drop">Nouvelles</div></a>
-            <input type="checkbox" id="drop-6"/>
-            <ul class=="top">
-              <li class="second"><a href="/fr/sort/stories/latest-sort/">Articles Récents</a></li>
-              <li class="second"><a href="/fr/news/newsletter/">Bulletin</a></li>
-            </ul>
+            <label for="drop-6" class="toggle"><div class="drop"><a href="/journal/">Journal</a></div></label>
+            <a href="/journal/"><div class="drop">Journal</div></a>
             </li>
+
 <!----------------------------------------------------------------------------------------------------------->
-<!-- CONTRIBUTE --------------------------------------------------------------------------------------------->
+<!-- CONNECT --------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------->
             <li>
-            <label for="drop-7" class="toggle"><div class="drop">Contact</div></label>
-            <a href="#"><div class="drop">Contact</div></a>
+            <label for="drop-7" class="toggle"><div class="drop"><a href="/fr/connect/">Relier</a></div></label>
+            <a href="/fr/connect/"><div class="drop">Relier</div></a>
             <input type="checkbox" id="drop-7"/>
             <ul class=="top">
-              <li class="second"><a href="/fr/contribute/contact/">Contactez-nous</a></li>
-              <li class="second"><a href="/fr/contribute/partner/">Collaborer</a></li>
-              <li class="second"><a href="/fr/contribute/submit/">Soumettre des Articles</a></li>
+              <li class="second"><a href="/connect/news/">Nouvelles</a></li>
+              <li class="second"><a href="/fr/connect/submit/">Soumettre des Articles</a></li>
+              <li class="second"><a href="/fr/connect/collaborate/">Collaborer</a></li>
+              <li class="second"><a href="/fr/connect/contact/">Contactez-nous</a></li>
             </ul>
             </li>
 <!----------------------------------------------------------------------------------------------------------->
 <!-- SEARCH ------------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------->
-            <label class="toggle">
+            <label class="toggle" style="margin-left: .5vw !important; margin-right: .5vw !important;">
               <a class="search-image" href="/search-fr.html" style="padding: 0px !important"></a></label>
                 <li class="menu">
                   <a class="search-image" href="/search-fr.html" style="padding: 0px !important"></a>
@@ -148,6 +178,168 @@
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                                     CONTENT
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  
+    
+<style>
+/*
+Bootstrap Carousel Fade Transition (for Bootstrap 3.3.x)
+CSS from:       http://codepen.io/transportedman/pen/NPWRGq
+and:            http://stackoverflow.com/questions/18548731/bootstrap-3-carousel-fading-to-new-slide-instead-of-sliding-to-new-slide
+Inspired from:  http://codepen.io/Rowno/pen/Afykb
+*/
+#myCarousel.carousel-fade .carousel-inner .item {
+opacity: 0;
+transition-property: opacity;
+}
+
+#myCarousel.carousel-fade .carousel-inner .active {
+opacity: 1;
+}
+
+#myCarousel.carousel-fade .carousel-inner .active.left,
+#myCarousel.carousel-fade .carousel-inner .active.right {
+left: 0;
+opacity: 0;
+z-index: 1;
+}
+
+#myCarousel.carousel-fade .carousel-inner .next.left,
+#myCarousel.carousel-fade .carousel-inner .prev.right {
+opacity: 1;
+}
+
+#myCarousel.carousel-fade .carousel-control {
+z-index: 2;
+}
+
+/*
+WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+Need to override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+  #myCarousel.carousel-fade .carousel-inner > .item.next,
+  #myCarousel.carousel-fade .carousel-inner > .item.active.right {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  #myCarousel.carousel-fade .carousel-inner > .item.prev,
+  #myCarousel.carousel-fade .carousel-inner > .item.active.left {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  #myCarousel.carousel-fade .carousel-inner > .item.next.left,
+  #myCarousel.carousel-fade .carousel-inner > .item.prev.right,
+  #myCarousel.carousel-fade .carousel-inner > .item.active {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+</style>
+
+
+<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4000">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+    
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+    
+        <div class="item active" style="background: url(/images/home/women-banner.jpg) center center no-repeat; background-size: cover;">
+        <div><h1>Histoires de femmes</h1><p>En tant que pasteurs, évangélistes, revivalistes, enseignants, les femmes sont des catalyseurs de la croissance des communautés chrétiennes. Nous voulons capturer leurs histoires. <form action='/fr/sort/stories/women-index/'><input class='btn--banner' type='submit' value='Lire la Suite... ' /></form></p></div>
+      </div>
+    
+        <div class="item" style="background: url(/images/home/artist-banner.jpg) center center no-repeat; background-size: cover;">
+        <div><h1>Musiciens et Artistes</h1><p>Les musiciens et les artistes contribuent à donner une forme africaine aux expressions chrétiennes du culte. <form action='/fr/sort/stories/artist-index/'><input class='btn--banner' type='submit' value='Lire la Suite... ' /></form></p></div>
+      </div>
+    
+        <div class="item" style="background: url(/images/home/scholar-banner.jpg) center center no-repeat; background-size: cover;">
+        <div><h1>Savants</h1><p>Rencontrez les hommes et les femmes qui façonnent la théologie chrétienne africaine. <form action='/fr/sort/stories/scholar-index/'><input class='btn--banner' type='submit' value='Lire la Suite... ' /></form></p></div>
+      </div>
+    
+        <div class="item" style="background: url(/images/home/martyr-banner.jpg) center center no-repeat; background-size: cover;">
+        <div><h1>Martyrs</h1><p>En savoir plus sur les hommes, les femmes et les enfants qui sont morts pour leur foi en l’Afrique. <form action='/fr/sort/stories/martyr-index/'><input class='btn--banner' type='submit' value='Lire la Suite... ' /></form></p></div>
+      </div>
+    
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left">‹</span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right">›</span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  <style>
+  #myCarousel .item { width: 100%; backface-visibility: visible; min-height:300px}
+  #myCarousel .item {padding-bottom: 30%;}
+  
+  #myCarousel .item > div {
+      position: absolute;
+      width: 100%;
+      max-height: 400px;
+      display: block;
+      color: white;
+      text-align: center;
+      text-shadow: 0 0 40px black;
+      font-size: 1em;
+      word-wrap: break-word;
+      overflow: hidden;
+      margin: auto;
+      padding: 0 3em 40px 3em;
+      position: absolute;
+      top: 40%;
+      transform: translateY(-40%);
+  }
+  #myCarousel .item > div h3 {
+    padding-top: 7px;
+    color: white;
+    font-weight: bold; font-size: 30px;
+  }
+  #myCarousel span.glyphicon {
+      font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif!important;
+      color: white!important;
+      font-size: 60px!important;
+      height: 60px!important;
+      line-height: 50px!important;
+      margin-top: -30px!important;
+  }
+  #myCarousel .carousel-control {opacity: 0!important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  min-width: 60px!important;
+  }
+  .carousel-inner {max-height: 400px;}
+  #myCarousel .carousel-control:hover {opacity: 1!important;}
+  #myCarousel .carousel-indicators {bottom: 0!important; margin-bottom: 12px;}
+  #myCarousel .glyphicon-chevron-left::before,
+  #myCarousel .glyphicon-chevron-right::before {content: "";}
+  #myCarousel .carousel-control.left {text-align: left; background: none!important;}
+  #myCarousel .carousel-control.right {text-align: right; background: none!important;}
+  #myCarousel .carousel-control .glyphicon-chevron-right {margin-right: 15px; position: relative; right: auto; text-shadow: none;}
+  #myCarousel .carousel-control .glyphicon-chevron-left {margin-left: 15px; position: relative; left: auto; text-shadow: none}
+  </style>
+
+  
 
   <div id="main" role="main">
   <article class="splash" itemscope itemtype="http://schema.org/CreativeWork">
@@ -157,139 +349,48 @@
     
 
     <section class="page__content" itemprop="text">
-      
-
-<p style="text-align: center;"><i>La mission de DIBICA est de rassembler, de préserver, et de rendre accessible les récits biographiques et les histoires d'églises &ndash; venant de sources orales ou écrites &ndash; sans lesquelles il serait impossible de comprendre le christianisme africain dans son intégrité.</i></p>
-<hr>
-
-
-
-<div class="feature__wrapper">
-
-  
-
-    
-
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <img src=
-              
-                "/images/home/francophone.jpg"
-              
-            alt="Lire les Biographies en Français">
-          </div>
-        
-
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">Lire des Biographies en Français</h2>
-          
-
-          
-            
-              <p class="archive__item-excerpt"><p>Découvrez des personnes étonnantes dans notre collection croissante de biographies écrites en français. </p>
+      <br>
+<h1 style="text-align:center;text-transform:uppercase;">Un nouveau look pour la phase 20+ de la DIBICA</h1>
+<p style="text-align: justify;">
+  Conçu en 1995 et mis en ligne pour la première fois en 1998, le site Web de la DACB en est à sa vingt et unième année. Le DIBICA a toujours pour mission «<i>de rassembler, de conserver et de rendre librement accessibles des récits biographiques et des histoires d'église - de sources orales et écrites - à une compréhension érudite du christianisme africain.</i>» Cependant, dans cette nouvelle phase Le modus operandi du projet est en train de changer car les travaux se concentrent davantage sur trois initiatives: (1) <a href="/journal/"><i>le Journal of African Christian Biography</i></a> (2) <a href="/fr/projects/"><i>des projets de recherche thématiques</i></a>, et (3) <a href="/fr/resources/educational"><i>des ressources pédagogiques</i></a>. Bien que l’ensemble du fonds de la collection DACB continue d’être accessible aux lecteurs, les articles rédigés avant 2016 seront placés sous l’étiquette «Classic DACB» afin de les différencier des documents plus récents.
 </p>
-              <p class="archive__item-excerpt"><p>Articles en Français: 502</p>
-</p>
-            
 
-          
 
-          </div>
+<h1 style="text-align:center;text-transform:uppercase;">Nos Initiatives</h1>
+
+<div class="splash__wrapper" style="margin-bottom:0em !important;">
+
+    <div class="splash__item3">
+      <div class="splash__item-teaser">
+        <a href="/fr/projects/"><img src="/assets/images/squares/sq-women.jpg"></a>
       </div>
-      
-        <div class="archive__item-btn">
-        
-        <a href="/fr/sort/stories/country-sort/" class="btn btn--inverse-home">Lire Plus</a>
-        
-        </div>
-      
-    </div>
-  
-
-    
-
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <img src=
-              
-                "/images/home/mveng-resurrection.jpg"
-              
-            alt="Engelbert Mveng: Artiste théologien">
-          </div>
-        
-
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">Engelbert Mveng: Artiste théologien</h2>
-          
-
-          
-            
-              <p class="archive__item-excerpt"><p>Engelbert Mveng était un prêtre Jésuite camerounais qui, tout en étant artiste, a aussi publié des travaux en théologie, en ...</p>
-          
-
-          
-
-          </div>
+      <div class="splash__item-body">
+        <h2 style="text-transform:uppercase;"><a href="/fr/projects/">Projets de<br> Recherche Thématiques</a></h2>
+        <p>Les projets présentés portent en particulier sur la collecte d’histoires de femmes, d’artistes et de musiciens, ainsi que de chrétiens africains de la diaspora.</p>
       </div>
-      
-        <div class="archive__item-btn">
-        
-        <a href="/fr/memories/mveng-engelbert/" class="btn btn--inverse-home">Lire Plus</a>
-        
-        </div>
-      
     </div>
-  
 
-    
-
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <img src=
-              
-                "/images/home/participate.jpg"
-              
-            alt="Participez au Travail de DIBICA!">
-          </div>
-        
-
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">Participez au Travail de DIBICA!</h2>
-          
-
-          
-            
-              <p class="archive__item-excerpt"><p>Voulez-vous nous aider dans ce travail de documentation historique? Engagez-vous alors à rédiger une biographie.</p>
-</p>
-          
-
-          
-
-          </div>
+    <div class="splash__item3">
+      <div class="splash__item-teaser">
+        <a href="/journal/"><img src="/assets/images/squares/sq-journal.jpg"></a>
       </div>
-      
-        <div class="archive__item-btn">
-        
-        <a href="/fr/contribute/submit/" class="btn btn--inverse-home">Lire Plus</a>
-        
-        </div>
-      
+      <div class="splash__item-body">
+        <h2 style="text-transform:uppercase;"><a href="/journal/">Le <i>Journal of African Christian Biography</i></a></h2>
+        <p>La revue, publiée trimestriellement et disponible gratuitement sous forme d'abonnement électronique, présente des interprétations et contextualise des biographies qui figurent également sur le site Web de la DACB. Le contenu comprend également des interviews d'importantes personnalités chrétiennes africaines et des recensions de livres sur la littérature actuelle sur le christianisme africain.</p>
+      </div>
     </div>
-  
+
+    <div class="splash__item3">
+      <div class="splash__item-teaser">
+        <a href="/fr/resources/educational/"><img src="/assets/images/squares/sq-resources.jpg"></a>
+      </div>
+      <div class="splash__item-body">
+        <h2 style="text-transform:uppercase;"><a href="/fr/resources/educational/">Ressources<br> Pédagogiques</a></h2>
+        <p>Cette initiative vise à fournir du matériel accessible et de qualité pour l'enseignement de l'histoire chrétienne africaine, en utilisant les ressources de la DACB et d'autres documents complémentaires.</p>
+      </div>
+    </div>
 
 </div>
-
-
-<hr>
 
 <div width="100%" style="margin-right: -10px;">
   
@@ -301,57 +402,45 @@
 
 
 
-<h3 style="margin-top:0px;">Biographies organisées par</h3>
+<h1 style="margin-top:0px; text-align:center; text-transform: uppercase; margin-bottom:1em;">Biographies organisées par</h1>
+<div style="display:table;margin-bottom:2em;">
 <div class="home-select">
-  <a href="/sort/stories/"><img class="home-sort" src="/assets/images/home-sorts/name.jpg" onmouseover="this.src='/assets/images/home-sorts/name-c.jpg';" onmouseout="this.src='/assets/images/home-sorts/name.jpg';"></a>
-  <h4 style="margin-top:.5em;display:inline-block;"> <a href="/fr/sort/stories/">Nom</a></h4>
-</div>
-
-<div class="home-select">
-  <a href="/sort/stories/tradition-sort/"><img class="home-sort" src="/assets/images/home-sorts/tradition.jpg" onmouseover="this.src='/assets/images/home-sorts/tradition-c.jpg';" onmouseout="this.src='/assets/images/home-sorts/tradition.jpg';"></a>
-  <h4 style="margin-top:.5em;display:inline-block;"> <a href="/fr/sort/stories/tradition-sort/">Tradition</a></h4>
+  <a href="/sort/stories/"><img class="home-sort" src="/assets/images/home-sorts/old/name.jpg" onmouseover="this.src='/assets/images/home-sorts/old/name-c.jpg';" onmouseout="this.src='/assets/images/home-sorts/name.jpg';"></a>
+  <h4> <a href="/fr/sort/stories/">Nom</a></h4>
 </div>
 
 <div class="home-select">
-  <a href="/sort/stories/century-sort/"><img class="home-sort" src="/assets/images/home-sorts/century.jpg" onmouseover="this.src='/assets/images/home-sorts/century-c.jpg';" onmouseout="this.src='/assets/images/home-sorts/century.jpg';"></a>
-  <h4 style="margin-top:.5em;display:inline-block;"> <a href="/fr/sort/stories/century-sort/">Siècle</a></h4>
+  <a href="/sort/stories/tradition-sort/"><img class="home-sort" src="/assets/images/home-sorts/old/tradition.jpg" onmouseover="this.src='/assets/images/home-sorts/old/tradition-c.jpg';" onmouseout="this.src='/assets/images/home-sorts/tradition.jpg';"></a>
+  <h4> <a href="/fr/sort/stories/tradition-sort/">Tradition</a></h4>
 </div>
 
 <div class="home-select">
-  <a href="/sort/stories/country-sort/"><img class="home-sort" src="/assets/images/home-sorts/country.jpg" onmouseover="this.src='/assets/images/home-sorts/country-c.jpg';" onmouseout="this.src='/assets/images/home-sorts/country.jpg';"></a>
-  <h4 style="margin-top:.5em;display:inline-block;"> <a href="/fr/sort/stories/country-sort/">Pays</a></h4>
+  <a href="/sort/stories/century-sort/"><img class="home-sort" src="/assets/images/home-sorts/old/century.jpg" onmouseover="this.src='/assets/images/home-sorts/old/century-c.jpg';" onmouseout="this.src='/assets/images/home-sorts/century.jpg';"></a>
+  <h4> <a href="/fr/sort/stories/century-sort/">Siècle</a></h4>
 </div>
 
 <div class="home-select">
-  <a href="/sort/stories/author-sort/"><img class="home-sort" src="/assets/images/home-sorts/author.jpg" onmouseover="this.src='/assets/images/home-sorts/author-c.jpg';" onmouseout="this.src='/assets/images/home-sorts/author.jpg';"></a>
-  <h4 style="margin-top:.5em;display:inline-block;"> <a href="/fr/sort/stories/author-sort/">Auteur</a></h4>
+  <a href="/sort/stories/country-sort/"><img class="home-sort" src="/assets/images/home-sorts/old/country.jpg" onmouseover="this.src='/assets/images/home-sorts/old/country-c.jpg';" onmouseout="this.src='/assets/images/home-sorts/country.jpg';"></a>
+  <h4> <a href="/fr/sort/stories/country-sort/">Pays</a></h4>
 </div>
 
 <div class="home-select">
-  <a href="/sort/stories/institution-sort/"><img class="home-sort" src="/assets/images/home-sorts/institution.jpg" onmouseover="this.src='/assets/images/home-sorts/institution-c.jpg';" onmouseout="this.src='/assets/images/home-sorts/institution.jpg';"></a>
-  <h4 style="margin-top:.5em;display:inline-block;"> <a href="/fr/sort/stories/institution-sort/">Institution</a></h4>
+  <a href="/sort/stories/author-sort/"><img class="home-sort" src="/assets/images/home-sorts/old/author.jpg" onmouseover="this.src='/assets/images/home-sorts/old/author-c.jpg';" onmouseout="this.src='/assets/images/home-sorts/author.jpg';"></a>
+  <h4> <a href="/fr/sort/stories/author-sort/">Auteur</a></h4>
 </div>
 
 <div class="home-select">
-  <a href="/sort/stories/"><img class="home-sort" src="/assets/images/home-sorts/language.jpg" onmouseover="this.src='/assets/images/home-sorts/language-c.jpg';" onmouseout="this.src='/assets/images/home-sorts/language.jpg';"></a>
-  <h4 style="margin-top:.5em;display:inline-block;"> <a href="/fr/sort/stories/language-sort/">Langue</a></h4>
+  <a href="/sort/stories/institution-sort/"><img class="home-sort" src="/assets/images/home-sorts/old/institution.jpg" onmouseover="this.src='/assets/images/home-sorts/old/institution-c.jpg';" onmouseout="this.src='/assets/images/home-sorts/institution.jpg';"></a>
+  <h4> <a href="/fr/sort/stories/institution-sort/">Institution</a></h4>
+</div>
+
+<div class="home-select">
+  <a href="/sort/stories/"><img class="home-sort" src="/assets/images/home-sorts/old/language.jpg" onmouseover="this.src='/assets/images/home-sorts/old/language-c.jpg';" onmouseout="this.src='/assets/images/home-sorts/language.jpg';"></a>
+  <h4> <a href="/fr/sort/stories/language-sort/">Langue</a></h4>
+</div>
 </div>
 
 </div>
-
-<div class="language-switch-main"><div class="lang-head">
-  <div class="en"><a href="/" rel="permalink">English</a></div>
-  <div class="fr"><a href="/fr/" rel="permalink">Français</a></div>
-  <div class="pt"><a href="/pt/" rel="permalink">Português</a></div>
-  <div class="sw"><a href="/sw/" rel="permalink">Kiswahili</a></div>
-</div></div>
-
-<div class="language-switch"><div class="lang-head">
-<div class="en-light">Total des Articles: 2155</div>
-<div class="fr-light">Total des Articles: 502</div>
-<div class="pt-light"> Total des Articles: 172</div>
-<div class="sw-light">Total des Articles: 9</div>
-</div></div>
 
     </section>
   </article>
@@ -362,44 +451,45 @@
                                     FOOTER
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-  <div class="page__footer"> <footer><div class="foot-box">
+  <div class="page__footer">
+
+<!-- AWARDS ROW #################################################### -->
+<div class="awards-wrap">
+<div class="awards">
+
+  <a style="width:33%;disaply:block;float:right" href="/about/awards/">
+    <img class="awards__icon" src="/assets/images/asa-award.png"/>
+  </a>
+  <a style="width:33%;disaply:block;float:right"  href="/about/awards/">
+    <img class="awards__icon" src="/assets/images/neh-award.png"/>
+  </a>
+  <a style="width:33%;disaply:block;float:right"  href="/about/awards/">
+    <img class="awards__icon" src="/assets/images/eb-award.png"/>
+  </a>
+
+</div>
+</div>
+
+    <footer><div class="foot-box">
   <!-- FIRST COLUMN #################################################### -->
   <div class="box">
-    <h3 style="color:#e0c74f; margin-top:0px;"> Contactez-nous</h3>
-    <p>  
-      
-            <b>Dictionnaire Biographique des Chrétiens d’Afrique</b></br>
-        
-        
-          
-      Center for Global Christianity and Mission</br>
-      745 Commonwealth Avenue</br>
-      Boston, Massachussetts 02215, USA</br>
-      Email: dacb@bu.edu</p>
-      <form action="https://www.facebook.com/DictionaryofAfricanChristianBiography">
-          <input type="submit" class="btn-facebook"/>
-      </form>
-  </div>
-
-  <!-- SECOND COLUMN #################################################### -->
-  <div class="box">
-    <h3 style="color:#e0c74f; margin-top:0px;">Soumettre des Articles</h3>
+    <h3>Soumettre des Articles</h3>
     
     
-      <p style="margin-bottom: 1em;">Si vous souhaitez soumettre un article au DIBICA, vous trouverez des ressources gratuites et des directives <a href="/fr/contribute/submit/">ici</a>.<br></p>
-      <a href="/fr/contribute/submit/" class="btn btn--inverse-long">Soumettre des Articles</a>
+      <p style="margin-bottom: 1em;"><br>Si vous souhaitez soumettre un article au DIBICA, vous trouverez des ressources gratuites et des directives <a href="/fr/connect/submit/">ici</a>.</p>
+      <a href="/fr/connect/submit/" class="btn btn--inverse-long">Soumettre des Articles</a>
       
     
     
   </div>
 
-  <!-- THIRD COLUMN ####################################################-->
-  <div class="box-end">
-    <h3 style="color:#e0c74f; margin-top:0px;">Journal</h3>
+  <!-- SECOND COLUMN ####################################################-->
+  <div class="box__end">
+    <h3>Journal</h3>
     
     
         <p>Inscrivez-vous ici pour recevoir notre journal trimestriel et le bulletin du DIBICA.</p>
-        <div>
+        <div style="margin-top: .5em;">
   <div id="mc_embed_signup_small">
   <form action="//dacb.us3.list-manage.com/subscribe/post?u=485445b23ed18ff0163e2d7a1&amp;id=68e419fc0f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
       <div id="mc_embed_signup_scroll">
@@ -431,17 +521,29 @@
 
   <!-- COPYRIGHT AND COUNTS #################################################### -->
   <div class="page__footer-copyright">
+
+    <div class="box_one"><a href="https://www.facebook.com/DictionaryofAfricanChristianBiography">
+      <img src="/assets/images/fb-full-white.png" class="facebook"/>
+    </a></div>
+
     
 
     
-    Le DIBICA est une ressource numérique du <a href="http://www.bu.edu/cgcm/">Center for Global Christianity and Mission</a> à la Faculté de Théologie de l'Université de Boston. <br>
-    Site reconceptualisé par Alex Mayfield et Michèle Sigg. Dernière Mise à Jour: 09 July 2019. &copy; 2019 Dictionnaire Biographique des Chrétiens d'Afrique.
+    <div class="box_two">
+     Site reconceptualisé par Alex Mayfield et Michèle Sigg. Dernière Mise à Jour: 27 August 2019.<br>&copy; 2019 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+    </div>
     
 
     
 
     
-  </footer></div>
+
+    <div class="box_three"><a href="https://www.bu.edu/cgcm/">
+      <img src="/assets/images/cgcm.png" class="facebook"/>
+    </a></div>
+
+  </div>
+</footer>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                                     SCRIPTS
@@ -452,12 +554,11 @@
         var BASE_URL = '';
       </script>
 
-  <!-- NON LOCAL JQUERY VERSION -->
-      <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-
   <!-- LOCAL JQUERY VERSION -->
-      <!-- <script src="/assets/js/jquery-1.9.1.min.js"></script>
-      <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script> -->
+      <script src="/assets/js/jquery.min.js"></script>
+
+  <!-- Bootstrap -->
+      <script src="/assets/js/bootstrap.min.js"></script>
 
   <!-- Asynchronous Google Analytics snippet -->
       

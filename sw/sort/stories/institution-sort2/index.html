@@ -15,6 +15,7 @@
 
 <!-- For all browsers -->
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
     <meta http-equiv="cleartype" content="on">
 <!-- ANALYTICS -->
 <!-- Global Site Tag (gtag.js) - Google Analytics -->
@@ -37,10 +38,23 @@
                                     MASTHEAD
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-  <div class="masthead-banner">
+  
+<div class="masthead-banner">
 <div class="masthead__inner-wrap">
+
+  <!------ LANGAUGE SWITCHER
+  <div class="lang-switch">
+    <div class="switcher">
+      <div class="home"> </div>
+      <div class="en"><a href="/#">EN</a></div>
+      <div class="fr"><a href="/fr">FR</a></div>
+      <div class="pt"><a href="/pt">PT</a></div>
+      <div class="sw"><a href="/sw">SW</a></div>
+    </div>
+  </div> -->
+
   <div class="logo">
-      <img src="/assets/images/logo-sw.gif">
+      <a href="/sw/#"><img src="/assets/images/logo-new-sw.png"></a>
     </div>
 <nav class="top">
         <label for="drop" class="toggle-m">Menyu</label>
@@ -49,86 +63,105 @@
 <!----------------------------------------------------------------------------------------------------------->
 <!-- HOME --------------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------->
-          <li>
-              <label for="drop-0" class="toggle"><div class="drop">Mwanzo</div></label>
-              <a href="#"><div class="drop">Mwanzo</div></a>
-              <input type="checkbox" id="drop-0"/>
-              <ul class=="top">
-                  <li class="second"><a href="/">English</a></li>
-                  <li class="second"><a href="/fr/">Français</a></li>
-                  <li class="second"><a href="/pt/">Português</a></li>
-                  <li class="second"><a href="/sw/">Kiswahili</a></li>
-              </ul>
-          </li>
+            <li>
+            <label for="drop-2" class="toggle"><div class="drop"><a href="/sw/">Mwanzo</a></div></label>
+            <a href="/sw/"><div class="drop">Mwanzo</div></a>
+            <input type="checkbox" id="drop-2"/>
+            <ul class=="top">
+              <li class="second"><a href="/">English</a></li>
+              <li class="second"><a href="/fr/">Français</a></li>
+              <li class="second"><a href="/pt/">Português</a></li>
+              <li class="second"><a href="/sw/">Kiswahili</a></li>
+            </ul>
+            </li>
+
+<!----------------------------------------------------------------------------------------------------------->
+<!-- ABOUT -------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------->
+            <li>
+            <label for="drop-2" class="toggle"><div class="drop"><a href="/sw/about/">Kuhusu</a></div></label>
+            <a href="/sw/about/"><div class="drop">Kuhusu</div></a>
+            <input type="checkbox" id="drop-2"/>
+            <ul class=="top">
+              <li class="second"><a href="/sw/about/vision/">Maono</a></li>
+              <li class="second"><a href="/sw/about/advisors/">Washauri</a></li>
+              <li class="second"><a href="/about/editorial-committee/">Kamati ya Utendaji</a></li>
+              <li class="second"><a href="/about/donor-list/">Wafadhili Wetu</a></li>
+              <li class="second"><a href="/sw/about/partners/">Washirika</a></li>
+              <li class="second"><a href="/about/usage/">Matumizi ya Tovuti</a></li>
+            </ul>
+            </li>
+
 <!----------------------------------------------------------------------------------------------------------->
 <!-- STORIES ------------------------------------------------------------------------------------------------>
 <!----------------------------------------------------------------------------------------------------------->
             <li>
-                <label for="drop-1" class="toggle"><div class="drop">Hadithi</div></label>
-                <a href="#"><div class="drop">Hadithi</div></a>
-                <input type="checkbox" id="drop-1"/>
-                <ul class=="top">
-                    <li class="second"><a href="/sw/sort/stories/">Kila Hadithi</a></li>
-                    <li class="second"><a href="/sw/sort/stories/latest-sort/">Hadithi Mpya Zaidi</a></li>
-                    <li class="second"><a href="/sw/sort/stories/regional-histories/">Hadithi za Mkoa</a></li>
-                </ul>
-            </li>
-<!----------------------------------------------------------------------------------------------------------->
-<!-- ABOUT -------------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------------->
-            <!-- <li>
-            <label for="drop-2" class="toggle"><div class="drop">Kuhusu</div></label>
-            <a href="#"><div class="drop">Kuhusu</div></a>
-            <input type="checkbox" id="drop-2"/>
+            <label for="drop-0" class="toggle"><div class="drop"><a href="/sw/sort/stories/">Hadithi</a></div></label>
+            <a href="/sw/sort/stories/"><div class="drop">Hadithi</div></a>
+            <input type="checkbox" id="drop-0"/>
             <ul class=="top">
-              <li class="second"><a href="/sw/about/what-is-dacb/">KAWAKIA ni Nini?</a></li>
-              <li class="second"><a href="/sw/about/beginnings/">Mwanzo</a></li>
-              <li class="second"><a href="/sw/about/vision/">Maono</a></li>
-              <li class="second"><a href="/sw/about/advisors/">Washauri</a></li>
+              <li class="second"><a href="/sw/sort/stories/latest-sort/">Hadithi Mpya Zaidi</a></li>
+              <li class="second"><a href="/sw/sort/stories/collected-memories/">Zilizokusanywa Kumbukumbu</a></li>
+              <li class="second"><a href="/sw/sort/stories/regional-histories/">Hadithi za Mkoa</a></li>
+              <li class="second"><a href="/sw/sort/stories/country-sort/">Kisasa Afrika</a></li>
+              <li class="second"><a href="/sw/sort/stories/ancient-church-index/">Afrika ya Zamani</a></li>
             </ul>
-            </li> -->
+            </li>
+
+<!----------------------------------------------------------------------------------------------------------->
+<!-- PROJECTS ------------------------------------------------------------------------------------------------>
+<!----------------------------------------------------------------------------------------------------------->
+            <li>
+              <label for="drop-1" class="toggle"><div class="drop"><a href="/sw/projects/">Miradi</a></div></label>
+              <a href="/sw/projects/"><div class="drop">Miradi</div></a>
+              <input type="checkbox" id="drop-1"/>
+            <ul class=="top">
+              <li class="second"><a href="/projects/women/">Wanawake</a></li>
+              <li class="second"><a href="/projects/music-art/">Wataalamu na Wasanii</a></li>
+              <li class="second"><a href="/projects/diaspora">Diaspora</a></li>
+
+            </ul>
+            </li>
 <!----------------------------------------------------------------------------------------------------------->
 <!-- RESOURCES  --------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------->
             <li>
-            <label for="drop-3" class="toggle"><div class="drop">Vitendea Kazi</div></label>
-            <a href="#"><div class="drop">Vitendea Kazi</div></a>
+            <label for="drop-3" class="toggle"><div class="drop"><a href="/sw/resources">Vitendea Kazi</a></div></label>
+            <a href="/sw/resources"><div class="drop">Vitendea Kazi</div></a>
             <input type="checkbox" id="drop-3"/>
             <ul class=="top">
-              <li class="second"><a href="/sw/resources/writers-educators/">Kwa Waandishi na Waelimishaji</a></li>
-              <li class="second"><a href="/sw/resources/bibliographies/">Bibliografia</a></li>
-              <li class="second"><a href="/sw/resources/potential-subjects/">Watu Uwezo</a></li>
+              <li class="second"><a href="/sw/resources/introductory/">Rasilimali za Utangulizi</a></li>
+              <li class="second"><a href="/sw/resources/educational/">Rasilimali za Elimu</a></li>
+              <li class="second"><a href="/sw/resources/bibliographic/">Rasilimali za Bibliographic</a></li>
+              <li class="second"><a href="/sw/resources/oral-history/">Historia Rasilimali Rasilimali</a></li>
             </ul>
             </li>
 <!----------------------------------------------------------------------------------------------------------->
-<!-- NEWS --------------------------------------------------------------------------------------------------->
+<!-- JOURNAL --------------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------->
             <li>
-            <label for="drop-6" class="toggle"><div class="drop">Habari</div></label>
-            <a href="#"><div class="drop">Habari</div></a>
-            <input type="checkbox" id="drop-6"/>
-            <ul class=="top">
-              <li class="second"><a href="/sw/sort/stories/latest-sort/">Hadithi Mpya Zaidi</a></li>
-              <li class="second"><a href="/sw/news/newsletter/">Jarida</a></li>
-            </ul>
+            <label for="drop-6" class="toggle"><div class="drop"><a href="/journal/">Journal</a></div></label>
+            <a href="/journal/"><div class="drop">Journal</div></a>
             </li>
+
 <!----------------------------------------------------------------------------------------------------------->
-<!-- CONTRIBUTE --------------------------------------------------------------------------------------------->
+<!-- CONNECT --------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------->
             <li>
-            <label for="drop-7" class="toggle"><div class="drop">Mawasiliano</div></label>
-            <a href="#"><div class="drop">Mawasiliano</div></a>
+            <label for="drop-7" class="toggle"><div class="drop"><a href="/sw/connect/">Unganisha</a></div></label>
+            <a href="/sw/connect/"><div class="drop">Unganisha</div></a>
             <input type="checkbox" id="drop-7"/>
             <ul class=="top">
-              <li class="second"><a href="/sw/contribute/contact/">Wasiliana Nasi</a></li>
-              <li class="second"><a href="/sw/contribute/partner/">Kushirikiana</a></li>
-              <li class="second"><a href="/sw/contribute/submit/">Wasilisha Hadithi</a></li>
+              <li class="second"><a href="/connect/news/">Habari</a></li>
+              <li class="second"><a href="/sw/connect/submit/">Wasilisha Hadithi</a></li>
+              <li class="second"><a href="/sw/connect/collaborate/">Kushirikiana</a></li>
+              <li class="second"><a href="/sw/connect/contact/">Wasiliana Nasi</a></li>
             </ul>
             </li>
 <!----------------------------------------------------------------------------------------------------------->
 <!-- SEARCH ------------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------->
-            <label class="toggle">
+            <label class="toggle" style="margin-left: .5vw !important; margin-right: .5vw !important;">
               <a class="search-image" href="/search-sw.html" style="padding: 0px !important"></a></label>
                 <li class="menu">
                   <a class="search-image" href="/search-sw.html" style="padding: 0px !important"></a>
@@ -145,6 +178,7 @@
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                                     CONTENT
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  
 
   <div id="main" role="main"><a name="#top"></a>
   <!-- SIDEBAR -->
@@ -277,6 +311,14 @@
                         
 
                         <li><a href="/sw/sort/stories/catechist-index/" class="">Makatekististi</a></li>
+                      
+                        
+                        
+
+                        
+                        
+
+                        <li><a href="/sw/sort/stories/classic-index/" class="">Classic</a></li>
                       
                         
                         
@@ -437,18 +479,23 @@
   <div class="archive">
 
     
+
+    
+
+
+
       <h1 class="page__title">Panga na Taasisi: G-M</h1>
     
     <table class="sort"><tbody>
   <tr>
     <td><a href="/sw/sort/stories/institution-sort/">A-F</a></td>
-    <td><a href="#G" style="color:#e0c74f;">G</a></td>
-    <td><a href="#H" style="color:#e0c74f;">H</a></td>
-    <td><a href="#I" style="color:#e0c74f;">I</a></td>
-    <td><a href="#J" style="color:#e0c74f;">J</a></td>
-    <td><a href="#K" style="color:#e0c74f;">K</a></td>
-    <td><a href="#L" style="color:#e0c74f;">L</a></td>
-    <td><a href="#M" style="color:#e0c74f;">M</a></td>
+    <td><a href="#G" style="color:#ecc068;">G</a></td>
+    <td><a href="#H" style="color:#ecc068;">H</a></td>
+    <td><a href="#I" style="color:#ecc068;">I</a></td>
+    <td><a href="#J" style="color:#ecc068;">J</a></td>
+    <td><a href="#K" style="color:#ecc068;">K</a></td>
+    <td><a href="#L" style="color:#ecc068;">L</a></td>
+    <td><a href="#M" style="color:#ecc068;">M</a></td>
     <td><a href="/sw/sort/stories/institution-sort3/">N-S</a></td>
     <td><a href="/sw/sort/stories/institution-sort4/">T-Z</a></td>
   </tr>
@@ -457,7 +504,7 @@
 
 
 
-<a id="G"></a>
+<h3><a id="G">G</a></h3>
 
     
 
@@ -770,81 +817,7 @@
     
 
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
     
-
-    
-    
-    
-  <a href="#" class="btn btn--inverse">Juu ya Ukurasa</a>
-
-
-    <a id="good-news-theological-college-and-seminary"></a>
-      <h2>Good News Theological College and Seminary</h2>
-      <div>
-        <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-          <table><thead>
-            <th width=20%>Author</th>
-            <th width=25%>Name</th>
-            <th width=20%>Affiliation</th>
-            <th width=20%>Country</th>
-            <th width=15%>Languages</th>
-            </thead></table>
-            <table width=100%><tbody><tr>
-                <td width=20%> Oduro, Thomas </td>
-                <td width=25%><a href="/stories/ghana/yeboa-korie-cy/">Yeboa-Korie, Charles Yaw</a></td>
-                <td width=20%>
-                  Wapentekoste
-                  
-                  
-                </td>
-                <td width=20%>
-                  Ghana
-                  
-                  
-                </td>
-                <td width=15%>
-                  <a href="/stories/ghana/yeboa-korie-cy/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                      </td>
-            </tr></tbody></table>
-      </article>
-      </div>
-    
-
-
-    
-    
-    
-  <a href="#" class="btn btn--inverse">Juu ya Ukurasa</a>
-
-
     <a id="good-news-theological-college-and-seminary-ghana"></a>
       <h2>Good News Theological College and Seminary (Ghana)</h2>
       <div>
@@ -857,20 +830,20 @@
             <th width=15%>Languages</th>
             </thead></table>
             <table width=100%><tbody><tr>
-                <td width=20%> Botchway, Frank </td>
-                <td width=25%><a href="/stories/ghana/dankwa-samuel/">Dankwa, Samuel</a></td>
+                <td width=20%> Asiegbu, Austin & Ambrose Onwudinjo </td>
+                <td width=25%><a href="/stories/nigeria/okoh-pauline/">Okoh, Pauline Agwe</a></td>
                 <td width=20%>
-                  Kanisa la Ossa-Madih
+                  Kanisa Takatifu la Kristo Kimataifa
                   
                   
                 </td>
                 <td width=20%>
-                  Ghana
+                  Nigeria
                   
                   
                 </td>
                 <td width=15%>
-                  <a href="/stories/ghana/dankwa-samuel/" rel="permalink">EN</a>
+                  <a href="/stories/nigeria/okoh-pauline/" rel="permalink">EN</a>
         
         
         
@@ -897,20 +870,20 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Asiegbu, Austin & Ambrose Onwudinjo </td>
-            <td width=25%><a href="/stories/nigeria/okoh-pauline/">Okoh, Pauline Agwe</a></td>
+            <td width=20%> Borkumah, Sylvester </td>
+            <td width=25%><a href="/stories/ghana/borkumah-timothy/">Borkumah, Timothy Kodzo</a></td>
             <td width=20%>
-              Kanisa Takatifu la Kristo Kimataifa
+              Kanisa la Kuponya Amani
               
               
             </td>
             <td width=20%>
-              Nigeria
+              Ghana
               
               
             </td>
             <td width=15%>
-              <a href="/stories/nigeria/okoh-pauline/" rel="permalink">EN</a>
+              <a href="/stories/ghana/borkumah-timothy/" rel="permalink">EN</a>
         
         
         
@@ -938,20 +911,20 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Oduro, Thomas </td>
-            <td width=25%><a href="/stories/nigeria/okoh-marius/">Okoh, Marius Anyetei</a></td>
+            <td width=20%> Botchway, Frank </td>
+            <td width=25%><a href="/stories/ghana/dankwa-samuel/">Dankwa, Samuel</a></td>
             <td width=20%>
-              Kanisa Takatifu la Kristo Kimataifa
+              Kanisa la Ossa-Madih
               
               
             </td>
             <td width=20%>
-              Nigeria
+              Ghana
               
               
             </td>
             <td width=15%>
-              <a href="/stories/nigeria/okoh-marius/" rel="permalink">EN</a>
+              <a href="/stories/ghana/dankwa-samuel/" rel="permalink">EN</a>
         
         
         
@@ -1021,6 +994,47 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Oduro, Thomas </td>
+            <td width=25%><a href="/stories/ghana/krow-solomon/">Krow, Solomon Owusu</a></td>
+            <td width=20%>
+              Kanisa la Bwana (Aladura)
+              
+              
+            </td>
+            <td width=20%>
+              Ghana
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/ghana/krow-solomon/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="/pt/stories/ghana/krow-solomon/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Oduro, Thomas </td>
             <td width=25%><a href="/stories/nigeria/okoh-agnes/">Okoh, Agnes</a></td>
             <td width=20%>
               Kanisa Takatifu la Kristo Kimataifa
@@ -1044,47 +1058,6 @@
         
         
         <a href="/pt/stories/nigeria/okoh-agnes/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Borkumah, Sylvester </td>
-            <td width=25%><a href="/stories/ghana/borkumah-timothy/">Borkumah, Timothy Kodzo</a></td>
-            <td width=20%>
-              Kanisa la Kuponya Amani
-              
-              
-            </td>
-            <td width=20%>
-              Ghana
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/ghana/borkumah-timothy/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
         
         
@@ -1144,9 +1117,9 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Oduro, Thomas </td>
-            <td width=25%><a href="/stories/ghana/krow-solomon/">Krow, Solomon Owusu</a></td>
+            <td width=25%><a href="/stories/ghana/yeboa-korie-cy/">Yeboa-Korie, Charles Yaw</a></td>
             <td width=20%>
-              Kanisa la Bwana (Aladura)
+              Wapentekoste
               
               
             </td>
@@ -1156,7 +1129,7 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/ghana/krow-solomon/" rel="permalink">EN</a>
+              <a href="/stories/ghana/yeboa-korie-cy/" rel="permalink">EN</a>
         
         
         
@@ -1166,7 +1139,48 @@
         
         
         
-        <a href="/pt/stories/ghana/krow-solomon/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Oduro, Thomas </td>
+            <td width=25%><a href="/stories/nigeria/okoh-marius/">Okoh, Marius Anyetei</a></td>
+            <td width=20%>
+              Kanisa Takatifu la Kristo Kimataifa
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/okoh-marius/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -1762,360 +1776,344 @@
     
 
 
-<a id="H"></a>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
   <a href="#" class="btn btn--inverse">Juu ya Ukurasa</a>
 
 
+<h3><a id="H">H</a></h3>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
     <a id="haile-selassie-i-university"></a>
       <h2>Haile Selassie I University</h2>
       <div>
@@ -2703,362 +2701,346 @@
     
 
 
-<a id="I"></a>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
   <a href="#" class="btn btn--inverse">Juu ya Ukurasa</a>
 
 
+<h3><a id="I">I</a></h3>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
     <a id="indiana-university"></a>
       <h2>Indiana University</h2>
       <div>
@@ -3109,10 +3091,6 @@
 
     
     
-    
-  <a href="#" class="btn btn--inverse">Juu ya Ukurasa</a>
-
-
     <a id="institut-supérieur-théologique-anglican-bunia"></a>
       <h2>Institut Supérieur Théologique Anglican (Bunia)</h2>
       <div>
@@ -3126,9 +3104,9 @@
             </thead></table>
             <table width=100%><tbody><tr>
                 <td width=20%> Way, Yossa </td>
-                <td width=25%><a href="/fr/stories/democratic-republic-of-congo/yila-simosona/">Simosona, Yila</a></td>
+                <td width=25%><a href="/fr/stories/democratic-republic-of-congo/kimbangu2-simon/">Kimbangu, Simon (C)</a></td>
                 <td width=20%>
-                  Kanisa la Kristo huko Congo (CECA)
+                  Kanisa la Yesu Kristo duniani Kupitia Mtume Simon Kimbangu
                   
                   
                 </td>
@@ -3143,7 +3121,7 @@
         
         
         
-        <a href="/fr/stories/democratic-republic-of-congo/yila-simosona/" rel="permalink">FR</a>
+        <a href="/fr/stories/democratic-republic-of-congo/kimbangu2-simon/" rel="permalink">FR</a>
         
         
         
@@ -3165,10 +3143,10 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Unegowun Unyona, Théophile </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/uchanda-unen-paul/">Uchanda Unen, Paul</a></td>
+            <td width=20%> Bayoma, Belombe </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/eguma-regedri/">Regedri, Eguma</a></td>
             <td width=20%>
-              Kanisa la Inland la Afrika
+              Ushirika wa Anglican (Kanisa la Kongo)
               
               
             </td>
@@ -3183,7 +3161,7 @@
         
         
         
-        <a href="/fr/stories/democratic-republic-of-congo/uchanda-unen-paul/" rel="permalink">FR</a>
+        <a href="/fr/stories/democratic-republic-of-congo/eguma-regedri/" rel="permalink">FR</a>
         
         
         
@@ -3247,6 +3225,170 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
+            <td width=20%> Siribha, Resa </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/drumo-tete/">Tete, Drumo</a></td>
+            <td width=20%>
+              Ushirika wa Anglican (Kanisa la Kongo)
+              
+              
+            </td>
+            <td width=20%>
+              Jamhuri Ya Kidemokrasia Ya Kongo
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/drumo-tete/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Innocent, Birizene Mutchindi </td>
+            <td width=25%><a href="/stories/democratic-republic-of-congo/kataliko-emman/">Kataliko, Emmanuel</a></td>
+            <td width=20%>
+              Kanisa Katoliki
+              
+              
+            </td>
+            <td width=20%>
+              Jamhuri Ya Kidemokrasia Ya Kongo
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/democratic-republic-of-congo/kataliko-emman/" rel="permalink">EN</a>
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/kataliko-emman/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Unegowun Unyona, Théophile </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/uchanda-unen-paul/">Uchanda Unen, Paul</a></td>
+            <td width=20%>
+              Kanisa la Inland la Afrika
+              
+              
+            </td>
+            <td width=20%>
+              Jamhuri Ya Kidemokrasia Ya Kongo
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/uchanda-unen-paul/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Way, Yossa </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/musubaho/">Musubaho, Ndagalirwa Syachukwako wa Tsongo</a></td>
+            <td width=20%>
+              Ushirika wa Anglican (Kanisa la Kongo)
+              
+              
+            </td>
+            <td width=20%>
+              Jamhuri Ya Kidemokrasia Ya Kongo
+              
+              
+            </td>
+            <td width=15%>
+              
+        <a href="/fr/stories/democratic-republic-of-congo/musubaho/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
             <td width=20%> Akumu, Georgine </td>
             <td width=25%><a href="/fr/stories/democratic-republic-of-congo/yerusi-dive/">Dive Zika, Yerusi</a></td>
             <td width=20%>
@@ -3288,51 +3430,10 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Kunde, Atido </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/atido-kunde/">Atido Kunde-Dong, Tito William</a></td>
-            <td width=20%>
-              Kanisa la Kristo huko Congo (CECA)
-              
-              
-            </td>
-            <td width=20%>
-              Jamhuri Ya Kidemokrasia Ya Kongo
-              
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/atido-kunde/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
             <td width=20%> Way, Yossa </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/malula1-joseph/">Malula, Joseph (A)</a></td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/melena-mahirani/">Mustum, Melena Mahirani</a></td>
             <td width=20%>
-              Kanisa Katoliki
+              Ushirika wa Anglican (Kanisa la Kongo)
               
               
             </td>
@@ -3347,130 +3448,7 @@
         
         
         
-        <a href="/fr/stories/democratic-republic-of-congo/malula1-joseph/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Obhitre, Enzama </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/odhama-yoko/">Odhama, Yoko Matayo</a></td>
-            <td width=20%>
-              Kanisa la Kristo huko Congo (CECA)
-              
-              
-            </td>
-            <td width=20%>
-              Jamhuri Ya Kidemokrasia Ya Kongo
-              
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/odhama-yoko/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Way, Yossa </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/yoane-akudri/">Yoane, Akudri Dada</a></td>
-            <td width=20%>
-              Kanisa la Kristo huko Congo (CECA)
-              
-              
-            </td>
-            <td width=20%>
-              Jamhuri Ya Kidemokrasia Ya Kongo
-              
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/yoane-akudri/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Way, Yossa </td>
-            <td width=25%><a href="/stories/democratic-republic-of-congo/anuarite-mc/">Anuarite Nengapeta</a></td>
-            <td width=20%>
-              Kanisa Katoliki
-              
-              
-            </td>
-            <td width=20%>
-              Jamhuri Ya Kidemokrasia Ya Kongo
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/democratic-republic-of-congo/anuarite-mc/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/anuarite-mc/" rel="permalink">FR</a>
+        <a href="/fr/stories/democratic-republic-of-congo/melena-mahirani/" rel="permalink">FR</a>
         
         
         
@@ -3535,6 +3513,47 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Way, Yossa </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/yila-simosona/">Simosona, Yila</a></td>
+            <td width=20%>
+              Kanisa la Kristo huko Congo (CECA)
+              
+              
+            </td>
+            <td width=20%>
+              Jamhuri Ya Kidemokrasia Ya Kongo
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/yila-simosona/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Way, Yossa </td>
             <td width=25%><a href="/fr/stories/democratic-republic-of-congo/jokebed-yira/">Yira, Jokébed</a></td>
             <td width=20%>
               Kanisa la Kristo huko Congo (CECA)
@@ -3575,49 +3594,8 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Innocent, Birizene Mutchindi </td>
-            <td width=25%><a href="/stories/democratic-republic-of-congo/kataliko-emman/">Kataliko, Emmanuel</a></td>
-            <td width=20%>
-              Kanisa Katoliki
-              
-              
-            </td>
-            <td width=20%>
-              Jamhuri Ya Kidemokrasia Ya Kongo
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/democratic-republic-of-congo/kataliko-emman/" rel="permalink">EN</a>
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/kataliko-emman/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
             <td width=20%> Way, Yossa </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/bezaleri/">Ndahura, Bezaleri</a></td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/festo-byakisaka/">Bomera, Festo Byakisaka</a></td>
             <td width=20%>
               Ushirika wa Anglican (Kanisa la Kongo)
               
@@ -3634,7 +3612,7 @@
         
         
         
-        <a href="/fr/stories/democratic-republic-of-congo/bezaleri/" rel="permalink">FR</a>
+        <a href="/fr/stories/democratic-republic-of-congo/festo-byakisaka/" rel="permalink">FR</a>
         
         
         
@@ -3658,9 +3636,50 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Way, Yossa </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/kimbangu2-simon/">Kimbangu, Simon (C)</a></td>
+            <td width=25%><a href="/pt/stories/democratic-republic-of-congo/kivebulaya-apolo/">Kivebulaya, Apolo (A)</a></td>
             <td width=20%>
-              Kanisa la Yesu Kristo duniani Kupitia Mtume Simon Kimbangu
+              Ushirika wa Anglican (Kanisa la Kongo)
+              
+              
+            </td>
+            <td width=20%>
+              Uganda
+              Jamhuri Ya Kidemokrasia Ya Kongo
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="/pt/stories/democratic-republic-of-congo/kivebulaya-apolo/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Way, Yossa </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/malula1-joseph/">Malula, Joseph (A)</a></td>
+            <td width=20%>
+              Kanisa Katoliki
               
               
             </td>
@@ -3675,7 +3694,7 @@
         
         
         
-        <a href="/fr/stories/democratic-republic-of-congo/kimbangu2-simon/" rel="permalink">FR</a>
+        <a href="/fr/stories/democratic-republic-of-congo/malula1-joseph/" rel="permalink">FR</a>
         
         
         
@@ -3698,8 +3717,49 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Bonga, Philippe Mukunda </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/etsea-raphael/">Etsea Kila, Raphaël Ang&#39;apoza</a></td>
+            <td width=20%> Vandiri, Samvura </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/thomas-ndahura/">Ndahura Bangasa, Thomas</a></td>
+            <td width=20%>
+              Ushirika wa Anglican (Kanisa la Kongo)
+              
+              
+            </td>
+            <td width=20%>
+              Jamhuri Ya Kidemokrasia Ya Kongo
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/thomas-ndahura/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Kunde, Atido </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/atido-kunde/">Atido Kunde-Dong, Tito William</a></td>
             <td width=20%>
               Kanisa la Kristo huko Congo (CECA)
               
@@ -3716,7 +3776,7 @@
         
         
         
-        <a href="/fr/stories/democratic-republic-of-congo/etsea-raphael/" rel="permalink">FR</a>
+        <a href="/fr/stories/democratic-republic-of-congo/atido-kunde/" rel="permalink">FR</a>
         
         
         
@@ -3740,9 +3800,9 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Way, Yossa </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/kyuma-zakayo/">Zakayo, Kyuma</a></td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/yoane-akudri/">Yoane, Akudri Dada</a></td>
             <td width=20%>
-              Ushirika wa Anglican (Kanisa la Kongo)
+              Kanisa la Kristo huko Congo (CECA)
               
               
             </td>
@@ -3757,7 +3817,7 @@
         
         
         
-        <a href="/fr/stories/democratic-republic-of-congo/kyuma-zakayo/" rel="permalink">FR</a>
+        <a href="/fr/stories/democratic-republic-of-congo/yoane-akudri/" rel="permalink">FR</a>
         
         
         
@@ -3780,10 +3840,10 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Cyrille, Kambale </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/sila-bhileti/">Bhileti, Sila</a></td>
+            <td width=20%> Obhitre, Enzama </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/odhama-yoko/">Odhama, Yoko Matayo</a></td>
             <td width=20%>
-              Ushirika wa Anglican (Kanisa la Kongo)
+              Kanisa la Kristo huko Congo (CECA)
               
               
             </td>
@@ -3798,89 +3858,7 @@
         
         
         
-        <a href="/fr/stories/democratic-republic-of-congo/sila-bhileti/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Taga, Zaba </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/agotre-emmanuel/">Agotre, Emmanuel</a></td>
-            <td width=20%>
-              Ushirika wa Anglican (Kanisa la Kongo)
-              
-              
-            </td>
-            <td width=20%>
-              Jamhuri Ya Kidemokrasia Ya Kongo
-              
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/agotre-emmanuel/" rel="permalink">FR</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Way, Yossa </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/melena-mahirani/">Mustum, Melena Mahirani</a></td>
-            <td width=20%>
-              Ushirika wa Anglican (Kanisa la Kongo)
-              
-              
-            </td>
-            <td width=20%>
-              Jamhuri Ya Kidemokrasia Ya Kongo
-              
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        <a href="/fr/stories/democratic-republic-of-congo/melena-mahirani/" rel="permalink">FR</a>
+        <a href="/fr/stories/democratic-republic-of-congo/odhama-yoko/" rel="permalink">FR</a>
         
         
         
@@ -3945,48 +3923,7 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Way, Yossa </td>
-            <td width=25%><a href="/pt/stories/democratic-republic-of-congo/kivebulaya-apolo/">Kivebulaya, Apolo (A)</a></td>
-            <td width=20%>
-              Ushirika wa Anglican (Kanisa la Kongo)
-              
-              
-            </td>
-            <td width=20%>
-              Uganda
-              Jamhuri Ya Kidemokrasia Ya Kongo
-              
-            </td>
-            <td width=15%>
-              
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <a href="/pt/stories/democratic-republic-of-congo/kivebulaya-apolo/" rel="permalink">PT</a>
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Bayoma, Belombe </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/eguma-regedri/">Regedri, Eguma</a></td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/kyuma-zakayo/">Zakayo, Kyuma</a></td>
             <td width=20%>
               Ushirika wa Anglican (Kanisa la Kongo)
               
@@ -4003,7 +3940,7 @@
         
         
         
-        <a href="/fr/stories/democratic-republic-of-congo/eguma-regedri/" rel="permalink">FR</a>
+        <a href="/fr/stories/democratic-republic-of-congo/kyuma-zakayo/" rel="permalink">FR</a>
         
         
         
@@ -4026,10 +3963,10 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Way, Yossa </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/festo-byakisaka/">Bomera, Festo Byakisaka</a></td>
+            <td width=20%> Bonga, Philippe Mukunda </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/etsea-raphael/">Etsea Kila, Raphaël Ang&#39;apoza</a></td>
             <td width=20%>
-              Ushirika wa Anglican (Kanisa la Kongo)
+              Kanisa la Kristo huko Congo (CECA)
               
               
             </td>
@@ -4044,7 +3981,7 @@
         
         
         
-        <a href="/fr/stories/democratic-republic-of-congo/festo-byakisaka/" rel="permalink">FR</a>
+        <a href="/fr/stories/democratic-republic-of-congo/etsea-raphael/" rel="permalink">FR</a>
         
         
         
@@ -4067,8 +4004,8 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Vandiri, Samvura </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/thomas-ndahura/">Ndahura Bangasa, Thomas</a></td>
+            <td width=20%> Cyrille, Kambale </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/sila-bhileti/">Bhileti, Sila</a></td>
             <td width=20%>
               Ushirika wa Anglican (Kanisa la Kongo)
               
@@ -4085,7 +4022,7 @@
         
         
         
-        <a href="/fr/stories/democratic-republic-of-congo/thomas-ndahura/" rel="permalink">FR</a>
+        <a href="/fr/stories/democratic-republic-of-congo/sila-bhileti/" rel="permalink">FR</a>
         
         
         
@@ -4109,9 +4046,9 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Way, Yossa </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/musubaho/">Musubaho, Ndagalirwa Syachukwako wa Tsongo</a></td>
+            <td width=25%><a href="/stories/democratic-republic-of-congo/anuarite-mc/">Anuarite Nengapeta</a></td>
             <td width=20%>
-              Ushirika wa Anglican (Kanisa la Kongo)
+              Kanisa Katoliki
               
               
             </td>
@@ -4121,12 +4058,12 @@
               
             </td>
             <td width=15%>
-              
-        <a href="/fr/stories/democratic-republic-of-congo/musubaho/" rel="permalink">FR</a>
+              <a href="/stories/democratic-republic-of-congo/anuarite-mc/" rel="permalink">EN</a>
         
         
         
         
+        <a href="/fr/stories/democratic-republic-of-congo/anuarite-mc/" rel="permalink">FR</a>
         
         
         
@@ -4149,8 +4086,8 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Siribha, Resa </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/drumo-tete/">Tete, Drumo</a></td>
+            <td width=20%> Way, Yossa </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/bezaleri/">Ndahura, Bezaleri</a></td>
             <td width=20%>
               Ushirika wa Anglican (Kanisa la Kongo)
               
@@ -4167,7 +4104,48 @@
         
         
         
-        <a href="/fr/stories/democratic-republic-of-congo/drumo-tete/" rel="permalink">FR</a>
+        <a href="/fr/stories/democratic-republic-of-congo/bezaleri/" rel="permalink">FR</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Taga, Zaba </td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/agotre-emmanuel/">Agotre, Emmanuel</a></td>
+            <td width=20%>
+              Ushirika wa Anglican (Kanisa la Kongo)
+              
+              
+            </td>
+            <td width=20%>
+              Jamhuri Ya Kidemokrasia Ya Kongo
+              
+              
+            </td>
+            <td width=15%>
+              
+        
+        
+        
+        
+        <a href="/fr/stories/democratic-republic-of-congo/agotre-emmanuel/" rel="permalink">FR</a>
         
         
         
@@ -4188,10 +4166,6 @@
 
     
     
-    
-  <a href="#" class="btn btn--inverse">Juu ya Ukurasa</a>
-
-
     <a id="institut-supérieur-de-théologie-evangélique-et-de-développement-de-yakusu"></a>
       <h2>Institut Supérieur de Théologie Evangélique et de Développement de Yakusu</h2>
       <div>
@@ -4205,7 +4179,7 @@
             </thead></table>
             <table width=100%><tbody><tr>
                 <td width=20%> Lotika, Dieudonné </td>
-                <td width=25%><a href="/fr/stories/democratic-republic-of-congo/mokili-bolembabolema/">Mokili Bolemba Bolema, François</a></td>
+                <td width=25%><a href="/fr/stories/democratic-republic-of-congo/longomba-kemetu/">Longomba Kemetu, Nestor</a></td>
                 <td width=20%>
                   Kanisa la Kristo huko Kongo (CBFC)
                   
@@ -4222,7 +4196,7 @@
         
         
         
-        <a href="/fr/stories/democratic-republic-of-congo/mokili-bolembabolema/" rel="permalink">FR</a>
+        <a href="/fr/stories/democratic-republic-of-congo/longomba-kemetu/" rel="permalink">FR</a>
         
         
         
@@ -4245,7 +4219,7 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Lotika, Dieudonné </td>
-            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/longomba-kemetu/">Longomba Kemetu, Nestor</a></td>
+            <td width=25%><a href="/fr/stories/democratic-republic-of-congo/mokili-bolembabolema/">Mokili Bolemba Bolema, François</a></td>
             <td width=20%>
               Kanisa la Kristo huko Kongo (CBFC)
               
@@ -4262,7 +4236,7 @@
         
         
         
-        <a href="/fr/stories/democratic-republic-of-congo/longomba-kemetu/" rel="permalink">FR</a>
+        <a href="/fr/stories/democratic-republic-of-congo/mokili-bolembabolema/" rel="permalink">FR</a>
         
         
         
@@ -4762,1309 +4736,1281 @@
     
 
 
-<a id="J"></a>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-
-<a id="K"></a>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
   <a href="#" class="btn btn--inverse">Juu ya Ukurasa</a>
 
 
+<h3><a id="J">J</a></h3>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+  <a href="#" class="btn btn--inverse">Juu ya Ukurasa</a>
+
+
+<h3><a id="K">K</a></h3>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
     <a id="kenyatta-university"></a>
       <h2>Kenyatta University</h2>
       <div>
@@ -6077,20 +6023,20 @@
             <th width=15%>Languages</th>
             </thead></table>
             <table width=100%><tbody><tr>
-                <td width=20%> Omulokoli, Watson A. O. </td>
-                <td width=25%><a href="/stories/kenya/mulaha-gilbert/">Mulaha, Gilbert</a></td>
+                <td width=20%> Omolukoli, Watson </td>
+                <td width=25%><a href="/stories/kenya/chadwick-jane/">Chadwick, Jane Elizabeth</a></td>
                 <td width=20%>
-                  Ujumbe wa Utakatifu wa Maandiko
+                  Ushirika wa Anglican
                   
                   
                 </td>
                 <td width=20%>
                   Kenya
-                  
+                  Uganda
                   
                 </td>
                 <td width=15%>
-                  <a href="/stories/kenya/mulaha-gilbert/" rel="permalink">EN</a>
+                  <a href="/stories/kenya/chadwick-jane/" rel="permalink">EN</a>
         
         
         
@@ -6117,20 +6063,61 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Omolukoli, Watson </td>
-            <td width=25%><a href="/stories/kenya/chadwick-jane/">Chadwick, Jane Elizabeth</a></td>
+            <td width=20%> Omulokoli, Watson </td>
+            <td width=25%><a href="/stories/kenya/otieno-erastus/">Otieno, Erastus</a></td>
             <td width=20%>
-              Ushirika wa Anglican
+              Wapentekoste
               
               
             </td>
             <td width=20%>
               Kenya
-              Uganda
+              
               
             </td>
             <td width=15%>
-              <a href="/stories/kenya/chadwick-jane/" rel="permalink">EN</a>
+              <a href="/stories/kenya/otieno-erastus/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Omulokoli, Watson A. O. </td>
+            <td width=25%><a href="/stories/kenya/mulaha-gilbert/">Mulaha, Gilbert</a></td>
+            <td width=20%>
+              Ujumbe wa Utakatifu wa Maandiko
+              
+              
+            </td>
+            <td width=20%>
+              Kenya
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/kenya/mulaha-gilbert/" rel="permalink">EN</a>
         
         
         
@@ -6159,50 +6146,9 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Omulokoli, Watson </td>
-            <td width=25%><a href="/stories/kenya/chadwick-walter/">Chadwick, Walter</a></td>
+            <td width=25%><a href="/stories/kenya/mwatha-samuel/">Mwatha, Samuel Kang&#39;ethe</a></td>
             <td width=20%>
-              Ushirika wa Anglican
-              
-              
-            </td>
-            <td width=20%>
-              Kenya
-              Uganda
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/kenya/chadwick-walter/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Omulokoli, Watson </td>
-            <td width=25%><a href="/stories/kenya/awori-jeremiah/">Awori, Jeremiah Musungu</a></td>
-            <td width=20%>
-              Ushirika wa Anglican
+              Wapentekoste
               
               
             </td>
@@ -6212,48 +6158,7 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/kenya/awori-jeremiah/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Okonjo Adongo, Wilson </td>
-            <td width=25%><a href="/stories/kenya/owiti-silas/">Owiti, Silas Javan Aggrey</a></td>
-            <td width=20%>
-              Kanisa la Sauti ya Wokovu na Uponyaji
-              
-              
-            </td>
-            <td width=20%>
-              Kenya
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/kenya/owiti-silas/" rel="permalink">EN</a>
+              <a href="/stories/kenya/mwatha-samuel/" rel="permalink">EN</a>
         
         
         
@@ -6323,89 +6228,7 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Omulokoli, Watson </td>
-            <td width=25%><a href="/stories/kenya/mwatha-samuel/">Mwatha, Samuel Kang&#39;ethe</a></td>
-            <td width=20%>
-              Wapentekoste
-              
-              
-            </td>
-            <td width=20%>
-              Kenya
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/kenya/mwatha-samuel/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Omulokoli, Watson </td>
-            <td width=25%><a href="/stories/kenya/otieno-erastus/">Otieno, Erastus</a></td>
-            <td width=20%>
-              Wapentekoste
-              
-              
-            </td>
-            <td width=20%>
-              Kenya
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/kenya/otieno-erastus/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Omulokoli, Watson </td>
-            <td width=25%><a href="/stories/kenya/oywaya-esau/">Oywaya, Esau</a></td>
+            <td width=25%><a href="/stories/kenya/awori-jeremiah/">Awori, Jeremiah Musungu</a></td>
             <td width=20%>
               Ushirika wa Anglican
               
@@ -6417,7 +6240,89 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/kenya/oywaya-esau/" rel="permalink">EN</a>
+              <a href="/stories/kenya/awori-jeremiah/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Omulokoli, Watson </td>
+            <td width=25%><a href="/stories/kenya/chadwick-walter/">Chadwick, Walter</a></td>
+            <td width=20%>
+              Ushirika wa Anglican
+              
+              
+            </td>
+            <td width=20%>
+              Kenya
+              Uganda
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/kenya/chadwick-walter/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Okonjo Adongo, Wilson </td>
+            <td width=25%><a href="/stories/kenya/owiti-silas/">Owiti, Silas Javan Aggrey</a></td>
+            <td width=20%>
+              Kanisa la Sauti ya Wokovu na Uponyaji
+              
+              
+            </td>
+            <td width=20%>
+              Kenya
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/kenya/owiti-silas/" rel="permalink">EN</a>
         
         
         
@@ -6483,11 +6388,48 @@
 
 
     
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Omulokoli, Watson </td>
+            <td width=25%><a href="/stories/kenya/oywaya-esau/">Oywaya, Esau</a></td>
+            <td width=20%>
+              Ushirika wa Anglican
+              
+              
+            </td>
+            <td width=20%>
+              Kenya
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/kenya/oywaya-esau/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
     
-    
-  <a href="#" class="btn btn--inverse">Juu ya Ukurasa</a>
 
 
+    
+    
     <a id="kenyon-college"></a>
       <h2>Kenyon College</h2>
       <div>
@@ -6541,7 +6483,7 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Volz, Stephen </td>
-            <td width=25%><a href="/stories/botswana/sekopo-sebubi/">Sekopo, Sebubi</a></td>
+            <td width=25%><a href="/stories/botswana/molehabangwe-mebalwe/">Molehabangwe, Mebalwe</a></td>
             <td width=20%>
               London Missionary Society
               
@@ -6550,10 +6492,10 @@
             <td width=20%>
               Botswana
               Afrika Kusini
-              
+              Zimbabwe
             </td>
             <td width=15%>
-              <a href="/stories/botswana/sekopo-sebubi/" rel="permalink">EN</a>
+              <a href="/stories/botswana/molehabangwe-mebalwe/" rel="permalink">EN</a>
         
         
         
@@ -6623,7 +6565,7 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Volz, Stephen </td>
-            <td width=25%><a href="/stories/botswana/molehabangwe-mebalwe/">Molehabangwe, Mebalwe</a></td>
+            <td width=25%><a href="/stories/botswana/sekopo-sebubi/">Sekopo, Sebubi</a></td>
             <td width=20%>
               London Missionary Society
               
@@ -6632,10 +6574,10 @@
             <td width=20%>
               Botswana
               Afrika Kusini
-              Zimbabwe
+              
             </td>
             <td width=15%>
-              <a href="/stories/botswana/molehabangwe-mebalwe/" rel="permalink">EN</a>
+              <a href="/stories/botswana/sekopo-sebubi/" rel="permalink">EN</a>
         
         
         
@@ -7112,448 +7054,432 @@
     
 
 
-<a id="L"></a>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
   <a href="#" class="btn btn--inverse">Juu ya Ukurasa</a>
 
 
+<h3><a id="L">L</a></h3>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
     <a id="luther-seminary"></a>
       <h2>Luther Seminary</h2>
       <div>
@@ -7566,10 +7492,10 @@
             <th width=15%>Languages</th>
             </thead></table>
             <table width=100%><tbody><tr>
-                <td width=20%> Legesse Sonessa, Wondimu </td>
-                <td width=25%><a href="/stories/ethiopia/tinge-terfajarso/">Tinge, Terfa Jarso</a></td>
+                <td width=20%> Deressa, Samuel Yonas </td>
+                <td width=25%><a href="/stories/ethiopia/eshetu-abate/">Abate, Eshetu</a></td>
                 <td width=20%>
-                  Presbyterian
+                  Kanisa la Uinjilisti wa Ethiopia Mekane Yesus
                   
                   
                 </td>
@@ -7579,7 +7505,7 @@
                   
                 </td>
                 <td width=15%>
-                  <a href="/stories/ethiopia/tinge-terfajarso/" rel="permalink">EN</a>
+                  <a href="/stories/ethiopia/eshetu-abate/" rel="permalink">EN</a>
         
         
         
@@ -7606,10 +7532,10 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Deressa, Samuel Yonas </td>
-            <td width=25%><a href="/stories/ethiopia/eshetu-abate/">Abate, Eshetu</a></td>
+            <td width=20%> Legesse Sonessa, Wondimu </td>
+            <td width=25%><a href="/stories/ethiopia/tinge-terfajarso/">Tinge, Terfa Jarso</a></td>
             <td width=20%>
-              Kanisa la Uinjilisti wa Ethiopia Mekane Yesus
+              Presbyterian
               
               
             </td>
@@ -7619,7 +7545,7 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/ethiopia/eshetu-abate/" rel="permalink">EN</a>
+              <a href="/stories/ethiopia/tinge-terfajarso/" rel="permalink">EN</a>
         
         
         
@@ -8092,23 +8018,11 @@
     
 
 
-<a id="M"></a>
 
-    
+  <a href="#" class="btn btn--inverse">Juu ya Ukurasa</a>
 
-    
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+<h3><a id="M">M</a></h3>
 
     
 
@@ -8994,46 +8908,47 @@
                                     FOOTER
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-  <div class="page__footer"> <footer><div class="foot-box">
+  <div class="page__footer">
+
+<!-- AWARDS ROW #################################################### -->
+<div class="awards-wrap">
+<div class="awards">
+
+  <a style="width:33%;disaply:block;float:right" href="/about/awards/">
+    <img class="awards__icon" src="/assets/images/asa-award.png"/>
+  </a>
+  <a style="width:33%;disaply:block;float:right"  href="/about/awards/">
+    <img class="awards__icon" src="/assets/images/neh-award.png"/>
+  </a>
+  <a style="width:33%;disaply:block;float:right"  href="/about/awards/">
+    <img class="awards__icon" src="/assets/images/eb-award.png"/>
+  </a>
+
+</div>
+</div>
+
+    <footer><div class="foot-box">
   <!-- FIRST COLUMN #################################################### -->
   <div class="box">
-    <h3 style="color:#e0c74f; margin-top:0px;"> Wasiliana Nasi</h3>
-    <p>  
-      
-        
-          
-                <b>Kamusi ya Wasifu wa Wakristo wa Kiafrika</b></br>
-            
-      Center for Global Christianity and Mission</br>
-      745 Commonwealth Avenue</br>
-      Boston, Massachussetts 02215, USA</br>
-      Email: dacb@bu.edu</p>
-      <form action="https://www.facebook.com/DictionaryofAfricanChristianBiography">
-          <input type="submit" class="btn-facebook"/>
-      </form>
-  </div>
-
-  <!-- SECOND COLUMN #################################################### -->
-  <div class="box">
-    <h3 style="color:#e0c74f; margin-top:0px;">Wasilisha Hadithi</h3>
+    <h3>Wasilisha Hadithi</h3>
     
     
     
     
-      <p style="margin-bottom: 1em;">Ikiwa ungependa kuwasilisha hadithi kwa KAWAKIA, unaweza kupata vitendea kazi vya bure na mwongozo wa kuwasilisha hapa. <a href="/sw/contribute/submit/">hapa</a>.<br></p>
-      <a href="/sw/contribute/submit/" class="btn btn--inverse-long">Wasilisha Hadithi</a>
+      <p style="margin-bottom: 1em;"><br>Ikiwa ungependa kuwasilisha hadithi kwa KAWAKIA, unaweza kupata vitendea kazi vya bure na mwongozo wa kuwasilisha hapa. <a href="/sw/connect/submit/">hapa</a>.</p>
+      <a href="/sw/connect/submit/" class="btn btn--inverse-long">Wasilisha Hadithi</a>
     
   </div>
 
-  <!-- THIRD COLUMN ####################################################-->
-  <div class="box-end">
-    <h3 style="color:#e0c74f; margin-top:0px;">Journal</h3>
+  <!-- SECOND COLUMN ####################################################-->
+  <div class="box__end">
+    <h3>Journal</h3>
     
     
     
     
         <p>Kujiandikisha hapa ili upokea jarida letu na habari za DACB.</p>
-        <div>
+        <div style="margin-top: .5em;">
   <div id="mc_embed_signup_small">
   <form action="//dacb.us3.list-manage.com/subscribe/post?u=485445b23ed18ff0163e2d7a1&amp;id=68e419fc0f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
       <div id="mc_embed_signup_scroll">
@@ -9063,17 +8978,29 @@
 
   <!-- COPYRIGHT AND COUNTS #################################################### -->
   <div class="page__footer-copyright">
-    
+
+    <div class="box_one"><a href="https://www.facebook.com/DictionaryofAfricanChristianBiography">
+      <img src="/assets/images/fb-full-white.png" class="facebook"/>
+    </a></div>
 
     
 
     
 
     
-    KAWAKIA ni vitendea Kazi ya digital mwenyeji kwa <a href="http://www.bu.edu/cgcm/"> Kituo cha Global Ukristo na Mission </a> katika Boston Chuo cha Theology. <br>
-    Site iliyoboreshwa na Alex Mayfield na Michèle Sigg. Ilibadilishwa Mwisho: 10 July 2019. &copy; 2019 Kamusi Ya Wasifu Wa Wakristo Wa Kiafrika.
+
     
-  </footer></div>
+    <div class="box_two">
+    Site iliyoboreshwa na Alex Mayfield na Michèle Sigg. Ilibadilishwa Mwisho: 28 August 2019.<br>&copy; 2019 Kamusi Ya Wasifu Wa Wakristo Wa Kiafrika.<br><a href="/sw/connect/contact/">Wasiliana Nasi</a> | <a href="/about/usage/">Matumizi na Habari ya Kunuhusu</a>
+    </div>
+    
+
+    <div class="box_three"><a href="https://www.bu.edu/cgcm/">
+      <img src="/assets/images/cgcm.png" class="facebook"/>
+    </a></div>
+
+  </div>
+</footer>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                                     SCRIPTS
@@ -9081,15 +9008,14 @@
 
       <script src="/assets/js/main.min.js"></script>
       <script type="text/javascript">
-        var BASE_URL = '';
+        var BASE_URL = 'http://localhost:4000';
       </script>
 
-  <!-- NON LOCAL JQUERY VERSION -->
-      <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-
   <!-- LOCAL JQUERY VERSION -->
-      <!-- <script src="/assets/js/jquery-1.9.1.min.js"></script>
-      <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script> -->
+      <script src="/assets/js/jquery.min.js"></script>
+
+  <!-- Bootstrap -->
+      <script src="/assets/js/bootstrap.min.js"></script>
 
   <!-- Asynchronous Google Analytics snippet -->
       

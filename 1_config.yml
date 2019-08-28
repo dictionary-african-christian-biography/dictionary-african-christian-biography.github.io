@@ -39,12 +39,12 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - _pages/01.stories
-  - _pages/02.about
-  - _pages/03.resources
-  - _pages/04.news
-  - _pages/05.contribute
-  - _pages/09.datasheets
+  - _pages/01.about
+  - _pages/02.stories
+  - _pages/03.projects
+  - _pages/04.resources
+  - _pages/05.journal
+  - _pages/06.connect
 
 keep_files:
   - .git
