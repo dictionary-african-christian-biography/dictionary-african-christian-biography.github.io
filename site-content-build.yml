@@ -28243,7 +28243,7 @@
   country0: "uganda"
   country1: ""
   country2: ""
-  tags: "women, "
+  tags: ""
   url: "/stories/uganda/kaboinuha-maliza/"
 
 - title : "Kachinga, Godfrey"
@@ -28385,7 +28385,7 @@
   url: "/stories/rwanda/kagame3-alexis/"
 
 - title : "Kageye, Hana"
-  date: "1800s-20th"
+  date: "1800s20th"
   index: "primary"
   century: "19th"
   tradition: "protestant"
@@ -28404,7 +28404,7 @@
   country0: "uganda"
   country1: ""
   country2: ""
-  tags: "women, "
+  tags: ""
   url: "/stories/uganda/kageye-hana/"
 
 - title : "Kaggia, Bildad"
@@ -28542,7 +28542,7 @@
   country0: "uganda"
   country1: ""
   country2: ""
-  tags: "women, "
+  tags: ""
   url: "/stories/uganda/kahinju-vikitoliya/"
 
 - title : "Kaidzi, Yonathani"
@@ -28615,7 +28615,7 @@
   url: "/stories/democratic-republic-of-congo/kajiga-balihuta/"
 
 - title : "Kakungulu, Semi Lwakirenzi"
-  date: "1928--"
+  date: "1928"
   index: "primary"
   century: "20th"
   tradition: "protestant"
@@ -28841,7 +28841,7 @@
   country0: "uganda"
   country1: ""
   country2: ""
-  tags: "evangelist, "
+  tags: ""
   url: "/stories/uganda/kalokwera-bartolomayo/"
 
 - title : "Kalu, Ogbu Uke"
@@ -28960,7 +28960,7 @@
   url: "/stories/namibia/kampungu/"
 
 - title : "Kamugungunu, Lazaro"
-  date: "1800s-20th"
+  date: "1800s20th"
   index: "primary"
   century: "19th"
   tradition: "protestant"
@@ -29324,7 +29324,7 @@
   country0: "uganda"
   country1: ""
   country2: ""
-  tags: "evangelist, women, "
+  tags: ""
   url: "/stories/uganda/kanyendaki-bena/"
 
 - title : "Kanyua, Jerusha"
@@ -29535,7 +29535,7 @@
   url: "/stories/democratic-republic-of-congo/kashama-nkoy/"
 
 - title : "Kasigano, Daudi"
-  date: "1800s-20th"
+  date: "1800s20th"
   index: "primary"
   century: "19th"
   tradition: "protestant"
@@ -29623,7 +29623,7 @@
   country0: "uganda"
   country1: ""
   country2: ""
-  tags: "clergy, evangelist, photo, "
+  tags: ""
   url: "/stories/uganda/katarihwa-dan/"
 
 - title : "Kate, Josya Damulira Wambwa"
@@ -29646,7 +29646,7 @@
   country0: "uganda"
   country1: ""
   country2: ""
-  tags: "evangelist, "
+  tags: ""
   url: "/stories/uganda/kate-josya/"
 
 - title : "Kato, Byang Henry (A)"
@@ -29830,7 +29830,7 @@
   country0: "uganda"
   country1: ""
   country2: ""
-  tags: "clergy, evangelist, nationalist, theologian, "
+  tags: ""
   url: "/stories/uganda/kauma-misaeri/"
 
 - title : "Kayo, Joseph"
@@ -30524,9 +30524,9 @@
   url: "/stories/tanzania/kibira2/"
 
 - title : "Kibwola, Muca"
-  date: "1908"
+  date: "1914"
   index: "primary"
-  century: "20th, 19th"
+  century: "20th"
   tradition: "protestant"
   affiliation0: "anglican (church of uganda)"
   affiliation1: ""
@@ -30681,7 +30681,7 @@
   country0: "uganda"
   country1: ""
   country2: ""
-  tags: "clergy, evangelist, "
+  tags: ""
   url: "/stories/uganda/kikwabanga-nua/"
 
 - title : "Kile, Lorod&#39;u Aaron"
@@ -31256,7 +31256,7 @@
   country0: "uganda"
   country1: ""
   country2: ""
-  tags: "clergy, translator, "
+  tags: ""
   url: "/stories/uganda/kisingiri-zakarya/"
 
 - title : "Kisoni Lusenge, Samuel"
@@ -65620,7 +65620,7 @@
   country1: ""
   country2: ""
   tags: "clergy, martyr, missionary, photo, "
-  url: "/sw/memories/machozi-vincent/"
+  url: "/memories/machozi-vincent/"
 
 - title : "Machozi, Vincent"
   memory : "memory"
@@ -65698,7 +65698,7 @@
   country1: ""
   country2: ""
   tags: "artist, clergy, martyr, photo, scholar, theologian, "
-  url: "/fr/memories/mveng-engelbert/"
+  url: "/memories/mveng-engelbert/"
 
 - title : "Mveng, Engelbert (A)"
   memory : "memory"
