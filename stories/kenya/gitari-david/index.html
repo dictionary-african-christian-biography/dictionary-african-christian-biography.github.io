@@ -49,7 +49,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="1937">
+  <meta property="article:published_time" content="1937-2013">
 
 
 
@@ -119,8 +119,8 @@
       <a href="/#"><img src="/assets/images/logo-new-en.png"></a>
     </div>
 <nav class="top">
-        <label for="drop" class="toggle-m">Menu</label>
-        <input type="checkbox" id="drop" />
+  <input type="checkbox" id="drop" />
+  <label for="drop" class="toggle-m">Menu</label>
         <ul class="menu">
 <!----------------------------------------------------------------------------------------------------------->
 <!-- HOME --------------------------------------------------------------------------------------------------->
@@ -227,7 +227,7 @@
 <!----------------------------------------------------------------------------------------------------------->
             <li>
             <label for="drop-8" class="toggle"><div class="drop"><a href="/donate/">Donate</a></div></label>
-            <a href="/donate/"><div class="drop"></div></a>
+            <a href="/donate/"><div class="drop">Donate</div></a>
             </li>
 
 
@@ -558,7 +558,7 @@
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Gitari, Mukuba David">
     
-    <meta itemprop="datePublished" content="December 31, 1969">
+    <meta itemprop="datePublished" content="1937-2013">
     
 
 <!-- NAME(S), DATE, AFFILIATION, COUNTRY -->
@@ -568,19 +568,13 @@
 
           
 
-  <div class="classic">
-      <div class="classic__logo"></div>
-      <div class="classic__text"><h3 class="classic-header">Classic DACB Collection</h3>All articles created or submitted in the first twenty years of the project, from 1995 to 2015.</div>
-  </div></div>
-  <br>
-
 
 
           <h1 class="page__title" itemprop="headline">Gitari, Mukuba David
 </h1>
           <p class="page__meta">
             
-            1937
+            1937-2013
           <br/>
               
             Anglican Communion
@@ -600,7 +594,9 @@
 
       <section class="page__content" itemprop="text">
         <!-- CONTENT -->
-        <p>Gitari was the third African archbishop of Kenya and bishop of the diocese of Nairobi in the Anglican Church of Kenya.</p>
+        <p><img src="/images/bio-pics/kenya/gitari-david/gitari-david.jpg" alt="David Gitari" class="bio" /></p>
+
+<p>Gitari was the third African archbishop of Kenya and bishop of the diocese of Nairobi in the Anglican Church of Kenya.</p>
 
 <p>David Mukuba Gitari was born on September 16, 1937. He attended the famous Kangaru High School in Embu before attending the University of Nairobi for a Bachelor of Arts degree. He married Grace Wanjiru on March 31, 1966 and God blessed them with three children.</p>
 
@@ -626,6 +622,8 @@
 
 <p>Although Gitari is retired from mainstream church administration work, his daily routine has not changed much. He believes that God’s work never ceases and is still very involved in upholding and defending human rights (2005). He is a member of the Constitution of Kenya Review Commission (CKRC) and fully participates in the constitution review process as one of the representatives of Kenyan faith-based organizations. He also travels, preaches, and gives presentations, calling upon Christians to embrace a culture of peacemaking and conflict resolution.</p>
 
+<p>Gitari died in Mater Hospital, in Nairobi, on September 30, 2013. His autobiography <em>Troubled but not Destroyed</em> was published posthumously in Nairobi.</p>
+
 <p>Alfred S. Keyas</p>
 
 <hr />
@@ -642,17 +640,56 @@
 
 <p>“I Won’t Keep off Politics, Says New ACK Head,” in <em>Daily Nation</em>, Kenyan newspaper, dated Monday, September 23, 2002, news, p. 3.</p>
 
-<p>“History of the Anglican Church of Kenya” at www.ackenya.org/history.html (accessed February 18, 2005).</p>
+<p>“History of the Anglican Church of Kenya” at <a href="https://www.ackenya.org/mission-of-the-church/about-mission">Our History</a>   (accessed July 7, 2021).</p>
+
+<p>“Kenya: Former Archbishop’s voice heard even after his death” on <a href="https://www.anglicannews.org/news/2014/10/kenya-former-archbishop%E2%80%99s-voice-heard-even-after-his-death.aspx">ACNS News Service</a>, posted on October 22, 2014.</p>
 
 <hr />
 
-<p>This story, submitted in 2005, was researched and written by Rev. Alfred Sheunda Keyas, a priest in the Anglican Church of Kenya (ACK), diocese of Mumias, serving as a missionary in Mwingi, Eastern Kenya Province, and <em>DACB</em> Project Luke fellow (2004-2005).</p>
+<p>This story, submitted in 2005 and updated in 2021, was originally researched and written by Rev. Alfred Sheunda Keyas, a priest in the Anglican Church of Kenya (ACK), diocese of Mumias, serving as a missionary in Mwingi, Eastern Kenya Province, and <em>DACB</em> Project Luke fellow (2004-2005).</p>
 
       </section>
     </div>
   </article>
 </div>
-
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Gitari, Mukuba David`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -730,7 +767,7 @@
     
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield and Michèle Sigg. Last updated: 30 June 2021.<br>&copy; 2021 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield and Michèle Sigg. Last updated: 07 July 2021.<br>&copy; 2021 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
     
@@ -768,6 +805,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="https://dacb.org/search-engine/dist/search-lightweight.bundle.js?v=WednesdayJune30211201" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayJuly07211152" async></script>
   </body>
 </html>

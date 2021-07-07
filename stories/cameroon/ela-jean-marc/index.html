@@ -119,8 +119,8 @@
       <a href="/#"><img src="/assets/images/logo-new-en.png"></a>
     </div>
 <nav class="top">
-        <label for="drop" class="toggle-m">Menu</label>
-        <input type="checkbox" id="drop" />
+  <input type="checkbox" id="drop" />
+  <label for="drop" class="toggle-m">Menu</label>
         <ul class="menu">
 <!----------------------------------------------------------------------------------------------------------->
 <!-- HOME --------------------------------------------------------------------------------------------------->
@@ -227,7 +227,7 @@
 <!----------------------------------------------------------------------------------------------------------->
             <li>
             <label for="drop-8" class="toggle"><div class="drop"><a href="/donate/">Donate</a></div></label>
-            <a href="/donate/"><div class="drop"></div></a>
+            <a href="/donate/"><div class="drop">Donate</div></a>
             </li>
 
 
@@ -609,7 +609,7 @@
     <p>Valentin Dedji, <em>Reconstruction and Renewal in African Christian Theology</em> (Nairobi, Kenya: Acton Press, 2003), 224.</p>
   </li>
   <li>
-    <p>Jean-François Channon, <em>Obsèque: Jean-Marc Ela repose pour l’éternité à Abang</em> Le Messager, accessed on Cameroon-info.net: http://www.camerooninfo.net/cmi_shQW_news.php?id=24466. Accessed on June 20, 2009.</p>
+    <p>Jean-François Channon, <em>Obsèque: Jean-Marc Ela repose pour l’éternité à Abang</em> Le Messager, accessed on <a href="http://www.camerooninfo.net/cmi_shQW_news.php?id=24466">Cameroon-info.net</a>. Accessed on June 20, 2009.</p>
   </li>
   <li>
     <p>Dedji, <em>Reconstruction and Renewal</em>, 249-250</p>
@@ -618,13 +618,50 @@
 
 <hr />
 
-<p>The biography was excerpted and adapted, with permission, by Tyler Lenocker, visiting researcher at the Center for Global Christianity and Mission at Boston University, from David T. Ngong, “The Theologian as Missionary: The Legacy of Jean-Marc Éla,” <em>Journal of Theology for Southern Africa</em> 136 (2010): 4-19. For the <em>Journal of Theology for Southern Africa</em>, see https://srpc.ukzn.ac.za/journal-of-theology-for-southern-africa/.</p>
+<p>The biography was excerpted and adapted, with permission, by Tyler Lenocker, visiting researcher at the Center for Global Christianity and Mission at Boston University, from David T. Ngong, “The Theologian as Missionary: The Legacy of Jean-Marc Éla,” <em>Journal of Theology for Southern Africa</em> 136 (2010): 4-19. See <a href="https://srpc.ukzn.ac.za/journal-of-theology-for-southern-africa/">Journal of Theology for Southern Africa*</a>.</p>
 
       </section>
     </div>
   </article>
 </div>
-
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Ela, Jean-Marc`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -702,7 +739,7 @@
     
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield and Michèle Sigg. Last updated: 30 June 2021.<br>&copy; 2021 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield and Michèle Sigg. Last updated: 07 July 2021.<br>&copy; 2021 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
     
@@ -740,6 +777,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="https://dacb.org/search-engine/dist/search-lightweight.bundle.js?v=WednesdayJune30211201" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayJuly07211152" async></script>
   </body>
 </html>

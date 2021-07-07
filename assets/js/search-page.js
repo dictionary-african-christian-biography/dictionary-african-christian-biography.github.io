@@ -156,7 +156,9 @@
       // loaded info
       if (results.length > 0) {
         const endTime = new Date();
-        loadedInfo.innerText = `${results.length} results (${resultsPages.length} pages) found in ${(
+        const resultsCount = results.length;
+        const pagesCount = resultsPages.length;
+        loadedInfo.innerText = `${resultsCount} result${resultsCount === 1 ? '' : 's'} (${pagesCount} page${pagesCount === 1 ? '' : 's'}) found in ${(
           (endTime.getTime() - startTime.getTime()) /
           1000
         ).toFixed(2)} seconds`;

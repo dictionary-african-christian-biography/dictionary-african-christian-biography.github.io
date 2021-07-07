@@ -119,8 +119,8 @@
       <a href="/#"><img src="/assets/images/logo-new-en.png"></a>
     </div>
 <nav class="top">
-        <label for="drop" class="toggle-m">Menu</label>
-        <input type="checkbox" id="drop" />
+  <input type="checkbox" id="drop" />
+  <label for="drop" class="toggle-m">Menu</label>
         <ul class="menu">
 <!----------------------------------------------------------------------------------------------------------->
 <!-- HOME --------------------------------------------------------------------------------------------------->
@@ -227,7 +227,7 @@
 <!----------------------------------------------------------------------------------------------------------->
             <li>
             <label for="drop-8" class="toggle"><div class="drop"><a href="/donate/">Donate</a></div></label>
-            <a href="/donate/"><div class="drop"></div></a>
+            <a href="/donate/"><div class="drop">Donate</div></a>
             </li>
 
 
@@ -616,9 +616,23 @@
 
 <hr />
 
-<h1 id="bibliography">Bibliography</h1>
+<p><strong>Bibliography</strong></p>
 
-<p>D. Crummey, <em>Priests and Politicians</em>, London, 1972; G. Giacchero and G. Bisogni, <em>Vita di Giuseppe Sapeto</em> (“Life of Giuseppe Sapeto”), Florence, 1942; C. Giglio, <em>Etiopia - Mar Rosso</em> (“Ethiopia - Red Sea”), Rome, 1958; Italy, Ministero degli Affari Esteri, <em>Trattati, convenzioni, accordi, protocolli ed altri doeumenti relativi all’Africa</em> (“Treaties, Conventions, Accords, Protocols, and Other Documents Relating to Africa”), Rome, 1906, <em>L’ Italia in Africa</em> (“Italy in Africa”), Rome, 1950; R. Pankhurst, “Ethiopia and the Red Sea and the Gulf of Aden Ports in the Nineteenth and Twentieth Centuries,” <em>Ethiopia Observer</em>, Vol. 8, No. 1, Addis Ababa, 1964; L. dei SabeIli, <em>Storia di Abissinia</em> (“History of Abyssinia”), Florence, 1938; G. Sapeto, <em>Viaggio e missione cattolica fra i Mensa, i Bogos e gli Habab</em> (“Travels and Catholic Mission Among the Mensa, the Bogos, and the Habab”), Rome, 1857, <em>Osservazioni sulla spedizione inglese in Abissinia</em> (“Observations on the English Expedition in Abyssinia”), Messina, 1868, Assab e i soui eritiei (“Assab and its Critics”), Genaa, 1879, <em>Ambasciata francese à Negussie in Abissinia (“French Embassy to Negussie in Abyssinia”), Rome, 1885, *Etiopia, Notizie Rascotti</em> (“Ethiopia, Collected Information”), Rome, 1890; E. Work, <em>Ethiopia, A Pawn in European Diplomacy</em>, New York, 1935.</p>
+<p>D. Crummey, <em>Priests and Politicians</em>, London, 1972.</p>
+
+<p>G. Giacchero and G. Bisogni, <em>Vita di Giuseppe Sapeto</em> (“Life of Giuseppe Sapeto”), Florence, 1942.</p>
+
+<p>C. Giglio, <em>Etiopia - Mar Rosso</em> (“Ethiopia - Red Sea”), Rome, 1958.</p>
+
+<p>Italy, Ministero degli Affari Esteri, <em>Trattati, convenzioni, accordi, protocolli ed altri doeumenti relativi all’Africa</em> (“Treaties, Conventions, Accords, Protocols, and Other Documents Relating to Africa”), Rome, 1906, <em>L’ Italia in Africa</em> (“Italy in Africa”), Rome, 1950.</p>
+
+<p>R. Pankhurst, “Ethiopia and the Red Sea and the Gulf of Aden Ports in the Nineteenth and Twentieth Centuries,” <em>Ethiopia Observer</em>, Vol. 8, No. 1, Addis Ababa, 1964.</p>
+
+<p>L. dei SabeIli, <em>Storia di Abissinia</em> (“History of Abyssinia”), Florence, 1938.</p>
+
+<p>G. Sapeto, <em>Viaggio e missione cattolica fra i Mensa, i Bogos e gli Habab</em> (“Travels and Catholic Mission Among the Mensa, the Bogos, and the Habab”), Rome, 1857, <em>Osservazioni sulla spedizione inglese in Abissinia</em> (“Observations on the English Expedition in Abyssinia”), Messina, 1868, Assab e i soui eritiei (“Assab and its Critics”), Genaa, 1879, <em>Ambasciata francese à Negussie in Abissinia</em> (“French Embassy to Negussie in Abyssinia”), Rome, 1885, <em>Etiopia, Notizie Rascotti</em> (“Ethiopia, Collected Information”), Rome, 1890.</p>
+
+<p>E. Work, <em>Ethiopia, A Pawn in European Diplomacy</em>, New York, 1935.</p>
 
 <hr />
 
@@ -628,7 +642,44 @@
     </div>
   </article>
 </div>
-
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Sapeto, Giuseppe`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -706,7 +757,7 @@
     
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield and Michèle Sigg. Last updated: 30 June 2021.<br>&copy; 2021 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield and Michèle Sigg. Last updated: 07 July 2021.<br>&copy; 2021 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
     
@@ -744,6 +795,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="https://dacb.org/search-engine/dist/search-lightweight.bundle.js?v=WednesdayJune30211201" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayJuly07211152" async></script>
   </body>
 </html>
