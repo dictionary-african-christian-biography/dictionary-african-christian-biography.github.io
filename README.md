@@ -1,6 +1,6 @@
 # DACB Website Source
 
-Source code for the DACB website [dacb.org](https://dacb.org/), written in Jekyll.
+Source code for the DACB website [dacb.org](../dacb.org/), written in Jekyll.
 
 ## Extensive Documentation
 
