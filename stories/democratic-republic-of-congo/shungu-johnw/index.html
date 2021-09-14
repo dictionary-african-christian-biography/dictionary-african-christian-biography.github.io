@@ -257,7 +257,7 @@
 
   <div class="language-switch2">This page is available in:</div>
   <div class="language-switch"><div class="lang-head">
-    <div class="en"><a href="/memories/shungu-johnw/" rel="permalink">EN</a></div>
+    <div class="en"><a href="/stories/democratic-republic-of-congo/shungu-johnw/" rel="permalink">EN</a></div>
     
     
     
@@ -562,33 +562,43 @@
     
 
 <!-- NAME(S), DATE, AFFILIATION, COUNTRY -->
-        <div class="page__inner-wrap">
+    <div class="page__inner-wrap">
+      
+        <header>
+
           
-            <header>
-              <h1 class="page__title" itemprop="headline">Shungu, John Wesley
+
+
+
+          <h1 class="page__title" itemprop="headline">Shungu, John Wesley
 </h1>
+          <p class="page__meta">
+            
+            -2007
+          <br/>
+              
+            Methodist
+            
+            
+          <br/>
+            
+            Democratic Republic of Congo
+            
+            
+          <br/>
+          </p>
+        </header>
+      
 
-              <p class="page__meta">
-                -2007
-                  
-                Methodist
-                
-                
-              </br>
-                
-                Democratic Republic of Congo
-                
-                
-            </p>
-          <br>
-            </header>
-          
 
-<!-- ALTERNATE VERSION CHECK AND DISPLAY -->
+
       <section class="page__content" itemprop="text">
-        <div class="side-box" style="font-size:.6em;font-style:italic;pmargin-top: 1em;margin-bottom: 1em;">The following text belongs to our collection of eyewitness and fragmentary accounts,that includes eulogies, obituaries, and primary materials. It may lack sources and proper academic verification for accuracy.</div>
-        <img src="" class="icon">
-        <p>Retired former Bishop John Wesley Shungu, the first indigenous United Methodist episcopal leader in what is today the Democratic Republic of Congo, died May 9 in Kinshasa.</p>
+        <!-- CONTENT -->
+        <blockquote>
+  <p><em>The following text belongs to our collection of eyewitness and fragmentary accounts that includes eulogies, obituaries, and primary materials. It may lack sources and proper academic verification for accuracy.</em></p>
+</blockquote>
+
+<p>Retired former Bishop John Wesley Shungu, the first indigenous United Methodist episcopal leader in what is today the Democratic Republic of Congo, died May 9 in Kinshasa.</p>
 
 <p>He became a bishop in 1964 and had been retired for many years.</p>
 
@@ -623,12 +633,48 @@ May 11, 2007 | NEW YORK (UMNS)</p>
 
 <p>This article, written in 2007 and reprinted from the <a href="http://archives.gcah.org/bitstream/handle/10516/4179/article34.aspx.htm?sequence=2">archives of the United Methodist Church</a>, was written by Elliott Wright, the information officer of the United Methodist Board of Global Ministries. The news media contact is Linda Bloom, New York, (646) 369-3759 or newsdesk@umcom.org.</p>
 
-        
       </section>
     </div>
   </article>
 </div>
-
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Shungu, John Wesley`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -706,7 +752,7 @@ May 11, 2007 | NEW YORK (UMNS)</p>
     
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield and Michèle Sigg. Last updated: 07 September 2021.<br>&copy; 2021 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield and Michèle Sigg. Last updated: 14 September 2021.<br>&copy; 2021 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
     
@@ -744,6 +790,6 @@ May 11, 2007 | NEW YORK (UMNS)</p>
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=TuesdaySeptember07211530" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=TuesdaySeptember14211529" async></script>
   </body>
 </html>
