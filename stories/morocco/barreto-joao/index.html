@@ -607,63 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>João Nunes Barreto was a Jesuit missionary in Morocco and India and patriarch of Ethiopia. Born in Porto, Portugal, Nunes Barreto completed his studies at Salamanca and served as a parish priest in the diocese of Braga. In 1545 he entered the Society of Jesus at Coimbra. From 1548 to 1554 he was a missionary in Tetuan, Morocco, where he was deeply involved in offering spiritual consolation to slaves, and he returned to Lisbon to raise funds to ransom them. There, he received news that the founder of the Jesuit order, Ignatius of Loyola-whose policy was not to allow Jesuits to become bishops-had accepted the request of King John III of Portugal to have Nunes Barreto appointed Patriarch of Ethiopia so that the Catholic mission could be developed further there. Nominated in January 1555 and consecrated in May, Nunes Barreto left Portugal for India in late March 1556 along with Andres Oviedo, a Jesuit bishop consecrated with him and designated as his successor. Upon arrival in Goa, Nunes Barreto learned from Jesuit confreres recently returned from Ethiopia that the situation there was not favorable. He decided, however, to send Oviedo to improve the status of the mission with Ethiopian authorities. Oviedo was somewhat successful with one of the monarchs but not with his successors. Realizing that he was unlikely to enter Ethiopia, Nunes Barreto devoted his talents to an active ministry in Goa. He suggested to Jesuit superiors that they request papal permission to renounce his status as a patriarch and bishop. The negative reply of the superiors reached Goa after his death there.</p>
-
-<p>John W. Witek, SJ</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>The patriarch’s correspondence was published in Monumenta Historica Societatis Iesu: <em>Epistolae Mixtae</em>, vol. 4 (1900), pp. 134-139, 334-336, 422-424 and vol. 5 (1901), pp. 682-691; <em>Monumenta Ignatiana</em>, vol. 8 (1901), pp. 707-720, <em>Litterae Quadrimestres</em>, vol. 3 (1896), pp. 132-136; Josef Wicki, ed., <em>Documenta Indica</em>, vol. 3 (1954), pp. 510-517; vol. 4 (1956), pp. 360-362, 815-819; vol. 5 (1958), pp. 674-677. Philip Caraman, <em>The Lost Empire: The Story of the Jesuits in Ethiopia, 1555-1634</em> (1985); John O’Malley, <em>The First Jesuits</em> (1993), pp. 327-328; William Van Gulik and Conrad Eubel, eds., <em>Hierarchia Catholica Medii et Recentioris Aevii</em>, vol. 3 (1923), p. 97.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Barreto, João Nunes`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -742,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -781,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

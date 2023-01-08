@@ -607,73 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/ethiopia/krapf-johannlu3/krapf.jpg" alt="image" class="bio" /></p>
-
-<p>Johann Ludwig Krapf was a German Lutheran pioneer missionary in Kenya. Born in Tübingen, he trained for mission work at the Basel Mission seminary in Switzerland. He was accepted by the Church Missionary Society (CMS) and sent to Ethiopia in 1837 to work with C. W. Isenberg among the non-Christian Galla (now known as Oromo). They taught a few boys but were expelled at the instigation of the Ethiopian Orthodox clergy.</p>
-
-<p>Krapf settled at Mombasa in 1844, hoping to find a southern route to the Galla, but he failed in this although he made a few Galla contacts. The same year he married Rosina Dietrich, but she died two years later and is buried together with their infant daughter near Mombasa. In 1846 he was joined by Johannes Rebmann and in 1849 by Johann Erhardt. They established a station a few miles inland at Rabai on a ridge overlooking the coastal plain, hoping the Mijikenda would prove more responsive than the slave-owning Muslim society of Mombasa. Krapf traveled extensively, reaching Usambara and Ukambani and sighting Mount Kenya. When he visited Europe in 1850 he impressed the CMS with his vision of a chain of missions across Africa from Rabai, but the hinterland and its people were hostile and the right missionaries were not forthcoming. An attempt to find an alternative route inland via the Tana River almost ended in disaster.</p>
-
-<p>In 1855 Krapf returned to Europe in poor health and published an account of his travels in 1860. He returned to East Africa briefly in 1862 to help Charles New found Methodist work in East Africa before returning to Germany where he died at Korntal. He made only a few converts and failed to found a church. His importance lies in his pioneer work in Swahili and other languages, and in his geographical discoveries, which aroused great interest in the region.</p>
-
-<p>M. Louise Pirouet</p>
-
-<hr />
-
-<p><strong>Bibliography</strong></p>
-
-<p>Johann Ludwig Krapf, <em>Travels, Researches and Missionary Labours</em> (Eng. tr., 1860; 2d ed., 1968),</p>
-
-<p><em>The Journals of the Rev. Messers Isenberg and Krapf, Missionaries of the Church Missionary Society, Detailing Their Proceedings in the Kingdom of Shoa, and Journeys in other Parts of Abyssinia in the Years 1839-1842</em> (1843; repr. as <em>The Journals of Isenberg and Krapf</em>, 1968), and <em>Dictionary of the Suahili Language</em> (1882).</p>
-
-<p>Eugene Stock, <em>History of the Church Missionary Society</em>, vols. 1 and 2 (1899), pp. 458-462 and 124-139.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Krapf, Johann Ludwig (D)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -752,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -791,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

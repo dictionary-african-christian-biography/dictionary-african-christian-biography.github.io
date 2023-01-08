@@ -607,69 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Bildad Kaggia was a radical leader among the Kikuyu, the largest ethnic group in Kenya. He was convinced of the necessity of Africanizing postcolonial society, was active in the liberation movement, founded an African independent church, and became a leading socialist labor leader in Kenya.</p>
-
-<p>Because he was unable to raise school fees, Kaggia became a government clerk until being recruited into the British Army in 1940. He was sent to the Middle East, and the experience radicalized him when he realized that the British, whom he had been led to believe were superior, could be defeated. He returned home a revolutionary, seeing no future in the existing African cultural societies, which he considered elitist and conservative. Instead, inspired by a visit to Jerusalem that led him to reject missionary Christianity, he founded an African Christian church to reinterpret Christianity with an African voice. Kaggia was arrested several times for holding unlicensed meetings, but his Friends of the Holy Spirit spread across Kenya as a reaction to the “mzungu  (white) church of the Pharisees.”</p>
-
-<p>Kaggia supported himself as a bank clerk and formed the Clerks and Commercial Workers Union, which he affiliated with the Labour Trade Union of East Africa, an organization that he later headed. During this same period, he joined Jomo KENYATTA’s political party, using his union following to take control of its Nairobi branch in 1951 and to radicalize it. Secretly, he had also joined the central committee of the Mau Mau guerrilla movement; in 1952 he was arrested with Kenyatta and others and was imprisoned until 1959 under the emergency proclaimed by the colonial authorities. From 1959 to 1961 he was restricted under house arrest. Kaggia always found it amusing that the British considered Kenyatta the head of the Mau Mau, when it was actually Kaggia who told Kenyatta the names of its leaders.</p>
-
-<p>Kaggia was elected to parliament with Kenyan independence in 1963 and made an assistant minister of education, but he clashed with Kenyatta over land policy and was removed. Kaggia defended the rights of squatters and former freedom fighters and called for cooperatives to be established on confiscated white farms. He became a leader of the backbenchers and a open critic of Kenyatta’s government. He was finally forced, with Oginga ODINGA, to leave and form an opposition party. Kaggia lost his seat in the next election, and in 1968 he was arrested for holding an unlicensed meeting, which led to a six-month prison term. Following his service on government commodities boards, he retired from politics in the early 1970s.</p>
-
-<p>Norbert C. Brockman</p>
-
-<hr />
-
-<p>Additional reading:</p>
-
-<p>Kaggia, Bildad.  <em>Roots of Freedom, 1921-1963,</em> (1975).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from *An African Biographical Dictionary, *copyright © 1994, edited by Norbert C. Brockman, Santa Barbara, California. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Kaggia, Bildad`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -748,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -787,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

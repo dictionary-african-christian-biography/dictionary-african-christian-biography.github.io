@@ -607,77 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Daniel Adegoke Fagbohun, popularly called “Pastor,” was a lay church planter in Fiditi, Oyo State of Nigeria. He was born around 1875. When his father moved from Abeokuta to Fiditi, Daniel Fagbohun followed him.</p>
-
-<p>After staying in Fiditi for some time, he left for Lagos where he worked as a laborer in the railway yard. There he met Rev. Ladejo Stone and was converted. He married and had children.</p>
-
-<p>In 1910, he left Lagos for Fiditi and eventually started the First Baptist Church, Fiditi. The first place the congregation met for worship was his own sitting room. The pioneer members of the church were his half brothers, Abraham Oke, William Ojeyemi, Ige, Ogunfunmilayo, Philip Akintola, and Abraham Ojo, as well as many others. A plot of land in front of Agbaakin’s compound in Fiditi was later leased to them where the community continued to worship. The land where the First Baptist Church, Fiditi currently stands was given to them under Daniel Fagbohun’s leadership.</p>
-
-<p>Many Christians from other denominations began worshiping at the First Baptist Church, Fiditi, because of the dynamism of Daniel Fagbohun’s ministry. A man of tremendous faith, he inspired many who began to attend prayer meetings and worship. The Olu of Fiditi, Kabiyesi Ogunkunle III, said that Daniel Fagbohun was dedicated to evangelism and to winning souls for Christ. At one point Daniel Fagbohun walked from Fiditi to Oyo in order to attend preparatory classes at the mission. According to Pastor Jacob Adelabu, Daniel Fagbohun devoted much of his time to Bible reading. Although he was not rich, he was known for his generosity and freely gave to God’s work.</p>
-
-<p>When the Yoruba Baptist Association–which later became the Nigerian Baptist Convention–met for the first time in 1914, Daniel Fagbohun represented First Baptist Church, Fiditi.</p>
-
-<p>Later Daniel Fagbohun left Fiditi for Ketu to search for his mother and siblings and did not return. After his death a church and a society were named after him.</p>
-
-<p>Adewale Oluyemisi Adelabu</p>
-
-<hr />
-
-<p><strong>Sources:</strong></p>
-
-<p><em>A History of First Baptist Church, Fiditi</em> (1910-2000), (n.pub., n.d.).</p>
-
-<p>Pastor Jacob Adelabu of Agunleyinju’s compound, Fiditi, interview,  October 30, 2006.</p>
-
-<p>Kabiyesi Ogunkunle III, Olu of Fiditi, interview, November 30, 2006.</p>
-
-<hr />
-
-<p>This article, received in 2008, was researched and written by Rev. Adewale Oluyemisi Adelabu, a student at the Nigerian Baptist Theological Seminary, Ogbomoso, under the supervision of Rev. Dr. Deji Ayegboyin, <em>DACB</em> liaison coordinator.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Fagbohun, Daniel Adegoke`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -756,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -795,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

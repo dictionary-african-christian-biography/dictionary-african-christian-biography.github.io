@@ -607,62 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>By the fifth century, the persecution of Christians was well under way by Vandal invaders from the north, extending to both sides of the Mediterranean. Rome was sacked in 455, and in the small North African province of Byzacene, Victor of Vita, a fifth-century bishop, chronicled the invasions and tortures inflicted by the Vandal leader Hunneric (477-484). Drawing on his own eyewitness accounts and earlier reports, Victor also described the heroic courage and resistance of the new Christian communities. In one instance, he noted the tendency of martyrs to joyfully sing hymns and psalms as they were being led to their death and the cruelty of invaders who required that they be buried in silence, for singing was the one final means of expression of their faith left to them.</p>
-
-<blockquote>
-  <p>Grant, O heavenly Father, that we who with joy commemorate the life of Victor of Vita, bishop and historian of the persecuted church in North Africa, may at length be found worthy, with all the redeemed, to worship you in that heavenly Jerusalem where dwell the blessed dead of all ages, with Jesus Christ our Lord, our mediator and advocate. Amen.</p>
-
-</blockquote>
-
-<p>Frederick Quinn</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>African Saints: Saints, Martyrs, and Holy People from the Continent of Africa</em>, copyright © 2002 by Frederick Quinn, Crossroads Publishing Company, New York, New York.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Victor of Vita`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -741,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -780,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

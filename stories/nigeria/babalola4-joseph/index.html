@@ -607,73 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/nigeria/babalola4-joseph/Babalola-small.jpg" alt="Joseph Babalola" class="bio" /></p>
-
-<p>Leader of the Nigerian Aladura (the praying people) revival of the mid-twentieth century.</p>
-
-<p>Babalola was born of Yoruba parents at Ilofa, Nigeria, and was brought up as an Anglican. Having left elementary school, he was employed in the Public Works Department as a steam roller operator. In October 1928, while trying to repair his machine, he claimed that Jesus Christ called him to abandon the job and start preaching. He then joined Faith Tabernacle in Lagos, which was related to an American Pentecostal organization. In September 1930 Babalola was credited with raising a dead man to life. From then on, with bell and Yoruba Bible in hand, he toured Yorubaland and eastern Nigeria, preaching about repentance, and renunciation of idolatry, the importance of prayer and fasting, and the power of God to heal sickness. In 1930 Faith Tabernacle affiliated with the British Apostolic Church. Then following a schism in the Apostolic Church about 1940, Bablola went with a new independent church, Christ Apostolic Church (CAC), where he continued his healing and revivalistic activities until his death. The CAC regards Babalola as an apostle and his revival ministry as the beginning of the church. A CAC retreat center was built where Babalola was first called in 1928.</p>
-
-<p>Mathews A. Ojo</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>David Odubanjo, <em>The History and Works of the Prophet Joseph Babalola</em>, pt. 1 (c. 1930); E.H.L. Olusheye, <em>Saint Joseph Ayo Babalola: The African Foremost Religious Revolutionary Leader Ever Lived</em> (1983); S. G. Adegboyega, <em>A Short History of the Apostolic Church of Nigeria *(1978); Adeware Alokan, *The Christ Apostolic Church, 1928 - 1988</em> (1991); J. D. Y. Peel, <em>Aladura: A Religious Movement among the Yoruba *(1968); Idris Vaughan, *Nigeria: The Origins of Apostolic Church Pentecostalism, 1931 - 1952</em> (1991).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
-
-<hr />
-
-<p>External link</p>
-
-<p><em>Encyclopaedia Britannica</em>  (complete article):  <a href="http://www.britannica.com/eb/article-9005331/Aladura"> Aladura</a></p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Babalola, Joseph Ayodele (D)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -752,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -791,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

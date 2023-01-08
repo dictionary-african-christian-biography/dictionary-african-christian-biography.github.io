@@ -605,79 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Uchanda Unen Paul est né à Wiyowiyo en 1942. Il est le fils d’ Unen Simon et de Tholuba Zenta. Il est de nationalité Congolaise, Province Orientale, District de l’Ituri, Territoire de Mahagi en Collectivité  chefferie des Alur – Djuganda. Il est né dans une famille chrétienne où ils étaient au total au nombre de dix, parmi lesquels il y avait trois garçons et sept filles.</p>
-
-<p>Uchanda a poursuivi ses études à l’Ecole Primaire d’Application d’Aungba, puis les études secondaires à l’Institut d’Aungba pour aller terminer à l’Athénée d’Irumu. Après quelques années de service comme enseignant et directeur à l’École d’Application d’Aungba, il reçut la vocation de Dieu  et alla poursuivre ses études supérieures à l’Institut Supérieur Théologique de Bunia (ISTB) de 1971-1974. Après une longue période de service, il alla poursuivre le cycle de licence de 1986-1989 à Kinshasa à l’Université Protestante du Congo (UPC).</p>
-
-<p>Uchanda Unen Paul épousa Amvongi Esther en 1961. Leur mariage fut béni de sept enfants dont quatre garçons et trois filles.</p>
-
-<p>Hormis son service dans l’enseignement, il rendit plusieurs services dans l’église. Dès son retour de l’ISTB, il fut aumônier et directeur de l’internat à l’Institut d’Aungba pendant six ans. Ensuite il fut nommé directeur de l’Institut Biblique Francophone d’Aungba où il travailla pendant sept ans.</p>
-
-<p>Dès son retour de Kinshasa à l’issue de ses études de licence, il fut nommé directeur du Collège Biblique d’Aungba en même temps que surintendant du District ecclésiastique Aungba. Toutes ses prestations étaient couronnées par deux consécrations : la licence pastorale et l’ordination. En plus de ces fonctions citées ci haut, il fut directeur d’une chorale constituée de mamans.</p>
-
-<p>Uchanda Unen a beaucoup contribué à l’enrichissement de la vie de l’église. Par exemple, il s’est investi par le moyen de séminaires, de ligues, de culte des jeunes, et de chorales pour l’encadrement des jeunes. Comme il avait le souci du développement intégral de l’Eglise il a arrêté le système d’utiliser les biens de l’église pour consommer seulement. Il a appris à l’église de se prendre en charge. Il encourageait beaucoup des gens à entreprendre la formation pastorale et théologique et il poussait l’église à prendre ceux-ci en charge. Il a beaucoup contribué au passage du système congrégationaliste au sein du système épiscopal de son église, l’Africa Inland Church, issue de l’AIM (Africa Inland Mission). Dans cette lutte, il prônait toujours la non–violence, l’amour et la prière.</p>
-
-<p>Uchanda Unen Paul était capable de parler l’Alur, le Ndo, le Lingala, le Français et le Swahili. La connaissance de ces langues lui permettait de s’exprimer sans difficulté parmi les groupes des gens qui connaissaient l’une de ces langues.</p>
-
-<p>Avant de mourir, Uchanda a participé à un séminaire de trois jours, organisé par le cabinet de l’évêque. Ce séminaire concluait le dimanche du 26 août 1997 par une cérémonie d’ordination.  Le lundi 27 août 1997, l’équipe de l’évêque  a pris le chemin du retour pour Bunia. Le mardi 28 août 1997, il prit sa houe pour aller planter des haricots dans son champ. Pendant qu’il commençait à travailler, il se sentit mal à l’aise. Il finit par revenir à la maison pour se reposer. Malheureusement, la mort l’emporta vers 20h.</p>
-
-<p>Unegowun Unyona Théophile</p>
-
-<hr />
-
-<p>Sources :</p>
-
-<p>Awachang’o Unen, petit-frère du défunt. Interview du 18 mai 2013 à Bunia.</p>
-
-<p>Akera Joyce, cousine du défunt. Interview du 18 mai 2013 à Bunia.</p>
-
-<hr />
-
-<p>Cet article, reçu en 2014, est le produit des recherches de Unegowun Unyona Théophile, étudiant en 3e graduat à l’Université Anglicane du Congo, sous la direction du Révérend Dr. Yossa Way. Ce dernier est professeur de théologie et coordinateur de liaison du DIBICA à l’Institut Supérieur Théologique Anglican (Bunia, Rép. Dém. du Congo) ainsi que récipiendaire de la bourse du Projet Luc en 2001.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Uchanda Unen, Paul`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -758,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -795,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

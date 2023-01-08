@@ -607,73 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Charles Atangana Ntsama was born around 1876 in Ongola (present-day Yaoundé). His father, Atangana Essomba, was the traditional ruler of the Ewondo and Bene. Around 1897 Atangana was sent to Kribi for his primary education where he met a German priest by the name of Vietter, a Pallotin missionary and the first Catholic priest to set foot in Cameroon. The two young men mutually appreciated each other and their encounter, later, showed signs of fruitfulness. Worthy of note is the fact that Atangana was very intelligent and that solidified his relationship with Vietter.</p>
-
-<p>Around 1900, Atangana Ntsama, still in the German school at Kibi, recommended Fr. Vietter to his father and, as a result, the Palottins got a new territory for the expansion of their mission work. At their arrival in Yaoundé, Vietter and his companions were warmly received by and integrated among the Elig-Belibi–one of the ethnic groups of Ewondo people–before being given a permanent site at Mvolye. This site was left uninhabited by the indigenous people because of their inability to conquer its immense rock. Mvolye became the point of departure for the evangelization of central and eastern Cameroon.</p>
-
-<p>After his graduation, Atangana Ntsama, a nurse by profession, was appointed auxiliary of the German administration in Buea (Southwest Cameroon). A few years later, at the express demand of Mvog-Ateemengue, Atangana Ntsama came back to Ongola in order to inherit the throne of his deceased father. Nevertheless, he continued to work with the German administrator Hans Dominik as a translator and civil servant. In 1911 Atangana was officially enthroned traditional ruler of Ewondo and Bene.</p>
-
-<p>Atangana Ntsama had two wives. The first one, Marie Biloa–whose nickname was Ngon Ongola–gave birth to Catherine Edzimbi and Atangana Essomba Jean. The second one, Marie Ngo Noah, also had two children, Atangana René Grégoire and Atangana Marie Thérèse.</p>
-
-<p>With the beginning of the First World War, the Germans–missionaries and administrators–left Cameroon. Atangana, his family and other dignitaries also went to Europe where Atangana met Pius X in Rome and Alphonsus XIII, then king of Spain. Meanwhile, the Holy Ghost Fathers replaced the Palottins. After the war, Atangana came back home. He was arrested by the French colonial master at his arrival in Douala and sent for hard labour in Dschang (Western Cameroon). There he met and helped Ndjoya, sultan of the Bamoun kingdom. Using his diplomatic skills, Atangana regained the trust of the French colonial master. Consequently he was sent back to his chieftaincy in Yaoundé where he died in 1945.</p>
-
-<p>Despite the departure of the Palottin missionaries, Atangana and his people kept the seed sown by Vietter alive. In fact, the Roman Catholic Church continued to own and gain mission land even in the absence of the missionaries, thanks to Atangana and other catechists like Grégoire Mebe.</p>
-
-<p>Paul Nde</p>
-
-<hr />
-
-<p>Source:</p>
-
-<p>Testimony of Etienne Nomo Onguene, traditional dignitary of Nsimeyong and erudite of German history in Cameroon.</p>
-
-<hr />
-
-<p>This article, submitted in 2003, was researched and written by Paul Nde (<a href="mailto:paulnde@yahoo.co.uk">paulnde@yahoo.co.uk</a>) under the supervision of Dr. Protus O. Kemdirim, <em>DACB</em> liaison coordinator at the University of Port Harcourt and <em>DACB</em> regional coordinator for Nigeria.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Ntsama, Charles Atangana (A)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -752,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -791,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

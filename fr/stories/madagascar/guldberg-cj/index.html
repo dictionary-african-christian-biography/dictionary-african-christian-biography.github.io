@@ -605,69 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Le Dr. Guldberg fut le principal artisan du premier enseignement de la pharmacie scientifique à Madagascar.</p>
-
-<p>Né en 1846 à Oslo (Norvège), Carl Johan Guldberg s’offrit, après ses études de médecine, à la Mission luthérienne norvégienne (NMS) qui l’envoya à Madagascar où il arriva en 1876 et où il montra toujours une très grande compétence.</p>
-
-<p>Aussitôt débarqué, il fut associé à l’œuvre médicale des Missions protestantes à Tananarive, principalement celle de son compatriote le Dr. Chr. Borchgrevink. Avec lui et aussi avec quelques collègues missionnaires anglais, il organisa des cours de perfectionnement pour les anciens élèves du Kolejy Medikaly Malagasy (Collège Médical malgache), dès 1880. Et quand, en 1886, fut fondée l’Académie missionnaire de Médecine (<em>The Medical Missionary Academy</em>), il fut au nombre des professeurs qui en assurèrent le fonctionnement et la renommée.</p>
-
-<p>C’est grâce à ses relations en Norvège, groupées en un comité auxiliaire, qu’il put obtenir pour la polyclinique NMS de Tananarive, transformée en 1886 en Hôpital, le matériel médical, le stérilisateur, les pansements, indispensables pour sa bonne marche. Cette même année, avec l’aide de la Sœur Edwarda Christiansen, il organisa une véritable pharmacie et créa un cours de pharmacologie théorique et pratique pour les étudiants de l’Académie de Médecine. En même temps, il collaborait à l’enseignement de l’École d’Infirmières qui avait été ouverte deux ans auparavant.</p>
-
-<p>La contribution du Dr. Guldberg à l’enseignement médical ne fut pas seulement orale, mais le cours de pharmacologie qu’il avait rédigé ne fut jamais imprimé. Copié et recopié pendant des années par les étudiants, il resta toujours en manuscrit.</p>
-
-<p>Pendant les dix années de son séjour, le Dr. Guldberg, aidé de sa femme, reçut chaque année, comme internes chez lui, de nombreux étudiants en médecine originaires du Betsiléo.</p>
-
-<p>Il quitta l’île en 1886 pour rentrer en Norvège où il pratiqua comme médecin de campagne à Lesja (1888-1906). Il mourut à Oslo en 1906.</p>
-
-<p>L. Munthe, L.  Molet</p>
-
-<hr />
-
-<p>Cet article, réimprîmé ici avec permission, est tiré d’<em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em>, tome 3, publié en 1977 par l’Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). Tous droits réservés.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Guldberg, C. J.`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -748,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -785,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

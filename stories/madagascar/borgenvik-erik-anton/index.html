@@ -607,65 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>“In that day the deaf shall hear the words of the book, and the eyes of the blind shall see out of obscurity and out of darkness.” This verse from the Holy Scriptures (Isaiah 29:18) was taken seriously by Erik Borgenvik, and with God’s help, he made it a reality.</p>
-
-<p>Erik Borgenvik was born in Haugesund, Norway, on June 5, 1897. He pursued theological studies in Oslo from 1916 to 1923, and became an ordained minister. Sent out by the Norwegian Lutheran Mission (NMS), he arrived in Madagascar in 1924. After one year of intensive study of Malagasy, he was sent to the stations of Soatanana, near Fianarantsoa (1925-1932), Antsirabe (1934), and Betafo (1935-1946).</p>
-
-<p>The distress of people who were born deaf there made a great impression on him, because they remained deaf their entire life for lack of appropriate medical attention. Having returned to Norway from 1946 to 1949, Borgenvik used the time there to draw attention to their plight, especially among the deaf in Norway. In 1950, when he returned to Madagascar, he was able to found an institution that specialized in educating the deaf. He was able to do this with the help of the government of Madagascar, and because he had raised funds among interested benefactors in Norway. The “Institute for Deaf-Mutes” first opened in Loharano, near Antsirabe, where, on the initiative of Endrine Robertstad (née Nielsen), the NMS had opened a school for the blind, in 1924. In 1957, the Institute was moved to new facilities in Antsirabe. At that time, it was the largest institute of its kind in all of Africa.</p>
-
-<p>Erik Borgenvik was the director there until his final retirement in Norway, in 1959. Just before he left Madagascar, he was decorated with the Medal of Merit of Madagascar.</p>
-
-<p>He died on December 4, 1960, in Drammen, Norway.</p>
-
-<p>O. Chr. Dahl, L. Molet</p>
-
-<hr />
-
-<p>This article, which is reprinted here by permission, is from <em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em> [People and Destinies: Overseas Biographical Dictionary] vol. 3, published in 1977 by the Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Borgenvik, Erik Anton`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -744,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -783,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

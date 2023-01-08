@@ -605,67 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Missionnaire belge en Afrique, né dans une famille protestante en Belgique.  A l’âge de dix-sept ans il accepte le sabbat après avoir lu un traité qu’un oncle en Amérique lui a envoyé.  Il est baptisé à l’âge de vingt-quatre ans.  En 1909, parce qu’il désire aller en Afrique comme missionnaire, il va en Angleterre pour y faire des études d’anglais, à Stanborough College.  Il pourvoit aux besoins de sa famille en travaillant comme aide-infirmier dans un sanatorium.</p>
-
-<p>En 1913, il est envoyé au Kenya par la British Union (Union Britannique).  Il laisse sa famille en Belgique, avec l’intention de revenir les chercher deux ans après, mais l’année suivante, toute communication avec la Belgique est coupée à cause de la guerre.  Delhove a vite été incorporé à l’armée belge, et a servi d’officier de reconnaissance pendant quatre ans.  Ayant traversé le Ruanda-Urundi plusieurs fois pendant ce temps, et il a pensé que ce serait une terre fertile pour la mission.</p>
-
-<p>Après une séparation de plus de cinq ans, il a retrouvé sa famille.  Pendant qu’il était en Belgique, il a persuadé Henri Monnier de le raccompagner en Afrique.  Ils ont pénétré l’ancien territoire allemand de Ruanda-Urundi (qui s’appelle maintenant Rwanda et Burundi) , qui avait été assigné à la Belgique par mandat en 1919.  On leur a donné permission d’occuper trois stations missionnaires qui étaient opérées auparavant par une société protestante allemande.</p>
-
-<p>En 1921, Delhove a fondé la mission de Gitwe sur un site maudit par un ancien chef, et où aucun africain ne voulait vivre.  Ses efforts se sont multipliés tout autour de Gitwe, et les missions de Rwankeri (1922) et de Buganda (1925, par la suite installée à Ndora) sont fondées grâce à lui.  L’année suivante, Delhove a été ordonné.</p>
-
-<p>Plusieurs stations missionnaires ont été établies grâce à lui.  En 1929, le champ missionnaire de Ruanda-Urundi est passé sous la direction de la division africaine, et éventuellement a été attaché à l’union du Congo.  Après avoir été directeur de la mission de Songa et de Kirundu pendant dix ans, on a demandé à Delhove d’être le premier à ouvrir la mission de Rwese.</p>
-
-<p>Bien qu’il ait pris sa retraite en 1944, il a continué à vivre et à travailler au Congo jusqu’à sa mort.  Très apprécié pour sa connaissance générale de problèmes locaux, il a servi comme membre du conseil du gouverneur général du Congo-Belge.  Plusieurs enfants de la famille Delhove, nés au Ruanda-Urundi, sont devenus missionnaires de seconde génération au Congo.</p>
-
-<p>Delhove est mort d’une crise cardiaque à Rutshum le 12 mars, 1949.  Selon le médecin qui était avec lui, le pasteur Delhove cherchait à convertir le garçon de salle indigène qui s’occupait de lui, seulement dix minutes avant de rendre l’âme.</p>
-
-<hr />
-
-<p>Cet article est réimprimé avec permission, de l’<em>Encyclopédie des Adventistes du Septième Jour</em>, copyright (c) par Review and Herald Publishing Association, 55 West Oak Ridge Drive, Hagerstown, Maryland 21740, USA., tél. 1-800-765-6955.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Delhove, David E.`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -746,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -783,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

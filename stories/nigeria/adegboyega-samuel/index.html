@@ -607,83 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Samuel Adegboyega was born on April 1st, 1897 at Adeyori Village into a royal family from Owu, Abeokuta in the southwestern part of Nigeria.  He lost his father at the age of four. However,  his mother, Madam Adekemi, died at the ripe age of ninety-five.</p>
-
-<p>Samuel Adegboyega attended Methodist High School in Abeokuta.  In the community, he was known as one of the most brilliant students in the college.  For this, his teachers and the community loved him.</p>
-
-<p>After his secondary school education, he worked for the Nigeria Railway Corporation and was promoted to station master, one of the most coveted positions in the corporation at that time. He held this position honorably before becoming a full time Christian minister.</p>
-
-<p>Adegboyega married Ms. Felicia Nee Olowe in 1920 and the marriage was blessed with three daughters and two sons.</p>
-
-<p>Adegboyega was born into a family which practiced African traditional religion. After he became a Christian, he belonged to a Methodist church until 1920 when he joined The Precious Stone Church, an offshoot of Diamond Society Ministry which was an indigenous pentecostal movement at that time in Nigeria.  This organization was later affiliated with the Faith Tabernacle Congregation, Philadelphia, Pennsylvania, U.S.A.</p>
-
-<p>In 1930, a revival took place in Nigeria, which resulted in the outpouring of the Holy Spirit in the churches across the land.  Faith Tabernacle Church could not manage such a powerful movement so a group called The Apostolic Church from Great Britain decided to help out Pastor Adegboyega’s group.  They adopted the church and later ordained him as one of the pastors.</p>
-
-<p>However, there was a breakaway in the new organization and the secessionists became the Christ Apostolic Church (<a href="http://www.britannica.com/eb/article-9005331/Aladura">Aladura</a>).  Afterwards,  Pastor Adegboyega became one of the central figures in the Apostolic Church which, later, became one of the largest pentecostal denominations in Nigeria.</p>
-
-<p>Pastor Adegboyega also championed the cause of education by establishing many primary and secondary schools across the country. It was also said that under Pastor Adegboyega’s leadership there was tremendous growth and recognition of the independent and pentecostal churches in Nigeria and West Africa.</p>
-
-<p>Apart from his activities in evangelism and the expansion of the Apostolic Church in Nigeria, Pastor Adegboyega was also instrumental in the establishment of the church in countries such as Sierra Leone, Ghana, the United Kingdom, and the United States.</p>
-
-<p>During the Nigeria independence celebration in 1960, the federal government conferred national honors on Pastor Adegboyega making him a member of the Order of the Niger (M.O.N).  A few years later, because of his uprightness and faithfulness, the government appointed him justice of the peace (J.P.).  He also served as a juror in the law courts and as an associate judge in the juvenile courts.</p>
-
-<p>Immediately after the reorganization of the Apostolic Church leadership in 1979, Pastor Adegboyega began to decline in health.</p>
-
-<p>Pastor Samuel Adegboyega slept peacefully in the Lord after his morning prayer time at 6:00 a.m. in his official residence at the Apostolic Church convention ground, Olomnda Ketu, on October 23, 1979, in Lagos, Nigeria.</p>
-
-<p> </p>
-
-<hr />
-
-<p>Sources:</p>
-
-<p>Samuel Adegboyega, <em>The Adoption of the Apostolic Church as a Denomination</em> (Ibadan, Oyo State, Nigeria: Victory Press &amp; Publishers Ltd, 1988).</p>
-
-<p><em>Short History of the Apostolic Church</em> (Lagos, Nigeria: The Apostolic Church Literature Committee, 1967).</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Adegboyega, Samuel Gbadebo`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -762,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -801,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

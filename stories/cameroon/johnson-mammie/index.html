@@ -607,71 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Jamaican Baptist teacher and evangelist in Cameroon.</p>
-
-<p>Born a slave, Johnson was one of several pioneer freed Jamaicans who in 1843 traveled to Clarence on the island of Fernando Po and in 1845 settled in Douala, along the Cameroon river estuary.  In 1853 Baptist Missionary Society missionary Alfred Saker (1814-1880) baptized her and encouraged her and her husband, Sam Johnson, to open a mission station in Douala.  As a colleague of another Jamaican missionary, Joseph Jackson Fuller (1825-1908), Mammie Johnson helped lay the foundations of Protestant work in Cameroon.  They studied the native languages, undertook translation work, formed churches, and provided services in the areas of medicine, education, agriculture, and industrial training.  As part of the Jamaican pastoral team, Johnson pioneered women’s work and encouraged formation of indigenous church leadership in Cameroon.</p>
-
-<p>British Baptist missionary colleagues gratefully acknowledged her care of the sick and of missionary children.  At her death, they remembered Johnson as an inspiring Christian lay worker.</p>
-
-<p>Paul R. Dekar</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Horace Orlando Russell, “The Missionary Outreach of the West Indian Church to West Africa in the Nineteenth Century, with Particular Reference to the Baptists” (Ph.D diss., Oxford Univ., 1972).</p>
-
-<p>Brian Stanley, <em>The History of the Baptist Missionary Society, 1792-1992</em> (1992).</p>
-
-<p>BMS sources such as Thomas Lewis, <em>These Seventy Years, An Autobiography</em> (1930) and Joseph Jackson Fuller, manuscript autobiography housed at Regent’s Park College, Oxford, refer frequently to Johnson.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Johnson, Mammie`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -750,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -789,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

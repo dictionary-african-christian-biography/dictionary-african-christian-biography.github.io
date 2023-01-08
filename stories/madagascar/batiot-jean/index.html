@@ -607,69 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Jean Batiot was born on October 3, 1898, in Chantonnay, in the department of the Vendée, in France. He was someone who was very fond of his homeland. It was only when he was twenty-two years old (after having been a prisoner at the end of World War I), that he decided to pursue his missionary and priestly vocation. In spite of that delay, he excelled in his studies, ending them in Rome, where he was ordained as a priest in 1927. At that time, he wrote to the Superior General of the Congregation of the Holy Spirit: “Throughout the long years I have waited, the perspective of missions has been my closest comfort in the numerous tribulations I have endured in the pursuit of my vocation. This attraction, which is now stripped of the vividness it had for me in adolescence, has only become stronger, more considered, and more real.”</p>
-
-<p>So, he was sent to Madagascar, first to Port-Bergé in the northwest, where he worked with the Tsimihety population. Unfortunately, his health could not stand up to the very humid climate of Port-Bergé, as the nearby area is often flooded at high tide.</p>
-
-<p>He then spent a period of time in various mission stations, and returned to France for a time of rest. In 1939 he was posted to Majunga, where his qualities as an apostle and as a man came to the force.</p>
-
-<p>He not only built the cathedral in Majunga, but he also became the Christian leader there. On February 13, 1947, [the Catholic Church in] Rome appointed Jean Batiot Vicar Apostolic of Majunga, which meant bishop, and it was as bishop that he consecrated the cathedral on October 5, 1948.</p>
-
-<p>As bishop, thanks to radiance of his personality and to the influence of his position, he was able to give himself completely to his vast diocese and to his dear city of Majunga in particular. Europeans and Malagasy alike were welcomed there by his friendly smile and his fine mind. In 1949, he was decorated by the French government as a Knight of the Legion of Honor.</p>
-
-<p>Why is it that the life of a remarkable person is sometimes cut short, thus depriving us of their experience and their qualities? After only six short years as a bishop, Batiot quickly passed away after a bout with typhoid malaria, on August 31, 1953.</p>
-
-<p>Two bishops, the civil authorities, the Chamber of Commerce, nobility, Protestant and Muslim representatives, and a large crowd, were all in assistance at his funeral. In his tribute, the chief administrator, Mr. Henrion, painted a vivid portrait of Batiot: “A brilliant mind, impeccably rational, he had the ear of those who are in high places…But he was also, and even more so, bishop to the humble and the weak, regardless of their origin, race, or opinions. He was a guide and a friend to all!”</p>
-
-<p>Augustin Berger</p>
-
-<hr />
-
-<p>This article, reprinted here with permission, is taken from <em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em> [Men and Destinies: Overseas Biographical Dictionary], Vol. 3, published in 1977 by the Académie des Sciences d’Outre-Mer (15, rue de la Pérouse, 75116 Paris, France). All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Batiot, Jean`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -748,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -787,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

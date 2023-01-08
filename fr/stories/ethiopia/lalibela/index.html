@@ -609,71 +609,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/ethiopia/lalibela/Lalibala-small.jpg" alt="Lalibala" class="bio" height="203px" width="158px" /></p>
-
-<p>St. Lalibela était un monarque éthiopien et un bâtisseur d’églises. C’était l’avant-dernier roi de la dynastie Zagwe et le plus connu, surtout grâce aux onze églises taillées dans la pierre qu’il a fait bâtir dans sa ville capitale. Ces édifices figurent parmi les monuments médiévaux les plus importants de l’Afrique. En Lalibela nous avons un exemple frappant de l’union entre l’état et l’église en Ethiopie. De plus, il est vénéré comme saint dans l’église éthiopienne.</p>
-
-<p>Le nom Lalibela veut dire “les abeilles lui obéissent” et c’est un nom de naissance qui rappelle qu’à sa naissance, un essaim d’abeilles s’est posé sur lui sans lui faire mal. Quand il était jeune, Lalibela disait qu’il avait des visions, et il a passé un certain temps à vivre comme un hermite.</p>
-
-<p>En 1180 il a fait un pèlerinage jusqu’à Jérusalem. A son retour, ce n’est qu’à contrecoeur que Lalibela a pris le trône de son demi-frère Harba, avec le soutien du clergé, qui s’opposait aux contacts qu’Harba avait entrepris avec la papauté. Il a pris le nom de Gabra Masqal, Serviteur de la Croix, et a commencé son règne avec une longue période de jeûne. Lalibela a tenté une politique chrétienne de charité et de paix qui a eu beaucoup de succès. Il a assuré les frontières avec de nouveaux monastères et a développé de bonnes relations avec le sultan Saladin. Par conséquent, il y a eu moins de pression sur les chrétiens en Egypte, et les éthiopiens à Jérusalem ont été protégés. Cependant, son accomplissement le plus important était la création d’un réseau remarquable d’églises, de cours intérieures, et de cours d’eau dans sa capitale. Comme le complexe est taillé dans la pierre naturelle à un niveau souterrain, il a survécu en parfait état. C’est là, aussi, que se trouve son tombeau.</p>
-
-<p>Norbert C. Brockman</p>
-
-<hr />
-
-<h1 id="bibliographie">Bibliographie</h1>
-
-<p><em>Dictionary of African Biography [Dictionnaire de biographie africaine]</em> Algonac, MI, et New York : Reference Publications, vol. 1, 1977; vol. 2, 1979.</p>
-
-<p>Lipschutz, Mark, et R. Kent Rasmussen. <em>Dictionary of African Historical Biography [Dictionnaire de biographie historique africaine]</em>. 2ème édition. Berkeley: University of California Press, 1986.</p>
-
-<hr />
-
-<p>Cet article est reproduit, avec permission, de <em>An African Biographical Dictionary [Un dictionnaire biographique africain]</em>, copyright © 1994, édité par Norbert C. Brockman, Santa Barbara, California. Tous droits réservés.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Lalibala (A)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -754,7 +691,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -791,6 +728,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

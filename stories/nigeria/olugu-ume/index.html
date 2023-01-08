@@ -607,71 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Robert Olugu Ume was born in 1903 in Ebem Ohafia, in Abia State, Nigeria.  His father’s name was Mr. Olugu Ume and his mother’s Nne Enyidiya.  He married Elder Mrs. Sarah Nkacha Olughu and they were blessed with eight children and many grandchildren.</p>
-
-<p>Robert was educated as an elementary school teacher at Hope Waddell Training Institute, Calabar, Nigeria.  He served as a primary school teacher in Church of Scotland Mission schools and was ordained as a minister of the gospel in 1940.  He served in the Cross River, Akwa Ibom, Abia and Ebonyi States of Nigeria as a teacher and a minister of the gospel for a total of 28 years. He returned to Ohafia his hometown in 1966 as a result of the Nigerian civil war.</p>
-
-<p>Robert brought civilization and enlightenment to all the places where he taught and served as a minister of the gospel in the Presbyterian Church of Nigeria (formerly Church of Scotland Mission).  He won many souls for Christ in all the places he served.  He established  many congregations in Yakurr, Ugep, Aro Chukwu, Okposi Oku, Ikpe Ikot Nkon and Iquin. In these places  he fought strongly to stop pagan practices like human sacrifice, the killing of twins, the oppression of women, and other idolatrous practices.  He promoted the education of women and the learning of European skills among the youth.</p>
-
-<p>One of his sons is a minister of the gospel in the Presbyterian Church of Nigeria and two others are elders in the church. The Rev. Olugu is still remembered today in the places he served as a dynamic and faithful Christian.</p>
-
-<p>Emele Mba Uka</p>
-
-<hr />
-
-<p>Sources:</p>
-
-<p>1) Oral interview with his eldest son, Rev. Ume  Olugu  and his daughter, Elder Mrs. Inyang Eke.</p>
-
-<p>2) Church records in the congregations where Robert Olugu Ume served and his personal diaries.</p>
-
-<hr />
-
-<p>This article, received in 2001, was researched by Elder Ibem Ido, a retired high school teacher, and written by Rev. Dr. Emele Mba Uka, a Project Luke Fellow, Professor of Theology in the Department of Religion and Philosophy at the Federal University of Calabar, Nigeria (UNICAL).</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Olugu Ume, Robert`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -750,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -789,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

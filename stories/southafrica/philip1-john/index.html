@@ -607,85 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Superintendent of the  London Missionary Society (LMS) (1819-1848); influential advocate of the  extension of British sovereignty and of Africans’ rights.</p>
-
-<p>He came to South Africa merely to survey the condition of the LMS mission stations, but remained to reorganize and  to supervise them for thirty years.  The relative strength of the LMS in South Africa and the location of its agents in many areas where no other Europeans lived gave Philip unique knowledge about African affairs and made him an influential propagandist in Cape Town and in London.</p>
-
-<p>From the time of Philip’s arrival in South Africa he worked to improve the legal standing of the Khoikhoi people.  In 1826 he returned to England to lobby for their rights.  He published <em>Researches in South Africa</em> (1828) to further this cause.  His efforts helped to achieve the ‘50th ordinance’ in the  Cape Colony (1828).  This law greatly improved the legal status of Khoikhoi.  Philip came back to South Africa, finding that his book had made him many enemies.</p>
-
-<p>During the 1830s Philip directed his attention mostly to the eastern Cape frontier, where white-Xhosa friction had long been a problem.  In 1834 he served as Governor D’URBAN’s emissary to the Xhosa, but broke from D’Urban after the start of the  1834-6 Frontier War.  He opposed D’Urban’s system of fostering peace through treaties, proposing instead annexation of the troubled areas.  In 1838 he returned to England to give evidence to parliament on the frontier situation.</p>
-
-<p>On his next return to South Africa, he became concerned with the northern frontier, where Afrikaners had been migrating.  Philip had long attempted to unify the Griqua groups under the leadership of Andries WATERBOER and to bring them back into the Colony.  He now worked to preserve Griqua independence from the Africaners.  He had considerable influence on governors G. T. NAPIER and P. MAITLAND.  He helped to work out treaties with the Sotho king MOSHWESHWE and the Griqua chief Adam KOK III (1843).  In 1846 a new Xhosa war on the eastern frontier ruined Philip’s reputation as an expert on African affairs.  By then his health was deteriorating.  He retired in 1848, dying three years later.  None of his successors regained the influence he had held, and the LMS declined in its relative importance as other European activities in South Africa expanded.</p>
-
-<p>Philip also promoted the founding of new mission stations by his own and other societies.  He helped German missionaries to start in South West Africa, French missionaries among the southern Sotho and Tswana and American among the Ndebele and later Zulu.</p>
-
-<p>Mark R. Lipschutz and R. Kent Rasmussen</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Macmillan, W. M.  <em>Bantu, Boer and Briton:  The Making of the South African Native Problem,</em> rev. ed.  Oxford:  Clarendon Press, 1963.</p>
-
-<p><em>Dictionary of South African Biography,</em> 4 vols.  Cape Town, Durban: Human Sciences Research Council, 1968-81.</p>
-
-<p><em>Dictionary of National Biography.  Main Dictionary to 1900,</em> 22 vols.; * Twentieth Century D. N. B.,* 5 vols.  London: Oxford University Press, 27 volumes, 1885-1950.</p>
-
-<p>Gailey, H. A.  “John Philip’s Role in Hottentot Emancipation.” <em>JAH 3 (3)</em> (1962): 419-33.</p>
-
-<p>Legassick, Martin.  “The Griqua, the Sotho-Tswana, and the Missionaries, 1780-1840.”  Ph.D. Dissertation, U.C.L.A., 1969.</p>
-
-<p>Galbraith, John S.  <em>Reluctant Empire: British Policy on the South African Frontier, 1834-1854.</em>  Berkeley &amp; Los Angeles: University of California Press, 1963.</p>
-
-<p>Saunders, Christopher.  <em>Historical Dictionary of South Africa.</em>  Metuchen: Scarecrow Press, 1983.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Dictionary of African Historical Biography</em>, 2nd edition, copyright © 1986, by Mark R. Lipschutz and R. Kent Rasmussen,  University of California Press, Berkeley and Los Angeles, California.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Philip, John (B)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -764,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -803,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

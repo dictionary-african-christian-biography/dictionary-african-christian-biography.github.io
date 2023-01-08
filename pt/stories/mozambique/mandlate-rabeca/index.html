@@ -606,81 +606,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Durante a década de 1920, a Pastora Rabeca Mandlate veio a Njatigue à procura de alimentação espiritual. Então um dia pediu que se fizessem cultos em casa dela. Não havia ninguém para dirigir: portanto, ela sugeriu que ela mesma dirigisse os cultos. “Afinal”, disse ela, “pregar quer dizer ler a Bíblia e explicar ao povo o que ela quer dizer.”. Desta maneira tornou-se pregadora e pastora, trazendo o seu povo até a missão um domingo de cada mês.</p>
-
-<p>Por duas vezes as autoridades advertiram-na que não batesse mais no pedaço de ferro da linha de comboio que ela usava a fim de chamar o povo para as reuniões. Foi levada ao tribunal, que ficava a 32 quilômetros, e disseram-lhe que se ela não parasse com isso, havia de ir à prisão. No domingo seguinte, ela tocou o sino ao nascer do sol, como de costume, a chamar o povo para oração antes de iniciar as atividades normais no Dia do Senhor.</p>
-
-<p>Alguns meses depois, foi chamada outra vez ao tribunal. Desta vez levou a sua esteira, comida, Bíblia e o hinário em preparação para ficar. De fato ela foi encarcerada. Todos os dias à tarde, depois do trabalho, reunia-se com as outras mulheres presas, lia e explicava a Bíblia, cantava e orava. Por isso foi chamada de novo e ameaçada; então, mandaram-na para casa. Ela continuou a fazer os cultos e nunca mais foi chamada a responder. Esta veio a ser a congregação em Matumanhane, uma extensão da igreja em Mabunganine (Guetsemane).</p>
-
-<p>[1] O Sr. Stefano Mandlate arrependeu-se nos cultos dela. Eles se casaram e ele tornou-se pregador. A igreja dela em Matumanhane continuou a crescer e o Sr. Stefano Mandlate veio a ser pastor ali.[2] Durante a guerra civil, a Sra. D. Rabeca Mandlate foi morta a sangue frio, uma noite, em sua própria casa.[3]</p>
-
-<p>Paul S. Dayhoff</p>
-
-<hr />
-
-<p>Citações:</p>
-
-<ol>
-  <li>
-    <p>Pastor Miguel Chamo, “50th Anniversary Celebration of the Mabunganine (Guetsemane) Church 18-11-73,” <em>Mutwalisi</em> (The Herald), Shangaan/Tsonga magazine of the Church of the Nazarene in Mozambique and South Africa (O Arauto, revista na língua Tsonga da Igreja do Nazareno em Moçambique e África do Sul), (Florida, Transvaal, África do Sul: Nazarene Publishing House, Abril-Junho 1974), 4-5.</p>
-  </li>
-  <li>
-    <p>C. S. Jenkins, “Those Women…”,<em>The Other Sheep</em>, Mission magazine of the Church of the Nazarene,(Kansas City, MO: Nazarene Publishing House, March 1954), 5-6.</p>
-  </li>
-  <li>
-    <p>Carta de Vicente Mbanze, (13 de Abril de 1995).</p>
-  </li>
-</ol>
-
-<hr />
-
-<p>Este artigo é reproduzido, com permissão do livro <em>Living Stones In Africa: Pioneers of the Church of the Nazarene</em>, edição revisada, direitos do autor © 1999, por Paul S. Dayhoff.  Todos os direitos reservados.</p>
-
-<p>Este artigo foi traduzido da língua inglesa pelo Rev. Roy Henck, missionário reformado para Cabo Verde, e pelo Rev. António Barbosa Vasconcelos, pastor cabo-verdiano.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Mandlate, Rabeca`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Leia várias versões: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -763,7 +690,7 @@
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 14 December 2022.<br>&copy; 2022 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 02 January 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -798,6 +725,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

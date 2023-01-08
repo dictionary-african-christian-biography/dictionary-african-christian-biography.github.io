@@ -607,92 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Born around 1888, James Omusikoyo, son of Wakwanalo, was brought up in Eshiasuna village of the greater Butobe in the present Buchifi sub-location, Butere/Mumias district, in the western province of Kenya.</p>
-
-<p>Omusikoyo grew up observing all the traditional Wanga and Luyia rituals of his tribe that prepared the youth for life in the larger society. As a boy, he learned a lot from community elders who were traditional in every respect. Omusikoyo went fishing with his maternal uncle Isaac Kumbe in the Nzoia river and the Lusumu river. He worked hard and was also gifted as a small-scale
-farmer, a basketmaker, a tinsmith, and a carpenter.</p>
-
-<p>His first wife died leaving behind two sons who died at an early age, and a daughter, Margaret Mukonzo, who survived.</p>
-
-<p>In 1941 Omusikoyo married another wife named Jane Nambwenya and God blessed them with fourteen children. Of the fourteen children, only three daughters and four sons survived beyond infancy. Already a baptized Christian when she married, Nambwenya convinced her husband to become a Christian. He was baptized later that year (1943) in the Anglican Church at Butobe. They also solemnized their marriage in the church that year. From then on, Omusikoyo and Nambwenya were strong, committed Christians until their death and never backslid.</p>
-
-<p>Omusikoyo became one of the elders in the Butobe Anglican church which grew strong and, in 1944, became a center  in a “group” of five other Anglican churches under the leadership of lay reader Thomas Musiko Mayabi. In 1949, Omusikoyo and other church elders helped build a mud grass thatched church at Butobe.</p>
-
-<p>As Omusikoyo’s love for church work grew, he was involved in all church activities. As a result, he was elected to senior church positions. In 1953, he became the people’s warden in the Butobe group center church. As the people’s warden, he was their representative and spokesman. Later that year he was appointed church treasurer for the group.</p>
-
-<p>God continued to work in the lives of Omusikoyo and his wife Nambwenya. Even though they were leaders in the church, they had not yet had the full experience of salvation. In 1954, they accepted Jesus Christ as Lord and Savior of their lives. After their salvation, they continued to work harder, traveling to all the surrounding villages to preach the Word of God.</p>
-
-<p>Omusikoyo and Nambwenya raised their children in the Christian faith. They both loved to serve and were quick to welcome visitors-particularly church elders-and their many visitors were a tribute to their love for people of any tribe or clan. Omusikoyo and Nambwenya cared for the spiritual and physical well-being of those they received. Thanks to the work of Omusikoyo, his family, and other Christians, Butobe church grew and was named St. James Anglican Church.</p>
-
-<p>In 1987, thugs attacked Omusikoyo and his half-brother Jeremiah Rupia, beating them and leaving them for the dead. Omusikoyo and Jeremiah were rushed to Mumias Mission Hospital where Jeremiah succumbed to his injuries. Omusikoyo barely survived but was hospitalized for a long time before recovering. He became physically weak as a result of the injuries. He handed over church leadership responsibilities to the church and was succeeded by one of his sons, Peter Ongoma, as treasurer of Butobe church. In 1990, Butobe church was raised to the status of parish and Peter Ongoma became parish treasurer and later on chairman of finance.</p>
-
-<p>Nambwenya died on November 16, 1988. Omusikoyo died on March 19, 1996 and was buried at his Eshiasuna village home. He was survived by four sons and four daughters whose names are Margaret Mukonzo, Trufosa Watieri, Moses Wesonga, William Wanangwe, Peter Ongoma, Yunia Chibaywa, Paul Odongo and Mary Kumbe. Omusikoyo and Nambwenya left behind thirty-seven grandchildren and twelve great grand children.</p>
-
-<p>As a church leader, Omusikoyo’s heart was always burdened for the people who did not know Christ as their Savior. The church remembers him for his talents and gifts, and for his humility, boldness, and faithfulness in his service to the church. Forgiveness, reconciliation, love, and proclamation were the four cornerstones of Omusikoyo’s service. He was respected by all because of his humble walk with Christ. His name will stay with us for a long time. His memories are fresh in the minds of all who knew him.</p>
-
-<p>Alfred S. Keyas</p>
-
-<hr />
-
-<p>Sources:</p>
-
-<p>Jacob I. Mukwambo, church elder, Butobe parish, research and interview by author, January 2005.</p>
-
-<p>Moses Wesonga, William Wanangwe and Peter Ongoma (Omusikoyo’s sons), interview by author, January 2005.</p>
-
-<p>William Keya Okoyo, church elder, Butobe parish, interview by author, August 2004.</p>
-
-<p>“Church History of St. James Church, Butobe,” [compiled by] church elders, 1977.</p>
-
-<p>“Church History of Emmanuel Church, Enyapeta,” [compiled by] church elders, 1983.</p>
-
-<hr />
-
-<p>This story, submitted in 2005, was researched and written by Rev. Alfred Sheunda Keyas, a priest in the Anglican Church of Kenya (ACK), diocese of Mumias, serving as a missionary in Mwingi, Eastern Kenya Province, and <em>DACB</em> Project Luke fellow (2004-2005).</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Omusikoyo, James`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -771,7 +687,7 @@ farmer, a basketmaker, a tinsmith, and a carpenter.</p>
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -810,6 +726,6 @@ farmer, a basketmaker, a tinsmith, and a carpenter.</p>
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

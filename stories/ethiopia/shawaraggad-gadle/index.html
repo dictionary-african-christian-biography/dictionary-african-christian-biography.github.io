@@ -607,75 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Wayzaro Shawaraggad Gadle (1885/86-1949), a close friend of Empress Manan [reigned 1930-62], played an active role in social work, and became renowned for her patriotism during the Italian occupation of Ethiopia (1936-41).</p>
-
-<p>She was the daughter of Wayzaro Tedanaqiyalash and of Dajazmach Gadle Walda Madehen. She entered court circles because her father was a courtier of both Emperor Menilek II [ruled 1889-1913] and of Empress Zawditu [ruled 1916-1930], and was an early friend of Ras Tafari, later to become Emperor Haile Selassie [ruled 1930-74]. She herself became a close friend and chief lady-in-waiting of Empress Manan, consort of Haile Selassie. With Lady Barton, wife of the British minister to Ethiopia, she was the organizer of the Red Cross and the first women’s associations in Ethiopia in the years before the Italian occupation.</p>
-
-<p>During the occupation, she became famous for her heroic activities. She used her father’s bequests to her to help patriots to defy Italians openly. When Addis fell on May 5, 1936, she was taken into an Italian court for having wept at the sight of the Italian flag replacing the Ethiopian flag. She was acquitted, but was later imprisoned as a suspect in the attempted assassination of General Rudolfo Graziani, Italian viceroy from 1936-37, on February 19, 1937. She was imprisoned at Asinara, an island off the coast of Sardinia, from 1937-39. She was released because of the milder policy of Graziani’s successor as viceroy, Amedeo di Savoia, Duke of Aosta, but soon re-established her contacts with the patriots, writing them letters, and sending them money and arms. In November 1940 she negotiated with the prison guards at Addis Alam, and caused the patriots to open the Italian prison there. She herself escaped to a famous patriot, Garasu Duki, from whose camp she made encouraging speeches to other patriots. She was, however, captured, and sentenced to life imprisonment at Addis Ababa. She was released after the Italian surrender, and helped to rehabilitate exiles.</p>
-
-<p>Unlike most women of her time, she was well versed in Ge’ez and in religious teachings. Most of her life and money were devoted to educating the children of the poor and to maintaining homes for invalids. She was extremely interested in monasteries, visiting the Ethiopian monastery in Jerusalem as early as 1920. Her childless marriages, first to Fitawrari Geza and then to Fitawrari Daboch, were forced on her. She died suddenly while she was touring the monasteries in Lasta, and was fittingly buried at the monastery of Dabra Libanos.</p>
-
-<p>Tsehai Berhane Selassie</p>
-
-<hr />
-
-<p><strong>Bibliography</strong></p>
-
-<p>Tadassa Zawalda, <em>Qarin Garamaw</em> (“Majestic Resistance”), Addis Ababa, 1976/68.</p>
-
-<p>A. Zervos, <em>L’empire d’Ethiopie</em>, Alexandria, 1936.</p>
-
-<p>See also “Wayzaro Shoa Regged,” <em>New Times *and *Ethiopian News</em>, March 3, 1945.</p>
-
-<p>“Yawayzako Shawaragged Gadle Ya-Heywat Tarik” (“Biography of Shawaraggad Gadle”), <em>Addis Zaman</em> (“New Times”), Addis Ababa, March 3, 1942 (Ethiopian Calendar).</p>
-
-<hr />
-
-<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (In 20 Volumes). Volume One: Ethiopia-Ghana. Ed. L. H. Ofosu-Appiah. New York: Reference Publications Inc., 1977.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Gadle, Shawaraggad`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -754,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -793,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

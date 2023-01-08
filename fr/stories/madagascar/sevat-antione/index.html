@@ -605,77 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Antoine Sevat naquit le 15 mai 1878, dans une humble famille paysanne, à Isle-et-Bardais, dans le diocèse de Moulins. Il perdit à l’âge de cinq ans sons père qui était bûcheron et il fut élevé par son oncle maternel. Il entra à l’âge de seize ans au séminaire du Réray, puis à l’école des Lazaristes de Lyon et fit son noviciat à la Maison-Mère des Lazaristes à Paris. Il fut ordonné prêtre le 28 mai 1904.</p>
-
-<p>Ses études terminées, il séjourna pendant deux ans à Alexandrie, puis revint en France en 1906, au Berceau de Saint-Vincent-de-Paul, près de Dax. En 1908, il fut envoyé à Madagascar pour renforcer l’équipe des missionnaires du Vicariat Apostolique de Fort-Dauphin dirigé alors par Mgr Crouzet. Il exerça son ministère à la tête des missions de Vohipeno et de Farafangana où il créa une école de catéchistes. Il fut mobilisé à Madagascar lorsque la guerre de 1914 éclata.</p>
-
-<p>En raison de sa grande connaissance du pays après 20 ans de séjour, de son activité, de ses qualités personnelles, il fut nommé évêque coadjuteur du Vicariat Apostolique de Fort-Dauphin et fut sacré à la Maison-Mère des Lazaristes le 30 novembre 1928 par le Cardinal Dubois, archevêque de Paris. Le Maréchal Lyautey qui assistait à son sacre et qui l’avait vu à l’œuvre déclara que Mgr Sevat était un grand serviteur de la France. Tout en veillant au progrès des âmes, il s’était consacré à l’amélioration des conditions de vie des Malgaches.</p>
-
-<p>C’était surtout un grand serviteur de l’Église. Il fut nommé Vicaire Apostolique de Fort-Dauphin en 1938. Il avait alors 60 ans. Lors de la commémoration du 3e centenaire de la fondation de Fort-Dauphin, célébrée du 23 au 26 juillet 1948, le Haut Commissaire de France, M. de Chevigné, lui remit la Croix de Chevalier de la Légion d’Honneur, en reconnaissance de ses éminents services.</p>
-
-<p>Mgr Sevat fit un dernier séjour en France en 1950. Il sentait ses forces décliner et craignait de ne plus pouvoir assurer la charge dont il s’était acquitté durant 25 ans avec une efficacité remarquable, grâce à son zèle et son don d’organisation. Aussi, au début de 1952, il fit valoir auprès de Rome son désir d’être remplacé. Il fut prié de continuer à administrer son vicariat jusqu’à ce que son successeur fut prêt à prendre sa succession. Il demeura donc à son poste jusqu’à l’arrivée de Mgr Fresnel qui, sacré le 4 juin 1953 à la chapelle des Lazaristes à Paris, arriva en janvier 1954 pour prendre ses fonctions d’évêque de Fort-Dauphin.</p>
-
-<p>Avant de quitter ses fidèles, Mgr Sevat avait célébré ses noces d’argent les 27 et 28 novembre 1953 à Fort-Dauphin. Il se retira ensuite à Farafangana où, selon son désir, il avait demandé à être l’aumônier des lépreux. Assisté de huit Sœurs, il continua à la léproserie de Farafangana son ministère auprès de 375 lépreux dont il avait la charge. C’est là qu’il mourut le 6 juillet 1957, ayant servi 49 ans, près d’un demi-siècle, à Madagascar.</p>
-
-<p>Lors de ses funérailles, son éloge fur prononcé en français et en malgache par M. Zafimahova, Président du Conseil de la Province de Fianarantsoa et par Mgr Fresnel, évêque de Fort-Dauphin. Il fut rappelé à cette occasion combien de jeunes Malgaches purent continuer leurs études grâce à ses interventions et combien de familles lui furent redevables de leur réussite intellectuelle et sociale.</p>
-
-<p>Raymond Delval</p>
-
-<hr />
-
-<h1 id="bibliographie">Bibliographie</h1>
-
-<p>Jacques Chevalier, <em>Monseigneur Antoine Sevat (1878-1957)</em>. Annales de la Congrégation de la Mission (Lazaristes) et de la Compagnie des Filles de la Charité, tome 123, 1958, Paris.</p>
-
-<p>Journal <em>Lumière</em>, nº 1121 du 1er août 1957, Fianarantsoa.</p>
-
-<hr />
-
-<p>Cet article, réimprîmé ici avec permission, est tiré d’<em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em>, tome 3, publié en 1977 par l’Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). Tous droits réservés.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Sevat, Antoine`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -756,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -793,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

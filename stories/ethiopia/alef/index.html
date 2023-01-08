@@ -607,79 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>‘Aléf, <em>Abba</em>, was one of the Nine Saints who came to Ethiopia about the turn of the fifth century as Monophysite missionaries. He went to the land of the Ag’azi and founded a monastery in Beheza in Ahseya. A monastery named after him is said to exist near Adwa, some five kilometres from Yeha. In the <em>Acts of Abba Gärima</em>, ‘Aléf’s place is taken by <em>Abba</em> ‘Os, who, like him, reputedly came from Caesarea. He is commemorated on 11 <em>Mäggabit</em> (20 March).</p>
-
-<p>A. K. Irvine and Seifu Metaferia</p>
-
-<hr />
-
-<p><strong>Bibliography</strong></p>
-
-<p>A. Dillmann, “Zur Geschichte des Axumitischen Reichs im vierten bis sechsten Jahrhundert,” <em>Abhandlungen der Königlichen Akademie der Wissenschaften zu Berlin</em> (1880).</p>
-
-<p>E. Littmann, <em>The Legend of the Queen of Sheba</em> (Leyden, 1904).</p>
-
-<p>M. Chaîne, “Répertoire de Salam et Malke’e,” <em>La Revue de l’Orient Chrétien</em> (Paris, 1913).
-E. A. Wallis Budge, <em>A History of Ethiopia</em> (London, 1928).</p>
-
-<p>——–,* The Book of the Saints of the Ethiopian Church* (Cambridge, 1928), Vol. III, 944.</p>
-
-<p>J.-B. Coulbeaux, <em>Histoire politique et religieuse de l’Abyssinie * (Paris, 1929), Vol. I.
-M.-A. Van Den Oudenrijn, *La vie de Saint Za Mikä’êl ‘Aragäwi</em> (Fribourg, 1939).</p>
-
-<p>C. Conti Rossini, “L’omilia di Yohannes vescovo di Aksum in onore di Garima,” <em>Actes du Congrès International des Orientalistes, Section Sémitique</em> (Paris, 1898).</p>
-
-<p>——– (ed.), <em>Acta Yärèd et Pantalëwöm</em>, <em>Corpus Scriptorum Christianorum Orientalium</em>, Scriptores aethiopici, Series altera, t. XVII.</p>
-
-<p>——–, <em>Storia d’Etiopia</em>, (Bergamo, 1928).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>The Dictionary of Ethiopian Biography, Vol. 1 ‘From Early Times to the End of the Zagwé Dynasty c. 1270 A.D.,’</em> copyright © 1975, edited by Belaynesh Michael, S. Chojnacki and Richard Pankhurst, Institute of Ethiopian Studies, Addis Ababa, Ethiopia.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Alef ('Aléf)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -758,7 +687,7 @@ M.-A. Van Den Oudenrijn, *La vie de Saint Za Mikä’êl ‘Aragäwi</em> (Fribo
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -797,6 +726,6 @@ M.-A. Van Den Oudenrijn, *La vie de Saint Za Mikä’êl ‘Aragäwi</em> (Fribo
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

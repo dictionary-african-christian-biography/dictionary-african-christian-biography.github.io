@@ -607,65 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Paul Berthoud was a pioneer missionary of the Swiss Mission Church in South Africa and Mozambique. Berthoud received his theological education at the faculty of the Free Church of the Canton Vaud in Lausanne, Switzerland. In 1872 he and Ernest Creux left for Basutoland (present-day Lesotho) where he served under the auspices of the Paris Evangelical Missionary Society (PEMS). Together with Adolphe Mabille, he left in 1872 for the northeastern Transvaal in neighboring South Africa. There in 1875 Berthoud and Creux established a mission station named Valdezia after their home canton, Vaud, and began to study Tsonga (Gwamba) language. In 1877 Berthoud left for Portuguese East Africa (present-day Mozambique) and established a mission station and a training institution at Rikatla and in 1889 another station at Lourenço Marques. Though he retired in 1903, he returned in 1906 to Mozambique where he eventually died.</p>
-
-<p>Besides his pioneering mission work, Berthoud made a major contribution in the field of linguistics. His knowledge of the Tsonga and Ronga languages not only led to Bible translations but also to his writing various hymns and grammars.</p>
-
-<p>J. W. Hofmeyr</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Paul Berthoud, Les Nègres Gouamba (1896), <em>Lettres missionnaires de M. et Mme. P. Berthoud de la Mission romande, 1873-1879</em> (1900), <em>Abuku du Mapsalme</em> (1905), and <em>Eléments de grammaire Ronga</em> (1920). J. du Plessis, <em>A History of Christian Missions in South Africa</em> (1911); M. I. Mathebula, “The Relationship between Some Ecumenical Bodies and the Evangelical Presbyterian Church in South Africa (Swiss Mission) (1904-1975): A Historical Study” (M. Th. Thesis, Univ. of South Africa, Pretoria, 1989).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Berthoud, Paul (B)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -744,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -783,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

@@ -609,75 +609,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Née “vers” 1862 à Tananarive, décédée le 9 avril 1934 à Fianarantsoa. A fait profession le 25 mai 1890 à Fianarantsoa.</p>
-
-<p>Elle a été une des premières religieuses malgaches.</p>
-
-<p>Symphorose appartenait à une famille hova noble, très considérée et apparentée à la reine Ravanalo II.</p>
-
-<p>Confiée aux Sœurs d’Andohalo pour son éducation, elle est instruite de la religion catholique, se montre docile et appliquée au travail. En 1886, elle demande à se faire religieuse. Dès ce jour, sa famille la rejette. Ce sera la souffrance de toute sa vie.</p>
-
-<p>Lors de la guerre franco-malgache de 1884, Sœur Jean-Baptiste doit s’exiler. La paix rétablie, ses Supérieures l’envoient à Fianarantsoa pour s’occuper de l’instruction et de la formation chrétienne des “<em>normaliennes</em>” (épouses destinées à seconder leur maris catéchistes, ou femmes mariées que les missionnaires envoient dans les postes de brousse comme catéchistes ou maîtresses d’école).</p>
-
-<p>Du fait de sa naissance et de sa consécration religieuse, elle jouissait de la vénération des Malgaches. Son influence s’étendait à toutes les ethnies et à toutes les classes de la société. Sa discrétion sur les confidences reçues n’avait d’égale que sa charité.</p>
-
-<p>Elle a été la première à être inhumée dans le tombeau de la mission à Ambatomena. Elle repose ainsi auprès des missionnaires étrangers.</p>
-
-<p>Sœur Marcienne Fabre</p>
-
-<hr />
-
-<h1 id="bibliographie">Bibliographie</h1>
-
-<p><em>Bulletin de la Congrégation de Saint Joseph de Cluny</em>, Nº 192, t. 15, p. 978, août 1935.</p>
-
-<hr />
-
-<p>Cet article, réimprîmé ici avec permission, est tiré d’<em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em>, tome 3, publié en 1977 par l’Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). Tous droits réservés.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Ramasindraibe, Symphorose`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -758,7 +691,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -795,6 +728,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

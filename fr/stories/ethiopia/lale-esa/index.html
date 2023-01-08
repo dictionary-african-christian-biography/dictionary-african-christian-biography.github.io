@@ -605,78 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Le prophète Esa est né dans le clan des Golla Malla, à Zara, Gamo, en Ethiopie, vers 1888. Il a commencé son ministère populaire vers 1920 dans sa propre communauté de Zara, près de Chencha, et son influence s’est répandue jusqu’à Gamo, Kucha Boroda, Gofa et Wolaitta.</p>
-
-<p>On ne sait pas s’il a reçu l’inspiration pour ses prédications à travers son contact avec l’église orthodoxe ou à partir de rêves de nature divine. Il rassemblait ses adhérents dans les champs et sur les places de marché pour leur prêcher un message en trois parties :</p>
-
-<blockquote>
-  <p>D’abord, les gens devaient louer le Dieu créateur, Tosa. Le chef de la maison devait prendre du miel blanc pur le dimanche matin et, avec sa famille derrière lui, regarder vers l’est. Il devait plonger ses doigts dans le miel, et en envoyer d’une chiquenaude vers le ciel en disant trois fois : “Tosa, tu es le créateur de tout, soit miséricordieux envers nous. Nous t’offrons par ceci ce que nous avons de mieux.” Les objets de divination devaient être détruits.
-Deuxièmement, il conseillait vivement une adaptation des rituels de famille dans laquelle les prières de la famille seraient offertes à Tosa au lieu de faire oblation aux esprits des ancêtres au pilier central de la maison.</p>
-
-  <p>Troisièmement, Esa éveillait la conscience sociale des gens ainsi que leurs sensibilités éthiques.</p>
-</blockquote>
-
-<p>En 1924, Esa a été arrêté dans sa maison à Zara par le gouverneur provincial de Chencha et amené par escorte de soldats armés à Addis Abeba, où il est mort en prison.</p>
-
-<p>Esa a eu une influence importante dans le sud de l’Ethiopie comme prophète pré-chrétien et comme précurseur providentiel du christianisme.</p>
-
-<p>Lila Balisky</p>
-
-<hr />
-
-<h1 id="bibliographie">Bibliographie</h1>
-
-<p>Balisky, E. Paul, 1997, “Wolaitta Evangelists : A Study of Religious Innovation in Southern Ethiopia, 1937-1975, “ [Les évangélistes Wolaitta: une étude d’innovation religieuse en Ethiopie méridionale, 1937-1975] (thèse de doctorat, Université d’Aberdeen, 1997), 115-132.</p>
-
-<p>Singleton, Michael, 1978, “Asa–Pagan Prophet or Providential Precursor?” [Asa– prophète païen ou précurseur providentiel?] Afer, Vol. II, 82-89.</p>
-
-<hr />
-
-<p>Ce récit, reçu en 2002, a été rédigé par Lila et Paul Balisky, missionnaires avec SIM (MIS) International à Addis Abeba, et membres du conseil consultatif du <em>DIBICA</em>.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Lalé, Esa (A)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -757,7 +687,7 @@ Deuxièmement, il conseillait vivement une adaptation des rituels de famille dan
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -794,6 +724,6 @@ Deuxièmement, il conseillait vivement une adaptation des rituels de famille dan
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

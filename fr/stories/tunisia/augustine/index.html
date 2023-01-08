@@ -564,7 +564,7 @@
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Augustinus, Aurelius">
     
-    <meta itemprop="datePublished" content="December 20, 2022">
+    <meta itemprop="datePublished" content="December 20, 2023">
     
 
 <!-- NAME(S), DATE, AFFILIATION, COUNTRY -->
@@ -609,69 +609,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/tunisia/augustine/augustine.jpg" alt="image" class="bio" height="200px" width="150px" /></p>
-
-<p>Théologien patristique latin et exégète des écritures; saint. Né en Afrique du Nord, et éduqué en Afrique du Nord et à Rome, Augustin était évêque d’Hippone d’environ l’an 390 jusqu’à sa mort. La théologie qu’il a élaborée a dominé l’occident jusqu’au treizième siècle et a beaucoup influencé la Réforme. Ses idées sur la prédestination ont formé la base de plusieurs théologies et de pratiques de la mission pendant toute cette époque.</p>
-
-<p>Le débat qui a eu lieu entre Augustin et Pélage sur le libre arbitre a persuadé certains missionnaires que sans le don de Jésus Christ, donné par Dieu, et sans le don de la foi elle-même, tous les non croyants étaient perdus. D’autres ont compris Augustin différemment: il soulignait que Dieu avait décrété le salut des uns et la condamnation des autres; donc, l’entreprise missionnaire était dévastée, parce que le destin de chacun était déjà décidé. Le monastère important de Lérins, dans le sud de la France, commençant avec Jean Cassian, représentait une tradition orientale dans l’ouest qui rejetait les extrêmes Pélagiens, mais comprenait les idées sur la prédestination d’Augustin comme une innovation dangereuse.</p>
-
-<p>La controverse entre Augustin et les Donatistes, elle aussi, était épineuse. Il rejetait leur insistance selon laquelle seule la pureté totale rendait un acte sacremental valable. Il détestait leur violence, mais la pensée de les réprimer grâce à l’aide des soldats romains ne le gênait pas. Au moment même où la “contextualization” Punique/Berbère de l’évangile avait besoin d’une direction pastorale ferme, la culture latine d’Augustin l’empêchait de voir les possibilités.</p>
-
-<p>Frederick W. Norris</p>
-
-<hr />
-
-<h1 id="bibliographie">Bibliographie</h1>
-
-<p>Peter Brown, <em>Augustine of Hippo</em> (1967);  Henry Chadwick, <em>Augustine</em> (1986); William H. C. Frend, <em>The Donatist Church: A Movement of Protest in Roman North Africa [l’Eglise Donatiste: un mouvement de protestation dans l’Afrique du Nord romaine] *(1952); Robert C. Sproule, *The Donatist Controversy [La controverse donatiste] *(1984); Agostino Trape, *St. Augustine: Man, Pastor, Mystic [St. Augustin: homme, pasteur, mystique]</em> (1986).</p>
-
-<hr />
-
-<p>Cet article est reproduit, avec permission, du <em>Biographical Dictionary of Christian Missions [Dictionnaire biographique des missions chrétiennes]</em>, copyright (c) 1998, par Gerald B. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. Tous droits réservés.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Augustinus, Aurelius`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -752,7 +691,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -789,6 +728,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

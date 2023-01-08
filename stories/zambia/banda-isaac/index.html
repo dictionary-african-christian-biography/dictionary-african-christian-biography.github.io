@@ -607,69 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Pastor Isaac Banda was a refugee from the civil war in Mozambique.  With twenty-two thousand others, he settled at the Ukwimi Agricultural Refugee Camp in Zambia during the 1980s.  The Zambian government and world relief agencies had provided them with a place where they could raise crops and continue their lives in peace.</p>
-
-<p>Isaac Banda had been a lay pastor in the Tete area of Mozambique.  He found himself at Ukwimi with many other Nazarenes and they started holding services.  Isaac Banda was already over seventy and was looked upon as a spiritual leader.</p>
-
-<p>In about 1988 he suggested that they take up a collection and send an envoy five hundred kilometres to Lusaka to make contact with fellow-Nazarenes there.  Mr. Viola Phiri, another lay pastor, was sent as their representative, and as a result, Rev. John Zulu, Superintendent of Zambia South District, and Missionary Rev. Lowell Clark  began visiting them at Ukwimi.  They found about 275 Chewa-speaking Nazarenes meeting in a church building built of poles and thatch.</p>
-
-<p>By the time Mr. Isaac Banda passed away there were about two thousand people meeting in four different churches spread up to thirty-five kilometres apart.  At his death there was great mourning at the loss of their elder spiritual leader.</p>
-
-<p>Paul S. Dayhoff</p>
-
-<hr />
-
-<p>Sources:</p>
-
-<p>J. Fred Huff, “A Saintly Refugee Goes to His Heavenly Home,” <em>Trans African,</em> (Florida, Transvaal, South Africa: Africa Nazarene Publications, March-April 1992) 7; <em>World Mission,</em> (Kansas City, MO: Nazarene Publishing House, October 1989), 10.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Living Stones In Africa: Pioneers of the Church of the Nazarene</em>, revised edition, copyright © 1999, by Paul S. Dayhoff.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Banda, Isaac`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -748,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -787,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

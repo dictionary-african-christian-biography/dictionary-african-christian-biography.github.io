@@ -605,65 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Missionnaire norvégien, érudit, et évêque luthérien. Birkeli, fils de parents missionnaires, est né à Tulear, au Madagascar. Il a obtenu son diplôme de l’Ecole Norvégienne Luthérienne de Théologie, et il a obtenu le doctorat de l’université d’Oslo (D.Th.). Il a été ordonné en 1930. Après avoir fait des études de langue en France, il est allé au Madagascar en 1933, au service de la NMS (Société Missionnaire Norvégienne). Pendant plusieurs années il a enseigné au Séminaire Théologique de Ivory, à Fianaratsoa, au Madagascar, mais il est tombé gravement malade en 1944, et a été obligé de rentrer en Norvège. Il a publié des études sur l’histoire locale du Madagascar dans <em>le Bulletin de l’Académie Malgache</em>, ainsi qu’un commentaire sur l’épître aux Galates en malgache. Il a écrit l’histoire missionnaire du Madagascar dans la publication du centenaire de la NMS. Dans sa dissertation de doctorat, “Politik og misjon” (1952), il a examiné les circonstances politiques et interconfessionnelles du Madagascar, et leur conséquences par rapport à l’établissement de la mission norvégienne de 1861 jusqu’en 1875. Son deuxième domaine de recherches portait sur les premières activités missionnaires au Norvège, qui ont eu leur origine en Angleterre, et la transition du paganisme vers le christianisme en Norvège.</p>
-
-<p>Birkeli était un homme de vision et d’initiative. Il a encouragé le développement de l’église indépendante luthérienne du Madagascar, et a organisé le premier congrès pan-africain luthérien à Marangu, au Tanganyika (la Tanzanie actuelle), en 1955, et a proposé que l’on fonde l’émission de radio, la Voix de l’Evangile, à Addis Ababa. Il était éditeur de <em>Norsk Misjonstidende</em> (1948-1954), directeur du département de la Fédération Mondiale Luthérienne de la mission mondiale à Genève (1954-1957), secrétaire général de la NMS (1957-1960), évêque de Stavanger (1960-1968), et évêque d’Oslo (1968-1972). Il a été décoré d’ordres anglais et norvégiens, et a reçu trois doctorats <em>honoris causa.</em></p>
-
-<p>Nils E. Bloch-Hoell</p>
-
-<hr />
-
-<h1 id="bibliographie">Bibliographie</h1>
-
-<p>Nils E. Bloch-Hoell, “Fridtjov Birkeli: Minnetale over biskop Fridtjov Birkeli,” *Det Norske Videnskap-Akademi Årbok 1984 *(1985), pp. 145-153.</p>
-
-<hr />
-
-<p>Cet article est reproduit, avec permission, du  <em>Biographical Dictionary of Christian Missions [Dictionnaire Biographique des Missions Chrétiennes]</em>, copyright © 1998, par Gerald H. Anderson, W.B. Eerdmans Publishing Company, Grand Rapids, Michigan. Tous droits réservés.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Birkeli, Fridtjov (Søiland)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -744,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -781,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

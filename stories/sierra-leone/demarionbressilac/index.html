@@ -607,73 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Melchoir de Marion Bressilac (1813-June 25, 1859), was the first Catholic bishop of Sierra Leone, and the founder of the Society of African Missions (S.M.A.–Société des Missions d’Afrique).</p>
-
-<p>Marion de Bressilac served as a missionary in India from 1842 to 1854. In 1854 he was consecrated bishop of a diocese in Madras, India, but resigned this see in 1855 to avoid an open conflict with his European confrères over his policy of Indianization of the local clergy. Returning to Rome, he volunteered to serve as a simple missionary in Africa, but instead the Vatican authorized him to found “a society of priests for the evangelization of Africa.” This later resulted in the establishment of the Society of African Missions, inaugurated in Lyons, France, on December 8, 1856. Meanwhile, the “Vicariate Apostolic of Sierra Leone” had been set up on April 13, 1856, and Marion de Bressilac was named as its bishop in June.</p>
-
-<p>At that time, Sierra Leone was part of the vast “Mission of Two Guineas,” entrusted to the Congregation of the Holy Ghost with headquarters in Dakar, Senegal, with ill-defined limits along the coast south of Gabon, and with no fixed limit inland to the west. An advance S.M.A. party of two priests and a lay helper sailed from Marseilles, France, and arrived in Freetown on January 12, 1859. Despite the alarm of British Protestant groups at the arrival of French Catholics in the country, the governor of Sierra Leone, Col. S.J. Hill (term of office 1854-62) promised the S.M.A. the “same protection as he gave to other religious bodies.”</p>
-
-<p>In March 1859, Monsignor Marion de Bressilac sailed from Brest, France, with a priest and a lay brother. After visiting Dakar en route, the three arrived in Freetown on May 14. The city was then experiencing the worst yellow fever epidemic it had known for more than 25 years. The captain of the ship tried to convince the bishop and his companions not to go ashore, but Marion de Bressilac insisted on landing, in order, he said, “to share the misfortune of his children.”</p>
-
-<p>The S.M.A. missionaries then began to plan visits into the interior. By June 13, 1859, however, three of the S.M.A. missionaries had died of yellow fever. The bishop himself died on June 25, and was buried the next morning. The other S.M.A. missionary died on June 28, leaving only a lay helper, who returned to France.</p>
-
-<p>After this, the  S.M.A. transferred  its  African headquarters to Dahomey. Bishop Marion de Bressilac’s work was not, however, in vain. In 1959, on the centenary of his death, his spiritual successors in West Africa had charge of five archdioceses, thirteen dioceses, one vicariate, and two prefectures apostolic, while 150 African priests and three African bishops shared the apostolate with 800 other members of the S.M.A. Marion de Bressilac’s “grasp of the absolute need of indigenous clergy,” it has been written, “was taken over into the Society of African Missions and remained a cornerstone of all its future policy.’’</p>
-
-<p>Cyril P. Foray</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Christopher Fyfe, <em>A History of Sierra Leone</em>, London, 1962; Holy Ghost Fathers, <em>Centenary Souvenir of the Holy Ghost Fathers in Leone</em>,  Freetown, 1964;  H.M. Joko-Smart, “The Contribution of the Holy Ghost Fathers to Education in Sierra Leone, 1864-1967,” unpublished dissertation, Fourah Bay College-University of Durham, 1958.</p>
-
-<hr />
-
-<p>This article was reprinted from *The Encyclopaedia Africana Dictionary of African Biography *(In 20 Volumes). Volume Two: Sierra Leone-Zaire, Ed. L. H. Ofosu-Appiah. New York: Reference Publications Inc., 1979.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `De Marion Brésillac, Melchior-Marie-Joseph (A)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -752,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -791,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

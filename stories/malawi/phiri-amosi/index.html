@@ -607,71 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Rev. H. Amosi Phiri, known and loved as Rev. Amosi, was a pastor for over twenty-five years, holding pastorates in Zomba, Ndirande, Mzuzu and Bangwe.  He taught in the Bible College from 1989 in Bangwe through to its transition to Lilongwe in 1991, when the college became Nazarene Theological College of Central Africa  (NTCCA).</p>
-
-<p>From 1991 on Phiri pastored the Bangwe Church and  was the Child Sponsorship coordinator for the South District.  From 1997 on he served as district superintendent of Malawi South District, the largest district in the country.  In 2003, the Malawi South District had 11,000 members and over 100 churches and preaching points.  From 1999 on he served as chairman of the National Board of Malawi and was  on the Board of Trustees for NTCCA.</p>
-
-<p>He was known as a man of Christian character and integrity, who could be trusted to give of his best.  He possessed Godly wisdom and carried the respect of the people he served.  His quiet, steadfast spirit and administrative abilities served him well in his many leadership responsibilities over the years.</p>
-
-<p>Rev. Amosi Phiri passed to his eternal reward on September 15, 2003 in Blantyre, Malawi.  He was laid to rest in his home village in the Mulanje District on September 17. [1]</p>
-
-<p>Paul S. Dayhoff</p>
-
-<hr />
-
-<p>Notes:</p>
-
-<ol>
-  <li>Revs. Fred and Sheryl Tedder, “A Tribute to Rev. Amosi Phiri”, <em>Out of Africa</em>, Weekly E-mail news from Africa Region, Church of the Nazarene. (Sept. 25, 2003), 3; (Sept. 17, 2003), 3.</li>
-</ol>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Standing Stones of Africa: Pillars of the Faith in the Church of the Nazarene</em>, unpublished, copyright pending, 2004, by Paul S. Dayhoff.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Phiri, Amosi`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -750,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -789,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

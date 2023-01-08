@@ -605,69 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Pasteur et éducateur africain.</p>
-
-<p>Aggrey est né à Anamabu dans la Colonie de la Côte d’Or (le Ghana actuel), dix-septième fils d’un conseiller important au chef du clan, et un descendant de chef du côté de sa mère. Sa famille s’est convertie alors qu’il était encore enfant. Il a été accueilli par la famille d’un missionnaire Wesleyen, et il est devenu enseignant et prédicateur. En 1898, il est devenu directeur d’une école wesleyenne à Cape Coast. Cette même année, l’Église Méthodiste Anglicane Africaine de Zion lui a donné la possibilité de faire ses études à Livingstone College, en Caroline du Nord, aux Etats-Unis, ainsi qu’à l’institution affiliée, la faculté de théologie Hood. Il s’est distingué dans ses études, obtenant la licence ès lettres avec mention (1902), ainsi que la maîtrise et un doctorat en théologie en 1912. Il est devenu professeur à Livingstone (1902-1920), a été ordonné ancien dans l’église M.A.A. Zion, et a épousé une femme noire américaine, Rosebud Douglass. A partir de 1914 il a été pasteur de deux églises de campagne, et faisant à la fois de l’évangélisation et le développement de la communauté. Ce développement comprenait des projets de syndicats bancaires et de droit de propriété pour les noirs américains. Il a été nommé membre d’un groupe qui avait beaucoup d’influence : la commission sur l’éducation africaine initiée par la fondation Phelps-Stokes et soutenue par plusieurs sociétés missionnaires. Ce travail l’a amené à se rendre en Afrique du Sud, en Afrique Centrale et Occidentale (1920-1921) ainsi qu’en Afrique de l’Est et encore en Afrique du Sud (1923-1924).</p>
-
-<p>Comme seul membre noir de la commission, il a fait face à la discrimination raciale dans plusieurs colonies. Cependant, ses qualités personnelles et intellectuelles, son discours puissant et son approche conciliatoire ont fait une impression irrésistible, surtout dans son pays natal de la Côte d’Or et en Afrique du Sud (où on lui a offert un poste de professeur à Fort Hare College). Malgré sa renommée croissante, il a repris ses études de docteur en sociologie à Columbia University jusqu’en 1924, quand il a accepté le poste de directeur adjoint à Achinota College, Côte d’Or, sous la direction d’A. G. Fraser. Ses dons de médiation avec la société africaine ont été d’importance capitale pour le succès du collège visionnaire. Il est mort à New York lors d’un congé pris pour terminer le livre qu’il écrivait pour sa thèse de doctorat.</p>
-
-<p>Aggrey voulait que les traits marquants de l’Afrique soient le christianisme, l’éducation (classique, sociale et pratique, du plus haut niveau), le développement agriculturel, et la civilisation (mais pas l’occidentalisation). Ses fameux discours (donnés sans préparation) étaient garnis d’aphorismes mémorables et soulignaient la coopération internationale, l’initiative africaine, et la contribution distinctive de la culture africaine à la civilisation mondiale.</p>
-
-<p>Andrew F. Walls</p>
-
-<hr />
-
-<h1 id="bibliographie">Bibliographie</h1>
-
-<p>T. J. Jones, <em>Education in Africa *[L’éducation en Afrique] (1922) et *Education in East Africa</em> [L’éducation en Afrique de l’Est] (sans date) ; E. W. Smith, <em>Aggrey of Africa</em> [Aggrey d’Afrique] (1929) ; C. K. Williams, <em>Achimota : The Early Years</em> [Achimota : Les premières années] (1962).</p>
-
-<hr />
-
-<p>Cet article est reproduit, avec permission, du <em>Biographical Dictionary of Christian Missions</em> [Dictionnaire de Biographies des Missions Chrétiennes] © 1988, par Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. Tous droits réservés.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Aggrey, James Emman Kwegyir (B)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -748,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -785,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

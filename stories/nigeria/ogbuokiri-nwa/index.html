@@ -607,81 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>The town of Amuzu in Aboh Mbaise Local Government Area of Imo state, Nigeria, like other communities in early times, practiced traditional worship or, in other words, idol worship. Amuzu came to the light of Christianity in 1916 through the enormous efforts of Nwachukwu Ogbuokiri, the first person to convert to Christianity in that community.</p>
-
-<p>Nwachukwu Ogbuokiri was born in 1862. He received both primary and secondary education.  In 1916, he was converted to Christianity thanks to the witness of the palm oil traders from Okrika in the Delta Region of Nigeria. These traders who settled at Ife and Nriukwu, two coastal villages along the bank of Imo River in Amuzu community, developed their trading port and founded the Niger Delta Pastorate (NDP) mission in the community.</p>
-
-<p>When Chief Nwachukwu became a Christian under the NDP mission, he built a church out of mud at Lorji, a neighboring community. Then and there he requested a church teacher. The first church teacher posted there was Mr. Tobiam William, a native of Okrika.</p>
-
-<p>In 1916, knowing how deeply the people of Amuzu were immersed in traditional religion and how they did evil deeds as a result, Chief Nwachukwu, the NDP missionaries, and a few new converts destroyed all juju houses and shrines in and around Amuzu.  In 1918, an outbreak of influenza claimed many lives in Amuzu and beyond. Many people attributed the epidemic to a vengeance from the gods for the destruction of their shrines and juju houses. Some of converts fell back and rebuilt their juju houses. For this reason, the growth of the church in Amuzu was thereby greatly impeded.</p>
-
-<p>Despite the influenza epidemic, in 1919 Chief Nwachukwu led a team of NDP missionaries  back to preach to the fallen converts and to encourage them to come back to the worship of the Supreme God.  About twenty were baptized under the NDP mission at Okala as a way to keep them faithful to Christianity. His enormous efforts for the growth of Christianity in Amuzu came to the notice of the priest of the NDP mission named Rev. A. O. Ockiya, a native of Nembe, in Brass. In 1920 Rev. A. O. Ockiya visited the church and, during a big ceremony, christened the church “St. Andrew’s Church.”</p>
-
-<p>Yet the church encountered many obstacles. In 1921, the NDP handed over the administration of the church to the Christian Missionary Society (C.M.S.) for the sake of convenience. Members didn’t understand what that meant and many lapsed into paganism. Chief Nwachkwu sent delegates to Egbu in Owerri to request a C.M.S. teacher.</p>
-
-<p>At the same time, other overzealous converts went to Emekuku, in Owerri, to investigate the newly established Roman Catholic Mission (R.C.M.).  When the two delegates returned, the two missions, the C.M.S. and the R.C.M. began to practice their divergent faiths under the same roof. This created tension between the two missions.  Chief Nwachukwu suggested to the court that the R.C.M.  be given a place in Amuzu where they could set up their building for worship so that peace would reign.</p>
-
-<p>Thanks to Chief Nwachukwu’s important efforts from 1921 to 1926, many people were converted: some were baptized, some were confirmed, and some were sent to missionary or theological schools to study and be ordained as pastors in order to minister in the churches.</p>
-
-<p>In 1927 problems arose in the church and, as a result, Chief Nwachukwu and his family left the church and founded the Seventh Day Adventist (S.D.A.) in Amuzu.  Some members followed him into that church.</p>
-
-<p>It is important to know that these churches which came into existence in Amuzu during Chief Nwachukwu’s time are still in existence.  Today the R.C.M, the C.M.S. (formerly the N.D.P.) and the S.D.A. still have branches in Amuzu. Furthermore Chief Nwachukwu’s leaving did not create problems between the churches. The C.M.S. (formerly the N.D.P.) church is presently known in the Amuzu community as St. Andrew’s Anglican Church, Amuzu. It was renamed when the foundation stone of the church was laid at the permanent site on St. Andrew’s day, November 30, 1966, by his Lordship the Rt. Rev. C. E. I. Cockin, the first Anglican Bishop of Owerri Diocese.</p>
-
-<p>John Okalnwa Chinwe</p>
-
-<hr />
-
-<p>Sources:</p>
-
-<p>Paa Oliver Nwaneri, interview by the author, March 28, 2003.</p>
-
-<hr />
-
-<p>This article, received in 2004, was written and researched by John Okalnwa Chinwe, Department of History, University of Port Harcourt, under the supervision of Dr. Protus O. Kemdirim, <em>DACB</em> liaison coordinator at the University of Port Harcourt and <em>DACB</em> regional coordinator for Nigeria.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Ogbuokiri, Nwachukwu`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -760,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -799,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

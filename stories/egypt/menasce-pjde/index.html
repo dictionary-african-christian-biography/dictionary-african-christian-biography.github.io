@@ -607,65 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Dominican missiologist.</p>
-
-<p>De Menasce was born in Alexandria, Egypt, of a Jewish father, and was educated in law and philosophy in Alexandria and Cairo and at Oxford. He was secretary of the Zionist Bureau in Geneva in 1925 when he converted to Catholicism. He was baptized in 1926 in Paris. Louis Massignon encouraged him to undertake Syriac studies; this was the beginning of his outstanding contribution to Oriental studies. In 1930 he joined the Dominicans and was ordained to the priesthood in 1935. From 1936 he taught history of religions and missiology at the University of Fribourg, Switzerland. He was instrumental in the creation, in 1945, of the multilingual Nouvelle Revue de Science Missionaire/Neue Zeitschrift fur Missionswissenechaft, edited by Johannes Beckmann. In 1939 he was appointed research professor of the religions of ancient Iran in Paris. Disabled by strokes in 1957 and 1967, he was still very active in writing and correspondence until his death in Paris. He had affinities with the neo-Thomist revival led by Jacques Maritain and Charles Journet, but his closest links were with Massignon, Abd-el Jalil, Louis Gardet, and other Islamists. The relationship of Christianity to Judaism, Islam, and all the great world religions was central to his missiology, and in this he agreed emphatically with the theology of Hendrik Kraemer. In all this he contributed to the theological renewal of Roman Catholic missiology after World War II.</p>
-
-<p>Marc R. Spindler</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>A full bibliography of Menasce’s writings has been complied in P. Gignoux and A. Tafazzoli, eds., <em>Mémorial Jean de Menasce</em> (1974). In addition to Oriental studies and translations of ancient Iranian texts like Skand-Gumanik Vicar, <em>Solution décisive des doutes: Une apologétique mazdéenne du 9è siècle</em> (1945), he published <em>Permanence et transformation de la mission</em> (his collected missiological essays, including the famous rebuttal of Hendrik Kraemer; 1967) and “Contemplative Life and Missions,” <em>IRM</em> 56 (1967): 330-337. See also Adrian Hastings, “The Legacy of Pierre Jean de Menasce,” <em>IBMR</em> 21 (October 1997), and V. Python, “L’oeuvre du P. de Menasce OP (1902-1973) sur les missions et le mazdéisme,” <em>NZM</em> 30 (1974): 161 - 172.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Menasce, Pierre Jean de`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -744,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -783,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

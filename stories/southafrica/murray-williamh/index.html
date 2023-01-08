@@ -607,84 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>William Hoppe Murray was a South African pioneer missionary
-in Malawi. He, grandson of Andrew
-Murray, Sr., became a schoolteacher but felt the call
-to missionary service and studied for ministry at Stellenbosch.
-Graduating in 1892, he went to Edinburgh, Scotland, for a
-year and took medical classes. In 1894 he was ordained for
-service with the pioneer Dutch Reformed Church (DRC) mission
-to Malawi, which had been called to aid the Free Church of
-Scotland Mission there. Mkhoma became the headquarters of
-the mission, and Murray became its head in 1901, remaining
-in charge until 1937. He was the principal translator in the
-team that translated the New Testament into Nyanja, a project
-completed in 1906. The work on the Old Testament took a long
-time because everyone, including Murray, had so many other
-tasks to perform, but the whole Bible in Nyanja was published
-in 1924. This was also the year of the founding of the Church
-of Central Africa Presbyterian. The churches that had been
-brought into being by the Mkhoma mission became the Mkhoma
-Presbytery and, later, the Mkhoma Synod. In 1928 Murray represented
-the DRC of South Africa at the International Missionary Council
-Jerusalem meeting. In 1937 Murray retired to Worcester in
-South Africa where he died.</p>
-
-<p>Andrew C. Ross</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>M. H. Le Roux and M. M. Le Roux, <em>William Murray of Nyasaland</em> (1958).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Murray, William Hoppe`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -763,7 +687,7 @@ South Africa where he died.</p>
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -802,6 +726,6 @@ South Africa where he died.</p>
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

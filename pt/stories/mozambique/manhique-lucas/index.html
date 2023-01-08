@@ -606,69 +606,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Lucas Maganda Manhique era da região de Manhique. Ele se casou com Rabeca em 1912 e o seu primeiro filho Jaime Lucas, nasceu no ano seguinte. Em 1917 Manhique foi para Joni (Joanesburgo) para trabalhar e arrependeu-se quando estava lá. Ao voltar para casa tornou-se pastor da Igreja Metodista, mesmo que a sede da igreja fosse longe, em Mukhambe, Inhambane. Junto com o Rev. Harkness, Lucas Manhique estabeleceu as bases para a Missão Tavane, localizada a uns trinta quilômetros ao norte de Manjacaze. Lucas e Rabeca Manhique foram a uma escola de pregadores para preparar-se para trabalhar na terra natal deles. Eles concluíram a sua educação em Mukhambe. Em 1930, os missionários metodistas foram embora e a missão em Tavane foi comprada pela Igreja do Nazareno. Os Manhique entraram para a Igreja do Nazareno, e começaram a trabalhar com os novos missionários, o Rev. Charles “Gaza” Jenkins e a Sra. Pearl Jenkins.</p>
-
-<p>Rabeca Lucas Manhique (1894-1987) era de Wucopi, Manhique. Ela era uma excelente trabalhadora para o Senhor. Ela e Lucas Manhique junto pastorearam igrejas na região de Manhique. No começo dos anos 50, eles serviram nas igrejas de Maganda e Matiguane. Ano após ano, eles iam às reuniões nos acampamentos em Tavane. Os pastores andavam em burro e as mulheres caminhavam juntas em grupos.</p>
-
-<p>O pastor Manhique faleceu num hospital em Xai-Xai, e Rabeca, estando viúva, morava em sua casa em Manhique. As suas filhas a cuidavam. Eles tiveram oito filhos, incluindo o Simeão Manhique. Na sua velhice, Rabeca  foi morar com os  seus filhos em Maputo, onde ela faleceu aos 93 anos de idade. [1]</p>
-
-<p>Paul S. Dayhoff</p>
-
-<hr />
-
-<h1 id="notas">Notas</h1>
-
-<ol>
-  <li>Vicente J. Mbanze, “Grandmother Rabeca Lucas Manhique Has Died,” *Mutwalisi *(The Herald), Shangaan/Tsonga revista da Igreja do Nazareno em Moçambique e África do Sul, (Florida, Transvaal, África do Sul: Casa Publicadora Nazarena, Dezembro 1987), 8.</li>
-</ol>
-
-<hr />
-
-<p>Este artigo foi reproduzido com a permissão de: <em>Africa Nazarene Mosaic: Inspiring Accounts of Living Faith</em>, primeira edição, (Flórida, Gauteng, África do Sul: Publicações Nazarenas da África, 2002), copyright © 2001 por Paul S. Dayhoff. Todos os direitos são reservados.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Manhique, Lucas`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Leia várias versões: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -751,7 +690,7 @@
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 14 December 2022.<br>&copy; 2022 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 02 January 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -786,6 +725,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

@@ -605,71 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Timothée Djimbo Kubala, premier noir à avoir appris à lire et à écrire auprès des missionnaires dans sa contrée, naquit en 1900 à Bushi, dans le territoire de Bulungu, province du Bandundu au Congo Belge (actuellement la RDC).</p>
-
-<p>Il fut baptisé en 1927 et commença à travailler comme cathéchiste dans la mission de  Kafumba, qui se trouvait dans le territoire de Bulungu. En 1928 il a épousé Mbongo Ruth à Kiandu, secteur de Mungindu dans le territoire de Gungu où il effectua son ministère pastoral et implanta une église locale. De leur union sont nés deux enfants–un garçon et une fille.</p>
-
-<p>Après quelques années passées à Kiandu, il rentra dans la mission de Kafumba pour continuer le travail laissé par les missionnaires et également pour poursuivre ses études au centre biblique de la mission de Kafumba, où il obtint son diplôme.</p>
-
-<p>C’était un homme qui savait former les autres, car sa formation donna naissance à plusieurs évangélistes, pasteurs, catéchistes, et diacres. Il fut le pionnier, et le premier pasteur mennonite au Congo. C’est par lui que naquit la Communauté des Églises des Frères Mennonites au Congo.</p>
-
-<p>Parmi ses enfants, son fils Djimbo Kitoko, né le 2 février 1929 à Kafumba, suivit plus tard son père dans le ministère pastoral. Il travailla à Kafumba et à Kinshasa où il implanta beaucoup d’églises et forma des pasteurs. L’œuvre continue jusqu’à ce jour (2007).</p>
-
-<p>Tatiana Djoko</p>
-
-<hr />
-
-<p>Source:</p>
-
-<p>Djimbo Kitoko Apollo, fils aîné de Djimbo Kubala Timothée, interview, le 7 juin 2007.</p>
-
-<hr />
-
-<p>Cet article, reçu en 2008, est le produit des recherches de Tatiana Djoko, étudiant en missiologie au Centre Universitaire de Missiologie à Kinshasa-R.D. du Congo sous la direction du Rév. Fohle Lygunda, coordinateur francophone du <em>DIBICA</em>.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Djimbo Kubala, Timothée`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -750,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -787,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

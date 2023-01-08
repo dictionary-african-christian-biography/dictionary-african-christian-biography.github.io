@@ -607,71 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>British missionary and imperial agent.</p>
-
-<p>A son of Robert MOFFAT, in 1859 he helped to found the first permanent mission among the Ndebele of MZILIKAZI in present Zimbabwe.  Initially he was sponsored by his brother-in-law David LIVINGSTONE, but he soon affiliated with the London Missionary Society.  In 1865 he returned to Kuruman to continue his father’s work among the Tswana, quitting the mission society in 1879 to hold a variety of government posts.  During the late 1880s European pressure to wrench economic concessions from the Ndebele was intense.  Moffat went to Zimbabwe as an official British agent and persuaded king LOBENGULA to sign a treaty of friendship which was the precursor of Lobengula’s important concession treaty with Charles RUDD (1888).</p>
-
-<p>Mark R. Lipschutz and R. Kent Rasmussen</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Moffat, Robert Unwin.  <em>John Smith Moffat.</em>  London: John Murray, 1921.</p>
-
-<p><em>Dictionary of South African Biography,</em> 4 vols.  Cape Town, Durban: Human Sciences Research Council, 1968-81.</p>
-
-<p>Tabler, E. C.  <em>Pioneers of Rhodesia.</em>  Cape Town: C. Struik, 1966.</p>
-
-<p>Rasmussen, R. Kent.  <em>Historical Dictionary of Rhodesia/Zimbabwe.</em>  Metuchen: Scarecrow Press, 1979.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Dictionary of African Historical Biography</em>, 2nd edition, copyright © 1986, by Mark R. Lipschutz and R. Kent Rasmussen,  University of California Press, Berkeley and Los Angeles, California.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Moffat, John Smith (A)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -750,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -789,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

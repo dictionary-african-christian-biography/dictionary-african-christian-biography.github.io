@@ -610,75 +610,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/congo/kimpa-vita/kimpa_vita.jpg" alt="Kimpa Vita" class="bio" height="247px" width="160px" /></p>
-
-<p>Kimpa Vita foi uma profeta feminina popular no reino do Congo, uma precursora das figuras proféticas das igrejas independentes e a criadora de um movimento que utilizava os símbolos cristãos, mas revitalizou as raízes culturais tradicionais do Congo.</p>
-
-<p>A segunda metade do século XVII foi caracterizada por uma desintegração cultural e um desarranjo político no Congo (território que hoje faz parte dos atuais Congo, Zaire e Angola). As forças portuguesas haviam vencido o Congo, a cristandade de AFONSO I havia caído no sincretismo, uma mistura do cristianismo com as religiões tradicionais da África, e três famílias reais lutavam pelo poder. Dentro desse vácuo cultural e político, diversos profetas messiânicos surgiram para proclamar suas visões sócio-religiosas. A mais importante entre eles foi Kimpa Vita, uma jovem moça que acreditava estar possuída pelo espírito de Santo Antônio de Pádua, um santo católico popular e realizador de milagres. Ela começou a pregar na cidade congolesa de San Salvador, a qual declarou ser desejo de Deus que fosse novamente tornada capital. Seu apelo pela unidade obteve um grande apoio entre os camponeses, que migraram em massa para a cidade, identificada por Kimpa como a cidade bíblica Belém. Ela disse a seus seguidores que Jesus, Maria e outros santos cristãos haviam sido realmente congoleses. Kimpa conspirou em conjunto com o general, súdito de Pedro IV, um dos que lutavam pelo trono, porém foi capturada. Tanto Kimpa quanto seu bebê - concebido por seu “anjo da guarda” - foram queimados na fogueira por heresia, mediante instigação dos missionários capuchinhos.</p>
-
-<p>O movimento Antoniano, iniciado por Kimpa, sobreviveu a ela. O rei do Congo, Pedro IV, utilizou-o para unificar e renovar seu reino. As idéias de Kimpa perduraram entre os camponeses, aparecendo em diversos cultos messiânicos até que, dois séculos depois, tomou nova forma na pregação de Simon Kimbangu.</p>
-
-<p>Norbert C. Brockman</p>
-
-<hr />
-
-<h1 id="bibliografia">Bibliografia</h1>
-
-<p><em>Dictionary of African Biography</em>. Algonac, MI, and New York: Reference Publications, vol. 1, 1977; vol. 2, 1979.</p>
-
-<p>Lipschutz, Mark R., and R. Kent Rasmussen. <em>Dictionary of African Historical Biography</em>. 2nd edition. Berkeley: University of California Press, 1986.</p>
-
-<p>Fontes secundárias:</p>
-
-<p>Thornton, John K. The Kongolese Saint Anthony: Dona Beatriz Kimpa Vita and the Antonian Movement, 1684-1706. New York: Cambridge University Press, 1998.</p>
-
-<hr />
-
-<p>Este artigo é reproduzido, com autorização, de <em>An African Biographical Dictionary</em>, copyright © 1994, editado por Norbert C. Brockman, Santa Barbara, Califórnia. Todos os direitos reservados.r</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Kimpa Vita (A)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Leia várias versões: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -761,7 +694,7 @@
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 14 December 2022.<br>&copy; 2022 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 02 January 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -796,6 +729,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

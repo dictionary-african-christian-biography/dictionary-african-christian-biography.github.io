@@ -607,86 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>[BUNYORO]</p>
-
-<p>Rev. Erasito Nyakama was one of the first Banyoro to become  interested in Christianity when teachers came to<a href="byabaowezi_paulo_and_damari_karujuka.html"> Paulo Byabaowezi</a>’s headquarters.[1] He  was baptized by the <a href="nakiwafu_nuwa.html">Rev.  Nuwa Nakiwafu</a> on April 22, 1901, and confirmed by Bishop Tucker on  June 18 of the following year.[2] Immediately started to work as a church  teacher. In 1907 he was chosen as one of three Banyoro to be trained for  eventual ordination.[3] He was ordained deacon in 1911 and priest on November  12, 1912.[4] He spent his whole working life at Hoima and is remembered for his  faithful service.[5] In 1935 this was recognized when he was made a Canon of  Namirembe Cathedral.[6] In 1942 he retired, but continued to take services  until his last illness in 1967.[7] He died on October 2, 1967.</p>
-
-<p><strong>Louise Pirouet</strong></p>
-
-<hr />
-
-<p><strong>Notes</strong>(short  form; see <a href="../pirouet-appendixa-sources/">List of  Sources</a> for complete citations):</p>
-<ol>
-  <li>
-    <p>Fataki, Mika, 1932, p. 66</p>
-  </li>
-  <li>
-    <p><em>Hoima Baptism Register</em>.</p>
-  </li>
-  <li>
-    <p><em>Fisher Papers</em>, Book XVIII, Fisher to  Bardsley, November 20, 1910.</p>
-  </li>
-  <li>
-    <p><em>Church of Uganda, record Book; Hoima Service  Book</em>.</p>
-  </li>
-  <li>
-    <p>Tibanagwa, 1967.</p>
-  </li>
-  <li>
-    <p><em>Church of Uganda, Record Book.</em></p>
-  </li>
-  <li>
-    <p>Tibanagwa, 1967.</p>
-  </li>
-</ol>
-
-<hr />
-
-<p>This biography, written by Louise Pirouet, was included in “Appendix A: Biographical Notes,”  on page 418 of “The Expansion  of the Church of Uganda (N.A.C.) from Buganda into Northern and Western Uganda  between 1891 and 1914, with Special Reference to the work of African Teachers  and Evangelists” (PhD Thesis: University of East Africa, 1968). Pirouet  published this thesis as <em>Black Evangelists</em> (London: Rex Collings,  1978). However, <em>Black  Evangelists</em> does not reproduce the detailed biographies, complete with  references to sources, found in Appendix A of the thesis. Print copies are  available at Africana Section, Makerere University Library (U 02 P57); The Centre for Christianity  Worldwide, Cambridge; and a microfilm copy at the School of Oriental Studies,  London. [information from Angus Crichton]</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Nyakama, Erasito`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -765,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -804,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

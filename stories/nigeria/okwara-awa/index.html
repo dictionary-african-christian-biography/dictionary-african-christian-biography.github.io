@@ -607,75 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Elder Awa Okwara was born in Abia-Ohafia, Abia State, Nigeria in 1890.  His father, Awa Okwara, and mother, Ugo Awa, were of the Ibo tribe.  He married Ugoagha Kalu, and they had six children and four grandchildren.</p>
-
-<p>Awa was born into a primitive heathen family and spent his early years on his father’s plantation, living very close to nature.  He was given a primitive rural education and did not attend any formal school.  However, through Sunday School and catechism classes he learned to read the Bible in the Ibo language.</p>
-
-<p>Awa’s conversion took place in 1920 at the establishment of the Abia-Ohafia Mission Church by the early pioneer Christian missionaries.  He was one of the earliest catechism class members of the church in his village.  He was baptized and confirmed in 1929 and later that same year, he was ordained as the first indigenous elder of the village church, belonging to the Presbyterian Church of Nigeria (formerly the Church of Scotland Mission).</p>
-
-<p>The premature death of two of his children caused him bitterness, but he resigned his life to the will of God.</p>
-
-<p>Awa’s Christian activities brought Abia village into the limelight.  His people compared him to the Abraham of the Bible, regarding him as the local judge.   A man deeply devoted to God, he promoted tithing and preached against the worship of idols and the killing twin babies and their mothers.  He also  pioneered sending girls to school and his first daughter was trained in the Ohafia Girls’ School and Mary Slessor Girls’ School in Calabar.  Even though he had no school education, he had a strong influence in village and church matters.  He came to have a prophetic voice in the church.</p>
-
-<p>His practical Christian living, his hospitality towards strangers and villagers alike and his generosity towards the needy endeared him to the people.  He remained the husband of one wife when the majority of the village folks were polygamists. He was an active elder until his death, having served the village church for 60 years.  He died in his home village of Abia and was buried in the church compound as a mark of great honor for his services.</p>
-
-<p>Emele Mba Uka</p>
-
-<hr />
-
-<p>Sources:</p>
-
-<p>Awa Okwara, <em>A Biography of Elder Awa Okwara,</em> (Ohafia, 1994).</p>
-
-<p>Eye witness accounts from his children, close relatives and educated church elders like N. O. Kalu.</p>
-
-<hr />
-
-<p>This article, received in 2001, was researched and written by Rev. Dr. Emele Mba Uka, a Project Luke Fellow, Professor of Theology in the Department of Religion and Philosophy at the Federal University of Calabar, Nigeria (UNICAL).</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Okwara, Awa`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -754,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -793,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

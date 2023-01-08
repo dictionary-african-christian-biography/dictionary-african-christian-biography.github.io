@@ -607,72 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Captain Leopold Louis Joubert, soldier and mission auxiliary, was born at Saint Herblon in France. His parents were Jean and Marie-Rose Joubert. In July 1860, at the age of eighteen, the young Joubert left school in order to join the army being raised by Pope Pius IX for the defence of the Papal States. He served for eleven years in the Pope’s Franco-Belgian battalion. Wounded at the battle of Castelfidardo in 1860, he spent time in a Piedmontese hospital, but returned to Rome in 1861. Joubert was on garrison duty until 1865 and elected to remain in Rome as a papal Zouave when the French left Italy in the following year. Joubert saw action at the Porta Salaria when the Piedmontese marched on Rome in 1870. After the disbanding of the Zouaves, Joubert sailed to Algiers in 1880 and offered his services to Cardinal Lavigerie, founder of the Missionaries of Africa (White Fathers).</p>
-
-<p>Lavigerie needed armed auxiliaries to accompany his missionary caravans to equatorial Africa and to organize the defence of his mission stations there. The Sultan of Zanzibar exercised a nebulous hegemony over mainland East Africa. This was virtually a licence for Afro-Arab adventurers from Zanzibar to operate the ivory and slave trades, the most infamous being Tippu Tip and Rumaliza. Joubert joined the third caravan of the Missionaries of Africa in November 1880, finally reaching Tabora in December of the following year. He arrived at Ujiji on Lake Tanganyika in February 1882. Crossing the lake, he fortified the mission station of Mulwewa with palisades and moats, and gave weapon training to its native militia. He then helped to found mission stations at both the northern and southern ends of the lake. Joubert supervised the construction of the fortress mission of Kibanga (Lavigerieville), which was besieged by slave traders for several weeks. Tippu Tip and Rumaliza forced the abandonment of three mission stations, carrying out massacres in the upper Congo area.</p>
-
-<p>Blinded by the venom of a spitting cobra, Joubert returned to France for treatment in 1885. Returning to Africa, the following year, Joubert was mortified to discover that the upper Congo was now part of Leopold II’s Congo Free State, with Tippu Tip as governor!  1887 saw Joubert at Karema and Mpala, on the eastern and western shores of Lake Tanganyika, both former stations of Leopold’s African International Association, now relinquished to the Missionaries of Africa as missions. At Mpala, Joubert fortified the mission and trained an elite defence force. He also exercised civil power in the region, to the extent that Lavigerie wanted to make Mpala the capital of a “Christian Kingdom.” Joubert had no ambitions to become a king and was, in any case, occupied with repelling the attacks of the slave traders and fighting pitched battles with them on land and on the lake.</p>
-
-<p>In 1888 Joubert married Agnes Atakao, daughter of Kalembe, a native of Mpala. By her he had ten children, two of whom - John and Albert - became Catholic priests. In 1889 to 1890 there was renewed fighting with the slave traders, Mruturutu and Katele, allies of Rumaliza. After founding a new mission, Saint Louis of Mrumbi, Joubert returned to organize the defence of Mpala against a massive attack mounted by Rajabu and Rumaliza from the lake. 1891 saw the whole of the western shore of  Lake Tanganyika in the hands of the slavers, except for Mpala and the Mrumbi plain. In 1892 Joubert was joined by the Belgian officers, Jacques, Vrithoff, Delcommune, Diederich and Cassart. After another pitched battle, the fortress of Albertville was established, only to be besieged a few months later by Rumaliza. Joubert and Jacques retaliated but were beaten off.</p>
-
-<p>Although the situation was not of his making, Joubert received a bad press in France for these exploits. The Parisian newspaper <em>Le Soir</em> criticized the “military adventures of Cardinal Lavigerie” in July 1892. Joubert  requested the support of anti-slavery committees in Europe and was joined eventually by Descamps, who came via southern and central Africa, with more Belgian officers, field guns, rifles and supplies of ammunition. This resulted in a final defeat of the slavers in 1893. In 1896, Joubert was decorated by the Belgian state and later by the Pope. However, in 1898 a new emergency arose with the massive mutiny of the Congolese Force Publique. Two thousand armed rebels, led by Mulamba, threatened the area, but eventually withdrew north to Lake Kivu.  In 1910 Joubert founded the mission station of Sainte Marie of Moba, near Baudouinville (Kasongo). There he survived a building accident, but became blind before dying there in May 1927. He was buried in the vault of Baudouinville Cathedral.</p>
-
-<p>Aylward Shorter M.Afr.</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>T. L. Houdebine  and Marcel Boumier, <em>Capitaine Joubert</em> (Namur, Grands Lacs, no date).
-Archives of Captain Joubert, (005199 92 TAN JOU), Missionaries of Africa Archives, WA 644.</p>
-
-<hr />
-
-<p>This article, submitted in 2003, was researched and written by Dr. Aylward Shorter M.Afr., Emeritus Principal of Tangaza College Nairobi, Catholic University of Eastern Africa.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Joubert, Léopold Louis`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -751,7 +687,7 @@ Archives of Captain Joubert, (005199 92 TAN JOU), Missionaries of Africa Archive
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -790,6 +726,6 @@ Archives of Captain Joubert, (005199 92 TAN JOU), Missionaries of Africa Archive
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

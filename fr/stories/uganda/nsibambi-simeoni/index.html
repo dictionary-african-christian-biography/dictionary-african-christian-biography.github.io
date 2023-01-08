@@ -605,87 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/uganda/nsibambi-simeoni/nsimbambi2.jpg" alt="Simeon Nsimbambi" class="bio" /></p>
-
-<p>Simeoni Nsibambi est né et a été élevé à Buloba, dans le Compté de Busiro, en Ouganda. Dès un jeune âge, Simeoni faisait preuve de qualités tellement exceptionelles que son père, Walusimbi Kimanje, un chef à Wakiso, l’a nommé comme son successeur, malgré le fait qu’il n’était pas l’aîné.</p>
-
-<p>Il a été éduqué au lycée de Mengo et à King’s College Budo, où il est devenu premier préfet. En qualité de protectorat britannique, l’Ouganda était impliqué dans la deuxième guerre mondiale, et Simeoni a rejoint le corps médical indigène africain. Il a été décoré pour ses services.</p>
-
-<p>En 1920 il a été nommé Chef de la Santé Publique au gouvernement du Kabaka. C’était un leader naturel très accompli, qui pouvait se dire chanteur, artiste, footballeur et lutteur.</p>
-
-<p>Au cours du service qu’il a fait en temps de guerre, Simeoni est devenu très conscient de la dimension spirituelle de sa vie et en 1922, il est devenu chrétien engagé. Il a vite manifesté le fait qu’il était atteint par les problèmes sociaux tout autour de lui, et qu’il était troublé par la corruption qui avait, selon lui, envahi l’église de l’Ouganda, dont il était devenu membre actif…</p>
-
-<p>En 1925, Simeoni a épousé Eva Bakaluba, l’aînée d’Erasto Bakaluba, qui était membre sincère de la faculté à King’s College, Budo. Simeoni et Eva ont eu douze enfants, et le temoignage de leur vie de famille, surtout le statut élevé qu’il accordait à Eva, a servi de modèle à leur génération. Il était très accueillant envers ses collues et envers tous les visiteurs, quelque soit leur nationalité et leur ethnie.</p>
-
-<p>En 1929, une réunion qui a eu lieu entre Simeoni Nsibambi et le dr. Joe Church, qui était missionnaire au Rwanda, a marqué un point tournant dans leurs vies respectives et s’est avéré par la suite précurseur du renouveau est africain. Simeoni a quitté son poste au gouvernement pour pouvoir donner sa vie à la tâche de l’évangélisation.</p>
-
-<p>Il était membre de l’équipe qui a dirigé un congrès à Kabale, en Ouganda, en Septembre, 1935. Ce congrès est souvent considéré comme ayant été le premier événement majeur du renouveau est africain qui a beaucoup transformé le christianisme en Afrique de l’Est au cours des vingt années suivantes. Malgré le fait qu’il n’était pas orateur éloquent, sa prédication calme mais profonde provoquait souvent des manifestations remarquables auprès de ses interlocuteurs. Sa perspicacité douce mais pénétrante des gens et la profondeur de son expérience chrétienne ont inspiré beaucoup de personnes à cette époque. Il partageait la direction des missions et des congrès en Ouganda et au Kenya. Ses conseils sages étaient souvent en demande, et sa sagesse venait de ses grandes capacités intellectuelles, de sa grande connaissance des livres chrétiens et de sa vie spirituelle très proche de Dieu.</p>
-
-<p>En 1941, au mois de mai, il est tombé malade, et par la suite a été obligé de rester chez lui pratiquement tout le temps. Pendant les 37 ans du reste de sa vie, à partir de chez lui, il a continué à influencer le cours du renouveau. Le grand nombre de visites qu’il recevait témoignent de son amour pour les gens, quelque soit leur nationalité, et de l’égard qu’il portait à leur santé spirituelle et physique.</p>
-
-<p>H.H. Osborn</p>
-
-<hr />
-
-<h1 id="bibliographie">Bibliographie</h1>
-
-<p>J.E. Church, <em>Quest for the Highest</em> [A la recherche du plus haut] (Paternoster, 1981).</p>
-
-<p>H.H. Osborn, <em>Pioneers in the East African revival</em> [Les pionniers du renouveau est africain] (Apologia, 2000).</p>
-
-<hr />
-
-<p>Ce récit, soumis en 2002, a été rédigé et écrit pour le <em>DiBiCA</em> par le dr. H.H. Osborn, auteur du livre mentionné ci-dessus.</p>
-
-<hr />
-
-<h1 id="galerie-de-photos">Galerie de photos</h1>
-
-<p><img src="/images/bio-pics/uganda/nsibambi-simeoni/nsimbambi--simeoni-eva.jpg" alt="image" class="bio" /></p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Nsibambi, Simeoni (A)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -766,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -803,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

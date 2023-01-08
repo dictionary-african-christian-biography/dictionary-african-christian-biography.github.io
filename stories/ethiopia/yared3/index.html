@@ -605,62 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><em>Religious scholar. Composer of liturgic songs and hyymns.</em>
-Saint Yared, the great Ethiopian scholar, was born on Mega­bit 27 [493 E.C.] / April 5, 501 in the ancient city of Ak­sum. His father’s name was Adam, and his mother was called Tawkelia. He descended from a line of prominent church scholars. At the age of six, a priest named Yeshaq was assigned to be his teacher… <a href="/resources/bio-pdfs/ethiopia/yared3.pdf">full biography: PDF file</a></p>
-
-<hr />
-
-<p>This article, received in 2018, was written by Gabeyehu (Gabe) Adugna, Subject/Liaison Librarian at the African Studies Library at Boston University, Boston, Massachussetts, U.S.A.</p>
-
-<hr />
-
-<h1 id="photo-gallery">Photo Gallery</h1>
-
-<p><img src="/images/bio-pics/ethiopia/yared/Yared.jpg" alt="Yared" class="bio" /></p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Yared (C)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -739,7 +685,7 @@ Saint Yared, the great Ethiopian scholar, was born on Mega­bit 27 [493 E.C.] / 
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -778,6 +724,6 @@ Saint Yared, the great Ethiopian scholar, was born on Mega­bit 27 [493 E.C.] / 
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

@@ -607,67 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Jacques Désiré Laval was a French Catholic missionary to Mauritius.</p>
-
-<p>He was born in Croth, near Evreux, France, was educated in Paris, and became a medical doctor in 1830. A serious horse-riding accident prompted his conversion in 1835, and he was ordained to the priesthood in 1838. At Saint-Sulpice Seminary he became a friend of <a href="/stories/nonafricans/libermann-francois/">François Libermann</a>. After three years of parish work in France, he was sent to Mauritius in 1841 for the evangelization of the black slaves.</p>
-
-<p>He was the first missionary of the Congregation of the Holy Heart of Mary, founded by Libermann, which merged with the Congregation of the Holy Ghost in 1848. Laval succeeded in organizing the religious life of the former slaves, emancipated in 1835 but neglected by the white clergy. His missionary method consisted in taking progressive steps, employing a catechism in Creole adapted to illiterates, training of catechists and women advisers (<em>conseilleuses</em>), providing intensive pastoral care, setting up of a relief fund managed by the Christians themselves, offering rural outreach by means of chapels built by the faithful, and cooperating with other missionary societies. The Roman Catholic Church in Mauritius owes its renewal to Laval; thousands of pilgrims visit his tomb each year on the day of his death, September 9.</p>
-
-<p>Marc. R. Spindler</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Jacques Laval, <em>Extraits de sa correspondance choisis présentés par Joseph Lécuyer CSSP</em> (1978). Joseph Michel, <em>Le Père Jacques Laval, le “saint” de l’ile Maurice (1803-1864)</em> (1984) and <em>De l’esclavage à l’apostolat, les auxiliaires laïcs du Bienheureux Jacques Laval, apôtre de l’île Maurice</em> (1988).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Laval, Jacques Désiré`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -746,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -785,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

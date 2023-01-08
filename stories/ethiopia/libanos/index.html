@@ -607,69 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Libanos, or Mätä‘a,<strong>Abba</strong>, was a missionary active in the pagan areas north of the Märäb-Belesa rivers. He is sometimes called the Apostle of Eritrea. As <em>Abba</em> Mätä’a, one of the Nine Saints, he takes the place of <em>Abba</em> Za-Mika’él ‘Arägawi in the <em>Life of Abba Gärima</em>. Born of the royal family in Rome or Rum (Byzantium), he is said to have become a monk with Pachomius (d. 348), by whom he was sent to Ethiopia. He stayed in Bäqela for seven years, translating the Gospel of St. Matthew into Ge’ez and was then summoned to Aksum by <em>Abunä</em> ‘Éleyas. When he indicated the <em>abun</em>’s corrupt practices, he was forced to withdraw to Därräqa (perhaps the desert) by the Emperor “Zä-Gäbäzä Aksum,” perhaps Emperor Ellä-Gäbäz, though the dates are not easily compatible. He remained in a cell in Därräqa until the Emperor and the <em>abun</em> were constrained by God to accept his criticism, when he went to Guna Guna. He was visited there by Emperor Gäbrä-Mäsqäl, who built the church of Béta Mäsqäl for him. Finally he went out among the pagans of Tarqa, where he died in the reign of Gäbrä-Mäsqäl. Many churches were built for him in the district, and it is said that he was able to make sources of water spring from the ground. Although many of the details of Libanos’s life are anachronistic, there is no reason to doubt his general historicity. His feast is commemorated on 3 <em>Ter</em> (11 January).</p>
-
-<p>A. K. Irvine</p>
-
-<hr />
-
-<p><strong>Bibliography</strong></p>
-
-<p>C. Conti Rossini, “Il Gadla Libanos”, <em>Ricordi di un soggiorno in Eritrea</em> (Amara, 1903), III.</p>
-
-<p>——–, “L’omilia di Yohannes vescovo di Aksum in onore di Garima”, <em>Actes du Congrès International des Orientalistes, Section Sémitique</em> (Paris, 1898).</p>
-
-<p>——–, <em>Storia d’ Etiopia</em> (Bergamo, 1928), 157-8.</p>
-
-<p>E. A. Wallis Budge, <em>The Book of the Saints of the Ethiopian Church</em> (Cambridge, 1928), Vol. II, 445.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>The Dictionary of Ethiopian Biography, Vol. 1 ‘From Early Times to the End of the Zagwé Dynasty c. 1270 A.D.,’</em> copyright © 1975, edited by Belaynesh Michael, S. Chojnacki and Richard Pankhurst, Institute of Ethiopian Studies, Addis Ababa, Ethiopia.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Libanos`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -748,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -787,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

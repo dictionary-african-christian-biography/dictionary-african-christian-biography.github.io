@@ -601,69 +601,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Joseph Allamano was the founder of the Consolata Missionary Fathers and Consolata Missionary Sisters. Born in Castelnuovo d’Asti, Italy, Allamano wanted to become a missionary from early life. Unable to do so because of poor health, he became a diocesan priest of Turin. He received the D.D. degree from Turin seminary in 1877. For 46 years (1880-1926), he was the counselor of priests at the Convitto Ecclesiastico. Some of them became the first Consolata missionaries in Kenya. He was also rector of the Consolata shrine in Turin. He founded the Consolata Missionary Fathers in 1901 and the Consolata Missionary Sisters in 1910 and was superior general of both institutes until he died. The missionary formation given to Consolata missionaries broke new ground. Evangelization and development were equally important; he also emphasized proper use of local cultural values and customs, and preparation of local leaders and their immediate incorporation in the missionary work. He promoted the involvement of religious women and brothers as full partners in evangelization and development. As a consequence, Consolata missionaries established the first college for catechists in Kenya, the first seminary, and the first local religious institute for women. Allamano was also responsible for persuading the pope to establish a day of prayer and support for all the Catholic missions. He inspired James Alberione, the founder of St. Paul’s Society, and James A. Walsh, co-founder of the Catholic Foreign Missionary Society of America (Maryknoll Missioners). He supported mass media as a means of evangelization and began publishing missionary news in the Consolata bulletin.</p>
-
-<p>Anthony Bellagamba, IMC</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Allamano, Joseph. <em>Le conferenze spirituali del servo di Dio Giuseppe Allamano</em> (1981). <em>The Spiritual Life</em> (1982), and <em>Lettere</em>, 3 vols. (1990).</p>
-
-<p>Agasso, Domenico. <em>Joseph Allamano: Founder of the Consolata Missionaries</em> (1991).</p>
-
-<p>Bona, Candido. <em>La fede e le opere: Spigolature e richerche su Giuseppe Allamano</em> (1989).</p>
-
-<p>Tubaldo, Igino. <em>Giuseppe Allamano: ilsuo tempo, La sua vita, La sua opera</em> (1986; vol. 4 includes extensive bibliography). The Allamano museum is located on the grounds of the Consolata mother house in Turin.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Allamano, Joseph`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -742,7 +681,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -781,6 +720,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

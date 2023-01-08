@@ -607,79 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>During the 1920s Rabeca Mandlate came to Njatigue seeking spiritual food. For some months she walked the eleven miles from her home to the Sunday services. Then one day she requested that services be held at her home. There was no one to send; so she suggested that she lead the meetings herself. “After all,” she said, “Preaching is reading the Bible and telling the people what it means.” So she became preacher and pastor, bringing her people in to the mission one Sunday a month.</p>
-
-<p>She was warned twice by the authorities to stop hitting the piece of railroad iron she used as a bell to call the people together. She was summoned to the court twenty-two miles away and told that if she did not stop she would go to prison. The next Sunday morning she rang the bell at daybreak as usual to call people to prayer before beginning the regular Lord’s Day activities.</p>
-
-<p>Several months later she was again called to court. This time she took her mat, food, Bible and hymnbook so as to be prepared to stay. Indeed she was sent to jail. After work each evening she would meet with the other women prisoners, read and explain the Bible, sing and pray. For this she was called to account, warned again and then sent home. She continued the services and was never summoned again.  This became the Matumanhane congregation, an extension from the Mabunganine (Guetsemane) Church.[1]</p>
-
-<p>Mr. Stefano Mandlate repented in her services. They were married and he became a preacher. Her church at Matumanhane continued to grow and Stefano Mandlate became the pastor.[2]  During the civil war Mrs. Rabeca Mandlate was murdered in cold blood in her home one night.[3]</p>
-
-<p>Paul S. Dayhoff</p>
-
-<hr />
-
-<p>Notes:</p>
-
-<ol>
-  <li>
-    <p>Pastor Miguel Chamo, “50th Anniversary Celebration of the Mabunganine (Guetsemane) Church 18-11-73,” <em>Mutwalisi</em> (The Herald), Shangaan/Tsonga magazine of the Church of the Nazarene in Mozambique and South Africa, (Florida, Transvaal, South Africa: Nazarene Publishing House, April-June 1974), 4-5.</p>
-  </li>
-  <li>
-    <p>C. S. Jenkins, “Those Women…,” <em>The Other Sheep,</em> (Kansas City, MO: Nazarene Publishing House, March 1954), 5-6.</p>
-  </li>
-  <li>
-    <p>Vicente Mbanze, letter (13 April 1995).</p>
-  </li>
-</ol>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Living Stones In Africa: Pioneers of the Church of the Nazarene</em>, revised edition, copyright © 1999, by Paul S. Dayhoff.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Mandlate, Rabeca`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -758,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -797,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

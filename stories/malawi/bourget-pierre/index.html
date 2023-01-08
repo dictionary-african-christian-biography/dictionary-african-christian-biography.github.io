@@ -607,63 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>The Catholic Church was planted in Malawi by three French missionaries in 1901, one of whom was Pierre Bourget. He was born on August 5, 1852 in France. At the age of 26, he joined a Catholic missionary group called the Montfort missionaries. He was ordained a Catholic priest on January 1, 1878. As a Catholic priest, he served as the director of the Scholasticate and of the Apostolic School of Sainte Marie in Schimmert in Holland. He was later appointed as the leader of the Montfort missionaries in El Biar near Algiers. In 1901, he was appointed to lead the first Montfortan missionary expedition to Malawi. In Malawi, he opened the first catholic mission at Mzama in August 1901. He did not, however, intend to stay in Malawi on a permanent basis. He was content to establish a mission station for the Montfort Missionaries at Mzama and return to El Biar in Algiers. He, therefore, left Malawi in February 1903 to return to Algiers. He later became the assistant to the Superior General of the Montfort missionaries. In this capacity, he visited the Montfort missionaries in Malawi in 1907 to evaluate the first six years of Montfortan mission.</p>
-
-<p>Stanslaus Muyebe O.P.</p>
-
-<hr />
-
-<p>Source:</p>
-
-<p>S. Muyebe and W. Luwanika, <em>The History of Blantyre Archdiocese in Malawi</em>, unpublished material, Catholic Archives, Lilongwe, Malawi.</p>
-
-<hr />
-
-<p>This article, submitted in 2001, was written and researched by Fr. Stanslaus Muyebe, O.P., author and teacher at Saint Joseph’s Theological Institute in South Africa. Used with permission.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Bourget, Pierre`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -742,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -781,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

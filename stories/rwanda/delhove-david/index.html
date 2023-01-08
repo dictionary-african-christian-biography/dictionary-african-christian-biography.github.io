@@ -607,68 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Belgian missionary to Africa. He was born into a Protestant family in Belgium. When he was seventeen he accepted the Sabbath from a tract sent by an uncle in America. At twenty-four he was baptized. In 1909, wishing to go to Africa as a missionary, he
-went to England to study English. He attended Stanborough College and supported his family by working as a nurse’s aide in the sanitarium.</p>
-
-<p>In 1913 he was sent by the British Union to Kenya, East Africa. He left his family in Belgium, intending to return for them in two years. However, the following year war cut off all communication with Belgium. Delhove was quickly drafted into the Belgian Army, and served for four years as a reconnaissance officer. Traveling during this time across Ruanda-Urundi several times, he felt that it would make a fruitful mission field.</p>
-
-<p>After a separation of more than five years, he was reunited with his family, and, while in Belgium, he persuaded Henry Monnier to go with him to Africa. Entering the former German territory of Ruanda-Urundi (now Rwanda and Burundi), which had been assigned to Belgium as a mandate in 1919, they were permitted to occupy three mission stations previously operated by a German Protestant society.</p>
-
-<p>In 1921 Delhove founded the Gitwe Mission on a site where no Africans would live because it had been cursed by a previous chief. From Gitwe he pushed out in all directions, and encouraged the founding of the Rwankeri (1922) and Buganda (1925, later moved to Ndora) missions. The following year, Delhove was ordained.</p>
-
-<p>He pioneered the work on several stations. In 1929 the Ruanda-Urundi field was taken over by the African Division and eventually joined to the Congo Union. After ten years as mission director on Songa and Kirundu, Delhove was asked to pioneer the opening up of the Rwese Mission.</p>
-
-<p>Although retired in 1944, he continued to live and work in the Congo until his death. Appreciated for his wide knowledge of local problems, he served as a member of the council of the governor-general of the Belgian Congo. Several children of the Delhove family, born in Ruanda-Urundi, later became second-generation missionaries in the Congo.</p>
-
-<p>Delhove died of a heart attack at Rutshum on March 12, 1949. The doctor who was with him stated that only ten minutes before taking his last breath Pastor Delhove was seeking to convert the native orderly attending him.</p>
-
-<hr />
-
-<p>This article is reprinted with permission from the <em>Seventh-Day Adventist Encyclopedia</em>, copyright © by Review and Herald Publishing Association, 55 West Oak Ridge Drive, Hagerstown, Maryland 21740, 800-765-6955.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Delhove, David E.`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -747,7 +687,7 @@ went to England to study English. He attended Stanborough College and supported 
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -786,6 +726,6 @@ went to England to study English. He attended Stanborough College and supported 
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

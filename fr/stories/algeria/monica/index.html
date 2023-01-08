@@ -605,75 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Nous savons peu de choses sur Monique, la mère de St. Augustin. Il semblerait qu’elle ait été une femme chrétienne berbère, épouse d’un fonctionnaire romain païen de l’Afrique du Nord à Tagaste (Souk Ahras à présent, en Algérie). Elle éleva son fils, mais il n’était pas auprès d’elle pendant plusieurs années importantes de son adolescence, surtout de l’âge de douze ans à l’âge de seize ans. Quand il est allé faire ses études à Carthage, elle est allée le rejoindre, et elle représentait sa foi orthodoxe, avec sa croyance aux miracles et à la vénération des cultes des martyres, à l’encontre de la foi manichéenne de son fils. (Le manichéisme était une hérésie très répandue selon laquelle le Christ, la deuxième personne de la Trinité, serait la Lumière par laquelle le Père a été révélé à l’humanité. La troisième personne de la trinité était Mani, envoyé dans le monde par la Lumière.)</p>
-
-<p>Monique est restée avec Augustin en Italie (383-387). Elle avait essayé d’arranger un mariage avantageux pour le jeune fonctionnaire romain avant qu’il ne se tourne complètement vers la religion. De plus en plus, au cours des années juste avant sa mort, il s’est mis à partager ses pensées religieuses avec elle, et il appréciait son conseil. “Tous les jours je suis frappé de nouveau par tes capacités naturelles,” lui a-t-il dit peu avant sa mort. Monique avait d’autres enfants aussi: une fille qui a dirigé le couvent près du monastère fondé par Augustin, et un deuxième fils, Navigius, qui était avec elle lors de sa mort à Ostia, en Italie, en 387, alors qu’elle attendait de rentrer en Afrique du Nord.</p>
-
-<p>Certains critiques ont pensé que Monique était une mère trop impliquée, qui intervenait trop souvent, ce qui est bien possible. D’autres la considèrent plutôt comme compagne spirituelle, une femme de foi, perspicace, qui a aidé son fils à s’établir. Il serait facile de lui attribuer trop de choses, mais il ne faudrait pas, non plus, ne pas lui accorder la place qui lui revient, car elle a été une influence stable et importante dans la vie de son fils, le penseur africain théologique le plus original.</p>
-
-<blockquote>
-  <p>O Seigneur, vous avez donné des forces à Monique pour qu’elle persévère dans son amour, ses prières et ses larmes pour la conversion de son mari et de leur fils, Augustin: nous vous demandons d’approfondir notre piété et de vous servir de nous selon votre volonté pour amener d’autres à reconnaître que Jésus Christ est Sauveur et Seigneur. Amen.</p>
-
-  <p>– Collecte pour Monique, mère d’Augustin (adaptée) [1].</p>
-</blockquote>
-
-<p>Frederick Quinn</p>
-
-<hr />
-
-<p>Notes:</p>
-
-<ol>
-  <li><em>The Proper for the Lesser Feasts and Fasts</em>, [recueil] 213.</li>
-</ol>
-
-<hr />
-
-<p>Cet article est reproduit, avec permission, de <em>African Saints: Saints, Martyrs and Holy People from the Continent of Africa</em> [<em>Saints africains: saints, martyres et personnes saintes du continent africain</em>], copyright (c) 2002 par Frederick Quinn, Crossroads Publishing Company, New York, New York. Tous droits réservés.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Monica (A)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -754,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -791,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

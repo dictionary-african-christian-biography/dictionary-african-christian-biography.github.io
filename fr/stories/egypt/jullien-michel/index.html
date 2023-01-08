@@ -605,71 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Il naquit à Lyon en 1827 et entra dans la Compagnie de Jésus en 1845. Comme il avait pour les sciences une aptitude toute spéciale, les supérieurs lui firent consacrer quatre années entières à Paris (1852-56), à la Sorbonne et au Collège de France pour étudier les sciences mathématiques, physiques, et naturelles. Il se lia d’amitié avec Augustin Cauchy et Joseph Bertrand de l’Académie des Sciences. Cauchy avait voulu lui confier la publication de ses œuvres posthumes. Quant à Bertrand, il encouragea le P. Jullien à rédiger un ouvrage de mécanique rationnelle. L’ouvrage fut mené à bonne fin et parut sous le titre: “Les problèmes de la mécanique rationnelle,” en deux volumes publiés à Paris chez Gauthier-Villars en 1866 (2e édition). Ce livre fut adopté comme classique dans les grandes écoles de l’Etat.</p>
-
-<p>Le Père fut professeur de physique et chimie au Collège Romain. Ordonné prêtre, il remplit les fonctions de Recteur, successivement au collège des Jésuites de St. Etienne et à celui de Mongré. Puis, il fut mis à la tête de la Province de Lyon. Il dirigea, ensuite, le théologat d’Aix-en-Provence.</p>
-
-<p>En 1880, les décrets d’expulsion des religieux le firent désigner pour la mission du Caire où venait de s’ouvrir un séminaire-collège, fondé sur les désirs de Léon XIII, en faveur de la Nation Copte. De 1881 à 1884, comme supérieur de cet établissement, il se rend acquéreur d’un terrain où sera édifié le nouveau collège de la Sainte Famille (1887-1889), celui qui est en plein essor de nos jours. Il acheta à Matarieh une propriété pour en faire la maison de campagne du collège. La raison déterminante qui avait fixé son choix de cette localité était que la tradition plaçait là un séjour de la Sainte Famille en Egypte. Cette tradition, il l’a recueillie, exposée, défendue. Il écrivit une notice sur “l’Arbre de la Vierge, à Matarieh” (1904), traduite en diverses langues. Matarieh a été le centre et la pensée dominante de sa vie égyptienne. Sa piété commença par construire un petit sanctuaire dédié à la Sainte Famille dont il fit un centre de pèlerinage renommé. En 1904 grâce à sa puissance d’action, à son entregent habile et tenace, son enthousiasme communicatif, une chapelle plus vaste et plus artistique fut érigée au milieu d’un parc aux allées bien dessinées, oasis de verdure et de silence, fréquentée par de nombreux pèlerins et retraitants, animée de processions solennelles.</p>
-
-<p>Il fut membre de l’Institut d’Egypte très estimé des savants du pays. Il visita à dos de chameau, en belles équipées, le Sinaï, les couvents de Wadi Natroun, ceux de la Mer Rouge, parcourut la Haute-Egypte. De ces voyages, il tira des relations publiées par les “Missions Catholiques” et les “Etudes” et deux ouvrages: “l’Egypte, souvenirs bibliques et chrétiens” (Desclée 1889) et “Sinaï et Syrie” (Desclée 1893). Ces récits vivants, documentés d’observations historiques et scientifiques ainsi que la collection de photographies qu’il laissa derrière lui, en font un bon connaisseur des monastères coptes.</p>
-
-<p>Il fut envoyé en Syrie en 1886 où il demeura dix ans. Il profita de son séjour pour explorer le pays et composer son ouvrage: “La Nouvelle Mission de la Cie de Jésus en Syrie “, deux volumes chez Mame (1898).</p>
-
-<p>Il revint en Egypte, requis par le Saint-Siège pour construire le séminaire copte catholique de Tahta dont l’inauguration solennelle se célébra le 15 novembre 1899.</p>
-
-<p>Pendant les années 1898-1900, le P. Jullien exerça la charge du Recteur du collège d’Alexandrie. Il retourna enfin au Caire et à Matarieh dont il fut le chapelain vénéré jusqu’en 1910. Il mourut au collège de la Sainte Famille dans la nuit du 31 décembre au 1er janvier 1911, âgé presque de 84 ans.</p>
-
-<p>Peu de jours auparavant, il écrivait “je m’achemine vers l’infini,” mais par une réminiscence peut-être involontaire, au lieu de tracer le dernier mot, sa main avait recouru au symbole indiscutable et familier, le signe de l’infini mathématique.</p>
-
-<p>P. Fellert, S.J.</p>
-
-<hr />
-
-<p>Cet article, réimprîmé ici avec permission, est tiré d’<em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em>, tome 2, volume 1, publié en 1977 par l’Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). Tous droits réservés.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Jullien, Michel`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -750,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -787,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

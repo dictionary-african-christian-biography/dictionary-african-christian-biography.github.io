@@ -607,58 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Kofi Abefa Busia was an African sociologist, statesman, and churchman. Born in Wenchi of the Brong-Ahafo Region in Ghana, he received his education from Wesley College, University of London, and Oxford, from which he received a doctorate in social anthropology. After returning to Ghana he held several administrative positions in the government. In 1947 he became a research lecturer at the University College of the Gold Coast (now the University of Ghana). The first major step in his political career came when he was elected to Accra’s Legislative Council in 1951. By 1957 he was leader of the party opposing Nkrumah’s political machine, which resulted in his forced exile in 1959. Until 1966 he taught in the Netherlands, Mexico, the United States, and England, after which a successful coup brought Nkrumah’s downfall. Busia returned to Ghana and resumed an active role in politics, culminating in his election as prime minister of Ghana in 1969. However, an uncooperative civil service and army resulted in insurmountable problems. While in England for medical treatment in 1972, Busia was again in exile when the army staged a coup. He returned to lecture at Oxford until his death. His significant writings include <em>The Challenge of Africa</em> (1962), <em>Africa in Search of Democracy</em> (1967), <em>Purposeful Education for Africa</em> (1969), and <em>Apartheid and Its Elimination</em> (1971).</p>
-
-<p>A. Scott Moreau</p>
-
-<hr />
-
-<p>This article was reprinted, with permission from <em>Twentieth-Century Dictionary of Christian Biography</em>, edited by J. D. Douglas
-(Carlisle, Cumbria, England : Paternoster Press ; Grand Rapids, Mich. : Baker Books, c1995). All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Busia, Kofi Abefa`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -737,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -776,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

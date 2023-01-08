@@ -609,63 +609,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Gebhre Michel (ou Ghebre Michel ; Gabra Mich’ael), pionnier indigène du catholicisme éthiopien. Gebhre Michehl est né à Mertoulé Mariam, Gojjam, en Ethiopie. Moine copte dissident d’une piété profonde, il a été impressionné par la profondeur théologique et l’intégrité personnelle de Justin (Giustino) de Jacobi, un moine de l’ordre de St. Vincent, qui venait de Naples. Mécontent de la corruption endémique de sa propre église et de sa théologie mal articulée, il est devenu catholique en 1844 et a entamé l’œuvre qui deviendrait sa plus importante contribution au catholicisme éthiopien - la production d’un catéchisme et la traduction d’un texte de théologie morale en amharique. Il a été reçu par l’ordre de St. Vincent après avoir été ordonné en secret en 1851. Arrêté par les autorités coptes pour raison d’hérésie en 1855, il est mort au mois d’août de cette même année après avoir été torturé pendant plusieurs mois. Il a été béatifié le 31 octobre 1926.</p>
-
-<p>Jonathan J. Bonk</p>
-
-<hr />
-
-<h1 id="bibliographie">Bibliographie</h1>
-
-<p>Donald Attwater, <em>The Golden Book of Eastern Saints</em> [Le livre d’or des saints de l’est] ; Donald Crummey, <em>Priests and Politicians : Protestant and Catholic Missions in Orthodox Ethiopia 1830-1868</em> (1972) ; [Les prêtres et les hommes politiques : les missions protestantes et catholiques en Ethiopie orthodoxe 1830-1868] ; M. M. Vaussard, éd. <em>The Golden Legend Overseas</em> (1931) [La légende d’or à l’étranger].</p>
-
-<hr />
-
-<p>Cet article est reproduit, avec permission, du <em>Biographical Dictionary of Christian Missions</em> [Dictionnaire Biographique de Missions Chrétiennes], © 1998 par Gerald H. Anderson. Tous droits réservés.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Michael, Gebhre (A)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -746,7 +691,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -783,6 +728,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

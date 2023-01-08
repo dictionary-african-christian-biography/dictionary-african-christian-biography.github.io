@@ -607,75 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Joel (Yoel) Mashenene was a Msukuma by tribe born at Gambajiga in the Ngudu-Mwanza region of Tanzania.  His family name was Masolwa and his nickname Lushindika.  His father’s name was Mashenene and his mother’s name Manugwa.  He spoke Kisukuma, which was his parents’ language, as well as Kiswahili, Kihaya, Kisumbwa, and Kizinza.</p>
-
-<p>He was educated up to the fourth grade which he finished in 1948.  He had trouble with coughing during his childhood.  Like many young people of his day, he wanted to become a traditional dance leader.</p>
-
-<p>In 1928, he accepted Christ at the African Inland Church in Mwanza and five years later in April of 1933 he felt called to the ministry.  He was ordained to be an elder that same year and for twelve years (1933-1945) he served in that capacity.  The next year (1946) he began to oversee a local church as an unordained pastor (<em>Nangi</em>-teacher).  He ministered as a <em>Nangi</em> for twenty-three years until 1963 when he became a pastor.</p>
-
-<p>His wife’s name was Raheli (Rachel).  They had thirteen children: Rhoda, Susana, Salome, Ruth, Tizra, Boniventure, Lucas, Elizabeth, Margaret, Sipora, Flora, and Emmanuel Mashenene.  Joel’s Mashenene’s children bore him sixty-seven grandchildren.  They are: Anna, Deborah, Mary, Tumaini, Jeluta, Joel, Jane, Issac, Kulwa, Doto, Benjamin, Shida, Ezekiel, Lucas, Eda, Rehema, Abisoni, Sarah, Mark, Edwin, Joel, Josiah, Tabu, Ananiah, Abel, Mondesta, Pendo, Rogers, Revina, John, Richard, Regina, Robert, Emmanuel, Flora, Masunga, Happy, Samson, Rachel, Innocent, Joyce, Janet, Jacob, Mashenene, Mihayo, Lushindika, Martha, Nyanzobe, Rebeccah, Neema, David, Habi, Jesicca, Mary, Happiness, Baraka, Pendo, Amani, Imani, Daniel, Nzembi, Msonga, Christine, Raynas, Lushinda, Perpetua, and Kahamba.</p>
-
-<p>Due to the fact that he was transferred from time to time, he was able to start the following 21 churches: Ishima, Nungwe, Busaka, Kitigili, Kageye, Nyakasenya, Buzilayombo, Ilemela, Chato, Kasozibakaya, Kachwamba, Nyakato, Makulugusi, Ilyamchele, Kilombelo, Gengetano, Katolo, Gengasaba, Gengekumi, Munekezi, and Chanzoya.  Although he started many churches, he served only four: Kazunzu up until 1952, Nyakahako from 1955 to 1961, Butundwe from December 23, 1961 to October 30, 1978, and Magu from 1978 to 1991.</p>
-
-<p>He is most well-known for his sound relationship with Christians, his tree-planting environmental concern, and his zeal to build churches for worship.  Richard Athuman knows him well and worked with him in his ministry for years.  Joel Mashenene now (A.D. 2001) lives at Itumbili-Magu.</p>
-
-<p>Bela B. Kalumbete</p>
-
-<hr />
-
-<p>Sources:</p>
-
-<p>Budala, Rev. Maige, interview by the author, November 2000, Magu, Mwanza.</p>
-
-<p>Mashenene, Joel, interview by the author, November 2000, Magu, Mwanza.</p>
-
-<hr />
-
-<p>This article, received in 2001, was researched and written by Bela B. Kalumbete, a Project Luke Fellow who is associated with the Africa Inland Church, Tanzania.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Mashenene, Yoel`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -754,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -793,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

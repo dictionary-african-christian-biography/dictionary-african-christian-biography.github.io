@@ -605,81 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Tibafa naquit en 1925 à Nibili, dans la partie nord-est de la République Démocratique du Congo. Le nom <em>Tibafa</em> veut dire “Qui ne meurt pas.” Quelque soit le contexte de ce nom dans sa langue maternelle, Tibafa utilisait son nom dans ses sermons pour affirmer aux fidèles que ceux qui sont en Christ ne meurent jamais. Le nom <em>Mugera</em> veut dire “dirigeant.”  Il était l’unique garçon et aussi le dernier né d’une famille de cinq enfants.</p>
-
-<p>Tibafa termina l’école primaire à Boga en 1943 et, plus tard, fut envoyé à Bukuku (Ouganda) pour faire l’école biblique de 1962 à 1969. Mugera travailla dans plusieurs domaines de la vie publique : comme enseignant à l’école primaire puis comme secrétaire de collectivité avant de s’intégrer dans le ministère sacerdotal. Dans l’église, il franchit graduellement toute la hiérarchie : en effet, il commença par être catéchiste puis évangéliste, pasteur, archidiacre et finalement évêque.</p>
-
-<p>Tibafa fut le pionnier de l’église anglicane à Kisangani. Il en était le premier pasteur puis le premier archidiacre et finalement le premier évêque du diocèse anglican de Kisangani. Il mourut subitement le 6 Octobre 2000 des suites d’une crise d’hypertension pendant qu’il dirigeait une réunion de personnel du diocèse.</p>
-
-<p>Nyakahara Mugisa</p>
-
-<hr />
-
-<p>Sources :</p>
-
-<ol>
-  <li>
-    <p>Edreda Besime Tibafa, épouse de Tibafa, interview du 8/1/2003 à Bunia.</p>
-  </li>
-  <li>
-    <p>Sabiti Tibafa Daniel, fils de Tibafa, interview du 8/1/2003 à Bunia.</p>
-  </li>
-  <li>
-    <p>Katusabe Tibafa, fille de Tibafa, interview du 8/1/2003 à Bunia.</p>
-  </li>
-  <li>
-    <p>Munege Kabarole, archidiacre de Bunia et collègue de service de Tibafa, interview du
-12/01/2003 à Bunia.</p>
-  </li>
-</ol>
-
-<hr />
-
-<p>Cet article, reçu en 2003, est le produit des recherches de Nyakahara Mugisa, étudiant en théologie sous la direction du Révérend Yossa Way.  Ce dernier est professeur de théologie et coordinateur de liaison du <em>DIBICA</em> à l’Institut Supérieur Théologique Anglican (Bunia, Rép. Dém. du Congo) ainsi que récipiendaire de la bourse du Projet Luc en 2001.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Tibafa Mugera, Sylvestre`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -760,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -797,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

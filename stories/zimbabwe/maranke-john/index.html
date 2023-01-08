@@ -607,77 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Founder of the African Apostolic Church of John Maranke in Rhodesia (Zimbabwe).</p>
-
-<p>A Manyika-Shona born in the Marakne district near Umtali (Mutare), Maranke was raised and educated as a Methodist. Accustomed to receiving visions from an early age, in July 1932 he experienced a divine revelation in which he was called to be Christ’s apostle with a distinct missionary mandate, his first task being to convert the members of his extended family in the Mufararikwa chiefdom of Maranke. By appointing numerous relatives to the church’s hierarchy, he developed an ecclesiastical nucleus that served as a basis of his remarkable missionary career and the growth of the apostolic movement, the largest African Initiated Church in Rhodesia.</p>
-
-<p>For thirty years Maranke traveled regularly, often on foot, through Rhodesia and the neighboring countries of Botswana, Zambia, Malawi, and South Africa and as far as north as Zaire. In response to his prophetic message of salvation for Africa through the Spirit-inspired proclamation of African Apostles, thousands were converted, baptized, and organized into congregations. His message included confrontation of traditional African religion and a contextualized healing/exorcistic ministry. Setting the example of an itinerant missionary, Maranke modeled his church as a missionizing evangelizing body of African believers without church buildings, involvement in secular education, or the use of medicine.</p>
-
-<p>Maranke’s vision figured prominently in Apostolic theology and became a major focus in Apostolic preaching. While his leadership had distinct messianic traits, constant reference to his encounters with Jesus Christ served to preserve and protect the mediating and salvific functions of the biblical Christ. Annual paschal celebrations, popularly referred to as Pendi (from “Pentecost”), last for seventeen days, culminating in Holy Communion ceremonies, and at times involve the participation of up to 100,000 Apostles from Zimbabwe and neighboring countries. Pendi celebrations near Maranke’s old homestead serve to consolidate church membership and inspire renewed outreach and church growth.</p>
-
-<p>After his death, Maranke’s three senior sons–Abero, Makebo, and Judah–succeeded to his leadership. Despite a minor schism, they maintained and further expanded the Apostolic sphere of influence. No firm figures are available, but the Apostolic movement in Zimbabwe and beyond probably had an overall membership in excess of one million in 1996.</p>
-
-<p>Marthinus L. Daneel</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Marthinus L. Daneel, <em>Old and New in Southern Shona Independent Churches</em>, vol. 1, <em>Background and Rise of the Major Movements * (1971); Bennetta Jules-Rosette, *African Apostles: Ritual and Conversion in the Church of John Maranke</em> (1975).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
-
-<hr />
-
-<p>External link</p>
-
-<p><em>Encyclopaedia Britannica</em>  (complete article):  <a href="http://www.britannica.com/eb/article-9078400/Zionist-church">Zionist Church</a></p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Maranke, John`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -756,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -795,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

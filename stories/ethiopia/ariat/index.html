@@ -607,75 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>‘Ariat or “Aryat, was a commander of the Ethiopian army sent by Emperor Kaléb to avenge the persecution of Christians by Dhü Nuwäs, the Judaized ruler of Yemen, c. 523 A.D. The Arabic accounts give slightly different versions of the subsequent events. According to Ibn Hisam, the <em>negus</em> sent two generals against Dhü Nuwäs; after the Aksumite victory, one of them, ‘Abraha, stayed at Sana’a, refused tribute to the <em>negus</em> and rid himself of the other, ‘Ariat, in a duel by a subterfuge. In the other account, by Ibn Ishäq, ‘Abraha is said to have been in the army under ‘Ariat. The duel occurred after ‘Ariat had been in command for either two or “some” years.</p>
-
-<p>According to the version by the ninth-century chronicler, Tabari, ‘Ariat was the first Aksumite commander sent against Dhü Nuwäs. The latter feigned submission and obtained the dispersion of the Ethiopian force of 70,000 men by a trick, offering to hand over the treasures of all his cities if ‘Ariat would send a detachment of his army to each one to take posession. Once scattered in this way, the Aksumite troops were set upon and massacred. ‘Ariat was, however, able to make his way back to Aksum where he reported the débacle to the Emperor who sent a relative, ‘Abraha, with a force of 100,000 men to redress the situation in Yemen. In the face of such overwhelming odds Dhü Nuwäs is said to have committed suicide by riding his horse into the sea. ‘Abraha quickly seized the reins of government, establishing himself at Sana’a where he proclaimed Christianity. He apparently withheld tribute from the Emperor, who had been expecting to share in the fruits of victory and the latter subsequently sent ‘Ariat back to the Yemen with a small force of 4,000 men with orders that ‘Abraha should hand over the government to him. ‘Abraha challenged ‘Ariat to single combat, however, and, as in the other versions of these events, the latter was killed by unfair means in the course of the ensuing duel, with the connivance of ‘Abraha’s slave, Ghanud. Before he was struck down, ‘Ariat succeeded in transpiercing ‘Abraha’s helmet with his lance and wounding him in the face, thus earning him the sobriquet of <em>al-Asräm</em>, “scar-face,” by which he was known thereafter. Tabari considered ‘Ariat as the first Aksumite ruler of Yemen in this period of time for which he held power, while some sources say that he governed the country for as long as twenty years. Jacques Ryckmans has postulated a date of c. 543 for ‘Abraha’s seizure of power, which would accord better with the hypothesis of a long rule for ‘Ariat than the date of c. 530 A. D.  put forward by a number of scholars.</p>
-
-<p>One tradition has it that, sometime around 575 A.D., a son of ‘Ariat was placed on the throne of Yemen briefly, under the name of ‘Abraha II, during the ephemeral period of Ethiopian resurgence after the downfall of ‘Abraha’s son Masruq and assassination of his successor Sayf b. Dhü Yazan, and before the establishment of full Persian suzerainty.</p>
-
-<p>Belaynesh Michael</p>
-
-<hr />
-
-<p><strong>Bibliography</strong></p>
-
-<p>T. Noldeke, <em>Geschichte der Perser und Araber zur Zeit der Sassaniden</em>  (Leyden 1879), 197 ff.</p>
-
-<p>Ibn Hisham, <em>Sïra</em> (Cairo, 1973).</p>
-
-<p>Tabari (H. Zotenberg, ed and trans.), <em>Chronique</em> (Paris, 1958), Vol. II, 182-187.</p>
-
-<p>S. Smith, <em>“Events in Arabia in the 6th century A. D.,”</em> <em>Bulletin of the School of Oriental and African Studies</em>, Vol. XVI (1954).</p>
-
-<p>J. Ryckmans, <em>L’institution monarchique en Arabie méridionale</em> (Louvain 1951), 324.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>The Dictionary of Ethiopian Biography, Vol. 1 ‘From Early Times to the End of the Zagwé Dynasty c. 1270 A.D.,’</em> copyright © 1975, edited by Belaynesh Michael, S. Chojnacki and Richard Pankhurst, Institute of Ethiopian Studies, Addis Ababa, Ethiopia.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Ariat ('Ariat)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -754,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -793,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

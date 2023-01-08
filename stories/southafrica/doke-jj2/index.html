@@ -607,65 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Joseph John Doke was an English Baptist minister and missionary. Doke was born in Chudleigh, Devon, where his father served 34 years as pastor of a Baptist church. After moving to South Africa for health reasons, he organized Baptist work and was ordained at Graaff-Reinet in 1882. In 1886, after his marriage to Agnes Hannah Biggs, a descendant of William Carey, Doke returned to England. He ministered as pastor of Chudleigh Baptist Church (1887-1888) and City Road Baptist Church, Bristol (1889-1894). A call to mission service led him to New Zealand (1894-1901), Grahamstown, South Africa (1903-1907), and Johannesburg (1907-1913). He served as president of the South African Baptist Union (1906-1907). His arrival in Johannesburg coincided with Gandhi’s campaigns on behalf of South Africa’s Indian population. Aligning himself with Ghandi’s cause, he protested against unjust racial laws and published the first biography of Gandhi, <em>M. K. Gandhi: An Indian Patriot in South Africa</em> (1909).</p>
-
-<p>In July 1913, im memory of his missionary brother, William Henry Doke, Doke and his son Clement Martyn Doke set out to explore the possibilities for evangelizing central Africa. (The journey was financed through the publication of Doke’s novel, <em>The Secret City: A Romance of the Karroo</em> [1913].) Doke died en route, at Umtali, in what was then Southern Rhodesia (Zimbabwe). At the memorial service in Johannesburg, Gandhi praised Doke’s Christian vision of love conquering hatred and virtue overcoming vice.</p>
-
-<p>Paul R. Dekar</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>F. W. Boreham, <em>The Man Who Saved Gandhi: A Short Biography of John Joseph Doke</em> (1948); William E. Cursons, <em>Joseph Doke, The Missionary-Hearted</em> (1929); James D. Hunt, <em>Gandhi and the Nonconformists: Encounters in South Africa</em> (1986). The Baptist Theological College of Southern Africa, Johannesburg, houses documents relating to Doke and Gandhi.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Doke, Joseph John (B)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -744,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -783,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

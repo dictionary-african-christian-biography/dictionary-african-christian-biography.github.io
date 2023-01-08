@@ -607,65 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>David Griffiths was a Welsh missionary in Madagascar. He was born in Carmarthenshire, Wales, and educated at Nevaddlwyd, Wrexham, and Gosport. He and his wife, Mary, were sent by the London Missionary Society (LMS) to Madagascar in 1821. They arrived in Antananarivo just six months after the other LMS pioneer, David Jones. Together they founded the first Protestant mission in Madagascar. Each of these men started a school at the behest of the king, Radama I. They also began to translate the Bible. The first Bible to be printed in an African language, it was published in 1835. In 1824 Radama gave them permission to preach in Malagasy, and church attendance rapidly swelled. In 1831, under a new monarch, Queen Ranavalona I, Griffith’s ten-year residence permit expired, but he managed through negotiations to remain a further three years. He baptized freely and organized the first church, actions that the other missionaries thought premature. His activities may have also stirred fears in the queen, leading her to begin persecuting Christians. The other missionaries threatened to leave the country if he did not depart, which he did in 1834.</p>
-
-<p>Later, when no missionaries were allowed in the country, Griffiths returned as a trader and found ways to help some of the persecuted Christians. In 1840 he went back to Britain and became a pastor in Wales for the remainder of his life. He published a history of Madagascar in Welsh, and a Malagasy grammar in English.</p>
-
-<p>Charles W. Forman</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>David Griffiths, <em>Hanes Madagaskar</em> (1842) and <em>A Grammar of Malagasy Language</em> (1854). Bonar Gow, <em>Madagascar and the Protestant Impact: The Work of the British Mission, 1818-95</em> (1979); Richard Lovett, <em>The History of the London Missionary Society</em> (1899); James Sibree, <em>The Madagascar Mission: Its History and Present Position Briefly Sketched</em> (1907).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Griffiths, David`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -744,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -783,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

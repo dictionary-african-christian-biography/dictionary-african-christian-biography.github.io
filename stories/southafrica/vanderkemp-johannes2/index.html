@@ -607,75 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/southafrica/vanderkemp-johannes2/van-der-kemp.jpg" alt="image" class="bio" height="208px" width="160px" /></p>
-
-<p>Johannes van der Kemp was a pioneer Dutch missionary in South Africa. He was born at Rotterdam, Netherlands, the son of a professor of theology. After service as an officer in the army, he went to Scotland where he received his medical degree in 1782 from the University of Edinburgh. He practiced medicine in Holland from 1782 to 1795. The drowning death of his wife and only child in a boating accident in 1791 led to his conversion.</p>
-
-<p>He came into contact with the Moravian Brethren at Zeist, where he learned about the newly founded London Missionary Society (LMS). He applied to LMS and in 1797 was ordained for service in South Africa. Before leaving he also helped to found the Netherlands Missionary Society in Holland. Arriving in Cape Town in 1799, he left for Kaffraria and ministered among the Xhosa for two years, but saw no Christian conversions despite his contacts with King Ngqika.</p>
-
-<p>In 1801 Van der Kemp shifted his concern to the distressed Khoikhoi (Hottentot) people in the Graaff-Reinet area. There he experienced tensions and conflicts, first with the colonists and later also with the government. In 1803 he founded Bethelsdorp, a mission station near Algoa Bay through which he hoped to evangelize and civilize, and build character and society among the Khoikhoi. From the beginning, however, Bethelsdorp was bitterly resented by the Dutch colonists, as well as by the Xhosa and Khoikhoi. Van der Kemp’s identification with his “colored” flock, and especially his marriage in 1807, at age 60, to a teenage Malagasy slave girl, shocked both his foes and friends. New conflicts arose due to his struggle against slavery and his fight for social and economic equality for the Khoikhoi. Still, he remained the natural leader of the missionaries and was appreciated by the Xhosa. Some of the converted Khoikhoi gradually took the initiative as evangelists among their own people.</p>
-
-<p>The missionaries at Bethelsdorp, in the face of much hostility from white settlers, rejoiced at the abolition of the slave trade in 1807. Van der Kemp composed a hymn for the day of public thanksgiving at Bethelsdorp to mark this event. He also wrote a commentary on Romans 13-16 and a textbook on midwifery for use at Bethelsdorp. When he died at Cape Town his funeral was attended by vast numbers of Cape inhabitants, including leaders of church and state. It was a testimony to his life and work as well as inspiration for many who faced discrimination and oppression.</p>
-
-<p>I. H. Enklaar</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>In 1804 Van der Kemp published a catechism, <em>Principles of the Word of God for the Hottentot Mission</em>.</p>
-
-<p>I. H. Enklaar, <em>Life and Work of Dr. J. Th. Van der Kemp, 1747-1811: Missionary Pioneer and Protagonist of Racial Equality in South Africa</em> (1988).</p>
-
-<p>A. D. Martin, <em>Dr. Vanderkemp</em> (1931).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Van der Kemp, Johannes Theodorus (B)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -754,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -793,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

@@ -607,84 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/ethiopia/krapf-johannlu/krapf.jpg" alt="image" class="bio" /></p>
-
-<p>Reverend Johann Ludwig Krapf, missionary pioneer of East Africa, played a leading role in evangelizing and exploring the region. His linguistic work in Swahili, Amharic, and Ge’ez provided some of the earliest scientific investigation of those languages.</p>
-
-<p>Krapf was born in Germany and educated at the Basle Mission School in Switzerland and at Tibingen University, where he completed theological studies in 1834. After several years as a pastor, he joined the Anglican Church Missionary Society (CMS) in order to take part in their new missionary campaign in Ethiopia and was sent there in 1837. In 1843 all Protestant missionaries were expelled from Shoa Province and Krapf decided to work among the Galla people of southwest Ethiopia. His account of his travels - initiated to reach the Galla from the south - is a valuable source of Swahili coast history in this period, particularly trade patterns and political developments. In Zanzibar, where he began, Krapf met Sultan Seyyid SAID and received a permit to stay, making him the first Protestant missionary on those shores “sole and single to attack the old bulwarks of darkness.” Disgusted by the Zanzibari population, who were three-quarters slaves and morally “scarcely superior to Sodom,” he settled further south in the Kenyan town of Mombasa. Conditions were appalling; Krapf’s wife and newborn infant died of fever, and he was too delirious even to name the baby. Associates betrayed him or died of tropical illnesses. Malaria, the climate, and close living conditions made daily life a misery. Nonetheless, while he was in Mombasa, Krapf translated the Bible into Swahili and determined to travel inland.</p>
-
-<p>Between 1847 and 1849, Krapf made six inland journeys of exploration, and on one of these he became the first European to see Mount Kenya. On another, he was the only survivor of an ambush and was almost trampled by a rhinoceros; he staggered back to his mission in tatters after two weeks of hiding in the bush. Krapf competed with the Muslims, who reviled Christianity at every turn, and on his journeys his pitifully small escort carefully avoided their slave caravans, which often traveled with a thousand armed men. The Muslims accused him of foreign intrigues and spread the rumor among Africans that he was a cannibal. When his plan to establish a chain of mission stations failed to materialize, he returned to Germany in 1853 to write his memoirs.</p>
-
-<p>Even when he was back in Germany, Krapf sought to return to Africa, and in 1862 the Free Methodists sponsored him. In 1867-1868 he accompanied an expedition into Ethiopia as an interpreter, but his health failed and he returned to Germany for the last time. His missionary work was little developed - it is said that in his first ten  years he made two converts - but he gave inspiration for later projects in both Kenya and Tanzania that were successful in employing his plans. His linguistic studies resulted in the first Swahili grammar (1850) and dictionary (1882), as well as a comparative vocabulary of six Bantu languages (1850). He published 25 books before his death.</p>
-
-<p>Norbert C. Brockman</p>
-
-<hr />
-
-<p><strong>Editor’s Note</strong>: African sources cite 1881 as the year of his death.
-Also see this [alternate biography.</p>
-
-<p>](/stories/ethiopia/krapf_johannlu3.html)</p>
-
-<p><strong>Bibliography</strong></p>
-
-<p>Lipschutz, Mark, and R. Kent Rasmussen.  <em>Dictionary of African Historical Biography.</em>  2nd edition.  Berkeley: University of California Press, 1986.</p>
-
-<p><strong>Photo source</strong>: Krapf, Rev. Dr. J. Lewis. <em>Krapf’s Travels, Researches, and Missionary Labours.</em> London: Trubner and Co., Paternoster Row, 1860.</p>
-
-<hr />
-
-<p>Additional reading:</p>
-
-<p>Murray-Brown, Jeremy.  <em>Faith and the Flag,</em>(1977).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>An African Biographical Dictionary,</em> copyright © 1994, edited by Norbert C. Brockman, Santa Barbara, California. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Krapf, Johann Ludwig (A)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -763,7 +687,7 @@ Also see this [alternate biography.</p>
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -802,6 +726,6 @@ Also see this [alternate biography.</p>
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

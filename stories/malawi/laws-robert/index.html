@@ -601,67 +601,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Robert Laws was a Scottish Presbyterian leader of the Livingstonia Mission in Malawi. Born near Aberdeen, Laws became an apprentice cabinetmaker and studied in the evenings to achieve university entrance qualifications. He graduated from Aberdeen University, then studied theology at the United Presbyterian College in Edinburgh while taking medical classes in Glasgow, qualifying in both disciplines in 1875. When the Free Church of Scotland and the established Church of Scotland each planned a mission to Malawi in Livingstone’s memory, Laws felt compelled to go, despite his own United Presbyterian Church’s indifference toward the project. The Free Church was persuaded to take him as medical officer to the Livingstonia Mission whose pioneer party arrived in Malawi in 1875. In 1878 Laws became head of the mission.</p>
-
-<p>The first site of the mission on Cape Maclear at the south end of Lake Malawi proved a mistake, and Laws moved the headquarters to Bandawe, further north, on the east shore of the lake. From there all the peoples of what is now northern Malawi and northeastern Zambia were reached. In 1891 on the Khondowe Plateau, Laws began the Overtoun Institution, modeled on Lovedale in the Cape Colony. From Overtoun there radiated out a network of primary schools that Laws developed so vigorously that by 1901 Livingstonia had more schools than all the other missions in Malawi and Zambia put together. The schools were linked to a network of pastors and evangelists that had an astonishing impact on the whole area. Laws persuaded the Dutch Reformed Church, Cape Synod, to send its first mission party to Malawi, where it was known as the Mkhoma mission. Under W.H. Murray, the Mkhoma mission occupied the area south of the Livingstonia area and north of the Church of Scotland Blantyre mission area. Thus Malawi was completely covered by Presbyterian missions which produced in 1924 the autonomous Church of Central Africa Presbyterian, of which Laws was one of the guiding forces.</p>
-
-<p>Laws was never able intellectually and spiritually to enter African culture and society as some of his colleagues did, but he had a genius for spotting talented individuals whom he encouraged and supported. Among them was David Kaunda, whom he sent into northeastern Zambia as a missionary and whose son Kenneth was Zambia’s first president. In the years after World War I he encouraged educated Christians to form native associations to help deal with the impact of the modern world. In 1938 these associations combined to form the Nyasaland African National Congress.</p>
-
-<p>Andrew C. Ross</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Robert Laws, <em>Reminiscences of Livingstonia</em> (1934). W. P. Livingstone, <em>Laws of Livingstonia</em> (1922); J. McCracken, <em>Politics and Christianity in Malawi: The Impact of Livingstonia Mission</em> (1977); H. McIntosh, <em>Robert Laws</em> (1993).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Laws, Robert`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -740,7 +681,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -779,6 +720,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

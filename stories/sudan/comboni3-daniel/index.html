@@ -607,65 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/sudan/comboni2-daniel/Daniele_Comboni.jpg" alt="Anthony Daniel Comboni" class="bio" height="232px" width="150px" /></p>
-
-<p>Anthony Daniel Comboni was a Roman Catholic missionary bishop and founder of the Verona (Comboni) Fathers. Comboni was born at Limone, Italy, and attended the missionary Institute of Don Mazza at Verona. Ordained a priest in 1854, he departed for Sudan with the institute’s expedition to central Africa in 1857. There Comboni joined a team sent to the Holy Cross mission station among the Dinka on the Upper Nile, byt the endeavor was beleaguered by high missionary mortality and the incursions of slave merchants. A dying colleague’s plea for apostolic perseverance provided inspiration for Comboni’s later motto, “Africa or death.” Suffering chronic fever, Comboni withdrew to Italy, but he was soon assisting in efforts to ransom young Africans from slavery and to transfer them to Europe for education. For three years he served as the vice-rector of the African colleges at Verona, overseeing the education of African men. In 1864, while praying at the tomb of St. Peter, he first conceived his “Plan for the Regeneration of Africa by Africa,” which envisioned the creation of seminaries, trade schools, and Christian communities on African soil for the formation of a genuinely African apostolate. Centers established on Africa’s Mediterranean coast would allow Africans to be trained in a familiar environment while Europeans could be acclimatized for forays into the interior. His plan called for the effort to be international in nature, with personnel drawn from clergy, laity and religious. Once the proposal was embraced by Propaganda Fide and by Pope Pius IX, Comboni traveled extensively seeking international support. In 1867 he founded the African Mission at Verona and established two institutes for training African men and women in Cairo, Egypt. An institute for missionary sisters was opened at Verona in 1872. In the same year Comboni was named pro-vicar apostolic of Central Africa, a territory stretching from Egypt to Zimbabwe and from the Red Sea to Mali. With the mission entrusted to his institute, Comboni traversed Sudan, challenging the institutions of slavery and founding new stations. In 1877 he was named vicar apostolic of Central Africa. Tragically, Comboni’s early death coincided with the rise of the Mahdiyah and suppression of the church he had struggled to establish. Nevertheless, his fervent spirituality and far-sighted methodology have remained an inspiration for succeeding generations of missionaries committed to the creation of an indigenous apostolate.</p>
-
-<p>Marc R. Nikkel</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>The complete writings of Comboni have been published and annotated as <em>Scritti</em>, 10 vols. (1983); a condensed one-volume edition, also in Italian, is available as <em>Daniele Comboni, gli scritti</em> (1991). Since 1960 the Archivio Comboniano in Rome has published twice annually a guide to archival documents and literature concerning the life of Comboni. The most authoritative biography remains Michelangelo Grancelli, <em>Mons. Daniele Comboni e la Missione dell’ Africa Centrale</em> (1923); in English, see Pietro Chiocchetta, <em>Daniel Comboni: Papers for the Evangelisation of Africa</em> (1982) and Aldo Gilli, <em>Daniel Comboni: The Man and His Message</em> (1980).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Comboni, Anthony Daniel (C)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -744,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -783,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

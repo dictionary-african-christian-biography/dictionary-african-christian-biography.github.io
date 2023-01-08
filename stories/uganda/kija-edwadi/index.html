@@ -607,80 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>[ACOLI]</p>
-
-<p>Edwadi Kija was a pupil of <a href="dongo_sira.html">Sira Dongo</a> during the  period when there were no European missionaries in Acoli. Baptized at Masindi  on September 4, 1910 by the Rev. H. E. Tegart.[1] He became a teacher, and  during the next few years his name appears from time to time in the <em>Gulu  Service Book</em>. In 1921 he went to teach at Lira, Lengo.[2] From 1918 when  the Church Council was formed, until 1922 he was a member of it.[3] In 1918 he  was awarded an honorary first letter because of the good work he had done as a  teacher although he had never received any training.[4] He contracted  tuberculosis, of which he died.[5]</p>
-
-<p><strong>Louise Pirouet</strong></p>
-
-<hr />
-
-<p><strong>Notes</strong>(short  form; see <a href="../pirouet-appendixa-sources/">List of  Sources</a> for complete citations):</p>
-<ol>
-  <li>
-    <p><em>Masindi Baptism  Register</em>.</p>
-  </li>
-  <li>
-    <p>Information  kindly collected for me by miss Cave-Brown-Cave, CMS missionary, now retired.</p>
-  </li>
-  <li>
-    <p><em>Gulu  Church Council Minutes</em>.</p>
-  </li>
-  <li>
-    <p><em>Minutes  of the Theological Board</em>, May  16, 1918.</p>
-  </li>
-  <li>
-    <p>Okech,  1966 (per Miss Cave-Brown-Cave).</p>
-  </li>
-</ol>
-
-<hr />
-
-<p>This biography, written by Louise  Pirouet, was included in “Appendix A: Biographical Notes,” on page 403 of “The Expansion of  the Church of Uganda (N.A.C.) from Buganda into Northern and Western Uganda  between 1891 and 1914, with Special Reference to the work of African Teachers  and Evangelists” (PhD Thesis: University of East Africa, 1968). Pirouet published  this thesis as <em>Black Evangelists</em> (London:  Rex Collings, 1978). However, <em>Black Evangelists</em> does not  reproduce the detailed biographies, complete with references to sources, found  in Appendix A of the thesis. Print copies are available at Africana Section, Makerere  University Library (U 02 P57); The Centre for  Christianity Worldwide, Cambridge; and a microfilm copy at the School of  Oriental Studies, London. [information from Angus Crichton]</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Kija, Edwadi`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -759,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -798,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

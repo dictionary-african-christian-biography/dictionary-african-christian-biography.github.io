@@ -566,7 +566,7 @@
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Frumentius (D)">
     
-    <meta itemprop="datePublished" content="October 27, 2022">
+    <meta itemprop="datePublished" content="October 27, 2023">
     
 
 <!-- NAME(S), DATE, AFFILIATION, COUNTRY -->
@@ -611,63 +611,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Frumentius was an Apostle of Ethiopia. Born in a Christian family in Tyre, he and his brother Aedesius were taken as children on an expedition up the Red Sea that ended in their being brought into the service of a king of Aksum (later Ethiopia). After some years during which, apparently, Frumentius was being given much administrative responsibility, the brothers were allowed to leave for home about the year 340. While Aedesius returned to Tyre, Frumentius went first to Alexandria to explain to its bishop Athanasius, the religious position in Aksum and its need for a bishop to advance its evangelization. Athanasius chose Frumentius himself to fulfill this role and consecrated him a bishop. Rufinus (345-410) in his <em>Historia Ecclesiastica</em> is our authority for this account and he obtained it directly from Aedesius, who had become a priest in Tyre. Back in Aksum Frumentius was probably instrumental in bringing about the conversion of its king, Ezana, and in establishing the ecclesiastical tradition of Ethiopian Orthodoxy, which until the twentieth century received its bishops from the patriarch of Alexandria. For the Ethiopian church, Frumentius had always been its revered founder, “Abba Salama, Revealer of the Light.”</p>
-
-<p>Adrian Hastings</p>
-
-<hr />
-
-<p><strong>Bibliography</strong></p>
-
-<p>G. Haile, “Ethiopian Church,” <em>The Encyclopedia of Religion</em>, Mircea Eliade, ed. (1987), vol. 5, pp. 173-177; Carlo Conti Rossini, <em>Storia d’Etiopia: Dalle origini all’avvento della dinastia Salomonide</em> (1928).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Frumentius (D)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -746,7 +691,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -785,6 +730,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

@@ -611,69 +611,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Abba Gabra Hanna Jemma (circa 1896-December 1960), also known as Abba Hanna, was personal chaplain to Emperor Haile Selassie (<em>q.v.</em>) [reigned 1930-74].</p>
-
-<p>The son of Fitawrari Jemma (Abba Gataw) and Wayzaro Essayu, he was born at Gri Goear in Harar province. He studied first in the town of Jar Sonini, and entered the service of Dajazmach Tafari Makonnen (later to become Emperor Haile Selassie) in 1909. In about 1917 he retired to Dabra Libanos, the Ethiopian Orthodox monastery in Shawa, 45 miles (72 km) north of Addis Ababa, and became a monk. On instructions from Tafari, he established a house for the poor, known as Beta Salihom, at the monastery.</p>
-
-<p>Shortly after 1930, Gabra Hanna came to Addis Ababa and took office at the palace, with the special responsibility of distributing vestments and money to various churches and monasteries. At the time of the Italian invasion in 1935-36, he accompanied the emperor as far as Yaju in Wallo province, but was then ordered to Nagalle, in south-east Sidamo, to organize the supply of provisions for the army of Ras Dasta Damtaw (<em>q.v.</em>). From there he went to Yergelam, provincial capital of Sidamo, and then accompanied Princess Tanagna Warq, eldest child of Haile Selassie, to Addis Ababa. He later escaped with the emperor to Great Britain, returning with him via Khartoum to Addis Ababa in 1941.</p>
-
-<p>He was killed in the attempted coup against the emperor which took place in December 1960, and was buried at Dabra Libanos.</p>
-
-<p>Bairu Tafla</p>
-
-<hr />
-
-<p><strong>Bibliography</strong></p>
-
-<p><em>Addis Zaman</em> (“New Times”), Addis Ababa, 26 Tahsas, 1953 (Ethiopian Calendar) [December 22, 1960]. See also <em>Ethiopian Herald</em>, Addis Ababa, December 21, 1960.</p>
-
-<hr />
-
-<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (in 20 Volumes). Volume One Ethiopia-Ghana, ©1997 by L. H. Ofosu-Appiah, editor-in-chief, Reference Publications Inc., New York, NY. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Jemma, Gabra Hanna`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -752,7 +691,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -791,6 +730,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

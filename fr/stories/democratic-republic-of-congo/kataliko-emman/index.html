@@ -605,88 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Né en 1932 dans le territoire de Lubero (partie est de la Rép. Dém.du Congo), Mgr. Emmanuel Kataliko, archevêque du diocèse de Bukavu, dans le Sud-Kivu, est le plus ancien à être ordonné dans le milieu. Il est connu grâce à sa fidélité à l’annonce de l’évangile.</p>
-
-<p>Kataliko est né lors de la plantation des bananes appelés <em>kasiksi</em> en kiswahili. Ce genre de bananes est normalement destiné à la fabrication de la boisson alcoolique locale. Pendant que ses parents  préparaient les trous pour planter les régimes de bananes, sa maman a senti les douleurs de l’enfantement. Elle fut directement acheminée à l’hôpital. Au moment où son papa achevait le travail, un message vint de l’hopital affirmant la naissance d’un fils qui serait alors appelé <em>Kataliko</em>. Ce nom est en kinande, une des tribus du nord-est de la République Démocratique du Congo et il signifie “enterrer.”</p>
-
-<p>Né d’une famille pieuse, il reçut le nom d’Emmanuel Kataliko pour signifier que Dieu était avec eux lors de l’enterrement de leurs bananes. Cet événement constituait une prophétie pour Kataliko puisque plus tard il devint un fervent serviteur de Dieu.  Il fut d’abord évêque du diocèse catholique de Beni-Butembo, puis archevêque de l’archidiocèse de Bukavu.  Plus d’une personne l’ont présenté comme un homme de prière.  Il avait également une dévotion mariale assidue.</p>
-
-<p>Sur le plan social, Kataliko était connu comme un remarquable agent de développement. En effet, il a réalisé beaucoup d’oeuvres sociales, entre autres, la construction de l’Université Catholique de Graben à Butembo, l’amélioration de l’habitat dans sa société et la création des routes de desserte agricole pour relier la ville aux villages environnants.</p>
-
-<p>Durant les dernières années de sa vie, Kataliko ne s’est pas contenté seulement d’adresser des supplications à Dieu afin que la guerre cesse dans son pays en particulier et en Afrique centrale en général, il s’est également investi corps et âme dans la recherche de la paix à travers ses exhortations, ses déclarations et ses contacts avec les autorités politiques concernées par la guerre.</p>
-
-<p>Dans sa lutte pour la justice, il a élevé la voix pour dénoncer le non respect des droits de l’homme dans sa région ainsi que les actes criminels commis par les rebelles du Rassemblement Congolais pour la Démocratie avec leurs allies rwandais. Cela lui a valu une rélégation de sept mois loin de son diocèse. La peur ne l’a jamais empêché d’annoncer à temps et à contretemps la bonne nouvelle de Christ, bonne nouvelle à porter aux pauvres.</p>
-
-<p>Le prédécesseur de l’archevêque Kataliko, Mgr. Christophe Munzihirwa, fut assassiné par les rebelles en peine rue de Bukavu le 29 octobre 1996. Mgr. Kataliko, lui, est mort à Rome où il était transféré pour des soins suite à une crise cardiaque. Celle-ci est intervenue probablement suite aux tortures morales dont il était l’objet dans sa lutte contre l’occupation rwandaise à l’est de la République Démocratique du Congo. Il a rendu l’âme le 4 octobre 2000. Sa dernière recommandation aux évêques était la suivante : “Pensez au peuple qui attend que les évêques parlent.”</p>
-
-<p>Birizene Mutchindi Innocent</p>
-
-<hr />
-
-<p>Sources:</p>
-
-<ol>
-  <li>
-    <p>Madame Biwaga, bibliothécaire de la catéchèse de Nyakasanza, interview du 18/03/2003 à Bunia.</p>
-  </li>
-  <li>
-    <p>Paluku Mumbere, ressortissant de Butembo (village natal de Kataliko), interview du 24/03/2003 à Bunia.</p>
-  </li>
-  <li>
-    <p>Migo Tabende Leopold, ressortissant de Bukavu, interview du 30/03/2003 à Bunia.</p>
-  </li>
-  <li>
-    <p>Nicaire Kibel’Bel Oka, Journal *Les Coulisses * no. 118, Janvier 2003, p.1.</p>
-  </li>
-</ol>
-
-<hr />
-
-<p>Cet article, reçu en 2003, est le produit des recherches de Birizene Mutchindi Innocent, étudiant en théologie sous la direction du Révérend Yossa Way.  Ce dernier est professeur de théologie et coordinateur de liaison du <em>DIBICA</em> à l’Institut Supérieur Théologique Anglican (Bunia, Rép. Dém. du Congo) ainsi que récipiendaire de la bourse du Projet Luc en 2001.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Kataliko, Emmanuel`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -767,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -804,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

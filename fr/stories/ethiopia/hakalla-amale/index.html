@@ -605,74 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Hakalla Amale était la première femme à être convertie dans la région de Kambatta Hadiya. Elle reste dans la mémoire à cause de la force dont elle à fait preuve lors de la persécution qui a eu lieu dans les premiers jours de l’église.</p>
-
-<p>Elle est née à Kaburbaya, Ballessa, Hosanna Shoa en Ethiopie, fille d’Amale Kassamo (son père) et de Faysse Lamonko (sa mère). Elle parlait le Hadiya. Elle est devenue la troisième femme d’Ato Jate Malegu, qui l’a kidnappée et obligée de l’épouser. Ses deux premières femmes ne lui avaient donné que des filles, et il pensait que Hakalla lui donnerait des fils. Elle lui a donné, en fait, trois fils : Assefa, Estefanos et Eshetu.</p>
-
-<p>Hakalla a entendu l’évangile pour la première fois grâce au fils de son oncle, Shigute Dadda, et elle a fait une confession de foi en Jésus à l’âge de dix-huit ans, la même année où elle a donné naissance à son premier fils. Elle a appris à lire la Bible – un accomplissement très rare même pour les hommes à cette époque. Sa famille, des deux côtés, ont essayé d’obliger son mari de la divorcer à cause de sa foi, mais il a refusé parce qu’elle lui avait donné un fils. Hakalla était battue avec un cuir d’hippopotame, et obligée de mâcher ce même cuir comme signe qu’elle renoncerait sa foi, mais elle n’a pas rejeté le Christ. Tard le soir, son frère et Shigute venaient lui rendre visite pour prier avec elle et pour affermir sa foi.</p>
-
-<p>Quand Hakalla était enceinte de son deuxième fils, la persécution est devenue plus sévère. Les anciens du village sont venus chez elle, l’ont obligée à sortir, et ont demandé qu’elle rejette le Christ, la menaçant de malédiction si elle refusait. Ce jour là, elle était en train de préparer un médicament traditionnel qui devait rendre l’accouchement plus facile. Devant eux, elle a bu ce médicament au nom du Christ. Après avoir fait cela, les hommes l’ont maudite. Hakalla était prête à mourir plutôt que de rejeter le Christ. Plus tard, ce jour même, elle a donné naissance à un deuxième fils en pleine santé, et les gens ont vu que le pouvoir du Christ avait eu le dessus sur la malédiction. On a ensuite ordonné à Hakalla de n’avoir aucune communication avec ses voisins. En dépit de cela, le nombre de croyants ne cessait d’augmenter. Quand un membre de sa famille, Ato Aba Gole, s’est converti, la persécution a diminué. Par la suite, son mari aussi, s’est converti. Hakalla témoignait dans son propre village, et allait souvent dans d’autres villages lointains, à pied ou à cheval, pour témoigner et pour prêcher.</p>
-
-<p>Hakalla est connue pour le témoignage puissant qu’elle a eu au sein de sa famille, car ses enfants, son mari, et ses petits-enfants sont devenus chrétiens. C’était la première femme à servir quand l’église de Dubancho a été établie. Une grande partisane de l’alphabétisation des femmes, Hakalla est allée à Lemu, Kambatta, Shone, Sike, et Wolayta, et rendre visite à des assemblées jusqu’à Ambo et Addis Ababa pour enseigner la lecture aux femmes. Quand le groupe de femmes a été organisé, elle leur a donné beaucoup de soutien, et elle a été invitée à l’Assemblée générale des femmes au niveau national, pour donner son témoignage. C’était aussi la seule femme qui a fait preuve d’assez de force et de détermination pour qu’on la laisse entrer dans les prisons. Elle servait les chrétiens en prison en parcourant de longues distances pour leur amener de la nourriture fraîche. Elle était aussi un modèle de l’hospitalité, et elle recevait souvent des visiteurs chrétiens et des étudiants, y compris des gens qui l’avaient persécutée. Même dans ses dernières années, elle dirigeait le groupe de prière des femmes dans l’église locale. Elle a écrit une chanson: “Seigneur Jésus, mon cœur désire être avec toi.” (“<em>Wedante Yesus hoi libey yinafkal</em>”).</p>
-
-<p>A l’âge de quatre-vingt cinq ans, elle a dit à ses enfants un jour qu’elle ne se sentait pas bien. Deux jours plus tard, elle est morte.</p>
-
-<p>Belaynesh Dindamo</p>
-
-<hr />
-
-<h1 id="bibliographie">Bibliographie</h1>
-
-<p>Entrevue de l’auteur avec Hakalla Amale.
-Témoignages rendus par Assefa Jate (leader dans l’église Kale Heywet (KHC) et fils de Hakalla Amale) et Ato Kedamo Mechato (pasteur KHC).</p>
-
-<hr />
-
-<p>Cet article, soumis en 2002, a été recherché et rédigé par Belaynesh Dindamo, du Bureau des Femmes de l’Eglise Kale Heywet.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Amale, Hakalla`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -753,7 +687,7 @@ Témoignages rendus par Assefa Jate (leader dans l’église Kale Heywet (KHC) e
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -790,6 +724,6 @@ Témoignages rendus par Assefa Jate (leader dans l’église Kale Heywet (KHC) e
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

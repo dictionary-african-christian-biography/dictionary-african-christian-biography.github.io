@@ -566,7 +566,7 @@
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Trypho">
     
-    <meta itemprop="datePublished" content="April 10, 2022">
+    <meta itemprop="datePublished" content="April 10, 2023">
     
 
 <!-- NAME(S), DATE, AFFILIATION, COUNTRY -->
@@ -607,84 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>The Roman emperor Septimus Severus (193-211) in the tenth year after his power was secured against his various rivals (202) appears to have accepted the fact of some persecution (Frend 1967: 239-242), though with respect to Christians, “persecution at this time was due to private and/or local initiative” (Grant 1970: 100) in contrast to the impression given by Eusebius (H.E. VI.1).  “Apart from the years 202-203, and the situation which had developed between the Christians and pagans in Carthage, the reigns of Septimus Severus and his son Caracalla (211-217) were tolerant” as recognized by Tertullian (Frend 1967: 242; cf. Grant 1970: 97-100).  However, persecution was severe in Alexandria, under Quintus Maecius Laetus, prefect of Egypt, where it touched the life of an adolescent whose father, Leonides, was executed, and who, but for his mother’s hiding of his clothes, would have followed in his father’s path.  That youth was the budding biblical scholar, Origen (c. 185-254), who became in spite of his tender age the director of the greatest Christian school, in Alexandria from 203 to 231.  Among the distinguished pupils of Origen is the person named Trypho.</p>
-
-<p>And yet he is not included among those associated with Origen in the narrative of the church historian, Eusebius (c. 260-340), bishop of Caesarea, writing less than a century later.  A century after Eusebius, the Latin biblical scholar, Jerome (c. 347-419), in his <em>De viris inlustribus</em> (“Lives of Illustrious Men”) provides what little is known.  Jerome still knew of some extant letters from Origen to Trypho, among the four collections of those letters which Jerome had enumerated in his “Letter to Paula” (<em>Epistle</em> 33), but none seem to have survived.  Jerome regarded Trypho as “very learned in the Scriptures” (J 57; NPNF 2 III (1892) 374), but of the “many of his works” to which Jerome refers as having been composed by Trypho, Jerome only identifies by title and content “<em>On the red heifer</em> in Deuteronomy &lt;Jerome’s error since the referent occurs in Numbers 19:1-10&gt;, and <em>On the halves</em> which with the pigeon and the turtledoves were offered by Abraham as recorded in Genesis &lt;15:9-10&gt;.”</p>
-
-<p>Origen is noted for his extensive development of commentary literature.  It is no surprise that among his pupils this tendency might also be predominant.  No more precise dating of Trypho is currently possible, though it could be tempting to identify him as the martyr named in the “Acta Tryphonis,” among those affected by the “edict or edicts” of the emperor Decius (249-251) which appointed commissions “to supervise the sacrifices in Carthage, Spain, Alexandria and many other centres in Egypt” (Frend 1967: 302-303).  “Deaths over the whole Empire may probably be numbered in hundreds rather than thousands, but they were enough to vindicate the martyr-spirit at the moment when it was in danger of foundering amid the outward prosperity of the Church” (Frend 1967: 308).  Origen himself suffered torture but was not put to death, though he died but a few years later; of his students it is more difficult to say [cf. his <em>Exhortatio ad martyrium</em>, addressed to his patron Ambrosius (H.E. VI.28; Q2.1.4, pp. 69-73; Frend 1967: 287)].</p>
-
-<p>Clyde Curry Smith</p>
-
-<hr />
-
-<h1 id="bibliography-see-link-to-abbreviations-table-below">Bibliography (see link to abbreviations table below):</h1>
-
-<p>J 57</p>
-
-<p>FOTC 100 84</p>
-
-<h2 id="supplementary-bibliography">Supplementary Bibliography</h2>
-
-<p>Frend 1967
-<em>Martyrdom and Persecution in the Early Church:  A Study of a Conflict from the Maccabees to Donatus</em>, by William Hugh Clifford Frend.  New York:  New York University Press.</p>
-
-<p>Grant 1970
-<em>Augustus to Constantine:  The Thrust of the Christian Movement into the Roman World</em>, by Robert McQueen Grant.  New York, Evanston, and London:  Harper and Row.</p>
-
-<p>NPNF 2 III 1892
-Jerome, <em>De viris inlustribus</em>, translated by Ernest Cushing Richardson, in <em>A Select Library of Nicene and Post-Nicene Fathers of the Christian Church</em>, edited by Philip Schaff and Henry Wace.  Buffalo and New York:  Christian Literature.  Series 2, Volume III, pp. 359-384.</p>
-
-<hr />
-
-<p>This article, received in 2001, was researched and written by Dr. Clyde Curry Smith, Professor Emeritus of Ancient History and Religion, University of Wisconsin, River Falls.</p>
-
-<hr />
-
-<p><strong>Click here for</strong><a href="/resources/ancient-references/">Abbreviations and Source References for Ancient African Christians.</a></p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Trypho`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -763,7 +687,7 @@ Jerome, <em>De viris inlustribus</em>, translated by Ernest Cushing Richardson, 
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -802,6 +726,6 @@ Jerome, <em>De viris inlustribus</em>, translated by Ernest Cushing Richardson, 
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

@@ -601,65 +601,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Francesco Saverio Borghero was a pioneer Catholic missionary in Dahomey. Borghero was born in Ronco Scrivia, Italy, and studied at Voghera, Piedmont. and the seminary of Genoa. He was ordained a priest in December 1854. In 1857 he met Marion Brésillac, founder of the Society of African Missions, and joined the enterprise. In June 1859 Brésillac and four other members died of yellow fever in Freetown, Sierra Leone. Borghero, appointed by Propaganda Fide as interim superior of the Vicariate of Dahomey, was selected to lead the second expedition. He spent four years, from 1861 to 1865, in Africa. During that period he established stations at Whydah and Porto Novo and explored the Guinea Coast, traveling as far as Cape Palmas, Liberia, to locate sites for future missions. He also visited King Gle Gle of Dahomey at Abomey, where he was denied permission to evangelize. Borghero departed for Europe in January 1865. Poor health, the deaths of four confreres, and differences with his superior, Augustin Planque, over the exercise of authority caused him to be discouraged. Borghero’s doubts about the future of the mission alarmed Planque and Cardinal Barnabo, Prefect of Propaganda Fide, and eventually Borghero was forced to resign. He spent the remainder of his life in Italy and died in Ronco Scrivia.</p>
-
-<p>Despite his fears, the church planted by Borghero in Dahomey prospered. From there Christianity spread east to Lagos and the Niger, and west to Togoland and the Gold Coast (Ghana), Ivory Coast, and Liberia. The expansion was based largely on Borghero’s study of the coast during his voyages of exploration.</p>
-
-<p>Edmund M. Hogan, SMA</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p><em>Dictionnaire Bio-Bibliographique du Dahomey</em> (1957); Noel Douau, "Le Sacrifice du Pére Borghero," a manuscript in the SMA general archives, Rome; Patrick Gantly, <em>Mission to West Africa</em>, vol. I (1991); Patrick Gantly and Ellen Thorp, <em>For This Cause</em> (1992); Renzo Mandirola, "Padre Francesco Borghero, Primo Missionario S.M.A. Italiano," a manuscript in the SMA general archives, Rome.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Borghero, Francesco`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -738,7 +681,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -777,6 +720,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

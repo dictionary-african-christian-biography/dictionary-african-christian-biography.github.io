@@ -601,75 +601,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>A significant figure in the early twentieth century in the Catholic Church in South Africa was Monsignor Frederick Kolbe of Cape Town, South Africa. A convert to Catholicism whose parents were members of the Protestant London Missionary Society, he was educated at the University of Cape Town, in Europe where he did studies in law, and at the Gregorian University in Rome. His focus was the psychology of education and the formation of Catholic teachers, but he also made a major contribution to Catholic intellectual life through journalism. As founder and editor for eighteen years of the <em>South African Catholic Magazine</em>, which was published from 1891 to 1925, he developed the publication into “the principal literary instrument for commending the Catholic religion to all people of the country.”[1] The Magazine published a wide variety of articles (Kolbe often wrote most of them), some apologetic in character and others of general interest. The publication was a key source for Catholics about the life of the church in other parts of South Africa, e.g. the Zulu missions of the Mariannhill congregation. In that pre-ecumenical age he “gave an answer to every public attack on the Church which he noticed.”[2] But his major focus was relating contemporary thought to Catholic belief and assisting Catholics in understanding topics such as evolution. The Catholic Magazine was widely respected and was described as the “best magazine in the country” by Judge Cole.[3] The spirit of Monsignor Kolbe was carried on through the Kolbe Association which provided a forum for Catholic lay graduates and professionals to discuss theological issues. There were centers in Pietermaritzburg, Durban, Johannesburg, Pretoria, and Cape Town. In the early 1960s the Cape Town, Pretoria, and Johannesburg branches became involved in ecumenical work and discussions; a conference on “The Reunion of the Christian churches” was held in 1961 and attracted forty-six participants from many different Christian bodies.[4] Unfortunately, by the mid-1970s the Kolbe Association branches began to disband.</p>
-
-<p>Susan Rakoczy</p>
-
-<hr />
-
-<p><strong>Sources</strong></p>
-
-<ol>
-  <li>
-    <p>William Eric Brown, <em>The Catholic Church in South Africa from its Origins to the Present Day</em>, edited by Michael Derrick (London: Burns &amp; Oates, 1960), 267.</p>
-  </li>
-  <li>
-    <p>Brown, 275.</p>
-  </li>
-  <li>
-    <p>Brown, 280.</p>
-  </li>
-  <li>
-    <p>Bonaventura Hinwood, “Ecumenism,” in Joy Brain and Philippe Denis (eds), <em>The Catholic Church in Contemporary South Africa</em> (Pietermaritzburg: Cluster Publications, 1999), 382.</p>
-  </li>
-</ol>
-
-<hr />
-<p>This biography was excerpted and adapted in 2020 by Tyler Lenocker, visiting researcher at the Center for Global Christianity and Mission at Boston University, with permission, from Susan Rakoczy, “Catholic Theology in South Africa: An Evolving Tapestry,” <em>Journal of Theology for Southern Africa</em> 122 (July 2005): 84–106. For the <em>Journal of Theology for Southern Africa</em>, see https://srpc.ukzn.ac.za/journal-of-theology-for-southern-africa/.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Kolbe, Frederick`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -748,7 +681,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -787,6 +720,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

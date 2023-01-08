@@ -607,77 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Bekele was born on June 5, 1941 in Goba, Bale to <em>Ato</em> (Mr.) Lakew Kumsa and <em>Woizero</em> (Mrs.) Etagegnehu Belachew. He completed his elementary and junior secondary education at Dejazmach Deglehan School and went on from there to the Medhane Alem Secondary School in Harer.</p>
-
-<p>He worked in Addis Ababa and began his higher education by taking evening classes at Haile Sellassie I University. After graduating with a degree in accounting, he continued his education by taking correspondence courses through Century University in the U.S.A. and received his bachelor’s degree and his masters’ degree in accounting. He then got his Ph.D. in theology from Akron Baptist Bible College.</p>
-
-<p>In the following years, Bekele held many different positions. He worked in the ministry of finance as an accountant, then in the Ethiopian Telecommunication Authority as an auditor, in the Besrate Wengel Radio Program and in the Ministry of Information as chief accountant, then in the Ethiopian Shipping Lines and in Save the Children Welfare Organization as an auditor, in the Nazareth Orphanage as board chairman, and in the African Outreach for the Deaf as director.</p>
-
-<p>In 1965, Bekele came to the saving faith in Christ Jesus at the Emmanuel Baptist Church where he began his ministry of evangelism. In 1970, he was the first Ethiopian pastor of this church until 1995. In those years he not only led this church but also planted other local daughter churches in many provinces of Ethiopia by educating and strengthening potential church leaders. He also served as member of the Ethiopian Baptist fellowship.</p>
-
-<p>He was a member of the executive board of the Evangelical Churches Fellowship of Ethiopia (ECFE). He has served as program coordinator and translator for many big conferences. Many times he was invited to preach in Europe and America and did so diligently and faithfully until he was unable to travel due to ill health.</p>
-
-<p>He married <em>Woizero</em> Alemaz Zewdie in January 1974 and they were blessed with three sons.</p>
-
-<p>Pastor Bekele Lakew was ill for three years, supported by prayer and medical treatment. He expired at last on September 10, 2001.</p>
-
-<p>Dirshaye Menberu</p>
-
-<hr />
-
-<p>Sources:</p>
-
-<p>Short biography of Dr. Pastor Bekele Lakew, read at his funeral ceremony, Sept. 10, 2001.</p>
-
-<p>Alemaz Zewdie, (Bekele’s widow), interviewed by the author in June 2005.</p>
-
-<hr />
-
-<p>This article, received in 2005, was researched and written by Dr. Dirshaye Menberu, retired professor from Addis Ababa University and 2005-2006 Project Luke Fellow. She is a graduate of the Ethiopian Graduate School of Theology (EGST), a <em>DACB</em> Participating Institution.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Lakew, Bekele`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -756,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -795,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

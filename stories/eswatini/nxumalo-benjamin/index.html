@@ -607,69 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Benjamin Nxumalo (1874-1942) was King Sobhuza II’s uncle and counselor and one of the most educated Swazis of his time.</p>
-
-<p>Nxumalo was born in the Intombe Lutheran Mission in the Mahamba area. At the age of five his family moved to Mahamba proper and that was where Benjamin started his primary education. His father sent him to Edendale, Natal and later Kilnerton for his high school education, where he proved to be a very bright and intelligent boy.</p>
-
-<p>While Nxumalo worked for Mr. V.M. Stewart as a shop assistant, he planned for the education of Swazi children. He was instrumental in the founding of the Methodist school in Manzini. At one point he had to pay teachers at this school from his own pocket. He also introduced the idea of establishing the first national school (Zombodze) in the country to the Regent, Queen Labotsibeni. This school was attended by King Sobhuza II.</p>
-
-<p>As king’s counselor and secretary to the Swazi nation, he accompanied Sobhuza on the 1922-23 trip to London to discuss the burning question of Swazi land rights. He was founder of the Swazi National Fund, a fund set aside for the education of all needy children. He founded the eswatini Progressive Association and was President of the association until his death in 1942. He also attended a conference in the United States representing his church, the African Methodist Episcopal Church. Lomawa and Nukwase, his sisters, were successively Swazi Queen Mothers and his children have played outstanding roles in Swazi life and politics. Prominent among these was Dr. Allen Nxumalo, who was a medical doctor and the first Minister of Health in eswatini’s first Parliament after independence.</p>
-
-<p>Thabisile D. Mkatshwa</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>J.J. Grotpeter, <em>Historical Dictionary of eswatini</em>, The Scarecrow Press, Metuchen, N.J. 1975; J.S.M. Matsebula, <em>A History of eswatini</em>, Longman, Cape Town, 1972; Constance Nxumalo, “Benjamin Nxumalo-A Family Record” (unpublished).</p>
-
-<hr />
-
-<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (In 20 Volumes). Volume Three: South Africa- Botswana-Lesotho-eswatini. Ed. Keith Irvine. Algonac, Michigan: Reference Publications Inc., 1995.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Nxumalo, Benjamin`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -748,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -787,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

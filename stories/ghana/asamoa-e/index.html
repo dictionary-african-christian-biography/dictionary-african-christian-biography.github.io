@@ -607,75 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Erasmus Awuku Asamoa (April 19, 1910-1965), an educationist and a minister of the Presbyterian Church of Ghana, advocated the use of African languages in the first few years of teaching in Ghanaian schools.</p>
-
-<p>Born at Amanokrom, about 30 miles (48 km) northeast of Accra, he was educated at the Presbyterian Middle School and the Presbyterian Training College, both at Akuropon in the state of Akuapem, also about 30 miles northeast of Accra, between 1923 and 1932. After this he taught in elementary schools before going to Basel, Switzerland, to study theology at the Basel Missionhaus there.</p>
-
-<p>Returning home in 1940, he worked for the next ten years as a pastor in the Presbyterian Church, of which he was deputy synod clerk from 1949-1950. In 1951 he went to Britain to study at Aberdeen and Edinburgh universities in Scotland. He obtained an M.A. degree in moral philosophy at Edinburgh in 1954, and then took a diploma in education at the University of London.</p>
-
-<p>The last 11 years of his life were devoted to education. After serving as vice-principal of Akuropon Training College from 1954-1956, he became the first African principle of St. Andrew’s Training College at Mampon, about 30 miles (48 km) northeast of Kumase in Asanta, from 1956-1962. He then became the first African principal of the Presbyterian Training College at Akuropon, the oldest teacher-training institution in the country.</p>
-
-<p>Since the days of the Education Ordinance of 1925, promulgated by the British governor, Sir Gordon Guggisberg (q.v.), there had been a suspicion that the British were deliberately trying to provide the Africans with an ‘inferior’ education through the encouragement of the ‘vernacular’. This feeling was shared by Kwame Nkrumah (q.v.), president of Ghana (1960-1966), and his Convention People’s Party (C.P.P.). During the earlier years of the Nkrumah administration, in the 1950s, the Gold Coast government in 1956 appointed a committee to investigate the adoption of English for teaching in primary schools.</p>
-
-<p>The report of the four-member committee, to which Asamoa belonged, reflected the wide division of opinion in the country. Asamoa, who had been educated in the Basel tradition, which favored the use of African languages, supported the continuation of the policy laid down by Guggisberg, while another member, J.N.T. Yankah (q.v.), educated in the English tradition of the Methodist Mission, was the only member to propose the immediate adoption of English as the medium of instruction in all school classes. On the question of the government developing experimental English-language schools, an approach favored by most committee members, Asamoa dissociated from his colleagues. He pointed out that apart from the question of general academic attainments, such schools would deny two things he held to be fundamental in early education - firstly, mutual understanding between teacher and pupil, and secondly an effective appeal to the child’s moral sense. “These defects,” he said, “are inevitable where the child is taught a language which he does not understand.”</p>
-
-<p>In his lifetime, Asamoa lost his battle, since the C.P.P. administration downgraded the study of Ghanaian languages in schools and colleges, preferring the use of English throughout the primary school stage. The Rev. Asamoa died in 1965, but in 1966, the following year, after Nkrumah’s overthrow, the issue of language in schools again became the subject of lively discussion. As a result, the Ghana Ministry of Education accepted a recommendation that a Ghanaian language should be used as the medium of instruction for the first three years of the primary school course, after which the change to English as a medium of instruction should begin in the fourth year, with the Ghanaian languages continuing to be studied.</p>
-
-<p>M. A. Kwamena-Poh</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Ghana Government, <em>Report of the Education Review Committee</em> (“the Kwapong Committee”), Accra, 1966-1967; Gold Coast Government, <em>Report on the Use of English (as a Medium of Instruction) in Gold Coast Schools</em>, Accra, 1956; H. O. A. MCWilliam and M. A. Kwamena-Poh, <em>The Development of Education in Ghana</em>, London, 1975.</p>
-
-<hr />
-
-<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (in 20 Volumes). Volume One Ethiopia-Ghana, ©1997 by L. H. Ofosu-Appiah, editor-in-chief, Reference Publications Inc., New York, NY. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Asamoa, Erasmus Awuku`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -754,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -793,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

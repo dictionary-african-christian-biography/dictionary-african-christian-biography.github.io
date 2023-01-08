@@ -611,65 +611,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Althea Edmiston was an African American missionary among the Bushoong people in the Belgian Congo. She was born in Russelville, Alabama. After graduating from Fisk University in 1901, she was appointed by the foreign missions committee of the Presbyterian Church in the United States for service in the Congo Free State. She prepared with one year of graduate study at the Chicago Training School for City and Foreign Missions. Arriving in Ibanche in 1902, she served as a teacher at the Maria Carey Home for Girls and then went to work among the Bushoong people. She compiled a dictionary and grammar of their language, which was published 30 years later. She opened a school to teach people to read and write and translated enough literature to form a small library.</p>
-
-<p>In 1904 Alonzo Edmiston joined their mission, and he and Althea married the following year. They had three sons. On furloughs, Althea Edmiston spoke at the American Missionary Association of the Congregational Board in the East (1906); at Fisk University, where she gave the commencement address in 1921; and at the Missionary Conference of Negro Women (1935). In 1922 the Edmistons worked among the Congo royalty at Mushenge. Later they worked among the Lulua, the Zappo Zaps, and the Luba peoples. Althea Edmiston was in charge of the Mutoto Girls’ Home for three years and was principal of the day-school system for four years. She died in Mutoto, Belgian Congo, from sleeping sickness and malaria.</p>
-
-<p>Joan R. Duffy</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Althea Edmiston, <em>Grammar and Dictionary of the Bushonga or Bukuba Languages as Spoken by the Bushonga or Bukuba Tribe Who Dwell in the Upper Kasai District, Belgian Congo, Central Africa</em> (1932?) and <em>Maria Fearing: A Mother to African Girls</em> (1938). Julia Lake Kellersberger, <em>A Life for the Congo: The Story of Althea Brown Edmiston</em> (1947).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Edmiston, Althea`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -748,7 +691,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -787,6 +730,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

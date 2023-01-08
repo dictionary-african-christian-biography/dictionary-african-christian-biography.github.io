@@ -607,103 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Girgis Anshalian was an ethnic Armenian who grew up in Turkey and was trained as a silk weaver. He served for twelve years as a pastor in Turkey before immigrating to America where he was for a brief period a student at Xenia seminary in Pennsylvania, a part of the United Presbyterian Church of North America. In November of 1885, Rev. Girgis arrived in Egypt to begin serving the United Presbyterian Church of North America. The missions committee directed him to visit native churches in want of a pastor until the next regular meeting of the presbytery at which time he could be installed in one of these churches. He traveled from Alexandria to Esna, “and was everywhere warmly received by the people.” [1] According to Charles Watson, who goes on to record to say that, “several of the congregations expressed a desire to have him as a pastor.” [2] On April 27, 1886, he was installed as pastor of the large congregations in Kus, one of the churches that had requested him. [3]</p>
-
-<p>After his installation Rev. Girgis returned to Turkey where he was reunited with his family. He returned to Egypt with them where he, according to the <em>Annual Report of the American Board of Missions</em> from 1886, “entered with zeal upon his work.” [4]</p>
-
-<p>Little is known about his ministry in Kus, outside of odds and ends we have from the <em>Annual Report of the American Board of Missions</em>. In 1886 and again in 1892, it was reported that the congregation was flourishing; but in 1894 the church had become “sorely tired by the loss, by death, of some of its members.” [5] This is the last account we have of Girgis Anshalian until his death the following year. Girgis and his wife returned to his native land of Armenia in autumn of 1886. They reached Dairbekir just before the Turks massacred its Armenian population. The account we have, via a letter from his wife, is preserved in the <em>Annual Report of the American Board of Mission from 1895-1896</em>,</p>
-
-<blockquote>
-  <p>A note from his wife and another party who got his information at second hand enable us to say that he was offered his life if he would deny his savior and become a Moslem. This he refused to do. All the money he had in his possession was offered as an inducement to spare his life, but they took the money and then his life also. His wife and brother were shot at, pierced with spears and beaten with sticks by the cruel murders. These, however, recovered from their wounds, but were left homeless and without the means of bodily support, their wearing apparel and worldly goods being taken from them. Brother Anshalian was an earnest and eloquent preacher. We mourn his loss, but rejoice that grace was given him to remain faithful unto death, and we now think of him as having joined the martyr band and as wearing a martyr crown.[6]</p>
-
-</blockquote>
-
-<p>Rev. Girgis Anshalian spent his life serving Christ, and his death proved to be no different. Though his death was tragic, the defense of his faith became a testament to those around him, displaying that what he preached was truly written on his heart.</p>
-
-<p>Benjamin Robinson</p>
-
-<hr />
-
-<p>Notes:</p>
-
-<ol>
-  <li>
-    <p>Andrew Watson, *The American Mission in Egypt -1854 to 1869, *(Pittsburgh: United Presbyterian Board of Publication, 1904), p. 377.</p>
-  </li>
-  <li>
-    <p>Ibid., p. 377.</p>
-  </li>
-  <li>
-    <p>American Board of Mission, “1885-1886” in <em>Annual Reports of the American Board of Mission 1870-1889,</em> p. 5.</p>
-  </li>
-  <li>
-    <p>Ibid., 5.</p>
-  </li>
-  <li>
-    <p>American Board of Mission, “1893-1894” in <em>Annual Reports of the American Board of Mission 1889-1961,</em> p. 36.</p>
-  </li>
-  <li>
-    <p>American Board of Mission, “1895-1896” in <em>Annual Reports of the American Board of Mission 1889-1961,</em> p. 44-45.</p>
-  </li>
-</ol>
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>American Board of Mission. <em>Annual Reports of the American Board of Mission 1870-1889.</em> Pittsburgh, PA: n.p., n.d.</p>
-
-<p>American Board of Mission. <em>Annual Reports of the American Board of Mission 1890-1904.</em> Pittsburgh, PA: n.p., n.d.</p>
-
-<p>Elder, Earl E. *Vindicating a Vision - The Story of the American Mission In Egypt, 1854-1954. *Philadelphia: Board of Foreign Missions of the United Presbyterian Church of North America, 1958.</p>
-
-<p>Watson, Andrew. <em>The American Mission in Egypt -1854 to 1869.</em> Pittsburgh: United Presbyterian Board of Publication, 1904.</p>
-
-<hr />
-
-<p>This story, received in 2006, was researched and written by Benjamin Robinson, a student in the M.A.T.S. Program at the Evangelical Theological Seminary in Cairo as a requirement for a class on Middle East Christianity (III) under the supervision of Dr. David Grafton, <em>DACB</em> liaison coordinator.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Anshalian, Girgis`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -782,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -821,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

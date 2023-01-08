@@ -605,75 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Né le 15 juillet 1942 à Baonga, territoire d’Isangi, district de la Tshopo dans la province orientale en République Démocratique du Congo, Nestor Longomba Kemetu était le troisième fils de monsieur Kemetu Jean et de madame Banyele Julienne. Il avait deux sœurs et quatre frères. Ces derniers moururent très tôt et Longomba resta le seul garçon de la famille, avec ses deux sœurs. Cette situation d’épreuves à répétition le marqua profondément et il ne trouva la consolation que dans la prière. Ce fut le début d’une vocation au service du Seigneur.</p>
-
-<p>Il commença ses études primaires à Baonga, son village natal, et les termina à Yalemba (territoire Basoko) entre 1952 et 1959. Après ses études primaires, il fut admis à l’école de moniteurs de la mission protestante de Yalemba où il obtint, après trois ans de formation,  le diplôme en pédagogie (1962). Il passa ensuite une année d’études de latin (1962-1963) à l’Ecole Nationale Supérieure Agréée de Stanleyville ( Kisangani). Après ses études secondaires, Longomba exerça le métier d’enseignant dans les écoles de Yakusu, Yalilikina et Yalemba (1963-1973). Il a épousé Liotho Bamoenela, et ils ont eu dix enfants, dont quatre fils et six filles.</p>
-
-<p>En septembre 1973, il fut recommandé par l’église de Yalemba pour les études pastorales à l’École Baptiste de Théologie à Yakusu. Après une année d’études, l’école de théologie arrêta les cours à la suite d’une crise financière. Donc, en attendant la réouverture prochaine de l’école, Longomba fut envoyé prêcher l’évangile chez le peuple Mombongo du territoire de Basoko et fonda une église locale à Yapange. Revenu à Yakusu en 1977, il termina sa formation théologique et pastorale en 1980.</p>
-
-<p>A la fin de ses études, il fut envoyé comme pasteur responsable de l’église locale à Mombongo (territoire de Yahuma). Il était le premier pasteur formé pour travailler parmi le peuple Mombesa, un peuple reconnu comme étant à la fois animiste, hostile à l’évangile et difficile à développer économiquement. Beaucoup de pasteurs redoutaient d’exercer leur ministère pastoral parmi eux. Sous le leadership de Longomba, l’église baptiste de Mombongo-Mombesa connut un essor considérable en nombre de fidèles et en superficie. L’église locale de Mombongo-Mombesa grandit et se divisa en cinq églises locales autonomes. C’est ainsi qu’en 1986 l’assemblée générale de la Communauté Baptiste du Fleuve Congo décida d’élever Mombongo au rang de chef de district ecclésiastique. Longomba dirigea ce district en gestation jusqu’à sa mort, le 9 avril 2007. Le District Mombongo est donc composé de cinq grandes églises locales– Mombongo, Limbase, Hembe, Bolila, et Bolama–ayant chacune, à la tête, un pasteur formé en théologie pastorale. Les trois premières se trouvent dans le territoire de Yahuma tandis que les deux dernières sont situées dans le territoire de Basoko.</p>
-
-<p>Grâce aux initiatives de Longomba dans le domaine de l’évangélisation et des œuvres sociales, plusieurs églises locales furent implantées parmi les peuples non-atteints et faiblement atteints par l’évangile. De plus, plusieurs écoles, tant primaires que secondaires, furent créées parmi le peuple Mombesa. Aussi, comme le Pasteur Longomba avait la conviction que l’Esprit Saint devait habiter dans un corps sain, des centres de santé fonctionnèrent dans plusieurs endroits où se trouvaient les églises locales. Longomba a laissé un héritage qui porte encore fruit aujourd’hui et marquera les générations futures.</p>
-
-<p>Dieudonné Lotika</p>
-
-<hr />
-
-<p>Sources:</p>
-
-<p>Archives de la Communauté Baptiste du Fleuve Congo, Province Haut-Fleuve.</p>
-
-<p>Liotho Bamoenela, l’épouse du pasteur Longomba, entretien de novembre 2007.</p>
-
-<p>Longomba Sylvain, fils du pasteur Longomba, entretien de novembre 2007.</p>
-
-<hr />
-
-<p>Cet article, reçu en 2008, a été rédigé par le rév. Lotika Dieudonné, Directeur Général de l’Institut Supérieur de Théologie Evangélique et de Développement de Yakusu en République Démocratique du Congo. Il est le coordinateur de liaison de cette institution.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Longomba Kemetu, Nestor`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -754,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -791,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

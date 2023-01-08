@@ -607,86 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Fred Suter was born on May 10, 1865 in Halifax, Yorkshire. His father was Samuel Suter, a tin and coppersmith, and plumber who supervised the ventilation systems in St. James’ Palace and the Bank of England. Samuel Suter was an atheist.</p>
-
-<p>Suter studied to be a missionary at Cliff College and Harley House in England, and was ordained as a Baptist pastor. In 1885, Suter left England and moved to Durban, South Africa. He felt that God had called him to work among the Zulus. He worked as a draper in a large store, witnessing to Zulu people in his spare time. Suter and a fellow missionary, George Gale, began to preach the gospel in compounds and hostels in Durban. In 1893, the first African church was opened, then a night school for Bible classes.</p>
-
-<p>In 1895 Suter moved with his wife, Florence, to the rural area of Dumisa, south of Durban. A Bible training school, which had been temporarily suspended for several years, was transferred to Dumisa under Suter’s leadership in 1924. His knowledge of the Zulu language and his understanding of Zulu culture were invaluable to his Bible teaching. Men came from all parts of the country and further afield to be trained for three years under him.</p>
-
-<p>Alan Huntingtford said, “No account of the work among Zulu people would be complete without reference to the work of Fred Suter in the Bible training ministry.” [1] Well-known pastor Nicholas Bhengu was a student at Dumisa from 1934 to 1936. He commended Suter’s Bible teaching, saying, “that old saint of God, Mr. Suter, unfolded its pages in both plain and attractive English and deep Zulu… Mr. Suter was a born teacher both by words and deeds. His humility and long-suffering made us all feel very small.”[2]</p>
-
-<p>It was at Dumisa that Suter envisioned expanding this Bible teaching ministry through a united effort. Thus, in 1939, the first proposal for a “Union” Bible school was created. This proposal was laid out before other organizations. The proposal was agreed upon and the building work was undertaken on land owned by the Swedish Zulu Mission in Sweetwaters, on the outskirts of Pietermaritzburg.</p>
-
-<p>In February 1942, Union Bible Institute opened with Mr. Suter as its first Principal. He was assisted by Bernard Johanson, a missionary from the Swedish Zulu Mission, who would also succeed him as principal. Within this first year, twenty-one students enrolled at the school, nine of whom hailed from Dumisa to finish their course of studies. Although Suter retired at age 78, after only one year as the first principal of Union Bible Institute, he contributed greatly to the foundation of the school.</p>
-
-<p><strong>Claudia Tsang</strong></p>
-
-<hr />
-
-<h1 id="notes">Notes</h1>
-<ol>
-  <li>
-    <p>Huntingford, Alan,  <em>History of the Southern Field, CGM, SAGM, AEF: the First One Hundred Years in the Southern Field</em>, (Pietermaritzburg: AEF, 1989), 41.</p>
-  </li>
-  <li>
-    <p>Ibid., 42.</p>
-  </li>
-</ol>
-
-<h1 id="bibliography">Bibliography</h1>
-<p>Huntingford, Alan.  <em>History of the Southern Field, CGM, SAGM, AEF: the First One Hundred Years in the Southern Field</em>. (Pietermaritzburg): AEF, 1989.</p>
-
-<p>Johanson, B.A. <em>We Watched It Grow: a Story of the Union Bible Institute</em>. Sweetwaters: UBI, 1971.</p>
-
-<p>Scutt, J.F. <em>The Man Who Loved the Zulus</em>.  Pietermartizburg: Shuter and Shooter, (n.d.)</p>
-
-<hr />
-
-<p>This article was submitted in 2016 by Claudia Tsang, a short-term missionary with TEAM (The Evangelical Alliance Mission) working at Union Bible Institute as the school librarian from September 2015 to June 2016. She co-wrote the article with Jackie Bolger who was a  missionary in South Africa for 30 years with Africa Evangelical Fellowship (now  SIM). Nine of those years were as librarian at Union Bible Institute in Pietermaritzburg.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Suter, Fred`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -765,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -804,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

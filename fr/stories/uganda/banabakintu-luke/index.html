@@ -605,71 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Luc Banabakintu était un des trois martyrs appartenant à la communauté chrétienne de Mityana, située à une soixantaine de kilomètres au nord-ouest de la capitale du royaume de Buganda. Banabakintu appartenait à la branche “Anguille” du clan des Poisson Poumon (Mamba) et il est né dans le village de Ntolomwe, dans le compté de Gomba. Son père, Mukwanga, avait plusieurs femmes et trente enfants, dont Banabakintu était l’aîné, le fils de sa première femme Kusubiza, du clan de la Semence (Nvuma). Quand il avait seize ans, son oncle Jjagwe a rendu visite à la famille, et à la demande du jeune homme lui-même, il l’a emmené vivre chez lui à Mityana. C’est là qu’il est entré au service du Mukwenda, le chef du compté de Ssingo. Banabakintu a prospéré et on lui a donné le petit fief de Kawinga, ou sa tâche était de superviser les autres serviteurs du chef, qui vivaient en dehors de l’enclos de leur maître.</p>
-
-<p>Selon la tradition du clan, Banabakintu s’est marié, et sa femme s’appelait Bazawalaluggya. Il était de grandeur moyenne, avait le visage plutôt rond, et était de teint foncé. Il avait une voix basse et une disposition très gaie. Le 31 mai, 1880, il a été inscrit par son maître au catéchisme catholique. Il allait aux cours avec Matthias Kalemba, et comme lui, fréquentait aussi les instructions offertes par les missionnaires anglicans. Il a été baptisé le 28 mai, 1882, la fête de la Pentecôte, par le père Ludovic Girault des Missionnaires d’Afrique.</p>
-
-<p>Banabakintu a formé une amitié profonde avec Matthias Kalemba et l’a aidé à faire l’enseignement des catéchumènes à Mityana. Il y avait plus de deux cent membres dans la communauté de Mityana. Quand il pouvait, Luc faisait le voyage de douze heures jusqu’à la mission pour pouvoir recevoir les sacrements de la réconciliation et de l’eucharistie. Il avait entre trente et trente-cinq ans à l’époque de son martyre. Quand la persécution a éclaté le 25 mai, 1886, Luc avait quitté Mityana pour se rendre à Mengo, et a passé la nuit chez son ami Cyprien Kamya, qui avait été baptisé avec lui quatre ans auparavant. Le jour suivant il a continué son chemin vers la capitale et s’est rendu chez le Mukwenda, l’informant qu’il s’attendait à être tué, et l’assurant qu’il ne rapporterait jamais les noms des enfants à qui il faisait la catéchèse.</p>
-
-<p>Luc a passé la nuit du 26 mai avec Matthias Kalemba, tous deux prisonniers du chef du compté. Le jour suivant, ils ont admis qu’ils étaient chrétiens, et ils ont été condamnés à mort par Mukasa, le chancelier (Katikiro). En route pour Namugongo, le site des exécutions, Kalemba avait lancé le défi aux bourreaux, leur disant de le tuer. Ils l’ont tué à la colline de Kampala. Cependant, Banabakintu a continué tout seul, et a rejoint Charles Lwanga et les autres futurs martyrs dans l’après-midi du 27 mai. Il faisait partie du groupe des 31 victimes - catholiques, anglicans et autres, - du grand holocauste de Namagongo, qui a eu lieu le jour de l’Ascension, le 3 juin, 1886. Douze personnes de ce groupe (sans compter Charles Lwangwa, qui avait déjà été mis à mort) sont maintenant officiellement reconnus comme martyrs catholiques. Ils ont été béatifiés par le Pape Bénédicte XV en 1920, et ont été déclarés saints canonisés par le Pape Paul VI en 1964. Le 3 juin, la date de leur martyre, est désormais connue comme la fête de tous les martyres de l’Ouganda au calendrier universel de l’église catholique.</p>
-
-<p>Aylward Shorter M. Afr.</p>
-
-<hr />
-
-<h1 id="bibliographie">Bibliographie</h1>
-
-<p>J.F. Faupel, <em>African Holocaust</em> [Holocauste africain] (Nairobi, St. Paul’s Publications Africa, 1984 [1962]).</p>
-
-<p>J.P. Thoonen, <em>Black Martyrs</em> [Martyres noirs] (London : Sheed and Ward, 1941).</p>
-
-<hr />
-
-<p>Cet article, soumis en 2003, a été recherché et rédigé par le dr. Aylward Shorter M. Afr., directeur émérite de Tangaza College Nairobi, université catholique de l’Afrique de l’Est.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Banabakintu, Luke`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -750,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -787,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

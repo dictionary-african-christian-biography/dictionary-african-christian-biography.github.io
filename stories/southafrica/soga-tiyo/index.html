@@ -607,73 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/southafrica/soga-tiyo/soga_tiyo.jpg" alt="Tiyo Soga" class="bio" /></p>
-
-<p>First ordained Bantu-speaking South African.</p>
-
-<p>His father was a high counselor in the Ngqika branch of the Xhosa people; his mother was a convert to Christianity.  After he himself was trained at United Presbyterian Church of Scotland mission schools in the Cape Colony, he attended a seminary in Glasgow, where he was baptized in 1848.  Afterwards he did evangelical work among the Xhosa, returning to Scotland for further study in 1851.  He was ordained in 1856.  The following year he married a Scottish woman.  He then founded a successful mission station among his own people.  Although his health declined badly during the 1860s, he managed to open a new station among the Gcaleka Xhosa of chief SARILI three years before he died.</p>
-
-<p>His translations of the Four Gospels and the first part of <em>Pilgrims’s Progress</em> were among the earliest in Xhosa.</p>
-
-<p>Mark R. Lipschutz and R. Kent Rasmussen</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p><em>Dictionary of South African Biography,</em> 4 vols.  Cape Town, Durban: Human Sciences Research Council, 1968-81.</p>
-
-<p>Chalmers, John Aitken.  <em>Tiyo Soga.</em>  2nd edition.  Edinburgh: A. Elliott, 1878.</p>
-
-<p>Williams, D.  [Article on Tiyo Soga]. In <em>Black Leaders in Southern African History,</em> ed. Christopher Saunders.  London: Heinemann, 1979.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Dictionary of African Historical Biography</em>, 2nd edition, copyright © 1986, by Mark R. Lipschutz and R. Kent Rasmussen,  University of California Press, Berkeley and Los Angeles, California.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Soga, Tiyo (A)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -752,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -791,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

@@ -607,75 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Tasso  Hebena was born and raised in the Bolosso area of Wolaitta, Ethiopia. Soon  after he heard the gospel and became a follower of Jesus, he attended the  annual spiritual life conference held at Soddo, Wolaitta. The conference  speaker was Mr. Walter Ohman, a Sudan Interior Mission (SIM) missionary, who challenged the listeners to  share the gospel with those in the Sidama province. Tasso knew that the Sidama  people group had no love for the Wolaitta. Previously three Wolaitta  evangelists had been martyred by the Sidama. Even though his education was  limited to two years of primary education in a local Kale Heywet Church (KHC)  school and two years of Amharic Bible School at Soddo , he volunteered to serve  in Sidama.</p>
-
-<p>With  his wife Lalore and their one child, Tasso travelled in 1947, together with thirteen  other Wolaitta evangelist families, to serve among the Sidama people group. They  were commissioned and paid a small stipend by the Wolaitta KHC. These thirteen evangelist  families served in cooperation with the SIM missionaries located at Aletta  Wondo.  Tasso experienced various spiritual  confrontations with local diviners, and a number of the Sidama with physical  infirmities were healed through his prayers.  After a Bible School training centre was  established in Aletta Wondo in 1958, the thirteen Wolaitta evangelists were  recalled by the Wolaitta KHC.  </p>
-
-<p>Back  home in the Boloso district of Wolaitta, Tasso voluntarily served several KHCs  as a Bible school teacher and itinerant pastor/encourager. During this period  in Boloso he became a successful farmer; his abundant grain produce was the  envy of his neighbours. Tasso enrolled for two years in the Ambei KHC Bible  school, which was within walking distance of his home.</p>
-
-<p>In  1966 Tasso and his wife were assigned by the Wolaitta KHC to serve in the Kafa  region along with 20 other Wolaitta evangelist families. Through the tactful negotiations  of SIM missionary Alex Fellows residing in Bonga, Kafa, the evangelists were  granted permission by the Kafa Ministry of Education to serve throughout the  area as literacy teachers.  In the  Sharadda district Tasso Hebena experienced opposition from local authorities  which led to his arrest and imprisonment for several months. Later he and his  family were assigned to the Chenna district of Kafa where he had an effective evangelistic,  healing and teaching ministry.</p>
-
-<p>Tasso  Hebena had an exceptional gift for building relationships with local community  leaders plus learning the local language and culture in any place where he was  assigned.  He left a lasting legacy of a  number of church plants in both Sidama and in Kafa. His nine children are well  educated and are making their own contribution to their respective local  churches and to the greater Ethiopian society as teachers and medical  practitioners.</p>
-
-<p><strong>E.  Paul Balisky</strong></p>
-
-<hr />
-
-<h1 id="sources">Sources:</h1>
-
-<p>E.  Paul Balisky, *Wolaitta Evangelists: A  Study in Religious Innovation in Southern Ethiopia, 1937-1975, *Eugene OR:  Pickwick, 2009</p>
-
-<p>Raymond  Davis, *Winds of God, *Toronto: SIM  International Publications, 1984.</p>
-
-<p>Malcomu  Shanqo, Tape recording of 1987, translated by Woyita Woza.</p>
-
-<hr />
-
-<p>This  article was researched and written by E. Paul Balisky, former lecturer at the  Ethiopian Graduate school of Theology, Addis Ababa. He and his wife Lila serve  as members of the *DACB *Advisory  Council and now reside in Grande Prairie, Alberta, Canada.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Hebena, Tasso`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -754,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -793,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

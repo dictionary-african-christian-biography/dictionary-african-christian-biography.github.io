@@ -601,65 +601,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Karl Wilhelm Isenberg was a missionary and linguist in Ethiopia and India. A German Lutheran, Isenberg trained at the Basel Mission seminary in Switzerland and received Anglican orders in 1832 when accepted by the Church Missionary Society (CMS). He joined Samuel Gobat in Cairo and studied Amharic and Arabic before the two men left for Ethiopia in 1834. After Gobat left Ethiopia in 1836, Isenberg was joined by his fiancée, Henrietta Geerling and J. L. Krapf. His unwillingness to accept Gobat’s advice over the siting of the mission and his inability to reach any accommodation with the Ethiopian Orthodox clergy, led first to the mission’s removal to Shoa and then contributed to its expulsion from Ethiopia in 1843. When it became clear that there was no possibility of returning to Ethiopia, Isenberg transferred to the CMS mission in Bombay where, amidst many activities, he worked briefly in a settlement for freed African slaves, some of whom returned to Africa as evangelists. Diagnosed in India in 1864 as terminally ill, he returned to Germany, died in Stuttgart, and was buried in Korntal.</p>
-
-<p>Isenberg’s <em>Dictionary of Amharic</em> was published in 1841, and a competent grammar the following year, as well as several other books intended for use in the school the mission tried to establish in Ethiopia. This pioneering language work was to be his most significant contribution to mission.</p>
-
-<p>M. Louise Pirouet</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>The main sources for Isenberg’s life are H. Gundert, <em>Biography of the Rev Charles [Karl] Isenberg, Missionary of the Church Missionary Society to Abyssinia and Western India from 1832 to 1864 (1885)</em>; J. L. Krapf and C. W. Isenberg, <em>The Journals of the Rev. Messers Iseng and Krapf, Missionaries of the Church Missionary Society, Detailing Their Proceedings in the Kingdom of Shou, and Journeys in other parts of Abyssinia in the years 1839-1842</em> (1843, repr. as <em>The Journals of Isenburg and Krapf</em>, 1968), and Eugene Stock, <em>The History of the Church Missionary Society</em>, vol. 1 (1899), pp. 351-353. Donald Crummey, <em>Priests and Politicians: Protestant and Catholic Missions in Orthodox Ethiopia, 1830-1968</em> (1972), pp. 29-59.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Isenberg, Karl Wilhelm`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -738,7 +681,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -777,6 +720,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

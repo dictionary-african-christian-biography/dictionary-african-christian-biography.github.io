@@ -607,75 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Philip Johnson (March 25, 1853-August 21, 1903) was a Krio (Creole) convert to Wesleyan Methodism who spent his life as a pioneer missionary in Tonkol Limba country. A man of little education, he was loved and respected both by his spiritual charges and by his fellow clergymen. He spent much time translating religious texts into Limba.</p>
-
-<p>Born at Hastings, in the rural area of Sierra Leone he was converted to Wesleyan Methodism in 1870. He subsequently served as prayer-leader, Sunday school teacher, exhorter, and local preacher at the Hastings church. At this time he zealously tried to fill the gaps in his education. Later, in 1879, he followed a course in theology under the guidance of a European missionary in Freetown. Already, at early stage, his character showed signs of the qualities which were later to earn him such high esteem- humility, piety, and devotion to duty.</p>
-
-<p>In 1880, when the Wesleyan Methodist Church established a mission in Forecaria in Tonko Limbal country (in northwest Sierra Leone), Johnson was sent there as catechist under James Booth, the pioneer English missionary who later repudiated his calling and turned trader. Johnson’s main concern was with the sub-section at Kathiri village, but when Booth on leave in Britain, he took charge of the entire ministry. Except for a brief interval when the mission’s work was suspended because of hostilities between its Limba hosts and their Soso and Temne neighbors, Johnson spent all the years of his active missionary life in Tonko Limba.</p>
-
-<p>A source of acute mental anguish to this devout man was the yearly examination which a candidate had to take in order to become a fully ordained minister. But because of his scanty education he was exempted from being tested on many of the more involved texts on theology. Moreover, his religious colleagues felt that he was destined for work among a largely non-literate population.</p>
-
-<p>In 1891 the mission was forced to suspend activities as a result of renewed Limba-Soso conflict. Johnson then went to Freetown, where he ministered to the migrant Limba community in the city and its suburbs where, among his congregation, he found refugees from the strife-torn Tonko Limba. By 1893 hostilities ceased and he was able to return to the field, serving as second in command to another Krio missionary attached to Tonko Limba, the Rev. Philip Hazeley.</p>
-
-<p>Johnson’s profound knowledge of the Limba age proved to be his greatest asset. He spent much time on translation work and by 1894 had produced a translation of the catechisms as well as a Limba version of the sacramental services. Eventually, was ordained in Freetown as Native Assistant Minister in February, 1895.</p>
-
-<p>Struck by an attack of paralysis in 1902, Johnson was declared a supernumerary minister the following year. His condition deteriorated until his death in Freetown on August 21, 1903.</p>
-
-<p>E.D. Amadu Turay</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>C. Marke, <em>The Origin of Wesleyan Methodism in Sierra Leone</em>, London, 1913.</p>
-
-<hr />
-
-<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (In 20 Volumes). Volume Two: Sierra Leone-Zaire, Ed. L. H. Ofosu-Appiah. New York: Reference Publications Inc., 1979.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Johnson, Philip`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -754,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -793,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

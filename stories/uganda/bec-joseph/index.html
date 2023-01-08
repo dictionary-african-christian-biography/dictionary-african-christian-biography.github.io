@@ -607,57 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Father Jean Joseph Bec was of the White Fathers Mission. He entered the White Fathers Noviciate in Algiers in 1890. He was ordained priest on May 21, 1896, and left for Uganda where he spent a short time at Kasozi in Koki and then two years in the Sesse Islands. In 1900 he was appointed Superior at Bujuni, and was one of the first resident missionaries there although the station had first been opened in 1897. From 1901-1909 he worked in the Sesse Islands, founding the first school there. Sleeping sickness broke out in 1902 and he gave invaluable help and courage to the frightened people, and was also able to assist Dr. Koch who came to do research into the disease. In 1909 he was instrumental in persuading the people to follow the instructions of the government and evacuate the islands. For his work during this epidemic he was awarded the medal of the Royal African Society in 1956, and the French Government recognized his work when they awarded him the “Palmes Academiques.” In 1909 he was sent to Narozari, and the exiled Basesse would walk miles to see him there. In 1921 when the islanders were allowed to return the mission was in ruins, and for a time Bec travelled to and from Kitovu to minister to them. From 1920-1940 he was Superior of the mission at Bumangi on the islands, until it was handed over to Diocesan clergy. He was then appointed chaplain to the Girls’ School at Nabbingo, and he filled this post for ten years. In 1951 he took up his last appointment as curate at the new foundation at Buyege, where he did the work of a parish priest almost up to the time of his death. When the Basesse heard that he was dying, they sent a petition asking that his body might be buried on the islands, and this was granted.</p>
-
-<p><strong>Louise Pirouet</strong></p>
-
-<hr />
-
-<p>This article, used by permission, was written by Louise Pirouet, as part of <em><a href="../pirouet-foreword/">A Dictionary of Christianity in Uganda </a></em>(Department of Religious Studies, Makerere University College, 1969), p. 17. Copies available at Africana Section, Makerere University Library (AF Q 276.761 MAK and AR/MAK/99/1); Bishop Tucker Library, Uganda Christian University and in UK at the University of Birmingham; Crowther Centre Library, CMS Oxford and Louise Pirouet Papers, Cambridge Centre of African Studies.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Bec, Jean Joseph`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -736,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -775,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

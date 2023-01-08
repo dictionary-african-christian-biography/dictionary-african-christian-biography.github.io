@@ -605,69 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Leader d’église indépendante.</p>
-
-<p>Il reçut son éducation à la station de la Mission Baptiste Américaine dans la région occidentale du Congo Belge (Zaïre) et servit en tant que catéchiste baptiste (1925-1934).  En 1934 il s’affilia à la mission de l’Armée du Salut et devint un de leurs évangélistes.  Il fit des études à un institut biblique de l’Armée du Salut mais s’en sépara peu après pour fonder sa propre église (1939).  Son Eglise des Noirs ranima beaucoup des enseignements millénaristes de Simon KIMBANGU, dont le mouvement était alors en déclin parmi le peuple Kongo.  Pendant les années suivantes, Mpadi fut harcelé par les autorités coloniales qui considéraient que son mouvement était révolutionnaire et dangereux.  A plusieurs reprises il échappa à l’emprisonnement et finalement alla se réfugier au Congo Français où il fut arrêté en 1944.  Il passa la plupart des années 1940 et 1950 en prison, jusqu’au moment où le Zaïre reçut son indépendance en 1960.  Son église resta, cependant, intact; en 1970, elle comptait encore environ 15000 adhérents.</p>
-
-<p>Mark R. Lipschutz et R. Kent Rasmussen</p>
-
-<hr />
-
-<h1 id="bibliographie">Bibliographie</h1>
-
-<p>Balandier, Georges.  <em>The  Sociology of Black Africa.</em>  Traduit par D. Garman.  New York: Praeger, 1970.</p>
-
-<p>Barrett, David B.  <em>Schism and renewal in Africa</em>.  Nairobi: Presses de l’Université d’Oxford, 1968.</p>
-
-<p>——–.   “Who’s Who of African Independent Church Leaders.”  <em>Risk</em> (Genève, W.C.C.) 7(3) (1971): 23-34.</p>
-
-<hr />
-
-<p>Cet article est reproduit, avec la permission des auteurs, du <em>Dictionary of African Historical Biography</em>, 2e édition, copyright © 1986, de Mark R. Lipschutz et R. Kent Rasmussen,  Presses de l’Université de Californie, Berkeley et Los Angeles, Californie, USA.  Tous droits réservés.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Mpadi, Simon-Pierre`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -748,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -785,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

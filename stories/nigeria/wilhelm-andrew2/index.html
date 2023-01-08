@@ -607,79 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Andrew Desalu Wilhelm was a freed slave of Egba origin. It is believed that he was one of the liberated slaves that resettled in Sierra Leone. He received his schooling there and became a catechist and an evangelist of note. Until 1842 he was a class-leader in Hastings, Freetown. He and John MacCormack accompanied Henry Townsend to Abeokuta en route to Badagry in 1842. The company was warmly received by Chief Sodeke and the Egba people. Wilhelm served as interpreter to Townsend throughout the latter’s one week exploratory visit to Abeokuta. While Townsend returned to England for ordination, Wilhelm was left behind, serving as a catechist until 1846, when Townsend returned to Abeokuta with an impressive group of pioneers like Rev. (later Bishop) and Mrs. Crowther, Rev. Golmer, Mr. Marsh (a catechist), and others.</p>
-
-<p>For four years (1842 to 1846), Wilhelm preached the Gospel along the dusty streets of the ancient city. He became a spiritual father to hundreds of returnees from Sierra Leone. He resided among them at their quarters, known as Wasimi (“come and rest”) at Ake. With the help of the <em>Creoles</em> (as the returnees are still known in Abeokuta today), Wilhelm erected a shed for Christian worship at Ake, laying the foundation of what later became the Cathedral of Saint Peter, Ake. This historic church is regarded as the first church in Egbaland, in Ogun State, and in Nigeria. Wilhelm also prepared many candidates for baptism, but the shed could not be dedicated and the candidates could not be baptised for many years due to the absence of a priest. The work of this great pioneer of Egba origin as a catechist, teacher, and evangelist who contributed to the establishment of Christianity in Abeokuta was further reinforced by the arrival of Rev. Townsend and company in 1846. Wilhelm died on February 4, 1866.</p>
-
-<p>Wilhelm’s quiet but impressive role has not yet received the attention it deserves. The shed in which he led services for almost four years does not always receive the recognition it is due when the history of church planting in Abeokuta is being discussed. His original structure should rightly be regarded as [having been] the first worship center in the land.  In recognition of the role he played, a chapel known as Andrew Wilhelm Chapel has been erected in his memory at Ligegere Street, Ake, Abeokuta, Ogun State, Nigeria.</p>
-
-<p>Francis O. Falako</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Adefemi, Jare and others. <em>The History of the Cathedral Church of St. Peter Ake, Abeokuta 1843-1986</em>.  Abeokuta: Standing Committee of the Cathedral, 1986.</p>
-
-<p>Adefemi, Jare and others. <em>The Cathedral Church of Saint Peter Ake, Abeokuta: History of a Decade 1986 - 1996</em>. Abeokuta: Standing Committee of the Cathedral, 1996.</p>
-
-<p>Ajisafe, A. K. <em>History of Abeokuta</em>. Bungay: Richard Clay &amp; Sons Ltd., 1924.</p>
-
-<p>Johnson, S. <em>The History of the Yorubas: From the Earliest Times to the Beginning of the British Protectorate</em>. Lagos: CMS, 1921.</p>
-
-<p>Oduyoye, M. “The Planting of Christianity in Yorubaland 1842-1888.” In <em>Christianity in West Africa: the Nigerian Story</em>, ed. K. Ogbu, 239-304. Ibadan: Daystar Press, 1978.</p>
-
-<p>Omoyajowo, J. A. “Revd. Henry Townsend (1815-1886).” in <em>Makers of the Church in Nigeria 1842-1947</em>, ed. J. A. Omoyajowo, 15-28. Lagos: CSS, 1995.</p>
-
-<p>Omoyajowo, J. A., ed. <em>The Anglican Church in Nigeria, 1842 - 1942</em>. Lagos: Macmillan, 1994.</p>
-
-<hr />
-
-<p>This article, received in 2010, was written by Dr. Francis Falako, a professor in the Religious Education Unit of the School of Education in the University of Lagos (UNILAG) in Lagos, Nigeria.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Wilhelm, Andrew Desalu`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -758,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -797,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

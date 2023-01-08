@@ -605,77 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Lorsqu’après l’annexion de Madagascar par la France, le français fut devenu langue officielle des écoles de la Grande Ile, la Mission luthérienne norvégienne (NMS) sentit le besoin d’avoir des professeurs français dans ses écoles normales. En même temps, ceux-ci serviraient d’intermédiaires entre la Mission et les autorités françaises.</p>
-
-<p>Le secrétaire de la NMS à Stavanger, L. Dahle, ancien missionnaire à Madagascar, visita les églises luthériennes de France en 1896 pour établir une coopération avec celles-ci. Une visite à l’Institut luthérien de Glay (Doubs) suscita quelques volontaires.</p>
-
-<p>Le plus connu parmi ceux-ci est Abel Parrot, né au Vernoy (Doubs) le 4 février 1879. Diplômé de l’Institut de Glay en 1897, il partit pour Madagascar la même année. Il enseigna dans les écoles normales de Tananarive, Fianarantsoa, et Antsirabé de 1899 à 1912. En 1909, après des études “in absentia,” il passa un examen à l’École normale supérieure de La Réunion et dirigea l’école normale d’Antsirabé pendant plusieurs longues périodes entre 1912 et 1946.</p>
-
-<p>Il fut consacré pasteur à Montbéliard (Doubs) en 1919 et dirigea l’œuvre ecclésiastique des districts missionnaires de Masinandraina (1919-1921) tout en enseignant à Antsirabé, à Antanifotsy et à Loharano (1921-1923 et 1937-1941).</p>
-
-<p>Très dévoué, les Malgaches l’aimaient beaucoup. Féru de géologie et de botanique malgaches, il s’intéressa aux plantes médicinales et avait obtenu de bons résultats (pour des cicatrisants en particulier). Malheureusement, il n’a rien publié, tout au moins a ce sujet.</p>
-
-<p>Avec son épouse norvégienne, il rentra en Europe en 1946 après quarante neuf ans de services et habita Oslo jusqu’à sa mort, le 11 décembre 1961.</p>
-
-<p>O. Chr. Dahl, L. Molet</p>
-
-<hr />
-
-<h1 id="bibliographie">Bibliographie</h1>
-
-<p>Petite histoire élémentaire de Madagascar. Paris, 1900.</p>
-
-<p>Agriculture malagasy na torohevitra ho an’ny olon’ambanivohitra. [Conseils aux campagnards]. Tananarive, 1912. 2e éd., rev. et augm., 1930.</p>
-
-<p>A cause de sa grande modestie ces ouvrages sont restés anonymes.</p>
-
-<hr />
-
-<p>Cet article, réimprîmé ici avec permission, est tiré d’<em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em>, tome 3, publié en 1977 par l’Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). Tous droits réservés.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Parrot, Abel Auguste`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -756,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -793,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

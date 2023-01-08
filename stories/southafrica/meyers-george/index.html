@@ -607,90 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/southafrica/meyers-george/meyers_george.jpg" alt="George Meyers" class="bio" /></p>
-
-<p>George Meyers was born at Wynberg, Cape Town, but went to high school in Fordsburg (Johannesburg).  He had to leave school before finishing in order to support his brothers in school.  At work, he became a foreman and aspired to be an upholsterer.  At age twenty he became a boxer and won the Transvaal bantam-weight championship.</p>
-
-<p>His parents were Anglicans.  George was an altar boy and later a Sunday School teacher.  Once, while praying alone in the churchyard gardens, he determined to serve the Lord although he did not know to confess his sins directly to God.  He felt he should be a minister but the bishop did not encourage him.</p>
-
-<p>George met some Nazarene young people and began attending their services.  One night in 1950, God spoke to him through Matt. 6:33, “But seek ye first his kingdom and his righteousness, and all these things will be given to you as well.”  He said, “I will never forget it.  I gave my heart to Jesus and He saved me from all sin.”  There was a great uproar at home when he told them about his salvation.  His father ordered him to leave the house and George moved in with a Nazarene family.</p>
-
-<p>God’s call to the ministry became clear to him at a Nazarene youth camp he attended.  In 1956, he enrolled at Rehoboth Bible College.  He also completed his matriculation through night school.  In 1958, he and Mrs. Elizabeth (Wagner) Meyers (1938-) were married and they pastored in the Johannesburg area.[1]</p>
-
-<p>Elizabeth was a little Catholic girl when Nazarene workers began holding a wayside Sunday School at Davidsonville on the West Rand.  Her parents did not want her to attend but she slipped away while they slept on Sunday afternoons.  Her brother  reported her and she was whipped.  Then her mother began to enjoy reading the Sunday School cards from America that she brought home.</p>
-
-<p>After she grew up and became a nurse, Mr. Sydney Holmes, a Bible College student, once met her at the hospital when she treated his sore finger.  He told other students at the Bible College about her and others began to come and greet her.  In 1956, she began attending services in a hall and found the Lord.  George Meyers won her heart and hand.  She joined the Church of the Nazarene soon after they were married and she became a very active and committed pastor’s wife.  They had a fine family of four children.</p>
-
-<p>They helped to pioneer the church in Cape Town and had a successful ministry at Steenberg.  Later they also helped to pioneer work in Port Elizabeth and began the Schauderville Church.  They revived the Newclare Church, Johannesburg, by holding services in the open air and in back yards before inviting the people to the church.  They also pastored the English-medium Living Waters Church at Manzini in eswatini.</p>
-
-<p>George was a very caring person and was sometimes misunderstood but he always bounced back.  Once he encouraged his friend, Pastor Bill Douman, when he was going through a very lonely and difficult time.  Rev. George Meyers was always very serious about God’s business, but he had a sense of humour and teased even when carrying a heavy load.</p>
-
-<p>In the early days of his ministry when friends ridiculed him he faithfully walked the streets and held cottage meetings.  He never received a high salary but was hard-working, dedicated and always content.  In later years, his speech became slurred after a number of strokes which started in 1982 but he rose above the handicap.  He retired while pastoring the Gelvandale, Port Elizabeth church.</p>
-
-<p>A colleague, Pastor Frank Greenwood, paid tribute to him at his funeral, “He has touched me and I have grown.  The church will be poorer but the memory he left will keep ministering to us.”[2]</p>
-
-<p>Paul S. Dayhoff</p>
-
-<hr />
-
-<p>Notes:</p>
-
-<ol>
-  <li>
-    <p>George Meyers, “Then I Met Jesus,” <em>The Other Sheep</em> (Kansas City, MO: Nazarene Publishing House, July 1959), 12;  Elizabeth Meyers, report, July 1995.</p>
-  </li>
-  <li>
-    <p>Carol Zurcher, notes and report on George Meyer’s funeral, 1991.</p>
-  </li>
-</ol>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Living Stones In Africa: Pioneers of the Church of the Nazarene</em>, revised edition, copyright © 1999, by Paul S. Dayhoff.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Meyers, George`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -769,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -808,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

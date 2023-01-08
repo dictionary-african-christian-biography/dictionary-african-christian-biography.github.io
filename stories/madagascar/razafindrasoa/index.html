@@ -611,69 +611,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Sister Marie-Joseph Razafindrasoa was born June 13, 1893, in Ambohimalaza. She took her vows on October 14, 1916, in Ambohipo, and died on February 10, 1976, in Androhibe.</p>
-
-<p>Razafindrasoa came from a Protestant family of royal lineage. Blessed with a willing spirit and being full of energy, she asked if she could attend the Catholic school. Her parents opposed her baptism, and even resorted to whipping her in order to stop it. However, one morning she ran away from home and took refuge in the church. She was so insistent that the missionary there baptized her, giving her the baptismal name “Philomena” on July 2, 1902.</p>
-
-<p>Her future marriage had been arranged when she was only twelve years old, but because of a variety of subsequent circumstances, the engagement had to be broken off twice. This came as a great relief to the young girl, as she wanted to dedicate herself to God. On October 14, 1916, the day she was to take her vows, she finally received the blessing of her mother, which is a gesture of very great significance in Malagasy culture.</p>
-
-<p>Sister Marie-Joseph’s religious life was almost entirely spent in Mananjary, on the East coast, as she remained there for forty-one years. One could say that she both enjoyed and endured all the joys and tribulations of her people. She was in charge of a group called the “Children of Mary,” which was an association of Christian mothers. In that role, she devoted herself to visiting families in order to give counseling, consolation, encouragement, and preparation for adult baptism. She had the very soul of a missionary.</p>
-
-<p>Sister Marcienne Fabre</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>This biographical text will be published in the Bulletin of the Congrégation de St. Joseph de Cluny, number 302 (to be published), vol. 21.</p>
-
-<hr />
-
-<p>This article, reprinted here with permission, is taken from <em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em> [Men and Destinies: Overseas Biographical Dictionary], vol. 3, published in 1977 by the Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Razafindrasoa`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -752,7 +691,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -791,6 +730,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

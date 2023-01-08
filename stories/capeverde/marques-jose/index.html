@@ -607,76 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/capeverde/marques-josen/marques_jose.jpg" alt="Jose Marques" class="bio" /></p>
-
-<p>Pastor José Neves Caldeira Marques was born on Santo Antão and was converted from Catholicism in 1939. He served as pastor in Praia. His wife, Mrs. Virgínia Marques, was a very fine lady and a great support to his ministry. She was a niece of Rev. António Leite.[1]   The Marqueses entered the ministry in 1945 and served on several of the islands.</p>
-
-<p>A difficult trial was the problem of educating their three sons and two daughters. José came from a family of bankers, lawyers, doctors and merchants. For a short time he gave in to the incessant pressure of the family and returned to merchandising. He referred to this temporary departure from the ministry as being a descent into Egypt (Isaiah 31:1).  He was entirely sanctified in 1955.</p>
-
-<p>He was a sacrificing, consecrated pastor, described as the “unassuming man of pure gold.” Caldeira Marques, who was seasoned and experienced, was chosen to open work on São Nicolau in August 1956. This was the last island to be entered by the Nazarene mission. São Nicolau was known as the base of Roman Catholicism since their seminary had formerly been located there. The Marqueses rented a house there which was taken away from them when the landlord discovered that they were Protestants. But they were undaunted and in a short while established a congregation in spite of stiff opposition.</p>
-
-<p>Pastor and Mrs. Marques retired in 1968 and made their home in Lisbon, Portugal, where they helped in the church.[2]</p>
-
-<p>Paul S. Dayhoff</p>
-
-<hr />
-
-<ol>
-  <li>
-    <p>António Leite, letter (29 May 1995); notes (11 August 1995).</p>
-  </li>
-  <li>
-    <p>Olive G. Tracy, <em>The Nations and the Isles: A Study of Missionary Work of the Church of the Nazarene in the Nations - Israel, Jordan, Syria, Lebanon, Italy - and the Isles - the Cape Verde Islands,</em> (Kansas City, MO: Nazarene Publishing House, 1958), 239; Donald Reed, J. Elton Wood, and Jeanine Van Beek, <em>Upon This Rock: Nazarene Missions in the Middle East, Cape Verde, and Europe,</em> (Kansas City, MO: Nazarene Publishing House, 1972), 70; Earl Mosteller, <em>Cape Verde Travelogue,</em>  (Kansas City, MO: Nazarene Publishing House, 1958), 48; Earl Mosteller, letter (1 August 1995).</p>
-  </li>
-</ol>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Living Stones In Africa: Pioneers of the Church of the Nazarene</em>, revised edition, copyright © 1999, by Paul S. Dayhoff.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Marques, José Neves Caldeira`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -755,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -794,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

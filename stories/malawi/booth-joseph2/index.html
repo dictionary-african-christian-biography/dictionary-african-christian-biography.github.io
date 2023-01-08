@@ -607,63 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Joseph Booth was an English missionary in Africa. Booth was born in Britain, immigrated to Australia, and first went to Africa in 1892 to begin the Zambezi Industrial Mission at Mitsidi in Malawi. For the rest of his life he was almost constantly on the move–both geographically and denominationally. He spent time in Malawi, South Africa, Lesotho, Britain and the United States; he was affiliated variously with Baptists, Seventh Day Baptists and Seventh-day Adventists. He aroused the hostility of both mainline missionaries and colonial authorities by advocating higher wages and more political power for Africans, and by what they regarded as fomenting African political discontent. He influenced several important African Christian figures, including John Chilembwe, Elliot Kamwana Chirwa, Charles Domingo and John L. Dube (one of the founders of the African National Congress in South Africa). He pursued many pro-African petitions and schemes, summed up in the title of his book Africa for the Africans (1897). In 1915 he was wrongly blamed for Chilembwe’s uprising in Malawi and was deported from Lesotho to Britain, where he died in poverty and virtual obscurity, An enigmatic figure, Booth stands out as one of the few radically anticolonial missionaries in south-central Africa.</p>
-
-<p><strong>T. Jack Thompson</strong></p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Brighton G. M. Kavaloh, “Joseph Booth: An Evaluation of His Life, Thought and Influence” (Ph.D. diss., Univ. of Edinburgh, 1991); Emily Booth Langworthy, <em>This Africa was Mine</em> (1952); Harry W. Langworthy, <em>Joseph Booth: A Radical Missionary</em> (1996); George Shepperson and Thomas Price, <em>Independent African: John Chilembwe and the Nyasaland Rising of 1915</em> (1958).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Booth, Joseph (B)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -742,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -781,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

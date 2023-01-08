@@ -607,103 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Sydney Holmes was reared in the home of professing Christians at Coronationville, Johannesburg.  When he was five years old, his mother sent him to church alone one day.  He sensed the power of God as he listened to the message and felt a voice telling him that he should be a preacher.  It gave him a wonderful feeling, and from then on he attended services regularly until the family moved.</p>
-
-<p>Not finding another mission in that area, he began drifting away from the Lord.  After several moves in the following few years, he completely forgot about church.  When a baby brother died, the family asked the driver of the mourning coach to say a few words and pray at the graveside.</p>
-
-<p>At one place, Holmes joined some musicians and became leading violinist in the band.  God was not in his thoughts and he drifted deeper and deeper into sinful habits.  Later he joined another group, seeking fame and fortune and trying to satisfy the craving he felt deep in his heart.  He could find no deep satisfaction.</p>
-
-<p>Holmes joined a church to ease his conscience but had no peace and could find no joy in singing or worship.  He did not know the God to whom they prayed for he knew he was a sinner.</p>
-
-<p>One Sunday evening on his way to service, the most beautiful singing he had ever heard was coming from a Church of the Nazarene hall.  People were singing, “If you want joy, real joy, wonderful joy, let Jesus come into your life,” and “He lives!  Christ Jesus lives today!”  He asked himself, “Does He?”  He entered and joined in singing many favourite songs and hymns.  They were singing while awaiting the pastor who had an earlier service at another place.</p>
-
-<p>The Spirit of the Lord was upon the preacher that evening.  Memories of when Holmes was a little boy flooded his mind.  He left under deep conviction for his sins.  He thought about his band, his friends and his many girlfriends.  When he returned the following Sunday, the congregation received him with open arms.</p>
-
-<p>He described what happened: “Seven weeks later I gave my heart to the Lord.  I was reminded of that early call to preach and I said, ‘Yes.’  Two months later, the Lord sanctified me wholly in a men’s missionary meeting.”[1]</p>
-
-<p>In 1956 he went to Bible College.  He was in the first class starting at Crown Mines and moving to Rehoboth.   There he realized that somehow he had lost the experience of heart holiness.  He found his Christian life full of problems and shortcomings.  He explained, “I began to build bridges in case things in my life became unbearable.  I didn’t go all out for the Lord and that made me a half-hearted Christian.”</p>
-
-<p>Mrs. Louise Robinson Chapman (missionary in Southern Africa, 1920-1942) was visiting Africa and spent two days at the college. A spontaneous revival began.  Sydney continues:</p>
-
-<blockquote>
-  <p>I began to pray.  The Monday, June 3, 1957, classes were dismissed and we went to pray alone on the Bible School premises.  I prayed the whole day and into the night until 1:00 a.m. when I went to bed.  The next morning I was under deep conviction and the Spirit of God spoke to me and told me to allow Him to burn the bridges behind me.</p>
-
-  <p>That day, the 4th of June, I said ‘yes’ to God.  At 8:20 that morning He swept over my soul and burned out all the dross and began to burn all the bridges behind me that I had  built.  The Comforter had come to abide in my life.  I didn’t know what to do; I wept like a little baby as the Holy Spirit burned all the bridges behind me and melted my heart.</p>
-
-  <p>I was so glad I whispered, ‘All for Thee, Lord, all for Thee!’  Joy flooded my soul.  I didn’t know how to get it to stop.  I found myself standing on a chair and waving my arms.  I could only say, ‘Glory be to God for His unspeakable gift.’[2]</p>
-</blockquote>
-
-<p>Holmes was ordained by General Superintendent G. B. Williamson in 1961.  His wife was Mrs. Thelma Holmes (1936-2003).  They pastored for thirty years in the Johannesburg area at various churches.</p>
-
-<p>While pastoring the Boundary Road Church, Rev. Sydney Holmes died suddenly of a heart attack.  There were about 1500 people at his funeral at the Eldorado Park Church.  He is remembered as one of the faithful pioneer pastors in Johannesburg.</p>
-
-<p>Thelma was a member of the Boundary Church. On November 26, 2003, she passed away due to complications following heart by-pass surgery.[3]</p>
-
-<p>Paul S. Dayhoff</p>
-
-<hr />
-
-<p>Notes:</p>
-
-<ol>
-  <li>
-    <p>Sydney Holmes, “It Was a Glad Day When Christ Found Me,” <em>The Other Sheep</em> (Kansas City, MO: Nazarene Publishing House), September 1959, p. 13.  <em>Trans African</em>, (Florida, Transvaal, South Africa: Africa Nazarene, May-June 1987), 14.</p>
-  </li>
-  <li>
-    <p>Sydney Holmes, “Every Bridge Is Burned Behind Me,”  (Carol Zurcher’s notes, 1957).</p>
-  </li>
-  <li>
-    <p>Joanie Doerr, <em>Out of Africa-13</em> (Weekly E-mail newsletter from Africa Region, Dec. 11, 2003), 4.</p>
-  </li>
-</ol>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Living Stones In Africa: Pioneers of the Church of the Nazarene</em>, revised edition, copyright © 1999, by Paul S. Dayhoff.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Holmes, Sydney`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -782,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -821,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

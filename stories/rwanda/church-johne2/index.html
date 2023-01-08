@@ -607,73 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/rwanda/church-johne2/church-joe-decie-small.jpg" alt="John and Decie Church" class="bio" /></p>
-
-<p>John (“Joe”) E. Church was a leader in the East African Revival. Son of an English country clergyman, he was educated at St. Lawrence’s and at Cambridge, qualifying in medicine at St. Bartholomew’s Hospital, London. In 1927 he joined the Church Missionary Society (CMS) Rwanda mission. From Kabale, Uganda, he went to Gahini, Rwanda, at the time of a serious famine. The crisis in part triggered a searching for a victorious spiritual life that resulted in contact with a Ganda Christian, Simeon Nsibambi, who was engaged in the same search. From 1929, with Nsibambi and other African Christians, and soon with other missionaries, he spearheaded a movement known as the East African Revival. Revival spread rapidly into Kenya and Tanganyika (Tanzania), and Church led teams that took the message near and far. He still worked as a doctor at Gahini, cooperating with the hospital staff in evangelism as well as healing. Conventions were arranged, locally and in other centers, that continued that spread of the revival. In 1934, William Church, a brother and also a doctor, went to Gahini, allowing Joe Church to take on a more active evangelistic role. Revival Christians became the core of many Protestant churches throughout East Africa. Joe remained deeply involved until his retirement in 1975.</p>
-
-<p>Joe and his wife, Decima (Tracey) (1904-1991), also a doctor, had five children. Their son, John, a doctor, also served at Gahini. A brother, Howard, was a CMS missionary in Kenya.</p>
-
-<p>Jocelyn Murray</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>J. E. Church, <em>Quest for the Highest: An Autobiographical Account of the East African Revival</em> (1981).</p>
-
-<p>George E. Mambo, “The Revival Fellowship (Brethren) in Kenya,” in D.B. Barrett et al., eds., <em>Kenyan Churches Handbook</em> (1973), pp. 110-117.</p>
-
-<p>Patricia St. John, <em>Breath of Life: The Story of the Ruanda Mission</em> (1971).</p>
-
-<p>Max Warren, <em>Revival: An Enquiry</em> (1954).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Church, John and Decima (B)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -752,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -791,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

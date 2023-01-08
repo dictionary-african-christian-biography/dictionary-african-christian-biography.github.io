@@ -607,71 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Dinah Naliaka Maruti Nasirembe was born at Khachonge village in Bungoma district of western Kenya. She was the firstborn daughter of Wokuta of the Bamuki clan and Khavoka of the Bakutenga clan. She had two brothers, Kaawa Masifwa and Gabriel Sanduku Sichanuo, and three sisters, Esther Namalwa Maelo, Prisca Nanyama, and Namikoye. She was brought up by her uncle Wasilwa after the untimely death of her father. For her education, Dinah went to Lugulu Mission School where she learned how to read and write.</p>
-
-<p>Dinah married (following the Chimbako model of wedding) Justo Nasirembe Mangla of the Bamuyonga clan. Justo was an officer in the KAR (Kenya African Rifles) in the British colonial government. The couple was blessed with children. The first three passed away prematurely. The children who were born thereafter are as follows: Moses Wanyonyi Nasirembe, Rhodah Nasambu Kingro, Rebecca Namukuru Nangalama, Charles Wasilwa Nasirembe, Agnes Khavoka Munoko, Lorna Nasibwoni Lusweti, Margaret Temba, Ruth Nafula Chetela and Everlyn Nakhumicha. She had eighty-three grandchildren (<em>babechukhulu</em>) and forty-six great grandchildren (<em>bisoni</em>) and 275 great, great grandchildren (<em>bimila</em> / <em>binambunda</em>) making a total of 404 people born from her lineage. She was a loving mother and grandmother and had very high standards of cleanliness.</p>
-
-<p>As a Christian leader, Dinah was a very active teacher of the Sunday School classes in the Friends (Quakers) Church at Lugulu (Mu-laini between 1924 to 1940). She was also a very effective church councilor as well as a counselor to the newly married couples. She loved doing God’s work and was totally committed to mission work. She was very welcoming and her home and house had the atmosphere of God’s throne room. She was a tower of strength to her children and all those to whom she ministered God’s word. She played a major role in the spread of the Friends (Quakers) Church in particular and Christianity in general in the Lugulu area and in the entire larger Bungoma district. Apart from church work, she was also a good farmer who was very fond of banana plantations.</p>
-
-<p>Dinah loved and encouraged holistic church development and her vision focused on people’s physical, spiritual, social, and economic growth. Dinah is remembered in the history of Christianity in the Lugulu area of the larger Bungoma district for her commitment to the faith, her eagerness, and her aggressiveness in spreading the gospel of Jesus Christ.</p>
-
-<p>Alfred S. Keyas</p>
-
-<hr />
-
-<p>Sources:</p>
-
-<p>Eva Nasirembe, granddaughter, research and interview by author, December 2008.</p>
-
-<p>Dinah Naliaka Maruti Nasirembe, life history, December 2008.</p>
-
-<hr />
-
-<p>This story, submitted in 2011, was researched and written by Rev. Keyas Alfred Sheunda, a <em>DACB</em> Project Luke fellow (2004-2005), currently serving as the chaplain at Booker Academy, Mumias Sugar Company, Mumias, Kenya. Email: <a href="mailto:skeyas@gmail.com">skeyas@gmail.com</a>, <a href="mailto:akeyas@yahoo.com">akeyas@yahoo.com</a>.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Nasirembe Maruti Naliaka, Dinah`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -750,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -789,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

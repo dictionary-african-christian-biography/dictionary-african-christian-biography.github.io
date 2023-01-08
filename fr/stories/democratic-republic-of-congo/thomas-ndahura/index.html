@@ -605,84 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Ndahura Bangasa est né a Buley en 1906. Il était le père du premier archevêque de la province anglicane francophone du Burundi, Rwanda et Zaïre (RDCongo), Mgr. Ndahura Bezaleri. Le nom Ndahura veut dire “chef de famille.” On le nomma ainsi puisqu’il était l’aîné d’une famille de quatorze enfants dont sept garçons et sept filles.</p>
-
-<p>Ndahura est né dans une famille non chrétienne qui pratiquait le culte des ancêtres. Etant l’aîné de la famille, ses parents lui apprirent comment diriger le culte des ancêtres. La tâche journalière que ses parents lui imposaient était celle de garder le gros bétail.  Mais il n’etait pas content puisqu’il préférait l’alphabétisation organisée par le missionnaire et pionnier de l’Eglise anglicane à Boga (Congo), le chanoine Apolo Kivebulaya. Il décida, d’ailleurs, d’aller vivre avec le missionnaire dans sa maison. Mais ses parents allèrent le chercher pour le ramener à la maison.  Ils ne comprenaient pas que c’était le début de sa vocation pour l’apostolat. En 1917, lorsque le gouvernement avait décidé d’enrôler de force les jeunes gens pour le service militaire, Ndahura fut amené chez le missionnaire pour être caché. Ndahura put ainsi poursuivre sa vocation de pasteur.</p>
-
-<p>Ndahura fut baptisé à Boga en 1918.  Il fut confirmé en 1920 par le chanoine Apolo Kivebulaya qui lui enseigna les notions élémentaires sur les Evangiles et les Actes des Apôtres.</p>
-
-<p>De 1921 à 1934, il était catéchiste à Boga. De 1942 à 1945, il alla en Ouganda pour la formation biblique à Mukono. En 1946, il fut ordonné diacre à Boga puis prêtre en 1947. Il était parmi les trois premiers pasteurs ordonnés à Boga. Ndahura a fait un grand travail en tant que pasteur dans le village de Boga. Il était très engagé dans le service de Dieu. Ses prédications et ses enseignements continuent à jouer un grand rôle dans l’Eglise de Boga jusqu’à aujourd’hui.</p>
-
-<p>L’hypertension l’ayant affaibli pendant plus de deux ans, il en mourut à Boga en 1986 et fut enterré à côté de la cathédrale Saint Apolo du diocèse anglican de Boga.</p>
-
-<p>Samvura Vandiri</p>
-
-<hr />
-
-<h1 id="bibliographie">Bibliographie</h1>
-
-<ol>
-  <li>
-    <p>Marie Ndahura Amoti, épouse de Ndahura, interview du 15/01/2003 à Bunia.</p>
-  </li>
-  <li>
-    <p>Andre Miramago Atenyi, fils aîné de Ndahura, interview du 18/01/2003 à Bunia.</p>
-  </li>
-  <li>
-    <p>Munege Kabarole, archidiacre de Bunia et collègue de Ndahura, interview du 12/01/2003 à Bunia.</p>
-  </li>
-  <li>
-    <p>Nyakahara Mugisa, étudiante à l’ISThA et ressortissante de Boga, interview du 15/01/2003 à Bunia.</p>
-  </li>
-</ol>
-
-<hr />
-
-<p>Cet article, reçu en 2003, est le produit des recherches de Samvura Vandiri, étudiant en théologie sous la direction du Révérend Yossa Way.  Ce dernier est professeur de théologie et coordinateur de liaison du <em>DIBICA</em> à l’Institut Supérieur Théologique Anglican (Bunia, Rép. Dém. du Congo) ainsi que récipiendaire de la bourse du Projet Luc en 2001.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Ndahura Bangasa, Thomas`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -763,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -800,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

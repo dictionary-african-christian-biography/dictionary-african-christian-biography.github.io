@@ -605,65 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Alfred Finye était un des premiers malawiens à devenir prêtre catholique. Il est né en 1907 à T. A. Mulumbe, à Zomba. Il a fait ses études sacerdotales au séminaire préparatoire de Nguludi, au séminaire mineur de Nankhunda, et au séminaire majeur de Tabora, en Tanzanie. Ces études ont pris vingt ans, et il a reçu les ordres le 11 septembre 1938.</p>
-
-<p>Après avoir été ordonné, il a servi dans beaucoup de missions catholiques. D’abord, il a servi les vicariats de Dedza et de Zomba dans les paroisses suivantes : Utale, Zomba, Mpiri, Nsipe, Nsanje, Chikwawa, Tsangono. En 1968, il a été transféré à l’archidiocèse de Blantyre, où il a servi les paroisses suivantes : Nguludi, Mzedi, Chingadzi, et Maryview. Il est mort le 28 avril 1984.</p>
-
-<p>Stanslaus Muyebe O.P.</p>
-
-<hr />
-
-<p>Source:</p>
-
-<p>“Bambo Alfred Finye,” dans Moni Magazine, (juin 1984), p.5.</p>
-
-<hr />
-
-<p>Cet article, soumis en 2001, a été rédigé et recherché par le Père Stanslaus Muyebe, O.P., auteur et enseignant à l’Institut Théologique Saint Joseph, en Afrique du Sud. Imprîmé avec permission.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Finye, Alfred`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -744,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -781,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

@@ -607,72 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Giusto da Urbino (August 30, 1814-1856) was an Italian Capuchin missionary in Ethiopia from 1846-55, who became an authority on the Semitic languages of Ethiopia.</p>
-
-<p>Jacopo Curtopassi, as he was called at birth, was born at Matrilia, Lucca, in Italy, on August 30, 1914. When he became a Capuchin in 1831, he received the religious name of Giusto da Urbino. He was selected to participate in the mission to Ethiopia led by Father Guglielmo, later Cardinal, Massaia. He landed at Massawa, on the Red Sea coast, in December 1846, and, after a short stay in Agame, lived in Bagemder until his expulsion in May 1855 by Abuna Salama. In April 1856 he intended to re-enter Ethiopia via the Sudan, but died in Khartoum.</p>
-
-<p>During his years in Ethiopia, Giusto da Urbino acquired a remarkable competence in the Semitic languages of that country. He studied Gallinya, and wrote an Ethiopic (Ge’ez)-Latin dictionary, compiled in 1849, which is now preserved in Rome. Other manuscripts by him are preserved in Rome and Paris.</p>
-
-<p>There is a dispute among scholars about the authorship of two rationalistic treatises, which are variously ascribed either to the 17th-century Ethiopian author named Zare’a Ya’eqob  and his disciple Walda Heyewat, or to Giusto da Urbino himself.</p>
-
-<p>Claude Sumner</p>
-
-<hr />
-
-<p><strong>Bibliography</strong></p>
-
-<p>E. Cerulli, “Giusto da Urbino,” <em>Enciclopedia Italiana</em>, Vol. 17, Rome, 1933; A. Guerra, “I Missionarii Lucchesi nei paesi barbari” (“Luccan Missionaries in Barbaric Lands”), <em>Atti della Reale Accademia Lucchese di Scienze</em>, Lettere ed Arti, Lucca, 1893; <em>Lexicon Capuccinorum Promptuarium historico-bibliographicum Ordinis Fratrum Minorum Capuccinorum</em> (“Historical Bibliographical Dictionary of the Capuchin Order”), Rome, 1951; E. Littmann, <em>Philosophi Abissini, sine Vita et Philosophia Magistri Zar’a Ya’qob einseque Discipuli Walda-Heywat Philosophia *(“Abyssinian Philosophers, or The Life and Philosophy of Master Zare’a Ya’eqob and the Philosophy of His Disciple Walda Heyewat”), Paris, 1904; Carmelo da Sessano, “Un Lucchese compagno del P. Guglielmo Massaia in Africa,” (“ A Luccan Companion of Father Gugliemo Massaia in Africa’ ‘), *Memoria della Reale Accademia delle Scienze di Torino</em>, series 2 vol. 66, No. 1. Turin, 1914; P. Tarducci, Il P. Giusto da Urbino, missionario in Abissinia (“Father Giusto da Urbino, a Missionary in Abyssinia”), Faenza, 1899.</p>
-
-<p>Giusto da Urbino’s writings are preserved in manuscript form as follows: His Ethiopic (Ge’ez)-Latin dictionary is preserved as MS. 167 at the Biblioteca delia Societa Geografica Italiana in Rome. “Propositio Linguae Aethiopicae scripta in Aethiopia 1850-54,” some dialogs in Ge’ez and French, some notes on Ethiopian prosody, and an Ethiopic-Latin vocabulary, all of which were written by him, constitute the manuscript Orientale 134, preserved in the Biblioteca Nazionale Vittorio Emanuele, in Rome; two of his manuscripts, Nos. 216 and 217 in the d’ Abbadie collection, are in the Bibliotheque Nationale in Paris, and contain an abridged grammar of the Ge’ ez language, written in Ethiopia in 1850-54, and an incomplete Ge’ ez- French- Amharic dictionary, compiled in 1850-55; Ethiopian manuscript No. 165 in the Vatican Library in Rome contains a Ge’ez version of “Les Soirees de Carthage” (“The Nights of Carthage”), written by him in 1852.</p>
-
-<hr />
-<p>*</p>
-
-<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (in 20 Volumes). <em>Volume One Ethiopia-Ghana</em>. Ed. L. H. Ofosu-Appiah. New York: Reference Publications Inc., 1977. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Da Urbino, Giusto`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -751,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -790,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

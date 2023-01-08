@@ -607,87 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Johannes Johnson was an excellent teacher and a good theologian who made an important contribution to Malagasy hymnology. He either composed or translated into Malagasy twenty-seven of the hymns in the hymnbook of the Lutheran Church of Madagascar.</p>
-
-<p>Born on May 1, 1864 in Alvdal, Norway, Johnson had started theological studies at the University of Christiania (now of Oslo). Although he interrupted his studies for a few years in order to become a sailor, he managed to pass the final examinations. He was ordained in 1890 and worked as a pastor for two years in Norway before applying to the Lutheran Norwegian Missionary Society (NMS), and being sent to Madagascar in 1892.</p>
-
-<p>He attempted to establish a mission station at Ivohibe, in the Bara area, but was almost killed by the inhabitants (1893). He then went to teach in the Lutheran Seminary in Fianarantsoa, and also worked in Antsirabe and Betafo. He was later based in Masinandraina, from where he worked as an inspector of the NMS schools in the Highlands and on the east coast (1903 to 1906).</p>
-
-<p>While he was on furlough in Norway in 1911, his colleagues back in Madagascar voted him superintendent of the NMS, but his health prevented him from returning to take up the position. He was appointed to a professorship at the Seminary of Christiania in 1914, but he died a few years later on June 13, 1916.</p>
-
-<p>What he wrote in Norwegian is just as important as the very good quality work he produced in Malagasy for the purpose of religious instruction in his church.</p>
-
-<p>O. Chr. Dahl, L. Molet</p>
-
-<hr />
-
-<p>Principal works:</p>
-
-<p><em>Fitsipika ho an’ny mpampianatra ny manatona ny batisa</em>. [Rules for catechists] Antananarivo, 1896.</p>
-
-<p><em>Fianaran’ny zaza madinika teny frantsay</em>. [French for small children] Antananarivo, 1898.</p>
-
-<p><em>Fra missionsmarken</em>. [Written on the mission field]. Kristiania, 1903.</p>
-
-<p><em>Begyndelsesgrundene i gassisk grammatik</em>. [Fundamentals of Malagasy grammar] Antananarivo, 1904.</p>
-
-<p><em>Fanazavana ny fotopianaran’i Lotera</em>. [Luther’s catechism explained] Antananarivo, 1906.</p>
-
-<p><em>Halvveis. Traek fra missionsarbeidet i Madagaskars indland</em>. [Half-way there. A sketch of missionary work in the Highlands of Madagascar] Kristiania, 1911.</p>
-
-<p><em>Hevi-teny tsotra amin’ny Filazantsara</em>. [Basic commentary on the gospels] Tananarive, 1912.</p>
-
-<p><em>Ahoana hoy ny Tompo?</em> [What does the Lord say?] (Biblical theology) Antananarivo, 1913.</p>
-
-<p><em>Det förste hundredaar av Madagaskars kirkehistorie</em>. [The first century of church history in Madagascar] Stavanger, 1914.</p>
-
-<hr />
-
-<p>The above article, reprinted here by permission, is from <em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em> [People and Destinies: an Overseas Biographical Dictionary], vol. 3, published in 1977 by the Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Johnson, Johannes`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -766,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -805,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

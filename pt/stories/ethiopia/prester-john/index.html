@@ -606,77 +606,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Prester João é o nome dado para um sacerdote e rei cristão mitológico do período medieval que foi suposto de viver num império de Ásia Central, e mais tarde, na Etiópia. A primeira aparência nos documentos históricos fica na Crónica do Otto de Fresingen, que ouviu histórias de um rei cristão que reinava no Oriente. Ouviu esta história em 1145 de um bispo de Síria que chegava no corte papal de Viterbo. Em 1177, o Papa Alexandre III escreveu uma carta ao “Presbítero Johannes,” esperando que ele pudesse ficar um aliado dos príncipes europeus lutando para mandar parar os avanços dos muçulmanos na região mediterrânea. Naquele tempo pessoas creram que Prester João foi o soberano de um país de Ásia perto da Índia. Durante a 5ª cruzada, ao começo do século 13, informação da Etiópia foi recebida pelos cruzeiros no Egito. Ao mesmo tempo ficou conhecida na Europa informação sobre os soberanos cristãos da Núbia e da Etiópia que sempre lutavam em defesa da fé cristã.</p>
-
-<p>Foi um desenvolvimento natural que o “Prester João” de Índia conhecido pelas lendas antigas ficasse identificado com o Imperador de Etiópia, porque no Médio Oriente, pessoas sempre confundiam as terras de Índia e Etiópia. Até ao tempo da Renascença, pessoas pensavam que somente um estreito fino (“el cavo de Diab” segundo o Fra Mauro, cartógrafo de Veneza) separava a Etiópia de Índia. Como resultado, o padre Jourdain Catalani escreveu em 1329, na sua <em>Mirabilia descripta</em>, que o soberano cristão de Etiópia foi o “Prester João.” Depois disso, o reino de “Prester João” foi situado em África e a sua lenda foi enriquecida, as vezes com mais informação revelada sobre o país de Etiópia. Por exemplo, pessoas creram que o “Prester João” teve o poder para mandar parar o fluxo do Rio Nilo na direção do Egito (uma tradição antiga da Etiópia). Também, foi dito que no país do Prester João, as crianças foram batizados em fogo  e não na água.</p>
-
-<p>Em documentos e lendas do século 15, o Prester João aparece com o nome pessoal de “At Senab”, uma corrupção do nome árabe de “Abd as-Salib”: isso é uma tradução egípcia do nome etíope de Gäbrä-Mäsqäl, “Servo da Cruz,” o nome real oficial de uns imperadores de Etiópia e especificamente, do Imperador Amda-Seyon I (1314-1344). As lendas inspiradas pelos poetas italianos do século 16: Aristo, na sua poema <em>Orlando Furioso</em>, descreve a viagem do Astolfo, Cavaleiro do Corte do Imperador Carlos o Grande, para Etiópia para visitar e libertar o Imperador “Senapo”; e Tasso na sua <em>Gerusalemme Liberata</em> celebrava a virtude e coragem da Clorinda, filha do mesmo imperador, “Senapo” da Etiópia.</p>
-
-<p><strong>Enrico Cerulli</strong></p>
-
-<hr />
-
-<h1 id="bibliografia">Bibliografia</h1>
-
-<p>Enrico Cerulli, <em>Etiopi in Palestina</em> (Roma, 1943), Vol. I.</p>
-
-<p>——–, “Il volo di Astolfo sul Etiopia nell’Orlando Furioso,” <em>Rendiconti della Reale Accademia dei Lincei</em>, Serie sesta, Vol. VIII (1932).</p>
-
-<p>C. Conti Rossini, <em>Storia d’Etiopia</em> (Bergamo, 1928).</p>
-
-<p>J. Catalani (H. Cordier, ed.), <em>Mirabilia descripta: Les merveilles de l’Asie</em> (Paris, 1925).</p>
-
-<p>Oliverius Scholasticus, <em>Historia Domiatina (Die Schriften des Kölner Domscholaster Oliverius)</em>(Tübingen, 1894).</p>
-
-<p>Marin Sanudo (Bongars, ed.), “Liber Secretorum Fidelium Crucis,” <em>Gesta Dei per Francos</em> (Hannover, 1611), II.</p>
-
-<hr />
-
-<p>Este artigo é reproduzido, com permissão, do <em>The Dictionary of Ethiopian Biography, Vol. 1 ‘From Early Times to the End of the Zagwé Dynasty c. 1270 A.D.</em>,’ direitos autorais © 1975, redação por Belaynesh Michael, S. Chojnacki and Richard Pankhurst, Instituto dos Estudos Etíopes, Addis Ababa, Etiópia. Todos os direitos reservados.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Prester John`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Leia várias versões: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -759,7 +690,7 @@
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 14 December 2022.<br>&copy; 2022 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 02 January 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -794,6 +725,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

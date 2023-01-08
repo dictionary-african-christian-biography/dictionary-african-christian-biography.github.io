@@ -611,78 +611,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Gäbru Dästa, a foreign educated Ethiopian, was an educator, a Bible teacher, and a city reformer, holding a high political office.  His contemporaries remember him as a “plump, slightly bald-headed man of medium height, dressed in typical Ethiopian costume with the <em>shama</em> thrown over his shoulders.”</p>
-
-<p>Gäbru was born in Bägemder province c. 1855 of a Falasha family.  Through various circumstance of war and famine, he found refuge in Emperor Tewodros’ court.  He attached himself to the German Pilgrim missionaries, J. Mayer and Waldemeier who provided him his first education.  After the 1868 attack on Maqdala by the British Napier expedition, Gäbru was taken to Jerusalem by the German missionaries and enrolled in the mission school under the direction of Bishop Samuel Gobat.  Because of his keen disciplined mind, Gäbru was sent to Chrischona, Switzerland, in 1872 where he completed a diploma in theology in 1976.  Because of political instability in Ethiopia, Gäbru went to Wurtenberg to assist J. L. Krapf in the revision and translation of the Amharic Bible.  In 1882 Gäbru returned to Ethiopia and began evangelistic work among the Oromo in western Shoa.  Because of restrictions placed on Protestants by Johannes IV, expatriate missionaries and Gäbru transferred their evangelistic ministry to Zanzibar in 1885.  On his return in 1889 to Ethiopia, via Aden, Gäbru escorted a shipment of Amharic Bibles which were eagerly received by Menilek.</p>
-
-<p>Gäbru’s life back in Ethiopia in 1889 begins a saga of an Ethiopian patriot who served his country and many expatriate missionaries and travellers for over 60 years in a diversity of assignments in various geographic places.  Some of his activities involved travelling to Jerusalem to settle a debt with the Bank of Jerusalem to regain the title deed for the Ethiopian monastery located at the Church of the Holy Sepulcher.  From 1895-1896 Gäbru assisted <em>Ras</em> Darge to keep peace and order in the capital, Addis Ababa while Menilek led the Battle of Adwa campaign against the Italians.  For his faithful service, Menilek awarded Gäbru the title, mayor (<em>Kantiba</em>) of Gondar.  Because Gäbru was a polyglot, having mastered Arabic, German, English and Oromo, his linguistic skills were often called upon by Emperor Menilek.  In 1897 Gäbru was sent to Omdurman to negotiate the release of Ethiopian prisoners as well as a trade agreement.  Gäbru became the unfortunate scapegoat of a reprimand from the British regarding these negotiations and was incarcerated by Menilek in Ankobar for 18 months as well as having all his personal property confiscated.  In 1901 he was restored to imperial favour and was asked to  accompany Ras Mekonnen to the coronation of Edward VII in the United Kingdom.  Gäbru served Menilek in various roles as interpreter for the 1905 German legation as well as assisting the newly appointed minister of the interior - a post Gäbru was blocked from receiving because of his non-Orthodox Church religion and his Falasha family status.  In 1925 he was appointed to Queen Zewditu’s council of advisers and subsequently served the Emperor Haile Selassie government as translator/secretary and as a senator, during both the pre-Italian war and until his death at the age of 95.</p>
-
-<p><em>Kantiba</em> Gäbru Dästa loved his country and attempted to serve God and country in an exemplary manner.  But he was not always appreciated by his compatriots. In 1923 Hiruy Wälde Selassie commented in the biography, <em>Yäheywät Tarik</em>, “<em>Kantiba</em> Gäbru leads a life of frustration and sorrow, for his advice to the nobility to introduce European civilization and expand education goes unheeded.”</p>
-
-<p>Gäbru continues to be held in high esteem by members of both the SIM and the German Hermansburg Mission for his patient but bold advocacy in 1928 to the Ethiopian powers in allowing these mission agencies to launch mission activities in southern and western Ethiopia.  After the Italian occupation, his voice was again heard with the result that the Missions Decree of 1944 was put into effect allowing mission agencies freedom to establish educational and medical centres in “pagan and Muslim areas of southern and eastern Ethiopia.”</p>
-
-<p>E. Paul Balisky</p>
-
-<hr />
-
-<p>Sources:</p>
-
-<p>Bahiru Tafla, “Kantiba Gäbru Dästa,” <em>Journal of Ethiopian Studies</em>, Vol. VII, No.2, July 1969.</p>
-
-<p>Bahiru Zewde, <em>Pioneers of Change in Ethiopia: The Reformist Intellectuals of the Early Twentieth Century</em> (Addis Ababa: Addis Ababa University Press, 2002.)</p>
-
-<p>Dawit Gäbru, <em>Kantiba Gäbru Dästa Yä-Ityopia Qers</em> (Addis Ababa: Published by Author, 1993.)</p>
-
-<p>Hiruy Wälde Selassie, <em>Yäheywät Tarik</em> (Addis Ababa: Published by Author, 1923.)</p>
-
-<hr />
-
-<p>This biography, received in 2005, was researched and written by Dr. E. Paul Balisky, a
-former lecturer at the Ethiopian Graduate School of Theology, a <em>DACB</em> Participating Institution. Together with his wife, Lila, they serve as members of the <em>DACB</em> Advisory Council and now reside in Grande Prairie, AB, Canada.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Gebru, Desta`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -761,7 +691,7 @@ former lecturer at the Ethiopian Graduate School of Theology, a <em>DACB</em> Pa
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -800,6 +730,6 @@ former lecturer at the Ethiopian Graduate School of Theology, a <em>DACB</em> Pa
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

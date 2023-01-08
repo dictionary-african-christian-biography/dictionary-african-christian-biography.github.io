@@ -609,75 +609,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Yared (qui a vécu au sixième siècle) était un érudit, un musicien et un ecclésiastique qui a exercé une influence formative sur la vie culturelle de l’Ethiopie, et qui est devenu saint de l’église orthodoxe éthiopienne.</p>
-
-<p>Il est né près d’Aksum, la ville qui était, à l’époque, le centre politique, économique et culturel de l’empire. C’était aussi l’époque pendant laquelle les Neuf Saints de l’église orthodoxe éthiopienne ont contribué au renouveau et au changement de la vie culturelle du pays. Selon la tradition orale, il était le fils d’Enbaram et de Tawaleya, et il a été éduqué par un parent, Abba Gedewon. Cependant, une autre tradition maintient qu’il a été éduqué par Saint Za-Mikael Aragawi (<em>q.v.</em>), ou un autre du groupe des Neuf Saints. Il est certain qu’il était associé de près aux Saints et que par reconnaissance pour leur aide, il a dédicacé un cantique à chacun de ceux-ci. L’église éthiopienne, d’ailleurs, les chante encore.</p>
-
-<p>La contribution de Yared à la vie culturelle du pays peut se diviser en trois catégories: l’éducation, la littérature et la musique. Le sytème éducatif qu’il a développé est resté en usage jusqu’aux temps modernes, sans subir de changement. Son système soulignait le besoin d’adapter l’enseignement au rythme du développement d’un jeune intellect et maintenait aussi qu’il fallait non seulement enseigner les élèves mais aussi les détourner de l’oisiveté, avec un bâton si nécessaire! Dans le domaine de la littérature, son œuvre occupe la position la plus haute, et sa collection de cantiques, <em>Mazgaba Degwa</em> (“Trésorerie de Cantiques”) est la plus ancienne œuvre littéraire écrite en Ge’ez. On dit qu’avant Yared, il n’y avait pas de musique en Ethiopie, et que les liturgies et les chants étaient murmurés à voix basse. Ainsi, on pense qu’il était le premier compositeur éthiopien. Il a dit qu’il était inspiré par Dieu dans sa composition et il présentait sa musique en trois modes - Ge’ez (le plain-chant, d’usage ordinaire), ‘Ezel (un mode plus lent, dignifié, pesant, normalement associé aux jeûnes et aux obsèques), et Araray (le mode le plus compliqué, plus libre et léger, avec ornements musicaux, chanté lors de grandes fêtes). Il n’est pas clair, cependant, si on peut lui attribuer la notation musicale éthiopienne qui est d’usage courant.</p>
-
-<p>Yared a passé les dernières années de sa vie à composer des cantiques et à enseigner beaucoup d’étudiants. Accompagné de ses élèves, il a quitté Aksum pour se retirer aux montagnes de Sémen, où il a vécu jusqu’à sa mort, qui est arrivée le 19 mai. Selon une autre tradition, l’empereur à l’époque, Gabra Masqal (qui a régné de c. 550 jusqu’à c. 570), lui a permis de se retirer comme ermite dans la région de Tsalamat, dans le nord-est de la province de Bagemder, au-delà de la rivière Takkazé.</p>
-
-<p>Segrew Hable-Selassie</p>
-
-<hr />
-
-<h1 id="bibliographie">Bibliographie</h1>
-
-<p>E.A.W. Budge, <em>The Book of the Saints of the Ethiopian Church</em> [Le livre des saints de l’église éthiopienne], Vol. 3, Cambridge, 1928, <em>A History of Ethiopia</em> [Une histoire de l’Ethiopie], C. Conti Rossini, <em>Gadla Yared</em> (“Les actes de Yared”), Rome, 1904; I Guidi, <em>Storia della letteratura etiopica</em> [“Histoire de la littérature éthiopienne”], 3ème édition, Milan, 1956; C. Mondon-Vidailhet, “La musique éthiopienne”, <em>L’encyclopédie de la musique</em>, Paris, 1922; M. Powne, <em>Ethiopian Music</em>, London, 1968; Sergew Hable-Selassie, “Yared,” <em>Ya Mameheran Demts</em>, Paris, 1922.</p>
-
-<hr />
-
-<p>Cet article vient de <em>The Encyclopaedia Africana Dictionary of African Biography</em> (en 20 volumes). Volume un, Ethiopie-Ghana, © 1997 par L.H. Owusu-Appiah, rédacteur en chef, Reference Publications, Inc., New York, N.Y. Tous droits réservés.</p>
-
-<hr />
-
-<h1 id="photo-gallery">Photo Gallery</h1>
-
-<p><img src="/images/bio-pics/ethiopia/yared2/Yared.jpg" alt="image" class="bio" /></p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Yared (B)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -758,7 +691,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -795,6 +728,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

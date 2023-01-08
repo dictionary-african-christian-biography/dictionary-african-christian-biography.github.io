@@ -601,63 +601,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Chrysostom Papastathopoulos was the first twentieth-century Greek Orthodox missionary to Africa. Born in Vasilitsion, in the department of Messenia in southern Greece, Papasarantopoulos’s baptismal name was Christos. At 15, he left home and joined the ascetic religious leader Panagoulakis, giving himself to prayer, fasting, and the study of Scripture. After serving in the Greek armed forces from 1923 to 1925, he entered Marthakion Monastery and was tonsured a monk in August 1925, taking the name Chrysostom. The following year he was ordained a deacon and a priest, and was appointed abbot of Gardikiou Monastery. In 1935, he moved to the monastery of Chrysokellaris, near his hometown, where he founded catechism schools. Called to Athens by Archbishop Chrysanthos, he was elevated to archimandrite and appointed abbot of Faneromeni Monastery in Salamina. In 1958, at age 55, he graduated from the University of Athens School of Theology. Responding to a call to mission, he spent the next 13 years in Africa, where he learned Swahili, translated liturgical books, preached, built churches and schools, raised money, and prepared candidates for the priesthood. His work in Uganda, Zaire, Tanzania, and Kenya, as well as his voluminous correspondence with individuals and organizations, helped inaugurate within worldwide Orthodoxy a new period of mission endeavor. He died and is buried in Zaire, at the Church of St. Andrew, in Kananga.</p>
-
-<p>Dimitrios G. Couchell</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p><em>Fos Ethon</em> (Light of the Nations) 38, no. 1 (1986); 48, no. 3 (1988); 64, no. 1 (1993); <em>St. Kosmas Aitolos</em> (1991), nos. 6-8.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Papastathopoulos, Chrysostom`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -736,7 +681,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -775,6 +720,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

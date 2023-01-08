@@ -607,65 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Trevor Huddleston was an Anglican leader in the struggle against apartheid. Educated at Oxford and a member of the Anglican Community of the Resurrection, he was greatly influenced by the Christian Socialist movement. In 1943 he was posted to take charge of the Anglican mission based at the Church of Christ the King, Sophiatown, Johanneburg, and six years later he was made provincial supervisor of his order, with responsibility for St. Peter’s School and Theological College. However, his gift for friendship and passion for justice were what marked him. He returned to Britain in 1956, the year in which he published <em>Naught for Your Comfort</em>, a best-selling classic of the anti-apartheid struggle. In 1960 he was consecrated bishop of Masasi, Tanzania, where he became a personal friend of Julius Nyerere. He left Masasi in 1968 to make way for an African successor and was appointed suffragan bishop of Stepney in East London where he once more met problems of racism and poverty. In 1978 he was appointed bishop of Mauritius and archbishop of the Indian Ocean, finally retiring in 1983.</p>
-
-<p>Although he left South Africa in 1956, Huddleston retained strong ties with the country throughout his life, and his name was synonymous with the struggle against apartheid. He became president of the Anti-Apartheid Movement in 1981. He was a close friend of Nelson Mandela, Oliver Tambo, and Desmond Tutu. In his retirement he worked tirelessly on behalf of the church in Africa and against apartheid in South Africa. He was able to return to South Africa for the 1994 elections. He is now (1997) living in retirement at Mirfield in Yorkshire, the Mother House of the Community of the Resurrection.</p>
-
-<p>M. Louise Pirouet</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Huddleston’s writings include: The True and Living God (1964), <em>I Believe: Reflections on the Apostles’ Creed</em> (1986), and <em>God’s World</em> (1988). Biography and comment include Eric James, <em>On Safari: In the Steps of Bishop Huddleston</em> (1991) and Deborah D. Honoré, <em>Trevor Huddleston: Essays on His Life and Work</em> (1988).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Huddleston, Trevor (B)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -744,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -783,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

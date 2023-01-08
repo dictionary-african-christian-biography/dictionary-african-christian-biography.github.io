@@ -607,75 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Nkoy (Stephane) Kashama (circa 1936-August 1968), chief advisor on cultural affairs to President Mobutu, devoted his efforts to gaining popular support for the Republic of Congo (now Zaire) as a unified nation state.</p>
-
-<p>Nkoy Kashama was the only son of Dominique Kashama, a highly successful Pende merchant from Muli Kalunga. The elder Kashama was esteemed by all, including the colonial authorities who considered him an évolué (a westernized African). When, in 1949, the young Kashama enrolled in the minor seminary of Kinzambi, 10 km (6 mi) north of Kikwit, Dominique Kashama was displeased by his son’s choice of vocation. Although he was aware that a seminary was the only place in the Congo his son could receive a solid education, he was unhappy to be deprived of a future business partner and successor. Because Nkoy Kashama was the son of an évolué, perhaps the only one to have become a seminarian, the Fathers had to develop a special policy for his living arrangements. As an évolué, he was treated as a white student.</p>
-
-<p>Performing brilliantly, Kashama graduated in 1955. When he decided to become a Jesuit, thus rejecting the career his father had planned, Dominique Kashama felt bitter and deceived.</p>
-
-<p>For two years, Kashama lived as a Jesuit novitiate at Djuma, 100 km (60 mi) northeast of Kikwit, where he devoted his time to study and prayer. Impressed with his diligence and aptitude, his superiors sent him to Belgium, Ireland, and–later–to Oxford University in England. During his years of training, Kashama concentrated on philosophy and economics. While he was abroad his country was experiencing the difficult first years of independence. Although far from home, Kashama Nkoy closely followed events in the Congo. He remained united with all his compatriots. As correspondent for the Jesuit review <em>Documents pour l’Action</em> (later <em>Congo Afrique</em>), he maintained immediate contacts with local events.</p>
-
-<p>Kashama remained at Oxford until 1967 when he decided to return home and serve his country in a secular capacity. Presented to the president of the republic, he caught the attention of Mobutu who made Kashama his chief advisor on cultural affairs. Meanwhile, Kashama had married a young ethnic Chinese woman from Malaysia whom he had met during his studies. They had one daughter.*</p>
-
-<p>As a government advisor, Kashama directed his attention to encouraging loyalty to the Congo as a “state.” Conceived during the colonial era and composed of many ethnic mosaics, the Republic of Congo had not yet become a unified nation. Because of an untimely death, Kashama was not able to implement his ideas, which have been continued by others as policies. When Kashama Nkoy fell ill in 1968, he was referred to doctors in New York by William Close  who did not indicate cancer as a possible diagnosis initially. He returned home uncured, however, and all measures by medical personnel, as well as the best Pende sorcerers, were without avail. He died of cancer* in August 1968, barely a year after his nomination as the president’s cultural advisor. Although some circulated a rumor he had been poisoned, Tabu Ley (Rochereau), the most popular singer in the country, chose to immortalize his name in the well-known song ‘Kashama Nkoy.’</p>
-
-<p>Ndaywel è Nziem</p>
-
-<hr />
-
-<p>*Updated information from an email to the editor from Ian Smith dated June 3, 2013.</p>
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Interviews.</p>
-
-<hr />
-
-<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (In 20 Volumes). Volume Two: Sierra Leone-Zaire. Ed. L. H. Ofosu-Appiah. New York: Reference Publications Inc., 1979.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Kashama, Nkoy`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -754,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -793,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

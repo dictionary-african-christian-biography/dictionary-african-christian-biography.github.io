@@ -607,85 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/lesotho/coillardfrancois/F-coillard-head.gif" alt="image" class="bio" /></p>
-
-<p>After long service for the Paris Evangelical Mission in Lesotho (1857-77) he led a party into present Zimbabwe to open a mission among the Shona.  There he was arrested by the Ndebele king LOBENGULA, who expelled him from the country. On the advice of the Ngwato chief KGAMA III he then attempted to visit the Lozi kingdom in western Zambia.  Arriving in the midst of civil strife, he was turned back there as well. However, the Lozi king LEWANIKA invited him to return.  He did so in 1885, and the mission flourished under his direction.  Later Coillard played an important role in Lewanka’s negotiations with British imperial factions.  Lewanika himself never accepted baptism, but he encouraged the secular work of the mission.  Coillard’s pioneering work helped greatly to give the Lozi a significant head-start in education over the other peoples of Zambia.</p>
-
-<p>Mark R. Lipschutz and R. Kent Rasmussen</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Favre, Édouard.  <em>François Coillard.</em>  Paris: Société des Missions évangéliques, 1913.</p>
-
-<p><em>Dictionary of National Biography.  Main Dictionary to 1900,</em> 22 vols.; * Twentieth Century D.N.B.,* 5 vols.  London: Oxford University Press, 27 volumes, 1885-1950.</p>
-
-<p>Caplan, G. L.  <em>The Elites of Barotseland, 1878-1969.</em>  Berkeley &amp; Los Angeles: University of California Press, 1970.</p>
-
-<p>Photos:</p>
-
-<p>[1<em>] *Coillard of the Zambesi</em> by C. W. Mackintosh (New York: American Tract Society, 1907).</p>
-
-<p>[2<em>] *Idem</em>.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Dictionary of African Historical Biography</em>, 2nd edition, copyright © 1986, by Mark R. Lipschutz and R. Kent Rasmussen,  University of California Press, Berkeley and Los Angeles, California.  All rights reserved.</p>
-
-<hr />
-
-<h1 id="photo-gallery">Photo Gallery</h1>
-
-<p><img src="/images/bio-pics/lesotho/coillardfrancois/Lewanika.jpg" alt="Lewanika" class="bio" /></p>
-
-<p><img src="/images/bio-pics/lesotho/coillardfrancois/Lewanika-suite.jpg" alt="Lewanika" class="bio" /></p>
-
-<p>French pioneer missionary in western Zambia.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Coillard, François (A)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -764,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -803,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

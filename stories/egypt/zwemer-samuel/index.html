@@ -607,63 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Samuel Marinus Zwemer was an Apostle to Islam. One of the most celebrated Protestant missionaries of the twentieth century; he made his home in Arabia and Egypt for most of 38 years (1890-1929). Initially an evangelist, he became a writer, publisher, and peripatetic conference speaker who, as much as anyone, introduced twentieth-century Christians to Islam. The son of Dutch immigrant parents, he was born in Vriesland, Michigan, where his father was a Reformed pastor. He graduated from Hope Academy and College (B.A. 1887; M.A. 1890) and New Brunswick Seminary (B.D. 1890) and became an early recruit of the Student Volunteer Movement (SVM). In 1889, when Zwemer and his classmate James Cantine could find no agency to send them as missionaries to Muslims, they established the American Arabian Mission, which five years later the Reformed Church agreed to sponsor. Zwemer lived for a time in the United States (1905-1910) serving primarily as a promoter, recruiter, and publicist for the Arabian Mission, field secretary for the Reformed Board, and traveling secretary for the SVM. Besides writing twenty-nine books and coauthoring another nineteen, Zwemer founded, and edited for 37 years, the journal <em>The Moslem World</em>. He organized two major missionary conferences on Islam, one in Cairo (1905) and one in Lucknow (1911). In 1929 Zwemer accepted the professorship of the history of religion and Christian missions at Princeton Theological Seminary, continuing in that post until 1937. After formal retirement, he moved to New York City and taught at the Biblical Seminary of New York and the Nyack Missionary Training Institute. A lifelong student of Islam, Zwemer never ceased to contend for the finality of Christ. Though unusually prolific as a writer and effective in recruiting missionaries and inspiring interest in missions, particularly in the Muslim world, Zwemer saw only a few Muslims openly profess the Christian faith.</p>
-
-<p>Alan Neely</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Samuel M. Zwemer and James Cantine, <em>The Golden Milestone</em> (1938). Sherwood Eddy, <em>Pathfinders of the World Missionary Crusade</em> (1945), pp. 240-247; Alfred DeWitt Mason and Frederick J. Barney, <em>The History of the Arabian Mission</em> (1926); William M. Miller, <em>A Man Sent from God</em> (1966); J. Christy Wilson, Sr., <em>Apostle to Islam: A Biography of Samuel M. Zwemer</em> (1952) and <em>Flaming Prophet</em> (1970); J. Christy Wilson, Jr., “The Legacy of Samuel M. Zwemer,” <em>IBMR</em> 10 (July 1986): 117-121.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Zwemer, Samuel Marinus`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -742,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -781,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

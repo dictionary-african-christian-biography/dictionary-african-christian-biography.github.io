@@ -611,111 +611,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>By the end of the eighteenth century, a generation of indigenous South African Christian religious leaders was emerging. Among them was a chief’s son, Ntsikana, a John Wesley-like figure, a tireless evangelist and prodigious hymn writer. Although exposed to European missionaries, he never identified with them. After receiving a vision in 1815, he sent one of his two wives away with a generous property settlement, broke with another Xhona prophet who stirred the people to revolt against the British, and preached river baptism, Sunday as a day of rest, and a life of prayer to the sovereign God.</p>
-
-<p>Ntsikana organized twice-a-day prayer services in his compound and urged his people to pray unceasingly to the sovereign God. His people called themselves the “Poll-headed,” cattle without horns, pacifists living amid war-like neighbors. Ntsikana’s religious views, arrived at on his own, were conventionally Christian. Transmission of the faith often took place without direct European influence. “I am sent by God, but am only like a candle,” he said. “I have not added anything to myself.” Hastings has said of Ntsikana, “He was never baptized, never knew a European language, and never went through any course of missionary catechesis, but his subsequent influence as prophet, poet, and pacifist has been incomparable. In a unique way Ntsikana represents a genuinely new birth of Christian insight within African society and culture.”[1]</p>
-
-<p>Four of his hymns have become staples in the South African Christian repertoire, including <em>Ulin guba inkulu siambata tina</em>:</p>
-
-<blockquote>
-  <p>He who is our mantle of comfort,</p>
-
-  <p>the giver of life, ancient on high,</p>
-
-  <p>He is the Creator of the heavens,</p>
-
-  <p>and the ever-burning stars:</p>
-
-  <p>God is mighty in the heavens</p>
-
-  <p>and whirls the stars around in the sky.</p>
-
-  <p>We call on him in his dwelling place</p>
-
-  <p>that he may be our mighty leader,</p>
-
-  <p>for he maketh the blind to see;</p>
-
-  <p>we adore him as the only good,</p>
-
-  <p>for he alone is a sure defense. [2]</p>
-
-</blockquote>
-
-<p>Toward the end of his life Ntsikana, whom people called “the man with the milk-bag of heaven,” told his followers to settle at the nearby mission. In his last address to his people he said,</p>
-
-<blockquote>
-  <p>I am going home to my Father. Do not, after I die, go back to live by the customs of the Xhosa. I want you to go to Buleneli [Brownlee, the missionary] at Gwali. Have nothing to do with the feasts [traditional observances] but keep a firm hold on the word of God. Always stick together…. Should a rope be thrown round your neck, or a spear pierce your body, or [should you] be beaten with sticks, or struck with stones, don’t give way. Keep it and stick to it and to each other.</p>
-
-  <p>To my two sons I say, Kobe, you will be my backbone, and Dukwana, you will be my walking-stick. Do not allow the children to return to the red clay [covering oneself with red clay was a traditional religious practice].[3]</p>
-
-</blockquote>
-
-<p>Frederick Quinn</p>
-
-<hr />
-
-<p>Notes:</p>
-
-<ol>
-  <li>
-    <p>Hastings, <em>The Church in Africa</em>, 218</p>
-  </li>
-  <li>
-    <p>Quoted in ibid., 220.</p>
-  </li>
-  <li>
-    <p>Quoted in ibid.</p>
-  </li>
-</ol>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>African Saints: Saints, Martyrs, and Holy People from the Continent of Africa</em>, copyright © 2002 by Frederick Quinn, Crossroads Publishing Company, New York, New York.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Ntsikana (B)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -794,7 +691,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -833,6 +730,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

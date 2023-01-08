@@ -611,65 +611,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Louise Fleming was an African American missionary of the Woman’s Baptist Foreign Missionary Society. She was born a slave in Hibernia, Clay County, Florida. In 1885 she graduated from Shaw University, Raleigh, North Carolina, and in 1886 became the first black woman to be appointed and commissioned for career missionary service by the Woman’s Baptist Foreign Missionary Society in the West (WBFMSW) and one of the first three single women sent out by that society. She reached the Congo in 1887 and was stationed at Palabala. During her first term of service, she supervised girls at the station and taught the primary classes and the upper English classes in the day and Sunday schools. She returned to the United States to regain her health in 1891, and while on furlough completed the full course in 1895 at the Woman’s Medical College of Pennsylvania in Philadelphia. The same year she sailed to the Congo representing the Woman’s Baptist Foreign Missionary Society, with headquarters in the East. Fleming was stationed at Irebu, where she worked as a medical missionary. In 1898, when the Irebu station was closed, she was reassigned to the Bolenge station. She was stricken with African sleeping sickness before the end of her second term and returned to the United States for medical treatment. She died at the Samaritan Hospital in Philadelphia.</p>
-
-<p>Sylvia M. Jacobs</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Lulu C. Fleming, “A Letter from the Congo Valley,” <em>Missionary Review of the World</em>, n.s. 1 (1888): 207-209.</p>
-
-<p>Rosalyn Terborg-Penn, Sharon Harley and Andrea Benton Rushing, <em>Women in Africa and the African Diaspora</em> (1987).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Fleming, Louise Cecelia`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -748,7 +691,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -787,6 +730,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

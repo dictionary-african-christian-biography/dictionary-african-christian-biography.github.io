@@ -566,7 +566,7 @@
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Desert People, The">
     
-    <meta itemprop="datePublished" content="September 07, 2022">
+    <meta itemprop="datePublished" content="September 07, 2023">
     
 
 <!-- NAME(S), DATE, AFFILIATION, COUNTRY -->
@@ -607,100 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <blockquote>
-  <p>O athletes of God, let not your souls be faint.–Paul of Petra</p>
-</blockquote>
-
-<p>The desert has a special place in Christian spirituality. There was desert land not far from the holy city of Jerusalem and only a short distance from the Galilean countryside as well. A place to which Jesus and his followers frequently withdrew, it was also the site where John the Baptist, last in the line of great prophets, appeared to herald the Messiah’s presence, citing another desert prophet, Isaiah, who had proclaimed: “The voice of one crying out in the wilderness: ‘Prepare the way of the Lord, make his paths straight.’”</p>
-
-<p>Jesus may have spent years of preparation for his ministry in a desert monastery, and just before his tumultuous final three years of public ministry, he was tempted by Satan in the wilderness, where the Devil offered him tangible power and influence if he would abandon his messianic role. Jesus, alone in the desert, rejected the offer. “Then the devil left him, and suddenly angels came and waited on him” (Matt. 5:6).</p>
-
-<p>Angels were other occupants of desert spaces, clouds of them, flights of angels winging through the cloudless air, combating devils, singing God’s praises, and ministering to a growing number of Christians who came to the desert as solitary hermits, in communities, or as temporary pilgrims.</p>
-
-<p>The time of the desert fathers (called here the “desert people,” for the numbers included many women) was c. 250 to 500 a.D., a time when several thousand monks lived individually as hermits or in communities (cenobites), primarily in three regions of Egypt; Thebaid, the Nitrian Desert, and Middle Egypt between the Nile and the Red Sea, where St. Anthony of Egypt also lived. The barren wilderness was alive with prayerful communities, and toward the end of this period, their numbers grew into the thousands, many of them humble Coptic peasants attracted by the forceful message of the saints who were dwelling in huts and caves or simple monasteries.[1]</p>
-
-<p>Barbarian raids on the small, isolated monastic communities were common. The monk Ammon described one such raid near Alexandria, where thirty-eight monks were killed in 380 A.D.:</p>
-
-<blockquote>
-  <p>For who, even if his heart were of stone, would not weep for the holy martyrs who had grown old in the garb of Christians, flung upon the ground in merciless suffering; each one of them struck down, one with his head cut off and another [cleft in twain and another] with his head split in two. What can I say about the number of merciless blows which struck the saints who were killed limb by limb and were flung upon the ground?[2]</p>
-</blockquote>
-
-<p>African Christianity has a unique affinity with desert spirituality; for one thing, there are deserts everywhere, especially in Egypt and the Nile region, but also in North Africa, the Sahara, and further south the Kalahari, with innumerable wildernesses in between. Andrew Walls, a Scottish missionary who spent many years in Africa, once said, “You do not have to interpret Old Testament Christianity to Africans; they live in an Old Testament world,” a world full of desert spaces, a place where the spirituality of the desert finds responsiveness.</p>
-
-<p>In the early centuries, thousands of Christians in Egypt, facing Roman persecution, fled to the desert, living in caves or large holes hewn in rocks, a common form of lodging, or in small buildings made of stone with roofing of dried reeds. An early account spoke of a land “so swamped with monks that their chants and hymns by day and by night made the whole country one church of God.”</p>
-
-<p>Usually these dwellings were near sources of water; the monks needed water to drink and to irrigate their crops of barley, onions, and other vegetables. Hermits led a life of ascetical simplicity, often depriving themselves of food and even mutilating their bodies in self-denial. They called themselves “athletes of Christ,” by which they meant those who trained constantly for the competition and engaged their enemy the Devil in races, wrestling matches, and mortal combat. St. Jerome, a leading figure of the desert ascetics, wrote:</p>
-
-<blockquote>
-  <p>O Desert, bright with the flowers of Christ.t 0 Solitude, whence come the stones of which the Apocalypse, the city of the Great King, is built! 0 Wilderness, gladdened with God’s especial presence! What keeps you in the world, my brother, you who are above the world? How long shall gloomy roofs oppress you? Oh, that I could behold the desert, lovelier to me than any city.[3]</p>
-
-</blockquote>
-
-<p>Frederick Quinn</p>
-
-<hr />
-
-<p>Notes:</p>
-
-<ol>
-  <li>
-    <p>Helen Waddell, <em>The Desert Fathers</em> (London: Constable &amp; Co., 1994).</p>
-  </li>
-  <li>
-    <p>Quoted in Wellard, <em>Desert Pilgrimage,</em> 106.</p>
-  </li>
-  <li>
-    <p>Ibid., 54.</p>
-  </li>
-</ol>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>African Saints: Saints, Martyrs, and Holy People from the Continent of Africa</em>, copyright © 2002 by Frederick Quinn, Crossroads Publishing Company, New York, New York.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Desert People, The`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -779,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -818,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

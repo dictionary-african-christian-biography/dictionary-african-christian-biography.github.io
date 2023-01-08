@@ -601,63 +601,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Cadwallader Colden Hoffman was an American Episcopal missionary in West Africa. A native of New York City, Hoffman studied at Virginia Episcopal Seminary, and went as a missionary to Cape Palmas, Liberia, in 1849. He learned the Glebo language and established missions and schools. In 1854 ill health forced his return to the United States. On his return to Africa in 1855, his wife died of consumption, but Hoffman continued his work with ever greater determination and self-sacrifice. He preached not only in the area of Cape Palmas but for 60 miles into the interior, where people thronged to hear the gospel. In order to reach remote villages, he slept on bare floors in small smoky huts and often missed meals. These long journeys on foot to the interior broke his health. In 1858 he married Caroline Hogan, a veteran missionary of the Cape Palmas station. After his death she directed the orphan asylum in Cape Palmas, then returned to Philadelphia, Pennsylvania, to found a home for missionary children.</p>
-
-<p>Peter R. Rodgers</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>K. W. Cameron, <em>An Index for the Spirit of Missions, 1836-1900</em> (1977), p. 24; George Townshend Fox, <em>A Memoir of The Rev. C. Colden Hoffman</em> (1868); W. A. R. Goodwin, <em>History of the Theological Seminary in Virginia and Its Historical Background</em>, vol. 2 (1923), pp. 312-318.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Hoffman, Cadwallader Colden`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -736,7 +681,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -775,6 +720,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

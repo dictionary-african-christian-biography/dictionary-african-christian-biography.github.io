@@ -607,73 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Early West African nationalist.</p>
-
-<p>He was born in Sierra Leone to Yoruba parents, former slaves who had been released by the British antislavery patrol. He was converted to Christianity as a youth and enrolled in a Church Missionary Society (CMS) school. In 1858 he graduated from Fourah Bay Institution (later Fourah Bay College). As a student he read Thomas Fowell Buxton’s <em>The African Slave Trade and its Remedy</em>, which left a deep impression on him.  He taught in school until 1863, when he became a catechist and was later ordained being put in charge of his own church. His intellectual abilities attracted the attention of CMS headquarters, which sent him to the Yoruba mission in Nigeria. After working briefly in Lagos he went to Abeokuta to try to regain for the CMS the mission stations abandoned there some years earlier. His puritanical morals inhibited his progress and he was recalled to Lagos in 1880, to serve as pastor of the Breadfruit Church. In 1890 he became assistant bishop in charge of the Niger delta and Benin territories, serving until his death in 1917.</p>
-
-<p>The nucleus of Johnson’s philosophy was puritanical, universalist Christianity, as expressed by the Anglican Church. But Johnson believed that Christianity was practically the only benefit Europe could offer to Africa–the full-scale import of European culture would be ruinous.  In this belief Johnson, along with his colleague, E. W. BLYDEN, was a forerunner of the 20th century proponents of negritude. His ideas were also proto-nationalist, for he saw the church as the means of uniting Africa. British colonialism was a mere transitory stage until unification was achieved. He battled fiercely for government financial support for African churches, and for the establishment of an African university and industrial education programme.</p>
-
-<p>Although Johnson’s philosophy seems ideally suited to the advocacy of Christian separatism, he never cut his ties with the CMS, and he tried to prevent others from doing so. He regarded the philosophy of the CMS as similar to his own; when CMS actions indicated otherwise, he blamed local agents rather than the organization.  He was a highly influential figure among his contemporaries, but by the time of his death the scramble for Africa was over, the colonial system well entrenched, and British colonial attitudes decidedly racist. Because he did not commit himself to writing as did Blyden and J. Africanus HORTON, he is often overlooked as a nationalist forerunner.</p>
-
-<p>Mark R. Lipschutz and R. Kent Rasmussen</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Ayandele, E. A.  <em>Holy Johnson : Pioneer of African Nationalism, 1836-1917.</em>  London: F. Cass, 1970.</p>
-
-<p>July, R. W.  <em>The Origins of Modern African Thought.</em>  London: Faber &amp; Faber, 1968.</p>
-
-<p><em>Dictionary of African Biography.</em>  Vol. II: <em>Sierra Leone-Zaire.</em>  Algonac: Reference Publications, 1979.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Dictionary of African Historical Biography</em>, 2nd edition, copyright © 1986, by Mark R. Lipschutz and R. Kent Rasmussen,  University of California Press, Berkeley and Los Angeles, California.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Johnson, James 'Holy' (B)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -752,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -791,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

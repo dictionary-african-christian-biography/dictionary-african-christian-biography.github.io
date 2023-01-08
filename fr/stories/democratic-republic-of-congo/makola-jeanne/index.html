@@ -605,79 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Née le 27 mai 1963 à Lusanga, territoire de Bulungu, district de Kwilu, dans la province de Bandundu, Makola était la fille de Makola Mudiate et de Salome. D’ethnie Yansi, elle a grandi dans la religion catholique. Elle a épousé le révérend pasteur Moïse Zudidi en 1983, et ils ont eu trois enfants, dont deux filles et un garçon.</p>
-
-<p>C’est à la suite de son état de santé fébrile que Makola va se convertir, devenant d’abord kimbanguiste avant de choisir une autre communauté chrétienne. Elle joua un rôle très important aux cotés de son mari, surtout dans l’implantation des églises. Son état fébrile ne l’empêchait pas d’être à l’œuvre.</p>
-
-<p>Pendant sa formation suivie à l’école des femmes (formation dispensée aux épouses des pasteurs) elle découvrira ses différentes capacités et ses dons. Suite à cette formation, Makola devint très active dans l’encadrement des femmes. Elle a souvent encadré, dirigé et conseillé les chorales de femmes à l’Institut  Supérieur Théologique de Kinshasa (actuellement UCKIN) à Nkara-Ewa, à Ekubi, à Kinshasa et ailleurs.</p>
-
-<p>Une femme de foi et de prière–ce qui a fait d’elle conseillère–Makola était également une femme sage et optimiste, qui ne laissait jamais entrevoir l’échec ni dans son visage ni dans son langage.</p>
-
-<p>Partout où elle est passée avec son époux dans le cadre du ministère, Makola a laissé une organisation de femmes. Elle aimait lire la Parole de Dieu. Elle évolua dans le mouvement de la Ligue pour la Lecture de la Bible. Ses prédications parlent encore jusqu’à ce jour par voie du témoignage des personnes qui l’ont côtoyée.</p>
-
-<p>Elle a été un outil important entre les mains du Seigneur pour la réconciliation de beaucoup de couples, et cette attitude a facilité le travail de l’implantation de l’église dont son mari est le responsable et le visionnaire.</p>
-
-<p>Atteinte d’un cancer au sein gauche en 2004, elle passera deux ans à Johannesbourg en Afrique du Sud pour recevoir des soins. Malgré son état de santé, elle a réconcilié plus de cinq couples et a commencé à initier une cellule de prière avec les gens qu’elle a amenés au Seigneur. Makola parlait le français, l’anglais, le lingala, et le kikongo.</p>
-
-<p>Elle est décédée le 14 juillet 2006 à six heures du matin, en Afrique du Sud, à Johannesbourg, et a laissé un message important à son mari, message contenu dans les deux versets bibliques de Jean14 v.1-2 et ch.17 v. 3. Makola croyait fermement à la nouvelle vie qui attend les chrétiens et cette ferme assurance se voit dans le choix de ces deux versets qui encouragent et qui assurent qu’il ne faut point se troubler mais croire en Dieu et en Jésus.</p>
-
-<p>Meschac Ndundu Kamba</p>
-
-<hr />
-
-<p>Sources:</p>
-
-<p>Moïse Zudidi, interview de mai 2007. Pasteur Moïse Zudidi est l’époux de Jeanne Makola.</p>
-
-<p>Mme. Jeanne Nsuka, interview, mai 2007. Mme. Jeanne Nsuka est la sœur de Jeanne Makola.</p>
-
-<hr />
-
-<p>Cet article, reçu en 2008, est le produit des recherches de Meschac Ndundu Kamba, étudiant en missiologie au Centre Universitaire de Missiologie à  Kinshasa-R.D.du Congo sous la direction du Rév. Fohle Lygunda, coordinateur francophone du <em>DIBICA</em>.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Makola, Jeanne Mbembo`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -758,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -795,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

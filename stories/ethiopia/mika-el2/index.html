@@ -611,69 +611,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Mika’él II, of Fua, <em>Abunä</em> (probably fl. late 12th and early 13th century A.D.), son of Mulabbas, was Metropolitan of Ethiopia in the early years of the thirteenth century, c. 1205-1209. He was consecrated by John VI, Patriarch of Alexandria from 1189 to 1216, at the request of Emperor Lalibäla, who sent an embassy to Cairo for the purpose. Mika’él, who was already Bishop of Fua at this time, was chosen only after a long and difficult search, but was then received with honour in Ethiopia and given many villages as an endowment. Four years later he fled back to Egypt, unaccompanied, having been robbed of his possessions en route. He complained to the Patriarch of a brother of the Empress, a certain Hïrun, alleging that he had been obliged through the intercession of the Empress to make him a bishop and that he had assumed the administration of justice and many of the prerogatives of the Metropolitan. In the absence of Lalibäla on a campaign, Hïrun had assaulted Mika’él and attacked his house, so that the Metropolitan was forced to flee. The Patriarch sent a priest, <em>Abba *Musa to Ethiopia to investigate the affair, and his inquiries revealed that the assault had in fact been made by the family of a church dignitary whom Mika’él had killed on suspicion of theft. Hirun appeared guiltless, and had died soon after Mika’él’s flight. At this time a drought occurred in Ethiopia, and Lalibäla sent another embassy, furnished with rich gifts, to ask for a new *abun</em>; it arrived in 1209/10. Mika’él was stripped of his office and banished, and <em>Abunä</em> Yeshaq was sent as his successor.</p>
-
-<p>A. K. Irvine</p>
-
-<hr />
-
-<p><strong>Bibliography</strong></p>
-
-<p>E. Renaudot,* Historia Patriarcharum Alexandrinorum *(Paris, 1717).</p>
-
-<p>J. Perruchon, “Extract de la vie d’Abba Jean, 74-e Patriarche d’Alexandrie, relatif à l’Abyssinie,” in “Notes pour l’histoire d’Ethiopie,” <em>Revue Sémitique</em>, Vol. VI (1898); Vol. VII (1899).</p>
-
-<p>Taddesse Tamrat, *Church and State in Ethiopia 1270-1527 *(Oxford, 1972), 59-60.</p>
-
-<p>M. Chaine, *La chronologie des temps chrétiens de l’Egypte et de l’Ethiopie *(Paris, 1925), 268.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>The Dictionary of Ethiopian Biography, Vol. 1 ‘From Early Times to the End of the Zagwé Dynasty c. 1270 A.D.,’</em> copyright © 1975, edited by Belaynesh Michael, S. Chojnacki and Richard Pankhurst, Institute of Ethiopian Studies, Addis Ababa, Ethiopia.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Mikael II`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -752,7 +691,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -791,6 +730,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

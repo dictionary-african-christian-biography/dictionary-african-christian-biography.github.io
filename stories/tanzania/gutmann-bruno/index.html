@@ -607,84 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Bruno Gutmann was a missionary ethnographer in East Africa.
-A native of Dresden, Saxony, he had a difficult childhood
-before he applied for admission to the Leipzig Mission seminary.
-At Leipzig he came under the influence of diverse social philosophy
-of his own and later supplied the motivation for ethnographic
-research. Gutmann served as a missionary from 1902 to 1938
-among the Chagga people in the Kilimanjaro area of what is
-now Tanzania and became justly famous for his studies on Chagga
-religion, society, and customs, which remained unsurpassed
-in spite of their methodological shortcomings. Gutmann attempted
-to identify ethnic “life power” among the Chagga as determinative
-for the incorporation of tribal “primeval links” into the
-community of Christ. As a corollary, he expressed violent
-opposition to the power of modern civilization, fearing that
-it would destroy the tribal order of creation which, in his
-view, had not been affected by human sin. While his ideas
-proved successful in the congregations at Old Moshi and its
-surroundings, they could not but lead to misgivings regarding
-the encounter of Chagga Christians with the postwar world.
-As he was unable to return to Africa during 28 years of retirement,
-much as he wished to do so, he had no opportunity to adjust
-his views to changed conditions.</p>
-
-<p>Hans-Werner Gensichen</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Among Gutmann’s major works are <em>Dichten und Denken der Dschagganeger</em> (1909), <em>Das Dschaggaland und seine Christen</em> (1925), <em>Christusleib und Nächstenschaft</em> (1931), and <em>Die Stammeslehren der Dschagga</em>, 3 vols. (1932, 1935, 1938). The preferred modern account of Gutmann and his work is J. C. Winter, <em>Bruno Gutmann, 1876-1966: A German Approach to Social Anthropology</em> (1979). See also Ernst Jäschke, <em>Bruno Gutmann: His Life, His Thoughts, and His Work</em> (1985), and Jäschke’s essay in Gerald H. Anderson et al., eds., <em>Mission Legacies</em> (1994), pp. 173-180.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Gutmann, Bruno (B)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -763,7 +687,7 @@ his views to changed conditions.</p>
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -802,6 +726,6 @@ his views to changed conditions.</p>
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

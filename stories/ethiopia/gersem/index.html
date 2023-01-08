@@ -607,73 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Gersem, Emperor (perhaps fl. 8th century A.D.), was a ruler of the Aksumite Empire known only through his currency, which is found in gold and bronze. Apparently the last sovereign of Aksum to mint in gold, he is described in Greek on these coins as “King of the Aksumites,” while the bronze coins call him <em>“negus”</em> in Ge’ez, and carry the device “You will conquer in Christ.” All the currency bears his effigy and the Cross of Christ, but tends to be cruder than that of previous rulers, suggesting that the skill of minting was being lost. His reign may have been between those of Emperors Hataz I and Hataz II.</p>
-
-<p>Richard K. P. Pankhurst</p>
-
-<hr />
-
-<p><strong>Bibliography</strong></p>
-
-<p>E. Littmann, <em>Deutsche Aksum-Expedition</em> (Berlin, 1913), Vol. I, 54-5.</p>
-
-<p>C. Conti Rossini, “Monete aksumite,” <em>Africa Italiana</em>, Vol. I (1926): 210-11.</p>
-
-<p>A. Kammerer, <em>La Mer Rouge, l’Abyssinie et l’Arabie depuis l’antiquité</em> (Le Caire, 1929), Vol. I, 222-3.</p>
-
-<p>J. Doresse, <em>L’Empire du Prêtre-Jean</em> (Paris, 1957), Vol. I, 135.</p>
-
-<p>A. Anzani, “Numismatica axumita,” <em>Rivista Italiana di Numismatica e Scienze Affini</em>, XXXIX (1926): 41, 91-2.</p>
-
-<p>F. Anfray, “Les rois d’Axoum d’après la numismatique,” <em>Journal of Ethiopian Studies</em>, Vol, No. 2 (1968): 1-3, 5.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>The Dictionary of Ethiopian Biography, Vol. 1 ‘From Early Times to the End of the Zagwé Dynasty c. 1270 A.D.,’</em> copyright © 1975, edited by Belaynesh Michael, S. Chojnacki and Richard Pankhurst, Institute of Ethiopian Studies, Addis Ababa, Ethiopia.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Gersem`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -752,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -791,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

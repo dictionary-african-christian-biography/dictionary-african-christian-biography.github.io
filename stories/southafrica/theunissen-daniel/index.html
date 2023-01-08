@@ -607,65 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>The first coloured worker in South Africa, born at Somerset West, Cape province. As the son of a casual laborer on the farms of Europeans living around Somerset West, Daniel, or Dannie as he was called all through his life, early learned to carry his share of home responsibilities. When only eight years of age, returning with a load of firewood, he heard his mother asking God to make her son a minister. Dannie never forgot that prayer.</p>
-
-<p>Three years later, when his mother died, Dannie was sent to work around Kimberley. He learned to care for horses on the farm of Pieter Wessels, who talked to him about the Sabbath, but the lad made no decision to keep it at that time. Returning to the Cape, he entered the employ of A. T. Robinson, the conference president, whose young son Dores struck up a lifelong friendship with the lad. It was Dores’ discussion of the Seventh-day Adventist teachings that led Dannie to belief and baptism.</p>
-
-<p>During the years following, he worked in various institutions around the Cape. For a time he looked after the coach and horses of Dr. George Thomason, the medical director of Cape Sanitarium. Even though still young, his heart burned with a desire to share his faith with his own people. On Sunday afternoons he walked or rode the streetcars to Salt River, where he spoke in the marketplace. A number became interested and met in a small hall on Sabbath mornings. This became the nucleus of the first SDA coloured church in South Africa. Young Theunissen faithfully attended a Bible training school held on Breda Street, Cape Town, to prepare himself for wider service among his people. In 1911 he was ordained.</p>
-
-<p>From then on Theunissen gave his entire time to evangelism, gathering together small companies in Goodwood, Parow, and Worcester. Not infrequently he would visit the Salt River church building alone and move from one pew to another, praying specifically for the church members, whose needs and problems he knew so well. For many years he was the only coloured Seventh-day Adventist worker in South Africa.</p>
-
-<p>He married Kirsten Sutherland, from the island of St. Helena. Their son Gold became an ordained minister to carry on his father’s work.</p>
-
-<p>After attending the 1930 General Conferenee session in San Francisco, Theunissen never ceased to tell of his thrill at meeting Seventh-day Adventists from all over the world. After retirement he continued to meet with his churches and preached until after he had passed his eightieth birthday. Before his death he saw rapid expansion of the work that he had so humbly begun. His funeral was held at the Good Hope Training School, an institution he had done much to promote through the years.</p>
-
-<hr />
-
-<p>This article is reprinted with permission from the <em>Seventh-Day Adventist Encyclopedia</em>, copyright © by Review and Herald Publishing Association, 55 West Oak Ridge Drive, Hagerstown, Maryland 21740, 800-765-6955.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Theunissen, Daniel C.`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -744,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -783,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

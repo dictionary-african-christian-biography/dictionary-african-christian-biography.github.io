@@ -607,73 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Björn Elle’s thirty-two year long ministry in Madagascar (1893-1925) was only interrupted by two short holidays in Norway, which was typical of Norwegian missionaries at the turn of the twentieth century.</p>
-
-<p>Born on May 28, 1867 in Sogndal i Dalane, Norway, Elle studied theology for five years at the Lutheran Seminary of the Norwegian Missionary Society (NMS). He was ordained to the pastorate in 1892, and arrived in Madagascar in 1893.</p>
-
-<p>He worked in all the NMS stations in the southeastern part of the island: Manambondro, Vangaindrano, Farafangana, Vohipeno, and even South Midongye. He quickly learned all the dialects in that region and acquired a deep understanding of the customs and practices of the different people groups there: the antemanambondro, taimoro, taifasy, tesaka, zafisoro, etc. He became a legendary personality among those groups in his lifetime, and he was often called upon to act as an arbitrator in the many conflicts that arose there. His decisions were considered to be final and without appeal, because he based them on tribal history and local tradition.</p>
-
-<p>Having become interested in old documents, he obtained copies of the old Arabic-Malagasy manuscripts from the Vohipeno dynasties. These documents are presently conserved by, and made available to researchers at the Museum of Ethnography in Oslo. This was a fortunate development, because the original documents seem to have completely disappeared during the upheavals of 1947-1948.</p>
-
-<p>Björn Elle returned to Norway in 1925, and died in Sogndal on August 28, 1942.</p>
-
-<p>O. Chr. Dahl, L. Molet</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>“Note sur les tribus de la province de Farafangana,” [Notes on the tribes of the Province of Farafangana] and “Remarques sur le dialecte Tesaka (ou Taisaka)” [Remarks on the Tesaka (or Taisaka) Dialect]. <em>Bulletin de l’Académie Malgache</em> [Bulletin of the Malagasy Academy], Antananarivo, 1906.</p>
-
-<p><em>Kongeslektene pa Syd og Vest Madagasca</em> [The Royal Families of Western and Southern Madagascar] Oslo, 1930, in <em>Universitetets Etnografiske Museum. Arbok 1966</em>, Oslo, 1967, pp. 26-43.</p>
-
-<hr />
-
-<p>The above article, reprinted here by permission, is from <em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em> [People and Destinies: an Overseas Biographical Dictionary], vol. 3, published in 1977 by the Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Elle, Björn`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -752,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -791,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

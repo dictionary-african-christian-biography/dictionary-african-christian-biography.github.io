@@ -605,77 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Kile est né à Blukwa en 1937. Il se convertit et fut baptisé à Blukwa en 1952. Après avoir terminé l’école primaire et secondaire à Blukwa, il fut affecté comme enseignant dans plusieurs écoles primaires et secondaires de la région (à Singo, à Bambu-Kilo, à Malabo et à Luvangire).  Déjà, en 1952, il enseignait à l’école de dimanche à Blukwa. Il était également un très bon choriste. Étant chef des choristes, il organisa les femmes du milieu pour former un fort groupe choral, pour diriger les chants lors de culte et manipuler les fanfares. Ici, il commença à aider les pasteurs dans leur ministère. Il était également membre des lecteurs de la Bible. Son Église l’envoya faire la théologie à l’Institut Supérieur Théologique de Bunia (I.S.T.B) de 1972 en 1976.</p>
-
-<p>Après ses études théologiques, il fut affecté à l’école secondaire de Blukwa comme aumônier et directeur d’internat. Il fut ordonné pasteur et s’occupait également de l’évangélisation.</p>
-
-<p>En 1953, il épousa la maman Esteri et ils eurent dix enfants.</p>
-
-<p>En 1982, il fut affecté comme directeur de l’Institut Biblique d’Oicha et en même temps pasteur-assistant à la paroisse Mbimbi à Oicha, Nord-Kivu. En 1989, il revint à Bunia où il fut affecté comme directeur de la RadioTangazeni Kristo.  Avant d’exercer cette fonction, il avait subi une formation dans le domaine de la radio et des cassettes au Kenya, puis en Tanzanie.</p>
-
-<p>Kile fut également le modérateur du conseil administratif de la Communauté Évangélique au Centre de l’Afrique (C.E.C.A.-20) et  pasteur de la locale Bunia-ville. Il travailla toute sa vie sans demander de congé car, disait-il, “ le pasteur n’a pas besoin d’un congé. Le serviteur de Dieu ne doit pas dormir sur ses lauriers; il doit suivre l’exemple du Christ qui n’avait pas où mettre sa tête. “</p>
-
-<p>Kile était un excellent prédicateur, sachant tenir l’attention de son auditoire par ses gestes et son humour. C’était un homme décisif, ferme, ponctuel, parlant peu, se contentant de peu, de forte santé (il n’avait jamais été sur un lit de l’hôpital jusqu’à l’age adulte). Étant également un défenseur de la saine doctrine, il donnait un enseignement ferme à ses paroissiens sur plusieurs points doctrinaux pour contrer les erreurs des sectes dans le milieu.</p>
-
-<p>C’était un bon pasteur pour sa propre famille, faisant le culte et l’étude de la Bible avec les membres de la famille. Il aimait beaucoup le verset de Romains 14 v. 8 : “ Car si nous vivons, nous vivons pour le Seigneur; et si nous mourons, nous mourons pour le Seigneur… “ Son dynamisme, son courage, son abnégation, et son amour pour le service du Seigneur étaient extraordinaires.</p>
-
-<p>Le révérend Kile souffrait de diabète qui l’emporta le 17 novembre 2002 à Bunia pendant que celle-ci était sous les balles des factions rebelles dans la ville.</p>
-
-<p>Mukambilwa Mwanga</p>
-
-<hr />
-
-<p>Sources Orales:</p>
-
-<p>Esteri, épouse du Révérend Kile, interview du 25 janvier 2003 à Bunia.</p>
-
-<hr />
-
-<p>Cet article, reçu en 2005, est le produit des recherches de Mukambilwa Mwanga, étudiant en théologie sous la direction du Révérend Yossa Way.  Ce dernier est professeur de théologie et coordinateur de liaison du <em>DIBICA</em> à l’Institut Supérieur Théologique Anglican (Bunia, Rép. Dém. du Congo) ainsi que récipiendaire de la bourse du Projet Luc en 2001.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Kile, Lorod'u Aaron`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -756,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -793,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

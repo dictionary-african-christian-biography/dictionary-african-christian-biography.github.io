@@ -605,82 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>La Révérende Mère Marie de Cambolas naît à Toulouse en 1694 d’une famille parlementaire originaire du Rouergue. Fille de François de Cambolas, Conseiller et Chancelier du Parlement de Toulouse, elle devint, en 1717, religieuse professe dans l’Ordre des Religieuses de Notre-Dame, au Monastère de Toulouse. Guérie miraculeusement d’une attaque de paralysie par l’intercession de St François-Régis, elle fit vœu de se consacrer aux œuvres d’éducation et à la Mission de son Ordre établie à St-Domingue et parvint à intéresser à ses projets le Père de Nouvelle, jésuite chargé par le Roi de désigner les Religieuses autorisées à s’embarquer pour le Cap-Français.</p>
-
-<p>Son but le plus cher était de donner une éducation soignée aux jeunes filles de couleur et elle se heurta, à ce propos, aux préjugés de l’époque. En 1744, cependant la ville du Cap à Haïti étant menacée par les anglais, elle fit faire vœu à sa Communauté de construire de nouvelles classes pour les jeunes négresses si l’on échappait au péril.</p>
-
-<p>Le danger écarté, on en attribua le succès au vœu et aux prières de la Mère de Cambolas qui fut désormais désignée par la popu1ation d’Haïti sous le nom de la “fille aux miracles”.</p>
-
-<p>Devenue Supérieure du Monastère du Cap-Français, elle put enfin se consacrer pleinement à son œuvre d’éducation des filles de couleur–les Registres de son Ordre témoignent, d’autre part, de son ascétisme et rapportent qu’elle usait de veilles et de jeûnes mais qu’en outre elle mélangeait par esprit de pénitence à ses aliments de la cendre, qu’elle prenait son repos “uniquement sur un ais” et utilisait “les instruments de pénitence les plus rigoureux qu’aient pu inventer les grands amateurs de la Croix”. Elle décéda en 1757 au Cap. Outre un frère marié et Conseiller au Parlement, elle avait trois sœurs également religieuses.</p>
-
-<p>M. de Cambolas</p>
-
-<hr />
-
-<h1 id="bibliographie">Bibliographie</h1>
-
-<ol>
-  <li>
-    <p>Qompagnia di Maria Nostra sonora - Roma: Nécrologies de la Communauté de Toulouse.</p>
-  </li>
-  <li>
-    <p>” La bienheureuse Jeanne de Lestounae “ par le Chanoine L. ENTRAYGUES - Périgueux 1940 (2ème édition, pages 187 et 245 à 246).</p>
-  </li>
-  <li>
-    <p>” Les Congrégations religieuses au Cap Français - St-Domingue 1681-1793 “ par Mgr JAN - Port-au-Prince Haïti 1951, pages 205 à 210.</p>
-  </li>
-  <li>
-    <p>VILLAIN: “ La France Moderne - Haute-Garonne “ - Tome 2 - St. Etienne 1919.</p>
-  </li>
-</ol>
-
-<hr />
-
-<p>Cet article, réimprîmé ici avec permission, est tiré d’<em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em>, tome 2, volume 1, publié en 1977 par l’Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). Tous droits réservés.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `De Cambolas, Marie`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -761,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -798,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

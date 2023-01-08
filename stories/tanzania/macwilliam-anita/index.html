@@ -605,59 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/tanzania/macwilliam-anita/macwilliam-anita.jpg" alt="Anita MacWilliam" class="bio" /></p>
-
-<p>Anita Marie MacWilliam was born on December 3, 1930, in Montreal, Quebec, Canada. She made her First Profession of Vows with the Maryknoll Sisters in 1954, making Final Profession in 1960. She spent nearly all of her missionary service from 1961-2003 in Tanzania. First, she taught French in Mwanza. Then, since she had a masters degree in linguistics, Sr. Anita led the Maryknoll Language School, where she “developed the curriculum, trained the Tanzania teachers, produced, and revised the textbooks.” Some of her many other activities in Tanzania were as follows: serving as Head of Terminology and Translation at the Institute for Kiswahili Research at the University of Dar es Salaam, co-authoring an English-Swahili dictionary, serving as a founding member of the Women’s Research and Documentation Project and the Translation Association of Tanzania, and authoring many articles on linguistics, women, social justice, and multiculturality. Due to declining health, she relocated to North America in 2003, where she joined the Eden Community. She passed away on January 1, 2021.</p>
-
-<p>Catherine Erisman</p>
-
-<hr />
-
-<p>This biography, uploaded in 2021, was excerpted from the Letter of Appreciation prepared in 2012 by Catherine Erisman, M.M., for Sr. Anita’s funeral. Find the full Letter of Appreciation <a href="/resources/bio-pdfs/tanzania/macwilliam-anita-letter-of-appreciation.pdf">here</a>.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `MacWilliam, Anita Marie`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -736,7 +685,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -775,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

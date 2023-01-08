@@ -607,83 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/ghana/capitein/capitein-head.jpg" alt="J. E. Capitein" class="bio" /></p>
-
-<p>Jacobus Eliza Johannes Capitein (c.1717 – February 1747) was one of the pioneers of formal education on the Gold Coast.</p>
-
-<p>He was probably a Fante, although nothing is known about his place of birth. He was one of the few Gold Coast Africans educated overseas in the 18th century who returned to undertake educational work in his own country. Sold as a slave to a ship’s captain, Arnold Steenhart, at the age of seven or eight, Capitein was fortunate that he was not sent to the West Indies. Instead he was taken to Middleburg in Zeeland province in the Netherlands, after which he was taken back to the Gold Coast, to Elmina Castle. Steenhart then gave him to the Dutch factor at Shama, 6 mi (10 km) northeast of Sekondi, Jacobus Van Goch, who named him Capitein.</p>
-
-<p>In April 1726 his new master took him to the Hague, in the Netherlands, where he gave him the best education available. After 13 years of education he graduated from the University of Leyden in 1742, having studied a wide range of subjects. His academic achievement was crowned with a Latin dissertation, delivered on March 10, 1742, entitled “De Servitute Libertati Christianiae Non Contraria,” defending the theme that slavery was not “contrary to Christian freedom”! The dissertation was subsequently published in Latin and in a Dutch translation.</p>
-
-<p>Capitein was ordained at Amsterdam on May 17, 1742, and was appointed a preacher and schoolmaster at Elmina by the authorities of the Dutch Reformed Church at the request of the directors of the Dutch West India Company. He arrived at Elmina on October 8, and began work on the Gold Coast. He was then 25.</p>
-
-<p>On his return home, his knowledge of Dutch and of Latin enabled him to reduce the local Fante language into writing. Apart from compiling a Fante – Dutch grammar, he had the Lord’s Prayer, parts of the Catechism, the Twelve Articles of Belief, and the Ten Commandments published in Fante. Thus he and his contemporary, Christian Jacob Protten, a mulatto schoolmaster who prepared a Ga-Twi-Danish catechism and grammar, may be regarded as the pioneers in the study of local African languages.</p>
-
-<p>Capitein revived the Elmina Castle School, which had ceased to function 80 years earlier in 1661, and made so much progress that in 1744 he was prepared to recommend two or three pupils to be sent to the Netherlands for further education. The progress of the school appears to have led the Asantehene, Opoku Ware [ruled 1720–50], to send 12 boys and 2 girls from Kumase to the Director-General of the Dutch settlement at Elmina, J. Baron De Petersen (term of office 1741-47), to be sent on to the Netherlands for education. The instructions were that they were to be taught reading, writing, and music. Ten elephant tusks were sent by the Asantehene to pay for expenses, but the Dutch said that this was not sufficient. Instead, the tusks were used to send the Asantehene’s envoy to the Netherlands, and the children, with the Asantehene’s agreement, were instead put in the Castle School at Elmina.</p>
-
-<p>Capitein died in February 1747. But before his death things were going badly for him. He did not receive adequate support from the Dutch authorities in general, and in particular they rejected his development plans at Elmina. As a result of Capitein’s appeal to the chief and the elders of Elmina for more pupils, as well as in consequence of the admission of the Asante children, there had been a considerable increase in school attendance. Many of these were “day pupils” from Elmina, since there had been a large increase in the number of illegitimate mulatto children in the town. Capitein feared that when the school day was over the “day pupils” would become involved in non-Christian practices. He therefore requested the Dutch company to build a hostel or orphanage for the children. But nobody listened to him, and his work ceased to progress before he died.</p>
-
-<p>M. A. Kwamena-Poh</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>F. L. Bartels, “Jacobus Eliza Capitein, 1717-47,” <em>Transactions of the Historical Society of Ghana</em>, Vol. IV, Part I, Legon, 1959; Jacobus Eliza Johannes Capitein, <em>De Servitute Libertati Christianiae Non Contraria</em>, “Slavery is Not Contrary to Christian Freedom”, Amsterdam, 1742; H. W. Debrunner, <em>A History of Christianity in Ghana</em>, Accra, 1967; A. Eekhof, <em>De Negerpredikant Jacobus Elisa Joannes Capitein: 1717-1747</em> (“The Black Minister Jacobus Elisa Joannes Capitein: 1717-1747”), The Hague, 1917; I. S. Ephson, <em>Gallery of Gold Coast Celebrities</em>, Accra, 1969; M. A. Kwamena-Poh and H. O. A. McWilliam, <em>The Development of Education in Ghana</em>, London, 1965.</p>
-
-<hr />
-
-<p>This article was reprinted from <em>The Encyclopedia Africana Dictionary of African Biography</em> (In 20 Volumes). Volume One: Ethiopia-Ghana, Ed. L. H. Ofosu-Appiah. New York: Reference Publications Inc., 1977. All rights reserved.</p>
-
-<hr />
-
-<h3 id="photo-gallery">Photo Gallery</h3>
-
-<p><img src="/images/bio-pics/ghana/capitein/capitein-full.jpg" alt="J. E. Capitein" class="bio" /></p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Capitein, Jacobus (A)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -762,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -801,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

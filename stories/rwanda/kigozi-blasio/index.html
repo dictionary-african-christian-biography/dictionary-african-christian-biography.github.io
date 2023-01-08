@@ -607,88 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>East African revival pioneer.</p>
-
-<p>Born of Mugandan parents, Kigozi was educated in Uganda. In
-1928 he was ordained deacon* by the Anglican Church of Uganda
-and posted to Gahini, in eastern Rwanda. During 1929 and 1930,
-a severe famine struck, killing thousands. With his elder
-brother, Simeoni Nsimbambi, Kigozi then entered into a new
-charismatic experience of the Holy Spirit, joining a group
-of churchmen called Abaka (Men of fire). They then began eight
-years of ceaseless village-to-village itineration and preaching
-as the Rwanda Revival, begun in Gahini in 1927, gathered momentum.
-In late 1935 Kigozi took the lead in a great ten-day Anglican
-Revival convention in Kabale, accompanied by outbreaks of
-pentecostal enthusiasm. Shortly after, in January 1936, Kigozi
-was called back to Uganda to attend the church’s synod in
-Kampala, but on the way he contracted tick fever. At the synod
-he delivered a fervent appeal to Ugandan clergy on the need
-for repentance and revival but then died suddenly in a hospital
-in Mengo before the synod’s close, crying “Awake! Awake!”
-Waves of revival swept through the Church of Uganda throughout
-1937 and then across the entire country. Kigozi may be regarded
-as the major founder and developer of the East African Revival
-in its first decade as it began its rapid spread across East
-and Central Africa.</p>
-
-<p>David B. Barrett</p>
-
-<hr />
-
-<p>*Editorial Note: This correction was received in an email message from Dr. Kevin Ward (dated October 1, 2012): “Kigozi was not a deacon in 1928 when he arrived in Gahini in Rwanda. He had trained at the Normal [teacher training] School in Mudono as a teacher, and went to work at the small Gahini Boys school. He later returned to the theological college in Mukono and was ordained as a deacon in 1934. He then returned to Gahini and took charge of the evangelists’ school there. By then he was deeply involved in spreading the message of revival in Gahini. He would have been priested in 1936 but for his untimely death.”</p>
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Joe E. Church, <em>Awake Uganda</em> (c. 1940), provides a biography of Blasio Kigozi. Church’s later work, <em>Forgive Them: The Story of an African Martyr</em> (1967), is a biography of Kigozi’s Rwandese protégé, Tutsi pastor Yona Kanamuzeyi, who was murdered in 1964. See also Church’s <em>Quest for the Highest: The East African Revival *(1982); A. C. Stanley Smith, *Road to Revival: The Story of the Rwanda Mission</em> (1946).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Kigozi, Blasio`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -767,7 +687,7 @@ and Central Africa.</p>
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -806,6 +726,6 @@ and Central Africa.</p>
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

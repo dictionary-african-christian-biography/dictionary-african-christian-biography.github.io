@@ -607,77 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Samuel Richard Brew Attoh-Ahuma (December 22, 1863-December 15, 1921) was a nationalist politician, journalist, and author, active at the height of the colonial period. Born Samuel Solomon, he changed his surname to Attoh-Ahuma in 1898.</p>
-
-<p>He was born in 1863, and was the son of the Rev. James Solomon, a Wesleyan minister. He was connected on his father’s side with the ruling family of James Town, and on his mother’s side was a Fante from Cape Coast. He was educated at the Wesleyan elementary schools and the Wesleyan high school at Cape Coast, and was then trained for the ministry of the Wesleyan Church. He later attended Richmond College, Cape Coast, from 1886-88, to continue his religious studies.</p>
-
-<p>After becoming a minister of religion, he became editor of the <em>Gold Coast Methodist</em> (later the <em>Gold Coast Methodist Times</em>) in 1894. He showed such nationalist enthusiasm, however, that he was soon in trouble with his employers, the Wesleyan Methodist Church. This was the period of agitation against the Lands Bill of 1897 which, if enacted by the British, would have threatened the African land tenure system. After the formation of the Aborigines’s Rights Protection Society (A.R.P.S.) in the same year, he gave journalistic expression to his nationalist ideas, which displeased the Methodist authorities. After he had written an article in his newspaper in 1897, entitled “Colony or Protectorate, Which?,” he was forced to leave the Methodist Church.</p>
-
-<p>In the same year he went to England, and undertook several preaching assignments, while at the same time undertaking research on African subjects in the British Museum.</p>
-
-<p>In 1898 he and J. E. K. Aggrey (<em>q.v.</em>) were among four scholars chosen by the African Methodist Episcopal Zion (A.M.E.Z.) Church to study for the ministry in Livingstone College, Salisbury, North Carolina. While on his way to the U.S., someone taunted him about his Anglo-Saxon names, and in the same year he changed his surname from Solomon to Attoh-Ahuma. He graduated B.A. in 1902, and returned to the Gold Coast to become principal of the newly-established Accra Grammar School. When, after a short period, the school closed, he went to Cape Coast to become principle of the A.M.E.Z. Church secondary school there, which also closed down after two years. He then took to writing, and presented his thesis for the M.A. degree at Livingstone. He wrote four books - <em>Memoirs of West African Celebrities</em> (1903), <em>The Gold Coast Nation and National Consciousness</em> (1911),* Cruel as the Grave* (1913), and <em>His Quest and Conquest</em> (1917). In 1920 his 1897 article, “Colony or Protectorate, Which?” was published as a pamphlet.</p>
-
-<p>He joined the A.R.P.S., and in 1912 became editor of its newspaper, <em>The Gold Coast Nation</em>. As a contemporary of J. E. Casely Hayford (<em>q.v.)</em>, he played an active part in showing his countrymen that there were many good things in their customs worth preserving. He became secretary of the A.R.P.S. in 1913.</p>
-
-<p>In 1914, he returned to the Methodist Church, and served in the Winneba, Saltpond, Axim, Dixcove, and Elmina circuits all in the central and western coastal region. He was also the general manager of the Methodist educational units for these circuits. He encouraged the establishment of Sunday schools, and founded a number of religious clubs, including Christ Little Band, and the Guild Society.</p>
-
-<p>One of Attoh-Ahuma’s outstanding achievements on his return from the United States was the success that he gained in persuading many Africans who had Europeanized their names to adopt African names. He died at Elmina in 1921.</p>
-
-<p>H. L. Ofosu-Appiah</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>S. R. B. Attoh-Ahuma, <em>Memoirs of West African Celebrities</em> (1700-1850), Liverpool, 1905, <em>The Gold Coast Nation and National Consciousness</em>, Liverpool, 1911, <em>Cruel as the Grave</em>, 1913, <em>His Quest and Conquest</em>, 1917, <em>Colony or Protectorate, Which?</em>, a pamphlet, 1920; I. S. Ephson, <em>Gallery of Gold Coast Celebrities</em>, Accra, 1969; David Kimble,* A Political History of Ghana, 1850-1928<em>, Oxford, 1963; G. E. Metcalfe, *Great Britain and Ghana: Documents in Ghana History, 1807-1957</em>, Legon, 1964; Magnus J. Sampson, <em>Gold Coast men of Affairs</em>, London, 1937. See also obituary in <em>Minutes of the Weslyan Methodist Conference</em>, London, 1922.</p>
-
-<hr />
-
-<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (in 20 Volumes). Volume One Ethiopia-Ghana, ©1997 by L. H. Ofosu-Appiah, editor-in-chief, Reference Publications Inc., New York, NY. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Attoh-Ahuma, Samuel Richard Brew`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -756,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -795,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

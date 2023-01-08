@@ -601,90 +601,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <blockquote>
-  <blockquote>
-    <p><em>COLLECTED MEMORY: The following text belongs to our collection of eyewitness and fragmentary accounts that includes eulogies, obituaries, and primary materials. It may lack sources and proper academic verification for accuracy.</em></p>
-  </blockquote>
-</blockquote>
-
-<p>Retired former Bishop John Wesley Shungu, the first indigenous United Methodist episcopal leader in what is today the Democratic Republic of Congo, died May 9 in Kinshasa.</p>
-
-<p>He became a bishop in 1964 and had been retired for many years.</p>
-
-<p>Shungu’s eight years as leader of the Central and Southern Annual Conferences coincided with the tumultuous early days of Republic of Congo after it gained independence from Belgium in 1960. The country later became known as Zaire. Shortly after his election, he made a heroic trip to rescue his wife, Louise, and 11 of their 13 children who were behind rebel lines near Lodja.</p>
-
-<p>“Bishop Shungu was a pioneer as a church leader facing incredible political and social challenges,” said the Rev. R. Randy Day, chief executive of the United Methodist Board of Global Ministries. “Our prayers are with his family, whose members reside in several countries.”</p>
-
-<p>John Wesley Shungu was educated in Methodist-related schools in Congo and grew up at a Methodist mission station, where he met his future wife through the matchmaking of missionaries, according to Dr. Daniel Shungu, the couple’s third child.</p>
-
-<p>“Our house was an open door house,” Shungo told an interviewer in 2005. “People would come and go around breakfast, lunch and supper because they knew they would not be refused.” Daniel Shungu went on to become a physician specializing in infectious diseases.</p>
-
-<p>In 1964, Bishop Shungu was one of two Africans – along with Bishop Eserivao Anglaze Zunguze of Mozambique – elected by the African Central Conference to what was then the Methodist episcopacy. Previously, most bishops in Africa were Americans named by the Council of Bishops.</p>
-
-<p>In 1965, Shungu came to the United States to recruit missionaries for his episcopal area.</p>
-
-<p>He told a congregation in Harlem that “the fact that I am standing before you as the product of a missionary school is a credit to you and your work,” according to a report in <em>The New York Times</em>.</p>
-
-<p>Shungu told <em>The Times</em> he was a member of the Otetala tribe but, indicating his desire to work across tribal lines, he said: “The church is one institution where the tribal divisions, which create so much political difficulty, are not important.”</p>
-
-<p>During the Shungu years, the Protestant churches of Congo/Zaire were engaged in efforts to form a united Church of Christ in Congo. The Methodists initially were involved, but the bishop was never a strong supporter of the concept. In 1972, he withdrew the United Methodist Church from the ecumenical denomination.</p>
-
-<p>Elliott Wright <br />
-May 11, 2007 | NEW YORK (UMNS)</p>
-
-<hr />
-
-<p><strong>Source:</strong></p>
-
-<p>Elliott Wright, “Shungu, first indigenous bishop in Congo, is dead” in the <a href="http://archives.gcah.org/bitstream/handle/10516/4179/article34.aspx.htm?sequence=2">archives of the United Methodist Church</a>. Accessed September 7, 2021.</p>
-
-<hr />
-
-<p>This article, written in 2007 and reprinted from the <a href="http://archives.gcah.org/bitstream/handle/10516/4179/article34.aspx.htm?sequence=2">archives of the United Methodist Church</a>, was written by Elliott Wright, the information officer of the United Methodist Board of Global Ministries. The news media contact is Linda Bloom, New York, (646) 369-3759 or newsdesk@umcom.org.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Shungu, John Wesley`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -763,7 +681,7 @@ May 11, 2007 | NEW YORK (UMNS)</p>
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -802,6 +720,6 @@ May 11, 2007 | NEW YORK (UMNS)</p>
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

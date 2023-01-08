@@ -607,63 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Daniel Lindley was an American missionary to South Africa. Born in Washington County, Pennsylvania, he graduated from Ohio University (1824), where his father, Jacob Lindley, was the founder and first president, and from Union Theological Seminary, Richmond (1831). In 1834 he married Lucy Allen, was ordained, and under appointment by the American Board of Commissioners for Foreign Missions (ABCFM), embarked with the first company of American missionaries to South Africa. From Cape Town, Lindley, Alexander Wilson, Henry Venable, and their wives set off on a year-long thousand-mile trek by ox wagon to Matabeleland. Arriving at the capital of the Matabele chief Mosilikatse, they were caught in bloody fighting between Dutch voortrekkers and the Matabele and were forced to retire to Natal. Fighting between Boers and Zulus again forced retreat, but in 1839 Lindley reoccupied his station, opened a school for the Boers’ children, and in 1842 agreed to be <em>predikant</em> (pastor) of their scattered settlements, believing that the aggressive Dutch needed Christianizing as much as the Zulus. One of his confirmands was Paul Kruger, later the first president of the Republic of South Africa. In 1847 Lindley established a station at Inanda, centering his efforts on the Zulus and helping set aside large “native locations” to protect them from land-hungry settlers. At the Lindleys’ retirement in 1873, Zulus and Boers expressed deep regard. He retired to the United States in 1874 and died in Morristown, New Jersey. In 1967 a new bridge at Pietermaritzburg was named the Daniel Lindley Bridge.</p>
-
-<p>David M. Stowe</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>The principal biographer is E. W. Smith, <em>The Life and Times of Daniel Lindley (1801-1880): Missionary to the Zulus, Pastor of the Voortrekkers, Umbebe Omhlope</em> (1949). <em>Missionary Herald</em> 104 (1906): 26-27 has a sketch and portraits; vol. 76 (1880): 480 has his obituary and many issues contain Lindley letter or reports. Clifton Jackson Phillips, <em>Protestant America and the Pagan World…</em> (1969), pp. 212-221, has a good summary account.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Lindley, Daniel`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -742,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -781,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

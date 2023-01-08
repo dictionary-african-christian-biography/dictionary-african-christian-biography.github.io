@@ -607,83 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Sawiros, <em>Abunä</em>, was a Metropolitan of Ethiopia consecrated by the Patriarch Cyril II, in office 1077-92 A.D., in place of the impostor ‘Abdun. He was the nephew of the former Metropolitan, <em>Abunä</em> Fiqtor, and had been brought up by him in Ethiopia and thus had the advantage of knowing the country well. He is also said to have been a learned man and it is possible that he enjoyed a position of respect at the outset of his career in Ethiopia, where he appears to have pursued a policy of moral reform, endeavoring in particular to stamp out polygamy. That he had some success is shown by the Emperor’s renunciation of all but two of his wives.</p>
-
-<p>At the time of his appointment, <em>Abunä</em> Sawiros apparently had the support of the Egyptian <em>wazir</em>, the <em>Amir al-Juyuš</em>, and seems to have promised to protect Muslim interests in Ethiopia and to construct places of worship for the Muslim population. In October 1088, however, he sent his brother Rijal or Rigal to Egypt bearing a gift for the <em>amir</em> which was not well-received and Rijal was in fact arrested. The <em>amir</em> then summoned the Patriarch and reproached him and his bishops, firstly because the statutory tribute had not been paid upon the occasion of Sawiros’ appointment, secondly because the Metropolitan had not built mosques as promised for the Muslims in Ethiopia and thirdly because Muslim merchants there were subject to harassment. In reply to the accusations, Rijal protested that <em>Abunä</em> Sawiros had in fact been imprisoned by the Emperor as a result of imprudently constructing no less than seven mosques, which had been destroyed by the people. The <em>amir</em> ordered the Patriarch to dispatch a delegation of two bishops to Ethiopia with an official letter requiring the construction of the mosques and full protection for Muslim merchants. The delegation set out in February 1089, accompanied by an emissary of the <em>amir</em> bearing another letter which threatened the destruction of all the churches in Egypt if the demands were not met. <em>Abunä</em> Sawiros now found himself in an ambiguous position as a result of the misunderstanding in Egypt of the extremely limited powers held by the Metropolitan in Ethiopia. Egypt could never ensure protection of Muslim interests in Ethiopia through the office of the Metropolitan. The Ethiopian ruler’s reply to the <em>amir</em>’s letter is said to have been as follows:</p>
-
-<blockquote>
-  <p>“If thou demolish a single stone of the churches, I shall carry to thee all the bricks and stones of Mecca and I shall deliver all of them to thee, and if a single brick is missing, I shall send to thee its weight in gold.”</p>
-</blockquote>
-
-<p>After this deterioration in relations between Egypt and Ethiopia, <em>Abunä</em> Sawiros seems to have returned to Alexandria. According to the <em>Synaxarium</em>, he died in peace, eleven years after taking office, and was buried at the famous monastery of Abba Macarius.</p>
-
-<p>Belaynesh Michael</p>
-
-<hr />
-
-<p><strong>Bibliography</strong></p>
-
-<p>E. Renaudot, <em>Historia Patriarcharum Alexandrinorum</em> (Paris, 1717), 461-2.</p>
-
-<p>A. S. Atiya, Y. ‘Abd al-Masih, O.H.E. Khs-Burmester, <em>History of the Patriarch of the Egyptian Church</em> (Cairo, 1959), Vol. II, iii, 329-30; 350-51.</p>
-
-<p>E. A. Wallis Budge, <em>The Book of the Saints of the Ethiopian Church</em> (Cambridge, 1928), Vol. IV, 995 (<em>Synaxarium, 12 Säné</em>).</p>
-
-<p>C. Conti Rossini, *Storia d’Etiopia *(Bergamo, 1928), 287-289.</p>
-
-<p>J. Spencer Trimingham, <em>Islam in Ethiopia</em> (Oxford, 1952), 63.</p>
-
-<p>Taddesse Tamrat, <em>Church and State in Ethiopia 1270-1527</em> (Oxford, 1972), 48-50.</p>
-
-<p>M. Chaine, <em>La chronologie des temps chrétiens de l’Egypte et de l’Ethiopie</em> (Paris, 1925), 267.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>The Dictionary of Ethiopian Biography, Vol. 1 ‘From Early Times to the End of the Zagwé Dynasty c. 1270 A.D.,’</em> copyright © 1975, edited by Belaynesh Michael, S. Chojnacki and Richard Pankhurst, Institute of Ethiopian Studies, Addis Ababa, Ethiopia.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Sawiros`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -762,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -801,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

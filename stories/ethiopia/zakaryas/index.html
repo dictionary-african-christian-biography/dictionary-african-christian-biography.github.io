@@ -611,65 +611,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Zäkaryas (c. 1845-1920), Ethiopian prophet. Zäkaryas was born to Muslim parents in Bägémder Province, Ethiopia, around 1845, and emerged as an influential teacher within the Muslim community.  Beginning in 1892, he had visions which eventuated in the greatest movement of Muslims to Christianity in modern Ethiopian church history.  Zäkaryas initially attempted to bring Islam into closer harmony with its Jewish and Christian antecedents.  A frequent object of Muslim-initiated litigation, he displayed a grasp of the Qur’an and a dialectical aptitude that not only earned him vindication before the courts, but also resulted in the conversion of numerous Muslim dignitaries.  Following one such case in 1907, Emperor Menilek issued an official “permission and proclamation” giving Zäkaryas freedom to teach anything he wished in any Muslim area of the country, and making it illegal for anyone to bring charges against either him, his followers, or those helped by his teaching.</p>
-
-<p>Zäkaryas was baptized at Däbrä Tabor during Easter of 1910, assuming the Christian name Newayä Krestos (possession of Christ).  While his nascent evangelicalism, stressing the Scriptural basis of religious truth, ensured that his relationship to the Ethiopian Orthodox Church was at times an uneasy one, between 1907 and 1920 thousands of Muslims converted to Christianity.  By 1935, however, the movement had virtually disappeared as a distinctive entity within Ethiopian Orthodox Christianity.</p>
-
-<p>Jonathan J. Bonk</p>
-
-<hr />
-
-<p><strong>Bibliography</strong></p>
-
-<p>Donald Crummey, “Shaikh Zäkaryas: an Ethiopian Prophet”, <em>Journal of Ethiopian Studies,</em> 10, no. 1 (January 1992), 55-66;  J. Iwarsson, “A Moslem Mass Movement toward Christianity in Abyssinia,” <em>Moslem World,</em> 14 (1924), 286-289.  Zäkaryas’ 95-page “The Fixed and Permanent Collection” (quranic and biblical proof texts compiled around 1906) is the most reliable source on the actual content of his teaching.  A photocopy is located in the Institute of Ethiopian Studies, Addis Ababa, Ethiopia.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from the <em>Biographical Dictionary of Christian Missions,</em> copyright © 1998 by Gerald H. Anderson.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Zakaryas, Shaikh (A)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -748,7 +691,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -787,6 +730,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

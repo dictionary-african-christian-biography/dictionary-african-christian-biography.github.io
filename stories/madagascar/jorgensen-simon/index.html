@@ -611,99 +611,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>S. E. Jörgensen was born in Tromöy, Norway, on October 23, 1846. After five years of theological studies at the University of Christiania (now, of Oslo), he was ordained as a pastor in the Lutheran Church in 1874. The following year he left for Madagascar, sent out by the Lutheran Norwegian Missionary Society (NMS) to direct the Lutheran seminary there. He stayed in that position for nine years, and also directed the missionary press. In addition, he was the editor-in-chief of <em>Ny Mpamangy</em> [The Visitor], a monthly journal of the Malagasy Lutheran Church.</p>
-
-<p>Jörgensen was a prolific writer, whether writing in Norwegian, in English, or, most of all, in Malagasy. His scientific articles were published in the review (the <em>Antananarivo Annual</em>) that was printed by his colleagues from the London Missionary Society, J. Sibree and R. Baron. His writings in Malagasy dealt mostly with theology and missionary concerns.</p>
-
-<p>In 1886 he returned to Norway, where he taught in the NMS seminary in Stavanger, starting in 1889. In 1892, he was named director of the seminary, and from 1897 to 1915, he was a pastor in Trondheim. It was during those years that he wrote a number of articles on Madagascar and missions.</p>
-
-<p>Jörgensen died in Risör on October 26, 1937.</p>
-
-<p>O. Chr. Dahl, L. Molet</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p><strong>In Malagasy:</strong></p>
-
-<p><em>Ny tantaran’ny Fiangonana</em> [The History of the Church], Antananarivo, 1885.</p>
-
-<p><em>Ny teologia pastoraly</em> [Pastoral Theology], Antananarivo, 1885.</p>
-
-<p><em>Hevi-teny hanampy ny mpitoriteny</em> [Biblical Commentaries, for Pastors], Antananarivo, 1885.</p>
-
-<p><em>Nu epistola</em>. [The Epistles], Antananarivo, 1885.</p>
-
-<p><em>Ny homiletika</em>. [Homiletics], Antananarivo, 1888.</p>
-
-<p><em>Hevi-teny aminy Joela sy Jona ary Malakia</em> [Commentary on the Books of Joel, Jonah, and Malachi], Antananarivo, 1892.</p>
-
-<p><strong>In English:</strong></p>
-
-<p>Many articles in <em>Antananarivo Annual</em> from 1881 to 1888, especially on questions relating to the Malagasy language.</p>
-
-<p><strong>In Norwegian:</strong></p>
-
-<p><em>Nogle Tanker til Overveielse angaaende vor Missions gjerning</em> [Thoughts to Meditate on in Relation to Our Missionary Work], Kristiania, 1881.</p>
-
-<p><em>Folk og kirke paa Madagaskar</em> [People and Church in Madagascar], Kristiania, 1887.</p>
-
-<p><em>Vidnesbyrd fra det Norske Missionsselskabs Missionsgjerning</em> [Giving Witness: Accounts of the Missionary Work of the Norwegian Mission], Kristiania, 1887.</p>
-
-<p><em>Festskrift til Det Norske Missionsselskabs Jubilaeum</em> [Festschrift on the Fiftieth Anniversary of the NMS] (A history of the first fifty years), Stavanger, 1892.</p>
-
-<p><em>Sydmadagaskar</em>. [The south of Madagascar]. Minneapolis, Minnesota, 1893.</p>
-
-<p><em>Missionslaere</em>. [Missiology]. Kristiania, 1899.</p>
-
-<hr />
-
-<p>The above article, reprinted here by permission, is from <em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em> (People and Destinies: An Overseas Biographical Dictionary), vol. 3, published in 1977 by the Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Jorgensen, Simon Emmanuel`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -782,7 +691,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -821,6 +730,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

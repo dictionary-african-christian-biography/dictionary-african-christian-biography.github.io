@@ -607,63 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Henry Hughes Dobinson was an Anglican archdeacon of the Niger. Dobinson was born in a well-to-do family at Stanwix, near Carlisle, England, and educated at Repton School and Brasenose College, Oxford. He was noted more for sporting than for academic prowess. He was ordained by Bishop Lightfoot after attending the latter’s reading parties and served a curacy in Lightfoot’s Durham diocese. In 1890 he joined his vicar, F. N. Eden, in offering to serve with the Church Missionary Society in West Africa. Dobinson and several men of similar background were appointed to the hitherto African-staffed Niger Mission of Bishop S. A. Crowther. They represented a new type of missionary in Africa-upper class, well educated, confident, and possessing an eager spirituality stressing holiness and sacrifice. Dobinson shared in the events that led to Crowther’s humiliation and the dismissal of most of the African staff, but he stayed in the mission longer than any of his European colleagues and come to lament publicly his earlier attitudes and actions. Empathetic and irenic, he impressed on successive missionary bishops the importance of “more trust on God and more trust in the Africans.” He urged the recruitment of more African workers from Sierra Leone, valued the Niger Delta Pastorate, and fought for its continued independence from missionary society control. He worked principally from Onitsha, where he devoted himself to the Igbo language (translating or revising parts of the Bible and prayer book), developed medical and educational work, and expanded the mission among the Igbos west of the Niger. In 1893 he became secretary of the Niger Mission (though he loathed administration) and was later the archdeacon of the Niger under Bishop Tugwell. He died of fever in Onitsha at age 33.</p>
-
-<p>Andrew F. Walls</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Henry Hughes Dobson, <em>Letters of Henry Hughes Dobinson…with a Prefatory Memoir</em> (1899). Church Missionary Society, <em>Register of Missionaries</em> (1894 and 1904), no. 1137; P. E. H. Hair, <em>The Early Study of Nigerian Languages</em> (1967); G. O. M. Tasie, <em>Christian Missionary Enterprise in the Niger Delta, 1864-1918</em> (1978), esp. pp. 150ff.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Dobinson, Henry Hughes`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -742,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -781,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

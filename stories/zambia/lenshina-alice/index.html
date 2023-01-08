@@ -607,75 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Zambian independent church leader.</p>
-
-<p>She was raised a Presbyterian under the Church of Scotland mission.  After a vision in 1953 she began to organize a witchcraft eradication movement which swept through northeast Zambia (then Northern Rhodesia) and the central Copperbelt region.  In 1957 she claimed 50 000 adherents; by 1961, twice that number.  In 1963 she was excommunicated by the Presbyterians, so she organized the Lumpa Church.</p>
-
-<p>Lenshina’s movement took on a political orientation when her anarchist followers opposed Kenneth KAUNDA’s United National Independence Party, which came into power when Zambia became independent in 1964. The Lumpa adherents refused to pay taxes and fortified their villages to resist the government.  Kaunda’s government vigorously suppressed the movement, killing over 700 people and banning the church.  Many adherents fled into Zaïre.  Lenshina herself was arrested and placed in restriction, but was in and out of captivity over the next few years, being finally released in December 1975.  The Lumpa church has nevertheless remained strong as an underground movement.</p>
-
-<p>Mark R. Lipschutz and R. Kent Rasmussen</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Roberts, A.  “The Lumpa Church of Alice Lenshina.”  In <em>Protest and Power in Black Africa,</em> eds. R. I. Rotberg and A. A. Mazrui, 513-68. New York: Oxford University Press, 1970.</p>
-
-<p>Rotberg, Robert I.  “Religious Nationalism: the Lenshina Movement of Northern Rhodesia.”  <em>The Rhodes-Livingstone Journal 29</em> (June 1961): 63-78.</p>
-
-<p>Lehmann, Dorothea A.  “Alice Lenshina Mulenga and the Lumpa Church.”  In <em>Christians of the Copperbelt</em> by J. V. Taylor &amp; D. A. Lehmann, 248-68.  London: SCM Press, 1961.</p>
-
-<p>Grotpeter, John J.  <em>Historical Dictionary of Zambia.</em>  Metuchen: Scarecrow Press, 1979.</p>
-
-<p><em>Makers of Modern Africa: Profiles in History.</em>  London:  Africa Journal Ltd., 1981.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Dictionary of African Historical Biography</em>, 2nd edition, copyright © 1986, by Mark R. Lipschutz and R. Kent Rasmussen,  University of California Press, Berkeley and Los Angeles, California.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Lenshina Mulenga Mubisha, Alice (A)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -754,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -793,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

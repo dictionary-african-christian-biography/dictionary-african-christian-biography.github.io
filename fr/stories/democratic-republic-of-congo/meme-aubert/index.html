@@ -599,75 +599,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Aubert Meme est né en 1925 à Kintshwa-Nseke, territoire d’Idiofa, district du Kwilu dans la province de Bandundu, en République Démocratique du Congo. Son père s’appelait Denis Monger et sa mère Marie-Jeanne Bueleluo. Son vrai nom de famille est Monger Mvundu tandis que le surnom de Meme signifie “mouton”, parce qu’il était timide et humble.</p>
-
-<p>Lui et son épouse Aubertine Esankur Ntshidi ont eu huit enfants dont quatre garçons et quatre filles.</p>
-
-<p>Aubert Meme s’est converti dans une classe donnée par son instituteur de l’école primaire lors d’une leçon de religion sur l’appel de Samuel. Il s’est fait baptiser après sa conversion quelques mois plus tard.</p>
-
-<p>Après ses études primaires, puis pastorales à l’école biblique de Kafumba (CEFM), il devint pasteur et fut ordonné le 17 février 1959. Il œuvra dans la Congo Gospel Mission [Mission Evangélique au Congo]. Au départ des missionnaires occidentaux après l’indépendance en 1960, Aubert Meme fonda l’Eglise Baptiste Sur Kasai (EBSK) qu’il fusionna avec la Congo Gospel Mission (CGM) lors de sa renaissance après une période d’abandon d’activité en 1970. Il en devint le représentant légal suppléant avant d’être élu représentant légal titulaire une année plus tard, la fonction qu’il occupa jusqu’à sa retraite en 2005.</p>
-
-<p>Ayant une vision expansionniste de l’église, Meme a fondé quelques églises locales de la Communauté Evangélique au Congo, dans les provinces de Bandundu, des ainsi que dans la ville de Kinshasa Kasaï, du Shaba et dans la ville de Kinshasa. Il connut des hauts et des bas dans son ministère, surtout avec la dissolution de la Communauté Evangélique au Congo d’abord par le Ministre de la Justice et Garde des Sceaux en 1993 et ensuite par la Cour Suprême de Justice le 5 mai 2000. Après cette dissolution, la Communauté Evangélique au Congo va renaître sous le label de l’ECC/43è -  Communauté des Eglises Evangéliques au Congo, cf. l’Arrêté Ministériel n°825/CAB/MIN/J/2005 du 2 août 2005 accordant la personnalité juridique à cette ASBL Confessionnelle. C’est cette dernière qu’il légua aux générations futures.</p>
-
-<p>Il mourut le 2 janvier 2007 à Kinshasa des suites d’une crise de l’hypertension, après avoir béni ses enfants et chanté des cantiques qu’il admirait pendant son ministère. Meme est considéré comme le père de l’émergence du protestantisme au Bandundu. A sa mort, il laissa 23 petits-enfants et trois arrières petits-enfants.</p>
-
-<p>Pitsou Molekali</p>
-
-<hr />
-
-<p><strong>Sources</strong>:</p>
-
-<p>Aubertine Esankur Ntshidi… Esankur, interview, juin 2007. Esanku est la veuve de Meme.</p>
-
-<p>Meme Dingadie, interview, Kinshasa, juin 2007. Rév. Dr Meme Dingadie Monger est le troisième fils de Meme Aubert.</p>
-
-<hr />
-
-<p>Cet article, reçu en 2008, remis à jour en 2020, est le produit des recherches de Pitsou Molekali, étudiant en missiologie au Centre Universitaire de Missiologie à Kinshasa-R.D.Congo sous la direction du Rév. Fohle Lygunda, coordinateur francophone du DIBICA.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Meme, Aubert`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -748,7 +681,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -785,6 +718,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

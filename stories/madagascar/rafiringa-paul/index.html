@@ -607,65 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Malagasy leader of the Roman Catholic community in Madagascar.</p>
-
-<p>Rafiringa was born at Antananarivo into a family some of whose members adhered to traditional religion and some to the Reformed Church introduced by missionaries of the London Missionary Society (LMS). Rafiringa, however, attended one of the newly established Catholic schools and was baptized in the Catholic Church at the age of fourteen.  As Catholicism had been brought in 1861 by French Jesuits, it became unpopular as conflict between France and Madagascar intensified.  War broke out twice, from 1883 to 1885 and from 1894 to 1895, Catholic missionaries were driven out, and many new converts returned to Protestantism or to ancestor worship.  People who remained faithful Catholics were gathered into a Catholic Union, which Rafiringa headed.  During the first war he was a civil servant and a friend of some people at court and in government circles, but in spite of his connections and family duties he showed great zeal and dedication, traveling every weekend outside the capital to exhort Catholic communities, comfort the sick and destitute, organize religious services, and preach and lecture on the vocation of the laity.  Among his co-workers, one of the most outstanding was Victoire Rasoamanarivo.  Rafiringa wrote a report on the activities of the Catholic Union to Leo XIII and a letter to their bishop, Caset, asking for non-French priests to celebrate Mass.  His activities continued when the clergy left again at the outbreak of the second war, during which he wrote a 900-page diary.  This Malagasy manuscript is a valuable document on the history of the society and church when the country was about to lose its independence.</p>
-
-<p>Yvette Ranjeva Rabetafika</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Pietro Lupo, “L’Église confiée aux laïcs, d’après l’histoire-journal de Paul Rafiringa” (Ph.D. diss. the Sorbonne, 1980). See also Bruno Hubsch, ed., <em>Madagascar et le Christianisme</em> (1993).  Rafiringa’s letters and reports are kept in the archives of the Malagasy Catholic Church at Andohalo, Antananarivo.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Rafaringa, Paul`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -744,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -783,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

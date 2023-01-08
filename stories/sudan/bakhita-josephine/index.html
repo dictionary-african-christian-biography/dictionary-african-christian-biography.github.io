@@ -607,71 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Saint Josephine Margaret Fortunata Bakhita, Canossian Sister, was born at Olgossa in Darfur (Sudan), a member of the ancient Dargiu tribe, one of a family of three brothers and three sisters. When Bakhita was six years old, her eldest sister was kidnapped by slavers, and three years later she herself was captured and given the name “Bakhita” by her captors, meaning “the lucky one.” After a month long imprisonment she was sold at a local slave market. An attempt at escape ended in another capture and her sale to the Chief of El Obeid. The latter re-sold her to a Turkish general who was quartered in Kordofan. In this household she was very cruelly treated and scarcely a day passed without her receiving corporal punishment. At length, she was taken to Khartoum where she was ransomed by the Italian consul, Callisto Legnani.</p>
-
-<p>Bakhita accompanied Legnani to Port Sudan, where they set sail for Italy. At Genoa, the consul left Bakhita in the care of  the Micheli family who owned a hotel in Port Sudan and who intended to take Bahkita back there with them. Before leaving for Africa, Bakhita was placed with Mimmina Micheli at a boarding school run by the Canossian Sisters in Venice. Here she joined the catechumenate and underwent a profound conversion to Christianity. Nine months later, in November 1889, Mrs. Maria Turina Micheli returned to Venice to take the girls back with her to Africa. Being a Russian Orthodox Christian, Maria Micheli had no interest in Bakhita’s desire for baptism in the Catholic Church and her daughter Mimmina was already baptized. Not surprisingly, Bakhita refused to return to the Sudan with the Micheli family. After the intervention of the Cardinal Patriarch of Venice, Domenico Agostini and representatives of  the government, it was made clear to Maria Micheli that Bakhita’s days of slavery were over and she could not be forced back to Port Sudan against her will. On January 9, 1890 Bakhita was baptized and confirmed by Cardinal Agostini, receiving the names Josephine Margaret Fortunata.</p>
-
-<p>Bakhita remained in the Sisters’ catechumenate at Venice for another four years, during which she felt the urge to consecrate her life to God as a religious sister. She applied to the Superior of the Canossian Sisters in Verona and joined their novitiate in Venice in 1893. After examination by Cardinal Giuseppe Sarto, the future Pope Saint Pius X, she was allowed to take her vows of religion in December 1896. In 1902 she was appointed to the Canossian Sisters convent in Schio in northern Italy, in the foothills of the Alps. There she remained for the remainder of her life, employed in humble tasks in kitchen, sacristy and needlework class, and acquiring a reputation for great holiness. During World War I, the convent at Schio became a military hospital and Sister Josephine helped to care for the wounded soldiers. During World War II, the people of Schio looked on Sister Josephine as their particular saint who would safeguard the town from danger. An endless stream of people came to see her and to hear her story from her own lips. In 1943 she celebrated her golden jubilee of  religious life.</p>
-
-<p>In her old age Sister Josephine’s health began to decline, but she bore her sufferings with great fortitude. She died at the age of 78 and was beatified by Pope John Paul II on May 17, 1992. On October 1, 2000, the same Pope declared her a canonized saint, the highest honour possible for a Catholic.</p>
-
-<p>Aylward Shorter M.Afr.</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Maria Luisa Dagnino,  <em>Bakhita Tells Her Story</em> (Verona: Institute of Canossian Daughters of Charity, no date).</p>
-
-<p>Daughters of Saint Paul, <em>Bakhita: From Slavery to Sanctity</em> (Nairobi, Paulines Publications Africa,  1993).</p>
-
-<hr />
-
-<p>This article, submitted in 2003, was researched and written by Dr. Aylward Shorter M.Afr., Emeritus Principal of Tangaza College Nairobi, Catholic University of Eastern Africa.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Bakhita, Josephine (A)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -750,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -789,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

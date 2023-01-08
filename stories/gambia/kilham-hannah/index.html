@@ -601,63 +601,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Hannah Spurr Kilham was an English Quaker missionary educator and linguist in West Africa. Hannah Spurr was born in Sheffield in a working-class family and brought up as a devout Anglican. Well educated for her time and gender, she showed independence of mind and in 1794 became a Methodist. In 1798 she married a widower, Alexander Kilham, leader of the breakaway Methodist New Connexion. He died eight months later, leaving Hannah with a stepdaughter and expecting a child of her own. She settled in Nottingham, where her daughter was born and died in infancy. She supported herself and her stepdaughter by teaching. Returning to Sheffield, she joined a Quaker Meeting in 1803 and became involved in charitable work and in the antislavery movement. Her interests in West Africa and in education came together as she heard of early missionary work in Sierra Leone. Pondering the problems of teaching freed slave children, she advocated the use of vernacular languages. With help from her Quaker community, she sailed for the Gambia in 1823 with six companions, two of them Gambians, former slaves. In six months there and in Freetown, Sierra Leone, schools and agricultural projects were set up and she developed her knowledge of the vernaculars. Although her Quaker supporters felt she should have stayed longer, she left Africa and spent the next three years in London, still convinced of the value of her linguistic theories in educating “liberated Africans”. She returned privately to Sierra Leone at the end of 1827 in the company of some Church Missionary Society missionaries. She started a school for girls (continued by a gifted West Indian woman) but because of illness again left for England in February 1828. In October 1830 she was able to return to Sierra Leone and to establish, in Charlotte, a boarding school for recently liberated African girls. Despite difficulties the venture prospered, and early in 1832 she visited Monrovia, Liberia. She spent a profitable month there but died on the return journey to Freetown and was buried at sea. She spent less than two years in West Africa, but her legacy has endured.</p>
-
-<p>Jocelyn Murray</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Reports and pamphlets by Hannah Kilham include <em>Scripture Selections on the Principles of the Christian Religion</em> (1819), <em>Lessons on Language</em> (1818), <em>First Principles of the Christian Religion for Schools of Early Instruction</em> (1827), <em>Report on a Recent Visit to the Colony of Sierra Leone</em> (1828), <em>The Claims of West Africa to Christian Instruction through the Native Languages</em> (1828); all are in the Friends’ Library, Euston Square, London. Sarah (Kilham) Biller, <em>Memoir of the Late Hannah Kilham</em> (1837); Mora Dickson, <em>The Powerful Bond: Hannah Kilham, 1774-1832</em> (1980). See also Andrew Walls, “Alexander Kilham,” in <em>Some Personalities of Aberdeen Methodism, 1760-1970</em> (1973).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Kilham, Hannah Spurr`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -736,7 +681,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -775,6 +720,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

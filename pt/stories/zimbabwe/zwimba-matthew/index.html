@@ -606,71 +606,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Fundador da primeira igreja cristã independente entre os Shona.</p>
-
-<p>Ele era filho do chefe supremo, nomeado pelo governo, da reserva Zwimba no leste de Zimbábue, onde ele se tornou catequista da Sociedade Missionária Metodista Wesleiana. Estabeleceu a primeira escola da missão no seu distrito e trabalhou com entusiasmo entre os seus próprios parentes e amigos. No entanto, quando foi transferido para outro distrito, ele entrou em conflito com os seus supervisores. Finalmente ele foi demitido como professor em 1907.  Estava em constantes conflitos com as autoridades brancas até 1915, quando fundou a sua própria igreja, e fisicamente ocupou a estação metodista do seu próprio distrito. A sua Missão da Igreja Original do Pássaro Branco (Igreja Shiri Chena) incorporou as tradições cristãs e simbolismos Shona e foi a primeira de um grande número de igrejas independentes entre os Shona. Zwimba a partir de então foi persistentemente incomodado pelo governo branco, e tornou-se um líder porta-voz do povo na sua reserva.</p>
-
-<p>Mark R. Lipschutz e R. Kent Rasmussen</p>
-
-<hr />
-
-<h1 id="bibliografia">Bibliografia</h1>
-
-<p>Ranger, Terence O. <em>The African Voice in Southern Rhodesia</em>, 1898-1930. London: Heinemann, 1970.</p>
-
-<p>Barrett, David B. <em>Schism and Renewal in Africa</em>. Nairobi: Oxford University Press, 1968.</p>
-
-<p>——–. “Who’s Who of African Independent Church Leaders.” <em>Risk</em> (Geneva, W.C.C.) 7(3) (1971): 23-34.</p>
-
-<p>Rasmussen, R. Kent. <em>Historical Dictionary of Rhodesia/Zimbabwe</em>. Metuchen: Scarecrow Press, 1979.</p>
-
-<hr />
-
-<p>Este artigo foi reproduzido com a permissão do: <em>Dictionary of African Historical Biography</em>, segunda edição, copyright © 1986 por Mark R. Lipschutz and R. Kent Rasmussen, University of California Press, Berkeley e Los Angeles, Califórnia. Todos os direitos são reservados.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Zwimba, Matthew Chigaga`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Leia várias versões: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -753,7 +690,7 @@
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 14 December 2022.<br>&copy; 2022 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 02 January 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -788,6 +725,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

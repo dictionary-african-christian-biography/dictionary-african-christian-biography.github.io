@@ -607,69 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Marie Bertrou was born on November 4, 1857, in Vernon, in the department of the Eure, in France. She entered the Congregation of the Sisters of Charity in Arcueil, a suburb of Paris, after which she was sent to the Congregation’s administrative center, at the Rue du Bac address, in Paris. Because of her gifts as an educator, she was appointed as third directress of the seminary. In 1901, she was sent to St. Malo but she only stayed there for one year, as she had been approached about Madagascar.</p>
-
-<p>The Vicar Apostolic of Fort Dauphin, Monsignor Crouzet, had come to Paris to recruit nuns, as a seminary needed to be opened in order to train three young women who had dedicated themselves to missionary service. Marie Bertrou was chosen to do just that, and she arrived in Fort Dauphin on November 25, 1902. As the directress, she not only had to train the three postulants, but she also had to assume a great variety of functions in order to run the seminary, which was quite tiring. In 1904, rebellion broke out in the south and all Europeans were suddenly in danger. For several days, the nuns had to take refuge in the fort with the rest of the European colony.</p>
-
-<p>In 1905 Bertrou was named Visitor, which meant Superior of the Congregation of the Sisters of Charity in Madagascar. She was responsible for many different types of work: the parish sewing room, the schools, the boarding school, the education of children of mixed race, the catechism lessons for children in the bush, and so on.</p>
-
-<p>In 1931, after twenty-one years of work in Madagascar, she thought she should be relieved of her responsibilities, and she returned to her community in Paris. She died at the home headquarters of the community on November 30, 1933, at the age of seventy-seven. In recognition of the services she had rendered, she had received the Cross of the Legion of Honor before she left Madagascar.</p>
-
-<p>Raymond Delval</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>J. Baeteman, <em>Les Filles de la Charité en mission</em> [The Sisters of Charity on the Mission Field], G. Poussin, ed., Evreux, 1936.</p>
-
-<hr />
-
-<p>This article, reprinted here with permission, is from <em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em> [Men and Destinies : Overseas Bibliographical Dictionary], Vol. 3, published in 1977 by the Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Bertrou, Marie`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -748,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -787,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

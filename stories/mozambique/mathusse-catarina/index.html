@@ -607,77 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Pastor Catarina Mathusse found the Lord during the revivals of 1926 at Njataigwe. She became pastor of the Chitsombelane Church near Manjacaze on the Mavengane District. Her husband, Mr. Elias Mathusse, had been untrue to her.</p>
-
-<p>In 1952 at the Annual Women’s Meeting at Tavane she reported that one of their neighbors had continually quarreled with his wife. The court wanted to deport him to São Tomé in West Africa. Chief Zacaria interceded on his behalf however and said he did not want the man to be deported. He said rather, “We will send him to the Chitsombelane Church.” That man is now a good Christian in their congregation.[1]</p>
-
-<p>About 1960 there was a severe drought with accompanying famine. Catarina Mathusse planted a large garden of cassava that grows easily in the sandy soil watered by the dew even during drought. A lot of it was stolen but she did not search for the culprits. She knew they took it because they were hungry. After the rains finally came Chief Zacaria Chitsombelane, the chief of the area, called her one day. He thanked her because her garden had saved them. His own children had stolen from it.</p>
-
-<p>The Chief invited her to come to his homestead once a month on the day he brought instructions from the Administration. All the people would be gathered there and he wanted her to tell them about the God who had made her so different. He sent men with oxen to plow her fields. Soon the church was full, and through the years four young women and four young men went to train at Tavane Bible College from the congregation. She was the Nazarene World Mission Society Director for the district.</p>
-
-<p>Her husband was converted again and returned home. Their four children have continued to be active in the work of the church. Pastor Catarina Mathusse passed away victoriously in the Lord on 14 September 1997.[2]</p>
-
-<p>Paul S. Dayhoff</p>
-
-<hr />
-<p>Notes:</p>
-
-<ol>
-  <li>
-    <p>“Annual Women’s Meeting,” <em>Mutwalisi</em> (The Herald), Shangaan/Tsonga magazine of the Church of the Nazarene in Mozambique and South Africa, (Florida, Transvaal, South Africa: Nazarene Publishing House, September-October 1952), 14.</p>
-  </li>
-  <li>
-    <p>Oscar &amp; Marjorie Stockwell, <em>The Tribe of God: A Collection of Stories from African Christians,</em> (Kansas City, MO: Nazarene Publishing House, 1989), 40-41; Vicente Mbanze, letter (13 April 1995).</p>
-  </li>
-</ol>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Living Stones In Africa: Pioneers of the Church of the Nazarene,</em> revised edition, copyright © 1999, by Paul S. Dayhoff.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Mathusse, Catarina`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -756,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -795,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

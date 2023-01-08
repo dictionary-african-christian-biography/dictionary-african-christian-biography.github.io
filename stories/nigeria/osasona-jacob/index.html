@@ -607,85 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Jacob Osasona was born in the 1880s to <em>Owa</em> (meaning Oba or king) Inubiwon and <em>Olori</em> (the <em>Owa</em>’s wife) or queen Osarombi in Oke-Ako, Ondo State (now Ekiti State). Jacob’s father Inubiwon was the first to be recognized as <em>Owa</em> by the colonial masters at the time.  All the rulers before Inubiwon had not recognized as Obas, but rather as <em>Bale</em> (or village heads).</p>
-
-<p>Osasona’s father was one of the first converts to Islam in 1900. Therefore, as a matter of tradition, his son had to embrace Islam as well. When necessary, the Oba also performed traditional rites and sacrifices to satisfy the demands of Yoruba Traditional Religion.</p>
-
-<p>In 1914 Baptist evangelists, Joseph Olowoye and Daniel Amesa from Igede came to Oke-Ako on an evangelistic mission. Within a couple of months, they were able to plant a small church in Oke-Ako.  Quite surprisingly, Osasona, who was then a prince, was among those who gave their lives to Jesus Christ in 1915, during one of the revivals organized by Rev. Jemiriye at the palace.</p>
-
-<p>As destiny would have it, Osasona became the <em>Owa</em> of Oke-Ako forty-four years after accepting Christ, thereby becoming the first Christian Oba from the Afata royal family.  He ascended his father’s throne in 1959 and this served as an impetus to the entire royal family.  He attended church services even in the face of stiff opposition. He refused to be initiated into the <em>Ogboni</em> cult (a traditional secret society) as a pre-requisite to his installation.</p>
-
-<p>According to the available historical sources it was an admirable feat requiring immense courage for Osasona to abandon the Islamic faith and embrace Christianity. In spite of the consequences he stood his ground, holding firm to his chosen faith. He had no formal Western education, but all recognized him as a very wise king who was always determined to live according to his principles.</p>
-
-<p>Osasona was a successful farmer and one of the town’s richest people.  He had many wives and children but made sure that all his wives and children embraced Christianity.</p>
-
-<p>He strongly encouraged Christianity in the town and used his royal might to discourage secret cults, as well as sorcery and witchcraft. From that time on, traditional religion became unpopular in the town. Unlike many towns in Yorubaland, in Oke-Ako one can hardly find traditional practices such as <em>Egungun</em> (masquerades), <em>Odun Egungu</em> (masquerade annual festival) or the secret cults of <em>Ogboni</em> and <em>Oro</em> (this cult does not allow women to go out at night during their festivals).</p>
-
-<p>Jacob Osasona had a reputation for the ensuring justice, being firm and impartial. He was known as <em>Oba ko gberegbe</em> (the non compromising Oba).</p>
-
-<p>Socially and economically, Jacob Osasona raised the status of the town by initiating construction of the town’s post office and of a road linking Oke-Ako with the nearby town of Itapaji.</p>
-
-<p>Oba Jacob Osasona died in August 1964 and was given a Christian burial contrary to the usual traditional practice that enforced esoteric and exclusive burial rites for a king.</p>
-
-<p>Solomon Kayode Olajide</p>
-
-<hr />
-
-<p>Sources:</p>
-
-<p>Pa Abel Adeyeye, a close associate of the Oba and the royal family.</p>
-
-<p>Prince Solomon Eniola Osasona (72 years old).</p>
-
-<p>S. K. Olajide, “The Coming of Christianity to Oke-Ako” a B.A. essay submitted to Religious Department, University of Ibadan (1981).</p>
-
-<hr />
-
-<p>This article, received in 2009, was researched and written by Solomon Kayode Olajide at the University of Ibadan, Nigeria, under the supervision of Rev. Dr. Deji Ayegboyin, <em>DACB</em> liaison coordinator.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Osasona, Jacob`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -764,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -803,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

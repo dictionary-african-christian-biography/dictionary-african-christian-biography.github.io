@@ -607,89 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/uganda/mackay-alexanderm/mackay.jpg" alt="image" class="bio" /> A pioneer missionary in Uganda with the Church Missionary Society (CMS).</p>
-
-<p>Mackay was raised in Scotland in the Free Church and was educated at Aberdeen Grammar School and the University of Edinburgh before going to Berlin to gain experience in engineering. He applied to the CMS in 1875 after reading an appeal in the Edinburgh Review for missionaries for Uganda. Letters from the explorer, H. M. Stanley, claimed that King Mutesa of Buganda would welcome Christian missionaries. In 1876 Mackay was a member of the first CMS party that left for Uganda and was the only missionary to remain for any length of time.</p>
-
-<p>Mutesa feared the encroaching power of Egypt, and his first concern was to acquire European arms and engineering skills such as Mackay could offer. But he was also interested in religion. Arab traders from the East Mrican coast had already introduced Islam, and after partially adopting this faith, Mutesa had executed some two hundred Muslim converts for defying him in the name of Allah. Christianity, he thought, might provide a counterweight to Islam.</p>
-
-<p>Mackay quickly set up a printing press and printed reading sheets and portions of Scripture in Swahili, the coastal language introduced by the Arabs, using existing Scripture translations. But Mackay also spent time in repairing guns for Mutesa and in other tasks demanded of him.</p>
-
-<p>In 1879 Roman Catholic White Fathers arrived; Mackay’s Calvinistic upbringing led him into controversy with them in public at Mutesa’s court. He also debated with Muslims, who feared that his superior debating and technological skills were edging them out of their position of influence. Many young men in training at court for future high office were attracted to Christianity by Mackay’s passionate dedication.</p>
-
-<p>From 1885 to 1887 Mutesa’s successor, Mwanga, turned against the Christians at court for the same reason that Mutesa had earlier turned against the Muslims for questioning his authority in the name of a higher power. The names of fifty Protestant and Catholic martyrs are known, and others perished too. During this dangerous time Mackay was the only missionary in the country, the White Fathers having temporarily retreated south of Lake Victoria. He thus ensured the continuance of the CMS in Uganda.</p>
-
-<p>In 1888 a Muslim coup forced both missionaries and converts to flee, and Mackay died suddenly from malaria at Nassa, in what is now Tanzania. In 1927 his body was reinterred outside Namirembe Cathedral, Kampala.</p>
-
-<p>M. Louise Pirouet</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>The CMS <em>Church Missionary Intelligencer</em> carried extensive reports on Uganda, often reprinting missionaries’ letters in toto. The most important sources for Mackay’s life are J. W. Harrison [Mackay’s sister], <em>A. M. Mackay: Pioneer Missionary of the Church Missionary Society to Uganda</em> (1890) and <em>The Story of Mackay of Uganda, Pioneer Missionary</em> (1989). R. P. Ashe was a contemporary of Mackay, and his <em>Two Kings of Uganda</em> (1889) is a useful source. For important aspects of the martyrdoms, see J. F. Faupel, <em>African Holocaust</em> (1962) and J. A. Rowe, “The Purge of Christians at Mwanga’s Court,” <em>Journal of Religion in Africa</em> 5, 1 (1964), pp. 55-72.</p>
-
-<p><strong>Photo source:</strong><em>Harrison, J. W. *The Story of the Life of Mackay of Uganda.</em> London: Hodder and Stoughton, 1906.</p>
-
-<p>Melrose, Andrew. <em>Alexander Mackay, Missionary Hero of Uganda.</em> London: The Sunday School Union, 1893.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
-
-<hr />
-
-<h1 id="photo-gallery">Photo Gallery</h1>
-
-<p><img src="/images/bio-pics/uganda/mackay-alexanderm/mackay-cart.jpg" alt="image" class="bio" /></p>
-
-<p><img src="/images/bio-pics/uganda/mackay-alexanderm/mackay-capital-of-uganda.jpg" alt="image" class="bio" /></p>
-
-<p><img src="/images/bio-pics/uganda/mackay-alexanderm/mackay-mtesa.jpg" alt="image" class="bio" /></p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Mackay, Alexander M. (A)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -768,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -807,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

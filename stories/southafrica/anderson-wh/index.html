@@ -607,65 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Pioneer missionary to Africa, 1895-1944.  He was born in Mexico, Indiana.  Harry Anderson, as he was affectionately known to his friends, graduated in 1895 from Battle Creek College, where he was converted.  At the school he took a prominent part in the formation of the first student foreign mission band, and from early youth felt a strong pull toward the mission field.</p>
-
-<p>In 1895, several months before his graduation (in absentia), he joined G. B. Tripp and Dr. A. S. Carmichael to form the party of missionaries who operated the first permanend Seventh-day Adventist mission for the people of Africa  Before leaving the homeland, Anderson was married to Nora Haysmer.  Arriving in South Africa, the party proceeded by train to Mafeking, and then spent six weeks traveling by ox wagon (the railroad had not yet been built) to the site of the Solusi Mission, near Bulawayo, Southern Rhodesia.</p>
-
-<p>The Andersons, with the other workers at Solusi, had trying experiences.  During the Matabele rebellion the following year, they spent several months in Bulawayo.  In 1898 they watched several of their group die of malaria and others leave the country.  A second larger party was likewise stricken, and in 1901 the Andersons were the only workers left at Solusi.</p>
-
-<p>In 1919 Anderson began pioneer work among the Bechuanas, through whose country he had passed nearly twenty-five years before en route to Solusi.  In 1922 he opened work in Angola, and during the next eight years he established several mission stations.</p>
-
-<p>His last fifteen years in Africa were spent as a memeber of the Africa Division (and later of the Southern African Division) staff, locating new mission stations, visiting camp meetings, holding institutes, and giving advice to new missionary recruits.</p>
-
-<p>In 1944 Anderson took part in the Golden Jubilee celebrations at Solusi Mission, driving an ox wagon onto the very groungd on which he had first begun mission work nearly fifty years before.  The following year he returned to the United States, having served for fifty years in Africa.  Anderson’s book, <em>On the Trail of Livingstone</em> (1919), did much to stimulate interest in African missions.</p>
-
-<hr />
-
-<p>This article is reprinted with permission from the <em>Seventh-Day Adventist Encyclopedia</em>, copyright © by Review and Herald Publishing Association, 55 West Oak Ridge Drive, Hagerstown, Maryland 21740, 800-765-6955.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Anderson, William Harrison (A)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -744,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -783,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

@@ -607,63 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Landon N. Cheek was an African American Baptist missionary to Malawi. Born in Canton, Mississippi, Cheek was the son of a former slave and Baptist minister; his mother was a Cherokee Native American. He migrated to Bridgeton, Missouri, where he pastored Bridgeton Baptist Church while working as a letter carrier. At the age of 28 he volunteered to the National Baptist Convention to go to Africa as a missionary and eventually arrived in Malawi in 1901. He assisted John Chilembwe, founder and head of the Providence Industrial Mission (PIM) in Malawi, who later led an uprising against the colonial government. Shortly after arriving, Cheek married Rachel Chilembwe, niece of John Chilembwe, and they had three children during Cheek’s term of service. Cheek and fellow missionary Emma B. Delaney set up an industrial-based education curriculum for the PIM more than 20 years before it was recommended by the Phelps Stokes Commission as the best educational method for Africa. Colonial pressure, lack of financial support, and health problems led Cheek to return to the United States in 1906. During the next 50 years he served various as pastor, raised funds for foreign missions, and preached a positive message about his missionary experience.</p>
-
-<p>Rodney H. Orr</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Landon N. Cheek, “Reminiscences of a Missionary,” <em>Mission Herald</em> 43 (March-April 1939): 15, (May-June 1939); 16-17, and 44 (September-October 1940): 17-18, and “Adventures of a St. Louis Missionary in Darkest Africa,” <em>St. Louis Globe Democrat</em>, July 12, 1908. George Shepperson and Thomas Price, <em>Independent Africa</em> (1958).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Cheek, Landon Napoleon`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -742,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -781,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

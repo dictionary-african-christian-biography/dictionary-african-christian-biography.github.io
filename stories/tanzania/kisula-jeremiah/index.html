@@ -607,91 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Jeremiah Mahalu Kisula was the first bishop of the Africa Inland Church of Tanzania. He was born at Sima, Kitongo-Magu Mwanza in Tanzania, a Msukuma by tribe and belonging to the Bagolo clan.  His family name was Kisula Mahalu and his nickname Mlindajulya.  His father’s name was Kisula and his mother’s name was Luli.  He dreamed of being a medicine man and a traditional dance leader.  His education only went as far as the fourth grade but he spoke Kisukuma, Kiswahili, English, Kikerewe, and Kijita.</p>
-
-<p>He accepted Christ on August 20, 1920 at Lugeye, Sima Mwanza in an AICT church under Paulo Masalu, a teacher.  He was baptized on May 21, 1921 at Kijima Nera (Kwimba) by Rev. H. H. Zemmer, an Africa Inland missionary.  He became a local unordained pastor (<em>Nangi</em>) in 1923 after two months of Bible training.  He was assigned to the Bushini local church as an unordained pastor from November to December 1923 when he left the ministry because of his wife’s health and living conditions in the area.</p>
-
-<p>He and his wife, Kahabi, had seven children:  Salome, Mathias, Samson, Jairus, Anna, Joyce, Eva, Joshua, and Adellah.  They also had thirteen grandchildren:  Charles, Agnes, Monicah, Sama, Stanley, Annet, Paul, Leah, Georgia, Lilian, Savonarora, Jane, and Grace.</p>
-
-<p>He left the ministry to seek secular work with more pay on January 7, 1924 after his transfer request was denied by the missionaries.  That same month he left for Tabora to seek clerical employment with the British Government, but he was not competent enough in English for the job.  He then left for Tanga to join sisal plantation workers for a wage of 24.00 shillings per month.</p>
-
-<p>After two years he came to his senses and remembered his call to the ministry.  In December 1926 he left Tanga to return to Mwanza, arriving later that year, tired and sick.  After recovering he began preaching without consulting the church leaders and eventually his flourishing ministry attracted their attention and they came to see what was happening.  He was officially re-installed into the ministry on November 15, 1927.</p>
-
-<p>He ministered in Bushini-Nera, Kwimba from August to November of 1923, in Chabula from November 1927 to 1932 and in Hamuyebe-Ukerewe starting in 1932.  Then, in September of 1936, he took a pastor’s ordination course until June 30, 1938.  That same year, he was elected secretary of the church synod and was ordained on January 8 of the following year at Kazilankanda-Ukerewe.   On November 23, 1938 he was sent to Kitengule-Mwibara where he began his ministry as an ordained minister and remained there until 1955.</p>
-
-<p>From 1941 to 42 he was Vice-Chairman of the church synod and was elected Chairman the following year.  He was re-elected Chairman of the synod in 1947 and 1948.</p>
-
-<p>From January 12, 1955 to November 14, 1957 he worked in Bukongo-Ukerewe and then was transferred to Kijuka-Sengerema, Mwanza.  On August 11, 1960, he moved to  Kasamwa-Geita, Mwanza to become the first African Director of the Africa Inland Church of Tanzania.  On September 25, 1965, in his capacity as Director, he moved to the church headquarters at Mwanza.</p>
-
-<p>He is remembered for his church planting and good leadership in the church as a whole.  He visited his churches extensively and prayed for the sick.  His book <em>Chunguzeni Maandiko</em> (“Search the Scriptures”) was published.  He was known to people like Pastor Thomas Yegela of Mwanza (deceased), and Batholomew Ihema of Nassa.</p>
-
-<p>Some of his ministry is described in the booklet, <em>The Short History of the AICT Church</em> published in 1977 by Inland Publishers, Mwanza, and edited by Bishop Samwel Magessa of the Mwanza diocese who died in January of 2000.</p>
-
-<p>Bela B. Kalumbete</p>
-
-<hr />
-
-<p>Sources:</p>
-
-<p>Kisula’s unpublished biography “Maisha Yangu,” (“The Life of Jeremiah Kisula”), Mwanza, 1975.</p>
-
-<p><em>Muhtasari wa Historia ya Kanisa,</em> (A Short History of the AICT Church), edited by Bishop Samwel Magessa (Mwanza: Inland Publishers, 1977).</p>
-
-<p>Masanagulilo, Anna, interview by the author, November 2000, Mwanza, Tanzania.</p>
-
-<p>Masanagulilo, Mathew, interview by the author, November 2000, Mwanza, Tanzania.</p>
-
-<p>Nyagwaswa, Leah, interview by the author, November 2000, Mwanza, Tanzania.</p>
-
-<p>Additional reading: Kisula, Jeremiah, *Chunguzeni Maandiko * (“Search the Scriptures”).</p>
-
-<hr />
-
-<p>This article was researched and written by Bela B. Kalumbete, a Project Luke Fellow associated with the Africa Inland Church, Tanzania.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Kisula, Jeremiah Mahalu`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -770,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -809,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

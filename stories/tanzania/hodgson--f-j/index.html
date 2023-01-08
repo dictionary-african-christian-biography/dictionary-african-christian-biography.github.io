@@ -601,85 +601,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Francis Roger (1853 – April 4, 1920) and Jessie Hodgson (1853–1933) were British Anglican missionaries and Bible translators in Zanzibar (1876–1888) and Francis was a parish priest in Devon, England.</p>
-
-<p>Francis’s childhood was in the village of Warton, Fylde, in Lancashire, England. His father Reverend Richard Hodgson (1828–1895) served as the Curate of Warton, Lancashire, and baptized Francis as an infant in January 1854. His mother Caroline (1828–1889) later gave birth to another son, Charles Herbert Hodgson.</p>
-
-<p>The Anglican church appointed Hodgson as Archdeacon of Zanzibar (1882–1889), with Hodgson taking over both mission compound oversight and Bible translation work from Bishop Edward Steere. Their gradual church growth came from caring for slaves, refugees, and the marginalized. Christianity in Zanzibar started as a religion for slaves.</p>
-
-<p>Before Steere’s death in 1882, he and Hodgson completed the New Testament in 1880 and a revised New Testament in 1882. Steere had also begun work on the books of Isaiah, Kings, and Genesis. The British and Foreign Bible Society printed their book of Genesis in 1884. With the assistance of his wife Jessie, Hodgson translated the first Old Testament into southern Swahili in Roman script. The Zanzibar dialect, Kiunguja, grew in popularity to become standardized written Swahili.</p>
-
-<p>In 1886, Jessie gave birth to their only son, Richard. In 1888, mission records indicate that Jessie was “Invalided.” In 1889, Francis completed the Old Testament, and they took the long journey back to England via the Suez Canal. In 1895, Richard died. Later that year, the British and Foreign Bible Society published their translation of the Old Testament from their London print shop. This translation became a helpful reference to George Pilkington as he translated the Lugandan Bible in the 1890s.</p>
-
-<p>JD</p>
-
-<hr />
-
-<p><strong>References:</strong></p>
-
-<p>Hampsted Death Records 1920 <a href="https://www.findmypast.co.uk/transcript?id=BMD/D/1920/4/AZ/000418/079">https://www.findmypast.co.uk/transcript?id=BMD/D/1920/4/AZ/000418/079</a></p>
-
-<p>The Hodgsons of Sherborne, 1881-1922.retrieved at <a href="http://oldshirburnian.org.uk/wp-content/uploads/2014/02/Hodgsons-of-Sherborne-by-Michael-Hanson.pdf">http://oldshirburnian.org.uk/wp-content/uploads/2014/02/Hodgsons-of-Sherborne-by-Michael-Hanson.pdf</a></p>
-
-<p>Biblical translations of early missionaries in east and central Africa. (Part I. Translations into Swahili) by Viera Pawlikova-Vilhanova Retrievable from <a href="https://www.researchgate.net/publication/274513058_Biblical_Translations_of_Early_Missionaries_in_East_and_Central_Africa_I_Translations_into_Swahili">Biblical Translations of Early Missionaries in East and Central Africa- I Translations into Swahili</a></p>
-
-<p>HODGSON, Francis Roger; STEERE, Edward (February 26, 1884). “Mwanza. Kitabu cha kwanza cha Musa.” [Genesis translated into Swahili by Edward Steere ; edited by F.R. Hodgson”.] B. &amp; F.B.S. – via Open WorldCat.</p>
-
-<p>Death record of Jessie Hodgson <a href="https://www.findmypast.co.uk/transcript?id=BMD/D/1933/1/AZ/000578/038">https://www.findmypast.co.uk/transcript?id=BMD/D/1933/1/AZ/000578/038</a> Her age and location match that of Francis’ probate records <a href="https://www.findmypast.co.uk/transcript?id=GBOR/GWR/00387557">https://www.findmypast.co.uk/transcript?id=GBOR/GWR/00387557</a></p>
-
-<p>Historical Catalogue of the British and Foreign Bible Society, under “Southern Swahili”
-The Standard (newspaper), London 07 Mar 1895, retrievable from <a href="https://www.newspapers.com">https://www.newspapers.com</a></p>
-
-<p>The History of the Universities’ Mission to Central Africa 1859-1898, 2nd edn. A.E.M. Anderson-Morshead, pg 479, retrievable from <a href="https://missiology.org.uk/book_universities-mission-central-africa.php">https://missiology.org.uk/book_universities-mission-central-africa.php</a>
-<a href="https://www.findmypast.co.uk/transcript?id=R_873388878">https://www.findmypast.co.uk/transcript?id=R_873388878</a></p>
-
-<hr />
-
-<p>This information on Bible translators, received in 2019, was compiled by Rev. J.D. in the process of attempting to make digital scans of these Bibles available for missional and historical purposes.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Hodgson, Francis and Jessie`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -758,7 +681,7 @@ The Standard (newspaper), London 07 Mar 1895, retrievable from <a href="https://
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -797,6 +720,6 @@ The Standard (newspaper), London 07 Mar 1895, retrievable from <a href="https://
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

@@ -601,63 +601,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Stanley George Browne was a missionary doctor and leprologist in Congo. Browne was born in southeast London, the second son of devout Baptist parents. Despite limited early education, he won a scholarship to King’s College, London, where he studied medicine and theology. After graduating as a surgeon in 1936, he went with the Baptist Missionary Society (BMS) to the Belgian Congo (Zaire). He was posted to Yakusu hospital (near modern Kisangani). There he inherited Clement Chesterman’s emphasis on a community health program of preventive medicine, conducted in close cooperation with the colonial government. When a leprosy census revealed that up to half the population was infected with leprosy, Browne opened a leprosarium across the Congo river at Yalisombo. Progress was slow until the late 1940s, when a new drug, dapsone, became available for systematic use in the community health program. By the early 1950s, Browne’s work at Yakusu had attracted international acclaim. However, disagreements with missionary colleagues over medical policy led eventually to his resignation from the BMS in 1959. He then succeeded Dr. Frank Davey as senior leprologist at Uzuakoli in Nigeria, working for the Nigerian government. From 1966 to 1978 he served as director of the Leprosy Study Center in London and as medical consultant to the Leprosy Mission.</p>
-
-<p>Brian Stanley</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>As well as publishing numerous medical papers, Browne was joint editor of <em>Heralds of Truth: The Saga of Christian Medical Initiatives</em> (1985). Sylvia and Peter Duncan, <em>Bonganga: Experiences of a Missionary Doctor</em> (1958); Brian Stanley, <em>The History of the the Baptist Missionary Society</em>, 1792-1992 (1992); Phyllis Thompon, <em>Mister Leprosy</em> (1980).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Browne, Stanley George`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -736,7 +681,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -775,6 +720,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

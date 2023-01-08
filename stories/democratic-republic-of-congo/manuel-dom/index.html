@@ -611,83 +611,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/demrepcongo/manuel-dom/manuel_dom.jpg" alt="Baptism of Manuel Dom." class="bio" /></p>
-
-<p>Dom Manuel (circa 1430-1510), the Mani Soyo (ruler of Soyo), was one of the first officials in the kingdom of Kongo who sought to understand and exploit the novel technological and spiritual powers introduced by the Portuguese after 1482.</p>
-
-<p>Along with Nsundi, Mbata, Mbamba, Mpungu, and Mpembe, Soyo was one of the six provinces in the kingdom of Kongo. Soyo, however, claimed to be the most important province because it was located on the coast and because Mpinda at the mouth of the Zaire River was Kongo’s main harbor. After the Portuguese explorer Diogo Cao arrived in 1484, this pre-eminence increased since all European traffic passed through the Mani Soyo’s domain.</p>
-
-<p>Very little is known about the personality of the Mani Soyo, who eventually took Dom Manuel as his Christian name. When Diogo Cao landed, he was already an old man. His enormous political prestige was evident from the first, since the Mani Kongo (ruler of the Kongo) Nzinga Nkuwu referred to him as “uncle.” Rather than expressing actual blood ties, the title “uncle” indicated a political relationship that obligated the Mani Kongo to give respect and deference to the Mani Soyo.</p>
-
-<p>Since he lived near the harbor on the Zaire River, the Mani Soyo was the first high-ranking Kongo dignitary to receive envoys from King Joao II of Portugal (reigned 1481-95). Like Mani Kongo Nzinga, he was greatly impressed by the wonders of European technology and by Christianity, which he believed was the supernatural force energizing this powerful new culture. The Mani Soyo attempted to compete with his superior, the Mani Kongo, for control of Portuguese knowledge and spiritual strength. So eager was the Mani Soyo that when a group of masons, carpenters, and missionaries requested by Nzinga, landed at Mpinda on March 29, 1491, he detained the delegation and demanded to be baptized immediately. Pleading that his advanced age made it unlikely that he could live much longer, and pretending that the Mani Kongo had granted his approval, the Mani Soyo accomplished his goal and was baptized on April 3, 1491.</p>
-
-<p>Because his baptism preceded that of Mani Kongo Nzinga, the Mani Soyo hoped to gain an advantage with the Portuguese. His choice of Dom Manuel as his new Christian name reflected his belief that two people bearing the same name were unified in a particularly intimate relationship. By selecting the name of the prince heir to the throne of Portugal, Dom Manuel, the Mani Soyo obliged the Mani Kongo and his wife to take the names of Joao and Eleanor, the Portuguese royal couple who were old and would soon be replaced by the crown prince.</p>
-
-<p>Both the Mani Soyo, Dom Manuel, and the Mani Kongo regarded baptism as an esoteric rite conferring special magical powers on the recipient. Thus, neither ruler wanted other notables to be baptized. Although Mani Kongo Nzinga abandoned his Christian religion, Dom Manuel remained faithful.</p>
-
-<p>In the 1506 succession wars between Nzinga’s sons, the Christian Mvemba Nzinga, also known as Afonso I, and the traditionally oriented Mpanzu a Nzinga, Mani Soyo Dom Manuel strongly supported Afonso, who eventually won and became a “Christian Prince.”</p>
-
-<p>Ndaywel è Nziem</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>G. Balandier, <em>La vie quotidienne au royaume du Congo, du XVIème au XVIIIème siècles</em>, Paris, 1965, English translation by Helen Weaver published as <em>Daily Life in the Kingdom of the Kongo From the Sixteenth to the Eighteenth Century</em>, New York, 1968.</p>
-
-<p>J. Cuvelier, <em>L ‘ancien royaume du Congo</em> (“The Old Kingdom of Kongo”), Brussels, 1946.</p>
-
-<p>W.G.L. Randles, <em>L ‘ancien royaume du Kongo, des origines  à  la fin du XIXème siècle</em> (“The Ancient Kingdom from its Origins to the End of the 19th Century”), Paris, 1968.</p>
-
-<p>Makamu Ngangula, “Les rois de l’ancien royaume du Kongo des origines à 1718” (“The Kings of the Old Kongo Kingdom from its Origins to 1718”), unpublished thesis, University of Zaire, Lubumbashi.</p>
-
-<hr />
-
-<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (In 20 Volumes). Volume Two: Sierra Leone-Zaire. Ed. L. H. Ofosu-Appiah. New York: Reference Publications Inc., 1979.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Manuel (Dom)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -766,7 +691,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -805,6 +730,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

@@ -607,57 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Of the Church Missionary Society. He arrived in Uganda in 1894, and was sent to Kabarole, Toro to join the Rev. A. B. Fisher in 1896. In 1897 he visited Kampala and was detained there by the Sudanese Mutiny and by illness. He returned to Toro in 1898 and was shortly afterwards sent on leave for health reasons. He travelled by the Congo route, and published an account of his journeys in a book <em>In Dwarf Land and Cannibal Country</em> (London, 1896). His unflattering account of Belgian rule drew angry comments. On his return he went to Bunyoro, and in 1903 undertook a safari to Acoli, messengers from Rwot (chief) Awic of Payira having asked for teachers. In 1904 he opened the mission at Keyo, Acoli. The following year he left for England, this time travelling by the Nile route. His experiences in Acoli, Bunyoro and on this journey are recounted in <em>Uganda to Khartoum * (London, 1906). On his return he was posted to Hoima where he remained until 1910. He was ordained deacon and priest in 1909. From 1910 he worked in Toro. He was appointed rural dean of Toro in 1916, archdeacon of Western Uganda in 1922, and bishop’s commissary for the newly established Diocese of the Upper Nile in 1926. From 1926-30 he was on the home deputation staff of CMS, and from 1930 until his retirement in 1933, he was vicar of Combe Down. He wrote three books about Apolo Kivebulaya: *Apolo of the Pigmy Forest</em> (CMS 1923), <em>More about Apolo</em> (CMS 1928), and <em>Apolo the Pathfinder – Who Follows?</em> (CMS 1934). Unfortunately these were high-coloured and inaccurate, but they served to keep Apolo’s memory alive.</p>
-
-<p><strong>Louise Pirouet</strong></p>
-
-<hr />
-
-<p>This article, used by permission, was written by Louise Pirouet, as part of <a href="../pirouet-foreword/"><em>A Dictionary of Christianity in Uganda</em></a> (Department of Religious Studies, Makerere University College, 1969), p. 36. Copies available at Africana Section, Makerere University Library (AF Q 276.761 MAK and AR/MAK/99/1); Bishop Tucker Library, Uganda Christian University and in UK at the University of Birmingham; Crowther Centre Library, CMS Oxford and Louise Pirouet Papers, Cambridge Centre of African Studies.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Lloyd, Albert Bushnell`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -736,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -775,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

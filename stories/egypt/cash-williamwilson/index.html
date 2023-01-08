@@ -607,63 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>William Wilson Cash was a missionary, mission administrator and Anglican bishop. Born near Manchester, England, Cash served as a missionary in Egypt under the Egypt General Mission from 1901 to 1909. In 1909 he was accepted by the Church Missionary Society (CMS) and was ordained deacon in 1910 and a priest in 1911. He continued to serve in Egypt until 1915 but then spent four years in the British army. He became the CMS Middle East secretary in 1920 and was named home secretary. This followed a time of theological controversy that had led to a division within CMS and the founding of the more conservative Bible Churchmen’s Missionary Society in 1922. Having inherited this legacy of controversy, Cash, in the years that followed, restored the confidence of many conservative evangelicals while maintaining the role of CMS as a church society and not a parachurch agency. In 1928 he participated in the meeting of the International Missionary Conference in Jerusalem. When he became bishop of Worcester in 1941, he left the society in good heart and financially solvent. He wrote several books on relations with Islam; he also introduced the <em>CMS Newsletter</em>, carried on to such effect by his successor, Max Warren. He was the first CMS general secretary to have served as an overseas missionary.</p>
-
-<p>Jocelyn Murray</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>W. William Cash, <em>The Muslim World in Revolution</em> (1925) and <em>The Missionary Church</em> (1939). Gordon Hewitt, <em>The Problems of Success: A History of the Church Mission Society, 1910-1942</em>, vol. 1 (1971); Max Warren, <em>Crowded Canvas, Some Experiences of a Lifetime</em> (1974).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Cash, William Wilson`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -742,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -781,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

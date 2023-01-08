@@ -607,73 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>First Malagasy beatified by the Roman Catholic Church.</p>
-
-<p>Rasoamanarivo was born into the wealthiest and most powerful family of Madagascar. Entering the first Catholic girls’ school in 1861, she became so attached to the nuns that she resisted her family attempts to transfer her to a Protestant school. Victoire was the name given to her on her christening in 1863. She continued her school even after her marriage in 1864 to a cousin in compliance with family tradition. The union was unhappy because of the divergent interests of the couple. Victoire was absorbed in religion, going out at dawn to attend daily Mass, heading a Catholic women’s association, and practicing charity. She consented, however, to remain within the court circle, whose frivolous tastes were more suited to her husband. Her courage was remarkable during the Franco-Malagasy War of 1883-1885, when Malagasy Catholics had to fend for themselves because of the departure of the French missionary priests. The latter entrusted her with the protection of the church, knowing her piety and privileged position as the niece and daughter-in-law of the prime minister, who was a Protestant. Thanks to her support, the Catholic Union headed by Paul Rafiringa succeeded in safeguarding the church, and she was heralded as its guardian by the Catholic missionaries on their return. Despite illness she devoted the rest of her life to active charity. Her body now rests in a chapel in front of the Catholic cathedral in Antananarivo. Her beatification was announced by John Paul II in Madagascar on April 30, 1989.</p>
-
-<p>Yvette Ranjeva Rabetafika</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Articles on Rasoamanarivo appear in biographical and historical dictionaries such as <em>Hommes et destins</em>, vol. 3, <em>Madagascar</em> (1978) and <em>Dictionaire Historique et Géographique de Madagascar</em> (1966).</p>
-
-<p>A. Boudou, <em>Madagascar, la Mission de Tananarive</em> (1940).</p>
-
-<p>E. Colin and P. Suau, <em>Madagascar et la Mission Catholique</em> (1895).</p>
-
-<p>E. Fourcadier, <em>La vie héroïque de Victoire Rasoamanarivo</em> (1937).</p>
-
-<p>J. L. C. Ramahery, <em>L’ange visible de l’église naissante à Madagascar</em> (1970).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Rasoamanarivo, Victoire (A)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -752,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -791,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

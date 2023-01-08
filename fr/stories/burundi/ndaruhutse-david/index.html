@@ -605,77 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>David Ndaruhutse était un dirigeant de l’église du Rwanda qui est mort dans un accident d’avion tragique en 1997.</p>
-
-<p>David est né en 1955 à Gahini, commune de Kabugo, au Rwanda. Ses parents étaient Esaïe Rubagumya et Esther Nyaramgure.  Son père, pasteur, a été tué quand it avait quatre ans.  Il a grandi dans un camp pour réfugiés en Ouganda, et a fait sa scolarité au lycée de Nyakasura, où il a été converti.  Il a continué ses études à l’université de Makerere à Kampala, où il a dirigé les groupes de prière de la Communion des Unions Chrétiennes.  Diplômé en 1982, il obtient la licence en Statistiques et en Economie, et continue ses études en 1986  à Rofey Place, en Angleterre.  Il a épousé Ruth Uwayesu, et ils ont eu cinq enfants.  Il parlait cinq langues couramment : le kinyarwanda, le luganda, l’anglais, le français et le kiswahili.</p>
-
-<p>Après avoir été secrétaire du diocèse de l’église anglicane du Burundi, il a fondé le Ministère du Renouveau Africain au mois d’août en 1989 à Nyakarago, au Burundi, et en juillet 1992, l’Eglise Vivante de Jésus-Christ.  Sa prédication était accompagnée de guérisons.  Il a fondé plusieurs églises et il a fait construire l’hôpital de Jabe, ainsi que l’école primaire à Himbaza, au Rwanda.  Ndaruhutse a aussi fondé un collège biblique et un centre pour les handicappés mentaux à Nyakarago.  Ces ministères ont grandi, atteignant le Rwanda en 1994 et le Congo en 1995, avec des branches secondaires en Ouganda, au Kenya et au Sénégal.</p>
-
-<p>David Ndaruhutse faisait partie du groupe des leaders des efforts de réconciliation et de paix de la région des grands lacs.  Leur avion s’est écrasé le 9 décembre, 1997, en République Démocratique du Congo.</p>
-
-<p>Francis Manana</p>
-
-<hr />
-
-<h1 id="bibliographie">Bibliographie</h1>
-
-<p>Rose Mukasengamana Nyirimana, recherches, Collège Chrétien de l’Afrique, Nairobi, Kenya.</p>
-
-<p>Relph, Penny, <em>An African Apostle : the Story of David Ndaruhutse [Un Apôtre Africain : l’histoire de David Ndaruhutse]</em>, Kent, Royaume Uni: International Media for Ministry, 1998.</p>
-
-<p>M. et Mme. Straton Gataha, Eglise Vivante de Jésus-Christ, entrevue, Kigali, Rwanda.</p>
-
-<p>M. William Budedeli, Faculté de Théologie de l’Afrique Orientale, entrevue, Nairobi, Kenya.</p>
-
-<p>M. Samuel Kampayana, Faculté Internationale de Théologie de Nairobi, entrevue, Nairobi, Kenya.</p>
-
-<hr />
-
-<p>Ce récit, soumis en l’an 2000, a été écrit par Francis Manana, professeur d’évangélisation et de mission, et coordinateur de liaison du DIBICA, Collège Chrétien de l’Afrique, Nairobi, Kenya.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Ndaruhutse, David`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -756,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -793,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

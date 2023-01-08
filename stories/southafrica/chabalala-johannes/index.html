@@ -607,92 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/southafrica/chabalala-johannes/chabalala-johannes.jpg" alt="Johannes Chabalala" class="bio" height="218px" width="158px" /><img src="/images/bio-pics/southafrica/chabalala-johannes/chabalala-eileen.jpg" alt="Eileen Chabalala" class="bio" height="226px" width="158px" /> Hlengane Johannes Chabalala was born on the farm Borwalathoto, near Potgietersrus, Northern Region, and found the Lord at the Maranatha Nazarene Mission near Naboomspruit in 1952.  God called him to the ministry and he completed Bible College training at Siteki, eswatini.</p>
-
-<p>He married Eileen (1935-) in 1962 and they pastored in the Blouberg area, Northern Province.  While there, their eldest child Joyce became seriously ill.  Hospital treatment did not help but they prayed and she lived.</p>
-
-<p>Chabalala was ordained in 1963 by Dr G. B. Williamson.  In 1965 they were called to KwaThema on the East Rand, Gauteng Province.  God blessed their ministry.  Chabalala had a serious speech defect.  He stuttered in ordinary conversation.  However, God did a wonderful thing for him.  The problem would disappear while he preached.</p>
-
-<p>In 1973 they moved to pastor the Kagiso Church on the West Rand.  They struggled financially and once they had no funds to send his wife and child to hospital when they were seriously ill.</p>
-
-<p>Their daughter, Joyce, seemed retarded and would not speak or learn at school.  The parents and the congregation prayed and fasted for a long time.  Chabalala then went with the child to school and prayed there.  That brought victory and they praised the Lord.  Joyce later became a qualified nurse.</p>
-
-<p>In 1982 Chabalala was appointed to minister as overseer in the gold mining compounds.   This involved considerable travel. Many of the miners were Shangaans from Mozambique. Chabalala’s home languge was Shangaan.</p>
-
-<p>In 2008 they were pastoring in Glen Harvey and Eileen was feeling her age very much. In October 2007 Johannes and his daughter Joyce were involved in a car accident.  She suffered some injuries but he was only slightly hurt. The car was a write-off.</p>
-
-<p>The Chabalalas had five children: Joyce, Joshua, Helen, Glory and Wonder.  Johannes Chabalala wrote  : “I am grateful to our Lord Jesus Christ for this family; they love the Lord so much.”</p>
-
-<p>Johannes Chabalala passed away from heart failure on April 19, 2012.    Zakhele Kunene, his son in law, reported, “On the 25th March we (the church)  had  organised a surprise party to celebrate their 50th anniversary. It was a huge party that went well.”</p>
-
-<p><strong>Paul S. Dayhoff</strong></p>
-
-<hr />
-
-<p><strong>Notes</strong>:</p>
-
-<ol>
-  <li>
-    <p>J. Chabalala, letters, 1993 and May 1995.</p>
-  </li>
-  <li>
-    <p>Johannes and Eileen Chabalala, letter of December 8, 2007, sent by Joshua Chabalala.</p>
-  </li>
-  <li>
-    <p>Dr. Enoch Litswele, e-mail of April 20, 2012</p>
-  </li>
-  <li>
-    <p>Zakhele Kunene, e-mail, April 30, 2012.</p>
-  </li>
-</ol>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Living Stones In Africa: Pioneers of the Church of the Nazarene</em>, revised edition, copyright © 1999, by Paul S. Dayhoff.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Chabalala, Johannes`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -771,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -810,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

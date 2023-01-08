@@ -607,67 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Adam Kok II, the eldest son of Cornelius Kok I, was born in Little Namaqualand in 1760. From his Griquatown base, he had become recognized as the general leader of all the groups in the region and, after 1816, when his father left the area, having the support of the missionaries, had also become recognized as such by the colonial authorities at the Cape. After this, however, his relations with the missionaries progressively deteriorated. Preferring hunting expeditions to the practice of religion, he became the leader of a much-feared group known as the Bergenaars (“mountain people”). By 1819 the missionaries had succeeded in having Andries Waterboer appointed chief in his place. Adam Kok II and his Bergenaars then left Griquatown for Campbell, from where they moved across the Orange River to launch raiding and looting expeditions in the area between the Vaal and Riet rivers.</p>
-
-<p>In 1825 another LMS missionary, Dr. John Campbell, held a meeting of all parties at Griquatown. Waterboer was to rule in Griquatown; Cornelius Kok II was to retain authority at Campbell; and Adam Kok II, Barend Barends, and the Bergenaars were to settle in the region known as Transorangia, comprising the region between the Orange and Modder Rivers, with headquarters at the mission station of Philippolis on the Orange River. Three Griqua states thus came into being. A condition was, however, exacted from Adam Kok II and his followers. They were to give protection to the mission station at Philippolis, and to the San living in the area. Adam Kok II, and his successor Adam Kok III, were, however, to break part of the undertaking. They and their people systematically exterminated or expelled all San peoples living in the region. Apart from this, the main result of Dr. Philip’s initiative was to establish Kok and his Griqua in the southern part of what was to become the Orange Free State, the Griquas in question being a mixture of Griquas (including the Bergenaars), Tswanas, Koranas, and Sotho.</p>
-
-<p>In 1827, after hostilities had broken out between Waterboer and his followers based in Griquatown, and Cornelius Kok II, and his group based in Campbell, Adam Kok II acted as peacemaker. He succeeded in establishing an agreed upon boundary between the two Griqua groups. Adam Kok II, who was essentially disinterested in acting as a chief, attempted to relinquish his authority to his son, Cornelius Kok III, and to his son-in-law, Hendrik Hendricks. On the sudden death of his son in 1828, however, Adam Kok II was obliged to resume the chieftainship. His last years were spent trying to find ways to stem the incoming tide of Boer cattle farmers moving northward from the Cape to settle in the area between the Orange and Modder Rivers. In 1835, pursuing this end, he travelled to Capetown in the vain hope of meeting with the governor, Sir Benjamin D’Urban.  He died on the Berg River, on the return journey.</p>
-
-<p>Keith Irvine</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p><em>Dictionary of South African Biography. Vol. IV</em>. Ed. C.J. Beyers, Durban and Pretoria: Butterworth &amp; Co. 1981. pp. 285-89; William Dower, <em>The Early Annals of Kokstad and Griqualand East</em>, Port Elizabeth, South Africa: James Kelmsley &amp; Co., 1902; J.S. Marais, <em>The Cape Coloured People, 1652-1937</em>, Johannesburg: Witwatersrand University Press, 1939; Robert Ross, <em>Adam Kok’s Griquas: A Study in the Development of Stratification in South Africa</em>, Cambridge: Cambridge University Press, 1976.</p>
-
-<hr />
-
-<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (In 20 Volumes). Volume Three: South Africa- Botswana-Lesotho-eswatini. Ed. Keith Irvine. Algonac, Michigan: Reference Publications Inc., 1995.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Kok II, Adam`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -746,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -785,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

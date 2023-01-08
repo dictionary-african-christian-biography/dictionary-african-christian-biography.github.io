@@ -607,73 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Nukwase Ndwandwe (circa 1890-September 15, 1957) was installed as Indlovukati (also Ndlovukazi, queen mother) in August 1938 upon the death of her full sister, Lomawa Ndwandwe, the mother of King Sobhuza II. During Sobhuza’s absence from the country on the occasion of the coronation of Queen Elizabeth II in London (1953), Nukwase took complete charge of Swazi affairs with the help of Prince Lutfo. She was the first Swazi queen to convert to Christianity, being baptized in 1914 as a Methodist, and later moving to Catholicism.</p>
-
-<p>Nukwase Ndwandwe was the daughter of Ngolotjeni Ndwandwe of Zikhotheni. As full sister to Lomawa, King Bhunu’s Queen, she too was recognized as a potential junior co-wife to Bhunu. Nukwase was still a child when Bhunu died, but she was brought to the royal residence at Lobamba as co-wife and Queen. She bore two sons, Princes Mkukwane and Mshengu, and two daughters in the name of the King by his brother, Prince Malunge, the Regent.</p>
-
-<p>During her reign as Indlovukati, Nukwase played an active role in the religious and social welfare of the nation. She was a devout churchgoer. When Prince Solomon Madevu proposed a national church, it was largely through the patronage of Nukwase that Sobhuza II willingly approved the project. Sobhuza granted a piece of land near the capital, Lobomba. From this time until her death in 1957, Nukwase selected Good Friday as an important day of religious observance for the Swazi Nation. On this day preachers of different denominations with their congregations made a special pilgrimage to Lobomba for prayer services, which were faithfully attended by the King and the Queen Mother. Nukwase’s devotion to Christianity was so strong that, on one occasion, she did not hesitate to interrupt the funeral exercises of her late sister, Lomawa, for a few hours, when it was discovered that the church membership cards of the deceased (described as her “tickets across the Jordan”) had been left behind at Lobamba. The services resumed after these were recovered and buried with Lomawa’s remains.</p>
-
-<p>Nukwase’s dream was the building of a great and beautiful church, centrally placed and nondenominational, where all could worship. During the war years she organized women’s groups for the making of uniforms, clothes and sundry supplies for the Swazi troops. She won herself the nickname “Macaphazela” (pattering of rain -drops).</p>
-
-<p>Nukwase’s death was strongly felt by the nation and King Sobhuza, who had now lost the last of his mother’s surviving sisters. Nukwase’s death also created a dilemma on the question of succession. It was the first time in Swazi history that a King was pre-deceased by two Queen Mothers. There were no other surviving Ndwandwe queens of King Bhunu. His surviving widows had been married off to Bhunu’s kin under the custom of the Kungena (levirate). A solution to this crisis was suggested by Sobhuza, who authorized the King-In-Council to select from among his own queens from the Ndwandwe group. Zihlathi, the oldest of Sobhuza’s Ndwandwe Queens was chosen, becoming the new Indlovukati, replacing Nukwase. Nukwase’s dream of realizing a national church was not realized.</p>
-
-<p>Stephen Shisizwe Hlophe</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Hilda Kuper, <em>Sobhuza II: Ngwenyama and King if eswatini</em>, Duckworth, London, 1978.</p>
-
-<p>J.S.M. Matsebula, <em>A History of eswatini</em>, Longman, Capetown, 1987.</p>
-
-<hr />
-
-<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (In 20 Volumes). Volume Three: South Africa- Botswana-Lesotho-eswatini. Ed. Keith Irvine. Algonac, Michigan: Reference Publications Inc., 1995.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Ndwandwe, Nukwase`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -752,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -791,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

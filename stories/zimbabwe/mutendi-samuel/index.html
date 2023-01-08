@@ -607,80 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Samuel Mutendi was the founder of the Zion Christian Church (ZCC) in Rhodesia (Zimbabwe). A muRozvi-Shona born in the Bikita district of Masvingo Province, he was raised and educated in the Dutch Reformed Church. Even as a young man, Mutendi had dreams and visions reflecting his church leadership ambitions. As a labor migrant in Pretoria, he first obtained membership in the Zion Apostolic Faith Mission, then in 1925 broke away with Enginase Lekganyane and a few other key figures to form the ZCC. Ordained as a ZCC minister, Mutendi founded the Rhodesian branch of the new church, with its headquarters near Nyika Halt in Bikita. Although he retained ideological and historical links with what was to become the largest Christian Church in South Africa, Lekganyane’s ZCC, currently based in Pietersburg, he developed the Zimbabwean ZCC into a fully autonomous church, with an estimated 500,000 members in 1996. Zimbabwean-affiliated ZCC congregations also exist in Zambia, Malawi, and Mozambique.</p>
-
-<p>As bishop of the ZCC, and unlike his Apostolic counterpart,
-<a href="maranke_john.html">John Maranke</a>, Mutendi focused
-on building an impressive Zion City, or Moriah, with schools,
-church, a faith-healing “hospital,” and other symbols of the
-presence of Christ, the Lamb of Mt. Zion (Rev. 14:1). In Zion
-City, Mutendi’s leadership resembled both that of a Rozvi
-monarch and that of a messianic “man of God,” as he is called
-by his followers. As a black icon, he mirrored the life of
-Christ in an African setting. His resistance to oppressive
-colonial rule, which resulted in several detentions, added
-to his popularity and stature among African chiefs and commoners
-alike.</p>
-
-<p>In ZCC theology preoccupation with human well-being through exorcistic healing and agro-economic development contributed toward a strong emphasis on this-worldly salvation. Zionist achievement and progress therefore became essential components of the Good News propagated by the ZCC. Nevertheless, Mutendi’s church never forfeited its essentially missionary character. The annual paschal celebrations at Zion City serve as a springboard for massive missionary campaigns throughout Zimbabwe and beyond its borders-campaigns of witness, outreach, celebration, and healing that activate entire church communities.</p>
-
-<p>After Mutendi’s death, a schism occurred, each faction operating under the leadership of one of his sons, Nehemiah and Ruben. The relationship between the two factions is marked by meaningful interaction rather than alienation.</p>
-
-<p>Marthinus L. Daneel</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Marthinus L. Daneel, <em>Old and New in Southern Shona Independent Churches</em>, vol. 1, <em>Background and Rise of the Major Movements</em> (1971).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Mutendi, Samuel (A)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -759,7 +687,7 @@ alike.</p>
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -798,6 +726,6 @@ alike.</p>
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

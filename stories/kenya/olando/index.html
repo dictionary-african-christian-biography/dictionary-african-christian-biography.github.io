@@ -607,77 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Wycliffe Stanley Were Olando was born in 1934 to Josiah Olando and Mwembe Olando. He was born into a family of seven brothers and nine sisters. He had a humble beginning, starting his primary education in 1945 at Lubinu Primary School where he sat for the Common Entrance Examination in 1948. He passed the primary examinations and joined Lubinu Intermediate School in 1949 where he passed the Kenya Advanced Primary Education (KAPE) exams.</p>
-
-<p>In 1956, Were had a start in the teaching profession where he taught at Eluche Primary School during the year. Between 1957 and 1959, he worked as a mechanic in Kampala, Uganda. He then returned back home to Kenya in 1960 and married Mama Selina Kubende Were on January 29, 1960 in a service held at St. Paul’s Anglican Church, Lubinu. God blessed them with nine children. One son passed away but the other six sons are Michael, Moses, Jeremiah, Aggrey, Josiah, Samuel. His two daughters are Jerita and Hilda. Were left behind thirty grandchildren.</p>
-
-<p>In 1961 Wycliffe went back to Kampala where he worked for the Uganda Meat Commission up to the end of that year. The following year, 1962, he decided to quit this job to join the ordained ministry to serve God. Between 1963 and 1964, he attended Maseno Bible School. In 1965 he served for six months on attachment as a deacon in Ebusakami pastorate before going back to Bible School. He was subsequently ordained as a priest the same year at a congregation in Kisumu.</p>
-
-<p>As a priest, Wycliffe consequently served in the following areas; Namasoli Parish (1966-1968), Namulungu Parish (1969-1974), Musanda Parish (1975-1977), Inaya Parish (1978), Kimilili Parish (1979-July 1980), Ebusakami Parish where he was promoted to rural dean (August 1980-1984), Namboboto Archdeaconry (on promotion as archdeacon 1985-1989), and Bukhalalire Archdeaconry where he was honored and commissioned a canon. He also served as the vicar general of Nambale Diocese (1990-1993). In 1994 he left Nambale diocese to work in his home dioceses (of Mumias). He was thereby posted to Lubinu archdeaconry (1994-2000) where he retired as an archdeacon. At the diocesan level, he worked as a chairman of various departments including C.I.T.C. (Christian Industrial Training Centre) and T.E.E. (Theological Education by Extension).</p>
-
-<p>Wycliffe Were will be remembered for his hard work both on the farm and in the church. He was a loving man, blessed with a generous hand. Many will miss his humble and fatherly advice. The church remembers Wycliffe for his commitment to serve, his humility, and his faithfulness. He was respected by both Christians and non-Christians because of his humble walk with Christ. His name will stay with us for a long time and his memories are always a fresh in the minds of all who knew him. He did his best in the ministry.</p>
-
-<p>Alfred S. Keyas</p>
-
-<hr />
-
-<p>Sources:</p>
-
-<p>Olando Were Stanley Wycliffe, interview by author, July 1996.</p>
-
-<p>Selina Kubende Were, wife, research and interview by author, July 2002.</p>
-
-<p>Life history of Wycliffe Were, January 2002.</p>
-
-<p>Jacob I. Mukwambo, church elder. Mumias diocese, interview by author, February 2002.</p>
-
-<hr />
-
-<p>This story, submitted in 2011, was researched and written by Rev. Keyas Alfred Sheunda, a <em>DACB</em> Project Luke fellow (2004-2005), currently serving as the chaplain at Booker Academy, Mumias Sugar Company, Mumias, Kenya. Email: <a href="mailto:skeyas@gmail.com">skeyas@gmail.com</a>, <a href="mailto:akeyas@yahoo.com">akeyas@yahoo.com</a>.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Olando, Wycliffe Were Stanley`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -756,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -795,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

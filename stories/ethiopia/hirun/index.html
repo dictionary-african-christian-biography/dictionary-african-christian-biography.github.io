@@ -611,69 +611,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Hirûn, or Gabron (d. c. 1209 A.D.), was a brother of Empress Mäsqäl-Kebra, wife of Emperor Lalibäla, according to an Arabic source. Other readings of the name are Hetron, Hetrun, Gedron or Gedrun. <em>Abunä</em> Mika’él of Fua, Metropolitan of Ethiopia c. 1205-1209, fled back to Egypt to complain to John VI, Patriarch of Alexandria from 1189 to 1216, claiming that he had been forced to make Hirûn a bishop, at the insistence of the Empress, and that Hirûn had assumed many of the prerogatives of the Metropolitan and had also assaulted Mika’él and attacked his house while Lalibäla was campaigning elsewhere, and had caused Mika’él’s flight. Inquiries conducted by the Patriarch’s investigator, <em>Abba</em> Musa, revealed that the attacks on Mika’él were in fact made by the family of a church dignitary whom Mika’él had had killed on suspicion of theft and that Hirûn had been remaining in seclusion in his own house, venturing out only on Sundays to go to church to say Mass; in any event, he had died soon after Mika’él left Ethiopia. Mika’él was deposed and banished.</p>
-
-<p>A. K. Irvine</p>
-
-<hr />
-
-<p><strong>Bibliography</strong></p>
-
-<p>E. Renaudot, *Historia Patriarcharum Alezandrinorum *(Paris, 1717).</p>
-
-<p>R. Basset, *Etudes sur l’histoire d’Ethiopie *(Paris, 1882), note 63.</p>
-
-<p>J. Perruchon, “Extrait de la vie d’Abba Jean, 74e Patriarche d’Alexandrie, relatif à l’Abyssinie,” in “Notes pour l’histoire d’Ethiopie,” <em>Revue Sémitique</em>, t. VII (1899).</p>
-
-<p>C. Conti Rossini, <em>Storia d’Ethiopia 1270-1527</em> (Oxford, 1972), 59-60.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>The Dictionary of Ethiopian Biography, Vol. 1 ‘From Early Times to the End of the Zagwé Dynasty c. 1270 A.D.,’</em> copyright © 1975, edited by Belaynesh Michael, S. Chojnacki and Richard Pankhurst, Institute of Ethiopian Studies, Addis Ababa, Ethiopia.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Hirûn`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -752,7 +691,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -791,6 +730,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

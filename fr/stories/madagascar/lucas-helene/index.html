@@ -609,69 +609,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Hélène Lucas, née à Calan (Morbihan) le 15 juillet 1869, est décédée à Tamatave le 19 mars 1965. Elle avait fait sa profession le 19 mars 1890, à Paris.</p>
-
-<p>Décorée à titre posthume de la Croix de Chevalier de l’Ordre National Malgache, le jour de ses obsèques. Cette Croix fut placée à côté de ses deux autres décorations: celle de Chevalier de l’Ordre de l’Etoile d’Anjouan, qui lui avait été décernée par le Ministère des Colonies de 1933, et celle de Chevalier de la Légion d’Honneur, en 1953.</p>
-
-<p>C’est après les années de la laïcisation que Sr. Joseph s’embarque pour Madagascar où l’attend une très longue et fructueuse carrière missionnaire. Arrivée à Tamatave, le 6 mai 1903, elle est désignée pour l’école de Mahamasina, à Tananarive. Elle n’y reste qu’un an et en 1904, elle est nommée à l’hôpital militaire de Tamatave. L’année suivante les lois de la laïcisation chassent les Sœurs de l’hôpital. Sr. Joseph s’ingénie à trouver des occupations pour vivre. Ce fut d’abord le blanchissage du linge des bateaux stationnant au port, puis la vente des ouvrages de broderie de l’ouvroir. Grâce à un labeur acharné et à l’aide de deux bienfaiteurs, Mère Joseph put faire bâtir un pensionnat-externat qui ne tarda pas à se placer en tête des écoles de la ville.</p>
-
-<p>En 1922, nommée Supérieure principale de toutes les communautés de Madagascar, elle se fixe à Andohalo…et crée, avec sœur Dominique comme directrice, un cours supérieur d’études pour les jeunes filles malgaches. Les élèves affluent de toutes les parties de l’île. Le développement de cette œuvre a des répercussions très appréciables, car les anciennes élèves deviennent les épouses compétentes des fonctionnaires nommés dans les divers districts de Madagascar…Des vocations religieuses naissent aussi pour toutes les Congrégations qui travaillent dans l’île. Une impulsion remarquable est donnée aux œuvres d’enseignement qui forment les premières élites de femmes malgaches remarquables. A sa mort des centaines de lettres arrivent d’Europe et d’Afrique d’anciennes élèves Malgaches et Européennes qui apportent d’émouvants témoignages de reconnaissance. Madame Ravony, femme de l’ambassadeur Malgache en Allemagne écrivait: “Mère Joseph nous était particulièrement chère. Il nous reste la consolation de l’avoir vue donner l’exemple d’une vie toute donnée.”</p>
-
-<p>Sœur Marcienne Fabre</p>
-
-<hr />
-
-<h1 id="bibliographie">Bibliographie</h1>
-
-<p><em>Bulletin de la Congrégation de Saint-Joseph de Cluny</em>, no. 274, tome 20, avril 1968, p. 15-91.</p>
-
-<hr />
-
-<p>Cet article, réimprîmé ici avec permission, est tiré d’<em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em>, tome 3, publié en 1977 par l’Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). Tous droits réservés.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Lucas, Hélène`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -752,7 +691,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -789,6 +728,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

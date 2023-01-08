@@ -607,104 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/ethiopia/lambie-thomas2/lambie-and-wife.jpg" alt="image" class="bio" /></p>
-
-<p>Thomas Lambie was an American medical missionary
-in Ethiopia. Born in Pittsburgh and raised in a godly Presbyterian
-home, he received his medical degree from the University of
-Pittsburgh in 1907 and the same year sailed for Sudan as a
-United Presbyterian missionary. Soon after meeting missionary
-Charlotte Clave in Alexandria, Egypt, he married her, and
-together they opened a new station in 1911 at Nasir among
-the Nuer, on the southeastern border of Sudan. They crossed
-the border into Ethiopia in 1919 to help fight a flu epidemic,
-and later, after he had successfully treated a provincial
-governor, Lambie was commended to the future emperor, <a href="../haile-selassie/">Haile
-Selassie</a>, who asked him to open a hospital in Addis Ababa.
-Lambie also became Selassie’s personal physician. In 1927,
-impatient with the inaction of his U.S. mission headquarters,
-Lambie launched the Abyssinian Frontiers Mission, which quickly
-established several new stations in the south and southwest.
-The same year he merged the new work with the Sudan Interior
-Mission (SIM). Additional stations were established some 200
-miles to the north of Addis Ababa. In 1934 he gave up U.S.
-citizenship in order to hold property in Ethiopia, but later
-lost his Ethiopian citizenship after falling out of favor
-with the emperor, who disagreed with Lambie’s decision to
-treat casualties on both sides in the war with Italy. During
-the Italian occupation (1935-1941), Lambie served as executive
-director of the Ethiopian Red Cross. Although heart problems
-prompted his return to the United States in 1942, in 1945
-he was able to sail for Palestine under the Independent Board
-for Presbyterian Foreign Missions. His wife died enroute and
-was buried at Port Said, Egypt. His second wife, Irma Schneck,
-an SIM missionary from Ethiopia, helped hi open Berachah Tuberculosis
-Sanatorium in Bethlehem in 1952. He died in Jerusalem in 1954
-as he prepared a message to be given on Easter morning at
-the Garden Tomb. He is buried in Pittsburgh.[1]</p>
-
-<p>Robert T. Coote</p>
-
-<hr />
-
-<p>Editor’s note:</p>
-
-<ol>
-  <li>According to Rev. Keith H. Coleman, Lambie was not buried in Pittsburgh but in Bethlehem on the Baraka Bible Presbyterian Church property. Rev. Coleman is the Executive director of the IBPFM (1000 Germantown Pike B6 / Plymouth Meeting, PA 19462 USA / Phone: 610.279.0952). Email messages to M. Sigg
-dated 5/2/2012 and 7/31/2012. In a message dated 7/31/2012, Rev. Coleman wrote: “I have visited the grave site of Dr. Lambie myself and have a photograph of it. Also, here is the email of Pastor George Awad (info@barakachurch.com), who ministers at the Baraka Bible Presbyterian Church in Bethlehem. He can confirm that Dr. Lambie is buried at the end of their property. Last of all, our own missions publication, <em>Biblical Missions</em>, states in the July-August 1954 issue, in an article entitled ‘Dr. Lambie Called Home’ (p.6),  ‘After a brief service in our chapel at Bethlehem, Dr. Lambie was laid to rest in the churchyard on the hillside facing west, under the shade of two olive trees.’”</li>
-</ol>
-
-<p><strong>Bibliography</strong></p>
-
-<p>Thomas A. Lambie, <em>Abayte! or, Ethiopia’s Plea</em> (1935),  <em>A Doctor without a Country</em> (1939),  <em>A Doctor Carries On</em> (1942), <em>Boot and Saddle in Africa</em> (1943), and <em>A Doctor’s Great Commission</em> (1954).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Lambie, Thomas Alexander (B)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -783,7 +687,7 @@ dated 5/2/2012 and 7/31/2012. In a message dated 7/31/2012, Rev. Coleman wrote: 
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -822,6 +726,6 @@ dated 5/2/2012 and 7/31/2012. In a message dated 7/31/2012, Rev. Coleman wrote: 
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

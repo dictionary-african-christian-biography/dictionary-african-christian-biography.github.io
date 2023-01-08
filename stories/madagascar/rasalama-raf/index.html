@@ -607,77 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/madagascar/rasalama-raf/mortdeRasalama-small.jpg" alt="death of Rasalama" class="bio" /></p>
-
-<p>First  Malagasy Christian martyr.</p>
-
-<p>Rasalama was probably one of the earliest pupils in village schools set up by the London Missionary Society in 1824. When her family moved to Manjakaray on the outskirts of the capital, she joined the first Christian community at Ambodin’Andohalo, near the royal palace. She was among the first Malagasy to be baptized  (May 1831) and to take part in the Lord’s Supper at Ambatonakanga, the earliest church, on June 5, 1831. In 1835 when the new queen, Ranavalona I, declared Christianity illegal, Rasalama went into hiding. The cave where she took refuge near her house was discovered, and in July 1837 she was arrested and given to a courtier as a slave. She patiently bore ill treatment until she refused to work on a Sunday and provoked her master’s anger by asserting her faith. She was sentenced to death on the ground of rebellion against the queen’s will. On August 14, after a night of suffering in irons, Rasalama was taken to Ambohipotsy. Her walk to the place of execution, which she filled with prayers and hymns, has become legendary. She was speared and her body was left unburied. A memorial church stands on the sight today. Her martyrdom made a deep impression on her fellow countrymen and British Protestants; a memorial plaque was put in Brunswick Chapel in Bristol, England.</p>
-
-<p>Yvette Ranjeva Rabetafika</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>R. Lovett, <em>The History of the London Missionary Society, 1795 - 1896</em> (1896).</p>
-
-<p>G. Mondain, <em>Un siècle de mission au Madagascar</em> (1926).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
-
-<hr />
-
-<h1 id="photo">Photo:</h1>
-
-<p><img src="/images/bio-pics/madagascar/rasalama-raf/mortdeRasalama.jpg" alt="death of Rasalama" class="bio" /></p>
-
-<p>Commemorations of her martyrdom have been the occasions for the production of numerous works, such as Rabary’s <em>Ny Maritiora Malagasy</em> (1957).</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Rasalama, Rafaravavy`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -756,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -795,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

@@ -607,75 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>African-American Baptist missionary, chief justice and lieutenant governor in Liberia.</p>
-
-<p>Born in Hicksford , Virginia , probably a free man, Day was licensed to preach by a
-Baptist church in 1821. Like many others of his era, his only theological training came
-from a scholarly pastor, in Greensville County, Virginia. Excited by the opportunity that
-African colonization offered for blacks, he immigrated to Liberia with his wife and four
-children in 1830. His preaching ability and evangelistic passion led to his appointment as
-a missionary by the Baptist Triennial Convention in the United States in 1836; he was assigned to preach and teach school. He served as pastor of several Liberian Baptist congregations as well as teacher in various schools. In 1845, when northern and southern Baptist churches split in the United States, he severed his relationship with the Triennial Convention and the following year was appointed a missionary by the Foreign Mission Board of the Southern Baptist Convention. He eventually became the superintendent of Baptist work in Liberia and Sierra Leone. Subsequently he also served as chief justice of the Supreme Court and lieutenant governor of Liberia.</p>
-
-<p>Day firmly believed in evangelism and in the necessity of repentance for salvation and was critical of missionaries who assumed “a little education” and “a little civilization” were substitutes for preaching the gospel. Though aware that white support of African colonization was largely motivated by racism, Day viewed it as God’s instrument for liberating American blacks as well as extending the gospel to heathen Africa.</p>
-
-<p>When he died, E. W. Blyden gave the eulogy in which he praised Day’s “excellences as a preacher, a soldier, a physician, a judge, a legislator, a
-lieutenant-governor, an educator and a theologian.”</p>
-
-<p>Alan Neely</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p><em>African Repository</em>  30  (November 1854): 341 - 342; G. Winfred Hervey, <em>The Story of Baptist Missions in Foreign Lands</em> (18840); Stanley D. Martin, <em>Black Baptists and African Missions</em> (1989); Garnet Ryland, <em>The Baptists of Virginia, 1699 - 1926</em> (1955); Nan F. Weeks and Blanche Sydnor White, <em>Liberia for Christ</em> (1959); B. I. Wiley, ed., <em>Slaves No More</em> (1980).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Day, John`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -754,7 +687,7 @@ lieutenant-governor, an educator and a theologian.”</p>
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -793,6 +726,6 @@ lieutenant-governor, an educator and a theologian.”</p>
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

@@ -607,65 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Dominican scholar of Islam.</p>
-
-<p>Anawati (the Arabic form was Qanawati) personified the Dominican commitment to religious scholarship as a form of Christian witness.  Born in Alexandria, Egypt, of Surian and Orthodox parentage, he found the intellectual foundations of his faith in Thomism.  He entered the Dominican order, taking the name Marie-Marcel, and was ordained a Catholic priest in 1939.  His initial missionary service in Algeria (1940-1953) forged a lifelong relationship with the French Dominican Islamicist Louis Gardet (1937-1977).  Returning to Egypt, he devoted himself to developing the Dominican Institute for Oriental Studies in Cairo.  Under his 50-year leadership, it became the leading center in the Middle East for Christian study of Islam and for dialogue between Muslim and Christian scholars.  His goal was to recreate the intellectual discourse between Arabic-speaking Muslims and Christians that had been a feature of medieval learning.  In addition to his talents as teacher, international lecturer, and renowned host, he is remembered for his vast literarary output.  He played a leading editorial role in the Institute’s journal <em>Mélanges: Institut Dominicain d’Etudes Orientales du Caire</em> (founded in 1953), which published theological research of international Christian and Muslim scholars.  He influenced the Second Vatican Council’s rethinking of Christian relations with other religious (<em>Nostra Aetate</em>) and subsequent Catholic initiatives in Christian-Muslim dialogue.</p>
-
-<p>David A. Kerr</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>“Georges Chehata Anawati, OP (1905-1994),”  <em>Mélanges: Institut Dominicain d’Etudes Orientales du Caire (MIDEO)</em> 22 (1995; includes the full bibliography of Anawati’s works); G. Scattolin, “Fr. George Anawati (1905-1994): Pioneer and Witness of Muslim-Christian Dialogue,” <em>Encounter: Documents for Muslim-Christian Understanding</em> 203 (March 1994), repr. in <em>Pro Dialogo Bulletin</em> 88, no. 1 (1995): 69-78.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Anawati, Georges Chehata`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -744,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -783,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

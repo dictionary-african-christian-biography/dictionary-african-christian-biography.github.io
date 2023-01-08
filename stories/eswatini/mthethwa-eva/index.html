@@ -607,84 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/eswatini/mthethwa-eva/mthethwa_eva.jpg" alt="Eva Mthethwa" class="bio" /></p>
-
-<p>As a teenager, Eva (Manzini) Mthethwa came to Raleigh Fitkin Memorial (RFM) Hospital in Manzini in 1936 from Mpumalanga, South Africa, [1] because she wanted to become a nurse.  At that time nursing was unknown for Swazi girls.  The traditional doctors needed no one to help them other than the older men of the patient’s own family.  Because of suspicions created by accusations of sorcery, the possibility of anyone, let alone a young girl, nursing a sick person of another family was unheard of.  However, she was invited to join the group of original trainees.  Her schooling was more advanced than usual and, in 1940, she completed the four years of nurse’s training.  She became a staff nurse at the hospital and, in 1942, went to Siteki Bible School for one year of study.  She was the first candidate to take the eswatini Nursing Council’s examination which she passed successfully. In 1950 she became the first Swazi nurse to be fully registered.  Later she was also registered as a midwife and earned her degree as a S.C.M. (State Certified Midwife).</p>
-
-<p>In 1950 she married Lewis Mthethwa, a printer at the mission press in Manzini.  Besides establishing a Christian home and caring for a growing family, she continued her work in the hospital and training school.  In 1952 she became the first African to be appointed nursing sister to be in charge of wards in eswatini.  She played an important part in the establishment of the eswatini Nursing Association and, in 1967, was elected by the student nurses to represent them on the first Nursing Council.  She assisted missionary Dorothy Davis (Cook) by teaching in the Nurses’ School. She also worked with her writing the Nursing Procedure Manual which was used by all nurses trained in eswatini after 1946.</p>
-
-<p>Eva was a spiritual leader among the nurses at the Nazarene Hospital in Manzini.  She was active in all departments of the church, teaching Sunday School classes, conducting classes in preparation for baptism and church membership, and holding revival services in the preaching points around that area.  She set a glowing example of a nurse’s deep interest in the spiritual welfare of her patients.</p>
-
-<p>In 1964, Sister Eva Mthethwa was selected for a scholarship by the Swazi government to go for a year of postgraduate nursing study in Israel.  Upon her return, she served with distinction in the government nursing service until her death from cancer at the RFM Hospital.  Shortly before her death while she was still able to walk, she testified in the local church about how God had helped and sustained her during her years of service for her Master.  Anything that she had accomplished, she attributed to the day when the Lord sanctified her at an altar of prayer while she was a student in the Nurses’ Training School in Manzini.[2]</p>
-
-<p>Paul S. Dayhoff</p>
-
-<hr />
-
-<p>Notes:</p>
-
-<ol>
-  <li>
-    <p>Petrus Pato, letter from Lilongwe, Malawi,  February 5, 2000.</p>
-  </li>
-  <li>
-    <p>D. Whitelaw, <em>A History of the Church of the Nazarene in South Africa</em>, (Florida, Transvaal, South Africa: Nazarene Publishing House, 1978), 50.</p>
-  </li>
-  <li>
-    <p>Dorothy (Davis) Cook, notes. Dr. David Hynd, “Eva Mthethwa,” <em>The Other Sheep</em>, Mission magazine of the Church of the Nazarene, (Kansas City, MO: Nazarene Publishing House, June 1971), 12.</p>
-  </li>
-  <li>
-    <p>D. Davis, 1975, <em>Nursing in eswatini</em>, (Florida, Transvaal, South Africa: Nazarene Publishing House, 1975), 57-58.</p>
-  </li>
-</ol>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Africa Nazarene Mosaic: Inspiring Accounts of Living Faith</em>, first edition, (Florida, Gauteng, South Africa: Africa Nazarene Publications, 2002), copyright © 2001, by Paul S. Dayhoff.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Mthethwa, Eva`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -763,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -802,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

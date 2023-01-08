@@ -607,59 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/uganda/cook-albert/cook-albert.jpg" alt="cook-albert" /></p>
-
-<p>Sir Albert Ruskin Cook of the Church Missionary Society was educated at St. Paul’s School, Trinity College, Cambridge, and at St. Bartholomew’s Hospital, London: B.Sc. (1888), B.A. (1893), M.B. (1895), M.D. (1901). He arrived in Uganda in 1897 having walked up from the coast in the same party as Katherine Timpson who became Mrs. Cook in 1900. Many of the senior missionaries were opposed to medical work as opposed to “pure” evangelistic work, and only a year’s preliminary trial was allowed, but almost immediately medical work was vindicated at the time of the rebellion of <em>Kabaka</em> Mwanga and the Sudanese Mutiny. The first Mengo Hospital was opened on May 14, 1897, and careful records were kept from the first. He undertook many long foot-safaris, often accompanying Bishop Tucker: to Koki in 1897; to Toro and Mboga in 1898; to Ankole and Toro in 1899; to Toro in 1901; to Mt. Elgon in 1903; to Acoli to help find a site where a new mission might be started in 1904; to the S. Sudan in 1905; to Teso and the eastern regions of Uganda in 1909 and again in 1914 when he climbed Mt. Elgon; and to Rwanda in 1921. In 1918 he was awarded the <em>Croix de Chevalier de L’Ordre de Leopold</em> and the O.B.E. for his services during the first world war. After the war he became concerned with measures to combat venereal disease which was reaching serious proportions. In 1922 he received the C.M.G., in 1928 the Silver Medal of the Royal African Society, and during a visit to England in 1932 he was knighted. From 1933-1934 he was first president of the revived Uganda Society. In 1934 he retired to land he had been given on Makindye Hill. In 1937 he visited England to attend the coronation of King George V and Queen Elizabeth. His <em>Uganda Memories</em> was published by the Uganda Society in 1945, and he died aged 81 in 1951.</p>
-
-<p><strong>Louise Pirouet</strong></p>
-
-<hr />
-
-<p>This article, used by permission, was written by Louise Pirouet, as part of <em><a href="../pirouet-foreword/">A Dictionary of Christianity in Uganda </a></em>(Department of Religious Studies, Makerere University College, 1969), p. 17. Copies available at Africana Section, Makerere University Library (AF Q 276.761 MAK and AR/MAK/99/1); Bishop Tucker Library, Uganda Christian University and in UK at the University of Birmingham; Crowther Centre Library, CMS Oxford and Louise Pirouet Papers, Cambridge Centre of African Studies.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Cook, Albert Ruskin (B)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -738,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -777,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

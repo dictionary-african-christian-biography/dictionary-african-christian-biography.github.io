@@ -607,63 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>John Campbell was a Scottish Congregationalist pastor, director of the London Missionary Society (LMS), and missionary pioneer. Campbell attended the Royal High School of Edinburgh before being apprenticed to a goldsmith. In 1793 he helped found the Religious Tract Society of Scotland, and in 1796 he founded the <em>Missionary Magazine</em> in Edinburgh. He entered the Congregational ministry as a result of the Haldane revival and went on to found a church, known as “Kingsland,” and a school in London. In 1812 he was sent to South Africa by the LMS to investigate the situation of its missions there, the first person ever to visit all the missions inside and outside the colony. He helped John Anderson establish a permanent Christian presence among the Griqua and returned to London with the most comprehensive report on the missions hitherto and the first good maps of the colony and its hinterland. In November 1818, he accompanied John Philip to South Africa to plan together the future of the LMS there. Again he made long and arduous journeys far beyond the colonial frontier, examining and encouraging all the missionaries. In 1820 he reassumed the pastorate of Kingsland and became a prolific writer on African missions, specializing in children’s books, a genre which he pioneered.</p>
-
-<p>Andrew C. Ross</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Campbell published journals in two volumes titled, <em>Travels in South Africa</em> (1822). Robert Philips, <em>The Life, Times, and Missionary Enterprises of the Rev. John Campbell</em> (1841).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Campbell, John (B)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -742,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -781,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

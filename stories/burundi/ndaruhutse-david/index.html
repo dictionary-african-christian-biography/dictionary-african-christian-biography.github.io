@@ -607,77 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>David Ndaruhutse was a Rwandan church leader who died in a tragic plane crash in 1997.</p>
-
-<p>David was born in 1955 at Gahini, Kabugo commune, Rwanda to Isaiah Rubagumya and Esther Nyaramgure. His father, a pastor, was killed when David was four. He grew up in a refugee camp in Uganda where he studied at Nyakasura High School and where he was converted. He then went on to Makerere University in Kampala and led the Fellowship of Christian Unions’ prayer groups there, graduating in 1982 with a B.A. in Economics and Statistics. In 1986 he continued his studies at Rofey Place in England. He married Ruth Uwayesu and they had five children.  He spoke Kinyarwanda, Luganda, English, French, and Kiswahili fluently.</p>
-
-<p>After serving as the Secretary of the Diocese of the Burundi Anglican Church, he founded African Revival Ministries in August 1989 at Nyakarago in Burundi and in July 1992, l’Église Vivante de Jésus Christ (The Living Church of Jesus Christ). His preaching was accompanied by healing. He planted several churches, built the hospital of Jabe, and the primary School in Himbaza in Rwanda. David also founded a Bible College and a center for the mentally handicapped at Nyakarago. These ministries spread to Rwanda in 1994, and the Congo in 1995 with branches in Uganda, Kenya, and Senegal.</p>
-
-<p>David was among the leaders of the peace and reconciliation efforts in the Great Lakes’ Region when their plane crashed on December 9, 1997 in the Democratic Republic of Congo.</p>
-
-<p>Francis Manana</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Rose Mukasengamana Nyirimana, research, Pan Africa Christian College, Nairobi, Kenya.</p>
-
-<p>Penny Relph, <em>An African Apostle: The Story of David Ndaruhutse</em>, Kent, United Kingdom: International Media for Ministry, 1998.</p>
-
-<p>Mr. and Mrs. Straton Gataha, Eglise Vivante de Jesus Christ, interview, Kigali, Rwanda.</p>
-
-<p>Mr. William Budedeli, East Africa School of Theology, interview, Nairobi, Kenya.</p>
-
-<p>Mr. Samuel Kampayana, Nairobi International School of Theology, interview, Nairobi, Kenya.</p>
-
-<hr />
-
-<p>This story, submitted in 2000, was written by Dr. Francis Manana, Professor of Evangelism and Missions and DACB Liaison Coordinator, Pan African Christian College, Nairobi, Kenya.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Ndaruhutse, David`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -756,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -795,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

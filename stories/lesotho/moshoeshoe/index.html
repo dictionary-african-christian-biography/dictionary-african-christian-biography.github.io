@@ -607,92 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Moshoeshoe (also Moshesh and various other
-spellings) was the founder of the Kingdom of Lesotho. He was
-born at Menkhoaneng in what is now northern Lesotho, son of
-a village headman. His original name was Lepoqo. He was early
-influenced by the religious and political reformer Mohlomi.
-About 1820, Moshoeshoe migrated to set up his own village.
-By military and diplomatic skill he incorporated various groups,
-many of them displaced by Zulu conquest, and in 1824 consolidated
-the process by migration to Thaba Bosiu, which he made a well-nigh
-impregnable mountain fortress. Having effectively formed a
-new nation, he had now to adjust to the encroaching white
-presence and for this purpose invited missionaries. Eugene
-Casalis and Thomas Arbousset of the Paris Evangelical Missionary Society arrived in 1833,
-and Moshoeshoe offered them every facility and encouragement,
-bringing Sotho institutions under Christian influence while
-avoiding disruption of the community. Education was encouraged,
-Christian burial introduced, the killing of witch suspects
-forbidden, and the powers of diviners curtailed; most remarkably,
-the “circumcision schools” for manhood initiation were discontinued.
-While he himself held back from full commitment, Moshoeshoe
-encouraged conversions in his family. Casalis became a trusted
-counselor, writer of Moshoeshoe’s letters, and his intermediary
-in dealing with whites. Moshoeshoe handled relations with
-British and Boers with the same sagacity as he had shown with
-his African neighbors, maintaining the integrity and autonomy
-of Lesotho as far as he could, eventually accepting British
-protection as the least undesirable option, and forestalling
-white land ownership and future absorption into South Africa.</p>
-
-<p>After 1847 Sotho disillusionment with whites slowed Christian progress; leading converts gave up their profession, and the circumcision schools returned. After Casalis left in 1855, no subsequent missionary held Moshoeshoe’s confidence to the same degree. But in the 1850s Moshoeshoe was assuring the missionaries that the total victory of Christianity in the country was only a matter of time and patience. He was attracted to French Catholic missionaries who arrived in 1862, and inter-mission rivalries complicated matters. As death approached, however, Moshoeshoe told Adèle Mabille (Casalis’s daughter) that he had been a believer for three months. The date for his public baptism by the Paris missionaries was announced; he died the night before. He had, however, opened his nation to Christian conversion, in Protestant and Catholic forms, as a key to its survival and welfare in the new world. His rule fostered a long dialogue between Christianity and African culture, and it became a paradigm of the modern spread of Christianity in Africa. Today the Kereke era Moshoeshoe, a large independent church, claims to perpetuate his legacy by maintaining an African version of Christianity.</p>
-
-<p>Andrew F. Walls</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>E. Casalis, <em>Les Bassoutos, ou vingt-trois années d’études et d’observations au sud de l’Afrique</em> (1859) and <em>My Life in Basutoland</em> (1889, 1971); D. F. Ellenberger and J. C. MacGregor, <em>History of the Bassuto, Ancient and Modern</em> (1912); E. W. Smith, <em>The Mabilles of Basutoland</em> (1939); Leonard Thompson, <em>Survival in Two Worlds: Moshoeshoe of Lesotho, 1786-1870</em> (1975).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Moshoeshoe`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -771,7 +687,7 @@ white land ownership and future absorption into South Africa.</p>
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -810,6 +726,6 @@ white land ownership and future absorption into South Africa.</p>
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

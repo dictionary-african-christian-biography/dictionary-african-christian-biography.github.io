@@ -607,73 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/southafrica/vanderkemp-johannes/van-der-kemp.jpg" alt="image" class="bio" /></p>
-
-<p>Pioneering missionary.</p>
-
-<p>After a brief army career in his native Netherlands he took a medical degree in Scotland (1782).  He joined the newly formed London Missionary Society (LMS) in 1798.  One of the first three agents sent by the LMS to South Africa, he was the first missionary to work among the Xhosa (1799-1800).  He became interested in the economic plight of the Khoikhoi (‘Hottentot’) people in the Cape Colony and strongly advocated granting then legal equality with whites.  He laboured alternately among the Khoikhoi of the eastern Cape and the slave population of Cape Town.  Partly as a matter of principle he married a non-white woman and thereby alienated the white settlers against his work. Armed with a background in European and classical philology, he pioneered in the study of Xhosa and Khoikhoi languages.  He was made the first superintendent of the LMS’s South African missions shortly before he died.</p>
-
-<p>Mark R. Lipschutz and R. Kent Rasmussen</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Martin, Arthur David.  <em>Doctor Van Der Kemp.</em>  Westminster: Livingston Press, 1931.</p>
-
-<p><em>Dictionary of South African Biography,</em> 4 vols.  Cape Town, Durban: Human Sciences Research Council, 1968-81.</p>
-
-<p>Marais, J. S.  <em>The Cape Coloured People, 1652-1937.</em>  Johannesburg: Witwatersrand University Press, 1939.</p>
-
-<p>Photo source: Martin, A. D. <em>Doctor Vanderkemp.</em> Westminster: The Livingstone Press, 1931.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Dictionary of African Historical Biography</em>, 2nd edition, copyright © 1986, by Mark R. Lipschutz and R. Kent Rasmussen,  University of California Press, Berkeley and Los Angeles, California.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Van der Kemp, Johannes Theodorus (A)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -752,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -791,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

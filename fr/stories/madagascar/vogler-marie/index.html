@@ -609,77 +609,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Prononcer le nom de Mère Claire dans certains secteurs de Madagascar, c’est évoquer une figure populaire dont la bonté et le dévouement servis par un tempérament ardent et impulsif ont toujours été consacrés aux plus démunis.</p>
-
-<p>Alsacienne, née à Schweighausen-sur-Moder (Bas-Rhin), le 8 février 1877, Marie Vogler entre au noviciat des Sœurs de Saint-Joseph de Cluny à Thiais en 1894. Elle prononce ses premiers vœux à Paris et prend le nom de Cunégonde Sainte-Claire, ou, plus simplement, de Sœur Claire. Sa première affectation est Mantry dans le Jura où la Congrégation s’occupe d’enfants pauvres. Six ans après, elle fait partie de la Communauté de Montchanin-les-Mines où elle prononce ses vœux perpétuels et quitte la Bourgogne en 1910 pour se rendre à Madagascar…sans beaucoup d’enthousiasme.</p>
-
-<p>Elle inaugure sa vie missionnaire dans le Betsiléo où elle séjourne huit ans, mais c’est à Ambohimitsimbina, quartier le plus élevé de Tananarive, au Sud du Palais de la Reine, que Mère Claire passa la plus longue étape de sa vie. Durant 18 ans, de 1922 à 1940, elle est Supérieure de la Communauté. Le quartier n’est pas riche; il est habité par des familles nobles appauvries ou d’origine très modeste qui confient aux Sœurs l’éducation de leurs filles. A force de travail et d’ingéniosité, Mère Claire arrive à compléter les installations anciennes par un nouveau bâtiment comportant un dortoir et deux grandes classes. Il lui faut jongler avec de faibles ressources pour faire vivre tout son monde.</p>
-
-<p>L’établissement reçoit, en outre, des pensionnaires que les autres écoles de la ville n’ont pu accueillir et un groupe d’orphelines démunies de tout que Mère Claire s’efforce d’instruire et d’éduquer tout en les préparant à une profession, notamment par l’organisation d’une exposition annuelle de leurs travaux. Une petite classe reçoit les enfants des familles européennes du quartier dont Mère Claire s’est spécialement chargée. Sa forte personnalité exerce sur eux et leurs familles une grande influence.</p>
-
-<p>Toujours disposée à rendre service, elle est souvent mise à contribution par les familles de ses élèves malgaches. Elle devient véritablement l’“assistante sociale” du quartier que l’on consulte et que l’on charge de démarches auprès des services administratifs. On fait confiance dans son franc-parler et dans son dynamisme et sa bonté de cœur jointe à son impétuosité naturelle se révèlent très efficaces.</p>
-
-<p>Elle est nommée Supérieure de la Communauté d’Ambohimahasoa de 1940 à 1946 et y vit les difficiles années de la guerre durant lesquelles Madagascar manque d’approvisionnement. Elle obtient des autorités du tissu qu’elle revend au prix coûtant aux pauvres gens de la campagne dont les faibles ressources ne peuvent aborder les prix du marché noir. Elle vient en aide également aux missionnaires de brousse particulièrement démunis durant cette période.</p>
-
-<p>Mère Claire revient à Tananarive où pendant un an elle est chargée de l’école d’Isotry, faubourg populeux dont les habitants sont parmi les plus déshérités de la Capitale.</p>
-
-<p>En 1947, elle est nommée à Mananjary; elle reste alerte et active malgré ses 70 ans, mais ne se sent plus la force à tenir une classe enfantine avec son petit monde turbulent et inattentif. Elle quitte Mananjary en 1954 pour rejoindre la maison d’Androhibe, dans la banlieue de Tananarive, qui comprend à la fois la maison de retraite des religieuses âgées et un pensionnat de jeunes orphelines. Mère Claire se dévoue auprès de ces dernières et c’est en complimentant la Mère Supérieure sur les gâteries qui leur sont offertes au repas de midi, le 14 juillet 1961, qu’elle s’effondre terrassée par la mort. Sa vocation religieuse du premier jour en France au dernier jour à Madagascar aura trouvé son champ d’action parmi les enfants les plus défavorisés.</p>
-
-<p>Raymond Delval</p>
-
-<hr />
-
-<h1 id="bibliographie">Bibliographie</h1>
-
-<p><em>Bulletin de la Congrégation de Saint-Joseph de Cluny</em>, XX, 1966, p. 285-288.</p>
-
-<hr />
-
-<p>Cet article, réimprîmé ici avec permission, est tiré d’<em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em>, tome 3, publié en 1977 par l’Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). Tous droits réservés.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Vogler, Marie`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -760,7 +691,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -797,6 +728,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

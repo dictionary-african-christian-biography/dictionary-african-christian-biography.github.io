@@ -607,65 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>African Catholic linguist and author.</p>
-
-<p>Born in Kiyanja, Rwanda, Kagame was ordained a Catholic priest in 1941. Even as a student in Nyakibanda Regional Seminary (1938 - 1940), he spent all his free time studying and collecting poetic literature of the Tutsi; he also did some composing himself, and wrote for various African journals. In 1950 he was the first African to become a corresponding member of the Institut Royal Colonial Belge (later Académie Royale des Sciences d’Outre-Mer). In 1952 his bishop sent him to the Gregorian University in Rome for doctoral studies in philosophy. His thesis, published in 1956, was <em>La philosophie bantu-rwandaise de l’Etre</em>. To a volume entitled <em>Des prêtres noirs s’interrogent</em> he contributed “La literature orale au Rwanda,” a comparison of Tutsi dynamic poetry with its equivalent in the Hebrew psalter. An expert in his mother tongue, he translated the Bible, the missal, and various liturgical texts into Kinyarwanda. Drawing mainly from oral sources, he wrote numerous historical works. Of these, the most important are <em>Un abrégé de l’ethno-histoire du Rwanda</em> (1972) and <em>Un abrégé de l’histoire du Rwanda, de 1855 - 1972</em> (1975). He also wrote for his own people in the local language. Because of his political, social, and family background, he naturally became prominent in the independence movement of his country and so made enemies. He was professor at the National University of Rwanda, contributor to the “Histoire Générale de l’Afrique,” and visiting professor  at the University of Lubumbashi. He was also a member of the Institut International des Civilisations Différentes, the Commission de Linguistique Africaine, and the American Academy of Political and Social Sciences. He died in Nairobi.</p>
-
-<p>Karl Muller, SVD</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>F. Botinck, “In memoriam Alexis Kagame,” in R<em>evue Africaine de Théologie</em> 6 (1982): 113 - 115; M. Walraet, <em>Les sciences au Rwanda. Bibliographie</em> (1894 - 1965) (1966). See also obituaries in <em>Mondes et cultures</em> 42, no. 1 (1982): 228 - 230, and <em>Académie Royale des Sciences d’Outre-Mer</em> 28, no. 1 (1981), 67 - 68 (by J. P. Harroy).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Kagamé, Alexis (C)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -744,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -783,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

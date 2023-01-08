@@ -607,73 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Magipa Mica Khossa was a traditional doctor who went daily to the special hut in his homestead where he prayed to the  so-called ancestral spirits.  He was crippled and walked doubled over, with a cane, although he was not old.  He also belonged to the Ethiopian Church, an African Independent group that continued observing many aspects of traditional worship.  Khossa felt very secure in the customary religion of his people where at the same time he was able to call himself a Christian.</p>
-
-<p>He became very sick and his friends from his Ethiopian Church visited him.  They sang and chanted their special prayers as he lay on the mat in his hut.  Khossa also made special sacrifices to the ancestral spirits to appease them so that they would restore him to health.  However, he still felt no better.  One day a Nazarene, Mr. Titus Sitoye, came to visit him.  The doctor told him he had prayed to the ancestors, and the Ethiopian Church people had prayed for him, but he continued to be so weak that he could  scarcely raise himself from his bed.  Titus bowed his head and began praying.  Then he stopped and told Khossa that God would not hear their prayers as long as he was committed to the demonic spirits.  Khossa told him, “Then go and bring your pastor to help.  I want to repent.”</p>
-
-<p>The pastor and many Christians from the church came.  Many nonChristian family members and neighbours crowded around to watch.   Hobbling around weakly with his stick, Khossa brought out all the paraphernalia of his worship: the bones, charms and medicines and piled them in front of the ancestral hut.  He brought a blazing stick from a kitchen hut nearby and set the pile on fire.  Then he ignited the grass roof of the hut.  The Christians sang a hymn and praised God.  The nonChristians clung to each other in fear.  They expected the spirits to come and strike Khossa dead but it did not happen.</p>
-
-<p>The Christians prayed fervently that God would hear Khossa’s prayer of repentance and save him.  Khossa testified to everyone that he was no longer a doctor.  He was now a Christian and would never again pray to the evil spirits.  Accompanying the Christians he went to the mission hospital.  His family and neighbours were sure that they would never see Khossa again.  Then, one day, some children playing at the homestead saw him coming down the trail riding a bicycle.</p>
-
-<p>For two months he testified to the people of the area about the Christian God.  Then he became sick again and the people said it was the work of the ancestral spirits.  Khossa told them, “If it were the demons they would have killed me long ago.  Everyone gets sick sometime in his life.  If I die I shall only go to heaven to be with my God.  What is bad about that?”  He refused all of the medicine and treatment of the traditional doctors.  Mr. Khossa died a few weeks after that singing a song of praise to Jesus and urging his people to believe in Him.[1]</p>
-
-<p>Paul S. Dayhoff</p>
-
-<hr />
-
-<p>Notes:</p>
-
-<ol>
-  <li>C. S. Jenkins, “A Witch Doctor Finds Jesus,”  <em>The Other Sheep</em>,  Mission magazine of the Church of the Nazarene, (Kansas City, MO: Nazarene Publishing House,  October 1955).</li>
-</ol>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Africa Nazarene Mosaic: Inspiring Accounts of Living Faith</em>, first edition, (Florida, Gauteng, South Africa: Africa Nazarene Publications, 2002), copyright © 2001, by Paul S. Dayhoff.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Khossa, Magipa`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -752,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -791,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

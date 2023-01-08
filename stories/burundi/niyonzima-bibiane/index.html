@@ -607,89 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Bibiane was born at Giheta on May 15, 1978. Less than two months after her birth, her parents brought her to the parish church of Murayi for baptism. Despite her parents’ wishes to the contrary, Bibiane decided to end her education upon completing elementary school. She felt a greater attraction to the rural life than to the academic one.</p>
-
-<p>Even from her youth, Bibiane’s Christian faith and her devotion to the Blessed Virgin shone in her daily life. She walked eight kilometers [five miles] every day to attend Mass. She joined the Legion of Mary where she served in a variety of positions. She was known to be very trustworthy.</p>
-
-<p>Bibiane’s marriage to Méthode Makintije was celebrated on September 9, 1996 during the civil war- a period that soon claimed her as a victim. An eyewitness to her final moments recounts the story:</p>
-<blockquote>
-
-  <p>As I was walking along the road around 6 PM, I heard a lot of noise
-and then, distinctly, the voices of three people: two men (a uniformed
-soldier and a civilian) and a very young woman. The soldier was intent
-on disrobing the woman. He stripped her completely, even including
-her undergarments. She struggled and cried at the top of her voice:
-‘It is useless to force me, you can’t make me, I will never give in to
-you! I will never commit adultery!’ The civilian, whose name was
-Alexis, did everything he could to get the woman out of the soldier’s
-grasp. Thwarted, the soldier became enraged and fired a bullet that
-hit both victims at the same time. Bibiane died on the spot, whereas
-Alexis’ leg was shattered.</p>
-
-  <p>Experiencing a moment of regret, the soldier tried to bandage Alexis’
-wound with a piece of the woman’s clothing. Alexis refused. Instead,
-he stated that he wished to meet the same fate as the woman. In a blind
-rage, the soldier fired two shots at Alexis, killed him, and then stabbed
-the bodies of his two victims over and over again with his bayonet. He dragged the bodies off the Gitega-Bujumbura road and dumped them
-into a ditch.</p>
-</blockquote>
-
-<p>It was thus that these two Christians testified to their faith. Bibiane was a martyr of chastity whereas Alexis was a martyr of charity.</p>
-
-<p><strong>Marc Nsanzurwimo, M. Afr.</strong></p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-<p>N. Contran and G. Kadjemenje, <em>Cibles: 235 Prêtres Africains Tués</em> (Kinshasa: Afriquespoir, 2002)</p>
-
-<hr />
-
-<p>Received in 2004, this article is the research work of Fr. Marc Nsanzurwimo, M.Afr., who studied under Fr. Francis Oborji, Professor of Missiology at the Urbaniana Pontifical University in Rome, Secretary General of the International Association of Catholic Missiologists (IACM), and consulting member of the DACB. This article was translated in 2013 by Elizabeth Mullen.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Niyonzima, Bibiane`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -768,7 +687,7 @@ into a ditch.</p>
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -807,6 +726,6 @@ into a ditch.</p>
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

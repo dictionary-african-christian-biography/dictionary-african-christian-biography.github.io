@@ -607,85 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Mattsson was born in 1895 in Finland. On a trip to England with his wife, the couple met with Ethiopian Emperor Haile Sellassie I in London while he was in exile (1935-1941). They prayed with him about his country and he promised he would call them to Ethiopia to spread the gospel if his country was liberated from the Italian invasion.</p>
-
-<p>When Ethiopia was liberated and the emperor was restored to the throne, he invited missionaries to work in Ethiopia. Consequently, the Mattssons arrived on September 23, 1951. They started organizing meetings in their home and began to preach the gospel in one of the prisons in Addis Ababa called <em>Alem Bekagn</em> (“I am cut off from the world”).</p>
-
-<p>The Mattssons already had a registered mission foundation in Finland called the Scripture Publishers to Every Creature Mission. They originally used this same name for their mission work in Addis Ababa but it was later renamed the Finnish Mission in Ethiopia.</p>
-
-<p>Based on the promise that he received from the emperor during their meeting in London, Mr. Mattsson asked for the emperor’s support and applied to the Ministry of Education from whom he obtained permission to start a school in Wolmera to teach skills in farming, carpentry, and handcrafts. The negotiations were undertaken immediately and they reached an agreement to rent eighty hectares (approx. 200 acres) of land. The final rental lease documents were signed on April 2, 1955.</p>
-
-<p>As the work expanded, other missionaries came from Finland to support the Mattssons’ work. Three Finnish missionaries arrived in 1952. Tauno Rakkolainen came in 1955 to supervise the work at the farm and Anna Hameenaho came to run a clinic.</p>
-
-<p>Then they built an elementary school which opened for classes on April 1, 1958. Another missionary, Walle Lindbohm, came to Ethiopia in 1956 to work in the school. When other helpers came to proclaim the gospel, the work expanded from Wolmera to the surrounding villages and to the next town of Holeta.</p>
-
-<p>In 1956, the Mattssons began sharing the gospel with people in their home in the Marcato area, the biggest market in Addis Ababa. They built a large temporary meeting area using corrugated iron and canvas for the roof within the fence of their rented house where meetings and Bible studies were held and young men began coming to the Lord.</p>
-
-<p>In 1959, when Eino Manninen, the Finnish Foreign Free Mission (FFFM) chairman, visited Ethiopia for the second time, his observation was that the doors to Ethiopia were open and the pioneering work of the Mattsons was beginning to bear fruit.</p>
-
-<p>In the early 1960s, the Mattssons were in charge of the work at Wolmara, assisted by many other missionaries like Helvi Halme who took on the leadership of the school in addition to the pastoral duties she already had at the Markato work center.</p>
-
-<p>In the mid 1960s, as the mission work expanded, the Mattssons began to have regular meetings in their home in the Sidist Killo area. Another couple moved to the area to assist in this ministry. Besides the members of the Finnish Mission Church–later called the Guenet Church–Christian students from the Haile Sellassie University living on the Sidist Killo campus were always welcomed into their homes.</p>
-
-<p>The Mattssons lived in that place through many difficult times of persecution and endured the beginnings of the Ethiopian Revolution leading to the Dergue Regime in 1974. They witnessed a serious schism of the church in Markato, Addis Ababa, but soon the flock was reunited into one church again with the help of wise Ethiopian leaders like Berhanu Kebede, Hirui Tsige, and others who intervened and brought reconciliation and peace. That was when the Ethiopians took over the leadership of the church and named it the Guenet Church.</p>
-
-<p>Sanfrid Mattsson died on July 17, 1976 in Addis Ababa and was buried at the Petros-Paulos Church. His wife Anna Liisa returned to Finland.</p>
-
-<p>Dirshaye Menberu</p>
-
-<hr />
-
-<p><strong>Sources:</strong></p>
-
-<p>Kyosti Roininen, <em>An Outline of the History of the Finnish Mission in Ethiopia</em> (translated from Finnish to English by Matti Pyykkonen), written for the 50th anniversary of the Ethiopian Guenet Church held in May 2001.</p>
-
-<hr />
-
-<p>This article, received in 2006, was researched and written by Dr. Dirshaye Menberu, retired professor from Addis Ababa University and 2005-2006 Project Luke Fellow. She is a graduate of the Ethiopian Graduate School of Theology (EGST), a <em>DACB</em> Participating Institution.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Mattsson, Sanfrid`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -764,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -803,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

@@ -607,71 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/ethiopia/gaki-sherocho/gaki_sherocho.jpg" alt="Gaki Sherocho" class="bio" /></p>
-
-<p>Gaki Sherocho (1865-1919), or Chinito, was the last king of Kaffa, in what is now southwest Ethiopia, ruling from 1890-97.</p>
-
-<p>He was the 19th ruler of the Menjo dynasty, which is said to have ruled in Kaffa since the end of the 15th century. He became king in 1890, and was deposed in 1897. He had to face two problems - the influence of the Roman Catholic Mission, and the growing expansion of the Ethiopian empire under Menilek (<em>q.v.</em>)</p>
-
-<p>He established a rigorous internal policy, suppressed the Catholics, and even had a member of the royal family beheaded for becoming a Catholic. To allow peasants to farm their fields  undisturbed, he organized large-scale battues (drives to draw game from cover), and had all the lions and leopards killed. Because of his height and proud bearing, the Kaffa people called him the Royal Lion.</p>
-
-<p>Emperor Melinek (<em>q.v.</em>), had already requested Gaki Sherocho’s predecessor, King Gallito Galli Sherotesh, to recognize his sovereignty, and in 1881 had sent an Ethiopian army to Kaffa. The king had nominally submitted, but paid the tribute only when an Ethiopian army was advancing against him. Gaki Sherocho followed the same policy, delaying negotiations in 1890 with the Bashah Aboyé (<em>q.v.</em>), one of Menilek’s generals, and  in 1893 with Menilek himself. Menilek therefore decided to take military action, and in March 1897 his soldiers, under Ras Walda Giyorgis (q.v.), invaded Kaffa. After heavy fighting, Kaffa was conquered, and Gaki Sherocho was captured and submitted, in October 1897. Ras Walda Giyorgis, as Kaffa’s conqueror, was installed as imperial governor to prevent further secession. Gaki Sherocho lived in Ankober, 75 miles (120 km) northeast of Addis Ababa, in Shawa province, until his death in 1919.</p>
-
-<p>Eike Haberland</p>
-
-<hr />
-
-<p><strong>Bibliography</strong></p>
-
-<p>F. J. Bieber, <em>Kaffa - ein altkuschitisches Volkstum in Inner-Afrika</em> (“Kaffa - An Old  Cushitic Tribal Group in the Interior of Africa”), vol. 1, Munster, 1920.</p>
-
-<hr />
-
-<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (in 20 Volumes). Volume One Ethiopia-Ghana, ©1997 by L. H. Ofosu-Appiah, editor-in-chief, Reference Publications Inc., New York, NY. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Sherocho, Gaki`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -750,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -789,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

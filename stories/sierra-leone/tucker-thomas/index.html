@@ -607,76 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Thomas DeSaliere Tucker (1844-1903) was one of the early pupils of the American Missionary Association’s Mende Mission in the Sherbro. At the age of 12 he was taken to the United States to study, and remained there to make a distinguished career for himself in higher education for black Americans, becoming first president of the State Normal College at Tallahassee, Florida.</p>
-
-<p>Born in the Sherbro country, Tucker was the son of a French explorer father, while his mother was the daughter of chief Harry Tucker. His mother’s family had for many years been prominent merchants and slave traders. He received his early education at the Mende Mission, and in 1856 the missionaries took him to the United States where he enrolled in the preparatory school of Oberlin College in Ohio.</p>
-
-<p>Having graduated from the preparatory school, he entered the college in 1860. In 1862, he took leave from the college and went to Virginia to teach the recently liberated slaves in the American Missionary Association’s school at Fortress Monroe. He returned to Oberlin and graduated in 1865. He then taught schools for the freedmen, first in Georgetown, Kentucky, and later in New Orleans, Louisiana. He received a degree in law from Straight College of New Orleans (now Dillard University) in 1883, and was a practising attorney in Pensacola, Florida, for four years.
-The Sierra Leone missionaries and the officers of the American Missionary Association were disappointed that Tucker did not return to his homeland, even though he had the ‘deepest sympathy’ for it. He explained that his family connections there would present ‘trials and temptations’ that would make it impossible for him to live the life of a Christian.</p>
-
-<p>In 1887 he was co-founder with Thomas Vann Gibbs, of the State Normal College (for blacks) at Tallahassee, Florida. He became the first president of this institution which was to evolve into Florida A. and M. University. Of his appointment to the presidency of the school, the editor of the Pensacola <em>Southern Leader</em> wrote on August 20, 1887:</p>
-
-<blockquote>
-  <p>The State Board of Education certainly deserves much credit for the appointments recently made for this school. … We have known Professor Tucker for about 18 years and we have never met a more genial, broadminded and sterling gentleman. He possesses first-class qualities as a friend, gentleman and scholar, and commands the respect of all who know him. He is a strong man, morally and intellectually, and the new Normal has a security of success under his charge.</p>
-</blockquote>
-
-<p>Tucker left Tallahassee in 1901 and went to Jacksonville, Florida, where he resumed his practice of law. He died in 1903, and was buried in Baltimore, Maryland.</p>
-
-<p>Clifton H. Johnson</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Clara M. DeBoer, “The Role of Afro-Americans in the Origin and Work of the American Missionary Association, 1839-1877,” Ph.D. dissertation, Rutgers University, New Jersey, 1973; Clifton H. Johnson, “African Missionaries to U.S. Freedmen,” <em>The Crisis</em>, November, 1971.</p>
-
-<hr />
-
-<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (In 20 Volumes). Volume Two: Sierra Leone-Zaire. Ed. L. H. Ofosu-Appiah. New York: Reference Publications Inc., 1979.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Tucker, Thomas DeSaliere`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -755,7 +687,7 @@ The Sierra Leone missionaries and the officers of the American Missionary Associ
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -794,6 +726,6 @@ The Sierra Leone missionaries and the officers of the American Missionary Associ
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

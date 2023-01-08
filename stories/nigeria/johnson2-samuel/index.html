@@ -607,71 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Yoruba minister, diplomat, and historian.</p>
-
-<p>Johnson was born in Hastings, Sierra Leone. His father was Henry Johnson, a liberated African descended from the former king of Oyo in Yorubaland; his elder brother was Henry Johnson. When Samuel was ten years old, David Hinderer recruited his father for Yorubaland as his assistant in Ibadan. Samuel attended the Hinderers’ school, and the Abokuta Training Institution. In 1865 he became schoolmaster at Aremo, Ibadan, and catechist there in 1876, taking increasing responsibility in the frequent prolonged absence of missionary staff. He also traveled to keep contact with the scattered Christians beyond Ibadan.</p>
-
-<p>During the Yoruba Wars (1877 - 1893), he became an emissary, trusted on all sides, between the Ibadan chiefs, the king of Oyo, and the British. During a visit from the bishop of Sierra Leone in 1886, he was ordained deacon and priest and, after a brief period at Ondo, in 1887 became pastor at Oyo. There he remained until his untimely death.</p>
-
-<p>In Oyo, Johnson had access to rich sources of Yoruba tradition. By 1897 he had completed the remarkable <em>History of the Yorubas</em>, an account of Yoruba culture and tradition down to his own day. The work made excellent use of oral sources and of his own experiences. The Church Missionary Society would not publish the manuscript but passed it to another publisher, who lost it. Johnson thus died without seeing the work in print. His younger brother Obadiah, a Lagos medical doctor, rewrote the book from his papers, and after many vicissitudes (the second manuscript was sent to England on a ship that was captured during the World War I) it was published, with a dedication to Hinderer’s memory, in 1921. It has often been reprinted.</p>
-
-<p>Johnson says that he wrote from patriotic motive; educated Yoruba knew the history of Britain, Greece, and Rome, but not of their own country. He envisaged an originally unitary Yoruba state, of which Oyo and Ife were respectively the political and cultural pillars, and saw Christianity as crowning, not as overturning, Yoruba history. His book is a monument to the scholarship and cultural sensitivity to be found among Christian West Africans of his generation.</p>
-
-<p>Andrew F. Walls</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Samuel Johnson, <em>The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate</em>, O. Johnson, ed. (1921). J. F. Ade Ajayi, <em>Christian Mission in Nigeria, 1841 - 1891</em> (1965) and “Samuel Johnson, Historian of the Yoruba,” <em>Nigeria Magazine</em> 81 (1964): 141 - 146; <em>CMS Register of Missionaries and Native Clergy,</em> no. 348; <em>Lagos Weekly Record</em>, May 4, 1901 (obit.).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Johnson, Samuel (C)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -750,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -789,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

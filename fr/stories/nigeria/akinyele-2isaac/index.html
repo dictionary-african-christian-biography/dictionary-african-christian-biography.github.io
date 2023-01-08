@@ -605,71 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Chrétien et leader traditionnel Yoruba au Nigéria</p>
-
-<p>Né à Ibadan, une grande ville de majorité musulmane, Akinyele a reçu son éducation dans une école de la Church Missionary Society (Société Missionnaire de l’Église), et a eu trois carrières distinguées. Dans le domaine du service civil il est monté jusqu’au poste de premier juge de la cour indigène, et en 1961, il est devenu ministre de l’état sans portfolio pour le gouvernement de la région occidentale, après avoir été fait chevalier par la reine Élizabeth. Comme leader traditionnel, il est devenu un chef d’Ibadan en 1935, et en 1955 il a été élu au poste suprême d’<em>olubadan</em> (roi) d’Ibadan, mais seulement à condition qu’il n’y ait ni cérémonies traditionnelles, ni sacrifices. En tant que leader chrétien, il a d’abord servi l’église anglicane comme membre du synode. Après, autour de 1925, il est devenu membre du nouveau mouvement Aladura, qui rejetait les médicaments traditionnels et pratiquait la guérison par la foi. Il a donc rejeté tous les médicaments pour le reste de sa vie. La partie du mouvement Aladura auquel il appartenait s’est alliée à l’Église apostolique britannique à partir de 1931, mais il avait du ressentiment contre la domination missionnaire, et dès 1941, il s’était séparé de cette église pour devenir le leader ascétique et non charismatique de l’Église apostolique du Christ. De toutes les Églises Aladura, c’est cette dernière qui est devenue la plus grande et la mieux organisée. Parmi les nombreuses publications d’Akinyele, à la fois religieuses et séculaires, il y a un traité intitulé “Comment confesser les péchés de tout son cœur.”</p>
-
-<p>Harold W. Turner</p>
-
-<hr />
-
-<h1 id="bibliographie">Bibliographie</h1>
-
-<p>J. D. Y. Peel, <em>Aladura: A Religious Movement Among the Yoruba</em> (1968) [Aladura: un mouvement religieux parmi les Yoruba] ; Harold W. Turner, “The Late Sir Isaac Akinyele, Olubadan of Ibadan,” [Le chevalier décédé Monseigneur Isaac Akinyele, Olubadan d’Ibadan], <em>West African Religion</em> 4 (1965) [La religion ouest africaine 4 (1965)] : 1-4.</p>
-
-<hr />
-
-<p>Cet article est reproduit, avec permission, du <em>Biographical Dictionary of Christian Missions</em> [Dictionnaire de biographies des missions chrétiennes], © 1998, par Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. Tous droits réservés.</p>
-
-<hr />
-
-<p>Lien externe:</p>
-
-<p><em>Encyclopaedia Britannica</em>, (article complet en anglais): <a href="http://www.britannica.com/EBchecked/topic/12038/Aladura">Aladura</a>.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Akinyele, Isaac Babalola (B)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -750,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -787,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

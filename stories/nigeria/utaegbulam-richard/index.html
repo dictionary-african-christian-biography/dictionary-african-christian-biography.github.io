@@ -607,77 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Richard Utaegbulam was born in 1904 in Umuezeala Village of Old Umuahia Autonomous Community in Umuahia South Local Government Area of Abia State, Nigeria.  His parents were Chief James Ajuzie Orimkpa Utaegbulam and Mrs. Cordelia Oiridiya Utaegbulam of the Igbo tribe.  Richard and his wife, Mrs. Rhoda Chiala Utaegbulam, had nine children and numerous grandchildren.</p>
-
-<p>Richard was baptized at the age of 15 and confirmed as a full member of the Anglican Church in 1923.</p>
-
-<p>In 1922, Richard completed his primary education and was employed as a teacher at St. Silas’ School, an Anglican Mission school in Old Umuahia.  Three years later, he studied at Ihie Theological Institute and then went on to St. Paul’s College, Awka for two years.  He was then appointed catechist at St. Silas’ Anglican Church, Old Umuahia.</p>
-
-<p>In 1938 and 1939, Richard attended St. Paul’s College, Awka, for priestly training.  In 1940 he was ordained deacon at St. Stephen’s Cathedral, Bonny, Cathedral of the Niger Delta Pastorate (NDP).  The following year he was ordained a priest, also at St. Stephen’s.  In 1953, Richard was appointed Canon Residentiary and posted to St. Michael’s Church, Aba.  He studied at Wycliffe Hall, Oxford, England, from 1956 to 1957 and in 1960 was appointed Archdeacon of Aba Archdeaconry of the Niger Delta Diocese, at St. Silas’ Church, Old Umuahia, the Archdeaconry headquarters.</p>
-
-<p>Besides being a priest, Richard was also a leader in his community.  He led the struggle to create the Diocese of Aba from the former Niger Delta Diocese.  The new diocese was formed after his death.</p>
-
-<p>Many scholars, priests, and businessmen, in the church of Umuahia and beyond benefitted from his scholarship awards.  He was a Justice of the Peace in 1964 and received the Nigerian National Honours Award of “Member of the Federal Republic” in 1965.  Richard was also an accomplished organ and flute player and composed native gospel airs for church choirs.  He participated in Boy Scouts, rising to the level of Scout Master and also enjoyed playing football.</p>
-
-<p>Richard Utaegbulam died at Queen Elizabeth Hospital, Umuahia after a protracted illness.  One of his sons, the Rev. Canon Dr. Lawrence O. Utaegbulam, is the Medical Director of St. Paul’s Hospital, Aba and the parish priest of St. Paul’s Church, Umuocham, Aba.</p>
-
-<p>Emele Mba Uka</p>
-
-<hr />
-
-<p>Sources:</p>
-
-<p>Interview with his son, Rev. Canon Dr. Lawrence O. Utaegbulam, Medical Director of St. Paul’s Hospital, Aba and parish priest of St. Paul’s Church, Umuocham, Aba.</p>
-
-<p>Information was also taken from the personal diary of Archdeacon Richard Enyidedeya Utaegbulam, MFR, JP.</p>
-
-<hr />
-
-<p>This article, received in 2001, was researched and written by Rev. Dr. Emele Mba Uka, a Project Luke Fellow, Professor of Theology in the Department of Religion and Philosophy at the Federal University of Calabar, Nigeria (UNICAL).</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Utaegbulam, Richard`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -756,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -795,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

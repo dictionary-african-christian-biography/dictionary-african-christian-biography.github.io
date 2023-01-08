@@ -605,94 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Butso Bulo Yosia est né en 1919 à Nyama (dans la partie nord est de la République Démocratique du Congo). Sa famille était chrétienne.  Butso crut au Seigneur Jésus en 1930 et fut baptisé en 1939 dans la Communauté Emmanuel, issue des frères moraves.</p>
-
-<p>Pour la famille de l’intéressé, ses noms avaient une signification particulière. En effet, <em>Butso</em>, en Badha, veut dire “quelque chose qui se trouve près de la tombe.” Ceci sous-entend que cette famille avait toujours été frappée par la mortalité de leurs bébés. Avec la naissance de Butso, elle n’avait plus d’espoir que cet enfant survivrait.</p>
-
-<p>Après avoir passé quelques années d’études à Bongondza, en République Démocratique du Congo, Butso poursuivit ses études en Suisse, à partir de 1965, à l’Institut Biblique Missionnaire. Son niveau d’études et sa compétence lui valurent la confiance de ses chefs hierarchiques. Il parlait couramment le français, le kiswahili et quelques autres langues nationales.</p>
-
-<p>En 1941, il fut engagé a l’imprîmerie de Nyankunde, puis, en 1950, il fut désigné pour assumer les fonctions de rédacteur-adjoint du journal <em>Neno la Imani</em>, dont le rédacteur en chef était le missionnaire Deans. Au même moment, Butso oeuvrait en qualité d’ancien de l’église locale de Nyankunde. Il avait également en charge la visite de certaines congrégations environnantes.</p>
-
-<p>Butso et son épouse participèrent activement à l’exposition universelle qui eut lieu à Bruxelles en 1958.</p>
-
-<p>A l’occasion de l’accession du pays à l’indépendance en 1960, Butso fut désigné représentant légal de la Communauté Emmanuel à partir de 1961. Tout porte à croire que Butso fut un grand initiateur de développement de l’église, tant sur le plan spirituel que sur le plan materiel. Son mandat à la tête de cette grande communauté ecclésiale était caractérisé par une rénovation manifeste. Le projet de développement communautaire, la création des écoles, la création de nouvelles congrégations (missions) sont les fruits de Butso, fruits dont l’église est fière aujourd’hui.</p>
-
-<p>Par ailleurs, les qualités de Butso attirèrent l’attention de l’état congolais qui lui discerna des titres honorifiques (mérites civiques) pour son travail depuis l’époque coloniale.</p>
-
-<p>Ayant longuement oeuvré dans la maison d’édition du journal <em>Neno la Imani</em>, revue semestrielles d’actualités, en qualité de rédacteur en chef, et par la suite son directeur, Butso écrivit plusieurs articles dont la plupart ont été édités dans le but de propager l’évangile de Jésus-Christ.</p>
-
-<p>Butso était un homme sage, compétent, intègre et unique dans son genre.  C’était un bon dirigeant et un intercesseur fidèle. Il savait apaiser les conflits et les tensions qui pouvaient surgir dans l’église. C’est lui qui créa un ministère dit “d’opération spirituelle,” ou  “d’intercession,” qui connaît une évolution considérable dans son église locale.</p>
-
-<p>Butso est mort à Nyankunde en 1987 après une longue maladie.</p>
-
-<p>Justin Gboro Tchulo B.</p>
-
-<hr />
-
-<p>Sources:</p>
-
-<ol>
-  <li>
-    <p>Barongo Mugenyi, beau-frère de Butso, interview du 31/12/2002 à Bunia.</p>
-  </li>
-  <li>
-    <p>Bamunoba Yoasi, collègue de service de Butso, interview du 03/01/2003 à Bunia.</p>
-  </li>
-  <li>
-    <p>Tambaki Wamara, collègue de service de Butso, interview du 03/01/2003 à Bunia.</p>
-  </li>
-  <li>
-    <p>Ndjangosi Dive, cousine de Butso, interview du 07/01/2003 à Bunia.</p>
-  </li>
-</ol>
-
-<hr />
-
-<p>Cet article, reçu en 2003, est le produit des recherches de Justin Gboro Tchulo B., étudiant en théologie sous la direction du Révérend Yossa Way.  Ce dernier est professeur de théologie et coordinateur de liaison du <em>DIBICA</em> à l’Institut Supérieur Théologique Anglican (Bunia, Rép. Dém. du Congo) ainsi que récipiendaire de la bourse du Projet Luc en 2001.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Butso Bulo, Yosia`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -773,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -810,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

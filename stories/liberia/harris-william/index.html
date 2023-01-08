@@ -607,81 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/liberia/harris-william/harris.jpg" alt="William W. Harris" class="bio" /></p>
-
-<p>Independent church founder; after attracting over 100 000 followers his movement was repressed by the French, but left a legacy of Christian conversion.</p>
-
-<p>He was of Grebo origin, born near Cape Palmas in Liberia. At the age of about twelve Harris went to live with a Grebo Methodist minister at Sinoe, who educated him in English and a written form of Grebo.  Afterwards Harris worked on ships plying the west African coast.  He returned to Cape Palmas where he became a bricklayer, married, and joined the Episcopal Church (<em>c.</em>1885).  In 1892 he became a teacher and catechist, and eleven years later was put in charge of a school nearby.  In 1904 he was suspended for unknown reasons, but was reinstated at a different school in 1907, working also as a government interpreter.  During that time he became known as a defender of Grebo rights against the Liberian government.</p>
-
-<p>In 1908 Harris was dissmissed from his position as interpreter and went to Monrovia to protest.  He arrived at the time of a British-inspired coup attempt against President Arthur BARCLAY (1909).  Although showing some sympathy towards the rebels, his role in the incident was minor; he was thought to have been arousing anti-government sympathy in the interior and was jailed.  Whether due to his instigation or not, in 1910 the Grebo rebelled against the Liberian government and were defeated.  Meanwhile Harris, still in prison, received a ‘call’ from the Angel Gabriel to become a prophet.  Emerging from prison (<em>c.</em> 1912), he donned a white robe and a turban, and carried a staff in the shape of a cross.  His white beard completed the Biblical impression.</p>
-
-<p>Harris walked the Liberian coast preaching Christianity and condemning idol worship.  In 1913 he entered the Ivory Coast, where his following grew rapidly, largely because of his reputation as a faith healer.  He continued his tour in the Gold Coast before returning to the Ivory Coast where over 100 000 people were converted.  The French were at first sympathetic to him, particularly because he preached the work ethic.  But after some incidents in 1914 the French realized the movement’s potential for disorder.  They expelled Harris to Liberia, and destroyed his churches (1915).  Harris continued to preach in Liberia, but no longer attracted a large following.  In the Ivory Coast Protestant and Catholic missionaries competed to recruit the new Christians left behind by Harris.  Many of his converts, however, remained outside the mission churches.  Separatist churches which recognize Harris as their founder thrive today in the Ivory Coast and Ghana.</p>
-
-<p>Mark R. Lipschutz and R. Kent Rasmussen</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Walker, Sheila.  <em>The Religious Revolution in the Ivory Coast: The Prophet Harris and the Harrist Church.</em>  Chapel Hill: University of North Carolina Press, 1983.</p>
-
-<p>Haliburton, Gordon M.  <em>The Prophet Harris.</em>  London: Oxford University Press, 1971.</p>
-
-<p>Webster, J. B. &amp; A. A. Boahen.  <em>West Africa Since 1800.</em>  London: Longmans, 1967.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Dictionary of African Historical Biography</em>, 2nd edition, copyright © 1986, by Mark R. Lipschutz and R. Kent Rasmussen,  University of California Press, Berkeley and Los Angeles, California.  All rights reserved.</p>
-
-<hr />
-
-<p>External link</p>
-
-<p><em>Encyclopaedia Britannica</em>  (complete article): <a href="http://www.britannica.com/eb/article-9039351/Harris-movement">Harris Movement</a></p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Harris, William Wadé (A)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -760,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -799,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

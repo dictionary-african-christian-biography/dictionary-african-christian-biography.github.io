@@ -611,73 +611,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Knud Lindö was born in Bremnes, Norway, on March 25, 1844. He studied at the seminary of the Lutheran Norwegian Missionary Society (NMS) from 1869 to 1873, and was ordained to the pastorate a year later.</p>
-
-<p>He left for Madagascar very soon after his ordination, and was one of the four NMS pioneers to the west coast. Along with David Jakobsen, he tried to establish a mission station at Andranompasy, on the Mangoky estuary, but the village was destroyed by bandits. He settled in Manja in 1876, with A. Valen. They both fell gravely ill from malaria and were saved just in time, as their colleagues had sent porters to carry them to Fianarantsoa by litter.</p>
-
-<p>In 1877 Lindö founded the mission station of Soatanana, near Fianarantsoa, and stayed there until 1881. It later became a famous village because a magnificent revival movement had its origins there. The movement was called “<em>Ny Mpianatry ny Tompo</em>, the Disciples of the Lord,” and it was founded by Rainisoalambo in 1894. Lindö then held a variety of positions in the Highlands, and from 1894 to 1896, he built the buildings of the new seminary of Ivory-Fianarantsoa, which he directed until 1907.</p>
-
-<p>Having written several theological works in Malagasy, Lindö returned to Norway in 1908. He died in Mandal on August 24, 1919.</p>
-
-<p>O. C. Dahle, L. Molet</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p><em>Ny Epistily ho any Romana</em> [The Epistle to the Romans], Antananarivo, 1886.</p>
-
-<p>*Hevi-teny amy ny Filazantsara nosoratany Lioka *[Commentaries on the Gospel of Luke], Antananarivo, 1894.</p>
-
-<p><em>Geography Bibikaly</em> [Biblical geography], Antananarivo, 1898.</p>
-
-<hr />
-
-<p>The above article, reprinted here by permission, is from <em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em> [People and Destinies: an Overseas Biographical Dictionary], vol. 3, published in 1977 by the Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Lindo, Knud`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -756,7 +691,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -795,6 +730,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

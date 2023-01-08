@@ -611,73 +611,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Khama III (Khama the Good, also Khama the Great) (c1837-February 21, 1923) was chief of the Bamangwato and eldest of the 16 sons of Sekgoma I. He and his brother became Lutheran Christians (1860), an action that was strongly opposed by their traditionalist father. In 1875. when Sekgoma fled into exile. Khama III became his successor. At first his capital was at Shoshong, but it was moved to Palapye, and then finally to its present location in Serowe in 1902.</p>
-
-<p>Opposed to many traditionalist practices, he began by banning liquor and worked closely with missionaries of the London Missionary Society (LMS), who had replaced the Lutherans. He also promoted unity and education, and strongly protected land rights.</p>
-
-<p>Fearful of Afrikaner expansion from the Transvaal, he sought British protection from the mid-1870s, and welcomed the Warren Expedition in 1885, setting an area aside for British settlement. The British, however, declined the responsibility of assuming the protectorate. In 1888 P.D.C.J. Grobler, an Afrikaner, was wounded while passing through Bamang-wato territory, and later died. The British commissioner of the Bechuanaland Protectorate (now Botswana) exonerated Khama of responsibility for Grobler’s death.</p>
-
-<p>In 1889 a charter placed the Bamangwato under the authority of the British South Africa Company of Cecil John Rhodes. Disturbed by the company’s relationship to the Protectorate, and the proposal that Britain transfer authority to the company, Khama sailed for England, accompanied by Chief Sebele of the Kwena, and Chief Bathoen I of the Ngwaketse to try and stop the transfer. In England he received a sympathetic hearing and also received assurances that British protection would continue. In return he granted the British a strip of land on his eastern boundary to permit a railroad to be built there. Thereafter relations were harmonious, although Khama continued to maintain tribal rights punctiliously. In 1887, and in 1922, he was obliged to send armed forces against subsidiary ethnic groups.</p>
-
-<p>Khama was also a successful entrepreneur. The trading company which he launched in 1910 was a great success. The British, fearing competition from Khama, closed his company down in 1916.</p>
-
-<p>On his death, he was buried in Serowe.</p>
-
-<p>Michael Scott</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Mark R. Lippschutz and R. Kent Rassmusen, <em>Dictionary of African Biography</em>, Chicago: Aldine Publishing Co., 1987; Richard P. Stevens, <em>Historical Dictionary of the Republic of Botswana</em>, Metuchen, New Jersey, 1975.</p>
-
-<hr />
-
-<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (In 20 Volumes). Volume Three: South Africa- Botswana-Lesotho-Eswatini. Ed. Keith Irvine. Algonac, Michigan: Reference Publications Inc., 1995.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Khama Boikano (C)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -756,7 +691,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -795,6 +730,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

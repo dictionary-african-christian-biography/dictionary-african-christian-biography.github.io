@@ -607,63 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>He was born at Ephrata, Pennsylvania, of Seventh-Day Baptist parents who, while Samuel was a child, joined the Seventh-day Adventist Church. After two years at South Lancaster Academy he went to Battle Creek, where he took the nurse’s course. Returning to Massachusetts, he worked as a nurse at the New England Sanitarium. Here he met and married Ruth Mason, who was likewise a nurse. Together they went to Battle Creek Sanitarium, then on to St. Helena Sanitarium, where they worked until called to Africa in 1907.</p>
-
-<p>Konigmacher’s first field was Nyasaland (now Malawi), where for a time he worked in the Malamulo Mission. Then he and his wife were sent to pioneer the work at Matandani Mission up in the Neno Hills, some seventy miles (110 kilometers) west of Blantyre. Here they worked for about five years. During that time they lost two infant sons, James and Martin, both stricken by malaria.</p>
-
-<p>From Nyasaland the Konigmachers were called to Northern Rhodesia (now Zambia), and this remained their field of labor for twenty-five years. After a year at Rusangu during the absence on furlough of W. H. Anderson (c. 1917), they pioneered the work at Musofu Mission, near the Congo border. Here they buried their third son. During this period Konigmacher was ordained to the ministry (c. 1921).</p>
-
-<p>Early in the 1920s the Konigmachers were asked to pioneer yet a third station far up the Zambezi River in Barotseland, Zambia. To reach this mission they proceeded up the river for two weeks by riverboat. For the next eighteen years Barotseland was their home. At times, particularly when the river was in flood, they found it extremely difficult to secure essential supplies. The sandy nature of the country made it necessary to walk nearly everywhere. A number of outschools were established and a firm foundation was laid for the strong work that is now conducted in Barotseland.</p>
-
-<p>Failing health compelled the Konigmachers to return to America, but their one living son, Arthur, remained in Africa. Accustomed to the warmth of Africa, Konigmacher sought a mild climate, and this he found in the Hawaiian Islands, where he died.</p>
-
-<hr />
-
-<p>This article is reprinted with permission from the <em>Seventh-Day Adventist Encyclopedia</em>, copyright © by Review and Herald Publishing Association, 55 West Oak Ridge Drive, Hagerstown, Maryland 21740, 800-765-6955.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Konigmacher, Samuel`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -742,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -781,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

@@ -607,85 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/demrepcongo/mantantu-dundulu/mantantu_dundulu.jpg" alt="Mantantu Dundulu" class="bio" /></p>
-
-<p>Mantantu Dundulu (circa 1865-February 1938) better known as Nlemvo, was the first Protestant Christian in the Congo, and a close collaborator with William H. Bentley in writing down the Kikongo language.</p>
-
-<p>Born at Padwa in Angola, Mantantu Dundulu, fatherless from the day of his birth, was raised, according to the customs of his society, by his uncle, Tulante Mbidi. His uncle was both chief of the village of Lemvo and a merchant in ivory and slaves.</p>
-
-<p>In 1879, King Don Pedro V of the Kongo, accompanied by W.H. Bentley, a missionary of the Baptist Missionary Society (BMS), traveled to Lemvo. It was in this village that Bentley, who was learning Kikongo, discovered Mantantu, who spoke the language extremely well. Bentley found in him an excellent interpreter and made him, with the blessing of his uncle, his collaborator.</p>
-
-<p>Quickly learning to read and write, Mantantu accompanied Bentley on most of his voyages. It is thought that the name Nlemvo, which means obedience and also indicates his native village, was given to him by Bentley.</p>
-
-<p>On April 30, 1882, Nlemvo converted to Christianity. His baptism, however, did not take place until six years later, on February 19, 1888. Thus he became the first person to be baptized at the Wathen station (now Ngombe-Lutete), located 50 km (30 mi) north of Mbanza Ngungu.</p>
-
-<p>In the beginning, Nlemvo helped the English missionaries to build a school at the old Kongo kingdom’s capital of San Salvador, and in 1883 he helped in the construction of the BMS at Stanley Pool (now Malebo). Then, he worked with Bentley to compile a “Dictionary and Grammar of the Kongo Language.” In the course of this work, he accompanied Bentley to England in April 1884. During his European stay, Nlemvo was received, with eight other “Congolese,” by King Leopold II of Belgium. As a result of his protracted absence, his family grew concerned, thinking he had been sold as a slave. So, at the end of his translation work, he returned to his own village until Bentley came back. Later he participated in the exploration of the tributaries of the Kasai, in the company of the missionaries George Grenfell and Bentley.</p>
-
-<p>After his baptism in 1888, Nlemvo married Kalombo, a Christian woman originally from the Kasongo region in eastern Congo, where the missionaries had freed her from slavery. Nlemvo and Kalombo lived in Kivianga, a Christian village created on the land grant of the BMS station at Ngombe-Lutete in 1882. This village, like most of the newly founded Christian villages, grouped together an ethnically heterogeneous population. Before his marriage, Nlemvo had lived there with his three sisters. Nlemvo’s interethnic and religious marriage, was but one example of a profound transformation instituted by missionaries in Kongo society. Nlemvo himself had become a true “detribalized man” as was evidenced in his refusal to become chief of his village after the death of his uncle in 1887.</p>
-
-<p>Nlemvo collaborated in the translation of the New Testament into Kikongo. To assist Bentley in this difficult undertaking, he went to England, for the second time, between December 1892 and September 1893. Then, when Bentley, weakened by illness and work, returned to England permanently, Nlemvo accompanied him in order to complete the translation of the entire Bible from English to Kikongo. During his third European stay, he underwent eye surgery intended to correct a disease threatening his sight. Unfortunately the operation ended in failure and Nlemvo returned home in 1905 without having been cured.</p>
-
-<p>In spite of eye problems, Nlemvo continued his rich literary career. He assisted in a revision of the Bible in Kikongo, published in 1926; he took an active part in Mrs. Bentley’s translation of the Proverbs and Psalms; he worked with M. Jennings in translating Stakler’s book on the life of St. Paul and the Acts of the Apostles into Kikongo; and he translated, from English to Kikongo, the book entitled “Peep of Day.” Finally, Nlemvo wrote an autobiographical sketch entitled “Mpungwilu.”</p>
-
-<p>In November 1937, the colonial administration informed the first Protestant Christian of their intention to honor him with the gold medal of the Royal Order of the Lion in recognition of his services to the state. Unfortunately Nlemvo died in February 1938, so the medal was presented posthumously to his son in July 1938.</p>
-
-<p>A major African literary expert, Mlemvo’s primary contribution was in the work of translating, the importance of which remains appreciated even in the present day.</p>
-
-<p>Sabakinu Kivilu</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>W.H. Bentley, <em>Pioneering on the Congo</em>, 2 vols., London, 1900; Slade, <em>English-speaking Missions in the Congo Independent State</em>, Brussels, 1959.</p>
-
-<hr />
-
-<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (In 20 Volumes). Volume Two: Sierra Leone-Zaire. Ed. L. H. Ofosu-Appiah. New York: Reference Publications Inc., 1979.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Mantantu, Dundulu`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -764,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -803,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

@@ -607,57 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>A Bai, born at Fei, near Kayango, in 1918, Arkanjelo Konogo Ali was baptized in 1928. Having completed the Minor Seminary in Bussere, he attended philosophical and theological courses at Gulu (1939-1946). He was ordained a priest at Mboro on October 27, 1946 by Bishop F. X. Bini of Khartoum. He was occupied in pastoral work at Dem Zubeir, Raga, Kwajok, and Warap. When the Rumbek Vicariate was erected in 1955 he was stationed in Rumbek and later in Maridi. In 1961 he went to Bruxelles, Belgium, for a one-year catechetical course at Lumen vitae. One of the most active and zealous priests, he spoke Arabic, English, Italian, French, Ndogo, and several other languages of the Sudan. On July 21, 1965, military trucks burst into Rumbek mission compound about nine a.m. The two Fathers stationed there were ordered to walk ahead of the soldiers. Suddenly there was a volley of gunfire and Fr. Jerome fell wounded. Then Fr. Arkanjelo was taken under the veranda and killed. His body was hidden by the soldiers.</p>
-
-<p>V. Dellagiacoma</p>
-
-<hr />
-
-<p>This article, received in 2005, is reprinted with permission from <em>Sudanese Catholic Clergy</em>, © copyright 1997 by Fr. V. Dellagiacoma (Provincial Comboni House, Khartoum, Sudan).</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Ali, Arkanjelo Konogo`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -736,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -775,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

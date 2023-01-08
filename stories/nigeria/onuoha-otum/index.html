@@ -607,69 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Elder Otum Onuoha was born around 1875 in Elu Ohafia, in Abia State, Nigeria, to Nna Onuoha Mba, his father, and Nne Ole Obuolo, his mother.  He married Mrs. Grace Eke Uwa.</p>
-
-<p>Otum attended adult education classes where he learned how to read the Igbo Bible.  He was converted to Christianity by the early Church of Scotland missionaries who came to Ohafia in 1911.  He later became their interpreter and was ordained as the first elder in Ohafia in 1917.</p>
-
-<p>Elder Otum started the church in his compound in Obu Ndi Imaga in Elu Ohafia.  He served as a church elder for about 40 years in his hometown, Elu Ohafia.  He preached vigorously against the killing of twins and the ill-treatment of their mothers.  He fearlessly campaigned  against the worship of idols  and the inhuman practice of head-hunting. The church he started has won many converts and still stands today. Elder Otum is still remembered  and respected as a faithful Christian leader who endured many insults and abuses from pagan chiefs in his effort to spread the gospel among his people in Ohafia, in Abia State, Nigeria.</p>
-
-<p>Emele Mba Uka</p>
-
-<hr />
-
-<p>Sources:</p>
-
-<p>Oral interview with Elder Kalu Okoro, uncle of Elder Otum, Presbyterian Church, Elu Ohafia.</p>
-
-<p>Information was also drawn from the biography of Elder Otum written after his death.</p>
-
-<hr />
-
-<p>This article, received in 2001, was researched and written by Rev. Dr. Emele Mba Uka, a Project Luke Fellow, Professor of Theology in the Department of Religion and Philosophy at the Federal University of Calabar, Nigeria (UNICAL).</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Onuoha, Otum`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -748,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -787,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

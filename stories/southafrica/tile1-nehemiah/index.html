@@ -607,108 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Nehemiah Xoxo Tile founded an independent tribal church in 1884 which he called the Tembu National Church. He may be called the forerunner of the Ethiopian movement in South Africa.</p>
-
-<p>The origins of Tile are obscure. He was born in Tembuland and is said to have been baptised by the Rev. Dugmore of the Wesleyan Methodist Church. He was educated in Boloto and eventually became a lay preacher and then an evangelist.</p>
-
-<p>In 1870 he was sent to Pondoland where he became a personal friend of Paramount Chief Mhlontlo and Chief Lehane of the Basutos. The following year he was transferred to Shawbury to work with the Rev. E. Gedye. In accordance with the Methodist style of an itinerant ministry, 1872 found him in the Clarkebury district working with the Rev. Peter Hargreaves. Here he was once more working among his Tembu people and he enjoyed a successful ministry at Cwecini, near Clarkebury. Chief Ngangeliswe allowed him to build a church a year later and his work as an evangelist flourished.</p>
-
-<p>The Methodist authorities decided to send Tile to Healdtown for three years of theological training. Here he got to know James Dwane, who also became the leader of an independent church. Tile was accepted as a probationer minister in 1879, but left the Methodist ministry before he could be ordained.</p>
-
-<p>In 1882 Tile worked in Xora and here he came into conflict with the authorities, both colonial and church. Tile was accused by the colonial authorities of telling the people not to pay taxes. The Cape Department of Native Affairs told the Methodist church leaders to discipline Tile and he was called to account for his actions. Tile had become an advisor to the chief who wanted more independence for the Tembu people. He had addressed public meetings and even written to the newspapers.</p>
-
-<p>At the same time Tile had a disagreement with his superior, the Rev. Theophilus Chubb. Tile had donated an ox to the circumcision feast of Dalindyebo, the son of the chief. Chubb had little patience with traditional cultural practices, while to Tile they were a normal part of life.</p>
-
-<p>In 1882 Tile left the Methodist Church and two years later founded the Tembu National Church in Qokolweni, in what was then the Transkei. Tile had great respect for the British Crown and he made Chief Ngangelizwe the head of the church, a copy of the church in England. The Tembu National Church was meant to be a unifying force for the Tembu nation.</p>
-
-<p>At first, Tile met with great success and he added the words ‘South Africa’ to the name of the church to include non-Tembu people. The church membership spread as far afield as the Transvaal where they were known as ‘Tilites’.</p>
-
-<p>Tile trained his ministers according to the Church of England priesthood. Tile himself applied to register as a theological student at St John’s College in Umtata in order to learn the Anglican doctrines (Evidence SANAC). He was not reacting against the Christian Church but against the insensitivity of the Methodist authorities.</p>
-
-<p>In 1884 Dalindyebo succeeded his father as chief. For a while he supported Tile’s church, but in 1895 he returned to the Methodist fold and withdrew his support from tile ‘Tilites’.</p>
-
-<p>Tile died in 1891 and was succeeded by Jonas Goduka, although on his deathbed he had given three of his ministers, Gqamani, Kula and Mkize, the task of continuing the work of the church. Later, there was a split in the church and some of the membership followed Goduka and others chose Gqamani as their leader.</p>
-
-<p>J. A. Millard</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p><em>Clarkebury Mission, Tembuland Centenary Souvenir 1830-1930.</em> The Wesleyan Methodist Church of South Africa.</p>
-
-<p>MS 15 207. *An Outline of the Missionary  Background of the Methodist Church in
-the District of Engcobo. * Cory Library, Grahamstown.</p>
-
-<p>Minutes of the Queenstown District meeting 1873.</p>
-
-<p>Minutes of Evidence of the South African Native Affairs Commission 1903-1905.</p>
-
-<p>Pretorius, H.  “Nehemiah Tile: A 19th Century Pioneer of the Development of
-African Christian Theology.”  <em>Journal for the Study of Religion,</em> 3(I), (1990).</p>
-
-<p>Saunders, C. “Tile and the Tembu Church: Politics and Independency on the
-Eastern Cape Frontier in the Late 19th century.”  <em>Journal of  African History,</em> 11 (4), (1970).</p>
-
-<p><em>Journal of Religion in Africa</em>, 16 (3).</p>
-
-<p>Skota, T. D. M., ed.  <em>The Africa Yearly Register: Being an Illustrated, National, Biographical Dictionary (Who’s Who) of Black Folks in Africa.</em> Johannesburg: R. Esson, 1933.</p>
-
-<p><em>The South African Methodist</em>.  26 May 1892.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Malihambe - Let the Word Spread,</em> copyright © 1999, by J. A. Millard, Unisa Press, Pretoria, South Africa.  All rights reserved.</p>
-
-<hr />
-
-<p>External link</p>
-
-<p><em>Encyclopaedia Britannica</em>  (complete article):  <a href="http://www.britannica.com/eb/article-9033133/Ethiopianism">Ethiopianism</a></p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Tile, Nehemiah (B)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -787,7 +687,7 @@ Eastern Cape Frontier in the Late 19th century.”  <em>Journal of  African Hist
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -826,6 +726,6 @@ Eastern Cape Frontier in the Late 19th century.”  <em>Journal of  African Hist
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

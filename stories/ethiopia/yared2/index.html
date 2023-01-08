@@ -611,87 +611,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Yared (who lived in the 6th century) was a scholar, musician, and ecclesiastic who was a formative influence on the cultural life of Ethiopia, and became a saint of the Ethiopian Orthodox Church.</p>
-
-<p>He was born near Aksum, which was then the political, economic, and cultural center of the empire, during the period in which the Nine Saints of the Ethiopian Orthodox Church helped to revive and to change the country’s cultural life. According to oral tradition, he was the son of Enbaram and of Tawaleya, and was educated by a kinsman, Abba Gedewon. Another tradition, however, holds that he was educated by Saint Za-Mikael Aragawi (<em>q.v.</em>), or another of the Nine Saints. He was certainly closely associated with the Saints and, as a mark of gratitude for their help, dedicated a hymn to each of them, still sung in the Ethiopian Church.</p>
-
-<p>Yared’s contributions to the cultural life of the country can be divided into three categories - education, literature, and music. The educational system he developed remained in use, unchanged, until modern times. It stressed the need to adapt teaching to the pace of development of a young intellect, and also held that pupils should not only be taught but should also be diverted form idleness, by means of a stick of necessary. In literature, his work occupies the highest position, and his collection of hymns, <em>Mazgaba Degwa</em> (“Treasury of Hymns”) is the oldest literary work written in Ge’ez. It is said that before Yared there was no music in Ethiopia, the liturgies and chants being murmured in a low voice; he is therefore believed to be the first Ethiopian composer. He stated that he was inspired by God in his composition, and presented his music in three modes–Ge’ez (the simplest plain chant, used on ordinary days), ‘Ezel (a slow and dignified heavy-sounding mood, usually associated with fasts and funerals), and Araray (the most complex mood, freer and lighter, with musical embellishments, sung on great festivals). It is uncertain, however, whether the Ethiopian musical notations in use today can be attributed to him.</p>
-
-<p>Yared spent the last years of his life composing hymns and teaching many students. He and his students left Aksum and retired to the Semén Mountains, where he lived until his death, which occurred on May 19.  Another tradition holds that the emperor of the day, Gabra Masqal (reigned circa 550 to circa 570), permitted him to retire to the land of Tsalamat, in northeast Bagemder province, beyond the Takkazé river, as a hermit.</p>
-
-<p>Sergew Hable-Selassie</p>
-
-<hr />
-
-<p><strong>Bibliography</strong></p>
-
-<p>E. A. W. Budge, <em>The Book of Saints of the Ethiopian Church</em>, Vol. 3, Cambridge, 1928.</p>
-
-<p><em>A History of Ethiopia</em>, London, 1928.</p>
-
-<p>C. Conti Rossini, <em>Gadla Yared</em> (“The Acts of Yared”), Rome, 1904.</p>
-
-<p>I. Guidi, <em>Storia della letteratura etiopica</em> (“History of Ethiopian Literature”), 3rd ed., Milan, 1956.</p>
-
-<p>C. Mondon-Vidailhet, “La musique éthiopienne” (“Ethiopian Music”), <em>L’encyclopédie deka musique</em>, Paris, 1922.</p>
-
-<p>m. Powne, <em>Ethiopian Music</em>, London, 1968.</p>
-
-<p>Sergew Hable Selassie, “Yared,” <em>Ya Mameheran Demts</em>, Paris, 1922.</p>
-
-<hr />
-
-<p>This article was reprinted from The Encyclopaedia Africana Dictionary of African Biography (in 20 Volumes). Volume One Ethiopia-Ghana, ©1997 by L. H. Ofosu-Appiah, editor-in-chief, Reference Publications Inc., New York, NY. All rights reserved.</p>
-
-<hr />
-
-<h1 id="photo-gallery">Photo Gallery</h1>
-
-<p><img src="/images/bio-pics/ethiopia/yared2/Yared.jpg" alt="Yared" class="bio" /></p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Yared (B)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -770,7 +691,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -809,6 +730,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

@@ -611,93 +611,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p><img src="/images/bio-pics/demrepcongo/kivebulaya2-apolo/Apolo.jpg" alt="Apolo Kivebulaya" class="bio" /></p>
-
-<p>Apolo Kivebulaya was born in the district of Singo of the Buganda kingdom around 1864.  His mother was Nalongo Tezira Singabadda of the Ngabi clan, and his father was Samweri Salongo Kisawuzi of the Nvuma clan.  As a set of twins, he was given the traditional name of Waswa.  It seems that his fellow twin died in early childhood.  Despite being raised Muslim, Apolo converted to Christianity and affiliated with the Protestant faction at some point during Buganda’s Religious Wars (1888 to 1892).  After service as a soldier and a  foreman of roadwork, he was baptized in January 1895 at which time he chose the baptismal name Apolo.</p>
-
-<p>After hearing a plea for new recruits by Baganda missionaries returning from the Toro Kingdom in western Uganda, Apolo volunteered to join them.  In September 1895, the Mengo Church Council, made up by Baganda Christians and CMS missionaries, approved his request.  After a brief and effective stint in Toro, the mission sent Apolo to reinforce its work in the village of Mboga along the disputed border area between the Ugandan Protectorate and the Belgian Congo.  Although he did not begin the  church in Mboga and the surrounding region, he would be best known as its pioneer.</p>
-
-<p>In 1898, Tabaro, the chief of Mboga, blamed the accidental death of a local woman on Apolo and sent him back to Toro for trial by the resident British official.  After languishing in prison for an extended period, Apolo was eventually found innocent and released.  Apolo soon returned to Mboga and was successful in converting Tabaro, his once ardent opponent.  By 1899, the mission recalled Apolo back to Kabarole, the capital of the Toro kingdom, where he commenced itinerate work in the district.  During this time, he was ordained a deacon in 1900 and a priest in 1903 within the Church of Uganda.  Despite occasional visits, the ongoing border dispute prevented Apolo from residing permanently in the Congo again until 1915.  After receiving a vision of Jesus in 1921, Apolo felt called to commence evangelistic efforts in the Ituri Forest among the Batwa, commonly known as Pygmies.  This work consumed the remaining years of his life.</p>
-
-<p>During a visit to Kampala in March of 1933, a medical examination showed that Apolo was suffering from a heart problem.  Against his doctor’s orders, he decided to make the long and arduous trip back to Mboga to end his days where he had ministered for so long.  After completing the journey, he died on May 30. Among his last wishes to a fellow African missionary was the desire to be buried with his head toward the forest.  The significance of this request lay with the Buganda custom of burying dead with the head toward their home.  Apolo added that he wanted this done “…to signify that I am still going towards the forest to preach the gospel, even now my spirit is towards my work.”</p>
-
-<p>Remembered today as the founder of the Anglican Church of the Congo, he was popularly known in the West and in Buganda as the “Apostle to the Pygmies” through a number of biographies.  As part of his ministry, Apolo assisted in the translation of the Bible into Lunyoro and the language of the Batwa.  The Church of England honors Apolo on May 30, the anniversary of his death, in its calendar of Holy Days.</p>
-
-<p>L. Timothy Manarin</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Apolo Kivebulaya’s diaries and related papers  (Makerere University archives in Kampala, Uganda).</p>
-
-<p>A. B. Lloyd,  <em>Apolo of the Pygmy Forest 1923</em>  (London: Church Missionary
-Society, 1937).</p>
-
-<p>——–,  <em>Apolo The Pathfinder -Who Follows?</em>  (London: Church Missionary Society,
-1934).</p>
-
-<p>——–,  <em>More About Apolo</em>  (London: Church Missionary Society, 1928).</p>
-
-<p>Anne Luck,  <em>African Saint: The Story of Apolo Kivebulaya</em> (London: SCM, 1963).</p>
-
-<p>M. Louise Pirouet,   <em>Black Evangelists: The Spread of Christianity in Uganda 1891-1914</em> (London: Rex Collings, 1978).</p>
-
-<p>——–, “Kivebulaya, Revd. Apolo,” <em>Historical Dictionary of Uganda</em> - African Historical
-Dictionaries 64 (Metuchen, N.J.: Scarecrow, 1995): 206-7.</p>
-
-<p>L. M. Tebajana and Y. Naluma,  <em>Obulamu Bwa Apolo Kivebulaya Omutume
-w’Omukubira kye Congo</em> (Mengo: Gambuze Press, 1937).</p>
-
-<hr />
-
-<p>This article was written by Rev. L. Timothy Manarin, formerly a Baptist missionary in Uganda with the International Mission
-Board and currently a doctoral candidate in
-African history at Indiana University.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Kivebulaya, Apolo (B)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -776,7 +691,7 @@ African history at Indiana University.</p>
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -815,6 +730,6 @@ African history at Indiana University.</p>
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

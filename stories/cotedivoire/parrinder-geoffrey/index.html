@@ -601,63 +601,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Geoffrey Parrinder was a British scholar in the study of religion. Parrinder was born in New Barnet, Hertfordshire, England, and was educated for the Methodist ministry at Richmond College. After study at the Faculté de Théologie Protestante in Montpellier, France, he was a missionary in French West Africa (Ivory Coast, Dahomey, and Togo) from 1933 to 1940 and again from 1945 to 1946, much of the time as principal of the Protestant seminary in Porto-Novo, Dahomey. He studied and compared the religious systems of the Akan, Ewe, and Yoruba, the topic of his first book, <em>West African Religion</em> (1949; new ed., wider in scope, 1961). Following ministry in the Channel Islands (1946-1949), he was appointed to the department of religious studies at the new University College of Ibadan, Nigeria, where he pioneered the academic teaching of African religions (reflected in his books <em>West African Psychology</em>, 1951, and <em>African Traditional Religion</em>, 1954) and showed the importance of research into the encounter of Christianity and other religions in Africa (as in his study of Ibadan, <em>Religion in an African City</em>, 1953). From 1958 to retirement in 1977 he taught the comparative study of religion at King’s College, University of London (reader 1958, professor 1970). Here he moved into the field of Asian religions, with studies of concepts such as avatar, texts such as the Gita, and issues such as Jesus in the Qur’an. He also wrote prolifically on comparative themes across the religions of the world, including mysticism, worship, and sex, and on the issues of religious encounter. He did much to stimulate the serious study of other faiths within the churches and to develop the comparative study of religion as a scholarly discipline (he was secretary and later president of the British Association for the History of Religions, of which he was a founder member). His influence on the scope and the categories used in the study of the primal religions of Africa has been considerable, and not always acknowledged; and he was early in identifying the significance of the African Independent Churches.</p>
-
-<p>Andrew F. Walls</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Ursula King, ed., <em>Turning Points in Religious Studies: Essays in Honour of Geoffrey Parrinder</em> (1990; biography of Parrinder on pp. 309-318); H. W. Turner, “Geoffrey Parrinder’s Contributions to Studies of Religion in Africa,” <em>Religion</em> 10 (1980): 156-164; A. F. Walls, “A Bag of Needments for the Road: Geoffrey Parrinder and the Study of Religion in Britain,” <em>Religion</em> 10 (1980): 141-150.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Parrinder, Geoffrey`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -736,7 +681,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -775,6 +720,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

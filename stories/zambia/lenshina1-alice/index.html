@@ -607,79 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Prophetess Alice Lenshina Mulenga Mubisha was the founder of a powerful African independent church movement at the time of Zambian independence. Beginning as an antiwitchcraft movement, it clashed with the new government when it rejected secular authority.</p>
-
-<p>Lenshina was a baptismal candidate with a Presbyterian mission when she received a series of visions in which she believed that she was taken to heaven and given divine messages instructing her to destroy witchcraft and sorcery. She claimed to have died and been resurrected four times. In 1953 she began a movement called <em>Lumpa</em> (meaning “better than all others” in Bemba) in a town that she renamed Zion. She took the name Lenshina, meaning queen. Despite her claims, a Presbyterian pastor baptized her, an event that seems to have had a profound impact on her intensifying her visions. She and her husband were expelled in 1955, however, and began their preaching mission. Crowds of adherents soon joined them, and by 1959 there was an organized church with ministers and between 50,000 and 100,000 members, most of whom had left either Presbyterian or Catholic missions.</p>
-
-<p>Lenshina preached a basically Christian doctrine but with baptism as the only observance. Baptism was a special ceremony administered by Lenshina herself. She attacked witchcraft and sorcery, which placed her in the long tradition of witch eradication movements in Central Africa, but to these she added the condemnation of alcohol and polygamy. The Lumpa composed spirited Bemba hymns, far superior to the wooden translations in use among Protestants and Catholics. The religion gathered its members into villages where the hymns and rejection of traditional religious practices created what she promoted as a new, cleansed society worthy to receive the Savior when He came again. The grand cathedral built at Zion in 1958 has a pillar upon which Jesus Christ was to descend for His second coming.</p>
-
-<p>The problematic teaching of the Lumpa Church for the government - both colonial and independent - was its opposition to earthly authority, a doctrine it seems to have accepted from the Watchtower Society, itself a splinter sect of the Jehovah’s Witnesses.</p>
-
-<p>By 1958 Lenshina had rejected government registration of her church as an approved organization. The Lumpa also rejected taxes and formed their own villages which threatened the traditional authority of the chiefs. Lenshina also challenged the dominant nationalist party, the United National Independence Party (UNIP) of Kenneth KAUNDA, which witnessed a decline in membership when her followers withdrew from political groups. The UNIP regarded Lumpa as a rival, and there were an increasing number of violent clashes between the two groups.</p>
-
-<p>At Zambia’s independence in 1964, the Lumpa Church constituted an open challenge to the new government’s supremacy. Lumpa followers fortified their villages, and the subsequent conflict resulted in the death of 700 church members during police and army attacks. The skirmishes lasted for three months, ending with the banning of the church and Lenshina’s arrest. She was released in 1975 and was arrested again two years later for holding a church service. By that time, however, the movement was effectively dead. Lay movements, such as the Catholic Legion of Mary, reclaimed many of the former members of the Lumpa Church for their churches, often by incorporating the very hymns that had resonated with Bemba national feelings.</p>
-
-<p>Norbert C. Brockman</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Lipschutz, Mark R., and R. Kent Rasmussen.  <em>Dictionary of African Historical Biography.</em>  2nd edition.  Berkeley: University of California Press, 1986.</p>
-
-<p>Ewechue, Ralph (ed.).  <em>Makers of Modern Africa.</em>  2nd edition.  London: Africa Books, 1991.</p>
-
-<p>Wiseman, John A.  <em>Political Leaders in Black Africa.</em>  Brookfield, VT: Edward Elgar Publishing, 1991.</p>
-
-<p>Additional reading: Roberts, Andrew. <em>The Lumpa Church of Alice Lenshina</em> (1972).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>An African Biographical Dictionary,</em> copyright © 1994, edited by Norbert C. Brockman, Santa Barbara, California. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Lenshina Mulenga Mubisha, Alice (B)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -758,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -797,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

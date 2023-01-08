@@ -606,71 +606,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Ferreiro era um homem muito importante em Uno. Ele era um ancião e tinha passado por todos os rituais tribais. Sentava-se em seu trono e possuía um grande rebanho de gado. Foi o primeiro curandeiro em Uno, e supervisionava os rituais de iniciação tanto para homens como para mulheres. Ainda jovem foi para o sul na região de Nalu para iniciar-se como curandeiro. Ele costumava esconder um úrico de mar num saco para enganar as pessoas quando elas o consultavam sobre os espíritos.</p>
-
-<p>A palavra de Deus já tinha chegado a Uno. Ferreiro tinha escutado o testemunho de Omaris e de outros em Ancarave. Ele também queria aceitar a Cristo. Ele inclusive tinha parado de consultar os espíritos para o povo. Quando eles o procuravam, ele explicava: “Eu parei, eu vou tornar-me um cristão”.</p>
-
-<p>Um dia durante a estação chuvosa, Gene McBride e  Pedro da Silva estavam passando pela vila de Angodigo a caminho da vila de Ancarave, Pedro disse a Gene McBride: “Vamos parar aqui para cumprimentar o meu tio.”</p>
-
-<p>Ferreiro ficou muito contente de vê-los e reuniram a todos da vila. Lá, debaixo de um pé de manga na frente de sua casa, eles pregaram o evangelho. Quando eles terminaram, Ferreiro disse: “Amanhã eu vou tornar me cristão, vou queimar os meu ídolos.” Gene não acreditou nele. Ele pensou: “Amanhã pertence a satanás. Porque ele esta esperando?”</p>
-
-<p>Na manhã seguinte Ferreiro chamou todos da vila novamente e lhes disse que iria tornar-se cristão. Ele juntou seus amuletos, alguns da casa dos ídolos na vila e outros da floresta e disse: “Estes me pertencem, eu os comprei, vou queimá-los. Os outros pertencem à vila, levem-nos. Eles não podem mais ficar na minha casa de ídolos.” Ele juntou dois sacos e meio de amuletos e os queimou. Aquele dia choveu torrencialmente, houve uma forte tormenta e trovoada. Foi no dia 7 de agosto de 1954.</p>
-
-<p>Todo mundo ficou contra ele. Eles ficaram muito irritados. As pessoas vieram até a sua casa, achando que ele tinha morrido, vinham para o seu velório. Os seus colegas dos ritos de iniciação lhe perguntaram: “O que você fez? Por que você se envolveu com este assunto de homem branco? Você perdeu todo respeito, você perdeu o seu nome. Agora que você tem mais idade, não vai desfrutar do seu trono?” Ele respondeu: “O que significa para mim isso tudo? Eu tenho suficiente arroz no meu celeiro. Não preciso do tributo destinado aos velhos. Eu quero Cristo.”</p>
-
-<p>Algum tempo depois, um de seus colegas dos ritos de iniciação veio visitá-lo. Ele ficou surpreso de vê-lo vivo e lhe disse: “Agora eu sei que o seu Deus é poderoso! Fizemos um ritual com um galo branco nos últimos ritos de iniciação para que você morresse. O seu Deus tem poder!”</p>
-
-<p>O Ferreiro tinha uma casa de ídolos sem estrear. Ele a dedicou como a primeira casa da igreja em Angodigo. Não demorou muito e seus filhos e outros da sua família também se tornaram cristãos.</p>
-
-<p>Hazel Wallis</p>
-
-<hr />
-
-<p>Este artigo é reproduzido, com autorização, de Light Shines in the Darkness, The History of the Church in Guinea-Bissau (1940-1974) (Bubaque, Guinea-Bissau: Missão Evangélica, 1996). Todos os direitos reservados.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Ferreiro`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Leia várias versões: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -753,7 +690,7 @@
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 14 December 2022.<br>&copy; 2022 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 02 January 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -788,6 +725,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

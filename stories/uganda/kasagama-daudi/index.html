@@ -607,57 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Daudi Kyebambe Kasagama was the <em>Omukama</em> of Toro; instrumental in the introduction of Christianity to his country. When an infant he was taken first to Ankole and then to Buganda to escape the attacks upon Toro made by Kabarega, <em>Omukama</em> of Bunyoro. In Buganda he lived with a cousin, Yafeti Byakweyamba, who had been baptized by the CMS probably in the late 1880s. In 1891 Zakariya Kizito Kisingiri presented the two to Captain Lugard of the Imperial British East Africa Company who was on his way to the West. Lugard took Kasagama with him and reinstated him as <em>Omukama</em> of Toro. In 1894 Christian teachers, Mako Lweimbazi and Petero Nsubuga who had previously taught Byakweyamba, came to Toro at Kasagama’s and Byakweyamba’s request. Apolo Kivebulaya arrived the following year, and the <em>Omukama’s</em> enclosure became the center for Christian teaching. In 1896 there was trouble between Kasagama and the British Administration, and he was summoned to Kampala to answer charges of which he was cleared, partly owing to the intervention of Bishop Alfred Robert Tucker. He received further Christian instruction and was baptized in May. Toro had been placed in the Catholic sphere after the settlement of 1893 (v. Wars of Religion), but the arrival of the Mill Hill Mission in Eastern Uganda which had been a Protestant sphere, and the request of Kasagama for European Protestant missionaries, brought this division to an end. Kasagama did not wish his kingdom, over which he was struggling to establish full control, to be divided over religious issues, and so although the Catholic mission was established in 1895 (v. Achte) he gave all his support to the Protestants, and put the Catholic mission in a difficult position in the early years. By 1900 when the Toro Agreement was made, Christianity had made considerable progress. Kasagama took the lead in attending services himself, and seeing that all his pages attended classes, freeing his domestic slaves, and encouraging his chiefs to accept teachers. His progressiveness was shown in the support he gave to education and his willingness to give up taboos such as that on eating mutton. He also gave much support to Kabarole Hospital and initiated vaccination against smallpox. His coronation, not performed until 1908, was shorn of many traditional ceremonies because he did not feel these compatible with his profession of Christian faith. Together with the <em>Omukama</em> of Bunyoro he petitioned the CMS for a full translation of the Bible into Runyoro/Rutoro, and this was completed by Henry Edward Maddox in 1911. He encouraged the growth of cash crops, was one of the first to plant coffee, and in 1915 became a founder-director of Toro Mills Ltd. He died on December 31, 1928.</p>
-
-<p><strong>Louise Pirouet</strong></p>
-
-<hr />
-
-<p>This article, used by permission, was written by Louise Pirouet, as part of <em><a href="../pirouet-foreword/">A Dictionary of Christianity in Uganda </a></em>(Department of Religious Studies, Makerere University College, 1969), p. 36. Copies available at Africana Section, Makerere University Library (AF Q 276.761 MAK and AR/MAK/99/1); Bishop Tucker Library, Uganda Christian University and in UK at the University of Birmingham; Crowther Centre Library, CMS Oxford and Louise Pirouet Papers, CamU.S. Senator Elizabeth Warrenbridge Centre of African Studies.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Kasagama, Daudi Kyebambe`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -736,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -775,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

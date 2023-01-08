@@ -607,65 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Anglican clergyman in East Africa.</p>
-
-<p>A Yao from the Malawi area, Jones was one of the many slaves rescued by the British navy and landed in Bombay, India, where they were put under the care of the Church Missionary Society (CMS) at Sharanpur, near Nasik (hence their nickname, “Nasik boys”). In 1864 he was one of several boys sent by the CMS to Mombasa to help Johannes Rebmann. Jones and Ishmael Semler (from Mozambique) were ordained deacons by bishop James Hannington in May 1885, and Jones led the party that accompanied the bishop on his expedition to Buganda. After the murder of Hannington in Buganda in October 1885, Jones and his party returned to the coast, where they arrived in February 1886. It is recorded that from their trade goods they made a blue banner with the word, in white, “Ichabod” (Alas! The glory!) which they carried as they entered Rabai. In 1895 Jones and Semler were ordained priests by bishop Alfred Tucker. They were among the first African co-workers with the missionaries in Eastern Equatorial Africa.</p>
-
-<p>Jocelyn Murray</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>W. G. Blaikie, <em>Personal Life of David Livingstone</em> (1880); Church Missionary Society, <em>Register of Missionaries and Native Clergy</em> (1904); Jocelyn Murray, <em>Proclaim the Good News: A Short History of the Church Missionary Society *(1985); Donald Simpson, *Dark Companions: The African Contribution to the European Exploration of East Africa</em> (1975); Eugene Stock, <em>The History of the Church Missionary Society: Its Environment, Its Men, and Its Work</em> (1899).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Jones, William Henry (B)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -744,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -783,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

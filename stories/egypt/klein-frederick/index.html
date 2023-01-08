@@ -607,65 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Frederick Augustus Klein was a Church Missionary Society (CMS) missionary in the Middle East. Born in Strasbourg, France, Klein studied at the Basel Mission Institute before going to the Church Missionary College, Islington (London), and receiving Anglican ordination. In 1851 he left for Palestine under the CMS. He worked in Nazareth until 1855 and then in Jerusalem for 22 years. In 1877 he went to Germany and devoted himself to Arabic translation. From 1882 to 1893 he worked in Cairo, where the CMS had reopened work, wishing to evangelize among Muslims. He established public worship in Arabic. On his final return to Europe, he continued his translation work, revising the Arabic version of the Book of Common Prayer, and translating Ryle’s commentary on Luke.</p>
-
-<p>Klein will be ever remembered for his discovery, in 1868, at Diban, east of the Dead Sea, of the Moabite Stone, dating from about 840 B.C.; it gives independent confirmation of events mentioned in the Book of Kings. But he ought to be remembered also as one of a number of long-lived German missionaries who acquired great fluency in Arabic and gave their lives in quiet proclamation of Christ among Muslims.</p>
-
-<p>Jocelyn Murray</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Jocelyn Murray, <em>Proclaim the Good News: A Short History of the Church Missionary Society</em> (1985); Eugene Stock, <em>History of the Church Missionary Society</em> (1899).</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Klein, Frederick Augustus`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -744,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -783,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

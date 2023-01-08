@@ -605,73 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Maria Matilda Munaku est née à Mityana, dans le Compté de Ssingo, en Ouganda, est c’est aussi là qu’elle a grandi. C’était la sœur de St. Noé Mawaggali, qui a été tué violemment à Mityana le 31 mai, 1886. Mityana était le chef-lieu du chef du Compté de Ssingo, et aussi le centre d’une communauté chrétienne remarquable dirigée par St. Matthias Kalemba et St. Luc Banabakintu, les deux autres martyrs de Mityana. Munaku a appris le catéchisme de la part de son frère et de St. Matthias Mulumba. Le jour du martyre de son frère, elle est courageusement sortie de sa cachette et a offert de mourir pour la foi chrétienne, comme son frère. Le messager du roi, Mbugano, qui était venu attaquer les chrétiens de Mityana, l’a capturée dans l’intention d’obliger cette jeune femme de vingt-huit ans de devenir sa femme. Munaku avait l’intention de refuser de l’accompagner, risquant ainsi le martyre une fois de plus. Cependant, malgré le fait qu’on la malmenait cruellement, elle s’est vite rendue compte qu’en dépit du fait qu’elle résistait bravement à ses avances, Mbugano n’avait pas l’intention de la tuer.</p>
-
-<p>Arrivé de retour à la capitale de Ganda, Mbugano était confus par la fermeté de la jeune femme, et il a décidé de l’offrir en rançon au père Siméon Lourdel. Il y a eu un échange de munitions et d’un fusil, et Munaku a été mise en liberté. Baptisée en juillet 1886 à Rubaga par Lourdel, elle a pris un vœu privé de sa propre initiative, promettant de rester vierge et de ne jamais épouser qui que ce soit, hormis Jésus Christ. D’autres filles l’ont bientôt rejointe à Rubaga, et ensemble, elles ont accompagné les missionnaires à Bukumbi, aux rives sud du lac Victoria, lors de la guerre civile de 1888. C’est là qu’elle a aidé à créer et a diriger un orphelinat pour filles.</p>
-
-<p>En 1890, peu après la mort de Lourdel, qui avait été son patron et sauveur, elle est rentrée en Ouganda. Quand le séminaire a été inauguré en janvier 1891, on a demandé à Munaku de s’occuper des besoins matériels des garçons. Regroupant autour d’elle une association de jeunes femmes non mariées pour l’aider, elle est restée avec le séminaire quand il a été réinstallé à Bukalasa en 1903, et encore à Katigondo en 1911. Connue comme “la mère du séminaire,” elle a continué à superviser la cuisine du séminaire jusqu’en 1924, lorsque cette responsabilité à été prise en main par le nouvel ordre de religieuses appelé le Bannabikira. On a rapporté qu’elle a dit : “Je n’ai pas d’argent à donner aux futurs prêtres, mais je travaillerai pour eux avec mes mains.” En fait, sa vie a été un exemple édifiant pour les  séminaristes, et elle leur donnait aussi de sages conseils de temps en temps. Elle est morte le 7 avril, 1934, à l’âge de soixante-seize ans, et a été enterrée au cimetière de Bukalasa.</p>
-
-<p>Aylward Shorter M. Afr.</p>
-
-<hr />
-
-<h1 id="bibliographie">Bibliographie</h1>
-
-<p>F.J. Faupel, <em>African Holocaust, The Story of the Uganda Martyrs</em> [Holocauste africain; l’histoire des martyrs de l’Ouganda] 4ème édition (Nairobi: St. Paul’s Publications, Africa, 1984).</p>
-
-<p>Richard Gray, “Christianity,” <em>Cambridge History of Africa</em>, vol. 3 (Cambridge University Press, 1978): chapitre 3, p. 140 sqq.</p>
-
-<p>John Mary Waliggo, <em>A History of African Priests</em> [Une histoire des prêtres africains] (Nairobi: Matianum Press Associates, 1988).</p>
-
-<p>——–, “The Catholic Church in the Buddu Province of Buganda 1879 to 1925,” [L’église catholique dans la province Buddu de Buganda, de 1879 à 1925] Thèse de doctorat, université de Cambridge, 1976.</p>
-
-<hr />
-
-<p>Ce récit, soumis en 2003, a été recherché et écrit par le dr. Aylward Shorter M. Afr., directeur émérite de Tangaza College, Nairobi, université catholique de l’Afrique de l’Est.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Munaku, Maria Matilda`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -752,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -789,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

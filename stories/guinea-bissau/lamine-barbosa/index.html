@@ -607,65 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Barbosa Lamine was brought up in the country near Bolama. He followed the traditions of his father and worshipped idols. But he grew tired of all that. When he arrived in Bolama to stay with relatives, he was taught to worship the moon. He went to the school run by the Catholic priests and learned to read, but he also learned to worship Mary and even the priest himself.</p>
-
-<p>One night he was passing the Evangelical Church in Bolama and he could hear them singing: “Brilha para Jesus” (“Shine for Jesus”). He wanted to go into the church, but he was afraid. In the end he did go in, he sat down and was converted.</p>
-
-<p>Straightaway he was anxious to tell others the Good News. One day he was walking along the road with a Bible under his arm and he came across the priest who said,  “It’s a long time since I have seen you.”  Barbosa replied, “I am serving Jesus, I believe in Him for salvation. I read my Bible and no one can stop me.”</p>
-
-<p>Barbosa became sick, but God touched him and he was healed.</p>
-
-<p>He became a student in the first Bible School in Bissau and then in Lendem. He was an evangelist with a heart to tell others of the love of Jesus. The church in Encheia was the fruit of his ministry. Each weekend he traveled there to teach the believers and to preach the gospel at the Monday morning leprosy clinic. The churches in Jabada and in the region of Catio are also the fruit of his work.</p>
-
-<p>Hazel Wallis</p>
-
-<hr />
-
-<p>This article is reprinted, with permission, from <em>Light Shines in the Darkness, The History of the Church in Guinea-Bissau (1940-1974)</em> (Bubaque, Guinea-Bissau: Missão Evangélica, 1996).  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Lamine, Barbosa`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -744,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -783,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

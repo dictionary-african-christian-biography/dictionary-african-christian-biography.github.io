@@ -601,63 +601,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Otto Christian Dahl was a Norwegian missionary and scholar. Dahl graduated from the Stavanger School of Mission in 1927 and was ordained the same year in the Lutheran church. After language study in France he was sent to Madagascar by the Norwegian Missionary Society (NMS) and served there from 1929 to 1957. Dahl was superintendent for west Madagascar (1952-1957) and president of the Lutheran Church of Madagascar (1955-1957). From 1958 to 1966 he was in the home service of the NMS, for some of the time as acting secretary general. From 1967 to 1974 he had a state research stipend. Dahl studied linguistics in Oslo, Hamburg, Leiden, and London. In addition to his doctoral dissertation (a linguistic comparison of Malagasy and Malay, 1951), he wrote forty-six contributions in books, periodicals, and dictionaries, mostly linguistic studies, often related to problems in mission work. His publications appeared in Norwegian, French, German, English, and Malagasy. His first linguistic study, published in Paris in 1938, was <em>Le systeme phonologique du Proto-Malgache</em>. Dahl was a member of L’Académie Malgache and the Norwegian Academy of Science and Letters, and was Officier de l’Ordre National de Madagascar.</p>
-
-<p>Nils E. Bloch-Hoell</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Norwall Hessen, ed., <em>Prester i Den norske kirke og andre teologiske kandidater</em> (1990), p. 79.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Dahl, Otto Christian`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -736,7 +681,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -775,6 +720,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

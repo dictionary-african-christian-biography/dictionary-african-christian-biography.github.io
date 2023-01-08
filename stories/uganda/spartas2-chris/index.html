@@ -611,69 +611,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Pioneer of Orthodox Christianity in East Africa.</p>
-
-<p>Born Reuben Sebbania Ssedima Mukasa in Uganda, Spartas, a Muganda, was baptized in the Anglican Church and educated in mission schools. He took the name “Spartas” in his teens, having been told he exemplified the spirit of the ancient Greek city Sparta. Completing his education in 1920 at King’s College, Budo, he joined the King’s African Rifles (KAR), where he met Obadiah Basajjakitalo, also a Muganda. In 1925 they left KAR to found Anonya Private School, near Degeya.</p>
-
-<p>In 1925 Spartas learned of the founding of the African Orthodox Church (AOC) in America, which grew out of Marcus Garvey’s movement in 1921. Spartas was attracted by the goal of AOC, which, as he read in Negro World (magazine of the AOC), was to become a universal black church in affiliation with an ancient Christian Church not known for racism or colonialism. He then wrote to George McGuire of Antigua, patriarch of the AOC of the World. In 1928 McGuire referred Spartas to Daniel Alexander, archbishop of the AOC in South Africa; and in January 1929 Spartas broke with the Anglican Church and established the AOC in Uganda. When Alexander visited Uganda in 1931 - 1932, he ordained Spartas and Basajjakitalo to the priesthood.</p>
-
-<p>During Alexander’s visit, a Greek expatriate named Vlahos invited Alexander to baptize his children. Noting that the service as conducted by Alexander did not follow proper Orthodox form, Vlahos advised Spartas to contact Nicodemos Sarikas, an Orthodox clergyman serving the Greek expatriate community in Tanganyika (now Tanzania). Spartas did so, and after Sarikas visited Uganda, Spartas severed relationship with Alexander and sought recognition by the Greek Orthodox patriarchate of Alexandria. In 1943, after Spartas have been approached by Arthur Gatung’u wa Gathuma of the AOC in Kenya, a constitution was negotiated uniting the Orthodox Church in Kenya and Uganda. In 1946 Spartas visited Alexandria and was officially recognized and named vicar general for Uganda. In September 1953 the African Greek Orthodox Church was registered in Uganda, and in 1959 the Patriarchate of Alexandria established the archdiocese of East Africa, encompassing Kenya, Uganda, and Tanzania.</p>
-
-<p>Dimitrios G. Couchell</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Erasto Muga, <em>African Responses to Western Christian Religion</em> (1975), pp. 153 ff.; <em>Musalaba</em> (bimonthly newsletter of the Orthodox Church in Uganda) 4, no. 2 (March/April 1990): 3 - 7; Theodoros Nankyma, <em>Introduction to Orthodoxy in Uganda</em> (1989); Theodore Natsoulas, “Patriarch McGuire and the Spread of the African Orthodox Church to Africa,” <em>Journal of Religion in Africa</em> 12:2 (1981): 83 - 104; F. B. Welbourn, <em>East African Rebels: A Study of Some Independent Churches</em> (1961, pp. 77 - 102.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Spartas, Christopher Reuben (A)`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -752,7 +691,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -791,6 +730,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

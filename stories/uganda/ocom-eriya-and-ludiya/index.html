@@ -607,83 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>[TESO]</p>
-
-<p>Eriya Ocom was one of the early pupils of Ngora High School,  and its first head boy.[1] He was baptized on March 26, 1911 by the Rev. H. B.  Ladbury.[2] After completing his schooling he became a D.C.’s interpreter, and  was then made an [illegible] chief, working first at Mukongoro and later at  Kumi. In 1920 he was one of the first group of Iteso to be made <em>ebuku</em> chiefs  and was put in charge of Usuku county.[3] Whilst at Katakwi he was visited by  Bishop Gresford Jones to whom he showed the roads he had made and the church he  had built.[4] He later was transferred to Kumi, but he died in 1927 before he  had worked there long. He remained a church-goer although he later took more  than one wife. His “ring” wife (wife married in church), Ludiya, who outlived  him, remained a strong Christian throughout her life.[5]</p>
-
-<p><strong>Louise Pirouet</strong></p>
-
-<hr />
-
-<p><strong>Notes</strong>(short  form; see <a href="../pirouet-appendixa-sources/">List of  Sources</a> for complete citations):</p>
-<ol>
-  <li>
-    <p>Jones, 1926, p. 126.</p>
-  </li>
-  <li>
-    <p><em>Ngora  Baptism Register</em>.</p>
-  </li>
-  <li>
-    <p> Odiit,  1968.</p>
-  </li>
-  <li>
-    <p>[illegible], 1967, p. 178.</p>
-  </li>
-  <li>
-    <p>Jones, 1926, p. 126.</p>
-  </li>
-  <li>
-    <p>Oditt, 1968.</p>
-  </li>
-</ol>
-
-<hr />
-
-<p>This biography, written by Louise Pirouet, was included in “Appendix A: Biographical Notes,”  on page 419 of “The Expansion  of the Church of Uganda (N.A.C.) from Buganda into Northern and Western Uganda  between 1891 and 1914, with Special Reference to the work of African Teachers  and Evangelists” (PhD Thesis: University of East Africa, 1968). Pirouet  published this thesis as <em>Black  Evangelists</em> (London: Rex Collings, 1978). However, <em>Black  Evangelists</em> does not reproduce the detailed biographies, complete with  references to sources, found in Appendix A of the thesis. Print copies are  available at Africana Section, Makerere University Library (U 02 P57); The Centre for Christianity  Worldwide, Cambridge; and a microfilm copy at the School of Oriental Studies,  London. [information from Angus Crichton]</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Ocom, Eriya and Ludiya`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -762,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -801,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

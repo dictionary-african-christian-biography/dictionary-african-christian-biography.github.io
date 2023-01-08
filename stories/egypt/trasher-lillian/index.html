@@ -607,77 +607,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Lillian Hunt Trasher was a missionary in Egypt. She was born in Jacksonville, Florida. Her mother, originally a Quaker, converted to the Roman Catholic Church and reared Lillian in that tradition. After conversion to the evangelical faith, Trasher enrolled at God’s Bible School in Cincinnati, Ohio, in 1905 but left after one term to work in a North Carolina orphanage. Following a short time there, she went to Greenville, South Carolina, to study at Altamont Bible and Missionary Institute. She later attended a Church of God (Cleveland, Tennessee) congregation in Dahlonega, Georgia, where she became a Pentecostal.</p>
-
-<p>Breaking her engagement to an evangelist who did not share her call to missions and without the approval of her parents, she left for Egypt in 1910 as an independent missionary. With the aid of her sister, Jennie, she began to care for abandoned babies and children and in 1911 established a home for them in Assiut, Egypt, now known as the Lillian Trasher Memorial Orphanage. After 1919, she affiliated with the Assemblies of God. Many of those who grew up and received schooling in the orphanage contributed to the growth of the Pentecostal movement in Egypt. Trasher’s care of thousands of orphans and her heroic faith won the respect of the Egyptian government and gained her international fame. A grateful Muslim village official once said of her, “I believe that when she dies, in spite of the fact that she is a woman and a Christian, God will take her directly to paradise.” She is buried at the orphanage.</p>
-
-<p>Gary B. McGee</p>
-
-<hr />
-
-<h1 id="bibliography">Bibliography</h1>
-
-<p>Jerome Beatty, “Nile Mother,” <em>American Magazine</em>, June 1939, pp. 55-56, 180, and abridged in Reader’s Digest, July 1939, pp. 33-36.</p>
-
-<p>Philip Crouch, “They Called Her the Greatest Woman in Egypt,” <em>Assemblies of God Heritage</em> 4 (Winter 1984-1985), pp. 7-8.</p>
-
-<p>Beverly Graham, ed., <em>Letters from Lillian</em> (1983).</p>
-
-<p>Beth Prim Howell, <em>Lady on a Donkey</em> (1960).</p>
-
-<p>Lester F. Sumrall, <em>Lillian Trasher, Nile Mother</em> (1951).</p>
-
-<p>Lillian Trasher, <em>A Work of Faith and Labor of Love</em> (1937).</p>
-
-<p>Lillian Trasher’s letters and papers are kept in the editorial office files of the Assemblies of God Division of Foreign Missions, Springfield, Mo.</p>
-
-<hr />
-
-<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Trasher, Lillian Hunt`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -756,7 +687,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -795,6 +726,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>

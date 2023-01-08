@@ -605,75 +605,8 @@
 
 
       <section class="page__content" itemprop="text">
-        <!-- CONTENT -->
-        <p>Henri Pujol a été surnommé le Jean Laborde de Farafangana en raison de l’ingéniosité et des dons remarquables d’architecte dont il fit preuve pour réaliser de nombreux travaux dans cette ville alors qu’il n’avait reçu aucune formation particulière.</p>
-
-<p>Henri Pujol naquit à Carcassonne le 25 novembre 1901. Ayant tout juste le certificat d’étude, il entra comme Frère dans la Congrégation de la Mission le 28 février 1925. Il était utilisé comme cuisinier à Dax chez les Lazaristes lorsqu’il décida de partir à Madagascar en 1927.</p>
-
-<p>Il fut affecté à Farafangana en 1929 et c’est là qu’il déploya ses remarquables talents de bâtisseur. Sa première réalisation fut la charpente de la cathédrale. La construction des murs était achevée sans qu’on ait particulièrement étudié la charpente. Le Frère Pujol s’en chargea; il fit le montage de toute la charpente et la plaça d’une seule pièce sur les murs, au grand étonnement de tous.</p>
-
-<p>Il avait créé tout un atelier où il forma des apprentis spécialisés pour différentes branches. Avec l’aide des ouvriers qu’il avait ainsi formés, il réalisa de nombreuses constructions. Indépendamment des immeubles de la mission (construction du petit séminaire, consolidation de l’église, bâtiment de la léproserie, maison des Sœurs, construction du Collège Saint Vincent de Farafangana), le Frère Pujol fut également le constructeur d’immeubles pour les particuliers, notamment les bâtiments de deux principales compagnies commerciales, la Marseillaise et la Lyonnaise, et de plusieurs maisons indiennes.</p>
-
-<p>Lors de l’inauguration du Collège de Farafangana, un établissement pouvant recevoir près de mille élèves, le Frère Pujol reçut des mains du Président Tsirnana la Croix du Mérite de Madagascar.</p>
-
-<p>Ce bourreau de travail avait l’habitude de mener rondement ses affaires; il était tout d’une pièce et était accepté de tous tel qu’il était. Ayant un souci du travail poussé jusqu’à la minutie, il était réputé pour ses éclats de voix contre la paresse et contre l’inertie. Plus d’une fois, il échangea des propos très vifs avec son évêque, Mgr Chilouet, et bien souvent c’est le Frère qui avait raison, mais ils étaient inséparables et ne pouvaient se passer l’un de l’autre.</p>
-
-<p>Cet homme d’action aux manières rugueuses, tout en contradiction, eut une fin particulièrement édifiante. Atteint par un mal incurable et apprenant qu’il était condamné, il se rendit à Antsirabe pour suivre une cure et faire une retraite puis il se retira de la vie active, menant une existence d’ermite jusqu’au dernier jour. Il mourut le 13 mars 1966.</p>
-
-<p>Raymond Delval</p>
-
-<hr />
-
-<h1 id="bibliographie">Bibliographie</h1>
-
-<p>informations…</p>
-
-<hr />
-
-<p>Cet article, réimprîmé ici avec permission, est tiré d’<em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em>, tome 3, publié en 1977 par l’Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). Tous droits réservés.</p>
-
-      </section>
-    </div>
-  </article>
-</div>
-<script>
-  (async () => {
-    const asyncLightweightSearch = async (query) =>
-      new Promise((resolve) => {
-        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
-        const checkInterval = setInterval(() => {
-          if (window.getLightweightSearchResults) {
-            clearInterval(checkInterval);
-            resolve(getLightweightSearchResults(query));
-          }
-        }, 250);
-      });  
-  
-    const cleanPageTitle = (title) => {
-      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-      letters.forEach((letter) => {
-        title = title.split(`(${letter})`).join("");
-      });
-      title = title.trim();
-      return title;
-    }
-    
-    let pageTitle = `Pujol, Henri`;
-    pageTitle = cleanPageTitle(pageTitle);
-  
-    asyncLightweightSearch(pageTitle).then((e) => {
-      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
-      if(alternates.length > 0) {
-        const alternatesElm = document.createElement('div');
-        alternatesElm.classList.add('alternate');
-        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
-  
-        const afterElm = document.querySelector('.page__content');
-        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
-      }
-    })
-  })();
-</script>
+        
+          
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -754,7 +687,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -791,6 +724,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
   </body>
 </html>
