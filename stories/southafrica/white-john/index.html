@@ -607,8 +607,103 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <blockquote>
+  <p>Five goats were in residence when I retired, and these, an evangelist, four carriers, and myself slept together in this awful place! I was glad when dawn came. But should I grumble, when the Son of Man had nowhere to lay his head?
+–John White</p>
+
+</blockquote>
+
+<p>Born in 1866 in England’s Lake District, the eldest of seven children, John White received only a smattering of formal education. As a youth, White had a conversion experience and sought to become a Methodist missionary.[1]</p>
+
+<p>In those days a chartered company that controlled the region’s economic life and administered justice ruled much of what is now Zimbabwe. White became an early exponent of equity and fairness for Africans, and this brought him sustained criticism from the settler community. Newspaper cartoons pictured him as a <em>kaffirboetie</em>, or friend of local peoples. White had many friends in the English community in Salisbury and was a great admirer of the British system of justice, but he was also an early exponent of the brotherhood of all peoples. In 1896 the Mashonaland Rebellion broke out, and the Mashona were fearful of being annihilated by the British. White told them, to the consternation of British authorities, “I will sleep each night amongst you outside the laager, so that if they come to kill you, they will kill me also.”</p>
+
+<p>Life was not easy for White. During one raid he witnessed local insurgents kill both an African evangelist and a wounded white missionary the African was carrying to safety. Later White spent Christmas Day in a wagon stuck in the mud in the middle of a small flooded lake. In another instance, he had been traveling all day and into the evening when the party was given a small hut by a local chief to spend the night. “Five goats were in residence when I retired, and these, an evangelist, four carriers, and myself slept together in this awful place! I was glad when dawn came. But should I grumble, when the Son of Man had nowhere to lay his head?”</p>
+
+<p>Once while traveling, he bent down to treat the injured foot of a carrier and, reaching behind him for a knife, instead grasped a deadly snake, which he instantly threw to the ground. His dog attacked the snake, was bitten by it, and soon its head and neck were swollen to double their normal size.</p>
+
+<p>From his work as a Methodist leader in the Southern Rhodesia district, White developed a three-part strategy: (1) the Gospels must be translated into the Shona language, (2) the heart of the mission effort must come from local evangelists, and (3) the Christian message must be integrated into the social life of Africans. To this end, he established the Waddilove Institution, a teachers training college. And in 1894, with the assistance of James Chiremba Chihota, his wagon-driver and interpreter, he began translating Mark’s Gospel. A packing-case formed his table, a soap-box his seat, and a fruit-tin his writing pad.</p>
+
+<p>As he grew older, White’s health declined, and he transferred to Bulawayo. Racial tensions between Africans and Europeans were acute in the growing city, and White’s steadfast insistence on racial justice for people who were voiceless and voteless brought him charges of being a political meddler. White would have identified with the sentiments in the “Black Christ,” a poem by his friend A. S. Cripps:</p>
+
+<blockquote>
+  <p>To me, as one horn out of his due time</p>
+
+  <p>To me, as one not much to reckon in,</p>
+
+  <p>He hath revealed Himself, not as to Paul,</p>
+
+  <p>Christ throned and crowned,</p>
+
+  <p>But marred, despised, rejected,</p>
+
+  <p>The Divine Outcast of a terrible land,</p>
+
+  <p>The Black Christ, with parched lips and empty hand.[2]</p>
+
+</blockquote>
+
+<p>Frederick Quinn</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>
+    <p>“John White,” in Davies, <em>Great South African Christians</em>, 169-180.</p>
+  </li>
+  <li>
+    <p>Ibid., 179.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>African Saints: Saints, Martyrs, and Holy People from the Continent of Africa</em>, copyright © 2002 by Frederick Quinn, Crossroads Publishing Company, New York, New York.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `White, John`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +782,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +821,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

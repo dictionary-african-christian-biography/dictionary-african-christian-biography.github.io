@@ -607,8 +607,71 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Ghanaian composer and musicologist.</p>
+
+<p>Amu, whose life spanned almost the entire twentieth century, embodied most of the transitions of Christianity in Ghana in the period. He was born in the town of Peki-Avetile, in the Ewe-speaking Volta region of present-day Ghana, where his early upbringing was influenced by the Bremen Mission. He was a composer and musicologist. Amu, whose life spanned almost the entire twentieth century, embodied most of the transitions of Christianity in Ghana in the period. Having responded personally to the faith at fifteen, Amu desired to be a teacher in church schools. With the outbreak of World War I, the repatriation of German missionaries, and the closing of the Bremen Mission seminaries, Amu was trained as a teacher-catechist under Scottish Presbyterian missionaries at the Abetifi Seminary founded by the Basel Mission. Amu, the Ewe thus began his intellectual association with Twi language and culture.</p>
+
+<p>As a teacher at Peki, Amus’s early interest in music was intensified through association with local Methodist minister and music tutor Allotey-Pappoe. Moving to Akropong, Amu taught music, nature agriculture, and Ewe from 1925 to 1933 at Akropong Training College. This was a momentous period for him as he researched the rhythms and meter of African music. He emphasized the critical significance of the drum and maintained that indigenous musical form need not be at variance with the Christian religion. In 1932 he published his <em>Twenty-five African Songs</em>. Reaffirming “the excellence of African culture,” he discarded European dress, took to African food, and drank water from a gourd. His most startling innovation was to preach from the pulpit dressed in African cloth, which, combined with his musical innovations, angered the Presbyterian leadership. Faced with the choice of abandoning his African attire and his research into African musical idiom or being dismissed from the Presbyterian Training College, Amu chose the latter.</p>
+
+<p>The church soon recognized that Amu was not wrong; he was simply ahead of time. But Amu now set aside earlier thoughts of ordination. His career subsequently took him to Achimota College, where he taught from 1934 to 1936 and from 1941 to 1950 to the Royal College of Music, London, where he engaged in research from 1937 to 1940, to the new Kumasi College of Science and Technology (1951 - 1960), and finally, to the new music department of the Institute of African Studies of the University of Ghana, Legon (1961 - 1971). In 1965, the University of Ghana awarded him its first Doctor of Music degree; this was followed, in 1976, by another doctorate from the University of Science and Technology, Kumasi.</p>
+
+<p>For Amu, the most important single influence was the life and career of James Emmanuel Kwegyir Aggrey of Anomabu, who believed that no first-rate educated African would want to be a carbon copy of a white man. No cultural jingoist, Amu neve broke away from the church, and his Christian self-consciousness remained consistent. Half of his 200 or so musical compositions derive from and express his Christian convictions.</p>
+
+<p>Kwame Bediako</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Fred Agyemang, <em>Amu the African: A Study in Vission and Courage</em> (1988).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Amu, Ephraim Kwaku`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +750,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +789,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

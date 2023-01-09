@@ -605,8 +605,81 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Peter Cameron Scott est né en Ecosse dans une famille chrétienne.  En 1973, avec plusieurs amis, il a entendu D. L. Moody chanter lors d’une de ses réunions. Scott avait les larmes aux yeux quand ils chantaient “Jésus m’aime.” La famille de Scott était très pauvre et quand sa soeur est morte, ils sont allés aux Etats-Unis pour s’installer à Philadelphie, en Pennsylvanie. Il a essayé de commencer une carrière dans l’opéra, mais ses parents le lui ont interdit.  En 1889, à l’âge de vingt-deux ans, il s’est inscrit au Christian Alliance Training Institute [Institut de Formation de l’Alliance Chrétienne] à New York, dirigé par Albert Benjamin Simpson, qui avait fondé la confession du Christian Missionary Alliance [Alliance Chrétienne Missionnaire].</p>
+
+<p>Scott voulait tellement précher qu’il n’a pas fini ses études à l’institut.  En 1890, il a été ordonné et A. B. Simpson lui a donné le mandat d’aller au Congo. Quelques mois plus tard son frère l’a rejoint, mais il est mort, et a été enterré par Scott. Scott aussi à été frappé par des maladies tropicales, et a été obligé de rentrer en Angleterre pour se remettre. Pendant cette convalescence, il a beaucoup lu sur les missions.  En 1895, ses rêves ont été réalisés et même élargis quand lui et un groupe d’autres enthousiastes de la mission ont formé trois organisations: la Pennsylvania Bible Institute [Institut Biblique de la Pennsylvanie], la Central American Industrial Mission [Mission Industrielle du Centre de l’Amérique], et la Africa Inland Mission (AIM).</p>
+
+<p>Cette année-là, Peter Cameron Scott, accompagné de sept autres personnes, est parti à destination de l’Afrique de l’Est et s’est installé à Nwazi, au Kenya. Dans moins d’un an, Peter Cameron Scott est mort de la fièvre noire tant redoutée, à l’âge de 29 ans.</p>
+
+<p>Scott ne s’est jamais marié.  Par la suite, sa famille entière est allée en Afrique faire du travail missionnaire, mais ils n’ont pas pu s’adapter aux rigueurs de la vie missionnaire et ont fini par prendre d’autres vocations.</p>
+
+<p>Sa résolution et sa diligence ne seront pas oubliées, car il a parcouru 4,260 kilomètres à pied en un an, et a installé des missionnaires dans quatres endroits différents au cours de sa seule année de travail missionnaire au Kenya.</p>
+
+<p>Bela B. Kalumbete</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p>D. Anderson, <em>We Felt Like Grasshoppers [Nous étions comme des sauterelles]</em> (Crossway Books, 1994), 17-22.</p>
+
+<p>G. Anderson, ed., <em>Biographical Dictionary of Christian Missions [Dictionnaire Biographique des Missions Chrétiennes]</em> (Grand Rapids, Michigan:Eerdmans, 1988), 608.</p>
+
+<p>John Baur, <em>2000 Years of Christianity in Africa [2000 ans de christianisme en Afrique]</em> (Nairobi, Kenya: Paulines Publications Africa, 1994), 256.</p>
+
+<p>A. Scott Moreau, ed., <em>Evangelical Dictionary of World Missions [Dictionnaire Evangélique Mondial des Missions]</em> (Grand Rapids, Michigan: Baker Books, 2000), 860.</p>
+
+<p>K. Richardson, <em>Garden of Miracles [Jardin des miracles]</em> (Africa Inland Church, 1968), 21-36.</p>
+
+<p>Mark Shaw, <em>The Kingdom of God in Africa [Le royaume de Dieu en Afrique]</em> (Grand Rapids, Michigan: Baker Books, 1996), 192, 217.</p>
+
+<hr />
+
+<p>Cet article a été recherché et rédigé par Bela B. Kalumbete, boursier du Projet Luc associé à la Africa Inland Church, en Tanzanie.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Scott, Peter Cameron`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +760,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +797,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

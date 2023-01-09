@@ -609,8 +609,65 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Dirigeant ivoirien de l’église Harriste en Afrique de l’Ouest.</p>
+
+<p>Né Nanghui Togba, fils du chef Ebrie, Akadja Nanghui dans le village ivoirien d’Abia-Gnambo (Petit Bassam), Ahui à été renommé Boghui Ahui par son tuteur. Il est devenu chef-guerrier du groupe de garçons de son âge, et a épousé Jeannette Tohi en 1910. En 1914, au temps de la mission de William Wadé Harris à Bingerville, lui et son père ont été baptisés.  Il a été recruté pour l’armée coloniale, mais suite à un accident, il a regagné la vie civile et il est devenu le meilleur chanteur dans la chorale de son village. Dans l’incertitude d’un climat de renouveau des pratiques traditionnelles, ainsi qu’une activité méthodiste anglaise, il a entrepris un voyage en décembre, 1928, pour rendre visite au prophète Harris près de Cap Palmas, en Libérie. Harris lui a donné sa bénédiction, sa crosse, et sa Bible, et une lettre adressée à son père.  La lettre au père d’Ahui donnait à Ahui la charge d’être le successeur de Harris. Ahui a hésité à obéir, mais suite à une maladie presque fatale en 1936, il a activé la mission de Harris en dépit de la présence coloniale, qui s’y opposait. Il a rallié un mouvement populaire et multi-ethnique ivoirien, et, malgré l’analphabétisme, a été pendant cinquante-sept ans reconnu comme le Prédicateur Suprême de l’église Harriste de l’Afrique de l’Ouest. C’était une communauté chrétienne, commencée par des africains, qui s’étendait de la Côte d’Ivoire jusqu’en Libérie, au Burkina-Faso, au Ghana, au Togo, et au Bénin.</p>
+
+<p>David A. Shank</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p>L’histoire d’Ahui, avec les détails biographiques, est racontée par son fils: Paul William Ahui,* Le Prophète William Wadé Harris: Son message d’humilité et de progrès* (1988). Voir aussi Lobo Kouassi, “John Ahui, Légataire Universel S’est Eteint”, Fraternité Matin, le 11 décembre, 1992, p.4; Sheila S. Walker, <em>The Religious Revolution in the Ivory Coast: The Prophet Harris and the Harrist Church [La révolution religieuse en Côte d’Ivoire: le prophète Harris et l’église harriste]</em>, (1983).</p>
+
+<hr />
+
+<p>Cet article est reproduit, avec permission, du <em>Biographical Dictionary of Christian Missions [Dictionnaire Biographique des Missions Chrétiennes]</em>, copyright (c) 1998, par Gerald H. Anderson, W.B. Eerdmans Publishing Company, Grand Rapids, Michigan. Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Ahui, John`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +748,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -728,6 +785,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

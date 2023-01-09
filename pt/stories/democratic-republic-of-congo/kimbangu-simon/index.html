@@ -606,8 +606,73 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/demrepcongo/kimbangu-simon/kimbangu.jpg" alt="Simon Kimbangu" class="bio" /></p>
+
+<p>Fundador da Igreja de Jesus Cristo através do Profeta Simon Kimbangu.</p>
+
+<p>Nascido em Nkamba, Baixo Zaire, Kimbangu possuía dons carismáticos, porém não teve educação formal além das instruções catequistas pela Sociedade Britânica Missionária Batista (British Baptist Missionary Society - BMS), que o levou ao batismo em 1915. No meio do colonialismo de dimensões próximas ao genocídio, ele vivenciou o chamado de Deus ao ministério da cura e da pregação. Os missionários da BMS rejeitaram a solicitação de Kimbangu para tornar-se um catequista e, além disso, rejeitaram ceder um lugar legítimo a seu ministério dentro da igreja missionária, pois o consideravam sem escolaridade. A experiência espiritual decisiva de Kimbangu o impeliu ao ministério público fora da missão (1921), a sua saída teve ligação explícita com a rejeição que sofreu dos missionários.</p>
+
+<p>A atividade religiosa de Kimbangu, que se caracterizou por fenômenos fortemente carismáticos (foram relatados casos de ressurreição), durou de março a setembro de 1921, principalmente em Nkamba, a “Nova Jerusalém”. Sua pregação enfatizava a inutilidade das medidas de proteção tradicionais africanas (resultando na queima dos “amuletos”), a intervenção direta de Deus em nome dos africanos (questionando a mediação e autoridade dos missionários, ao mesmo tempo rejeitando a violência africana), e o prognóstico do fim da dominação colonial branca (resultando na autoconsciência negra). Prontamente, em maio de 1921, Kimbangu estava na lista de “procurados” da polícia colonial.</p>
+
+<p>Em setembro de 1921, Kimbangu entregou-se às autoridades belgas. Condenado à morte por alegada ameaça à segurança pública, sua punição foi atenuada para prisão perpétua, e ele foi tratado como um criminoso perigoso em Elizabethville (Lubumbashi) pelo resto de sua vida. Seus doze “apóstolos” e milhares de seguidores foram proscritos. O Kimbanguismo tornou-se um movimento cristão fortemente enraizado no Congo Belga. Sociologicamente, o profeta e sua igreja ofereceram um novo modelo de autoridade social; religiosamente, Kimbangu expressou o amor de Deus através da mediação de símbolos africanos; e psico-culturalmente ele deu início a uma formidável narrativa sobre o lugar especial das pessoas negras no mundo de Deus.</p>
+
+<p>No seu leito de morte, Kimbangu recebeu o batismo na Igreja Católica. Assim como Jesus, não deixou nada escrito e tornou-se uma figura lendária, mítica e teológica. Para os missionários, para os estudiosos ocidentais do Kimbanguismo, e para os próprios teólogos da igreja Kimbanguista, sempre foi difícil definir, teologicamente, quem foi Kimbangu.</p>
+
+<p>Werner Ustorf</p>
+
+<hr />
+
+<h1 id="bibliografia">Bibliografia</h1>
+
+<p>Além de fontes de arquivos (Archives Africains, Brussels; BMS archives, Oxford), a principal documentação sobre a vida e o ministério de Kimbangu é de Paul Raymaekers, ed., “L’Histoire de Simon Kimbangu prophète d’après les écrivains Nfinangani et Nzungu,” <em>Archives de sociologie des religions</em> 31 (1971): 7 - 49 and Paul Raymaekers and Henri Desroche, ed., <em>L’Administration et le sacre. Discours religieux et parcours politiques en Afrique Centrale (1921 - 1957)</em> (1983). A história oral foi coletada em W. MacGaffey, “The Beloved City: Commentary on a Kimbanguist Text,” <em>JRA</em> 2 (1969): 129-147, e em Kuntima Diangienda, <em>L’Histoire du Kimbanguisme</em> (1984), escrita pelo filho mais jovem de Kimbangu, o último dirigente da Igreja de Kimbangu. M.-L. Martin, Kimbangu: <em>An African Prophet and His Church</em> (1975); Werner Ustorf, <em>Afrikanische Initiative</em> (1975).</p>
+
+<hr />
+
+<p>Este artigo é reproduzido, com autorização, do <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. Todos os direitos reservados.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Kimbangu, Simon (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Leia várias versões: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -690,7 +755,7 @@
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 02 January 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 14 December 2022.<br>&copy; 2022 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -725,6 +790,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

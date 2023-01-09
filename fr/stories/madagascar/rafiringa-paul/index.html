@@ -605,8 +605,65 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Leader malgache de la communauté catholique au Madagascar.</p>
+
+<p>Rafaringa est né à Antananarivo dans une famille partagée entre ceux qui étaient adhérents de la religion traditionnelle, et ceux qui étaient dans l’église réformée introduite par les missionnaires de la London Missionary Society (LMS) [Société Missionnaire de Londres]. Rafaringa, cependant, était élève dans une des nouvelles églises catholiques, et a été baptisé dans l’église catholique à l’âge de quatorze ans. Parce que la foi catholique avait été amenée en 1861 par des jésuites français, elle était mal vue quand le conflit entre la France et le Madagascar s’est intensifié. La guerre a éclaté deux fois, de 1883 en 1885, et de 1894 en 1895. Les missionnaires catholiques ont été chassés, et beaucoup de nouveaux convertis sont retournés au protestantisme où à la louange des ancêtres. Ceux qui sont restés catholiques fidèles ont été regroupés en une Union Catholique, dirigée par Rafaringa. Pendant la première guerre il était fonctionnaire et avait des amis au tribunal et dans le gouvernement, mais en dépit de ses liens et de ses responsabilités de famille, il a fait preuve d’un grand zèle et d’engagement, voyageant toutes les fins de semaine en dehors de la capitale pour exhorter les communautés catholiques, pour réconforter les malades et les pauvres, pour organiser des cultes religieux, pour prêcher et pour faire des conférences sur la vocation des laïcs. Un de ses plus grands collaborateurs s’appelait Victoire Rasoamanarivo. Rafiringa a écrit et envoyé un rapport sur les activités de l’Union Catholique au pape Léon XIII, et a envoyé une lettre à leur évêque, Caset, pour demander que des prêtres qui n’étaient pas français célèbrent la messe. Ses activités ont continué quand le clergé est parti une deuxième fois au début de la deuxième guerre mondiale, et il a écrit un journal de 900 pages à cette époque. Ce manuscrit malgache est un document précieux sur l’histoire de la société et de l’église au moment où le pays allait perdre son indépendance.</p>
+
+<p>Yvette Ranjeva Rabetafica</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p>Pietro Lupo, “L’église confiée aux laïcs, d’après l’histoire-journal de Paul Rafiringa” (Diss. de doctorat, la Sorbonne, 1980). Voir aussi Bruno Hubsch, éd., <em>Madagascar et le Christianisme</em> (1993). Les lettres et les comptes-rendus de Rafaringa sont gardées dans les archives de l’église catholique malgache à Andohalo, Antananarivo.</p>
+
+<hr />
+
+<p>Cet article est reproduit, avec permission, du <em>Biographical Dictionary of Christian Missions [Dictionnaire Biographique des Missions Chrétiennes]</em>, copyright © 1998, par Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Rafaringa, Paul`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +744,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +781,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

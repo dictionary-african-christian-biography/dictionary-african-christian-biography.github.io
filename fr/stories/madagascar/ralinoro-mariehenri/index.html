@@ -609,8 +609,71 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Née le 5 mai 1884, décédée le 21 mai 1973 à Tananarive (Androhibe).</p>
+
+<p>A fait profession le 24 octobre 1916 à Ambohipo (Tananarive).</p>
+
+<p>Justine est née le 5 mai 1884 dans un village voisin d’Ambohimanga. Orpheline de mère, elle est élevée par une tante qui l’envoya à l’école primaire de Faravohitra. Depuis son baptême, en 1897, elle pense à la vie religieuse. Mais contrariée dans ce désir par sa famille la menaçant de la police, et même séquestrée par son père, la jeune fille se réfugie auprès du Père de Villèle (S.J.) et de Mère Radegonde, religieuse de Saint Joseph de Cluny.</p>
+
+<p>En 1910, elle entre au noviciat d’Ambohipo. Elle est l’une des six premières postulantes de ce noviciat qui sont initiées à la vie chrétienne et religieuse, à l’apostolat direct dans les villages, et à tous les travaux utiles dans une communauté. On y mène de front prière, instruction, et travail manuel. Vie laborieuse, mais qui sera féconde plus tard.</p>
+
+<p>Après sa profession, en 1916, Sœur Henri est prête à servir; d’abord à la classe enfantine à Ambavahadimitafo; puis elle a la responsabilité de l’ouvroir d’Ambohipo. En 1923, elle arrive à la léproserie de Marana, et pendant trente-deux ans elle va remplir auprès de ses compatriotes, une sorte de “<em>ministère</em>.” La léproserie n’a que douze ans d’existence, le dénuement est extrême, et les sœurs manquent de remèdes efficaces contre la lèpre. Seule Malgache de la communauté, Sœur Henri exerce une grande influence morale sur les malades qui lui vouent une grande reconnaissance. Sa sollicitude, sa compassion et ses qualités de cœur, s’exercent toutes les fois qu’elle est à leur chevet…Humble servante de ceux qui souffrent…elle a bien mérité de son pays.</p>
+
+<p>Sœur Marcienne Fabre</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p><em>Bulletin de la Congrégation</em>, no. 297, t. 21, p. 1870, décembre 1975.</p>
+
+<hr />
+
+<p>Cet article, réimprîmé ici avec permission, est tiré d’<em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em>, tome 3, publié en 1977 par l’Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Ralinoro, Justine`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +754,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -728,6 +791,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

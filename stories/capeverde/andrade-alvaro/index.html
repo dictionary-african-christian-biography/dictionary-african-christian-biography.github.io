@@ -607,8 +607,86 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/capeverde/andrade-alvaro/andrade-alvaro.jpg" alt="Alvaro Andrade" class="bio" /></p>
+
+<p>Rev. Álvaro Barbosa Andrade is from Santa Catarina in São Tiago. In the mid 1940s when the mission team tried to enter the town they found people friendly until Álvaro Andrade headed up opposition against the “Protestant devils.” He had been a student at the Catholic school there. Now he sent boys out to gather up all the gospels and New Testaments that had been distributed and they burned them in a vacant lot near the crowded market. He sprinkled holy water where Protestants had been. He wrote to his friends and went from house to house, spreading terrible stories about the Nazarenes. He made it so difficult for the first few converts that it seemed almost impossible for them to keep attending the mission.</p>
+
+<p>He later admitted that he kept one of the Bibles, and after reading it through several times, he one day in 1946 shut himself up in his room and found the truth. His conversion resulted in an impromptu public debate on the street with the priest. “His soul tranquillity, conviction and some much studied scriptural passages gave him a disciple’s victory in the presence of a large crowd.” In 1952 he was fully sanctified. He was called to the full-time ministry in 1948 and began pastoring in Santa Catarina. He was tall, jovial and humourous and became an uncompromisingly rugged pastor and one of the most active workers for the Lord.[1]</p>
+
+<p>Álvaro Andrade married Miss Isaura Silva and they had one son and one daughter. Isaura was the daughter of the old whaler, Joe Silva “teller of tall tales” who was the first to befriend the Nazarene workers in Praia. He invited them into his home and accompanied the singing on his guitar. He himself however did not find the Lord until two days before his death.</p>
+
+<p>As pastor in his home town Álvaro Andrade was cursed from the roadside when he conducted his first funeral. No one would sell them necessary foods such as milk or eggs. Eventually however everyone came to respect and love him.[2]</p>
+
+<p>He told of an incident that moved the whole community. One of the boys was absent from Sunday School, and when the pastor visited him, he found that spots had appeared on the boy’s face and ear. The doctor had pronounced it to be leprosy. Medicine was sent for from the U.S.A. but the boy kept growing worse. As Pastor Andrade continued to visit he became so concerned that one afternoon he cried out, “O God, if Thou wilt, Thou canst make him clean.” The answer came immediately. A few days later they took the boy back to the physician for examination. The doctor was amazed to find him healed. They gave the remainder of the medicine to another leper.[3]</p>
+
+<p>In 1995 Rev. and Mrs. Andrade were residing in Praia, São Tiago.  Rev. Andrade went to be with the Lord on January 3, 2000.  He was a true patriarch of the Church of the Nazarene in Cape Verde with links to the earliest missionaries.  Every Cape Verdian pastor has been deeply impacted by the godly life of this saintly man. [4]</p>
+
+<p>Paul S. Dayhoff</p>
+
+<hr />
+
+<ol>
+  <li>
+    <p>Alice Spangenberg, <em>Jerusalem and Beyond : Christian Missions in the Cape Verde Islands and the Middle East,</em> (Kansas City, MO: Nazarene Publishing House, 1950), 49, 59-60.</p>
+  </li>
+  <li>
+    <p>Olive G. Tracy, <em>The Nations and the Isles : A Study of Missionary Work of the Church of the Nazarene in the Nations - Israel, Jordan, Syria, Lebanon, Italy - and the Isles - the Cape Verde Islands,</em> (Kansas City, MO: Nazarene Publishing House, 1958), 211-212.</p>
+  </li>
+  <li>
+    <p>Earl Mosteller, <em>Cape Verde Travelogue,</em>  (Kansas City, MO: Nazarene Publishing House, 1958), 32-33.</p>
+  </li>
+  <li>
+    <p><em>Trans African,</em> (Florida, Transvaal, South Africa: Africa Nazarene Publications, No. 1, 2000), 20.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Living Stones In Africa: Pioneers of the Church of the Nazarene</em>, revised edition, copyright © 1999, by Paul S. Dayhoff.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Andrade, Álvaro Barbosa`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +765,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +804,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

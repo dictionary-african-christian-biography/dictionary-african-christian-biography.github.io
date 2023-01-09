@@ -607,8 +607,109 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>At Itumba, indigenous women (especially those at Kishambo whom Wood described as “mothers of Israel”) [1],  namely Mariamu (probably the one who moved to Kongwa as a missionary and married teacher Zakaria Malogo of Chamuhawi, about 1906) [2]  Lea, Damari and Roda were already at work in 1903, and their influence was significant. Mariamu was from Itumba, Ukaguru, where she served as a Bible Woman at Kishambo about 1903, but moved to Ugogo as missionary in 1906, and settled at Chamuhawi.</p>
+
+<p>Early in 1904, Mariamu’s influence was already being “felt in all villages” where mission work was being undertaken within Itumba district–at Itumba station itself, at Kishambo (its major outstation at the time), and at Ikwamba.[3]  Mariamu was based at Kishambo where she taught the Bible, preached the Word of God and conducted visits to neighbouring villages (possibly including Kisitwi, Kilugu, Kipala, and Unyawo where church buildings had been erected by the end of 1903).[4]</p>
+
+<p>Mariamu’s ministry was focused upon women, but it was by no means confined to that group alone. On one occasion when she was speaking to women at Kishambo, men assembled too. Arthur Wood recalled how the men “seemed decidedly more interested in what she said than the gentler [female] sex. It was a startling thing to them to hear a female of their own tribe preaching.” [5] Mariamu’s influence continued years after the CMS mission had become a diocese in 1927. In 1941, Bishop Chambers paid tribute to her as a missionary to Ugogo and one of the leading Bible women there. He wrote: “Mariamu our faithful M.U. [Mothers’ Union] member and Bible-woman, is doing a wonderful work among women. Already some Moslems are worshipping with us because of her friendship and teaching.” [6]</p>
+
+<p>During the Yearly Conference of Africans  or African Native Conference, women teachers helped their fellow women, and likewise, men spoke to their fellow men. At the Mamboya conference in August 1903, Mariamu taught Christian life. There were three other indigenous Christian women who also took part in Bible teaching: Yulia wife of Yeremia Senyagwa of Mamboya, and Persisi. The other Bible Woman present was only referred to by Maria Ackerman (a CMS woman missionary at Mamboya) as a “woman of Itumba.” [7]</p>
+
+<p>Mariamu and Damari Sagatwa were members of the church council at Itumba in 1906, together with her husband Nuhu Sagatwa, and two other men, (both identified in the sources by the name Danieli).[8]  In the same year, Nyangala too had female members at its church council, namely Mariamu and Helina, with Barnaba, Petro and Isaka as their male colleagues.[9]  At Kongwa, in 1921, Esta Mabruki, Mary, and Yulia represented their church to the Kongwa district (parish) council, alongside male colleagues Musa Fungo, Madari Mulutu, Benyamini, Haruni and Atanasio. Female representatives from Chamuhawi were Marita, [10]  Susana, Mariamu, [11]  and Raheli, with their  male colleagues Edward Madimilo, Timotheo Makanyaga and Reubeni.</p>
+
+<p>It is unfortunate that apart from this information and these statements about the work of Mariamu, no data exist that would be sufficient to allow her life history to be fully reconstructed.</p>
+
+<p>Raphael Mwita Akiri</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>
+    <p>“Usagara-Chigogo Notes II.”</p>
+  </li>
+  <li>
+    <p>Kongwa Logbook, No. 41, 26 December 1904 - April 1950, MH [Mackay House Archives (Diocese of Central Tanganyika)].</p>
+  </li>
+  <li>
+    <p>“Usagara-Chigogo Notes I.”</p>
+  </li>
+  <li>
+    <p>Ibid.</p>
+  </li>
+  <li>
+    <p>Ibid.</p>
+  </li>
+  <li>
+    <p><em>CTDL</em>, No. 44, July 1941, 5 [at the Mackay House Archives (Diocese of Central Tanganyika)].</p>
+  </li>
+  <li>
+    <p>“Usagara-Chigogo Notes I.”</p>
+  </li>
+  <li>
+    <p>Itumba Logbook, No. 53, January 20 - February 1912, MH.</p>
+  </li>
+  <li>
+    <p>Nyangala Logbook, No. 66, 1901 - January 1914, MH.</p>
+  </li>
+  <li>
+    <p>This could be Marita the wife of Andrea Mwaka.</p>
+  </li>
+  <li>
+    <p>Possibly this was Mariamu Malogo.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from “The Growth of Christianity
+in Ugogo and Ukaguru (Central Tanzania): A Socio-Historical Analysis of the Role of Indigenous Agents
+1876-1933,” unpublished Ph.D. thesis (University of Edinburgh, 1999) by Raphael Mwita Akiri.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Mariamu`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +788,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +827,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

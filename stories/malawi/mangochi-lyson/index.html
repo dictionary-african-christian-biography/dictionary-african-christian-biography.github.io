@@ -607,8 +607,79 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Pastor Lyson Mangochi lived in Malawi.  He was a very wicked young man but had come to realize that there was no peace in the way he was living.  He joined seven different churches but just stayed the same on the inside.  He testified, “I finally decided that there was no such thing as peace in this life and so I, along with my wife, went back to the beer pots…and took part in the sins which follow it.”</p>
+
+<p>Then one day Mangochi went to the Nazarene Church.  He continued, “It was on October 13, 1958, and the sun was just about there (he pointed to the three o’clock position in the western sky).  That day I did not just join another church.  I was kneeling right over there (he pointed to the altar), and for the first time I met Jesus Christ.  I found that peace which I had been searching for.”  Three weeks later he knelt at the other end of the altar and “I gave all I had to God, and He came and made me clean clear through.”</p>
+
+<p>Mangochi returned to his village and began to tell about the peace that he had found.  He cut poles, reeds and grass and built a little church.  Termites eventually demolished it and with the rains it collapsed.  Then a man in the U.S.A. sent money for a church building as a memorial to his wife.  It was enough for the cement and the roof.  The congregation made and burnt the bricks and provided all the labour for a permanent sanctuary.  In 1965 there were over one hundred in attendance, many of them having been won by Mangochi himself.</p>
+
+<p>They gave up some members in order to start another church in a nearby village.  A seventy-year-old man named Mr. Chipololo pastored there and soon had over a hundred and fifty in attendance.  For two years Pastors Mangochi and Chipololo attended Bible College at Limbe.  Every weekend they walked the seventeen miles to their villages to preach to their people and then returned to college.  Neither of them was ever heard to complain.[1]</p>
+
+<p>Mangochi passed away while still serving as a pastor.[2]</p>
+
+<p>Paul S. Dayhoff</p>
+
+<hr />
+<p>Notes</p>
+
+<ol>
+  <li>
+    <p>B. Maurice Hall, <em>I Sought for a Man:
+The Story of Nazarene Missions in Central Africa,</em> (Kansas
+City, MO: Nazarene Publishing House, 1966), 65-67.</p>
+  </li>
+  <li>
+    <p>Enoch Litswele, letter (10 April 1993).</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Living Stones In Africa: Pioneers of the Church of the Nazarene</em>, revised edition, copyright © 1999, by Paul S. Dayhoff.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Mangochi, Lyson`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +758,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +797,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

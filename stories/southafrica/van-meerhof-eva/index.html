@@ -611,8 +611,69 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Eva van Meerhof (née Eva Krotoa, and also known as “Eva the Hottentot”) (circa 1642-74) was a Khoikhoi (Hottentot) interpreter who married the Afrikaner explorer Pieter van Meerhof. She was the first black African to marry a South African white in a Christian ceremony.</p>
+
+<p>Belonging to a Khoikhoi band near Cape Town, she had been adopted into the household of Jan van Riebeeck as a servant. Learning Dutch and some Portuguese, she acted unofficially as an interpreter for the Dutch East India Company in its dealings with the Khoikhoi. She was baptized a Christian in 1664, and married van Meerhof in 1666; he died the following year.</p>
+
+<p>After his death, she reputedly followed a dissolute life style which brought her into disrepute with the Dutch community, and resulted in her losing custody of her children. South African whites came to regard her as a symbol of Khoikhoi degeneration. Some of her own people, however, saw her as a traitor and tool of the Dutch.</p>
+
+<p>Keith Irvine</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Mark R. Lippschutz and R. Kent Rasmussen, <em>Dictionary of African Biography</em>, Chicago. Alpine Publishing Co. 1978.</p>
+
+<p>Readers’ Digest, <em>Illustrated History of South Africa: The Real Story</em>, Readers’ Digest, Pleasantville, N.Y., 1988.</p>
+
+<hr />
+
+<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (In 20 Volumes). Volume Three: South Africa- Botswana-Lesotho-eswatini. Ed. Keith Irvine. Algonac, Michigan: Reference Publications Inc., 1995.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Van Meerhof, Eva`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +752,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -730,6 +791,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

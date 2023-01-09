@@ -611,8 +611,71 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Philomène Randrianina was born on September 19, 1887, in Antananarivo; she took her vows on June 29, 1917 in Ambohipo, and entered eternal rest on December 5, 1964 in Androhibe.</p>
+
+<p>Philomène was known by the Sisters of Saint-Joseph of Cluny from birth, because her mother was employed by their community in Mahamasina. When she was twenty-five, she asked to be admitted to the novitiate in Ambohipo. Thus, she was part of that first group of Malagasy novices who aspired to the religious life, and who became one of the living stones in the building of the Church in Madagascar.</p>
+
+<p>After having taken her vows, Sister Ambroise worked on obtaining her certificate of teaching aptitude. Having obtained her diploma, she went to the parochial school in Faravohitra, where she taught the first class for forty-one years. A good teacher and a committed educator, Sister Ambroise gave her students a truly complete human and religious education. Her students became devoted Christian mothers, embroidery artists (“needle-painting,” as it was known), and religious. Nine of them became nuns in the Congregation of Saint-Joseph of Cluny, and three others became Carmelites.</p>
+
+<p>In 1959, the Malagasy Cross of Merit was conferred upon Sister Ambroise by way of rewarding her for the many years she spent in the service of future generations. In addition, although she was a teacher, Sister Ambroise was also extremely devoted to the care of her fellow sisters in the faith who were handicapped or sick, and they benefitted from all her knowledge, tact, and gentleness in this regard.</p>
+
+<p>One of her former students, who had become the Jesuit Superior, spoke for the entire parish and school of Faravohitra when he gave a farewell funeral oration on the day she was laid to rest.</p>
+
+<p>Sister Marcienne Fabre</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p><em>Bulletin de la Congrégation de Saint-Joseph de Cluny</em>, No. 273a, vol. 20, p. 1497, December 1967.</p>
+
+<hr />
+
+<p>This article, which is printed here with permission, is taken from <em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em> [Men and Destinies: Overseas Biographical Dictionary], Vol. 3, published in 1977 by the Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116, Paris, France). All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Randrianina, Philomène`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +754,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -730,6 +793,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

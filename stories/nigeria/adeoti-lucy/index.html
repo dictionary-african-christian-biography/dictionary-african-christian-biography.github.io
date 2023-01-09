@@ -607,8 +607,81 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Widely known as “Mama Aladura,” Lucy Adeoti was the pioneering founder of Salem Gospel Mission International. She was born to Pa and Madam Adelakun, of Popo Area, Osogbo, Western Region, Osun State. Adeoti’s family worshipped <em>Sango</em>, the Yoruba god of thunder, to whom she was dedicated as a princess.</p>
+
+<p>She met Christ in 1940 through the evangelistic activities of the Roman Catholic Church, was baptized, and became a communicant. Adeoti had no opportunity for formal education because she was a girl. However, she learned to trade goods, including yam flour, corn, gari, and other items.</p>
+
+<p>Adeoti’s husband, Prophet Denton Oyebode Ogunde, founded the Holy Savior’s Church (Aladura), Alapata Street, Modakeke, Ile-Ife, in 1946. After Ogunde’s death on November 22, 1952, the disciples in the church–who were all men–refused for Adeoti, a woman, to assume the leadership of the church, so she left the church and settled down in Osogbo.</p>
+
+<p>However, in 1953 Adeoti was directed by God in a dream to start a prayer band. She returned to Ile-Ife and rented rooms at No. 6 Isale Agbara Street, Ile-Ife, where she started the prayer band. In 1956, when it started to grow, she bought land at 75 Akarabata Layout, Line 3, Ile-Ife. She developed the land, erecting a mission house in 1956 and a church building in 1960. Adeoti was a prophetess, and as God performed miracles through her, more and more people were attracted to the church. What started as a prayer band in a rented sitting room grew to a church with twenty-six branches and three administrative presbyteries (now called districts). By the time of her death the church had spread to Benin City, Warri, Akure, Ilorin, Sokoto, and Ibadan.</p>
+
+<p>Salem Gospel Mission started discipleship training in 1962 and a school of evangelism in 1965. In 1977, when Prophet–now Bishop–J. O. Fatunwase became moderator, the church started Salem Bible College for Theological Training in Alagbagun, Modakeke, Ile-Ife, an institution that awards a certificate in theology. Prophet Fatunwase studied at Advent College of West Africa (now Babcock University), Ilishan-Remo in Ogun State, and has a Master of Divinity from Queen’s University, Canada.</p>
+
+<p>Begun as an Aladura church, the group became a Gospel church in 1983 at a national church conference held at Adeola Odutola Comprehensive High School, Ijebu Ode, Osun State as a result of an influx of educated individuals into the ministry.</p>
+
+<p>Adeoti also pioneered an orphanage at Akarabata Layout Mission House, where children are not only taught reading and writing, but also given a Christian education.</p>
+
+<p>Adeoti died in 1986 and was buried on church land at the Ondo Road Assembly Church, which was the church headquarters at that time. Presently (2008) the permanent headquarters of the church are at Idi Mangoro, Ibadan, Oyo State, on the new location of Salem Bible College.</p>
+
+<p>Timothy Kennedy Otefisan</p>
+
+<hr />
+
+<p>Sources:</p>
+
+<p>Alice Mopelola (Adeoti’s business partner), interview by author, February 8, 2007, Popo Street, Osogbo, Osun State.</p>
+
+<p>Bishop J. O. Fatunwase (present moderator of Salem Gospel Mission), interview by author, January 31, 2007, Felele Street, Ibadan.</p>
+
+<p>Elizabeth Faderera (daughter of Lucy Adeoti), interview by author, February 2007, Station Road, Osogbo, Osun State.</p>
+
+<hr />
+
+<p>This article, received in 2009, was researched and written by Mr. Timothy Otesifan, a D. Min. second year candidate at the Nigerian Baptist Theological Seminary, Ogbomoso, under the supervision of Rev. Dr. Deji Ayegboyin, <em>DACB</em> liaison coordinator and president of Nigerian Baptist Theological Seminary, a <em>DACB</em> participating institution.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Adeoti, Lucy`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +760,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +799,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

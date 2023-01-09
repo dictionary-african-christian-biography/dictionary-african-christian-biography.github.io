@@ -605,8 +605,85 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Ambroise Engelvin naquit à Reynaldès, commune de Thoras (Haute-Loire) le 18 février 1884. Issu d’une famille de souche terrienne, il était le quatrième de dix enfants. Après ses études primaires chez les Frères de Chambon-le-Château (Lozère), il entra à douze ans au collège ecclésiastique de Langogne.</p>
+
+<p>Il continua ses études secondaires à l’École apostolique de Prime-Combe (Gard), tenue par les Pères Lazaristes, puis à l’école apostolique du Berceau de Saint Vincent de Paul (Landes) où sa vocation religieuse s’affirma. Il entra au séminaire de Dax pour étudier la philosophie et la théologie et fut ordonné prêtre le 16 juillet 1911.</p>
+
+<p>Ayant souhaité servir comme missionnaire hors de France, Ambroise Engelvin fut désigné pour la Mission des Lazaristes de Fort-Dauphin. C’est ainsi qu’il débarqua à Farafangana le 22 octobre 1911, mais le climat particulièrement chaud et humide en cette période de l’année ne paraissait pas lui convenir et il fut nommé à Fort-Dauphin le mois d’avril suivant. Il y servit pendant douze ans partageant ses activités entre l’enseignement à l’école de Fort-Dauphin et l’animation des postes missionnaires en brousse.</p>
+
+<p>En 1924, il fut appelé à Tuléar, chargé à la fois de la paroisse de cette ville et du vaste territoire missionnaire qui en dépend: une étendue de 300 km en long et en large. Pendant vingt-neuf ans, il fut le véritable animateur de cette mission, comptant à son actif la construction d’une vingtaine d’églises de brousse et la création du collège de Tuléar qui reçoit plus de 500 élèves.</p>
+
+<p>En novembre 1953, la mission de Tuléar fut confiée aux Pères Assomptionnistes qui vinrent assurer la relève des Lazaristes. Le Père Engelvin, âgé de soixante-neuf ans, quitta donc Tuléar et revint à Fort-Dauphin. L’année suivante, il se retira en France pour prendre sa retraite et il mourut à Dax le 23 mai 1968.</p>
+
+<p>Indépendamment de son travail missionnaire, le P. Engelvin s’était attaché à la connaissance des habitants. C’est ainsi qu’il écrivit notamment un livre <em>Les Vezos ou “Enfants de la mer,”</em> une histoire de cette tribu, préfacée par G. Grandidier qui lui valut d’être nommé membre de l’Académie Malgache.</p>
+
+<p>Le Gouvernement français a reconnu ses mérites en lui décernant les Palmes Académiques puis en le nommant Officier d’Académie et Chevalier de l’Étoile d’Anjouan.</p>
+
+<p>Raymond Delval</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p>Ambroise Engelvin, <em>Les Vezos ou “Enfants de la mer”</em>. Bellevue S. et O. 1937.</p>
+
+<p>Librairie Vincentienne et missionnaire édit.</p>
+
+<p>——–, <em>L’évangélisation du Sud de Madagascar</em>. Tananarive, 1946 (?).</p>
+
+<p>——–, <em>L’origine de l’établissement des Vezos sur la Côte Sud-ouest de Madagascar</em>. Paris, Marchés Coloniaux, 13 et 20 novembre 1948.</p>
+
+<p>——–, “Le Fort Dauphin au XVIIe siècle.” Tananarive. <em>La Revue de Madagascar</em>, janvier 1949</p>
+
+<p><em>Eugène Engelvin, Ambroise Engelvin, La belle vie vécue par un missionnaire Lazariste à Madagascar de 1911 à 1954</em>. Les missions Lazaristes, 95 rue de Sèvres, Paris, VIe, 1957.</p>
+
+<hr />
+
+<p>Cet article, réimprîmé ici avec permission, est tiré d’<em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em>, tome 3, publié en 1977 par l’Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Engelvin, Ambroise`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +764,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +801,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

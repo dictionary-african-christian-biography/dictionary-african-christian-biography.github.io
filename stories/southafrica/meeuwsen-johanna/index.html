@@ -607,8 +607,75 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>First single woman missionary of the Dutch Reformed Church (DRC) in South Africa.</p>
+
+<p>Through the solicitation of Andrew Murray, two women-Abbie Ferguson and Anna Bliss-went from Mount Holyoke College in Massachusetts to South Africa to establish the Huguenot Seminary for girls in Wellington, Cape Province. Born in Wellington of Dutch parents, Meeuwsen was in the first class, starting in 1874.  She took an active part in a growing student missionary movement that originated under Ferguson. Before completing her course, Meeuwsen sensed God’s call to go to the DRC’s mission field in the northwestern Transvaal. At the beginning of 1875, together with Sarie Horak and Rev. and Mrs. Pieter Brink, she departed for the Transvaal. With Horak, she then worked at the pioneer mission station Saulspoort until 1883. They learned Setswana, started a school for children of the Batlhako tribe, and held prayer meetings and singing lessons. Many children were converted. The two teachers worked under arduous conditions and sometimes suffered malaria attacks. Growing interest in missions at the Huguenot Seminary led to the founding of the Huguenot Missionary Society in 1878. Meeuwsen was the first of many single women missionaries who were supported by the society and after 1889 by the Vrouesendingbond (Women’s Mission Union) of the DRC.</p>
+
+<p>Annalet Van Schalkwyk</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>D. Crafford, <em>Aan God die dank</em> (1982.</p>
+
+<p>history of the mission of the DRC within the Republic of South Africa and some neighboring states).</p>
+
+<p>J. M. Cronje, <em>Vroue met nardusparfuum</em> (1984.</p>
+
+<p>the contribution of women to the mission work of DRC).</p>
+
+<p>W. L. Maree, <em>Uit duisternis geroep</em> (1966 the early mission work of the DRC in the northern and western Transvaal).</p>
+
+<p>Dana Robert, “Mount Holyoke Women and the Dutch Reformed Missionary Movement, 1874 - 1904,” <em>Missionalia</em> 21 (1993): 103 -123.</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Meeuwsen, Johanna`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +754,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +793,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

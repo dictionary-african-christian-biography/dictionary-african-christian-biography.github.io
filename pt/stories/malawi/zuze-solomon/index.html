@@ -606,8 +606,75 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Solomon Zuze era da área de Nsilanga perto do Centro Missionário de Chididi. Ele cursou primária na Escola da Missão. Mais tarde, ele foi professor de uma escola supervisionada pela missão e assistida pelo governo. Enquanto era professor, ele também era ancião da igreja com um forte testemunho cristão.</p>
+
+<p>Em 1958, junto com sua esposa, ele entrou na recém aberta Escola Bíblica, iniciada por Long. Isto se deve ao fato de que os que trabalharam para a missão do governo naquela época de agitação política, eram vistos como colaboradores, e profundamente odiados pelos nativos.</p>
+
+<p>Em 1961, ele se formou e voltou para a sua terra natal, como professor. Lá ele e o Pastor Mvula testemunharam a muitas pessoas da região. Provavelmente devido ao seu forte Testemunho Cristão, numa noite um desconhecido incendiário colocou fogo na sua casa. Ele, sua esposa e as crianças acordaram e conseguiram fugir, mas perderam tudo o que tinham. Isto, no entanto, não o intimidou, e ele continuou firme no Senhor.</p>
+
+<p>Depois de certo tempo, o Rev. Bob Barr, diretor da Missão Gerald a África do Sul, o convidou para trabalhar com a Missão Dorothea em Zimbábue. Ele aceitou com muito entusiasmo, e foi trabalhar como evangelista, pregando para multidões nas fazendas européias onde as condições para os trabalhadores rurais africanos eram muito ruins e a imoralidade e bruxaria eram a ordem do dia. O trabalho deles não era fundar igrejas, mas pregar o Evangelho e levar pessoas a Cristo, as quais logo seriam absorvidas pelas igrejas da Missão. Em certo momento, Zuze ficou tão doente que quase morreu. Nessa ocasião, ele dizia ter tido uma visão, na qual Deus lhe falava: “-Eu vou curar você, você tem um ano mais para servir.”</p>
+
+<p>Milagrosamente, ele se levantou no dia seguinte. Conta-se que durante aquele ano que Deus lhe deu, ele trabalhou intensamente de maneira incrível evangelizando, mais do que qualquer outra pessoa naquela área antes dele, para surpresa dos missionários com quem ele estava trabalhando. Zuze visitou fazendas de maneira incansável para pregar e testemunhar o que o Senhor tinha feito na sua vida. O seu testemunho levou muitas pessoas a Cristo. Foi reconhecido que aquele último ano do seu ministério foi tremendo, e provavelmente ultrapassou todo o seu ministério prévio.</p>
+
+<p>De acordo com as palavras de Deus, ele morreu depois daquele ano. As circunstâncias da sua morte não são conhecidas. Somente foi relatado para a missão de Chididi que “o homem deles”  tinha finalmente partido para estar com o Senhor.</p>
+
+<p>Louis W. Ndekha</p>
+
+<hr />
+
+<h1 id="bibliografia">Bibliografia</h1>
+
+<p>Mary Long, (ex-missionária SAGM/AEF/SIM 1952-1962, 1991-1997, 2002), com o seu esposo Charles, pioneiros e fundadores da Escola Bíblica Chididi, onde Solomon Zuze foi treinado. (Mary Long, Bonis Avenue, Scarlborough, Ontario, MT 3rd, Canada. Marylong@axxent.ca)</p>
+
+<p>Rev. Jimu, ex-Secretario Gerald a Igreja Evangélica da África, da Missão Geral da África do Sul.</p>
+
+<hr />
+
+<p>Este artigo, apresentado em 2003, foi escrito e pesquisado por Louis W. Ndekha, coordenador do DIBICA na Faculdade Bíblica Evangélica de Malawi, Instituição Participante do DIBICA.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Zuze, Solomon`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Leia várias versões: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -690,7 +757,7 @@
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 02 January 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 14 December 2022.<br>&copy; 2022 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -725,6 +792,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

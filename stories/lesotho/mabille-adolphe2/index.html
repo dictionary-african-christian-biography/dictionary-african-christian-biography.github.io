@@ -607,8 +607,76 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Adolphe Mabille was a Paris Evangelical Missionary Society
+(PEMS) missionary in Lesotho. Born at Baulmes, Vaud, Switzerland,
+he received a strong formal education in Yverdon and at the
+Paedagogium in Basel. He taught French in the Netherlands
+and in Great Britain, where he entered the PEMS School of
+Missions in Paris, where he met his future wife, Adèle Casalis
+(1840-1923), who was born at Thaba Bosiu, Lesotho, the daughter
+of PEMS director <a href="/stories/south-africa/casalis-eugene2/">Eugène
+Casalis</a>. They married in 1859, wanting to serve in China,
+which was a new project of the PEMS inspired by Mabille; instead
+they were sent to Lesotho. Mabille served with great distinction
+at Morija from 1860 until his death.</p>
+
+<p>His contribution pertains to four important areas of missionary service. First, in 1856, when he was still a missionary candidate, he suggested the use of “small change” collection cards for fund-raising, which in spite of its modest goals became a major source of income for the PEMS. Second, he worked toward complete translation of the Bible into Sotho, which was achieved in 1879. He launched the first newspaper, in Sotho, <em>Leselinyana</em> (The little light of Lesotho) in 1863, still published today, and in 1889 started a quarterly for church workers, <em>Motsualle oa Baboleli le Nalisa ba likolo</em> (The friend of preachers and shepherds of schools). Third, he encouraged and organized indigenous ministry. He installed the first Sotho minister, Esaia Leeti, at Kolo, near Morija, in 1863. He trained men for the ministry; a theological college was planned very early and finally opened in 1882. Fourth, he encouraged the church of Lesotho to engage in foreign missions. The first Sotho foreign missionary was Isaiah Seële, sent to pioneer among the Pedis of Transvaal in 1863. Other Sotho missionaries were sent in 1875 to the Banyais of Mashonaland (now Zimbabwe) and in 1883 to the Barotsis of Zambesi (now Zambia).</p>
+
+<p>Marc R. Spindler</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Works by Adolphe Mabille include a Sotho translation of the Bible, the <em>Sesuto-English Dictionary</em> (1876, 1894; revised and enlarged by H. Dieterlen in 1904 and 1911), and numerous articles and papers published in Sotho. James E. Siordet, <em>Adèle Mabille, née Casalis (1840-1923) d’après ses souvenirs et sa correspondence</em> (1933); Edwin W. Smith, <em>The Mabilles of Basutoland</em> (1939).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Mabille, Adolphe (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +755,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +794,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

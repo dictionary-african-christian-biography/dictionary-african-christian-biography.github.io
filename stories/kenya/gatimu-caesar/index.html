@@ -607,8 +607,57 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Caesar Gatimu was born to a Catholic family at Limuru, Kenya, in 1921. He made his first studies at St. Augustine’s Minor Seminary, Nyeri. In 1939 Gatimu was sent to Rome to receive his philosophical and theological formation in the Urban College of Propaganda Fide, and then (after his priestly ordination in Rome on March 17, 1946) in St. Peter’s College, from which he got his doctorate in divinity in 1948. After his return to Kenya he worked in the diocese of Nyeri in various pastoral services. In 1956 he was appointed parish priest of Kianyaga Catholic Mission and in 1959 he became one of the councellors in Nyeri Diocese. On April 21, 1961 he was appointed auxiliary bishop of Mgr. Cavallera and on May 21 of the same year was consecrated in Rome by Pope John XXIII together with thirteen other bishops from missionary countries.</p>
+
+<p>On November 25, 1964 Pope Paul VI made him bishop of Nyeri, when Bishop Cavallera was transferred to the new diocese of Marsabit. He was the first Kikuyu Catholic bishop and efficiently contributed to the development of the Catholic Church in his diocese and in the central province of Kenya, particularly because of his pastoral dedication and the good relationship he had with his people and the authorities of the country. He died on February 20, 1987 and was buried in the Catholic Cathedral of Nyeri, in the presence of all the bishops of Kenya and of President Moi.</p>
+
+<hr />
+
+<p>This article, received in 2005, was reprinted with permission from* Christianity among the Nomads: The Catholic Church in Northern Kenya*, by Paul Tablino, © copyright 2004 by St. Paul Communications / Daughters of St. Paul, Nairobi, Kenya.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Gatimu, Caesar`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +736,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +775,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

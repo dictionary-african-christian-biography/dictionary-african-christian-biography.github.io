@@ -601,8 +601,79 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/burundi/nduwimana.jpg" alt="Manasseh Nduwimana" class="bio" /></p>
+
+<p>Manasseh Nduwimana was born in 1952 in Burundi, Muramvya Province, Rutegama Commune, and Nyarunazi village.</p>
+
+<p>He grew up in a Christian family under the missionary influence of the Burundi Evangelical Friends Church. He attended the Mweya Theological Seminary and the Friends Bible College in Bujumbura where he received a Bachelor of Theology.</p>
+
+<p>He married in 1979 and was ordained a pastor in 1989 in the Burundi Evangelical Friends Church under American missionaries. He was chosen by the General Assembly to serve as a legal representative of Burundi Evangelical Friends Church in the Burundi government between 1986 and 1992. There was a leadership conflict among missionaries and general mistrust of the local and national administration and the new leadership team. Nduwimana strongly opposed the selfish ambitions of the two groups, including the misuse and mismanagement of church funds. Only missionaries had had access to electricity and running water for forty-five years, which had left African church leaders literally in the dark for a long time. Missionaries lived in big houses while Africans lived in a small two-roomed dark houses.</p>
+
+<p>Around 1986, the governor of Gitega province visited Kivimba mission station and ordered the missionaries to give top African leaders well-furnished, big houses. Some missionaries were not happy. Other large buildings such as Kibimba hospital, Kwibuka garage, and houses in Bujumbura that the missionaries had left were misused due to the poor education of local leaders. This happened because missionaries did not train and educate local people to take over high-level management after they left the country. Thus, after they left in 1970, all the buildings fell into disrepair and have remained in that state up to this day. People were unhappy with that behavior.</p>
+
+<p>Nduwimana, the legal representative, was dismissed from church leadership and excommunicated. Some missionaries who knew his trustworthiness advised the General Assembly not to excommunicate him but they did anyway. As a result, the church split. In 1993, Nduwimana struggled to initiate the Family Life Mission Organization to help deal with family conflicts and counsel vulnerable children. It now functions in collaboration with Family Life Mission of Germany. More than 150 vulnerable children are spiritually and financially supported. Many of these vulnerable children attend the nursery, primary, and secondary schools at Kaniga Habakkuk Center. Some of them have started to go to different universities.</p>
+
+<p>Nduwimana was a man of initiatives. In 2003, he started Hosanna Church Burundi that is growing very fast and has more than 30 local parishes. Its headquarters are located at Kaniga Habakkuk Center. He led the church up to his death in 2017.</p>
+
+<p>His photo is affixed to his grave at Kaniga Habakkuk Center. People from his village say he was a man of God who was not afraid to die. He was ready to confront any hard situation and never gave up until he won the battle.</p>
+
+<p>Ngezahayo Pierre-Claver</p>
+
+<hr />
+
+<p><strong>Sources</strong>:</p>
+
+<p>Rev. Mptarusuma, legal representative and successor to Nduwimana, eyewitness testimony.</p>
+
+<p>Author, eyewitness experience with Nduwimana who was his legal representative.</p>
+
+<hr />
+
+<p>This biography, received in 2019, was written by Bishop Ngezahayo Pierre-Claver (Adv. Dip of Th, B.Th, MAIE) of the Wesleyan Church Burundi and researcher on behalf of DACB.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Nduwimana, Manasseh`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -681,7 +752,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -720,6 +791,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

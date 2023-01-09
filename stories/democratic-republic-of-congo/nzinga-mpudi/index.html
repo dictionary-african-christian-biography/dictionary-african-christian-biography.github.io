@@ -611,8 +611,74 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Nzinga Mpudi (circa 1510-November 4, 1561) ruled from 1545 to 1561, as Mani Kongo (ruler of the Kongo) during a period of confrontation between the kingdom of the Kongo and the Portuguese.</p>
+
+<p>Succeeding Mvemba Nzinga, also known as Afonso I, a Christian ruler who ruled from 1506 to about 1543, Nzinga Mpudi took office in 1545 as Diogo I, following a succession struggle with other pretenders.</p>
+
+<p>Soon after taking power, he dispatched Diogo Gomes, a Creole priest, as an ambassador to the Portuguese king, Joao III (ruled 1521-57). Through Gomes, Nzinga Mpudi hoped to acquire some new missionaries, but especially to renew a 1517 treaty which recognized a royal monopoly on trade and confined Portuguese boats and merchants to the port of Mpinda on the Congo (Zaire) river estuary. This was because, in the 1540s, Portuguese traders from Sao Tome island were trying to by-pass the authority of the Mani Kongo.</p>
+
+<p>Gomes was not entirely successful, but he did return with four Jesuit priests. The Jesuits established a school at Mbanza Kongo (now San Salvador) where they enrolled 600 pupils. Relations between Nzinga Mpudi and the Jesuits deteriorated, however, as the Jesuits increasingly sided with the interests of the Portuguese on Sao Tome. By 1555 the Jesuits, and also Gomes, had left the Kongo. In 1557 Franciscan missionaries arrived to replace the Jesuits. Their catechism, in Kikongo, was the first written document in the local language.</p>
+
+<p>The conflict with Sao Tome eventually led Nzinga Mpudi into war with his southern neighbor, Ndongo. Portuguese traders at his capital, Mbanza Kongo, urged Nzinga to punish the Ngola (chief) of Ndongo, who permitted and even encouraged Sao Tome merchants to operate in Ndongo. Although the Mani Kongo sent troops against the Ngola, Kongolese forces were badly beaten in 1556. Unhappily for Nzinga, in 1557 Ndongo established direct relations with Portugal, thus weakening the status of the Kongo kingdom and further thwarting the Kongo’s attempts to establish controls over European commerce in central Africa.</p>
+
+<p>Unlike his predecessor Mvemba Nzinga, Nzinga Mpudi was not deceived by the Portuguese. He worked hard to curb foreign intervention in local political affairs, and he tried to maintain authority over trade in his domain. He died on November 4, 1561.</p>
+
+<p>Tsimba Mabiala</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>G. Balandier, <em>La vie quotidienne au royaume du Kongo du XVIéme au XVIIIéme siécle</em>,
+Paris, 1965, English translation by Helen Weaver published as <em>Daily Life in the Kingdom of the Kongo From the Sixteenth to the Eighteenth Century</em>, New York, 1968; <em>Biographie Coloniale Belge</em>, Vol. 2, Brussels, 1951, cols. 293-94; J. Cuvelier and L. Jadin, <em>L ‘ancien Congo d’aprés les archives romaines: 1518-1640</em> (“The Ancient Kongo According to the Roman Archives, 1518-1640”), Brussels, 1954; L. Jadin, “Relations sur Ie Congo tinées des archives de la compagnie de Jésus, 1621-1631” (“Reports on the Congo Drawn from the Archives of the Company of Jesus, 1621-1631 “), <em>Bulletin de l’Institut Historique BeIge de Rome</em>, Vol. XXXIX, 1968, p. 349; W.G.L. Randles, <em>L ‘ancien royaume du Congo des origines a la fin du XIXéme siécle</em> (“The Ancient Kingdom of Congo from its Origins to the End of the 19th Century”), Paris, The Hague, 1968; T.H. Simar, <em>Le Congo au XVIéme siécle d’aprés la relation de Lopez Pigafetta</em> (“The Congo in the Sixteenth Century According to the Account of Lopez Pigafetta”), Brussels, 1929; J. Vansina, <em>Les anciens royaumes de la savane</em>, Léopoldville, 1965, published in English as <em>Kingdoms of the Savanna</em>, Madison, 1966.</p>
+
+<hr />
+
+<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (In 20 Volumes). Volume Two: Sierra Leone-Zaire. Ed. L. H. Ofosu-Appiah. New York: Reference Publications Inc., 1979.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Nzinga Mpudi`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +757,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -730,6 +796,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

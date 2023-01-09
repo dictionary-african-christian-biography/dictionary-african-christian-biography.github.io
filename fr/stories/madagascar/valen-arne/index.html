@@ -609,8 +609,85 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Arne Valen (à Madagascar il écrivait souvent son nom avec un W) naquit le 11 septembre 1844 à Valestrand (Norvège). Diplômé d’une école normale en 1866, il fit des études théologiques au Séminaire des Missions luthériennes norvégiennes (NMS) de Stavanger de 1868 à 1873 et fut consacré pasteur en 1874. Il fut envoyé à Madagascar et fut chargé de fonder, avec L. Röstvig le poste missionnaire de Tuléar.</p>
+
+<p>Valen ayant quelques connaissances en médecine donna des soins à un tuberculeux mais ne put le guérir, et quand celui-ci mourut, son entourage accusa Valen de l’avoir tué. Cela ajouté à d’autres difficultés obligea Röstvig et Valen à quitter Tuléar en 1875 et à partir rejoindre leurs collègues Lindö et Jakobsen à Andrabompasy, sur le Mangoky, où ils installaient un poste de leur côté. Là, ils trouvèrent le village détruit par des brigands, les habitants dispersés et Lindö alité, gravement atteint de paludisme.</p>
+
+<p>Valen le soigna et en 1876, ils allèrent ensemble à Manja pour y fonder une station en s’appuyant sur la petite garnison mérina. Ne connaissant pas encore la quinine, ils eurent tous deux de si forts accès de paludisme qu’ils faillirent mourir. Au bout de quelques mois, ils furent donc obligés de se replier sur les Hauts-Plateaux beaucoup plus sains, ou moins malsains.</p>
+
+<p>Rétabli, Valen accompagna P. Nilsen-Lund dans un voyage d’exploration sur la côte sud-est en 1877. Ils allèrent à Mananjary, puis plus au sud à Vohipeno. Là ils se séparèrent. Valen prit au sud-ouest jusqu’à Ambalatany et revint par le même chemin.</p>
+
+<p>L’année suivante (1878), Valen fonda la station missionnaire de Fianarantsoa et y resta jusqu’à son départ en congé en Norvège (1885). Le Séminaire luthérien avait été fondé à Tananarive par L. Dahle (1871-1875) puis repris par S. E. Jörgensen (1876-1885). On l’avait fermé au départ de ce dernier. C’est en 1890 que Valen le rouvrit à Masinandraina près d’Antsirabé. Bon professeur, et très aimé de ses élèves il exerça sur eux une grande influence. Très doué pour la musique (comme le fut également son fils, le compositeur renommé Fartein Valen), il enseigna le chant choral et à l’aide du recueil “<em>Tiona sy fihirana</em>, Airs et cantiques”, il introduisit la notation musicale dite “solfa” dans l’Église luthérienne comme l’avait fait son collègue J. Richardson dans les églises du Nord de l’Ile.</p>
+
+<p>En 1984, il rentra en Norvège et il enseigna au Séminaire de la NMS à Stavanger de 1894 à 1902. Il mourut à Valestrand le 22 juillet 1906.</p>
+
+<p>O. Chr. Dahl, L. Molet</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p>“Two years among the Sakalava” [Deux ans parmi les sakalava], <em>Antananarivo Annual</em>, 1881.</p>
+
+<p>“The Sakalava” <em>Antananarivo Annual</em>, 1882, 1883, 1884.</p>
+
+<p>*Hevi-teny amy ny fotopianarana *[Commentaire sur le catéchisme], Antananarivo, 1886.</p>
+
+<p><em>Tiona sy Fihirana</em> [notes “solfa” du recueil de cantiques luthérien], Antananarivo, 1887.</p>
+
+<p><em>Madagaskars Sydoskyst</em> [La côte sud-est de Madagascar], Stavanger, 1887.</p>
+
+<p><em>Vidnesbyrd fra Missionsmarken</em> [Témoignages du champ de mission], Bergen, 1889.</p>
+
+<p><em>Hevi-teny amy ny Salamo dimy amby roabolo voafantina</em> [Commentaire de 25 psaumes choisis], Antananarivo, 1892.</p>
+
+<hr />
+
+<p>Cet article, réimprîmé ici avec permission, est tiré d’<em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em>, tome 3, publié en 1977 par l’Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Valen, Arne`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +768,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -728,6 +805,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

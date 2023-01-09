@@ -607,8 +607,81 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/ethiopia/makonnen-e/makonnen_endalkachew.jpg" alt="Makonnen Endalkachew" class="bio" /></p>
+
+<p>Ras Bitwadad Makonnen Endalkachew (February 16, 1890-February 27, 1963) was a civil servant, a devoted courtier of Emperor Haile Selassie [reigned 1930-74], and the author of about 20 books on religious and moral themes.</p>
+
+<p>He was born and brought up in Tagulat, Shawa. He was the son of Wayzaro Abonash Takla Maryam and Balambaras Endalkachew Abreqe, a member of the powerful Addisgé family, which became prominent during the reign of Menilek II (i.) [reigned 1889-1913]. At Melinek’s court his maternal uncle, Ras Bitwadad Tassama Nadaw was most favored and respected. Makonnen Endalkachew was therefore among the first students in the first modern school to be established in Addis Ababa.</p>
+
+<p>He himself first became an important figure in the reign of the Empress Zawditu  [reigned 1916-30], and later held many key posts after Haile Selassie became emperor. Until 1936 he held various government posts, beginning as governor of a district in 1920, and becoming comptroller of the railroad from Jibuti to Addis Ababa from 1924-26, minister of commerce from 1926-31, Ethiopian envoy to the League of Nations and to the Court of St. James in London from 1931-33, mayor of Addis Ababa from 1933-34, and governor of Ilubabor province in 1935.</p>
+
+<p>At the time of the Italo-Ethiopian conflict of 1935-36, he held the rank of general, and led troops form Ilubabor. After the defeat of the Ethiopian forces, he followed the emperor into exile abroad during the Italian occupation from 1936-41, but stayed in Palestine, where he worked for the Ethiopian refugees in that country, and also engaged in religious painting. In 1937 he went to England to represent Emperor Haile Selassie at the coronation of King George VI (reigned 1936-52).</p>
+
+<p>On Haile Selassie’s return to Ethiopia in 1940, Makonnen was again given ministerial posts, as minister of the interior (1941-43), prime minister (1943-57), and president of the Senate (1957-61). He also represented Ethiopia at the opening session of the United Nations in 1946. In 1958 he was given the title of Ras, with the insignia of Ras Warq. He resigned from the civil service in 1960 because of poor health.</p>
+
+<p>He wrote about 20 books, including two on history, and autobiography, a memoir, a philosophical treatise, two historical novels, and other novels and plays. All the books deal with morality and religion. One of his works was in French, four were translated into English, and one appeared in a Tigrinya translation.</p>
+
+<p>He was first married to Wayzaro Zawditu Mangasha, of whose 16 children only 2 were still alive in the mid-1970s. In 1936 he married Princess Yashash Warq Yelma, a niece of Haile Selassie, and a sweetheart of the past 23 years, but he had no children by her.</p>
+
+<p>Tsehai Berhane Selassie</p>
+
+<hr />
+
+<p><strong>Bibliography</strong></p>
+
+<p>Albert S. Gérard, <em>Four African Literatures</em>, Berkeley, 1971.</p>
+
+<p>Kabbada Tassama, <em>Yatarik Mastawat</em> (“Mirror of History”), Addis Ababa, 1969/1970.</p>
+
+<p>Makonnen Endalkachew, <em>Pourquoi le Lion Vainqueur de Judah Fut Vaincu?</em> (“Why Was the Conquering Lion of Judah Defeated?”), Jerusalem, 1939, <em>Alem Weretenna</em> (“Inconstant World”), a novel, Addis Ababa, 1940, <em>Yedam dims</em> (“Voice of Blood”), a play 1941/42, translated into English by K. In my marriage. Simon, 1947/48, Selsawi Dawit (“David III”), a novel, 1942/43, later published as a play, circa 1950, Assabena Saw (“Man and His Thought”), a novel, Addis Ababa, 1934, <em>Almothum Beyyé Alwashem</em> (“I Do Not Lie, Saying I Am Not Dead”), Addis Ababa, 1945, <em>Kabtaya Iska Makar</em> (“From Seed to Crop”), Addis Ababa, 1946, Yedam Zaman (The Bloody Era”), a novel, Addis Ababa, 1947, <em>Arremun</em> (“Advise Me”) an anthology of earlier writings, Addis Ababa, 1947, <em>Malkam Beta-Saboch</em> (“The Good Family”), Asmara, 1949, <em>Yeselma Rucha</em> (‘The Course of Dreams”), 1949, <em>Tsehay Mesfin</em>, a novel, Addis Ababa, 1949, <em>Taytu Betul</em>, a novel, Addis Ababa, 1950; A. Zervos, <em>L’Empire d’Ethiopie</em> (“The Empire of Ethiopia”), Alexandria, 1936.</p>
+
+<hr />
+
+<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (in 20 Volumes). Volume One Ethiopia-Ghana, ©1997 by L. H. Ofosu-Appiah, editor-in-chief, Reference Publications Inc., New York, NY. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Endalkachew, Makonnen`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +760,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +799,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

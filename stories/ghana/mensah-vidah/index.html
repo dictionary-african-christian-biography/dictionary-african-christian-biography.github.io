@@ -601,8 +601,77 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/ghana/mensah-vidah/Mensah.jpg" alt="image" class="bio" height="122px" width="121px" /></p>
+
+<p>Vida Norley Mensah was born at Asuboa in Akyem Oda, located at the Eastern region of Ghana, on September 17, 1949. She was popularly called Ellen White, after the noted American Seventh-day Adventist, for her advocacy for decent dressing.  Q. A. Mensah and Miriam Mensah were her father and mother respectively. Vida Mensah had two sons, Samuel and Solomon Mensah, with her husband Pastor Nehemiah Andoh Mensah.</p>
+
+<p>After her sixth form education at Ola Girls Secondary School at Accra, she was admitted to Akrokerri Training College, Ashanti region, where she was trained as a teacher.  She first taught at Bobrase Primary School at Ashanti region. Vida Mensah and Pastor Nehemiah Andoh Mensah got married on August 27, 1977. She was, then, taken to Nigeria by her husband and there she taught at United High School, Ikenne Ilisan Remo.</p>
+
+<p>In Nigeria, she studied religion and theology at the Adventist Seminary of West Africa, now Babcock University, and graduated with a B.A. in 1989. She returned to Ghana, and was appointed the chaplain for Adventist Vocational Institute at Techiman, now the Techiman campus of Valley View University, Ghana. With a love of study and learning, she went back to Adventist Seminary of West Africa and graduated with Master of Arts in Theology in 1991. On her return, she was appointed as the Women Ministry Director for Mid-West Ghana Mission, now Mid-West Ghana Conference, headquartered at Sunyani in Brong-Ahafo region of Ghana. Vida Mensah also had a diploma and took degree courses in library studies at the University of Ghana, Accra.</p>
+
+<p>This competent and Christ-like woman was called to serve as a lecturer at the theology  department and as head librarian at Valley View University, Oyibi, Accra. Vida Mensah worked with Valley View University till her death, and her impact was felt. She wholeheartedly worked in training pastors and church leaders for the Seventh-day Adventist Church. She won several awards and her ministry was recognized by the General Conference of the Seventh-day Adventist Church, headquartered in Silver Spring, Maryland, U.S.A., in 2009.</p>
+
+<p>Vida Mensah was known for many good things. She had a great concern for modest dressing and ensured that the students adhered to the Christian standard of dressing. For this, she was nicknamed Ellen White. Her hard work to ensure modest dressing among students made Valley View University known in Ghana for its decent dressing. She was prayerful and was always praying for others and the success of Valley View University. Vida Mensah was dedicated and committed to her duties, and made many sacrifices for the institution. She is known for her melodious voice and visions. Her love, care, and transparency was felt by her co-workers and all who got closer to her. She was a woman of encouragement and inspiration. As a mother to all, she was kind-hearted, generous and always giving to people. Her effect is seen in the rapid growth of Valley View University today. Many students have enrolled at Valley View for its decency in dressing and discipline. At her death, she was known as a Christian among Christians, a professional among professionals and a worker among workers.</p>
+
+<p>This Adventist asset died on June 9, 2010 at the age of sixty-one after a short period of sickness, leaving behind her two sons. Vida Mensah wrote articles in areas such as Christian living, dressing, and spiritualism. She will always be remembered for her example and advocacy for decent and modest dress, and her selfless service in training pastors for the Seventh-day Adventist Church.</p>
+
+<p><strong>Kenneth Oppong</strong></p>
+
+<hr />
+
+<p><strong>Bibliography</strong></p>
+
+<p>Charles, Amoah. Co-worker. Interview by author, August 26, 2016, at Valley View University Librarian office on Friday, August 26, 2016.</p>
+
+<p><em>Celebrating the Life of the Late Mrs. Vida Norley Mensah</em>. Program for Burial Service. August 26, 2010, held at Valley View University Park.</p>
+
+<hr />
+
+<p>This article, submitted in August 2016, was researched and written by Oppong Kenneth, a Teaching Assistant and an Assistant Chaplain at Valley View University, Techiman Campus, under the supervision of Assoc. Professor Abiodun A. Adesegun, Ph.D while a Masters student (in Biblical and Theological Studies–Church History) at Adventist University of Africa, Kenya.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Mensah, Vidah Norley`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -681,7 +750,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -720,6 +789,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

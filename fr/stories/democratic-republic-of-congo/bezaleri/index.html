@@ -605,8 +605,75 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Bezaleri Ndahura est né le 4 Janvier 1930, à Boga, une localité située au nord-est de la République Démocratique du Congo. Son père, qui s’appelait Thomas Ndahura, fut un prêtre de l’Eglise Anglicane du Congo. On nous raconte qu’un jour l’enfant Bezaleri était sérieusement malade: il serait même mort et  aurait été ressuscité par le pionnier de l’Eglise Anglicane du Congo, le missionnaire ougandais Apolo Kivebulaya.</p>
+
+<p>Bezaleri fit son école primaire à Boga, et l’école secondaire à Yakusu (Kisangani) puis à Bolenge (Province de l’Equateur). Il alla en Ouganda pour faire un programme de préparation à l’enseignement, suivi d’études à Kinshasa à l’Institut Pédagogique National dont il sortit avec un diplôme en français et cultures africaines. Il obtint aussi une licence en théologie.  Il fut le premier universitaire dans la région de Boga.</p>
+
+<p>En 1965, il contribua efficacement à la création du collège de Boga en aidant l’archidiacre Festo Byakisaka à écrire des lettres pour demander l’ouverture d’une école auprès des autorités gouvernementales.  Etant le seul universitaire dans la région, il fut très utile car il s’exprimait couramment en français et en anglais.  Il exerça successivement les fonctions d’enseignant, puis de directeur et enfin d’inspecteur des écoles anglicanes.</p>
+
+<p>En 1971, pendant qu’il était étudiant à Kisangani, il organisa une petite église anglicane.  Le fruit de la croissance de cette petite église est l’actuelle diocèse de Kisangani.</p>
+
+<p>Il s’engagea ensuite dans l’apostolat et fut ordonné diacre dans la cathédrale de Boga le 2 Septembre 1973.  Il fut ordonné prêtre le 29 septembre 1974.  Le 24 Août 1975, à Boga, il fut consacré évêque du diocèse anglican de Bukavu et intronisé à Bukavu le 18 Juillet 1976.  Il fut donc le premier évêque de ce diocèse et le premier évêque noir dans l’Eglise Anglicane du Congo.  Il devint par la suite le premier archevêque de la province ecclésiastique francophone de  Burundi, Rwanda et Boga-Zaïre le 15 mai 1980, date de la cérémonie d’intronisation.   Il contribua largement à l’extension de l’anglicanisme au Congo en créant de nouvelles églises. Il créa également beaucoup d’hôpitaux et d’écoles primaires et secondaires à côté des églises. L’actuelle Institution Supérieure Théologique Anglicane de Bunia fut fondée par lui à Bukavu en 1980.  Elle fut transférée à Bunia en 1987 pour des raisons d’efficacité.</p>
+
+<p>L’archevêque Bezaleri mourut subitement le jour de Noël 1980.</p>
+
+<p>Yossa Way</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p>Bahemuka Mugenyi (40 ans), résident de Boga, interview du 15 mars 2002 à Kampala.</p>
+
+<p>Théodore Lewis (70 ans), commissaire de l’Église Anglicane du Congo aux Etats-Unis et ami personnel de Bezaleri pendant les années 1970; interview du 24 décembre 2001 à Washington, D.C.</p>
+
+<hr />
+
+<p>Cet article, reçu en 2002, est le produit des recherches du Révérend Yossa Way.  Celui-ci est professeur de théologie à l’Institut Supérieur Théologique Anglican (Bunia, Rép. Dém. du Congo) et récipiendaire de la bourse du Projet Luc.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Ndahura, Bezaleri`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +754,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +791,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

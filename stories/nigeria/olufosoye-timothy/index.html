@@ -607,8 +607,81 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Timothy Omotayo Olufosoye was the first archbishop and primate of the Church of Nigeria (Anglican Communion).  His date of birth was not recorded but he was believed to be between 75 and 80 years of age at the time of his death. The name Olufosoye means “the great chief expands” and was the name given to Timothy’s grandfather who had forty-five wives. Olufosoye’s father became a Christian. Timothy Olufosoye was married to Joan and they had many children.</p>
+
+<p>Bishop Vining, who later became the archbishop of West Africa, noticed Olufosoye as a young teacher and recognized his potential. The bishop saw him through ordination, despite the disapproval of some of the older clergy who had been ordained only after a long apprenticeship. Olufosoye was trained as a catechist and a schoolteacher at St. Andrew’s College, Oyo, between 1940 and 1941. He studied again at Melville Hall, the Anglican ordination training department at St. Andrew’s College, Oyo, from 1945 to 1946 and was ordained a deacon on December 15, 1946. A year later, he was ordained into the priesthood by Archbishop L. G. Vining at Christ Church Cathedral, Lagos, on December 21, 1947.</p>
+
+<p>Olufosoye served his early priesthood in Lagos and in Ondo from 1952 to 1956, then rose from the post of canon residentiary (1955 to 1959) to become the first provost of the cathedral of Ondo diocese in 1959 until his elevation to the episcopate on October 10, 1965. He was consecrated the first African bishop of Gambia and the Rio Pongas [1] in 1965. In 1971 Olufosoye transferred to Ibadan, one of the most populous areas within the Nigerian dioceses. In 1979, when the Anglican dioceses in Nigeria became an autonomous province within the Anglican Communion worldwide, Olufosoye was elected the first archbishop.</p>
+
+<p>As the first archbishop, he inherited sixteen dioceses-a number he raised to twenty-six in the nine years of his episcopate. He consecrated fourteen bishops and instituted an endowment fund for the young province. Among his fellow bishops, he was regarded as a true senior brother: an amiable primus inter pares, meaning “first among equals.” He retired from active church service in 1988 after serving for fifty-four years. He died in 1992.</p>
+
+<p>James D. Adewale</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>An early name for the diocese of Gambia and Guinea.</li>
+</ol>
+
+<hr />
+
+<p>Sources:</p>
+
+<p>Souvenir brochure of “150 years of Christianity in Nigeria 1842-1992.”</p>
+
+<p>The <em>Times</em> newspaper, published on Friday, December 18, 1992.</p>
+
+<p>Presidential address delivered to the 2nd session of the first synod of Osun Anglican diocese held at All Saints’ Cathedral Church, Osogbo, on Friday, April 22, 1988, by the Rt. Rev. S. O. Fagbemi.</p>
+
+<hr />
+
+<p>This article, received in 2006, was researched and written by James D. Adewale, at the University of Ibadan, Nigeria, under the supervision of Rev. Dr. Deji Ayegboyin, <em>DACB</em> liaison coordinator.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Olufosoye, Timothy Omotayo`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +760,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +799,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

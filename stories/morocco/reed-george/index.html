@@ -607,8 +607,63 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>George C. Reed was an American missionary to Morocco and Mali. Born to Christian parents in Weeping Water, Nebraska, Reed was educated at Oberlin College. He joined Gospel Missionary Union (GMU) in 1896 and arrived in Morocco in 1897. He learned Arabic and the difficult Berber dialect of Shilha. With Clinton Reed, a cousin, he translated Matthew, John, Acts and Romans into colloquial Arabic. He lived among the Berbers, witnessing and preaching. In 1913 he accompanied George S. Fisher, GMU founder, on the first-ever survey of the French Sudan by Protestant missionaries. They spent six weeks at Timbuktu, preaching and teaching. The Treaty of St. Germain opened up the French Sudan to missions, and Reed and two companions took up work there in 1919. They crisscrossed the country (present-day Mali) with walking trips of over 300 miles. Reed preached in the open air whenever possible and set up a systematic visitation program that reached a thousand people per month. His translation of the Bible into Bambara, an important trade language of West Africa, was published by the British and Foreign Bible Society-the New Testament in 1937 and the entire Bible in 1963. He was honored with the Cross of the Legion of Honor by the French minister of colonies in 1950 at the public square in Bamako. He retired from the field in 1951 having served 54 years in Morocco and Mali.</p>
+
+<p>Dick L. Darr</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Reed’s letters and reports were published in <em>Gospel Message</em> (1897-1952), a magazine of the GMU. GMU holds “George C. Reed and the French Sudan,” a manuscript by Dick L. Darr based on articles in the <em>Gospel Message</em>, oral history interviews with Reed’s earliest co-workers, and personal conversations with Reed in his retirement years. See also Don P. Schidler, <em>Exploits of Faith</em> (1982), pp. 114-121.</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Reed, George C.`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +742,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +781,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

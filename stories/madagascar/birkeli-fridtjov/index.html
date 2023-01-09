@@ -607,8 +607,65 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Norwegian missionary, scholar, and Lutheran bishop. Birkeli, son of missionary parents, was born in Tulear, Madagascar. He graduated from the Norwegian Lutheran School of Theology and from the University of Oslo (D.Th.), and was ordained in 1930. After language study in France Birkeli went to Madagascar in 1933 in the service of the Norwegian Missionary Society (NMS). For several years he taught at Ivory Theological Seminary, Fianaratsoa, Madagascar, but became seriously ill in 1944 and had to return home. He published studies on the local history of Madagascar in <em>Bulletin de l’Académie Malgache</em> and a commentary on Galatians in Malagasy. He wrote the missionary history of Madagascar in the hundredth-anniversary publication of NMS. In his doctoral dissertation, “Politik og misjon” (1952), he investigated the political and interconfessional circumstances in Madagascar and their consequences for the establishment of the Norwegian mission from 1861 to 1875. His second field of research focused on the earliest missionary activities from England to Norway and the transition from paganism to Christianity in Norway.</p>
+
+<p>Birkeli was a man of vision and initiative. He encouraged the development of an independent Lutheran church of Madagascar, arranged the first All-Africa Lutheran conference in Marangu, Tanganyika (now Tanzania) in 1955, and proposed the founding of the Radio Voice of the Gospel in Addis Ababa. He was editor of <em>Norsk Misjonstidende</em> (1948 - 1954), director of the Lutheran World Federation department of World Mission in Geneva (1954-1957), secretary general of the NMS (1957-1960), bishop of Stavanger (1960-1968), and bishop of Oslo (1968-1972). He was awarded Norwegian and British orders and three honorary doctorates.</p>
+
+<p>Nils E. Bloch-Hoell</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Nils E. Bloch-Hoell, “Fridtjov Birkeli: Minnetale over biskop Fridtjov Birkeli,” <em>Det Norske Videnskap-Akademi Årbok 1984</em> (1985), pp. 145 - 153.</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Birkeli, Fridtjov (Søiland)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +744,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +783,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

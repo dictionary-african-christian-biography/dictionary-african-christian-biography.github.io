@@ -607,8 +607,63 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Carl Jacob Bender was a German Baptist missionary in Cameroon. Bender was born in Eschelbach, Baden, but he immigrated to the United States at age 12 and worked as a store clerk in Buffalo, New York. He became a Baptist, decided to enter the ministry, and enrolled in Rochester Seminary’s German department. Deeply influenced by Walter Rauschenbusch’s social vision, he wanted to work abroad, and upon graduation in 1899 went to Cameroon under the German Baptist Mission. He pioneered work near Duala; in 1909, he relocated at Soppo, in the interior, where he engaged in evangelism, educational work and scientific research and became an advocate for Africans. After the Allies conquered the German colony in 1916, Bender was allowed to stay because he was a U.S. citizen. He left in 1919; the located in western Cameroon, the area under British mandate, passed to African leadership. He spent the next years in the United States, serving churches and publishing ethnological books, but when missionaries were permitted to return, he was recalled to his old station at Soppo in 1929. He revived the dormant work and built a new church building before dying from blackwater fever in 1935. Although he lacked formal anthropological training, Bender had a great appreciation for African culture. He contextualized the Christian message and developed an effective indigenous ministry through the schools he founded.</p>
+
+<p>Richard V. Pierard</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Carl F. H. Henry, <em>Bender in the Cameroons</em> (1943); Charles W. Weber, <em>International Influences and Baptist Mission in West Cameroon</em> (1993).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Bender, Carl Jacob`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +742,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +781,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

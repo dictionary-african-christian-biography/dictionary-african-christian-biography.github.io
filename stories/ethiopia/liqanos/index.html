@@ -607,8 +607,81 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Liqanos, <em>Abba</em> (perhaps fl. late 5th century and early 6th century A.D.), was, with <em>Abba</em> Zä-Mika’él ‘Arägawi, one of the Nine Saints, missionaries from overseas. Said to be originally from Constantinople, he established himself in Däbrä Qwänasel, a monastery near Adwa. He is commemorated on 28 <em>Hedar</em> (7 December).</p>
+
+<p>Seifu Metaferia</p>
+
+<hr />
+
+<p><strong>Bibliography</strong></p>
+
+<p>A. Dillmann, “Zur Geschichte des Axumitischen Reichs im vierten bis sechsten Jahrhundert,” <em>Ahandlungen der Königlichen Akademie der Wissenschaften zu Berlin</em> (1880).</p>
+
+<p>E. Littmann, *The Legend of the Queen of Sheba *(Leyden, 1904).</p>
+
+<p>M. Chaine, “Repertoire de Salam et Malke’e,”* La Revue de l’Orient Chrétien* (Paris, 1913).</p>
+
+<p>E. A. Wallis Budge, *A History of Ethiopia *(London, 1928).</p>
+
+<p>——–, <em>The Book of the Saints of the Ethiopian Church</em> (Cambridge, 1928), Vol. I, 299.</p>
+
+<p>J.-B. Coulbeaux, <em>Histoire politique et religieuse de l’Abyssinie</em> (Paris, 1929), Vol. I.</p>
+
+<p>M.-A. Van Den Oudenrijn, *La vie de Saint Za Mika’el Aragawi *(Fribourg, 1939).</p>
+
+<p>C. Conti Rossini, “L’omilia di Yohannes vescovo di Aksum in onore di Garima,”* Actes du Congres International des Orientalistes, Section Sémitique* (Paris, 1898).</p>
+
+<p>——– (ed.), <em>Acta Yared et Pantalewon,</em> <em>Corpus Scriptorum Christianorum Orientalium</em>, Scriptores aethiopici, series altera t. XVII.</p>
+
+<p>——–, <em>Storia d’Etiopia</em> (Bergamo, 1928).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>The Dictionary of Ethiopian Biography, Vol. 1 ‘From Early Times to the End of the Zagwé Dynasty c. 1270 A.D.,’</em> copyright © 1975, edited by Belaynesh Michael, S. Chojnacki and Richard Pankhurst, Institute of Ethiopian Studies, Addis Ababa, Ethiopia.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Liqanos`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +760,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +799,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

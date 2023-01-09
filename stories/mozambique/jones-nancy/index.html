@@ -607,8 +607,63 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Nancy Jones was an African American missionary of the American Board of Commissioners for Foreign Missions (ABCFM). Jones was born in Hopkinsville, Christian County, Kentucky; during her childhood her family moved to Memphis, Tennessee. She graduated from Fisk University, Nashville, in 1886. Although a Baptist, he applied to the Congregational ABCFM for a missionary appointment. The first unmarried black woman commissioned by the ABCFM, Jones served in Mozambique from 1888 to 1893 and later in Southern Rhodesia (Zimbabwe) from 1893 to 1897. In Mozambique she was stationed at Kambini and worked with two other black missionaries, Benjamin and Henrietta Bailey Ousley. She taught in, and soon took charge of, the mission school’s primary department. She also visited nearby areas, working with women in the villages and eventually opening a school for area children. In 1893 Jones was transferred to the Gaza mission in southern Rhodesia, where she initially worked as a teacher in the day school. However, having been relieved of that duty, in 1897 she resigned, stating that as the only black person at the Gaza Mission, she had faced prejudice from some of her co-workers. She returned to her home in Memphis. There is no extant record of the date and place of her death.</p>
+
+<p>Sylvia M. Jacobs</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Fred Field Goodsell, <em>You Shall Be My Witnesses</em> (1959); William E. Strong, <em>The Story of the American Board: An Account of the First Hundred Years of the American Board of Commissioners for Foreign Missions</em> (1910); Walter L. Williams, <em>Black Americans and the Evangelization of Africa, 1877-1900</em> (1982).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Jones, Nancy`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +742,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +781,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

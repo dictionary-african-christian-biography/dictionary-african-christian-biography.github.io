@@ -607,8 +607,73 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>The career of Edgar Brookes (February 4, 1897August 1979), a distinguished educationist, author, and liberal leader, covered a long span in South Africa’s 20th century history, encompassing both bright and dark periods in the saga of South African liberalism.</p>
+
+<p>Born in Smethwick, Staffordshire, England, Brookes came with his parents to Natal in 1901. He matriculated at Maritzburg College in 1911, then worked for seven years as a customs agent, during which time he took bachelors’ and masters’ degrees at the University of South Africa. From 1920 to 1933 he taught political science at the University of Pretoria. Early in this period he learned Afrikaans and became an admirer of General Hertzog. His doctoral thesis, published as <em>The History of Native Policy in South Africa from 1830 to the Present Day (1924)</em>, lent academic respectability to segregationist theories but was to prove an embarrassment to Brookes after his later conversion to liberalism. In 1927 Hertzog appointed him to the South African delegation to the League of Nations, a high honor for a young man of 30, albeit one who already held a university chair.</p>
+
+<p>Brookes also visited America in 1927, a trip which marked the turning point of his life as he came back to South Africa convinced of the immorality of racial discrimination. With other leaders of the Joint Council movement, he helped found the South African Institute of Race Relations in 1929, and thereafter served three times as its president.</p>
+
+<p>Brookes left the uncongenial atmosphere of the University of Pretoria in 1933, and from 1934 to 1945 was the principal of Adams College, a well known missionary secondary school for Africans in Natal. In 1937 he was elected to the South African Senate as a representative of the Africans of Natal and Zululand, and served three terms until poor health forced his resignation in 1952. In this period he was appointed by Jan Smuts to several influential advisory boards, including the Native Affairs Commission (1946-50). As a senator, Brookes was an admirer of Jan H. Hofmeyr and was dubbed “an enthusiast for moderation” because his approach was one based on reasoned argument and moral persuasion directed at white public opinion.</p>
+
+<p>Disheartened by political trends after 1948, Brookes joined the University of Natal where he taught history and political science from 1953 to 1962 and intermittently thereafter. After many years as a non-party liberal, Brookes joined the beleaguered Liberal Party in 1962, and in 1964 became its national chairman, serving until the party disbanded in 1968.</p>
+
+<p>Brookes attributed his political views to his lifelong faith in Christian principles, a faith to which he gave new form in 1973 when, at age 76, he was ordained a priest in the Anglican church. Brookes was the author of many books, including <em>Native Education in South Africa</em> (1929), <em>South Africa in a Changing World</em> (1953), <em>Civil Liberty in South Africa</em> (with J.B. Macaulay, 1953), <em>The City of God and the Politics of Crisis</em> (1960), <em>Power, Law, Right and Love</em> (1963), <em>A History of Natal</em> (with C. Webb, 1965), and <em>South African Pilgrimage</em> (1977).</p>
+
+<p>Gail M. Gerhart</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>E.H. Brookes, <em>A South African Pilgrimage</em>, Johannesburg, 1977; Alan Paton, <em>South African Tragedy, The Life and Times of Jan H. Hofmeyr</em>, New York, 1964; J. Robertson, <em>Liberalism in South Africa</em> 1948-1963, Oxford, 1971.</p>
+
+<hr />
+
+<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (In 20 Volumes). Volume Three: South Africa- Botswana-Lesotho-eswatini. Ed. Keith Irvine. Algonac, Michigan: Reference Publications Inc., 1995.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Brookes, Edgar`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +752,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +791,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

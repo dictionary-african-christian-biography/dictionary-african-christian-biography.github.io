@@ -609,8 +609,67 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Francisca Spitznagel, née le 8 mars 1867 à Bischofsheim (Bas-Rhin), décédée à Androhibe le 3 juin 1962. A fait Profession à Paris le 13 août 1902 et s’embarque peu après pour Madagascar. Après avoir soigné jusqu’à la laïcisation les malades à l’hôpital militaire de Tananarive, Sr Gérard et ses compagnes se retirent à Androhibe, à quelques kilomètres de Tananarive, sur le vaste terrain en friche offert à la Congrégation par le Général Galliéni…Sous un soleil brûlant, Sr. Gérard et ses compagnes s’astreignent à un dur labeur pour piocher, planter et gagner le riz quotidien…Malgré se pauvreté extrême, elle recueille des orphelines et avec elles on défriche la brousse. Ayant le souci de toutes ces bouches affamées, Sr Gérard plante des arbres fruitiers. Puis, songeant qu’un bon vin apporterait un peu de joie et d’aisance, elle essaie la culture de la vigne. Plus qu’octogénaire, Sr Gérard extirpait les “gourmands”.</p>
+
+<p>Avec les années, de modestes bâtiments s’alignèrent pour accueillir les enfants pauvres. Une petite école s’ouvre. Le matin on étudie et l’après-midi on travaille, soit aux champs, soit au raccommodage…Les doigts les plus habiles - et il y en a beaucoup - font courir l’aiguille sur la toile où se dessinent les points de broderie les plus fins… En 1956, l’orphelinat comptait une soixantaine de jeunes de 4 à 20 ans. La vieille maison et ses dépendances qui tombaient en ruines furent rajeunies, la Providence aidant…</p>
+
+<p>Lorsque le 4 février 1956, l’Archevêque de Tananarive bénit le nouvel orphelinat, Mère Gérard, la fondatrice, alors âgée de 88 ans, dit simplement: “C’est le Bon Dieu qui nous bénit. Quelle consolation pour moi!” A sa mort, un Père Jésuite qui la connaissait bien écrivait: “C’est une belle lumière qui s’éteint.”</p>
+
+<p>Sœur Marcienne Fabre</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p><em>Bulletin de la congrégation de Saint-Joseph de Cluny</em>, nº 265, tome 20, avril 1965, p. 574.</p>
+
+<hr />
+
+<p>Cet article, réimprîmé ici avec permission, est tiré d’<em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em>, tome 3, publié en 1977 par l’Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Spitznagel, Francisca`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +750,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -728,6 +787,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

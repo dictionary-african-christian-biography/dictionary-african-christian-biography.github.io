@@ -606,8 +606,84 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Por volta de 1921, o Pastor Andrea M. Mucasse (1895-1982) trabalhava numa mina de ouro perto de Brakpan no East Rand, a quarenta quilômetros de Joanesburgo. Ele se converteu enquanto aprendia a ler e escrever numas aulas noturnas dirigidas pelo missionário Rev. Irvin E. Dayhoff, da Hephzibah Faith Mission de Tabor, Iowa, EUA. Mucasse fazia parte da primeira classe de candidatos de batismo em 1924. Ele quis trabalhar para o Senhor; assistiu ao Colégio Bíblico da Missão Internacional de Santidade (International Holiness Mission), logo ao norte de Joanesburgo. Alí ele foi conduzido à experiência da inteira santificação. Passou os fins de semana ajudando aos pastores e na evangelização de Brakpan. Durante as férias, em 1928, passou dois meses a ministrar na zona Norte de Transval, na missão de Thabeng. Os missionários Dayhoff visitaram a casa dele em Gaza, Moçambique; matou-se um bode para a festa de boas vindas dedicada a eles. A esposa do Sr. Mucasse, Sra. D. Ruth Jakwasi (Gagale) Mucasse (1900) era recém-convertida nessa altura.[1]</p>
+
+<p>Em 1929 o Sr. Mucasse passou as férias entre alguns dos seus amigos não crentes numa residência coletiva perto de Joanesburgo, pensando em ganhar o maior número possível deles para a luz do Evangelho. Ele encontrou um temporal de oposição tal que o chefe da residência proibiu-lhe de continuar a pregar. Mas Deus operou; ele juntou dezesseis jovens e começou uma escola noturna.{2]</p>
+
+<p>Ele concluiu os estudos no Colégio Bíblico nos fins de 1929, e provou-se bom estudante da Bíblia e um excelente ganhador de almas. Em 1930 regressou a casa em Moçambique e começou uma igreja em Malambe, no distrito de Macie, onde o evangelho era desconhecido.[3] Nos primeiros anos da década de 1930 o Rev. Irvin Dayhoff visitou-o por duas vezes, viajando de mula e a pé. Numa destas viagens ele caiu da mula no mato e partiu a clavícula.</p>
+
+<p>Em 1952 o Sr. André Mucasse era um dos líderes nas minas de East Rand quando a Missão Internacional de Santidade se uniu à Igreja do Nazareno. O Pastor Mucasse e sua esposa deram o nome de Elias ao seu filho.[4]</p>
+
+<p>Paul S. Dayhoff</p>
+
+<hr />
+
+<p>Citações:</p>
+
+<ol>
+  <li>
+    <p>Irvin E. Dayhoff, <em>African Missionary</em>, (Brakpan, Transvaal, South Africa: Hephzibah Faith Mission, Agosto 1928), 3; <em>African Missionary</em> (Setembro 1929),l.</p>
+  </li>
+  <li>
+    <p>Irvin E. Dayhoff, <em>African Missionary</em>, (Setembro 1929),4.</p>
+  </li>
+  <li>
+    <p>Irvin E. Dayhoff, <em>iAfrican Missionary</em>, (Março1930),4.</p>
+  </li>
+  <li>
+    <p>Irvin E. Dayhoff, <em>Missionary Triumphs</em>, (1949),16-17.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>Este artigo é reproduzido, com permissão do livro <em>Living Stones In Africa: Pioneers of the Church of the Nazarene</em>, edição revisada, direitos do autor © 1999, por Paul S. Dayhoff.  Todos os direitos reservados.</p>
+
+<p>EEste artigo foi traduzido da língua inglesa pelo Rev. Roy Henck, missionário reformado para Cabo Verde, e pelo Rev. António Barbosa Vasconcelos, pastor cabo-verdiano.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Mucasse, Andrea M.`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Leia várias versões: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -690,7 +766,7 @@
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 02 January 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 14 December 2022.<br>&copy; 2022 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -725,6 +801,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

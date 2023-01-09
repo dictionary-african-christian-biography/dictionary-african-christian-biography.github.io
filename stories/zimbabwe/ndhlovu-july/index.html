@@ -607,8 +607,100 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/zimbabwe/ndhlovu-july/ndhlovu_july.jpg" alt="July Ndhlovu" class="bio" /></p>
+
+<p>Rev. July Ndhlovu was born in Matebeleland in Western Zimbabwe. While working in Johannesburg he was one of the first converts in Rev. Andrew Matshedisho’s church at Moletsane, Soweto, Johannesburg, in the mid-1950s.  His wife is Mrs. Martha Ndhlovu (?-1996).</p>
+
+<p>Ndhlovu had false immigration papers, and after much prayer and struggling with his conscience, he decided that he had to give himself up to the authorities even though it could mean deportation back to Zimbabwe.  The missionary, Rev. George Hayse, accompanied him to the government office.  The official was amazed and said, “Do you mean that there is even one honest African here?”  He was assured that there were many more in the Church of the Nazarene in the city.  With tears in his eyes the official stamped the application and assured Ndhlovu that he would personally see that his residence permit was approved.</p>
+
+<p>The Ndhlovus took training at eswatini Nazarene Bible College from 1956 to 1958 and returned to pastor Orlando Church, where they built a strong congregation.  Ndhlovu was ordained in 1963 by Dr G. B.  Williamson.[1]</p>
+
+<p>He had been a secretary of the Africa National Congress, and during the political faction fighting in Soweto he was approached to rejoin the Congress.  They wanted him to use his position to help obtain the cooperation of the people.  His reply was, “Look, I have found Christ.  I have left my old life and am now a minister of Jesus Christ.”  This angered the group and one of them grasped him around the neck and threatened to kill him.  When he kept on refusing to help them they struck his face until it was almost unrecognizable.  He told them, “I can’t leave Christ who died for me.  I won’t, I won’t!”  The beating that day left him with permanent scars.[2]</p>
+
+<p>The Ndhlovus returned to Zimbabwe in 1968.  There they planted the Mpopoma, Magwegwe and Gwabalanda churches in the Bulawayo area.  The first converts at Mpopoma were the late Mr. Mpofu and family and Mr. John Moyo.</p>
+
+<p>The Ndhlovus led the Mpopoma Church in starting its own drought relief program.  They discovered a lady in their congregation who had not eaten for three days.  So they decided to use part of their tithes and offerings to purchase one hundred pounds of mealie (corn) meal each month to help two families with food relief.</p>
+
+<p>Ndhlovu also helped plant a church in St. Mary’s Township in Harare, Eastern Zimbabwe.  Converts of his that became pastors were Mr. Gideon Ndhlovu, Mr. Sheck Moyo and Mr. P. S. Moyo.</p>
+
+<p>During the liberation struggle in Zimbabwe, Ndhlovu was accused as a political sell-out and two attempts were made to stab him.  Once in an open air meeting a man publicly opposed him, and when the argument attracted a crowd, Ndhlovu preached to them.[3]</p>
+
+<p>He pastored the Tafara College Church in Harare and was appointed superintendent of the Zimbabwe West District in 1985. In 1988 in reporting on the generosity of his people he told how the senior pastor Rev. Philemon Moyo had sold his home and paid the tithe to the district.[4]</p>
+
+<p>At his retirement from the district superintendency the Mission Director, Rev. Enoch Litswele, commended Rev. Ndhlovu as “a man who has always been eager to learn.”  After retirement in 1990 Ndhlovu served as Bible College Chaplain in Harare.</p>
+
+<p>In 1992 Rev. July and Mrs Martha Ndhlovu finally retired and moved to Bulawayo.  “They are highly respected and much loved by the church.”[5]</p>
+
+<p>Paul S. Dayhoff</p>
+
+<hr />
+<p>Sources:</p>
+
+<ol>
+  <li>
+    <p><em>Crossroads,</em> newsletter of the Horizon Church of the Nazarene, South Africa (December 1992).</p>
+  </li>
+  <li>
+    <p>George R. Hayse, <em>The Other Side of the Shield,</em> (Kansas City, MO: Nazarene Publishing House, 1966), 71, 78-79.</p>
+  </li>
+  <li>
+    <p>Enoch Litswele, report (1992); Onias Dliwayo, report (1992).</p>
+  </li>
+  <li>
+    <p><em>Trans African,</em> (Florida, Transvaal, South Africa: Africa Nazarene Publications, January-February 1990), 11.</p>
+  </li>
+  <li>
+    <p><em>Trans African,</em> (May-June 1991), 11; <em>Trans African,</em> (July-August 1992), 12.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Living Stones In Africa: Pioneers of the Church of the Nazarene</em>, revised edition, copyright © 1999, by Paul S. Dayhoff.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Ndhlovu, July`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +779,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +818,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

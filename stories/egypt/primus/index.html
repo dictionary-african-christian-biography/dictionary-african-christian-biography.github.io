@@ -566,7 +566,7 @@
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Primus">
     
-    <meta itemprop="datePublished" content="April 20, 2023">
+    <meta itemprop="datePublished" content="April 20, 2022">
     
 
 <!-- NAME(S), DATE, AFFILIATION, COUNTRY -->
@@ -607,8 +607,89 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Eusebius of Caesarea (c.260-340) initiated his <em>Ecclesiastical History</em> with reference to “the successions from the holy apostles” (I.1) thereby enunciating the principal one of those several themes by which he intended to tell his story (cf. Grant 1980, esp.ch.VI).  As a consequence those major urban centers of the Roman imperial world, including its second city, Alexandria, could provide Eusebius with the main points of reference wherein he could document literally by named persons those who were in that succession and thereby presided over the ministry of their respective urban communities.</p>
+
+<p>For Alexandria, while the point of reference began with “Mark the Evangelist” (q.v.; cf. H.E. II.15-16.1) though in an era, and even Eusebian context where the word “bishop” was not yet appropriate, by the point when Eusebius’ account had entered the “second Christian century” (Carrington 1957: volume II) with Cerdon [q.v.], who was “third over the people of that place [= Alexandria]” (III.21), the title “bishop” first appears.  Eusebius states that “about the twelfth year of the reign of Trajan . . . he [Cerdon] departed this life; and Primus, the fourth from the apostles, was appointed to the ministry of the people there” (IV.1).</p>
+
+<p>Equally indefinite is the record of Primus’ demise:  he “departed this life about the same time, in the twelfth year of his presidency, and was succeeded by Justus [q.v.]” (IV.4).  For Eusebius “about the same time” has reference to the accessions at Rome both of the imperial Publius Aelius Hadrianus [January 24, 76 - July 10, 138, ruled from August 8, 117] and of the episcopal Xystus [cf. ODP 9] in Hadrian’s third year (IV.3.1,4.1).  But it is also noteworthy that between the accession and the demise of Primus, Eusebius has inserted his account of the poorly documented Jewish revolt in Trajan’s seventeenth year [before September 115] and its suppression [by Marcus Rutilius Lupus, governor of Egypt in 116], most particularly “in Alexandria and the rest of Egypt, and in Cyrene as well,” so that the administration of Primus must have become increasingly compromised towards its termination, though no Christians are identified among the “immense numbers of Jews” who were killed (IV.2; cf. Carrington 1957:I.436; Grant 1970:83-84).  But of these Alexandrians, there remains nothing more within the tradition that can be adduced pertaining to them, though the advent of Christian apologetics with Quadratus and Aristides is dated by Eusebius to early in the reign of Hadrian (IV.3.1-3; cf. Grant 1988:35-39; Q1 190-195).</p>
+
+<p>Clyde Curry Smith</p>
+
+<hr />
+
+<h1 id="bibliography-see-link-to-abbreviations-table-below">Bibliography (see link to abbreviations table below):</h1>
+
+<p>GEEC 33 (FWNorris)</p>
+
+<h2 id="supplementary-bibliography">Supplementary Bibliography</h2>
+
+<p>Carrington 1957
+<em>The Early Christian Church</em>, by Philip Carrington.  Cambridge:  At the University Press.  2 volumes.</p>
+
+<p>Grant 1970
+<em>Augustus to Constantine:  The Thrust of the Christian Movement into the Roman World</em>, by Robert McQueen Grant.  New York, Evanston, and London:  Harper and Row.</p>
+
+<p>Grant 1980</p>
+
+<p><em>Eusebius as Church Historian</em>, by Robert McQueen Grant. Oxford:  Clarendon Press.</p>
+
+<p>Grant 1988
+<em>Greek Apologists of the Second Century</em>, by Robert McQueen Grant.  Philadelphia:  The Westminster Press.</p>
+
+<p>Oulton 1927
+<em>Eusebius, Bishop of Caesarea, The Ecclesiastical History and the Martyrs of Palestine</em>, translated with Introduction and Notes, by Hugh Jackson Lawlor and John Ernest Leonard Oulton.  London:  SPCK.  2 volumes.  Volume I:  Translation, by John Ernest Leonard Oulton.  (Specific references also cited as H.E. with book and chapter).</p>
+
+<hr />
+
+<p>This article, received in 2004, was researched and written by Dr. Clyde Curry Smith, Professor Emeritus of Ancient History and Religion, University of Wisconsin, River Falls.</p>
+
+<hr />
+
+<p><strong>Click here for</strong><a href="/resources/ancient-references/">Abbreviations and Source References for Ancient African Christians.</a></p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Primus`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +768,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +807,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

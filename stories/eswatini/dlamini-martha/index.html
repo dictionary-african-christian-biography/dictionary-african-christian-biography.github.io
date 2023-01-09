@@ -607,8 +607,77 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/eswatini/dlamini-martha/dlamini_martha.jpg" alt="Martha Dlamini" class="bio" /></p>
+
+<p>Martha Boshiwe Malindzisa Dlamini was born in the rural area of Bulandzeni.  She was the third of four children born to her mother, Mrs. Mashila Malindzisa.  Her parents were not enlightened in matters of Christian belief or education, but she wanted to know more about such matters. For this reason she ran away from home.  Mr. Milford Fraser, a Christian, found her only semi-clothed at the side of the road and gave her a ride.  She told him she wanted to go to the Nazarene Mission at eNdzingeni where there was a missionary lady, Miss Irene Jester, who cared for girls who were being forced to marry men they did not love.  Mr. Frazer took her to the mission station where she received support and care.  She was taught what it was to be a Christian and was enrolled in school just like the other children.  At the Endingeni Mission she accepted Jesus Christ as her Saviour and Lord of her life.</p>
+
+<p>After completing her primary school education Martha was admitted to the Nazarene Bible College at Siteki.  There she spent two years in training in 1952 and 1953.  On graduating she was sent as a national missionary  to the newly opened field at faraway Blouberg in the Northern Province of South Africa among the BaGananwa people.</p>
+
+<p>After two years she returned to Endingeni Mission where she pastored at the nearby Ngowane Church.  She also held evangelistic services in many churches as she was invited.</p>
+
+<p>On January 7, 1960, Martha married Mr. George Dlamini, the head teacher of a school next to the royal palace of King Sobhuza II at Lozitha.  She witnessed and evangelized among the king’s wives or queens and other members of the royal household. When they moved to Ekukhanyeni  she helped the pastor of the Africa Evangelical Church at nearby Nkiliji.  Shortly afterwards the family moved to Manzini where she was appointed to be the evangelist at the Raleigh Fitkin Memorial Hospital on the Nazarene Mission.  She was also invited to hold revivals , special retreats, children’s missions and Sunday school rallies in many surrounding churches.  She was invited to be Sunday school superintendent at a satellite church near Manzini and pastored when needed.</p>
+
+<p>Martha had a great heart and much experience in winning people and children for Christ.  In 1991 she established a wayside Sunday school at Granny Vilane’s homestead which she continued until her death in March 2001.</p>
+
+<p>The Lord blessed her marriage and her four children (two girls and two boys).  Her life was characterized by the words of Psalm 116:15, “Precious in the sight of the Lord is the death of his saints.”[1]</p>
+
+<p>Paul S. Dayhoff</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>Translation of the obituary of Mrs. Martha B. Dlamini with some additional information and amendments, supplied by Dr. Samuel Hynd, April 16, 2001.</li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Standing Stones of Africa: Pillars of the Faith in the Church of the Nazarene</em>, unpublished, copyright pending, 2004, by Paul S. Dayhoff.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Dlamini, Martha`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +756,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +795,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -601,8 +601,59 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/tanzania/maley-gertrude/maley-gertrude.jpg" alt="Gertrude Maley" class="bio" /></p>
+
+<p>Gertrude Maley was born on November 1, 1926, in New York City. Taking her first vows with the Maryknoll Sisters in 1948, she was sent to Tanzania in 1950, where she first taught at a primary school in Kowak for Aspirants to the new Congregation, Immaculate Heart Sisters of Africa (today known as the Immaculate Heart Training School in Makoko). After spending some time in studies in Belguim, she returned to Africa and was later assigned to Kampala, Uganda, where she served as Vice Director at Gaba Pastoral Institute from 1968-1974. In 1979, her work took her again to Tanzania, where she served as head of the Catechetical department in Musoma Diocese. She concluded her time of service in Africa by teaching theology and catechetics in Nairobi, Kenya. Sister Gertrude passed away on June 20, 2013.</p>
+
+<p>Patricia Gallogly</p>
+
+<hr />
+
+<p>This biography, uploaded in 2021, was excerpted from the Letter of Appreciation prepared in 2013 by Patricia Gallogly, M.M., for Sr. Gertrude’s funeral. Find the full Letter of Appreciation <a href="/resources/bio-pdfs/tanzania/maley-gertrude-letter-of-appreciation.pdf">here</a>.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Maley, Gertrude`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -681,7 +732,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -720,6 +771,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

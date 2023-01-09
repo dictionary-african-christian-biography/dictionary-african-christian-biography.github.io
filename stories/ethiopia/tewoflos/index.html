@@ -607,8 +607,69 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Patriarch Tewoflos was a reforming patriarch of the Ethiopian Orthodox Church who was murdered by the Dergue, the provisional military government, in the purge of the 1970s.</p>
+
+<p>Tewoflos was groomed from an early stage by Emperor HAILE SELASSIE in his plans to modernize and reform the Ethiopian church. After a dozen years as a monk of Debra Libanos, the leading monastery in Ethiopia, he was brought to the imperial palace with a select group of young clergy for modern religious studies. Tewoflos was subsequently appointed as head of a new theological college. In 1948 he was in the first group of Ethiopian bishops, and in 1950 he was promoted to archbishop and deputy to BASILIOS. On Basilios’ death in 1970, Tewoflos was elected patriarch.</p>
+
+<p>Tewoflos established an Ethiopian youth movement and missionary program. Outside Ethiopia he established branches of the Ethiopian church in Trinidad, Guyana, and the United States. His programs expanded after he became patriarch and focused on the education of the clergy, who were woefully undertrained. He established a training center for rural clergy, a theological college at Addis Ababa University, and sent promising younger men abroad for higher study. Liturgical reform was begun, with increased use of Amharic, the vernacular language, instead of Ge’ez, an ancient language used only in church services and understood by few Ethiopians. Tewoflos represented the Ethiopian church at world church assemblies, and he presided when the World Council of Churches (WCC) met in Addis Ababa in 1971. Tewoflos, an enthusiastic ecumenist, was twice president of the All-African Council of Churches and a strong supporter of the WCC.</p>
+
+<p>When Haile Selassie was overthrown in 1974, the military regime, the Dergue, moved swiftly to implement a Marxist religious policy. In a broad attack against religion, the church’s privileged status was terminated, properties were confiscated, and many clergy were arrested. Under house arrest, Tewoflos was charged with unspecified crimes against the people and was executed at an unknown time and place. No successor was named until 1977, at which time a puppet priest was chosen as patriarch.</p>
+
+<p>Norbert C. Brockman</p>
+
+<hr />
+
+<p><strong>Bibliography</strong></p>
+
+<p>Dickie, John and Alan Rake.  <em>Who’s Who in Africa.</em>   London: African Development, 1973.</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from *An African Biographical Dictionary, *copyright © 1994, edited by Norbert C. Brockman, Santa Barbara, California. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Tewoflos (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +748,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +787,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

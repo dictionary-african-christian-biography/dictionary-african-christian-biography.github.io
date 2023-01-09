@@ -601,8 +601,83 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Faustino Paulo Mandavela was born on March 12, 1966, in Bungei, in Chipindo district, Huila province, Angola. He married Febe Nassoma da Silva Mandavela. They had four children: Gileade da Silva Mandavela, Américo da Silva Mandavela, Celênia da Silva Mandavela, and Eliezer da Silva Mandavela. He was dedicated to the cause of Christ, joining in 1992 the Biblical Group of Christian Students (Grupo Bíblico de Estudantes Cristãos de Angola, GBECA), affiliated with the International Fellowship of Evangelical Students (IFES). Angola became communist after gaining independence from Portugal in 1975, and speaking of Christ was made a crime. He was known as an idealist, leaving the Armed Forces for the Liberation of Angola (Forças Armadas Para Libertação de Angola, FAPLA) and never forgetting his God. He earned a bachelor’s degree in English linguistics from the Institute of Higher Educational Sciences (Instituto Superior de Ciências de Educação) in Lubango in Huila province.</p>
+
+<p>In 2000, he was elected the General Secretary of the GBECA at their seventh general assembly. To take up this role, he and his family moved to Luanda, the capital of Angola. In Luanda, he worked with the secretariat to develop the GBECA beyond the provinces of Luanda, Benguela, Huila and Namibe into the provinces of Cabinda, Moxico, Huambo, Bié, Kuanza Sul, and Cunene for the first time.</p>
+
+<p>Mandavela participated in many international conferences and regional meetings of IFES in Ghana, Malawi, Kenya, Nigeria, Germany, South Africa, and Belgium, among others. In 2003, he was asked by IFES to help organize the Biblical Alliance of Students in Mozambique (Aliança Bíblica dos Estudantes em Moçambique, ABEMO), which became a strong organization dedicated to reaching students for Christ. ABEMO has many good memories of Mandavela and his ministry.</p>
+
+<p>In 2004, Mandavela launched Atalais, a ministry to HIV and AIDS sufferers, in partnership with the Tear Fund of England. He was responding to the discrimination these patients faced and wanted to see churches involved in caring for those suffering. He ministered to HIV and AIDS patients at the Hospital de Esperança in Luanda.</p>
+
+<p>In 2009, Mandavela stepped down from the position of Secretary General to become the second Vice President of GBECA. In 2010, he became a lay leader of the Evangelical Church of Bela Vista (Igreja Evangélica de Bela Vista), a congregation in the Union of Evangelical Churches of Angola (União de Igrejas Evangélicas de Angola, UIEA) in Luanda, during the interim before the next pastor was chosen in 2016. One of the ministries he began was called “My other children,” which provided school fees and support for neglected children. Another project, called “Soybeans,” was formed to provide a cup of soybeans to each child once a week.</p>
+
+<p>He was asked by the secretariat of Evangelical Solidarity (Solidariedade Evangélica, SOLE) to help in their care for lepers. He continued to be involved with SOLE until his death in 2019.</p>
+
+<p>Mandavela gave himself sacrificially to the work of the Lord. His insights and dedication contributed to the development of the church and the ministry of GBECA in Angola and beyond. He deeply marked the IFES, GBECA, and the Angolan church through his life and his wisdom. He is remembered in the IFES, GBECA, the Angolan Church, and the many ministries he started and developed, especially his projects—”Memories,” urban ministry, the Miqueias network, and others.</p>
+
+<p>Shortly before his death, he met with a committee preparing for GBECA’s national conference and said, “We need to consider what the dreams of the GBECA should be for reaching the needs of Angola today. Keep this in mind, if I cannot be with you there.”</p>
+
+<p>Mandavela died of a stroke on January 28, 2019, during a ministry trip to Benguela. He was buried in Lubango, in Huila province, Angola.</p>
+
+<p>Nelito Fernando Mumbondeiro</p>
+
+<hr />
+
+<p><strong>Sources:</strong></p>
+
+<p>Buta, Frederico Cathende Catihe. Secretário Geral of GBECA. Excerpts from the biography, March 17, 2020, Lubango.</p>
+
+<p>Mandavela, Febe Nassoma da Silva. Interview, March 23, 2020, Lubango.</p>
+
+<p>Marcolino, Mariano. Interview, March 22, 2020, Lubango.</p>
+
+<hr />
+
+<p>This biography, received in 2020, was written by Nelito Fernando Mumbondeiro, a candidate for the Masters of Arts in Theology, with a specialization in leadership, at the Higher Institute of Evangelical Theology in Lubango (Instituto Superior de Teologia Evangélica no Lubango, ISTEL). He has already received the title of Licenciado in theology from ISTEL. He is a pastor in Luanda at the Evangelical Church of Viana Luanda Sul (Igreja Evangélica de Viana Luanda Sul) in the UIEA, and he leads the Department of Evangelism, Missions, and Discipleship (Departamento de Evangelismo, Missões, e Discipulado) in that denomination. This biography was written under the supervision of Sindia Foster, instructor at ISTEL and missionary to Mozambique with Serving in Mission (SIM).</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Mandavela, Faustino Paulo`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -681,7 +756,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -720,6 +795,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

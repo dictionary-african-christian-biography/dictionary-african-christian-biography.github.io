@@ -607,8 +607,65 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Bantu newspaper editor, teacher, preacher, and champion of education and justice in the Eastern Cape, South Africa.</p>
+
+<p>Son of Mtwanambi (from forebears Citywa), Jabavu was born in a village near the Methodist mission school of Healdtown. Staunch Methodists, the family also attended Quaker meetings. One brother Jonathan James became a minister. Jabavu became a teacher, working in Somerset East (1877 - 1881), there apprenticing himself to the Wesleyan Methodists as a local preacher, as well as to the local newspaper office. He became editor of Isigidimi sama-Xhosa (The Xhosa Express) at the Lovedale Institution, where he developed as a brilliant debater. Then he became editor of <em>Imvo Zabantsundu</em> (The people’s opinion, 1884 - 1921), which was oriented toward Christian justice. He was an ardent nonviolent advocate of an impartial administration of justice, without regard to race, and continually alert to the African cause. His editorial power frequently drew the attention of the Cape Parliament. He traveled to London in 1909 to fight the Color Bar clause in the Union Constitution, and was elected to attend the Universal Races Congress (1911). From 1906 he worked at what became the South African Native College (ultimately, the University of Fort Hare), also championing the cause of women’s education.</p>
+
+<p>Gerhardus C. Oosthuizen</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Davidson D. T. Jabavu, <em>The Life of John Tengo Jabavu: A Great Bantu Patriot</em> (1922); M. Stauffer, <em>Thinking with Africa</em> (1927).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Jabavu, John Tengo`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +744,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +783,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

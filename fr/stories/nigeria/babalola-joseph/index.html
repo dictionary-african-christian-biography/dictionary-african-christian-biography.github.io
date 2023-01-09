@@ -605,8 +605,72 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Joseph Ayo Babalola, à été pionnier du mouvement pour l’indépendance de l’église africaine et le fondateur de l’Église du Christ Apostolique, une branche importante du mouvement Aladura. Les églises prophétiques (aladura) basées sur la prière ont commencé de se disséminer à travers le continent africain au cours des années 1920, et parmi les Yorubas, elles ont établi de fortes racines avec la création de la société des Chérubins et des Séraphins.</p>
+
+<p>Dans les années 1930, Babalola, qui, dans sa carrière antérieure était opérateur de rouleau compresseur, entreprit un ministère de prédication impressionnant. Après une vision qui lui a donné la conviction de prêcher l’Évangile, et suite à laquelle il a été emprisonné brièvement parce qu’on le croyait fou, il s’est rendu à Lagos et s’est joint à La Foi du Tabernacle, une église Yoruba indépendante, qui s’était séparée antérieurement de l’Église Anglicane. De là, il a commencé à voyager à travers le Nigeria et le Ghana, attirant des foules et accomplissant des séances de guérison. Contrairement aux églises Sionistes, qui attiraient les pauvres et les marginaux de la société colonisée, le mouvement Aladura attirait plutôt les travailleurs urbains.</p>
+
+<p>Babalola a prêché un réveil chrétien, attaquant les pratiques religieuses traditionnelles, jetant au feu  fétiches, idoles, et autres objets de sorcellerie, et interdisant la polygamie. L’Église du Christ Apostolique, fondée en 1955, a pris le nom d’une confession britannique qui a aidé à sa formation. Ni anti-missionnaire, ni anti-coloniale, cette église n’avait aucune doctrine sociale ou politique, mais insistait sur la spiritualité - c’était un saint mouvement. C’est pourquoi le gouvernement n’a pas cherché à l’attaquer, contrairement aux cas de William Wadé HARRIS au Ghana et de Simon KIMBANGU au Congo Belge. Pour avoir été suspecté de participer à une campagne d’éradication de sorciers, Babalola a été emprisonné pendant quelques mois; mais c’est à cela que se limite le litige qu’il a eu avec les autorités coloniales. Babalola dirigeait l’église en tant qu’évangéliste général; alors que son président, Sir I. B. Akinyele, Aba d’Ibadan (qui a été décoré par la Reine Elizabeth II), représentait son prestige social et son acceptation par le public d’une manière générale.</p>
+
+<p>Après la mort de Babalola, l’église a continué de croître et dans les années 1990 elle comptait environ 500,000 membres, avec une croissance annuelle d’environ 15,000 personnes. Elle possède 2 séminaires, 26 écoles secondaires, et une faculté pour former des enseignants. Elle compte aussi des missionnaires en Afrique de l’Ouest et outre-mer, parmi les Nigérians expatriés, aussi loin que Houston au Texas.</p>
+
+<p>Norbert C. Brockman</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p>Ewechue, Ralph (ed.). Makers of Modern Africa. 2ème edition. London: Africa Books, 1991.</p>
+
+<p>Lipschuth, Mark R., et R. Kent Rasmussen. Dictionary of African Historical Biography. 2ème édition.
+Berkeley: University of California Press, 1986.</p>
+
+<hr />
+
+<p>Cet article, reproduit, avec permission, de l’ouvrage <em>An African Biographical Dictionary</em>, copyright © 1994, édité par Norbert C. Brockman, Santa Barbara, Californie. Il a été traduit de l’anglais par Madame Lucie Brown (SIM International, Niger).  Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Babalola, Joseph Ayodele (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +751,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +788,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

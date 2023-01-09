@@ -607,8 +607,71 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Joseph Kiwele (1912-November 15, 1961) was a leading musician, educator, and politician in the Katanga Province (now Shaba Region).</p>
+
+<p>Born at Mpala 20 km (12 mi) north of Baudouinville (now Moba), on the shores of Lake Tanganyika, Kiwele went to primary school in his home village. He then went on to Lusaka, 40 km (25 mi) southwest of Boudouinville, for his secondary studies in humanities. He then studied philosophy and theology for five years at the seminary of Baudouinville. Going to Europe for one year, he took courses in harmony, counterpoint, and organ music at the Academy of Liege in Belgium. In 1941-42, after returning home, he taught technical design at the Chemins de Fer du Congo-Supérieur aux Grands Lacs Africains (Great Lakes Railways, CFL) professional school in Albertville (now Kalemie). He then went to Elisabethville (now Lubumbashi) where he was placed in charge of general education and music at the Institut Saint Boniface.</p>
+
+<p>For several years, he played the Elisabethville Cathedral organ and directed the Petits Chanteurs (Children’s Choir) at the Croix de Cuivre (Copper Cross). Besides being able to play any of the great works of such European classical composers as Beethoven, Handel, and Mozart, Kiwele was a composer who wrote many original pieces. He was considered one of the greatest African composers of his time. Kiwele’s most famous work was certainly the “Missa Katanga.” He also wrote “La Katangaise,” the secessionist state of Katanga’s national anthem, which was a hymn to heroes, patriotism, courage, and bravery. Another of Kiwele’s pieces, “Te Deum bantou” was an arrangement of Handel’s Hallelujah Chorus for choir, organ, and African musical instruments. On the occasion of King Baudouin’s visit to the Congo in 1955, he composed the “Hymn to Belgium.” In addition, Kiwele collected and wrote down many traditional songs of Shaba ethnic groups, especially those of the Yeke people.</p>
+
+<p>Joseph Kiwele’s civic and political activities included membership on the council of the Centre Extra-Coutumier (“Council of the Non-Traditional Urban Center”) of Elisabethville and on the Centre d’Études des Problèmes Économiques et Sociaux (“Center for Research on Economic and Social Problems”). He was elected a member of the provincial assembly of Katanga at Baudouinville, and was one of the first Congolese dignitaries to visit Belgium. From July 1960 until his death, he served as Minister of Education and Culture for the state of Katanga, devoting himself to strengthening the Congo Official University. When, in July 1960, this institution became the State University of Elisabethville, he became president of its supreme council.</p>
+
+<p>Joseph Kiwele suffered a cerebral vascular attack in November 1961, and died on November 15 of the same year. He was married and had ten children.</p>
+
+<p>Tshibangu Kabet Musas</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p><em>L’Essor du Katanga</em>, November 16-20, 1961.</p>
+
+<hr />
+
+<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (In 20 Volumes). Volume Two: Sierra Leone-Zaire. Ed. L. H. Ofosu-Appiah. New York: Reference Publications Inc., 1979.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Kiwele, Joseph`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +750,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +789,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -607,8 +607,77 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Berhanu Kebede was a prominent parachurch layman and leader in the Guenet Church of Ethiopia.</p>
+
+<p>He was born in 1953 in Addis Ketema, Addis Ababa. His parents were Ato Kebede Mengesha and Gete Birru. He began his elementary education in Addis Ababa at Negus Wolde Giorgis School and finished his secondary school at Prince Mekonnen High School. On February 6, 1971, he joined the Ethiopian Air Force because he wanted to financially support his parents.  In addition, throughout the l970s, he continued his education, receiving diplomas from the U.S.A. and Canada.  He earned the rank of second lieutenant 1978 and lieutenant in 1980.  In 1982, he obtained an Addis Ababa University diploma in engineering and was then raised to the rank of captain in 1986. He then turned to English language training at Addis Ababa University and earned his first degree in 1990.  During his career, he served his country in different administrative capacities both in the Ethiopian Army Aviation Department and Air Force Engineering Department.</p>
+
+<p>He married Mamitu Zelelew in 1990 and they were blessed with two girls and a boy, Mahlet Berhanu, Mikias Berhanu and Yohanna Berhanu.</p>
+
+<p>He was twelve years old when he started serving his Lord and Savior. From 1965 to 1990 he worked part-time in Christian ministry but began full time service in 1990. He served the Great Commission Ministry, Ethiopia, as administrator and training coordinator for five years.  Later he was national coordinator for two years in the Resurrection Victory Ministry.  He then worked with the <em>Hiyaw Tesfa</em> Radio (Living Hope Radio) until he died on April 22, 1999.</p>
+
+<p>In his last years with <em>Hiyaw Tesfa</em>, Berhanu was on the board of founding members, representing his church, the Guenet Church. Then he became chief coordinator of <em>Hiyaw Tesfa</em> Radio and obtained the license from the government to structure and organize the programming and office needs. He played a major role in the effort to transfer the ministry from Nairobi to Addis Ababa. In the radio service, he corresponded with up to 600 participants a month, counseling, encouraging, and strengthening people through his letters, and transmitting lessons to all listeners. He continued doing this until he died even when he was bedridden.</p>
+
+<p>He also made major contributions to the Evangelical Churches Fellowship of Ethiopia (ECFE). In addition to his work in churches and parachurch organizations, he was involved in nationwide teaching and preaching, translation, and international conferences in  countries such as Finland, England, and Israel. He also served as chairman of several boards, including the ECFE.</p>
+
+<p>Berhanu participated in Guenet Church activities and trained leaders. His sacrificial service endeared him to all 200 of the local Guenet churches in Ethiopia.  He was a role-model in leadership, showing wisdom and keen insight in decision-making and strength of character. His faithfulness, his stand for the truth, his sacrificial ministry and his brotherly affection and love for unity are some of the qualities for which he was highly respected during his life time.</p>
+
+<p>According to his wife, he had no other priority in life except to do God’s work.  He had little interest in material benefits and said that he originally had no intention of getting married, building a house, or driving a car. But God gave him a wife, a house and a car, which only his wife drove.  At the expense of his personal health, he was eager to preach in his mother church and was in the pulpit just a few days before his death.</p>
+
+<p>Dirshaye Menberu</p>
+
+<hr />
+
+<p>Sources:</p>
+
+<p>Special publication compiled for the 50th Anniversary of the Guenet Church.</p>
+
+<hr />
+
+<p>This article, received in 2004, was researched and written by Dr. Dirshaye Menberu, retired professor from Addis Ababa University and graduate of the Ethiopian Graduate School of Theology (EGST), a <em>DACB</em> Participating Institution, under the supervision of liaison coordinators, Dr. Paul and Mrs. Lila Balisky, who are also <em>DACB</em> Advisory Council members.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Kebede, Berhanu`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +756,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +795,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

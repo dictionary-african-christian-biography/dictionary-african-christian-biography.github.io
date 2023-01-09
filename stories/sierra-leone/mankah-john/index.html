@@ -607,8 +607,73 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>John Mankah (18?-circa 1900) was a Temne who was associated with the Church Missionary Society (CMS) in Port Loko in western Sierra Leone from 1878 to 1896, probably the only Temne man to have such a long association with a Christian mission during the 19th century. He contributed extensively to the study of the Temne language and translated much of the scriptures into Temne.</p>
+
+<p>The date of Mankah’s birth is not certain, but CMS records first mention him in 1846 when it is presumed that, along with two other Temne youths, he was sent to Freetown from Port Loko to continue his education there. Mankah had no doubt come under influence of the Rev. C. F. Schlenker, a noted German-missionary and linguist who pioneered the scientific study of the Temne language. Impressed by their work, Schlenker must have recommended that the three boys be sent to Freetown for further education.</p>
+
+<p>In 1850 the Port Loko mission was suspended, but in the same year a new Temne mission was opened at Magbele on the Rokel River, which was in operation until 1860. It is probable that Mankah served for a while at Port Loko, but was in all likelihood associated with the Magbele mission.</p>
+
+<p>There is little information on his life between the years of 1860 and 1878, so not much can be said with precision about his activities. But he is mentioned again in 1878 when another Temne mission was opened in Port Loko under the charge of the Rev. John Alfred Alley.</p>
+
+<p>From 1878 to 1896 Mankah worked as an assistant to the Rev. Alley, a partnership that was crucial to the survival of the mission, for Alley apparently found it difficult to maintain cordial relationships with other missionaries, whether African or European. But he and Mankah co-operated in translating many portions of the Bible into Temne. From the evidence of the C.M.S. records it seems likely that Mankah did most of the work, since Alley showed no particular linguistic talent.</p>
+
+<p>Mankah was probably one of the very few dedicated Africans to be converted to Christianity by the CMS in all its years of work in Port Loko. Of his personal life it is only known that he had a son who, according to <em>The Church Missionary Gleaner</em> of February, 1882, was baptized in England as John England. Mankah died about the turn of the century.</p>
+
+<p>Gustav K. Deveneaux</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p><em>The Church Missionary Gleaner</em>, Vol. IX, February, 1882; O. K. Deveneaux, “The Political and Social Impact of the Colony in Northern Sierra Leone 1821-1896,” unpublished Ph. D. dissertation, Boston University, 1973; Christopher Fyfe, <em>A History of Sierra Leone</em>, London, 1962; C. P. Groves, <em>The Planting of Christianity in Afric</em>a, 4 vols. London, 1948; C. F. Schlenker, A* Collection of Temne Traditions, Fables and Proverbs*, London, 1861.</p>
+
+<hr />
+
+<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (In 20 Volumes). Volume Two: Sierra Leone-Zaire, Ed. L. H. Ofosu-Appiah. New York: Reference Publications Inc., 1979.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Mankah, John`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +752,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +791,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

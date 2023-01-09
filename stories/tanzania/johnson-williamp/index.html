@@ -607,8 +607,63 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>William Johnson was an Anglican missionary to central Africa. Educated at University College, Oxford, Johnson intended to follow a career in the Indian civil service. However, he was attracted by a notice asking for volunteers for the Universities’ Mission to Central Africa and volunteered. He reached Zanzibar in 1876, a few months after his close friend Chauncy Maples. By 1878 he was priest in charge at Mbweni in Malawi. In 1880, during one of what were to be many attacks of illness, he was treated at Cape Maclear by the Scottish Presbyterian missionary Robert Laws. In spite of considerable theological differences between them, an intimate friendship developed and lasted until Johnson’s death. Laws referred to Johnson as the Apostle of the Lake (i.e., Nyasa), indicating both his pioneering missionary work and his tireless traveling. Johnson, who remained single throughout his life, had an ascetic life-style and a burning concern not to impose European culture unnecessarily on the African church. He was awarded an honorary D.D. by Oxford in 1911. He was most at home in the African bush, where he died, at Liuli, on the eastern side of Lake Nyasa.</p>
+
+<p>T. Jack Thompson</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>W. P. Johnson, <em>Nyasa the Great Water</em> (1922) and <em>My African Reminiscences, 1875-95</em> (1924). Bertram Herbert Barnes, <em>Johnson of Nyasaland: A Study of the Life and Work of William Percival Johnson D.D.</em> (1933); G. H. Wilson, <em>The History of the Universities’ Mission to Central Africa</em> (1936).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Johnson, William Percival`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +742,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +781,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

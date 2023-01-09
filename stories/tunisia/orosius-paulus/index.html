@@ -607,8 +607,92 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Aside from involvement in events between 414 and 417, little exact dating can be ascertained for the life of Orosius.  In the former year he fled the Vandal invasions of his home in Spain, coming to Augustine of Hippo (354-430), young but already a presbyter.  He provided Augustine a treatise against the errors of both Priscillianists and Origenists – with respect to the former on the basis of his own knowledge of their role in the Spanish church (<em>Commonitorium de errore Priscillianistarum et Origenistarum</em>).  In response Augustine added a complementary statement in the form of a parallel treatise.</p>
+
+<p>As trusted messenger Orosius was sent by Augustine to Jerome (c. 342-420) in Palestine to assist in the indictment of the Pelagianists.  But in December of 415 the Council of Diospolis upheld Pelagius (fl. c. 380-420), and subsequent to Orosius’ literary self-defence (<em>Liber apologeticus contra Pelagianos</em>) he returned to Augustine.  While in Palestine remains of the blessed Stephen, first martyr, were discovered, and Orosius brought the first relics to the West.</p>
+
+<p>On the advice of Augustine, and using book three of <em>The City of God</em> as base, Orosius composed in two years time, chiefly from extracts of Bible and Roman historians within the framework of Eusebius’ (c. 260-340) <em>Chronicle</em>, a Christian world history in seven books, whose philosophy, designed to explain Alaric’s (c. 370-410) sack of Rome in 410, appears in its title:  <em>Adversam Paganos</em> [Latin text:  M.P.Arnaud-Lindet, ed. (1990); English transl.:  R.J.Deferrari, FOTC 50 (1964)].</p>
+
+<p>The turning points in world history which delimit his books became normative for subsequent authors:  creation through the Babylonian empire to the foundation of The City, to the sacking of Rome by the Gauls in parallel with events from Cyrus to Cunaxa, through the Macedonian empire to the settlement of the Diadochi, to the destruction of Carthage and Corinth, to the Civil War, to Augustus and Christ, and the imperial state to 417.  His material from 378 takes on value since his sources have not survived, as does his occasional citation of otherwise lost portions of Tacitus (c. 56-115) and the epitome of Livy (c. 59 BCE - 17 CE).  After his final date, Orosius himself disappears.</p>
+
+<p>Clyde Curry Smith</p>
+
+<hr />
+
+<h1 id="bibliography-see-link-to-abbreviations-table-below">Bibliography (see link to abbreviations table below):</h1>
+
+<p>G 40</p>
+
+<p>PL 31; CPL 571-574</p>
+
+<p>Q4.7.5.1; DECL 451-452 (UHamm, MMeier); ODCC 995; NIDCC 735 (C. C. Smith); ODByz 1537 (B. Baldwin); OEEC 624-625 (F. Paschoud); GEEC 841 (F. W. Norris); OCD 1078 (E. D. Hunt).</p>
+
+<p>Supplemental Bibliography:
+E. Gibbon, *The History of the Decline and Fall of the Roman Empire, *with introduction, notes, and appendices by J. B. Bury,  7 vols. (London: Methuen and Co., 1909): i. 276; iii. 280, 351, 357, 518, 524; vii. 319.</p>
+
+<p>S. Dill, * Roman Society in the Last Century of the Western Empire,* (London: 1899): bk I, ch. III; bk. IV, ch. II.</p>
+
+<p>P. de Labriolle, * The History and Literature of Christianity from Tertullian to Boethius,* transl. by H. Wilson (London: 1924): 433-438.</p>
+
+<p>W. H. C. Frend, <em>Martydom and Persecution in the Early Church: A Study of a Conflict from the Maccabees to Donatus</em> (New York University Press, 1967): 122, 272.</p>
+
+<p>——–,  *Religion Popular and Unpopular in the Early Christian Centuries * (London: Variorum Reprints, 1976): passim.</p>
+
+<p>——–, *Town and Country in the Early Christian Centuries * (London: Variorum Reprints, 1980): passim.</p>
+
+<p>——–,  <em>The Rise of Christianity</em> (Philadelphia: Fortress Press, 1984): passim.</p>
+
+<hr />
+
+<p>This article, received in 2000, was researched and written by Dr. Clyde Curry Smith, Professor Emeritus of Ancient History and Religion, University of Wisconsin, River Falls.</p>
+
+<hr />
+
+<p><strong>Click here for</strong><a href="/resources/ancient-references/">Abbreviations and Source References for Ancient African Christians.</a></p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Orosius, Paulus`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +771,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +810,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

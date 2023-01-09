@@ -611,8 +611,59 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/uganda/kivebulaya-apolo5/Apolo.jpg" alt="" class="bio" height="200px" width="151px" /></p>
+
+<p>A Muganda born in Singo about 1864. He grew up under Muslim influence and first came to the capital of Buganda during the reign of Kabaka Mwanga. Here he attended the Christian reading classes conducted by Alexander Mackay at the Anglican Mission. In 1887 Apolo and his brother went raiding with Mwanga’s army. Later they were forced to join the Muslims in the revolt against Mwanga in 1888. During the subsequent wars of religion Apolo joined the exiled Christians in Ankole. After the Christian army had recaptured the capital he attached himself to the Protestants and learned to read; also at this time (1891), he joined Captain Lugard’s police force. In December 1893 Apolo joined Col. Colville’s campaign against Kabarega of Bunyoro, after which he accompanied Major Owen’s expedition to reinstate Omukama Kasagama of Toro. On his return to the capital he was baptised in January 1895 and wished at once to become a Christian teacher. In September 1895 he went as an evangelist to Toro and the following year found him at Mboga in the Congo beyond the Semliki  Valley. His missionary zeal was tested by political troubles and cruel persecution, but undaunted he returned to his work. The Belgian occupation of the Mboga area in 1899 made Christian work there temporarily impossible and Apolo returned to Toro where he spent the next fifteen years doing the work of a rural dean. He travelled on foot hundreds of miles each year visiting the churches and preaching God’s word wherever he found a few people gathered together. "My great need is to have power to bring people to Jesus Christ, and to have the life in which he gives.” Apolo’s energy, enthusiasm and love helped to built the church in Toro. As one who knew him tells us, "He did not stop at preaching! He taught the people to build their churches firmly and well and beside the churches he planted trees to provide timber for future repairs.” In 1915 Apolo went back to Mbogo and remained there until he died seventeen years later. This isolated church came to life again under his care, and spread outwards. In 1921 he began the work among the forest tribes and pygmies which made his name famous. He died at Mboga in May 1933. Apolo was a saint whose single-minded devotion to God’s work helped to bring into the Church people from many different tribes, and the example of his holy life has influenced people far beyond the continent of Africa.</p>
+
+<p><strong>Louise Pirouet</strong></p>
+
+<hr />
+
+<p>This article, used by permission, was written by Louise Pirouet, as part of <a href="../pirouet-foreword/"><em>A Dictionary of Christianity in Uganda</em></a> (Department of Religious Studies, Makerere University College, 1969), p. 36. Copies available at Africana Section, Makerere University Library (AF Q 276.761 MAK and AR/MAK/99/1); Bishop Tucker Library, Uganda Christian University and in UK at the University of Birmingham; Crowther Centre Library, CMS Oxford and Louise Pirouet Papers, Cambridge Centre of African Studies.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Kivebulaya, Apolo (E)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +742,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -730,6 +781,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

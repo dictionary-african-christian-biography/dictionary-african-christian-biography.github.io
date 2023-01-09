@@ -607,8 +607,73 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Maria Matilda Munaku was born and brought up at Mityana in Ssingo County, Uganda. She was the sister of  Saint Noe Mawaggali who was brutally martyred at Mityana on May 31, 1886. Mityana was the headquarters of the Chief of Ssingo County and the focus for a remarkable Christian community, led by Saint Mathias Kalemba Mulumba and Saint Luke Banabakintu, the other two martyrs from Mityana. Munaku was taught the catechism by her brother and Saint Mathias Mulumba. On the day of her brother’s martyrdom, she boldly came out of hiding and offered to die like her brother for the Christian faith. The king’s messenger, Mbugano, who had  come to attack the Christians of Mityana, took Munaku captive, intending to make this young woman of  twenty eight his wife. Munaku planned to court martyrdom again by refusing to accompany Mbugano. However, although she was  cruelly treated, she soon realized that Mbugano had no intention of killing her, although she bravely resisted his advances.</p>
+
+<p>Baffled by the young woman’s constancy, Mbugano, on arriving at the Ganda capital, decided to offer her to the missionary, Father Simeon Lourdel, for a ransom. A gun and some ammunition were handed over, and Munaku was freed. Baptized in July 1886, by Lourdel at Rubaga, she took a personal vow of virginity on her own initiative, promising never to marry anyone except Jesus Christ. Soon, other girls joined her at Rubaga, and together they accompanied the missionaries to Bukumbi on the southern shore of  Lake Victoria during the civil war of 1888, where she helped to found and run an orphanage for girls.</p>
+
+<p>In 1890 she returned to Uganda, shortly after the death of Lourdel, her patron and saviour. When the seminary was started in January 1891, Munaku was put in charge of  looking after the material needs of the boys. Gathering together an association of unmarried women to help her, she moved with the seminary to Bukalasa in 1903 and then to Katigondo in 1911. Known as the “Mother of the Seminary,” she continued to supervise the seminary kitchen until 1924, when this responsibility was taken over by the newly founded female religious order, the <em>Bannabikira</em>. “I have no money to give the future priests,” she is recorded as saying, “But I work for them with my hands.”  In fact, she gave an edifying example to the seminarians and even offered them timely advice on occasion. She died on April 7, 1934, aged 76, and was buried in Bukalasa cemetery.</p>
+
+<p>Aylward Shorter M.Afr.</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>J. F.  Faupel, <em>African Holocaust, The Story of the Uganda Martyrs</em>, 4th edition (Nairobi: St. Paul’s Publications Africa, 1984).</p>
+
+<p>Richard Gray, “Christianity,” <em>Cambridge History of Africa</em>, vol. 3  (Cambridge University Press, 1978): chapter 3, p. 140 ff.</p>
+
+<p>John Mary Waliggo, <em>A History of African Priests</em> (Nairobi: Matianum Press Associates, 1988).</p>
+
+<p>——–, “The Catholic Church in the Buddu Province of Buganda 1879 to 1925,” Ph.D. Thesis, Cambridge University, 1976.</p>
+
+<hr />
+
+<p>This article, submitted in 2003, was researched and written by Dr. Aylward Shorter M.Afr., Emeritus Principal of Tangaza College Nairobi, Catholic University of Eastern Africa.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Munaku, Maria Matilda`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +752,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +791,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

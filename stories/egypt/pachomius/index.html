@@ -566,7 +566,7 @@
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Pachomius">
     
-    <meta itemprop="datePublished" content="October 19, 2023">
+    <meta itemprop="datePublished" content="October 19, 2022">
     
 
 <!-- NAME(S), DATE, AFFILIATION, COUNTRY -->
@@ -607,8 +607,109 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Born of pagan parents in Upper Egypt, this most important of the early Coptic saints came in contact with a local Christian community that befriended him while he was a conscript in the Roman army in 312. When he was taken prisoner, they brought him food and provided support and friendship, and in turn Pachomius became a Christian and devoted his life to helping others. [1]</p>
+
+<p>After he had completed his army service, Pachomius settled in a small community, was baptized, and began a life of regular prayer, fasting, and almsgiving. Eventually he organized a monastic <em>koinonia</em> (community) based on mutual service and sharing among members. The idea caught hold, and by the time of Pachomius’s death in 346, it had grown to more than five thousand monks in nine monasteries and two convents of nuns. This idea of a carefully organized Christian community praying together several times a day and then going about individual or group tasks was in sharp contrast to the equally popular practice of monks becoming hermits and living alone in desert places.</p>
+
+<p>The monastic communities (including the convents run by the sister of Pachomius) were based on a constantly evolving rule, which the founder extracted from New Testament teachings of Jesus. It contained a heavy teaching component, and the superior of a monastery, the house master, or another monk were expected to lead Bible study several times a week, on feast days, and at the annual gathering of monks near the year’s end. The rule also included total obedience to superiors and common ownership of all property.</p>
+
+<p>The goal was to organize a large group of unruly people into an efficient, effective praying and working community, and to do this Pachomius borrowed on the Roman military forms of organization he had been exposed to as a youth. He thus shaped the new Christian community into an economically and spiritually viable organization of several thousand members in an agriculturally unproductive region filled with hostile peoples.</p>
+
+<blockquote>
+
+  <p>Seven archangels stand glorifying the Almighty and serving the hidden mystery.</p>
+
+  <p>Michael the first, Gabriel the second, and Raphael the third, symbol of the Trinity.</p>
+
+  <p>Surael, Sakakael, Saratael, and Ananael. These are the shining ones, the great and pure ones, who pray to God for humankind.</p>
+
+  <p>The cherubim, the seraphim, the thrones, dominions, powers, and the four living creatures bearing the chariot of God.</p>
+
+  <p>The twenty-four elders in the Church of the Firstborn praise him without ceasing, crying out and saying:</p>
+
+  <p>Holy is God; heal the sick.</p>
+
+  <p>Holy is the Almighty; give rest to the departed.</p>
+
+  <p>Holy is the immortal; bless thine inheritance.</p>
+
+  <p>May thy mercy and thy peace be a stronghold unto thy people.</p>
+
+  <p>Holy, holy, holy, Lord of hosts.
+Heaven and earth are full of thy glory.</p>
+
+  <p>Intercede for us, O angels our guardians,</p>
+
+  <p>and all heavenly hosts,</p>
+
+  <p>that our sins may be forgiven.</p>
+
+  <p>–A Coptic Orthodox Prayer to the Archangels [2]</p>
+
+</blockquote>
+
+<p>Frederick Quinn</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>
+    <p>Saint Pachomius in <em>The Coptic Encyclopedia</em>, ed. Aziz S. Atiya (New York: Macmillan Publishing Company, 1991), 6:1859-1863.</p>
+  </li>
+  <li>
+    <p>Tutu, <em>An African Prayerbook</em>, 14-15.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>African Saints: Saints, Martyrs, and Holy People from the Continent of Africa</em>, copyright © 2002 by Frederick Quinn, Crossroads Publishing Company, New York, New York.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Pachomius`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +788,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +827,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

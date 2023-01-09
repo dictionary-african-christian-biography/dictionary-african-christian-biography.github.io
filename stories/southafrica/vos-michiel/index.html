@@ -607,8 +607,65 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Pioneer South African missions advocate.</p>
+
+<p>Born in Cape Town, Vos went to Utrecht, Netherlands, in1780 to study theology and ministered in the Netherlands for nine years before returning to the Cape in 1794. There he was concerned especially about the spiritual condition of the slaves in the Cape Colony. In his Dutch Reformed congregation at Roodezand (now Tulbagh), his first sermon was on Mark 16: 15, “Go ye into all the world and preach the gospel to every creature.” He told his congregation that he would therefore preach to the slaves and Khoi-Khoi (Hottentots)-something that was not generally done at the time. He also used his personal influence to improve the position of the Moravian missionaries in the Cape. In 1802 he went to England, and from there to Tranquebar, India, in 1804, where he ministered until his return to the Cape in 1809. He made a lasting impression through his catechesis, pastoral care, and mission enthusiasm in all the congregations he served.</p>
+
+<p>Willem Saayman</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Vos’s autobiography was published in Amsterdam in 1824 as <em>Merkwaardig verhaal</em> (Remarkable story). An analysis of Vos’s contribution, as well as a full bibliography, appears in R. Murray, “Michiel Christian Vos (1759-1825): Tussem reformasie en piëtisme” (M.Th. thesis, Univ. of South Africa, 1983).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Vos, Michiel Christian`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +744,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +783,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

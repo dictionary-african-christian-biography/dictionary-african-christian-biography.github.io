@@ -605,8 +605,73 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Pierre Mwatende Kayenda est né à Ntobwe Kabongo, dans le secteur de Kasaï-Longatshimo, au territoire de Tshikapa, dans le district du Kasa, dans la province du Kasaï Occidental, au Congo Belge, actuellement la République Démocratique du Congo.</p>
+
+<p>Après ses études primaires, il s’inscrivit à l’école évangélique du Mutema où il reçut sa formation de serviteur de Dieu. Il devint évangéliste de communauté, et cette position lui a permis d’être très actif dans l’œuvre.</p>
+
+<p>Pendant sa carrière il a pu inaugurer plusieurs districts ecclésiastiques, dont Kasadisadi, Kola Mwaye, Muila Mbumba, Mbulume, Shamandonge, Mbawu et bien d’autres. Il était un grand visionnaire et un serviteur de Dieu courageux. Il était très entreprenant dans ses projets, et reculait rarement lorsqu’il prenait des décisions. Il était toujours assidu et ponctuel.</p>
+
+<p>Il est encore aujourd’hui considéré le père spirituel de la Communauté Mennonite au Congo. Le visionnaire Mwatende est mort, mais le fruit de sa vision demeure, avec comme résultat neuf provinces ecclésiastiques, 118 districts, 410 000 membres effectifs, dont plusieurs serviteurs de Dieu.</p>
+
+<p>Mwatende, qui est mort en 1995 à Kola Muoyo, est immortalisé par les œuvres qu’il a laissées dans la communauté.</p>
+
+<p>Léonard Katsingu Tshifwakwa</p>
+
+<hr />
+
+<p>Sources:</p>
+
+<p>Sébastien Kapumbu, chef de paroisse adjoint CMCO, district de Ngaliema, interveiw, mai 2007.</p>
+
+<p>Kabasela B. Mushiola, président provincial de CMCO pour le Kasai Sud-Est, interview, juin 2007.</p>
+
+<hr />
+
+<p>Cet article, reçu en 2008, est le produit des recherches de l’ancien Léonard Katshingu Tshifwaka, étudiant en missiologie au Centre Universitaire de Missiologie à  Kinshasa-R.D.du Congo sous la direction du Rév. Fohle Lygunda, coordinateur francophone du <em>DIBICA</em>.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Mwatende Kayenda, Pierre`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +752,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +789,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -607,8 +607,81 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Petro Sono, a Msukuma by tribe, of the clan of Batundu, was born in Tanzania, the son of Sono.  His mother’s name was Kanana at Ibanda-Mwanza.  He was born during a famine which came to be known as <em>Nzala ya Masanzo</em> (basket famine).   His nickname was Ng’wananogu (obedient/easy child).</p>
+
+<p>He suffered from small pox in his childhood.  His desire in life was to become a medicine man.  He was educated up to the fourth grade from 1920-1924.  He was fluent in the following languages:  Kiswahili, Kijita, Kizinza, Kikerewe, Kisukuma, and Kihaya.</p>
+
+<p>His wife’s name was Nyang’wila, later called Mariam after her baptism.  They had ten children:  Samson Nhaluke, Salome Sumilwa, Tizira Shitiho, Esther Ibombolwa, Elias Nhegele, Elisha Lugiko, Joel Hamuli, Lois Njile, John Malongo, and David Mashimba. Their grandchildren’s names were:  Mariam Samson, Aaron Samson, Charles Elias, Mary Elias, Barnabas Elisha, Margaret Elisha, Adela Jeremiah, Gerald Ibambasi, Madaraka Ngoye, and Jackson John.</p>
+
+<p>He accepted Christ in 1920 at an AICT church in Nyegezi-Mwanza.  He felt called to ministry in 1924 and in 1925 was ordained a church elder.  Each time he moved was for the purpose of planting a church.  He built churches and was liked by many because of his successful work.  He did a lot of counseling on different issues.  In 1926, he became an un-ordained pastor and was sent to Hamuyebe-Ukerewe in January 1931.  He did not stay there for long, but returned to his family at Bujora-Sukuma, Mwanza.  One of the worst experiences in his life was when  his house burned down in 1945, destroying everything including his church-related papers.</p>
+
+<p>Many of the churches he planted and built are still functioning.  He planted AICT churches in Nansio and in Bujora where he served as a pastor from 1921 to 1939.  He also started a church in Bugando-Nkome where he worked from 1939 to 1943, and one in Itabagumba where he served as pastor from 1943 to 1973.</p>
+
+<p>In 1955, he was ordained a pastor.  The only mention of him is in  “A Short History of the AICT Church” booklet.  On page 18, he is said to have stayed at Hamuyebe for a while.  On page 27, it says he was elected as one of the marriage board members, and on page 28, it is mentioned that he went to Hamuyebe.</p>
+
+<p>Bela B. Kalumbete</p>
+
+<hr />
+
+<p>Sources:</p>
+
+<p><em>Muhtasari wa Historia ya Kanisa,</em> (A Short History of the AICT Church), edited by Bishop Samwel Magessa (Mwanza: Inland Publishers, 1977), 18, 27-28.</p>
+
+<p>Lyamba, Ruth, interview by the author, November 2000, Mwanza.</p>
+
+<p>Munyeti, Yohana, interview by the author, November 2000, Itabagumba-Kazunzu.</p>
+
+<p>Ng’wananogu, Rev. Canon Joel, interview by the author, November 2000, St. Peter’s Church, Itabagumba.</p>
+
+<p>Nyagwaswa, Leah, interview by the author, November 2000, Sengerema, Mwanza.</p>
+
+<hr />
+
+<p>This article was researched and written by Bela B. Kalumbete, a Project Luke Fellow associated with the Africa Inland Church, Tanzania.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Sono, Petro`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +760,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +799,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

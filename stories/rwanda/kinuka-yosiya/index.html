@@ -607,8 +607,85 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/rwanda/kinuka-yosiya/Kinuka-small.jpg" alt="Dorokasi and Yosiya Kinuka" class="bio" /></p>
+
+<p>Rev. Yosiya Kinuka was born at Bwera in Katookye, near Bweranyangi, Igara, Ankole, Uganda.  His father, Kabiri Rushate Rwigimba, a chief in Ankole, died while he was young.  He was brought up by his mother and aunts.  In his youth he tended his father’s cows. He did not have an opportunity to attend school and so was unable to read or write.</p>
+
+<p>In 1923, a missionary doctor, Dr. Len Sharp, visited his area and diagnosed that he was suffering from yaws.  He was invited to attend Kabale Hospital for treatment. While at Kabale he learned to read and write very quickly. During a return visit to the hospital he showed such remarkable abilities that he was invited to become a medical assistant and, later, attended Mengo Hospital for training as a Medical Orderly.</p>
+
+<p>Dorokasi Kinuka was born to Nyamahinja in the Bufumbira region of Kigezi. Her father and mother died while she was young.  A maternal uncle, Abraham Kanyarutoke, permitted her to attend a primary school at Kabale.  Yosiya and Dorokasi were married in 1928.</p>
+
+<p>When the new mission centre was being developed at Gahini, Rwanda, Yosiya was persuaded to join the medical team in setting up the hospital, then under construction.  At that time he was not interested in anything Christian.</p>
+
+<p>Yosiya’s remarkable abilities were soon reflected in his medical services, particularly as an anaesthetist.    The resident Dr. Joe Church developed the principle of teaching the Bible by using his rudimentary knowledge of Kinyarwanda and then asking Yosiya to translate and explain what he had been trying to say.  In this way Yosiya was at first challenged and then converted to a very real personal faith in Jesus Christ.</p>
+
+<p>Some of the earliest manifestations of the East African Revival occurred at Gahini, Rwanda, while Yosiya was there. After some initial antagonism, he entered wholeheartedly into what He saw as God at work.  His leadership qualities gained him a leading role in the Revival and he shared in the leadership of many evangelistic missions and conventions in East Africa.</p>
+
+<p>In 1946, Yosiya, William Nagenda, and Dr. Joe Church toured England as a team of witnesses from the East African Revival.  Yosiya’s remarkable fluency in English and his very gracious style endeared him to many people in England and elsewhere.  He had a fund of memorable stories to illustrate his talks.  He had a deep knowledge of the Bible, a penetrating understanding of people and their problems and a very disarming approach to would-be opponents.</p>
+
+<p>The dramatic change in Yosiya’s life, following his conversion at Gahini, was shared by his wife Dorokasi.  Their home became a centre of witness to Jesus Christ and their relationship to each other, particularly the very high status Yosiya gave Dorokasi in the home, became a model for Christian families.</p>
+
+<p>Following the tense political situation in Rwanda which developed from 1959 onwards, Yosiya and Dorokasi moved to Uganda to supervise a camp for Rwandan refugees.  A contemporary doctor commented on this “act of the most extraordinary love and unselfishness by such a capable and outstanding man.”</p>
+
+<p>H. H. Osborn</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Dr. J. E. Church, <em>Quest for the Highest</em>  (Paternoster, 1981).</p>
+
+<p>H. H. Osborn, <em>Pioneers in the East African Revival</em> (Apologia, 2000).</p>
+
+<hr />
+
+<p>This article, submitted in 2002, was written for the <em>DACB</em> by Dr. H. H. Osborn, author of the book <em>Pioneers in the East African Revival</em>.</p>
+
+<p>*.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Kinuka, Yosiya and Dorokasi`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +764,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +803,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

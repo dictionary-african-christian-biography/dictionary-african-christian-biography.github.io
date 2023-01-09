@@ -607,8 +607,67 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/ghana/akrofi-clement/Akrofi_small.jpg" alt="Clement Akrofi" class="bio" /></p>
+
+<p>Ghanaian linguist and Bible translator.</p>
+
+<p>Akrofi was born in Apirede, in the Akuapem kingdom of southwestern Ghana, of parents who were among the first to join the Basel Mission church established there in 1873. Akrofi was a linguist and a Bible translator. He came early under the influence of the piety of the Basel Mission. Later, in the middle school and the teacher-training program at the mission headquarters in Akropong, he was influenced by the educational ideals of Scottish missionaries who succeeded the Basel missionaries between the two world wars. Convinced that language was essential to the effective communication of the gospel, Akrofi intensively studied his own Twi language and produced an impressive range of reference tools. His <em>Twi Kasa Mmara: A Twi Grammar in Twi</em> (1937) was the instance of “an African language being interpreted by an African scholar writing in his own language” (Dietrich Westermann, in the foreword). Akrofi was once introduced to Queen Elizabeth II of England by President Kwame Nkrumah of Ghana as “the Chaucer of our language.” His crowning work was the revision of the Twi Bible of his missionary predecessor, Johannes Christaller. Upon its completion in 1960, Akrofi was awarded a Th. D. from the Johannes Gutenberg University of Mainz, Germany. In his acceptance address, he stated: “I do not forget that I am receiving this honor primarily as a servant of the gospel….. In view of the general tendency to regard Christianity as a foreign religion, I will remind my fellow Africans that although Christianity is Europe’s greatest gift to Africa, it is not exclusively the white man’s religion; it is not the religion of the imperialist. Christianity is a world religion because Jesus Christ is the Lord and King of the universe.”</p>
+
+<p>Kwame Bediako</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>In addition to his Twi Grammar, Akrofi’s other significant works are <em>A Twi Spelling Book</em> (produced jointly with E. L. Rapp; 1938), <em>Twi Mmebusem</em> (n.d.), an annotated collection of 1018 Twi proverbs and <em>English-Twi-Ga Dictionary *(produced jointly with G. L. Botchey; 1968). For Akrofi’s place in Ghanaian Christian scholarship, see Kwame Bediako, *Christianity in Africa: The Recovery of a Non-Western Religion</em> (1995), chap. 3.</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Akrofi, Clement Anderson (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +746,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +785,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

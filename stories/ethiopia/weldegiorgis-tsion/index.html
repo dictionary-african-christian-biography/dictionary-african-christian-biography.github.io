@@ -607,8 +607,110 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Tsion was born in Hebo, a village 90 kilometers from Asmara,
+in 1936 into a Catholic family. She took her primary education at the Italian
+Sisters’ School in Hebo from 1940 to 1955. From the outset, a woman of deep
+faith, she was nurtured in Catholic traditions in an area that had been evangelized
+by St. Justin de Jacobis. At the age of nineteen, she was sent to Naples, Italy,
+for a year of religious formation and novitiate then moved on to Paris in 1956
+for another year of training. In 1957 and 1958 she taught kindergarten in Addis
+Ababa and then was transferred to Bonga, Kafa, to supervise boarding school
+and parish visitations from 1959 to 1967. In 1968 she spent six months in London
+taking courses in philosophy and theology then returned to Addis Ababa to work
+at St. Mary’s School. From 1970 to 1973 she was involved in Home Economics and
+women’s work at Dembidollo, Wollega. During 1974 she did her 12th grade then
+went to Bonga where she served as director and teacher of Home Economics in
+Bonga as well as at outstations of Shappa, Wush Wush, Mutti, Dekia and Gojeb.
+Her years in Bonga endeared her to the poor as she traveled by mule to outstations
+and always encouraged girls to study and learn. Among her colleagues and in
+the Bonga hospital, she was beloved for her gracious hospitality. She often
+served tea to guests on the shaded verandah of the Bonga Catholic mission and
+would pick passion fruit directly from the vines to present to her guests as
+a delicious drink.</p>
+
+<p>In Bonga, when a group of Manjos settled in a nearby forest and wanted to attend
+church, there was some difficulty in the minds of many (because of social and
+ethnic stigma), so Sister Tsion built them a small prayer house and led them
+gently into the faith. Able to speak six or seven languages, including Kafficho,
+she befriended many groups and strata of society at a heart level.</p>
+
+<p>Sister Tsion was beloved for her faithfulness by both the
+poor as well as her colleagues at various Catholic missions
+and institutions. [1] She exuded peace and gentleness to all
+the poor whom she served so faithfully as well as to her colleagues
+at various Catholic missions and institutions. During the
+years of the Marxist revolution, she traveled through many
+dangerous situations and sorrowed in saying farewell to the
+expatriate missionaries who were expelled from the Kafa region
+in 1978.</p>
+
+<p>Her untimely death in 1978 in a tragic car accident near Nazareth was a great
+sorrow to the entire Catholic and greater community in Ethiopia. The Sisters
+House of Formation in Addis Ababa is named Tsion House in her memory.</p>
+
+<p>Lila W. Balisky</p>
+
+<hr />
+
+<p>Note:</p>
+
+<ol>
+  <li>In Ethiopia, one would say of Sister Tsion that her life was “like the fragrance of the coffee trees in blossom.”</li>
+</ol>
+
+<hr />
+
+<p><strong>Bibliography</strong></p>
+
+<p>“Sister Tsion Weldegiorgis; 1936-1978. A Tribute” (produced by Sr. Mauve O’Brien, D.C.).</p>
+
+<hr />
+
+<p>This biography was excerpted from the above tribute and written in 2011 by Mrs. Lila Balisky, formerly of SIM Ethiopia, who knew Sister Tsion personally in Bonga, Kafa.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Weldegiorgis, Tsion`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +789,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +828,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

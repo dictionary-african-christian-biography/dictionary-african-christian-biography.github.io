@@ -607,8 +607,63 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Daniel Coker was the first African-American missionary to Sierra Leone, West Africa. Born Isaac Wright, a slave, to a white mother who was an indentured servant and a slave father in Maryland, he was educated with his white half brothers. In New York, where he fled to avoid slave hunters, he took the name Daniel Coker and came in contact with Methodists. Returning to Baltimore, he put himself in danger of being returned to slavery, but his freedom was purchased by four freedmen and he became a leading preacher, writer and educator. He was ordained a deacon in the Methodist Episcopal Church by Bishop Francis Asbury in 1802. With Richard Allen and others he was a founder in 1816 of the African Methodist Episcopal (AME) Church. In 1820 he was sent by his church as a missionary to Sierra Leone, West Africa, and sailed with other emigrants under the American Colonization Society. On shipboard he organized a society of believers. Landing on Sherbro Island, Sierra Leone, in March 1820, he found himself the administrator of the colony within three months because of the deaths of the three appointed agents. With disease and death increasing, the survivors moved to the mainland, where Coker’s wife and children joined him the following year. He spent the remainder of his life in Sierra Leone, working as a government administrator and church organizer. Later, when a split developed in his church, he became superintendent of an independent group, the West African Methodist Church.</p>
+
+<p>H. T. Maclin</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p><em>Journal of Daniel Coker, a Descendant of Africa, from the Time of Leaving New York, on the Ship Elizabeth, Capt. Sebor, on Voyage for Sherbro, in Africa, in Company with Three Agents and about Ninety Persons of Colour</em>  (1820, repr. 1983). Wade C. Barclay, <em>History of Methodist Missions: Early American Methodism, 1769-1841</em>, vol. 1 (1949): Josephus R. Coan, “Daniel Coker: 19th Century Black Church Organizer, Educator and Missionary,” <em>Journal of the Interdenominational Theological Center</em> 3 (1975): 17-31; Larry G. Murphy, J. Gordon Melton, and Gary L. Wards, eds., <em>Encyclopedia of African American Religions</em> (1993); Isaiah H. Welch, <em>The Heroism of the Rev. Richard Allen</em> (1910).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Coker, Daniel (Isaac Wright)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +742,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +781,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -607,8 +607,93 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><strong>His Background</strong></p>
+
+<p>Joseph Abiodun Adetiloye was born on Christmas day, December 25, 1929 in Odo-Owa, Ekiti State. His father who was a very staunch Christian and a hardworking farmer who died in 1932 when he was three years old, leaving him and his siblings in the hands of his mother. With God’s help, he was admitted into primary school in 1937. Life as a student was not so easy for him but he strived to make the best of it. It was recorded that he was always neat in school each day despite the fact that he had only one uniform. He was very studious and particularly good in his classwork as well as in his activities in the church choir.</p>
+
+<p>Very early in life, he knew he was going to be a priest. Although his vision seemed bleak during his school years, he was still at home. A small Muslim group in the town looked up to him for organization and leadership. As a result, people in the town thought he was going to become a Muslim priest and some were already calling him Alfa Braimoh.  The members indeed wished they could have him on their side but God had a better plan for him. He had been brought up in a Christian environment and was already fond of following Christian groups in their efforts to evangelize non-Christians in the town.</p>
+
+<p><strong>His Early Struggles and Ministry Attainments</strong></p>
+
+<p>After passing with distinction his first school leaving certificate examination in 1944 he taught for six years.  By the sixth year, he was the acting church agent at St Paul’s Church Ara-Yero (now called Araromi) some nine kilometers from Odo-Owa, his home town.</p>
+
+<p>In 1949, he decided to go to Melville Hall, Kudeti, Ibadan to be trained as a priest. His ordination into the ministry began at the end of 1953 when he was made a deacon at the Cathedral Church of Lagos by the first archbishop of West Africa, the Most Reverend Leslie Gordon Vining.</p>
+
+<p>He was posted to St Peter’s Church, Ake, Abeokuta, as curate in 1954. He was a chaplain to Vining and later to Howells. This relationship opened him up for further studies at Wycliff Hall, Oxford.</p>
+
+<p>Although it was quite difficult for him financially in London, he was able to cope as a result of his involvement in some parish ministries at St. Georges Leeds and later as curate of St. Mary’s Church Plaistow. Upon his return he taught at Immanuel College of Theology, Ibadan. He left the college after four years and three months of service and was later inducted as the vicar and provost of the cathedral church of St. James, Ibadan, on August 10, 1966. By August 1970, he was appointed and elected bishop of Ekiti. From here he was transferred to Lagos.</p>
+
+<p>On the 26th day of December, 1985 a day after his fifty-sixth birthday, Adetiloye was enthroned as the sixth primate of the Nigerian Anglican Communion at the Cathedral Church of Lagos by the archbishop of Nigeria at that time, the Most Reverend Dr. Timothy Omolayo Olufosoye.</p>
+
+<p>During his tenure, growth and spiritual awakening were brought to the Anglican Community not only in Nigeria but all over the Anglican world at large.</p>
+
+<p><strong>His Achievements</strong></p>
+
+<p>His passion for evangelism and missions motivated him to judiciously mobilize financial resources from the Lagos diocese: directly, by challenging men to give and leading by his example; indirectly, by encouraging wealthy parishes to support seemingly weak ones or even planting new churches or opening a new diocese as the case may be. This move brought tremendous growth to the Anglican communion particularly in northern Nigeria.</p>
+
+<p>Under Adetiloye, the church of Nigeria Anglican Communion also sponsored evangelism activities and mission work in foreign lands.</p>
+
+<p>Adetiloye was not merely committed to evangelization.  His deep commitment to the importance of conversion has resulted in transformation on a personal level and in the community which must be the ultimate goal of the churches in world missions.</p>
+
+<p>So great was the impact of Adetiloye’s ministry that the Archbishop of Canterbury Dr. George Carey recommended some of his various achievements to the Church of England to make the church more relevant to British society as it is with the Anglican Communion in Nigeria today. Aside from his evangelism, missionary and spiritual crusades, Adetiloye’s ministry also recorded significant landmarks’ in the areas of education, health, economic empowerment, youth mobilization and much more.</p>
+
+<p>Adetiloye retired in December 1999 from active service but undoubtedly left his indelible mark on the Anglican Communion worldwide.</p>
+
+<p>Adetiloye died in 2012.</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>“Heroes of the 20th Century Church” in <em>Triumphant March,</em> Vol. 1, No. 2.</p>
+
+<p>Files on notable Nigerian ministers at the Christian Association of Nigeria Secretariat.</p>
+
+<hr />
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Adetiloye, Joseph Abiodun (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +772,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +811,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

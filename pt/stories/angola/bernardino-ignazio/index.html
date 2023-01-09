@@ -606,8 +606,64 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>O Inácio da Asti Bernardino foi o autor italiano de um dos manuais missionárias mais cedo da Igreja Católica. O Bernardino chegou em Luanda, na Angola de hoje, como um missionário dos capuchinhos em 1741. Dois anos mais tarde, ele foi enviado ao norte para a missão principal da ordem, Soyo, que estava sem um missionário por seis meses seguindo uma contenda com o chefe. Ele foi instruído abandonar a missão se a situação provasse impossível. Entretanto, com a ajuda de uma equipa forte e leal de intérpretes congolenses, professores e empregados da missão, ele continuou o trabalho da missão com êxito. Ele agiu como vice-prefeito em Luanda de agosto de 1746 até junho de 1748. Enquanto ele estava na missão de Soyo, ele foi curado milagrosamente de uma doença do olho ministrado por seu antigo mestre noviciado, o Inácio de Santhià. Em 1749 ele regressou para Itália onde ele apresentou duas memorandas à Propaganda Fide e também escreveu <em>Missione em práctica</em>, um manual missionário. Em março de 1750, ele foi enviado para Baía, Brasil onde ele morreu.</p>
+
+<p>O manual do Bernardino foi finalmente publicado em 1931 com uma tradução em francês, mas com a sua autoria indevidamente atribuído. Escrito como um conselho piedoso para aqueles desejando servir como missionários, o manual fornece informação detalhada e fascinante da vida diária da missão de Soyo nos meados do século 18.</p>
+
+<p><strong>Richard Gray</strong></p>
+
+<hr />
+
+<h1 id="bibliografia">Bibliografia</h1>
+<p>T. Filesi and Isidoro de Villapadierna, <em>La “Missio Antiqua” dei Cappuccini nel Congo</em> (1978); J. Nothomb, ed., <em>La pratique missionnaire des PP. Capucins Italiens dans les royaumes de Congo, Angola et contrées adjacentes</em> (1931).</p>
+
+<hr />
+
+<p>Este artigo reproduzido, com permissão, do <em>Biographical Dictionary of Christian Missions</em>, direitos autorais © 1998, por Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. Todos os direitos reservados.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Bernardino, Ignazio da Asti`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Leia várias versões: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -690,7 +746,7 @@
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 02 January 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 14 December 2022.<br>&copy; 2022 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -725,6 +781,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

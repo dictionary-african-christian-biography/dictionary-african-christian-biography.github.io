@@ -605,8 +605,73 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Né en Bourgogne en 1884, Pierre Marchet entra à la Compagnie de Jésus à l’âge de 17 ans et se destina dès ses débuts à l’enseignement. Il fit un premier séjour à Tananarive où il enseigna pendant trois ans au Collège Saint-Michel (de 1909 à 1912), puis acheva sa formation en Europe. Ordonné prêtre en 1914, il revint à Madagascar en 1920, pays qu’il ne devait plus quitter.</p>
+
+<p>Il fit pendant deux ans l’apprentissage de la vie missionnaire à Ambositra et à Fanjakana et, le 1er janvier 1923, sa formation achevée, il était envoyé au Collège St-Joseph de Fianarantsoa que les Frères des Écoles Chrétiennes, qui l’avaient fondé, venaient de confier aux Jésuites. Il y consacra toute sa vie.</p>
+
+<p>Pendant près de 25 ans, le P. Marchet en fut le “Préfet,” c’est-à-dire le directeur effectif. Tout en assurant des tâches d’enseignement, il effectuait chaque correspondance avec leurs familles et s’occupait de l’intendance de la maison, notamment des repas. Cédant ce poste à plus jeune que lui, il se chargea pendant vingt-cinq autres années de la formation des élèves du 1er cours qui préparaient l’examen du certificat d’aptitude à l’enseignement.</p>
+
+<p>Il était en outre un fin musicien veillant à la perfection des chants, tant à la Cathédrale de Fianarantsoa qu’au Collège St. Joseph.</p>
+
+<p>Enseignant et éducateur, il tenait à inculquer à ses élèves, en vue de leur avenir, une grande aisance dans le maniement du français et rédigea à leur intention plusieurs livrets d’“Exercices français.” Les résultats furent à la mesure de la méthode et de l’énergie déployée par le maître. Des milliers de jeunes acquirent une connaissance excellente du français, remportant de brillants résultats aux examens. Certains accédèrent aux plus hauts postes dans la fonction publique, voire au sein du Gouvernement, et dans l’Église. Plus que la récompense officielle d’Officier d’Académie accordée par le Gouvernement français, la grande satisfaction du P. Marchet fut de voir de ses anciens élèves devenir évêques; notamment Mgr Charles-Rémi Rakotonirina, Evêque de Farafangana, fils de son auxiliaire M. Rémi-Jules Randria.</p>
+
+<p>Doté d’une solide santé physique mais affecté d’une grande myopie, le P. Marchet dût avec l’âge restreindre considérablement ses activités. Il ne pouvait plus, les dernières années, ni lire, ni écrire, ni entretenir une conversation. Il s’éteignit le dimanche 15 mai 1977, étant, avec ses quatre-vingt-treize ans d’âge, ses soixante-quinze ans de vie religieuse et cinquante-sept ans de présence à Fianarantsoa, le doyen de la Mission.</p>
+
+<p>Raymond Delval</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p>Chine-Madagascar, Lille, 1977.</p>
+
+<hr />
+
+<p>Cet article, réimprîmé ici avec permission, est tiré d’<em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em>, tome 3, publié en 1977 par l’Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Marchet, Pierre`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +752,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +789,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

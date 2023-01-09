@@ -605,8 +605,75 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Borgen fut un des pionniers de l’œuvre luthérienne à Madagascar. Norvégien né à Kongsberg (Norvège) en 1834, il fit ses études de théologie au Séminaire des Missions norvégiennes (N.M.S.) à Stavanger (1859-1864). Puis il étudia la médecine et compléta ses connaissances en hébreu et en grec à l’Université de Christiania (devenue Oslo). Consacré pasteur en 1865 et nommé à Madagascar, il y arriva en 1867, conduit par l’évêque luthérien Schreuder. Il était le troisième missionnaire norvégien débarqué, deux autres, les pasteurs J. Engh et N. Nilsen, étant arrivés l’année précédente. Après avoir appris le malgache et participé à l’évangélisation de la région de Bétafo, il fonda la station missionnaire de Masinandraina, près d’Antsirabé, en 1869 et y resta jusqu’en 1873.</p>
+
+<p>Ce séjour sur les Hautes Terres fut coupé en 1870 par un voyage de reconnaissance de la côte ouest. Borgen partit par Tamatave (côte est) et, par mer, alla à Tuléar puis à Morondava, accompagnant Chr. Borchgrevink. Puis, par terre, seul, malgré les risques très sérieux à cette époque, il remonta de Morondava à Fianarantsoa, puis à Antsirabé. Cette exploration prépara l’œuvre de la Mission luthérienne sur la côte ouest qui débuta en 1874.</p>
+
+<p>En 1873, à Tananarive, une commission intermissionnaire protestante entreprit la révision de la Bible malgache. Elle était présidée par W. E. Cousins. Borgen, à cause de ses compétences en hébreu et en grec fut envoyé pour y siéger et il y joua un rôle très actif. En même temps, il dirigeait une école de garçons de la capitale et enseignait au Séminaire luthérien fondé par L. Dahle en 1871. C’est alors qu’il aida ce dernier à collecter les “Contes des Aïeux, <em>Anganon ‘ny Ntaolo</em>.”</p>
+
+<p>Borgen n’a laissé aucune œuvre littéraire originale, mais il traduisit du norvégien en malgache plusieurs ouvrages fondamentaux encore employés de nos jours, dont le “Petit catéchisme” de Luther.</p>
+
+<p>Son épouse n’étant pas en bonne santé, Borgen dut rentrer en Norvège en 1882 avant que la révision de la Bible ne fût terminée. Malgré sa connaissance approfondie du malgache il ne retourna plus dans l’île. Il resta néanmoins au service de la N.M .S. qui l’envoya en Afrique du Sud. Après quelques années de retraite dans son pays, il revint en Afrique du Sud et mourut à Durban en 1915.</p>
+
+<p>O. Chr. Dahl, L. Molet</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p><em>Katekisma, na fotopianarana no soratany Dr M. Luther</em> [Le petit catéchisme de Luther]. Stavanger, 1873.</p>
+
+<p><em>Ny tantara ny Soratra Masina.</em> [Histoire biblique]. Antananarivo, 1874.</p>
+
+<p><em>Ny tantaran’ny eklesia.</em> [Histoire de l’Église]. Antananarivo, 1879.</p>
+
+<hr />
+
+<p>Cet article, réimprîmé ici avec permission, est tiré d’<em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em>, tome 3, publié en 1977 par l’Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Borgen, Martinius`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +754,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +791,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

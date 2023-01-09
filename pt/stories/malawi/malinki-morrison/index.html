@@ -606,8 +606,67 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Evangelista africano e professor. Ele nasceu provavelmente por volta de 1852; ele dizia que nasceu antes que o homem branco chegasse em grande número a seu país. Sua terra natal era Nyasaland. Ele foi vendido como escravo três vezes, e sempre foi resgatado ou escapou dos seus donos. Em 1884 viu um homem branco pela primeira vez, e quatro anos depois entrou para a Missão da Igreja da Escócia em Blantyre, onde foi educado. Em 1890 ele completou seus estudos escolares e obteve seu certificado de professor.</p>
+
+<p>Em 1892 Malinki conheceu Joseph Booth, missionário da Missão Zambezi; casou-se no mesmo ano e Booth batizou o casal. Booth então entrou para a Igreja Batista do Sétimo Dia, convenceu Malinki que o sétimo dia era o Sabbath, e então ele começou a guardar o sábado.</p>
+
+<p>Em 1900 Milinki abriu sua primeira escola perto de Cileka. Quando Thomas Branch, um dos primeiros trabalhadores adventistas do sétimo dia de Nyasaland, chegou como encarregado da Missão Plainfield em 1902, conheceu a escola de Malinki e o encorajou. Malinki continuou a fundar escolas nos arredores de Cileka, até ter cinco escolas sob sua supervisão.</p>
+
+<p>Em 1907 Joel Rogers substituiu Thomas Branch na Missão Plainfield, e deu-lhe o nome de Malamulo. No ano seguinte, Rogers persuadiu Malinki a passar o controle das escolas para a Missão. Ele, no entanto, foi nomeado como inspetor escolar de todas as escolas Adventistas do Sétimo Dia nas vilas em Nyasaland do Sul, posto que ocupou durante treze anos.</p>
+
+<p>Em 1920 Malinki com outros dois evangelistas africanos foram nomeados como encarregados dos distritos da Missão. Não foi uma surpresa que o seu distrito ficasse próximo da sua casa em Monekera, perto de Cileka. Em 1927, ele formava parte de um pequeno grupo de pastores africanos ordenados ao ministério. Ele continuou como encarregado de distrito por vários anos.</p>
+
+<p>Em 1930, quando Malinki tinha setenta e oito anos de idade, teve que aposentar-se do trabalho administrativo, mas continuou dando palestras em institutos e acampamentos.</p>
+
+<p>Ele faleceu na boa idade de 105 anos.</p>
+
+<hr />
+
+<p>Este artigo foi reimpresso com a permissão da: <em>Seventh-Day Adventist Encyclopedia</em>, copyright © de Review e Herald Publishing Association, 55 West Oak Ridge Drive, Hagerstown, Maryland 21740, 800-765-6955.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Malinki, K. Morrison`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Leia várias versões: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -690,7 +749,7 @@
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 02 January 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 14 December 2022.<br>&copy; 2022 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -725,6 +784,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

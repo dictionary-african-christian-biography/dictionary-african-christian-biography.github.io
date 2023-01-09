@@ -607,8 +607,65 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>John Engh, along with Nils Nilsen, was one of the first Norwegian missionaries to go to Madagascar in the last quarter of the nineteenth century.</p>
+
+<p>Engh was born on October 3, 1833, in Öyer, Norway. After having completed his studies at the Lutheran Seminary of the Norwegian Missionary Society (NMS) in Stavanger, he was ordained in 1864, and sent to Madagascar, where he arrived in 1866. He studied Malagasy in Antananarivo and set up his work in Betafo, in the Vakinankaratra, in 1867, where he stayed until his final departure in 1899.</p>
+
+<p>The early NMS work in Madagascar was difficult because the missionaries of the London Missionary Society (LMS), who were English Congregationalists, were apprehensive about competition coming from another mission. Also, Malagasy authorities at that time were suspicious of people who came from an unknown nation, one that had no diplomatic representation with their government. However, these tensions were quickly resolved and excellent relationships were established with the authorities as well as with the LMS.</p>
+
+<p>The work in Betafo grew very rapidly, and Engh’s friendliness and perseverance earned him the trust of the Malagasy people. In 1899, after thirty-two years of ministry, there were seventy-six churches in his missionary district that altogether had 12,000 members.</p>
+
+<p>Engh died in Stavanger on May 3, in 1900.</p>
+
+<p>O. Chr. Dahl, L. Molet</p>
+
+<hr />
+
+<p>The above article, reprinted here by permission, is from <em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em> [People and Destinies: an Overseas Biographical Dictionary], vol. 3, published in 1977 by the Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Engh, John`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +744,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +783,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

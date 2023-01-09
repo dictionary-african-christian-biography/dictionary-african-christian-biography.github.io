@@ -601,8 +601,64 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Norman P(ercy) Grubb was a leader of the Worldwide Evangelization Crusade (WEC). Born in Bournemouth, England, the older brother of Kenneth Grubb, Norman Grubb was active in Christian witness in his regiment during World War I, when he also received the Military Cross for meritorious action. He enrolled at Cambridge University and helped to establish InterVarsity Christian Fellowship in Britain. Marrying Pauline Studd, the daughter of C. T. Studd, founder of WEC, Grubb served from 1920 to 1927 in the northern Belgian Congo (Zaire), where he helped translate the New Testament into Bangala. In 1928 he accepted responsibility for representing WEC in Britain, and after C. T. Studd’s death in 1931, was appointed general secretary. Inheriting a faltering force of thirty missionaries and insufficient support, Grubb implemented a consensus style of leadership, introduced the “faith mission” basis of support for home-based personnel, and pressed for expansion. When he retired in 1965, WEC numbered 800 missionaries in twenty countries. With his personal encouragement, the Christian Literature Crusade, a sister mission, was founded in 1947.
+Continuing his ministry as author and speaker in his later years, Grubb emphasized “union life” in Christ and is credited with helping many around the world find a richer spiritual life. From 1957 the Grubbs made their home on WEC property at Fort Washington, Pennsylvania, where his wife Pauline predeceased him in 1981.</p>
+
+<p>Robert T. Coote</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Norman Grubb, <em>C. T. Studd: Cricketeer and Pioneer</em> (1946), <em>Jack Harrison, Successor to C. T. Studd</em> (1949), <em>Once Caught, No Escape</em> (1969; his autobiography), and several works on “deeper life” themes.</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Grubb, Norman P(ercy)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -681,7 +737,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -720,6 +776,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -607,8 +607,67 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Canadian-born missionary, administrator, and linguist.  He was baptized in North Dakota in 1899, and attended Union College in 1900 and 1901.  In 1902 he was sent to work as a colporteur in Scotland, Wales, and England.  He also assisted in evangelistic meetings, and in 1904 entered Duncombe Hall Training College (now Newbold College), where he completed his course in September 1906.</p>
+
+<p>In 1906 he accepted a call to open up Seventh-day Adventist work in Kenya, East Africa, with the arrangement that his fiancée, Helen Thomson, be sent out the next year.  After his ordination, late in 1906, he sailed for Mombasa with Peter Nyambo, an African teacher from Nyasaland who had been attending school in England.</p>
+
+<p>Carscallen spent the next thirteen years pioneering in Kenya as superintendent of the British East Africa Mission.  Under his direction a string of mission stations was established along the eastern shore of Lake Victoria: Gendia, Wire Hill, Rusinga Island, Kanyadoto, Karungu, Kisii (Nyanchwa), and last Kamagambo.  Returning from furlough in 1913, he brought back a small press and set up a small printing plant at Gendia to publish books, papers, and a small monthly journal.</p>
+
+<p>He mastered the Luo language and was the first to reduce it to writing.  The grammar textbook he produced was widely used for many years.  He spent more than two years translating portions of the New Testament into the Luo tongue, which were published by the British and Foreign Bible Society.</p>
+
+<p>During World War I many of the missions were looted and damaged, and the workers, except Carscallen and one other, were kept from their stations for nearly two years.  Carscallen held the workers together through it all.</p>
+
+<p>In 1921 Carscallen returned with his family to the United States, where his wife died in the same year in Oregon.  In 1924 he married Anita Johnson.  After some years in pastoral work in the Dakotas, he worked in British Guiana from 1931 to 1942.  While he was president of the three united Guiana fields he helped demolish the old SDA church building in Georgetown and built another, doing much of the carpentry work himself.</p>
+
+<p>Still a pioneer, he offered himself for work in the interior of British Guiana among the Davis Indians, and went about the close of 1936 to Waramadong, near Mount Roraima, where he opened a mission.  Mastering the native dialect, he produced a dictionary and grammar in the local language.  In retirement in the United States he settled in La Sierra, California, and continued to visit churches and camp meetings, seeking to kindle a missionary spirit among young and old alike.</p>
+
+<hr />
+
+<p>This article is reprinted with permission from the <em>Seventh-Day Adventist Encyclopedia</em>, copyright © by Review and Herald Publishing Association, 55 West Oak Ridge Drive, Hagerstown, Maryland 21740, 800-765-6955.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Carscallen, Arthur Asa Grandville`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +746,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +785,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

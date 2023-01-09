@@ -607,8 +607,63 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Alexander Priestly Camphor was an African American missionary of the Methodist Episcopal Church. He was born to slave parents in Jefferson Parish, Louisiana. They died while he was a small child, and he was adopted and raised by Stephen Priestly, a white Methodist minister. Camphor was educated in Methodist Freedmen’s Aid schools, established in the South after the American Civil War. In 1887 he was graduated from New Orleans University. He taught mathematics there for four years and organized the Friends of Africa Society. He was graduated from Gammon Theological Seminary in 1895, after which he did postgraduate work at Columbia University and Union Theological Seminary, New York. Camphor and his wife, Mamie (Weathers), whom he married in 1893, were commissioned by the Methodist Episcopal Church in 1896 as missionaries to Liberia. He served as superintendent of Methodist schools in Liberia from 1896 to 1907. He also served as president of the College of West Africa (formerly Monrovia Seminary) until 1907, when he and his wife returned to America, where they remained for nine years. In 1916 he was elected the last missionary bishop for Liberia of the Methodist Episcopal Church and he returned there for three years. He died in South Orange, New Jersey.</p>
+
+<p>Sylvia M. Jacobs</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Alexander Camphor, <em>Missionary Story Sketches: Folklore from Africa</em> (1909, 1981). See also Wade Crawford Barclay, <em>History of Methodist Missions</em>, 4 vols. (1949-1973); Frederick Leete, <em>Methodist Bishops: Personal Notes and Bibliography</em> (1948); Walter Williams, <em>Black Americans and the Evangelization of Africa 1877-1900</em> (1982).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Camphor, Alexander Priestly`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +742,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +781,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -607,8 +607,91 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <blockquote>
+  <p>God is good and we have met Him.
+–The Martyrs of the Christian Fraternity</p>
+
+</blockquote>
+
+<p>The isolated, mountainous country of Burundi, often called “the Switzerland of Africa,” has been the scene of some of Africa’s bitterest ethnic violence, a spillover from the genocide in neighboring Rwanda. At about 5:30 in the morning of April 30, 1997, armed invaders allegedly from the Hutu rebel group CNDD (the National Council for the Defense of Democracy) attacked the Roman Catholic Seminary at Buta, killing forty young seminarians between the ages of fifteen and twenty. Since the beginning of the country’s most recent civil war in October 1993, the seminary in the country’s south had been a tranquil refuge for members of the two warring ethnic groups. The pastoral Hutu and more nomadic Tutsi have been locked in deadly genocidal war since 1972.</p>
+
+<p>The seminarians themselves had made a special point of living in a Christian fraternity, where love of Christ was more important than ethnic origins. They had just completed an Easter season retreat before their massacre. Fr. Nicolas Niyungeko, rector of the Sanctuary of Buta in the Diocese of Bururi, wrote of the seminarians:</p>
+
+<blockquote>
+  <p>At the end of the retreat, this class was enlivened by a new kind of spirit, which seemed to be a preparation for the holy death of these innocents. Full of rejoicing and joy, the word in their mouths was “God is good and we have met Him.” They spoke of heaven as if they had just come from it, and of the priesthood as if they had just been ordained …. One realized that something very strong had happened in their heart, without knowing exactly what it was. From that day on, they prayed, they sang, they danced to church, happy to discover, as it were, the treasure of Heaven.</p>
+
+  <p>The following day, when the murderers surprised them in bed, the seminarians were ordered to separate into two groups, the
+Hutus on one hand, the Tutsi on the other. They wanted to kill some of them, but the seminarians refused, preferring to die together. Their evil scheme having failed, the killers rushed on the children and slaughtered them with rifles and grenades. At that point some of the seminarians were heard singing psalms of praise and others were saying “Forgive them Lord, for they know not what they do.” Others, instead of fighting or trying to run away, preferred helping their distressed brothers, knowing exactly what was going to happen to them.</p>
+
+  <p>Their death was like a soft and light path from their dormitory to another resting place, without pain, without noise, nor fear. They died like Martyrs of the Fraternity, thus honoring the Church of Burundi, where many sons and daughters were led astray by hatred and ethnic vengeance.[1]</p>
+
+</blockquote>
+
+<p>Forty days after the massacre, the small seminary dedicated its church to Mary, Queen of Peace, and it has since, according to Fr. Niyungeko, “become a place of pilgrimage where Burundians come to pray for the reconciliation of their people, for peace, conversion, and hope for all. May their testimony of faith, unity, and fraternity send a message for humankind and their blood become a seed for peace in our country and the world.”</p>
+
+<blockquote>
+  <p>Almighty God, you call your witnesses from every nation and reveal your glory in their lives. Make us thankful for the example of the Martyrs of the Christian Fraternity of Burundi, and strengthen us by their example, that we, like them, may be faithful in the service of your kingdom, through Jesus Christ our Lord. Amen. <em>–Celebrating Common Prayer,</em> 489.</p>
+
+</blockquote>
+
+<p>Frederick Quinn</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>Nicholas Niyungeko, “What’s New in Burundi!” e-mail from Servane
+Ronin-Vermauwt to Frederick Quinn, January 10, 2001.</li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>African Saints: Saints, Martyrs, and Holy People from the Continent of Africa</em>, copyright © 2002 by Frederick Quinn, Crossroads Publishing Company, New York, New York.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Martyrs of the Christian Fraternity, The`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +770,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +809,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

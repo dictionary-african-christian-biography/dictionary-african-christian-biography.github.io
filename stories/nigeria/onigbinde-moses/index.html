@@ -607,8 +607,81 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Pa Moses Akande Onigbinde, though a layperson and business man in his younger days, was instrumental in introducing the United Gospel Faith Tabernacle Church to the Yoruba in the northern part of Nigeria. He contributed to the spread of the denomination in Yorubaland by bringing it to his hometown of Ogbomosho, one of the major towns in Yorubaland. With a little education acquired in adult school, but also with exceptional leadership qualities, today he stands out as a true example of a man who stood with God without compromising his faith in a country where corruption is celebrated. A strict disciplinarian, Pa Onigbinde made sure he bequeathed these values to his children with a legacy of hard work and commitment to the things of God.</p>
+
+<p>Moses Akande Onigbinde was born around 1901 into the family of Igbintoye Onigbinde and Oyenike Adika in Ogbomosho, in the western part of Nigeria. Moses was his baptismal name. His father died when he was fifteen and he had to leave home in order to to support his siblings because he was the oldest.</p>
+
+<p>He came to Jos, in the north, in 1928. Having a Baptist background he naturally attended the Baptist church where he played the drums because he came from a family of drummers. Moses, who had accepted Christ as a young man, soon had conflicts with his guardians in Jos. Being highly principled, Onigbinde would not play drums in the beer parlor where his guardians and friends relaxed in the evening. He felt it was not right to play drums in church on Sunday and in drinking spots on weekdays.</p>
+
+<p>When his uncle threw him out as a result of their conflicts, he found refuge in the home of Mr. Nathan Okoye, an Ibo man who was a member of Faith Tabernacle congregation in Jos. This was his introduction to that denomination where holiness and separation from the world were the main emphasis.</p>
+
+<p>Despite Mr. Okoye’s generosity, Onigbinde still had to fend for himself, sometimes going without pay, walking to church from Jos to Bukuru and back–a distance of about nine miles–and often living from hand to mouth.</p>
+
+<p>He eventually found a companion in his wife, Dorcas Oyebisi who was also thrown out of her home for deciding to leave the Islamic faith to marry Onigbinde, a Christian.</p>
+
+<p>Onigbinde taught his children how to read and write in Yoruba and bought them their first Bibles. Many of his children, even today, are at the forefront of the work of God in various denominations and Christian organizations across the country (2009).</p>
+
+<p>With Onigbinde, there was no shortcut to success. He believed that business and religion are inseparable and should therefore be treated with the same passion. He made sacrifices to please both his customers and his parishioners. He instilled the values of hard work and belief in God not only in his children but also in all those who crossed his path. His catch phrase was, “Have faith in God and believe in yourself and you will achieve your goal.” True to his convictions, he lived a life of integrity and practiced what he preached. In a society where covetousness is the order of the day, material interests did not matter to Onigbinde. He saw everything that he had as God’s and so made immense contributions to the life of the church.</p>
+
+<p>Onigbinde has served on the board of the United Gospel Faith Tabernacle Church that has its headquarters in Jos. Among his contributions to the church are the compilations of the church hymnal and Sunday school manual. He sponsored the training of many pastors and missionary work in Nigeria’s hinterland regardless of church affiliation. He also played a major role in the founding of the United Gospel Faith Tabernacle College in Jarawan Kogi, a school that has produced many church leaders and accomplished administrators both in the public and private sectors of Nigeria.</p>
+
+<p>He was also treasurer for the Bible Society of Nigeria, and an active member of the Christian Association of Nigeria (CAN). Onigbinde has distinguished himself in the service of God and, although very old, has continued to participate in the church, not missing a church service except in the case of illness or indisposition. He also still makes time to help at the supermarket, a business he started as a young man. Today, though well over 100 years old, many still look to him for guidance on both religious and secular issues (2009).</p>
+
+<hr />
+
+<p>Sources:</p>
+
+<p>Jonathan Onigbinde, son of Moses Onigbinde, interview.</p>
+
+<p>Humachi Danu Wonosikou, a lawyer with whom Jonathan Onigbinde worked to produce the write up.</p>
+
+<hr />
+
+<p>This article, received in 2009, was adapted from Mr. Wonosikou’s write up by Mrs. Olabisi Chukwudile, <em>DACB</em> Project Luke affiliate 2008-2009 and Director of the Women Who Care program of Children Evangelism Ministry International, headquartered in Ilorin, Nigeria.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Onigbinde, Moses Akande`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +760,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +799,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

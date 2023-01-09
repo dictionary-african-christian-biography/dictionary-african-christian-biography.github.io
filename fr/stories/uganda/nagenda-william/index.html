@@ -605,8 +605,85 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/uganda/nagenda-william/nagenda_will.jpg" alt="image" class="bio" /><img src="/images/bio-pics/uganda/nagenda-william/nagenda_sala.jpg" alt="image" class="bio" /> William Nagenda est né dans une grande famille et son père Festo Manyangenda était un chef Muganda respecté qui vivait sur la colline de Namirembe, Kampala, en Ouganda. Après avoir fait l’école primaire à Kampala, il était élève à King’s College, Budo. De là il a obtenu le diplôme au collège universitaire de Makerere avant que cette institution n’ait obtenu le statut d’université. Grâce à sa maîtrise de l’anglais, il a obtenu un poste au bureau du gouvernement à Entebbe.</p>
+
+<p>Élevé dans un foyer chrétien, William avait décidé très tôt d’être missionnaire au Congo, mais il savait que sa foi n’était qu’une comédie. De l’extérieur, il était très réussi au travail, mais à l’intérieur, sa vie commençait à mal tourner. Il a fait la connaissance de Simeoni Nsibambi, et le Seigneur Jésus Christ, à propos de qui il a beaucoup appris, est devenu réel pour lui. Tellement réel, en fait, qu’une brève histoire de sa vie avait comme titre: <em>William Nagenda: quelqu’un qui aimait Jésus</em>.</p>
+
+<p>William a épousé Sala, fille de Erasto Bakaluba, qui était membre de la faculté à King’s College à Budo. Elle avait reçu son éducation au lycée de Gayaza.</p>
+
+<p>Peu après sa conversion, William s’est présenté à l’évêque de l’Ouganda et a offert de servir l’église à plein temps. En préparation pour la formation à l’ordination, on lui a offert un travail d’enseignant dans une école à Gahini, au Rwanda. C’est là que lui et sala ont rejoint une équipe de travailleurs qui comprenait Yosiya et Dorokasi Kinuka et les drs. Joe et Cecie Church.</p>
+
+<p>Au cours de l’année qui a suivi le congrès de Kabale de septembre 1935, il y a eu des manifestations de renouveau remarquables dans le district de Kigezi, en Ouganda, et au Rwanda, surtout à Gahini. William a eu l’expérience du pouvoir revivifiant de Dieu. A cause de sa grande énergie, de sa sincérité calme, de son analyse spirituelle perspicace des situations et de la gentillesse de sa prédication, il a joué un rôle de leader dans les équipes de témoignage et dans les congrès organisés dans l’ensemble de l’Afrique de l’Est.</p>
+
+<p>En 1940, William s’est inscrit à la faculté de théologie de Mukono, en Ouganda, pour recevoir la formation amenant à l’ordination. A cause d’une situation que tous ont reconnu comme malheureuse par la suite, le zèle d’une trentaine d’étudiants a été pris pour une rébellion, et ils ont tous été expulsés, y compris William. A partir de ce temps-là, William est devenu évangéliste, et sa base se trouvait dans une plantation de thé chrétienne, à Namutamba.</p>
+
+<p>En 1946, William a été invité en Angleterre pour rejoindre le rév. Yosiya Kinuka et le dr. Joe Church pour faire une tournée de témoignage suite à leur participation au renouveau est africain. Au cours des dix-huit ans suivants, William, qui était accompagné normalement du dr. Joe Church, a visité l’Inde et de nombreux pays en Europe et aux Amériques.</p>
+
+<p>Dans les congrès et les tournées auxquelles il participait, William était le leader. Chez lui, sa vie avec Sala s’est avérée être un témoignage puissant du pouvoir de l’évangile.</p>
+
+<p>En 1964, on a remarqué quelques manifestations de la maladie, (qui à l’époque avait été diagnostiquée comme une “sénilité prématurée”) qui allait progressivement rendre les engagements publics impossibles. Dans la dernière partie de sa vie, ce serait lui qui commençait à parler, mais c’était Sala qui continuait à communiquer le message de Dieu qui passait désormais par les deux personnes, et non plus seulement par lui.</p>
+
+<p>William a laissé un héritage durable dans la vie de nombreuses personnes d’origines diverses, qui ont pu rendre grâces à Dieu pour “William - celui qui aimait Jésus.”</p>
+
+<p>H.H. Osborn</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p>Dr. J.E. Church, <em>William Nagenda - a lover of Jesus</em> [William Nagenda - celui qui aimait Jésus]</p>
+
+<p>———. <em>Quest for the Highest</em> [A la recherche du plus haut] (Paternoster, 1981).</p>
+
+<p>H.H. Osborn, <em>Pioneers in the East African revival</em> [Les pionniers du renouveau est africain] (Apologia, 2000).</p>
+
+<hr />
+
+<p>Ce récit, soumis en 2002, a été rédigé et écrit pour le <em>DiBiCA</em> par le dr. H.H. Osborn, auteur du livre mentionné ci-dessus.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Nagenda, William (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +764,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +801,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

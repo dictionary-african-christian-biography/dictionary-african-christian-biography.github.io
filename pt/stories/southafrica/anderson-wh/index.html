@@ -606,8 +606,65 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>William Harrison Anderson foi um missionário pioneiro para África entre 1895 e 1944. Ele nasceu na vila de México, província de Indiana, EUA. Harry Anderson, como foi conhecido por seus melhores amigos, foi formado no Colégio de Battle Creek nos EUA completando o curso em 1895. Também foi aí onde ele se converteu. No Colégio de Battle Creek, ele tomou uma parte importante na primeira organização missionária entre os estudantes. Mesmo como jovem bem novo, sentiu-se chamado para o campo missionário.</p>
+
+<p>Em 1895, uns meses antes da sua graduação, ele se juntou com o G. B. Tripp e Dr. A. S. Carmichael para criar o grupo de missionários que formaram a primeira missão permanente da Igreja Adventista do Sétimo Dia para o povo de África. Antes de partir da sua terra natal, Anderson casou-se com a Sra. Nora Haysmer. Ao chegar na África do Sul, o grupo procedeu por comboio para a cidade de Mafeking. Depois disso, viajaram mais seis semanas por carroça de bois para o lugar designado para a Missão de Solusi, perto da cidade de Bulawayo, Rodésia Sul (o caminho de ferro ainda não foi construído até aí).</p>
+
+<p>Os Andersons, junto com os outros obreiros de Solusi, experimentaram muitas dificuldades. Durante a rebelião do povo Matabele em 1896, eles passaram vários meses na cidade de Bulawayo. Em 1898, uns membros do grupo morreram com malaria, e outros deixaram o país. Um segundo grupo maior, também sofreu numa maneira semelhante, e por 1901, o William Anderson e a esposa foram os únicos obreiros restados na Missão de Solusi.</p>
+
+<p>Em 1919, Anderson começou o trabalho pioneiro entre o povo Tswana. Ele passou pela terra deles em 1885 no caminho para Solusi. Em 1922, ele começou um trabalho em Angola e durante os oito anos seguintes ele estabeleceu várias missões naquele país.</p>
+
+<p>Os seus últimos quinze anos em África ele serviu como membro da equipa da Divisão de África (e mais tarde da Divisão de África Austral). O seu trabalho consistiu em escolhendo lugares para estabelecer novas missões, visitando os cultos dos acampamentos, realizando seminários, e dando conselho aos novos missionários.</p>
+
+<p>Em 1944, o Anderson tomou parte na celebração do Jubileu de Ouro na Missão de Solusi, guiando uma carroça de bois sobre a mesma terra onde ele começou o trabalho da missão há cinquenta anos antes. Em 1945, ele regressou aos Estados Unidos da América tendo servido por cinquenta anos em África. Ele escreveu o livro, <em>No Caminho de Livingstone (On the Trail of Livingstone)</em> em 1919. Este livro fez muito para animar a interesse de pessoas em missões africanas.</p>
+
+<hr />
+
+<p>Este artigo em ingles foi impresso com permissão da <em>Enciclopédia Adventista do Sétimo Dia</em>, direitos autorais © by Review and Herald Publishing Association, 55 West Oak Ridge Drive, Hagerstown, Maryland 21740, 800-765-6955.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Anderson, William Harrison (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Leia várias versões: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -690,7 +747,7 @@
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 02 January 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 14 December 2022.<br>&copy; 2022 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -725,6 +782,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

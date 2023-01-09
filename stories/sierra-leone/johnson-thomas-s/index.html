@@ -607,8 +607,67 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Sierra Leonean Anglican bishop.</p>
+
+<p>Johnson was born in Sierra Leone to a farming and trading family of mixed Igbo and Yoruba stock. Making the best of a village education, he taught in his village and then in Freetown, where he gained a scholarship to the Fourah Bay College and became headmaster of the Church Missionary Society (CMS) “Mohammedan School.” The difficulties of Muslim evangelism fueled his desire to improve his education; he took arts and theology degrees at Fourah Bay College. Rejected for the ministry, he returned to teaching but was eventually ordained as bishop’s chaplain in 1909. In 1911 he joined the staff of the Fourah Bay College, assisting in its financial rescue and increasing its impact (as a Christian institution with high academic standards) on local education. In 1933, after service as a diocesan inspector of schools  and as a pastor, he became principal of the prestigious Church Missionary Society grammar school, which had once refused him as a pupil. Thereafter, he was successively canon, archdeacon, and, in 1937, first assistant bishop of Sierra Leone. He attended the Tambaram Missionary Conference of 1938. In 1947, he retired to his village, Benguema, remaining active in community affairs.</p>
+
+<p>Johnson, while zealous for both education and evangelism (his interest in Muslim evangelism remained), was innovative in giving Christian direction and interpretation of cultural practices. His book <em>The Fear Fetish: Its Cause and Cure</em> (1949) insists on taking African worldviews seriously. He also wrote a history of the Sierra Leonean church, <em>The Story of a Mission</em> (1953). His influence on Harry Sawyerr and others merits a place in the history of African theology.</p>
+
+<p>Andrew F. Walls</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p><em>Crockford’s Clerical Directory,</em> 1951 - 1952, p. 688; M. Markwei, “Harry Sawyerr’s Patron (Bishop T. S. Johnson),” in M. E. Glasswell and E. W. Fashole-Luke, ed., <em>New Testament Christianity for Africa and the World</em> (1974), pp. 179 - 197; A. F. Walls, “The Theological Significance of Harry Sawyerr,” in <em>The Practice of Presence: Selected Papers of Harry Sawyerr</em>; J. Parratt, ed., (1995).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Johnson, Thomas Sylvester Claudius`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +746,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +785,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

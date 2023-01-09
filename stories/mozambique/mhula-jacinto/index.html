@@ -607,8 +607,86 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/mozambique/mhula-jacinto/Jacinto-Mhula.jpg" alt="Jacinto Mhula" class="bio" /></p>
+
+<p>Jacinto David Mhula was born at Manganze in the area of the Roman Catholic Mission near the road from Xai Xai to Manjacaze. When he was a boy, children were not allowed to attend the services of the Protestant churches if they wished to go to school. If children wanted to go to school they had to attend the Roman Catholic Church.</p>
+
+<p>At the age of fifteen Jacinto accepted Jesus as his Lord and Savior and surrendered himself to Him. He reported: “When I accepted Jesus as my Saviour and gave my life to Him, He worked a great transformation and many good things appeared in my life. I thank God for this. God also gave him a wife, Carolina, who is a ‘woman of prayer.’  We have nine children and a large number of grandchildren.”</p>
+
+<p>He continued:</p>
+
+<blockquote>
+  <p>When the revolution came in 1975 there was strong pressure put upon people to renounce their faith in God in exchange for promises of good places in their employment.  During this period the hand of God protected me and made me stronger in the faith, more resistant to temptation and more firmly attached to Christ.  As a prize, God did not permit any loss of my rights and privileges as an employee of Radio Mozambique and I progressed professionally until I retired. During this time I enrolled in the Nazarene Bible Institute’s evening classes and completed my theological training.  I felt God calling me to make a contribution as teacher and through this God has created a place for me to grow and be strengthened spiritually and socially….My  purpose is to always follow Christ to the end of my life because: “I know whom I have believed, and am convinced that he is able to guard what I have entrusted to him for that day” (1 Timothy 1:12). I know that He is able and faithful to keep His promises.</p>
+</blockquote>
+
+<p>Mhula became a teacher at the Nazarene Theological College in Maputo. This school was established in the mid-1980s after the Bible School at Tavane had been closed by the government in the mid 1970s. In 2000 Mhula became a member of the Maputo Central Church, was Chairman of the District Sunday School Ministries, and continued to serve on the faculty of Seminário Nazareno em Moçambique.[2]</p>
+
+<p>On June 4, 2002, Mhula was hit by a car while crossing the street near his home in Maputo. He suffered a fractured right leg and spent the next month in the hospital. He also suffered an internal injury that was not diagnosed by the doctors. His condition progressively deteriorated and when the cause was discovered, an infection had already spread through his body. Efforts to treat the injury and the infection came too late to save his life. Professor Mhula died on July 3, 2002.</p>
+
+<p>Jacinto Mhula was a faithful and outstanding lay leader in the Mozambican Church through the very difficult years of persecution.</p>
+
+<p>Paul S. Dayhoff</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>
+    <p>Restrick, David W., “The Church of the Nazarene and the Mozambican Revoluion, 1975 to 1982,”  Dissertation for the Doctor of Theology Degree at Boston University, School of Theology, 2001, p 307.</p>
+  </li>
+  <li>
+    <p>Mr Jacinto Mhula, Report, translation from Portuguese sent by Dave Restrick by E-mail, June 29, 2000.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Living Stones In Africa: Pioneers of the Church of the Nazarene</em>, revised edition, copyright © 1999, by Paul S. Dayhoff.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Mhula, Jacinto`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +765,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +804,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

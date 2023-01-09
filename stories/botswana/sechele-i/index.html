@@ -607,8 +607,71 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Sechele I (circa 1810-1892) was the last independent ruler of the northern Kwena (Bakwena) people of what is now Botswana, the principal group of the Hurutshe people of the Transvaal. The previous ruler, Motswasele, was assassinated in about 1821. In the disruption which followed, Motswasele’s son, Sechele, accepted protection of the Ngwato people, with Sechele marrying into the Khama family. When captured by opponents, Khama ransomed him, after which, with the support of the Kwena, he became their ruler.</p>
+
+<p>Beleaguered by the Matabele, Sechele and his people moved west until, after the Matabele were defeated by the Afrikaners in 1837, they were able to return to their original home at Sokwane. Here he was visited by David Livingstone in 1841. After further Matabele raids, the Kwena moved to other locations until, in 1847, Livingstone persuaded Sechele to move to Kolabeng where, in 1848, Livingstone, having taught him to read and write, baptized him: he was his first convert.</p>
+
+<p>In 1852, the Afrikaners of the Transvaal attacked him, and drove him into what is now Botswana, where he set up the Kwena capital at Molepolole.</p>
+
+<p>He helped place Macheng on the Bamangwato throne in 1857, but, later in 1872, helped Khama III to overthrow him.</p>
+
+<p>A Kwena-Kgatla war developed after 1871, while the Afrikaners again began to encroach on Kwena territory, leading Sechele to request a British Protectorate in 1885, after which the Kwena Kgatla conflict was settled. On Sechele’s death in 1892, he was succeeded by his son Sebele, who, in 1895, combined with the Bamangwato and the Ngwaketse to prevent a take-over by Cecil Rhodes’ British South Africa Company.</p>
+
+<p>Keith Irvine</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Mark R. Lippschutz and R. Kent Rasmussen, <em>Dictionary of African Historical Biography</em>, Chicago: Aldine Publishing Company, 1978; Richard P. Stevens, <em>Historical Dictionary of the Republic of Botswana</em>, Metuchen, New Jersey: The Scarecrow Press, 1975.</p>
+
+<hr />
+
+<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (In 20 Volumes). Volume Three: South Africa- Botswana-Lesotho-eswatini. Ed. Keith Irvine. Algonac, Michigan: Reference Publications Inc., 1995.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Sechele I`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +750,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +789,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

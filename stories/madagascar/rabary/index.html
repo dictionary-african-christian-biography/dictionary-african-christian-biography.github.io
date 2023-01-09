@@ -607,8 +607,78 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Rabary was a Malagasy teacher and writer. He was a second-generation
+Christian of noble descent. His family lived in different
+villages of the central part of Madagascar due to the demands
+of his evangelist father’s work. He was the youngest pupil
+to be admitted to the London Missionary Society normal school
+in 1876 and to the local medical school four years later.
+He experienced a spiritual crisis and thought he would find
+comfort in Catholicism, but kept the matter secret and lived
+in torment for some time. His father’s recommendation on his
+deathbed in 1879 guided his choice: Rabary was to succeed
+his father and pastor and evangelist. His studies were interrupted
+when he was called to join the courtiers’ circle of Queen
+Ranavalona II, but in 1882 one of the pastors of the palace
+church urged him to become a teacher.</p>
+
+<p>Rabary taught various subjects in different schools and circumstances while pursuing his studies with the assistance of missionaries. He became one of the first Malagasy to study in France, going to Paris in 1896, but stayed only for a few months. In 1900 he became pastor of the church of Avaratr’Andohalo but continued to teach and began to write. As a member of a patriotic movement against French colonization, he was imprisoned in 1915 and exiled from the capital from 1916 to 1918. His literary works covered many fields. Rabary is mainly remembered for his accounts of the progress of Christianity-more precisely of Protestantism-in Madagascar. His first book, <em>Ny Maritiora Malagasy</em> (Malagasy martyrs), appeared in 1910. A celebration of his achievements took place on his eightieth birthday, followed by others after his death.</p>
+
+<p>Yvette Ranjeva Rabetafika</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Many of Rabary’s works were published by the mission press in Antananarivo. L. A. Rabarison, <em>Le Pasteur Rabary</em> (1979); C. Rajoelisolo, <em>Andriamatoa Rabary sy ny Maritiora</em> (Rabary and the martyrs) (1944). The most extended biography is G. Ranaivo, <em>Andriamatoa Rabary</em> (1954).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Rabary`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +757,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +796,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

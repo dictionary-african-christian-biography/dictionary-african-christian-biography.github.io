@@ -607,8 +607,77 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Ruth Ngubelanga prayed for fifteen years for a holiness church to come to the Ciskei (Eastern Cape).  She was born in the Transkei and was raised in a well-respected church but found nothing to meet the real need of her life.</p>
+
+<p>She married and moved to the East London area in the Eastern Cape Region.  Here too she attended church, loved the Lord and wanted to be His child.  One morning, she awoke filled with fear.  She heard a voice calling her in the words of Matthew 11:28, “Come to me, all you who are weary and burdened, and I will give you rest.”  Her husband was away but she called friends to come and pray with her.  There in her home she gave her heart to the Lord.</p>
+
+<p>In 1965, the Dorothea Mission held a tent campaign at Duncan Village.  The preacher was Pastor Minaar Zwane (1929-) and Ruth heard the holiness message.  The Holy Spirit spoke to her about a picture that she kept at home and she brought it to be burned at the tent.  The Holy Spirit cleansed and filled her heart that day.  She began to live a holy life and follow God’s leading.  As she told others about what the Lord had done for her she experienced peace, joy and victory in the Lord that she had not known was possible in this life.</p>
+
+<p>Mrs. Ngubelanga could find no church there at Mdantsane that could help her.  So she worshipped at home, tried to tell others about the way of holiness and began to pray for a holiness church to come.  She cared for sixteen foster children.  Two were crippled and one was retarded.  Her husband became a Christian but he died in 1967.</p>
+
+<p>Then, one day in 1980, a friend told her of meetings being held by a Rev. Minaar Zwane.  God was answering her prayers.  Zwane was now a Nazarene preacher and the church had come to begin work in Mdantsane.  She joined and became an active member of the new congregation that was organized.[1]   In 1979, Rev. Joseph and Mrs, Ellen Penn were the first Nazarene missionaries in the Ciskei and were followed, in 1981, by Rev. Jack and Mrs, Mary Lou Riley.</p>
+
+<p>Paul S. Dayhoff</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>M. L. Riley, 1986, <em>The Ciskei
+Story: 20th Century Pioneers in Africa,</em> (Kansas
+City, MO: Nazarene Publishing House), 15-18: Rev. Alban
+Ngcobo, telephone conversation, Mdantsane, February
+12, 1996.</li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Living Stones In Africa: Pioneers of the Church of the Nazarene</em>, revised edition, copyright © 1999, by Paul S. Dayhoff.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Ngubelanga, Ruth`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +756,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +795,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

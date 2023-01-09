@@ -605,8 +605,67 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Missionnaire médical et homme d’état nigérian.</p>
+
+<p>Ibiam est né à Unwana, dans le sud-ouest du Nigéria, et a reçu son éducation à l’Institut de Formation Hope Waddell, à Calabar, et à King’s College, Lagos, avant de devenir le premier diplômé médical africain de l’université de St. Andrews, en 1934. Il a rejeté le travail lucratif dans la fonction publique, et (après un peu d’hésitation) a été accepté comme missionnaire médical de l’Église d’Écosse [Church of Scotland]. Il a fondé l’hôpital d’Abiriba (1936 - 1945) et a ensuite été responsable des hôpitaux missionnaires à Itu et à Uburu. Au cours de la période qui a précédé l’indépendance du Nigéria, on le considérait de plus en plus comme étant un représentant et un leader populaire ; il a servi au niveau du gouvernement local, dans l’Assemblée Régionale de l’Est, et dans les conseils législatifs et exécutifs. Il était partisan très actif de l’éducation primaire universelle, et aussi un des premiers à demander la création d’une université nigériane. En 1957, il est devenu directeur de Hope Waddell Institution. Quand l’indépendance est arrivée en 1960, il a été nommé gouverneur de l’est du Nigéria. Quand les événements de 1966–deux coups d’état militaires, la sécession du Biafra, et la guerre civile–ont renversé toutes les dispositions de la constitution Ibiam est devenu conseiller du gouvernement militaire du Biafra, et il a souvent représenté le Biafra à l’étranger, où ses contacts dans l’église l’ont aidé à obtenir des provisions de secours. Il a renoncé deux fois à être chevalier (ce titre lui a été décerné en 1951 et en 1960 par le roi britannique) pour protester contre le soutien anglais du gouvernement fédéral du Nigéria. Quand la guerre s’est terminée en 1970, il est resté au Nigéria et a travaillé pour la reconstruction et le secours de son pays avant de retourner au service médical honoraire.</p>
+
+<p>Au Nigéria, Ibiam était un personnage chrétien clé. Grâce à lui, plusieurs nouvelles initiatives ont vu le jour : la Société Biblique du Nigéria et l’Association Chrétienne Médicale, entre autres. Il a aussi servi comme président du Conseil Chrétien du Nigéria (1955 - 1958) et dans bien d’autres capacités comme représentant. Il a aussi été un personnage œcuménique africain remarquable dans la période de décolonisation, ayant servi comme directeur général du congrès qui a amené à la création de l’AACC (All Africa Conference of Churches–Congrès panafricain des églises), comme président de l’AACC et du CME (Conseil Mondial des Eglises), comme directeur du conseil des United Bible Societies, et comme leader de la mission pour la paix de l’AACC au Soudan. Dans sa région natale il était souverain traditionnel respecté, Eze Ogo Isiala 1er d’Unwana, et Osuji d’Uburu.</p>
+
+<p>Andrew F. Walls</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p>Geoffrey Johnston, <em>Of God and Maxim Guns; Presbyterianism in Nigeria, 1846-1966</em>, [De Dieu et des mitrailleuses Maxim: le presbytérianisme au Nigéria, 1846-1966] (1988) ; D. C. Nwafo, <em>Born to Serve: The Biography of Dr. Akanu Ibiam</em>, [Né pour servir: la Biographie du Dr. Akanu Ibiam] (1988); <em>The Scotsman</em>, 24 juillet 1995.</p>
+
+<hr />
+
+<p>Cet article est reproduit, avec permission, du <em>Biographical Dictionary of Christian Missions</em>, [Dictionnaire biographique des missions chrétiennes] copyright © 1988, par Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Ibiam, Francis Akanu (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +746,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +783,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

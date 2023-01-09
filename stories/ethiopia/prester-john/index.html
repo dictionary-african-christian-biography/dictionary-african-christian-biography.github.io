@@ -607,8 +607,75 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Prester John is the name given to a mythical medieval Christian priest-king of a vast empire in Central Asia, and later in Ethiopia. His first appearance in historical documents is in the Chronicle of Otto of Fresingen, who heard word of a powerful Christian sovereign reigning in the East in 1145 from a Syrian bishop who had arrived at the Papal Court in Viterbo. In 1177, Pope Alexander III wrote a letter to “Presbyter Iohannes,” hoping that he might become an ally of the European princes fighting to stop the Muslim advance in Mediterranean areas. At that time it was believed that Prester John was sovereign of an Asian country near India. During the Fifth Crusade, at the beginning of the 13th century, information about Ethiopia was collected by Crusaders in Egypt, and therefore the Christian sovereigns of Nubia and Ethiopia, always fighting to defend their faith, became known in Europe. It was rather obvious development that the Indian “Prester John” of former legend should become identified with the Emperor of Ethiopia, the more easily because, in the Middle East, India and Ethiopia were often confused; until the Renaissance, it was believed that only a narrow strait (“el cavo de Diab,” according to Fra Mauro, cartographer of Venice) separated Ethiopia from the Indian sub-continent. As a result, in his <em>Mirabilia descripta</em>, written in 1329, the Dominican friar Jourdain Catalani describes the sovereign of Christian Ethiopia as “Prester John.” Thereafter the kingdom of Prester John was located in Africa and his legend was enriched, sometimes by data later made known about Ethiopia. For instance, Prester John was believed to have the power of cutting off the flow of the Nile towards Egypt (an ancient Ethiopian tradition). Again, it was said that, in Prester John’s country, children were baptized with fire and not with water.</p>
+
+<p>In documents and legends of the 15th century, Prester John appears with the personal name of “At Senab,” a corruption of the Arabic “Abd as-Salib”: this is a local Egyptian translation of the Ethiopic Gäbrä-Mäsqäl, “Servant of the Cross,” the official royal name of some Ethiopian Emperors and, in particular, of the Emperor ‘Amda-Seyon I (1314-1344 A.D.). The legends inspired the great Italian poets of the 16th century: Aristo, in his poem <em>Orlando Furioso</em>, described the travels of Astolfo, Knight of the Court of Emperor Charles the Great, to Ethiopia to visit and liberate the Emperor “Senapo”; and Tasso in his <em>Gerusalemme Liberata</em> celebrated the heroism and virtue of Clorinda, daughter of the same Emperor “Senapo” of Ethiopia.</p>
+
+<p>Enrico Cerulli</p>
+
+<hr />
+
+<p><strong>Bibliography</strong></p>
+
+<p>Enrico Cerulli, <em>Etiopi in Palestina</em> (Roma, 1943), Vol. I.</p>
+
+<p>——–, “Il volo di Astolfo sul Etiopia nell’Orlando Furioso,” <em>Rendiconti della Reale Accademia dei Lincei</em>, Serie sesta, Vol. VIII (1932).</p>
+
+<p>C. Conti Rossini, <em>Storia d’Etiopia</em> (Bergamo, 1928).</p>
+
+<p>J. Catalani (H. Cordier, ed.), <em>Mirabilia descripta: Les merveilles de l’Asie</em> (Paris, 1925).</p>
+
+<p>Oliverius Scholasticus, <em>Historia Domiatina (Die Schriften des Kölner Domscholaster Oliverius)</em> (Tübingen, 1894).</p>
+
+<p>Marin Sanudo (Bongars, ed.), “Liber Secretorum Fidelium Crucis,” <em>Gesta Dei per Francos</em> (Hannover, 1611), II.</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>The Dictionary of Ethiopian Biography, Vol. 1 ‘From Early Times to the End of the Zagwé Dynasty c. 1270 A.D.,’</em> copyright © 1975, edited by Belaynesh Michael, S. Chojnacki and Richard Pankhurst, Institute of Ethiopian Studies, Addis Ababa, Ethiopia.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Prester John`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +754,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +793,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

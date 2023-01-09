@@ -605,8 +605,73 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/malawi/kutchona-alexander/kutchona-alexander.jpg" alt="image" class="bio" /></p>
+
+<p>Alexander Kutchona Mbewe served in Nyasaland and Rhodesia (today known as Malawi and Zimbabwe respectively) as a member of the clergy in the Church of Central Africa Presbyterian (CCAP). In the last years of his life, Kutchona became entangled in the nationalist political conflicts of the early 1960s. In 1964, he was physically assaulted near his home, and he died from the injuries he sustained.</p>
+
+<p>Kutchona began his life as a teacher, later becoming a supervisor of schools for the Presbytery of Nkhoma, a task which included overseeing Sunday schools and catechism classes. While still young, he married Ester Thyolamanja Nambetha. Because Kutchona desired to be a preacher, he applied to Nkhoma Theological College in 1944. After his graduation and ordination, Kutchona took his first position at Mvera, a mission that Dutch Reformed missionaries had established in 1889, and he was transferred to Mlanda mission station in 1949. At both places he was required to work under a white missionary, as policy dictated. From 1953-1960, he worked in the Synod of Harare in Southern Rhodesia.</p>
+
+<p>After this period in Zimbabwe, Kutchona returned to Nyasaland to serve in Dedza. At this time, many people were divided between the nationalist Nyasaland African Congress Party (later Malawi Congress Party, MCP) and the United Federal Party. Kutchona opposed close affiliation with the nationalist party, prohibiting the wearing of the party badge in church. Members of the Youth League affiliated with the nationalist party threatened Kutchona several times. In 1964, the same year that Hastings Kamuzu Banda of the MCP was elected, Kutchona was ambushed and beaten so severely that he died of his injuries in the Lilongwe District Hospital. The circumstances of his death were ignored by the police, and his body was buried in Katewe, Richard Village, Chikoma, in Dedza West area. His wife Ester lived until 1997, and several of his surviving children gave interviews to help record their father’s biography.</p>
+
+<p><strong>T. S. E. Katsulukuta</strong></p>
+
+<hr />
+
+<h1 id="source">Source</h1>
+
+<p>This summary was excerpted in 2021 from <em>Buried in the Debris of Independence: The Life and Death of Rev Alexander Kutchona,</em> by T. S. E. Katsulukuta, published in 2020 by Luviri Press.</p>
+
+<hr />
+
+<p>Download the full book <a href="/resources/bio-pdfs/malawi/kutchona_book.pdf"><em>Buried in the Debris of Independence: The Life and Death of Rev Alexander Kutchona</em></a> and <a href="/resources/bio-pdfs/malawi/kutchona_book_cover.pdf">book cover</a>, made available, with permission, by Luviri Press.</p>
+
+<hr />
+
+<p>The author, T. S. E. Katsulukuta, trained at Nkhoma Theological College, received a diploma from Josophat Mwale Theological Institute, and received a Bachelor of Theology from the Central African Preaching Academy.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Kutchona, Alexander`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -685,7 +750,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -724,6 +789,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

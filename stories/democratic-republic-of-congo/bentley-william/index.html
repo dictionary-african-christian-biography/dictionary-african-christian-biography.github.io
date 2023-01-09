@@ -607,8 +607,63 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>William Holman Bentley was a Baptist Missionary Society (BMS) missionary in the Congo. Bentley was born at Sudbury, Suffolk, England, where his father was a Baptist minister. He worked as a bank clerk before being accepted by the BMS for its new Congo mission. He sailed for the Congo (Zaire) in April 1879 in the company of Thomas and Minnie Comber, H. E. Crudgington, and J. S. Hartland. In January 1881, Bentley and Crudgington became the first Europeans to establish a route inland from the mouth of the Congo to Stanley Pool, where modern Kinshasa is situated. In 1884, Bentley returned to England on a furlough. He took with him a Congolese assistant, Nlemvo, who worked with him on the compilation of the <em>Dictionary and Grammar of the Kongo Language</em> (1887), a work still used today. During this furlough he married Hendrina Margo Kloekers. Bentley returned to the Congo in 1886 to assume responsibility for a station on the upper river, but the death of Thomas Comber in 1887 diverted him to Ngombe Lutete among the Bakongo people. There Bentley remained, nurturing the growth of the Kongo church and devoting his linguistic expertise to the translation of the New Testament into Kikongo, which was completed in 1893. He also translated Genesis, Proverbs, and part of the Psalms. For these achievements he was awarded an honorary doctorate of divinity by the University of Glasgow. He died in Bristol.</p>
+
+<p>Brian Stanley</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>In addition to his linguistic work, Bentley published <em>Pioneering on the Congo</em>, 2 vols. (1900). H. M. Bentley, <em>W. Holman Bentley: The Life and Labours of a Congo Pioneer</em> (1907); Brian Stanley, <em>The History of the Baptist Missionary Society</em>, 1792-1992 (1992).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Bentley, William Holman`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +742,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +781,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

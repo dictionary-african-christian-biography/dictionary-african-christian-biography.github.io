@@ -607,8 +607,65 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Henri Junod was a missionary ethnographer in South Africa. He was born at Saint Martin, Neuchâtel, Switzerland, the son of the founder and pastor of the Independent Protestant Church. Educated at Neuchâtel, Basel and Berlin, he was ordained in 1885 and served for two years as a pastor. Experiencing a call to mission service, he set sail for Mozambique in 1889 after training in Scotland and marriage to Emilie Biolley of Couvet.</p>
+
+<p>His initial appointments in the Swiss Romande Mission were as a teacher at Ricatla and principal of the Bible school at Shiluwane, Transvaal. A gifted linguist, he published grammars in Ronga (1896) and Tsonga (or Shangane, 1909). His two-volume classic study of the Tsonga people, <em>The Life of a South African Tribe</em> (1912-1913), was judged in its day to be “the finest monograph written on an African tribe.” His sympathetic analysis of traditional African beliefs and ritual behavior, including divination, set a high standard. Other interests included traditional African music and the taxonomy of African butterflies. Retiring to Geneva in 1921, he served as president of the International Bureau for the Defense of Native Interests and as consultant to the mandates commission of the League of Nations. He received an honorary doctorate from the University of Lausanne.</p>
+
+<p>Norman E. Thomas</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Works by Junod include <em>Manuel de conversation et dictionnaire ronga, portugais, français, anglais</em> (1896), <em>Les Chants et les Contes des Ba-Ronga</em> (1897), and <em>Mission Suisse dans l’Afrique du sud</em> (1933), Henri-Philippe Junod, <em>Henri A. Junod: Missionnaire et Savant, 1863-1934</em> (1934).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Junod, Henri-Alexandre`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +744,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +783,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

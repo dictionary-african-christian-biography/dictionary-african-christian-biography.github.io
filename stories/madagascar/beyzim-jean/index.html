@@ -607,8 +607,75 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Born May 15th, 1850 in Wolinie, Poland, Jean Beyzim entered the Galician novitiate and was ordained priest in Krakow on July 26, 1881.</p>
+
+<p>For his first eleven years as a priest, he was posted to the seminary in Chirow, but from the very start of his novitiate, he had thought he would serve lepers. His request to be sent to a small leper-house in Mangalore, India, never came through, so he turned to the Jesuits of Madagascar, who said yes. While still in Poland, he started to gather material resources for the lepers, and he sailed from Marseilles aboard the <em>Oxus</em> in 1898.</p>
+
+<p>His mission to the lepers began when he was forty-eight years old, and he was sent to the leper-house in the high plateaus, in Ambahivoraka. It consisted of four huge buildings where 150 lepers lived in abject poverty. There was no doctor, no nurse, and no medication; for food, they each received a ration of one liter of rice per week. Beyzim went right to work, doing everything in his power to save his patients from death by undernourishment and the torment of their moral misery. They all live together, he said, “Catholics and pagans alike, men, women, children, all mixed together, like animals.”</p>
+
+<p>In light of the situation, Beyzim presented a hospital project to the Jesuit Superior in Antananarivo. Without such a dedicated hospital, all attempts at improvement would be in vain. The cost of such a project came to 30,000 francs, but the mission was poor. Beyzim started to send letters to his compatriots in Poland, and ha had gathered 25,000 francs by the end of 1900.</p>
+
+<p>Because there was already a 700 bed hospital in the area around Antananarivo, it became necessary to find another location for the future hospital. The mission owned a plot of land in Fianarantsoa, and that is how Beyzim came to settle in Marana. The construction of two wards started in 1903, one for men, the other for women. The lepers of Ambahivoraka had been sent to the official establishment, but several of them preferred to join Beyzim in Manara.</p>
+
+<p>Work on the hospital for 200 patients was completed in 1911. There were complete sanitary facilities with running water and four bathtubs, as well as complete laundry, clothing, and linen services, with personnel to carry out the various tasks: nurses, a cook, etc. Some nuns had joined Beyzim to help with the work. Every patient contributed to the work to the degree allowed by the state of their health. The particular way of life there made it seem more like a convent than like a hospital, and the founder cared about people’s souls as much as he cared about their physical well-being. Aside from his work in Marana, Beyzim had written a small Polish-Malagasy dictionary, and he also wrote articles for the Polish journal <em>Catholic Missions</em>.</p>
+
+<p>The news about Jean Beyzim’s death, on October 2, 1912, was quite widespread, as many newspapers in France, in Ireland, and in Germany mentioned his devotion to lepers. Of special note were the articles in the January 31, 1913 issue of <em>l’Echo</em> (Paris), and the Polish journal <em>la Chronique Universelle</em>. An article published in the December 8, 1912 issue of the <em>Gaulois</em> stated, among other things, “When the Father arrived, there were five deaths a week among his first patients; thanks to his efforts, there are now only five per year.”</p>
+
+<p>Raymond Delval</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>M. Czerminsky s. j. <em>Un volontaire de la lèpre, le Père Beyzim</em> [Father Beyzim, a Volunteer for Leprosy], translated and adapted from the Polish by L. de Broël Plater, Editions de l’Apostolat de la Prière, 9, rue Montplaisir, Toulouse, July 6, 1931.</p>
+
+<hr />
+
+<p>This article, which is here reprinted with permission, is from *Hommes et Destins: Dictionnaire biographique d’Outre-Mer *[Men and Destinies: Overseas Biographical Dictionary], Vol. 3, published in 1977 by the Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Beyzim, Jean (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +754,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +793,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -611,8 +611,73 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Kaleb (ruled circa 514-543) was the last major Aksumite king of Ethiopia, during whose reign the kingdom reached the apex of its glory. Ethiopian and Syrian sources refer to him as Kaleb, but Greek sources call him Hellesthaeeus, Ella Atsbeha, or Ellesbas. Legend makes King Tazena his father.</p>
+
+<p>Little is known of his earlier life. He was educated at an Ethiopian Church school, but realized the importance of Greek culture. He ordered the governor of Adulis, the famous Red Sea port of the Aksumite period through which Greek trade came to Ethiopia, to copy the Greek inscriptions of Ptolemy IV (Macedonian king of Egypt from 221-205 BC), and of an unknown Ethiopian emperor. The 6th-century theologian and geographer Cosmas Indicopleustes preserved the only exact copy, which he later included in his book <em>Topographia Christiana</em> (“Christian Topography”).</p>
+
+<p>Aksum reached its last period of glory during Kaleb’s reign. Legends were inscribed in the Ge’ ez language on coins, and art and architecture flourished. Aksum controlled traffic on the Red Sea, as well as much of the Far Eastern trade. Only Aksumites were permitted to sail ships to the Far East. The Byzantine emperor Justin I (ruled 518-527) encouraged Aksum to engage in the silk trade with China, in competition with the Persians.</p>
+
+<p>Kaleb is especially remembered for his military expedition in to South Arabia, which had long been under Ethiopian control. About A.D. 523, Dhu Nuwas, a local prince of the Najran area, led a revolt, after first having secured the support of the large Jewish community in South Arabia by converting to Judaism. Moving during the winter, when the weather would not permit Aksumite intervention he attacked the Ethiopian garrison, conquered the whole of South Arabia, persecuted the Christians, and forced Judaism on them. The following summer, however, Kaleb heard of his exploits and prepared a punitive expedition against him. Kaleb himself set out with his naval force, defeated Dhu Nuwas restoring Ethiopian sovereignty over South Arabia in A.D. 525.</p>
+
+<p>This victory won Kaleb fame as the defender of the Christian faith and increased his prestige and power. Aksumite Ethiopia became the third power in the Middle Eastern region as a whole after the rival Byzantine and Persian empires. The Byzantine Empire frequently sent ambassadors to Kaleb to conclude commercial or military treaties.</p>
+
+<p>Ethiopian and Greek legends state that Kaleb abdicated after his return from South Arabia. Dedicating his crown to the Holy Sepulchre, he entered the monastery of Abba Pantaleon, where he spent the rest of his life. He was canonized by the Ethiopian church, and was the first Ethiopian to be recognized by the Greek and Roman Catholic churches as saint.</p>
+
+<p>Sergew Hable-Sslassie</p>
+
+<hr />
+
+<p><strong>Bibliography</strong></p>
+
+<p>A. Anzani, “Numismatica Axumita,” (“Aksumite Coinage”) <em>Rivista Italiana di Numismatica</em>, Vol. 39, Milan, 1926; E. A. W. Budge, <em>A History of Ethiopia</em>, 2 vols, London, 1928, <em>The Queen of Sheba and Her Only Son Menyelek</em>, London, 1928, <em>The Book of Saints of the Ethiopian Church</em>, 4 vols, Cambridge, 1928; C. Conti Rossini, “Un documento sul Cristianesimo nello Iemen ai tempi del Re Sarahbil Yakkuf,”, <em>Rendiconti della regia Accademia dei Lincei</em> Vol. 19, Rome, 1910, <em>Storia d’Ethiopia</em> (“History of Ethiopia”), Bergamo, 1928, “Monete Auximite,” (‘Aksumite Coinage”), <em>Africa Italiana</em>, Vol. 1, Rome, 1927; Cosmas Indicopleustes, <em>Christian Topography</em> (translated by J. W. McCrindle), London, 1897, J. Doresse, <em>L’Empire du Prêtre-Jean</em> (“The Empire of Prester John”), Paris, 1957, translated as <em>Ethiopia</em>, New York, 1959, A.Kammerer, <em>Le mer Rouge, l’Abyssinie et l’Arabie depuis l’antiquite</em> (“The Red Sea, Abyssinia, and Arabia Since Antiquity”), Cairo, 1929; A. Moberg, <em>Book of the Himyarities</em>, London, 1924; Procopius, <em>De Bello Persico</em> (“On the Persian Wars”), edited by H.B. Dewing, London, 1957; S. Smith, “Events in Arabia in the 6th Century AD,” <em>Bulletin of the Schools of Oriental and African Studies</em> Vol.16, London, 1954.</p>
+
+<hr />
+
+<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (in 20 Volumes). Volume One Ethiopia-Ghana, ©1997 by L. H. Ofosu-Appiah, editor-in-chief, Reference Publications Inc., New York, NY. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Kaleb (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +756,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -730,6 +795,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

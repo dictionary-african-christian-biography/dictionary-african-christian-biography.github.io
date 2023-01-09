@@ -607,8 +607,63 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Carl Becker was an American pioneer missionary medical doctor in the Belgian Congo (Zaire). Born in Manheim, Pennsylvania, Becker studied medicine at Hahnemann Medical College in Philadelphia and spent seven year in private practice before he and his wife, Marie, began missionary service with the Africa Inland Mission in 1929. In 1934 he founded a medical center at Oicha to serve the needs of pygmies living deep in the Ituri Forest and remained there for the rest of his active ministry. He specialized in leprosy, treating some 4,000 patients in a 1,100-acre leprosy village. Leprosy specialists and medical missionaries from all over the world came to observe his work and borrow from his research at Oicha. In addition, he served as the only resident medical doctor at the hospital and performed more than 3,000 operations and delivered hundreds of babies each year. Also interested in psychiatry, he was the first doctor in equatorial Africa to successfully use electric shock treatment on African patients. In addition to medical work, he also served as an evangelist, going to villages on weekends with crudely drawn illustrations that depicted biblical stories. During the Simba Revolution in 1964, when he was 70, Becker was evacuated but returned the following year and remained at the medical center until 1976, when he returned to the United States.</p>
+
+<p>Ruth A. Tucker</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>William J. Peterson, <em>Another Hand on Mine: The Story of Dr. Carl K. Becker of the Africa Inland Mission</em> (1967); Ruth A. Tucker, <em>From Jerusalem to Irian Jaya: A Biographical History of Christian Missions</em> (1983).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Becker, Carl`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +742,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +781,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -606,8 +606,79 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/liberia/harris4-william/harris.jpg" alt="William Wade Harris" class="bio" height="175px" width="158px" /></p>
+
+<p>Profeta e líder de movimentos de massa do Oeste da África.</p>
+
+<p>Wadé (seu sobrenome original) nasceu na vila de Half-Graway, próximo do Cabo de Palmas, Libéria, um quarto de séculos depois da chegada dos missionários e colonos negros americanos. Apesar de ser filho de um pai pagão ele dizia ter “nascido metodista”, provavelmente uma referência à fé da sua mãe. Em 1888, depois de casar-se com Rose Farr, a filha de um professor do Internato da Escola da Igreja Episcopal dos EUA em Half-Graway aceitou um emprego na missão Episcopal. De 1892 a 1908 ele cresceu entre os funcionários da missão, ensinando e evangelizando entre o povo. No entanto, o bispo liberiano Samuel Ferguson deixava de ter uma postura pró-Glebo e se identificava com as autoridade negras imigrantes. Em 1899 Harris tornou-se o intérprete oficial da população Glebo e a sua lealdada foi severamente testada. As suas profundas diferenças com Ferguson, a sua adoção da escatologia apocalíptica dos Testemunhas de Jeová e a influência do Dr. Edward Blyden o levaram a cooperar com uma conspiração pró-britânica. Condenado como traidor e demitido da Missão Episcopal, Harris foi preso durante a desastrosa guerra Glebo-Liberiana de 1910, a qual ele apoiou. Na prisão uma unção do Espírito durante uma visita do anjo Gabriel provocaram a obediência a Grande Comissão de Cristo e o transformaram no “profeta dos últimos tempos”.</p>
+
+<p>Acompanhado por mulher cantoras ele se considerava o Elias negros “dos últimos tempos” antes do retorno de Cristo numa missão de confrontação de poderes encarregado de trazer um reino de paz com uma túnica branca, turbante e descalço com um cajado em cruz, uma Bíblia, um chocalho de cabaça e uma tigela batismal ele proclamava a poder de Deus e da Cruz de Cristo chamando ao arrependimento e a destruição dos amuletos. Rejeitava pagamento pelo seu ministério, ele batizava, expulsava espíritos e curava. Ele ensinou a oração do Pai Nosso, os Dez Mandamentos e a observância estrita do domingo como um dia de oração e descanso. Ele enviou milhares de pessoas batizadas aos missionários católicos e protestantes para que os ensinasse. Onde não havia missionários ele nomeava “Doze Apóstolos” entre a população local e prometia que “brancos com a Bíblia” viriam como professores.</p>
+
+<p>No começo de 1924, na Costa do Marfim, William J. Platt da Sociedade Missionária Metodista estabeleceu a Igreja Metodista entre cento e sessenta congregações deste tipo com mais de trinta e dois mil participantes. O poder de confrontação e simbolismo de Harris encontraram a sua maior continuidade na Igreja de Gana dos Doze Apóstolos e na Igreja Harris ta da Costa do Marfim com Ebrie John Ahui.</p>
+
+<p>David A. Shank</p>
+
+<hr />
+
+<h1 id="bibliografia">Bibliografia</h1>
+
+<p>Gordon Mackay Haliburton, <em>The Prophet Harris: The Study of an African Prophet and His Mass Movement in the Ivory Coast and the Gold Coast</em> (1971).</p>
+
+<p>John Hargreaves, editor e tradutor, “The Prophet Harris,” na <em>França e Oeste da África</em> (1959), pp.257 - 262.</p>
+
+<p>David A. Shank, <em>The “Black Elijah” of West Africa</em> (resumo de Jocelyn Murray; 1994) e “William Wadé Harris,” em Gerald H. Anderson et al., editores., <em>Mission Legacies</em> (1994), pp. 155 - 165.</p>
+
+<p>Frank Deaville Walker, <em>The Day of Harvest in the White Fields of Africa</em> (1925).</p>
+
+<p>Sheila S. Walker, <em>Religious Revolution in the Ivory Coast: Prophet Harris and the Harrist Church</em> (1983). Harris não deixou nada escrito e somente duas cartas assinadas.</p>
+
+<hr />
+
+<p>Este artigo é reproduzido com permissão do <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, por Gerald H. Anderson, W. B. Eerdmans Casa de Publicações, Grand Rapids, Michigan. Todos os direitos são reservados.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Harris, William Wadé (C)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Leia várias versões: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -690,7 +761,7 @@
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 02 January 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 14 December 2022.<br>&copy; 2022 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -725,6 +796,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

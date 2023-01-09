@@ -607,8 +607,63 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Franz Pfanner was a Roman Catholic missionary in South Africa. Prior of the Maria-Stern Trappist Monastery in Bosnia, he was called to evangelize the indigenous people of southern Africa at the Trappist General Chapter in 1879. Accompanied by thirty-one other Trappists, he journeyed to South Africa in 1880, founding the mission station in Mariannhill, near Durban. As the monks increasingly began to influence the life of the African community around them by cultivating the land, celebrating the liturgy, and teaching the people on request, it became difficult to reconcile the Trappist rule (enforced silence, complete seclusion, etc.) with their daily existence. In 1908 Pfanner therefore requested permission to set aside the Trappist rule, and in 1909 Mariannhill became a full-fledged missionary society, the Congregation of Mariannhill Missionaries (CMM). Through their education and social involvement, the CMM exerted a lasting influence, especially on the people of Natal. Already in 1884 Pfanner decided that they would make no distinction of color or religion in their school. In the oppressive racist atmosphere of colonial society, the policy was vigorously opposed by the white colonists. With respect to culture, Pfanner’s approach was typical of nineteenth-century missionaries in that he more or less equated Christianization and Western civilization. His maxim for new converts was therefore first a pair of pants and a shirt, then the primer, then the catechism, but never without regular manual work. He died at Emaus, one of the smaller CMM mission stations.</p>
+
+<p>Willem Saayman</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>The history of Pfanner and the CMM is recounted in M. Adelgisa, <em>One Hundred Years Mariannhill Province</em> (1984); <em>Mariannhill and Its Apostolate</em> (n.a.) (1964). See also William Saayman, “The Congregation of Mariannhill Missionaries: A Pioneering Roman Catholic Contribution to Christian Mission in South Africa,” <em>Missionalia</em> 22, no. 1 (1994): 36-41.</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Pfanner, Franz (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +742,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +781,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

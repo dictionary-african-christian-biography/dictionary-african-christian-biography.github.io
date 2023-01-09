@@ -607,8 +607,63 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Jean-Rémi Bessieux was a French missionary bishop in West Africa. Born into a farming family in the south of France, Bessieux was ordained in 1829 and served in the home diocese for 13 years before entering the novitiate of François Libermann’s new missionary society, the Congregation of Immaculate Heart (soon to become the Holy Ghost Fathers) in 1842. The very next year he was sent out as superior of a group of seven priests to begin work in a new vicariate in West Africa based in Liberia and assigned to Msgr. Edward Barron of Philadelphia. Bessieux was the sole priest survivor from this disastrous expedition; six of his companions died of fever within eight months. He himself escaped on a ship to Gabon, which became henceforth the center of his work. In 1848, he was named vicar apostolic (Barron having resigned), with jurisdiction over virtually the whole west coast of Africa. He was soon able to assign Senegal and the northern half to Aloÿs Kobès, a coadjutor. A keen linguist, Bessieux published several books in Pongwe, including a grammar and a dictionary in 1847; he was also an enthusiastic agriculturalist. He remained in Gabon until his death. One of the longest missionary survivors on the nineteenth-century African west coast, he may well be hailed as the father of Catholicism throughout French-speaking West Africa.</p>
+
+<p>Adrian Hastings</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Paul Coulon and Paule Brasseur, <em>Libermann 1803-1852</em> (1988), pp. 637-641.</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Bessieux, Jean-Rémi (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +742,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +781,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

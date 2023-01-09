@@ -605,8 +605,65 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Catéchiste, auteur et évangéliste yoruba. Né à Osiele à Ake, Abeokuta, Nigéria, à un des premiers convertis anglicans, Lijadu a obtenu la qualification d’enseignant de la part de l’institut prestigieux de Formation des Enseignants à Abeokuta en 1885. Il a été enseignant, catéchiste et diacre anglican (1894). Il parlait très franchement en tant qu’activiste, et il était aussi orateur, écrivain prolifique, et évangéliste ardent. Sa conférence sur Aribilosho, un poète Egba-Yoruba, a été très bien reçue, et en 1897 il a écrit une étude classique sur la mythologie yoruba, une oeuvre de nature pionnière sur la religion traditionnelle Ifa. Comme Mojola Agbebi, il croyait que la mission devait être bâtie sur une fondation indigène, et il comparait l’Ifa au christianisme. Comme délégué au Congrès Pan-Africain en Angleterre en 1898, il a travaillé sur la version révisée de la Bible Yoruba, initiée par l’évêque Samuel Crowther.</p>
+
+<p>Lijadu a exercé des dons charismatiques de guérison, surtout pendant l’épidémie de la grippe de 1895. Sa Bande de prière évangéliste (1898) a reçu l’approbation de Charles Philip, l’évêque d’Ondo. Cependant, Lijadu a bientôt commencé à faire la critique de la stratégie missionnaire parce qu’elle n’était pas enracinée dans les villages et la culture indigène. Il a conçu un programme d’évangélisation indépendant (par moyen du commerce) pour les régions rurales, équippé d’une clinique. Il y a eu une crise en 1899, quand Thomas Harding, missionnaire et administrateur anglican qui travaillait dans la région épiscopale d’Ondo, a repoussé un appel de la part de travailleurs africains pour une hausse de salaire. Son langage impoli a été transformé en remarques racistes par des nationalistes. En réaction à cela, dix-sept églises africaines yoruba indépendantes ont été crées entre 1888 et 1922. Lijadu, qui était un des meilleurs écrivains de pétitions, s’est séparé de l’église anglicane avec sa Bande évangéliste le 1er janvier 1901. Il a accompli une intégration indigène dans la liturgie et dans la spiritualité, allant de village en village avec beaucoup d’ardeur. Il a laissé un héritage qui dure, et qui était, selon lui, “de faire du christianisme… notre religion nationale.”</p>
+
+<p>Ogbu U. Kalu</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p>E. A. Adegbola, “Ifa and Christianity Among the Yoruba” [“l’Ifa et le christianisme parmi les Yoruba”], (thèse de doctorat, Université de Bristol, 1967); J. B. Webster, <em>The African Churches Among the Yoruba, 1888-1922 [Les églises africaines parmi les Yoruba, 1888-1922]</em>, (1964).</p>
+
+<hr />
+
+<p>Cet article est reproduit, avec permission, du <em>Biographical Dictionary of Christian Missions [Dictionnaire biographique des missions chrétiennes]</em>, copyright (c) 1998, par Gerald B. Anderson, W.B. Eerdmans Publishing Company, Grand Rapids, Michigan. Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Lijadu, Emmanuel Moïse (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +744,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +781,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

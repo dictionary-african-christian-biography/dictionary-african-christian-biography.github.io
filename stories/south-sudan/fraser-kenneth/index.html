@@ -607,8 +607,83 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Dr. Kenneth Fraser was born at Crock Ban on the Isles of Lewis in Scotland in 1877. Fraser served as a  medical doctor in the Royal Army Medical Corps. His ambition was to work overseas, and this desire became a reality when he was accepted by the Gordon Memorial Sudan Mission (GMSM) of the Church Missionary Society (CMS) of England.</p>
+
+<p>After the first World War, Fraser and his wife Eileen arrived at Yilu (now Lui) in 1920. He started working among the Moru people of South Sudan. His military experience served him well in opening a hospital at Lui, which served all of Moruland–a total of 15,000 square miles.</p>
+
+<p>Fraser trained young Christian converts as evangelists, teachers and medical workers, providing them with standardized medical kits and sending them out in pairs.  Specific routines and procedures were established and these teams were required to send back reports to Fraser at Lui hospital at regular intervals.</p>
+
+<p>Fraser also established schools and churches all over Moruland at intervals of fifteen miles along the main roads.  These centers, in every part of Moruland, served as churches and schools as well as dispensaries at the same time. As dispensaries, these centers served the hospital at Lui.</p>
+
+<p>An industrious and generous Christian, Fraser organized  leper colonies. In addition to being a very successful surgeon, he sought to reform harmful indigenous practices and customs.  All of these achievements won him a legendary status.  More than any other culture in southern Sudan, Christianity  deeply penetrated the Moru culture, where the people also boast a high level of education, thanks to his tireless efforts.</p>
+
+<p>Anglican and Episcopal History,* Essays on The Anglican Church in the Sudan* states the following: “The Frasers at Lui between 1933 and 1936 frequently reported a growing interest in evangelism and in ‘the words of God’” [Vol. LXXI, No. 2, June 2002, p.170]. The large number of Moru people who have become medical doctors, medical assistants, and medical nurses is a tribute to the depth and effectiveness of Fraser’s Christian witness as a medical doctor. Fraser had a deep personal impact on the Moru people who still greatly revere him to this day. He died in 1935 and was buried in Lui.</p>
+
+<p>James Lomole Simeon</p>
+
+<hr />
+
+<p>Sources:</p>
+
+<ol>
+  <li>
+    <p>Gerald H. Anderson, ed., <em>The Biographical Dictionary of Christian Missions</em>, (New York: Simon and Schuster Macmillan, 1998).</p>
+  </li>
+  <li>
+    <p>Anglican and Episcopal History, <em>Essays on the Anglican Church in the Sudan</em>, Vol. LXXI, No.2, June 2002.</p>
+  </li>
+  <li>
+    <p>Samuel E. Kayanga and Andrew C. Wheeler, eds., <em>But God Is Not Defeated, Celebrating the Centenary of the Episcopal Church of the Sudan 1899 - 1999</em>, (Nairobi, Kenya: Pauline Publications Africa,1999).</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>This article, received in 2003, was researched and written by Mr. James Lomole Simeon, Esq., Chancellor of the Diocese of Khartoum, Sudan, 2002-03 Project Luke Fellow.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Fraser, Kenneth (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +762,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +801,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -607,8 +607,69 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>The Very Reverend Awa Ugbaga was born in 1894 in Aamekpu-Ohafia, Abia, Nigeria, to Chief Ugbaga Ulu and Arianzu Lekwa.  He married Ezi Acha and they had two sons and four grandchildren. He inherited royal  privileges from his father who was a Warrant Chief of Amekpu Ohafia village.  Later in life he refused the award of a traditional chieftancy title by his home village for fear that it would compromise his faith in the Lord Jesus Christ.</p>
+
+<p>Awa’s education took place at Ohafia Central School, Elu-Ohafia village.  In 1918, he was trained as an assistant minister of the Church of Scotland mission at Hope Waddell Training Institute, Calabar.   He became an evangelist, and opened churches and learning centers at various villages around Ikpe and Itumbauzo counties.  In 1926, he began  his ministerial studies at the Theological College in Hugh Goldie, Arochukwu.  He graduated from the college in 1929 and was licensed to preach the gospel.  In 1930, he was ordained, the first African minister of the Church of Scotland from Bende Division in Abia state.</p>
+
+<p>Awa lost his younger brother in 1940 as well as his first son in 1981.  These devastating losses made him look inwards for strength and support from the Almighty God.</p>
+
+<p>He established many congregations in urban areas like Umuahia and Aba, and in rural areas like the Aro–Iwerre congregations in Arochukwu and Ihechiowa parishes.  He served as moderator of the synod for many years and represented Nigeria at the World Alliance of Presbyterian churches at Sao Paulo, Brazil, in 1959.  In 1960, he attended the meeting of the Committee of the World Presbyterian Alliance in Geneva, Switzerland.  His name and work are well remembered by young and old in the Presbyterian Church of Nigeria.</p>
+
+<p>Emele Mba Uka</p>
+
+<hr />
+
+<p>Sources:</p>
+
+<p>Eye witness account from his only surviving son, Osu Awa Ugbaga.  Further information was gathered from the church records of the General Assembly office of the Presbyterian Church.</p>
+
+<hr />
+
+<p>This article, received in 2001, researched by Elder Uka Emele, a retired school teacher, was written by Rev. Dr. Emele Mba Uka, a Project Luke Fellow, Professor of Theology in the Department of Religion and Philosophy at the Federal University of Calabar, Nigeria (UNICAL).</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Ugbaga, Awa`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +748,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +787,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

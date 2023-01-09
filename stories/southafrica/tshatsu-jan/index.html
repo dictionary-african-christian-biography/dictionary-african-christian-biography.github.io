@@ -611,8 +611,76 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Jan Tshatsu (circa 1771-February 28, 1868) was the headman of the amaNtinde, a small Xhosa group living near present-day King William’s Town. He became an evangelist for the Dutch Reformed Church and testified before a British Parliamentary committee about the poor conditions of black South Africans.</p>
+
+<p>Tshatsu was brought by his father to the Dutch minister Dr. Van der Kemp who took him to Bethelsdorp where he was trained as a carpenter and taught to read and write Dutch.</p>
+
+<p>He joined the Dutch Reformed Church and between 1816 and 1818 he assisted Reverend John Williams with his evangelical work in the Kat River Settlement in what is now the Fort Beaufort area. Afterward he joined the Reverend John Brownlee at King William’s Town. There he helped Brownlee and the other missionaries in their studies of the Xhosa language. He assisted in the translation of sections of the Bible into Xhosa also.</p>
+
+<p>Tshatsu did not take sides in the Sixth Frontier War (1834-35) and in 1836 the Reverend John Philip, director of the London Missionary Society, took him to London to testify before the Aborigines Committee of the House of Commons. Tshatsu testified to the oppressive British policy toward his people, claiming that the land on which King William’s Town stood had belonged to his people.</p>
+
+<p>To build support for what Philip saw as fairer treatment for blacks in South Africa, the Reverend dressed him as an officer and took him on tour throughout Britain where he was “lionized as a model Christian Kaffir.”</p>
+
+<p>In 1846, during the Seventh Frontier War, Tshatsu took up arms against the Europeans and was involved in the attack on Fort Peddie. Thereupon he was excommunicated from the Church.
+In the Eighth Frontier War (1850-53) Tshatsu changed allegiances once again and guarded the road between Fort Murray and King William’s Town, keeping open the line of communication for the Europeans. For his neutrality and service during this war, Tshatsu was granted a parcel of land by Sir George Grey in 1856, which he later sold.</p>
+
+<p>Tshatsu appears a fitting symbol of the African dilemma in his time, caught between his Christianity and sense of mission therein, and his deep regard for his people’s sovereign rights to their land and independence. Ultimately it did not matter whether Tshatsu chose to fight the British or aid them: the spread of British hegemony was inexorable.</p>
+
+<p>Virginia Curtin Knight</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Lipschutz and R. Kent Rasmussen, <em>Dictionary of African Historical Biography</em>, Chicago: Aldine Publishing, 1978; Johannes Meintjes, <em>Sandilet: The Fall of the Xhosa Nation</em>, Cape Town: Cape and Transvaal Printers, 1971; <em>Standard Encydopedia of South Aftica</em>, Cape Town: NASOU Limited, 1971.</p>
+
+<hr />
+
+<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (In 20 Volumes). Volume Three: South Africa- Botswana-Lesotho-eswatini. Ed. Keith Irvine. Algonac, Michigan: Reference Publications Inc., 1995.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Tshatsu, Jan`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +759,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -730,6 +798,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

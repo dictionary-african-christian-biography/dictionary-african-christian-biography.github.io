@@ -607,8 +607,81 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Eusebius of Caesarea (c.260-340) initiated his <em>Ecclesiastical History</em> with reference to “the successions from the holy apostles” [I.1] thereby enunciating the principal one of those several themes by which he intended to tell his story [cf. Grant 1980, esp.ch.VI].  As a consequence those major urban centers of the Roman imperial world – beginning from the largest, Rome, “with a population of about 700,000” in the era of the apostles, and continuing with “Alexandria, called by Strabo ‘the greatest emporium in the world’” [Geographia 17.1.13 apud Grant 1970:10] and with Antioch in Syria, said by Strabo to be little inferior to Alexandria [ibid. 16.2.5] – provided Eusebius the main points of reference wherein he could document literally by named persons those who were in that succession and thereby presided over the ministry of their respective urban communities.</p>
+
+<p>For Alexandria, while the point of reference began with “Mark the Evangelist” (q.v.; cf. H.E. II.15-16.1) though in an era, and even Eusebian context, where the word “bishop” was not yet appropriate, he whom Eusebius designated “first” was one Annianus (q.v.; cf. H.E. II.24; III.13, 21].  When “in the fourth year of Domitian [October 24, 51 - September 18, 96, ruled from  September 13, 81]” Annianus died [III.14], he was succeeded by Avilius, who remained, as designated “second” for thirteen years until his own death “in the first year of Trajan [53- August 8, 117, ruled from January 25, 98],” when he too was succeeded by Cerdon (q.v.) who was “third over the people of that place [= Alexandria]” [III.21].  Eusebius associates “at that time” Clement “still ruling” at Rome, likewise a “third” in the sequence from Paul and Peter through Linus and Anencletus [cf. ODP 6-8], and Ignatius in Antioch, designated “second” after Euodius’ “first” [III.21-22].  With Clement of Rome [Q1 42-53] and Ignatius of Antioch [Q1 63-76], we come to known personalities as well as to their literary achievements.  But of the Alexandrians, there remains nothing more within the tradition that can be adduced pertaining to any of them as one enters the second Christian century.</p>
+
+<p>Clyde Curry Smith</p>
+
+<hr />
+
+<h1 id="bibliography-see-link-to-abbreviations-table-below">Bibliography (see link to abbreviations table below):</h1>
+
+<p>GEEC 33 (FWNorris)</p>
+
+<h2 id="supplementary-bibliography">Supplementary Bibliography</h2>
+
+<p>Grant 1970
+<em>Augustus to Constantine:  The Thrust of the Christian Movement into the Roman World</em>, by Robert McQueen Grant.  New York, Evanston, and London:  Harper and Row.</p>
+
+<p>Grant 1980</p>
+
+<p><em>Eusebius as Church Historian</em>, by Robert McQueen Grant. Oxford:  Clarendon Press.</p>
+
+<p>Oulton 1927
+<em>Eusebius, Bishop of Caesarea, The Ecclesiastical History and the Martyrs of Palestine</em>, translated with Introduction and Notes, by Hugh Jackson Lawlor and John Ernest Leonard Oulton.  London:  SPCK.  2 volumes.  Volume I:  Translation, by John Ernest Leonard Oulton.  (Specific references also cited as H.E. with book and chapter).</p>
+
+<hr />
+
+<p>This article, received in 2004, was researched and written by Dr. Clyde Curry Smith, Professor Emeritus of Ancient History and Religion, University of Wisconsin, River Falls.</p>
+
+<hr />
+
+<p><strong>Click here for</strong><a href="/resources/ancient-references/">Abbreviations and Source References for Ancient African Christians.</a></p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Avilius`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +760,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +799,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

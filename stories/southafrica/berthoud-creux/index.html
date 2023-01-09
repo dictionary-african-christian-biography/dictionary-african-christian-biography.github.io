@@ -607,8 +607,92 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <blockquote>
+
+  <p>I see in front of me all that can be described as the most hideous, physically, but Jesus loves them, we love them in His love, and, in return, their poor suffering hearts are filled with love and gratitude.</p>
+
+  <p>–Ernest Creux, of a South African leper community</p>
+</blockquote>
+
+<p>Switzerland is a small country of purposeful people and, though its missionary presence was never a large one, its members engaged in carefully planned mission activity. Such was the case of Ernest Creux and Paul Berthoud, two late nineteenth and early twentieth-century missionaries who worked among the Thonga-speaking people of the northern Transvaal and the Ronga-speaking people of Mozambique.[1] In all, nearly three hundred houses of worship were built in the two locations during the missionaries’ long stay in Africa, and they were known as well for their work among lepers, prisoners, and the mentally ill.</p>
+
+<p>Both came from the Free Church of the Canton of Vaud, the region near Geneva. Creux was impulsive and poetic, an intuitive pastor; Berthoud was the careful planner and organizer, the conceptualizer of the duo. Since their own denomination did not at that time have a missionary program, the pair was sent to the University of Edinburgh to learn English and something about medicine. In 1875 Creux, Berthoud, and their families set out for an inland posting among the Gwamba people. Boer hostility to the ethnic group was strong. One elder said, “They are thieves, liars, tricksters, and apart from this, they speak a very difficult tongue.” “These are just the kind of people we are looking for,” one of the missionaries replied. “Didn’t Jesus come to seek and to save the lost?” By July 9, 1875, the missionary caravan of thirty-nine persons, with two babies in their midst, and over a hundred beasts arrived in the mountainous Spelonken district, which reminded them of Switzerland. Despite the difficulties of having no home and few supplies, they set about building a mission station. Their plans were brutally interrupted in their second year when Crux and Berthound were seized and placed in protective custody by the suscipicious Boers, who were at war with a local tribe.</p>
+
+<p>The women were left to run the new mission for several months. In 1879 and 1880 a malaria epidemic struck, killing Mrs Berthoud and, one by one her five children. Meanwhile, three of Creux’s children died from diphtheria. Despite tragic setbacks, the sponsoring missionary organizations redoubled their efforts on behalf of the South Africa Mission. A local evangelist was ordained for work among the Gwamba people in Portuguese territory and Paul’s brother, Henri, came to South Africa as well. Meanwhile, Berthoud continued his recuperation in Switzerland, printing a book of translations of biblical passages and hymns in the local language. Creux, still in Africa, was asked to mediate a dispute between the transvaal government and the Bavenda people, who refused to pay taxes to the invader.</p>
+
+<p>A feature of the Swiss missions was the active recruitment and training of African Clergy, but in Crux’s region, setbacks were experienced. The influx of gold miners brought severe social disruptions, with rootless male workers paid high wages and seeking strong drink. The fragile stability of the tranquil Christian communities were threatened; the mission salaries could not compete with the miners’ wages, and other distractions were multiple.</p>
+
+<p>By the century’s end the mission stations were established on solid ground. Creux remained now in Pretoria as director of activities. He also ministered to more than four hundred Africans condemned to the scaffold by the South African government and to a leper community as well. Of the lepers he said, “I see in front of me all that can be described as the most hideous, physically, but Jesus loves them, we love them in His love, and, in return, their poor suffering hearts are filled with love and gratitude.” Berthoud remained in Mozambique. His triumph was construction of a Church that held twelve hundred persons, but he faced the bitter loss of his second wife as well, a victim of dysentery.</p>
+
+<blockquote>
+  <p>*Lord you have been our refuge,</p>
+
+  <p>from one generation to another,</p>
+
+  <p>Before the mountains were brought forth</p>
+
+  <p>or the land and the earth were born,</p>
+
+  <p>from age to age You are God.*</p>
+</blockquote>
+
+<p>Frederick Quinn</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>“Ernest Creux and Paul Berthoud,” in Horton Davies, <em>Great South African Christians</em> (New York: Oxford University Press, Geoffrey Cumberlege, 1951), 151-159.</li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>African Saints: Saints, Martyrs, and Holy People from the Continent of Africa</em>, copyright © 2002 by Frederick Quinn, Crossroads Publishing Company, New York, New York.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Creux, Ernest and Paul Berthoud`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +771,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +810,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

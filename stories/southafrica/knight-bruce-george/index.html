@@ -607,8 +607,63 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>George Wyndham Hamilton Knight-Bruce was an Anglican bishop and pioneer missionary in southern Africa. Educated at Oxford (Merton College, B.A., 1876), he was ordained a priest in 1877 and married Lillian (d. 1937) in 1878. Until 1886 he worked in parishes in England. At the time that Cecil Rhodes and his associates were pushing British sovereignty in southern Africa northward, and boundaries were not yet fixed, Knight-Bruce was consecrated as third bishop of Bloemfontein (Orange Free State). In 1888 he made a notable journey to the Zambezi and back and visited the Ndebele paramount chief, Lobengula. After the setting up of the British South African Company (1889) and the establishment of Salisbury (1890), the Anglican diocese of Mashonaland was formed in 1891. Knight-Bruce became its first bishop, and stations were begun at Salisbury and Penhalonga, near Umtali, with assistance from the Society for the Propagation of the Gospel. During the years of his activities in southern Africa, Knight-Bruce’s wife remained in England gathering support. In 1894 he was invalided to Britain. The first Shona converts were baptized in 1896; the Anglican work was later extended into Matebeleland.</p>
+
+<p>Jocelyn Murray</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>G. W. H. Knight-Bruce, <em>Journals of the Mashonaland Mission, 1888-1892</em> (1892) and <em>Memories of Mashonaland</em> (1895); C.E. Fripp and V. W. Hiller, eds., <em>Gold and the Gospel in Mashonaland</em> (1949); C. F. Pascoe, <em>Two Hundred Years of the SPG: An Historical Account of the Society for the Propagation of the Gospel in Foreign Parts, 1701-1900</em>, vol. 1 (1901); Titus Presler, “Missionary Anglicanism Meets an African Religion: A Retrospect of the Centenary of Bishop Knight-Bruce’s Entry into Zimbabwe,” <em>Missionalia</em> 17, no. 3 (1989): 162-175.</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Knight-Bruce, George Wyndham Hamilton`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +742,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +781,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

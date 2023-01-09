@@ -607,8 +607,81 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/southafrica/moffatt-robert2/moffat.jpg" alt="Robert Moffat" class="bio" height="200px" width="145px" /></p>
+
+<p>Robert Moffatt (Ormiston, East Lothian, Scotland, December 21, 1795-Leigh, Kent, England, August 8, 1883) was a missionary and a linguist, who worked in South Africa and Botswana for more than 60 years.</p>
+
+<p>Of modest parentage, he had an elementary education and was raised as a Presbyterian on strict religious principles by his mother (a Scotswoman, <em>née</em> Anne Gardiner). He first worked as a gardener in Scotland and England.</p>
+
+<p>Influenced by Methodism, he determined to become a missionary and in 1816 joined the London Missionary Society (LMS). He had already met and become engaged to Mary Smith who came from Lancashire, near Manchester. He was sent out to South Africa, where he arrived in Cape Town on January 13, 1817. His fiancée, however, due to her father’s objections, did not join him for another three years.</p>
+
+<p>He was to begin his service in Great Namaqualand, south of the Orange River, but at first was refused permission to travel there by the local authorities. Therefore he began instead to study Dutch at Stellenbosch University until January 1818, when he began work in Great Namaqualand. He had an early success in the conversion of local ruler Jager (Christian) Afrikaner (circa 1800-1823), a Hottentot freebooter, this while traveling in South West Africa (now Namibia) and Bechuanaland (now Botswana).</p>
+
+<p>In April 1819, in Cape Town, he met with an LMS deputation investigating LMS work in Southern Africa. They invited him to act as their interpreter in Dutch. He traveled with them until the Fifth Frontier War of 1819 forced them to stop. At the same time, his fiancée arrived from England, and they were married in Cape Town in December 1819. She was to prove a strong, loyal and dedicated companion. The delegation persuaded him to work amongst the Tswana (Bechuana), and he settled at first at Dithakong in 1821, among the Tlhaping (a Tswana people). Unrest swept this region as a result of the wars of the Zulu Chief Shaka, but invaders were driven off by armed Griquas led by Andries Waterboer. Unsettled conditions continued until 1829. At that time, Moffatt baptized his first converts. In this same year, he established what was to prove a lifelong friendship with Mzilikazi, chief of the Matabele.</p>
+
+<p>Having moved to Kuruman, he began to translate the Bible into the Tlhaping dialect. He took the manuscript to Cape Town, where, with his own hands, he prepared it for printing on the government press. He then acquired a printing press, which he took to Kuruman by ox-wagon, where he produced more religious literature. He had, however, to travel to Britain to have his translation of the New Testament published in 1840. While in London in 1841, he met with David Livingstone, whom he persuaded to travel to Africa. It was from Kuruman that Livingstone began his African travels in 1849.</p>
+
+<p>Meanwhile, back in Kuruman, he continued to translate and print the Old Testament. The result was the first translation of the Bible into any South African language.</p>
+
+<p>In 1857 he led a mission to meet with Mzilikazi in Matabeleland. Suspicious of his influence, Afrikaner burghers prepared to attack Kuruman. A request to the British govemor at the Cape, Sir George Grey, led to a successful appeal to Pretorius not to make the attack. Moffatt then remained at Kuruman, working on a translation of <em>Pilgrim’s Progress</em>.</p>
+
+<p>In 1870 Moffatt and his wife retired to England, where she died at Brixton in 1871. He died in 1883. His son John Smith Moffatt continued his work in Botswana, and his daughter, Mary, married David Livingstone. Kuruman had been the northernmost European outpost in southern Africa, and played a key role in the establishment of relations with the more northerly peoples. Although involved with diplomatic relations, Moffatt’s work was essentially evangelical in character.</p>
+
+<p>Keith Irvine</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p><em>Dictionary of South African Biography</em>, Vol. 1, Ed. W. J. de Kock, Cape Town: Nasionale Boekhandle Berferk, 1961; <em>Dictionary of African Historical Biography</em>, Eds. Lippschutz Mark R., and R. Kent Rasmussen, Chicago: Aldine Publishing Co., 1978; Richard P. Stevens, <em>Historical Dictionary of the Republic of Botswana</em>, Metuchen, N.J.: Scarecrow Press, 1975; J.S. Moffatt, <em>The Lives of Robert and Mary Moffatt</em>, London: Fisher Unwin, 1885.</p>
+
+<hr />
+
+<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (In 20 Volumes). Volume Three: South Africa- Botswana-Lesotho-eswatini. Ed. Keith Irvine. Algonac, Michigan: Reference Publications Inc., 1995.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Moffat, Robert (C)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +760,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +799,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

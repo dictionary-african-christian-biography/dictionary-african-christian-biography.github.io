@@ -605,8 +605,71 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Simon Kituki Lusoki  était un vaillant évangéliste qui travailla énormément pour implanter des églises des Frères Mennonites au Congo dans le territoire de Kasongo Lunda, dans la province du Bandundu, en République Démocratique du Congo.</p>
+
+<p>Il naquit vers 1920 à Tambu-Tseke dans le territoire de Kasongo Lunda. Il épousa Mayamba et ils ont eu huit enfants.</p>
+
+<p>Il servit comme cuisinier chez le missionnaire Karvers de l’Americain Mennonite Brethen Mission (AMBM) [Mission américaine des Frères Mennonites] . Après l’indépendance du pays en 1960, cette mission devint la Mennonite Brethen Missionary Society International (MBMSI) [Société internationale missionnaire des Frères Mennonites], puis la Communauté des Églises des Frères Mennonites au Congo (CEFMC). Sous l’influence de Karvers, Lusoki se convertit et devint par la suite son interprète. Karvers le forma pour devenir pasteur d’une façon informelle qui consistait à interpréter les prédications du missionnaire puis à donner des prédications personnelles suivant le modèle et le style du missionnaire. Quelques années plus tard, Lusoki devint le premier pasteur congolais ordonné par Karvers dans cette partie du pays.</p>
+
+<p>Après son ordination pastorale, il se lança dans les activités d’évangélisation parmi les gens d’autres territoires et districts à la manière des missionnaires blancs de son temps. En 1952, il implanta la première paroisse Mennonite à Mwanzita. Enflammé par la passion pour les âmes perdues, il alla partout pour implanter des églises. Il arriva à Kahungula à la frontière avec l’Angola, où il implanta d’autres églises. On rapporte que Lusoki baptisa 5 000 personnes tout au long de son ministère. Il suscita la vocation de la majorité des pasteurs de cette communauté et les encouragea à suivre  des cours bibliques à l’école biblique de  Kafumba.</p>
+
+<p>Lusoki était aussi un agent de développement. Il initia une ferme avec plusieurs vaches, connue sous le nom de Talamaku, qui veut dire “occupe-toi de tes affaires”. Cette ferme existe encore aujourd’hui. Aussi, il bâtit trois églises de matériaux durables à Panzi, où il mourut en 1994.</p>
+
+<p>Rama Kiyendila Nyangi</p>
+
+<hr />
+
+<p>Source:</p>
+
+<p>Mwamba Kavuya, interview, juin 2007. Pasteur Mwamba était le collaborateur de Lusoki.</p>
+
+<hr />
+
+<p>Cet article, reçu en 2008, est le produit des recherches de Rama Kiyendila Nyangi, étudiant en missiologie au Centre Universitaire de Missiologie à Kinshasa-R.D.Congo sous la direction du Rév. Fohle Lygunda, coordinateur francophone du <em>DIBICA</em>.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Lusoki Kituki, Simon`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +750,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +787,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

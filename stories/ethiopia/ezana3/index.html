@@ -566,7 +566,7 @@
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Ezana (‘Ezana) (C)">
     
-    <meta itemprop="datePublished" content="October 27, 2023">
+    <meta itemprop="datePublished" content="October 27, 2022">
     
 
 <!-- NAME(S), DATE, AFFILIATION, COUNTRY -->
@@ -611,8 +611,83 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/ethiopia/ezana3/ezana-small.jpg" alt="Ezana" class="bio" height="159px" width="160px" /></p>
+
+<p>Ezana, or Aizanas, was the 4th-century king of Aksum in whose reign Christianity was introduced to Ethiopia. He conquered the Nile valley realm of Kush (Meroe), and extended the frontiers of his kingdom to include not only what is now Ethiopia, but also parts of the Sudan and Somalia.</p>
+
+<p>He had two brothers, Adephas and Sayzana (<em>q.v.</em>), both of whom played a significant role in his exploits against different ethnic groups in what is now northern and northwestern Ethiopia. Tyrannius Rufinus (circa 345-410/11), the Roman-trained writer and theologian, tells us that Ezana and his brothers had a Greek and Christian education. Frumentius (<em>q.v.</em>), [F’ré Menatos], a Hellenized Syrian Christian, was employed by the ruler Ella Ameda,  father of Ezana, to teach his children, and so influenced Ezana’s attitude towards Christianity.</p>
+
+<p>He ascended the throne some time between 320 and 325 AD. According to the inscriptions which have come down to us from his reign, his kingdom extended to both sides of the Red Sea, and then included territory in both Asia and Africa. His capital was the city of Aksum. As ruler, he extended the boundaries of the kingdom of Aksum, and decorated his capital with buildings and monuments, including obelisks. He introduced the title “King of  Kings”, still used by the Ethiopian monarchy in the 1970s. He was not, however, the founder of the Ethiopian Empire, which he inherited from his predecessor, although he laid the foundations of its present cultural and religious character.</p>
+
+<p>His reign was prosperous, and external trade flourished. Many Greek merchants came to Ethiopia to trade in ivory, gold, tortoise shells, hides, and spices. Like his predecessors, Ezana minted coins with Greek legends on them, to facilitate external trade. He also fought to open up the road leading to Egypt.</p>
+
+<p>During his reign, ancient Ethiopian culture took on its final character. The Ge’ez language became independent of the Sabaean. It became vocalized (i.e. furnished with vowels) and finer, and new terms were introduced into it. Literature also flourished, as it attested by inscriptions in Ge’ez. Among the new words introduced was the word “Egziabher,” meaning “God”, which is still used in modern Amharic.</p>
+
+<p>The Greek merchants in Ethiopia, with the support of the emperor, paved the way for the introduction of Christianity. Ezana’s tutor, Frumentius, went to Alexandria in Egypt to inform the Patriarch Athanasius (who lived from about 293 to 373), the ecclesiastical statesman who defended Christian orthodoxy against the Arian heresy, that the country was ready for Christianity. He did this in the hope that a bishop would be sent to Ethiopia. He himself was appointed as the first bishop. Upon his return, he first converted the king to Christianity. He did this in about 345, after which it slowly spread among the people. The king became a protector of the new religion, which was thus exempted from persecution. The introduction of Christianity inaugurated a new era of peace in Ethiopia.</p>
+
+<p>Legend has it that Ezana fell fighting in western Ethiopia. His body was brought back to Tegré, where it remained in a monolithic rock-hewn church which was then dedicated to him. Ezana and his brother Sayzana are canonized by the Ethiopian Church as saints, and their memory is observed on the 4th of Tekemt (October 14).</p>
+
+<p>Sergew Hable-Selassie</p>
+
+<hr />
+
+<p><strong>Bibliography</strong></p>
+
+<p>E. A. Wallis Budge, <em>A History of Ethiopia</em>, London, 1928, <em>The Book  of Saints of the Ethiopian Church</em>, Cambridge, 1928.</p>
+
+<p>J. B. Coulbeaux, <em>Histoire politique et religieuse d’Abyssinie</em> (“The Political and Religious History of Abyssinia”), Paris, 1929; J. Deramey,  “Introduction et restauration du Christianisme en Abyssinie”, <em>Revue de l’‘Historie des Religions</em>, vol. 31, Paris, 1895.</p>
+
+<p>Sergew Hable-Selassie, <em>Beziehungen Aethiopiens zur griechischtomischen Welt</em> (“Ethiopia’s Relation to the Greco-Roman World”), Bonn, 1963.</p>
+
+<p>J. Spencer Trimingham, <em>Islam in Ethiopia</em>, London, 1952.</p>
+
+<hr />
+
+<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (in 20 Volumes). Volume One Ethiopia-Ghana, ©1997 by L. H. Ofosu-Appiah, editor-in-chief, Reference Publications Inc., New York, NY. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Ezana ('Ezana) (C)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +766,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -730,6 +805,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

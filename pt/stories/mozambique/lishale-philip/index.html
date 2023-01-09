@@ -606,8 +606,78 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>O Pastor Philip Marumbini Lishale converteu-se em Moiene, na igreja de Samuel Mulate. Os pais dele ficaram furiosos quando ele decidiu converter-se. No Colégio Bíblico de Rehoboth, buscou a experiência da santidade do coração. A missionária, Sra. D. Maud Jones, descreve o que viu. -As lágrimas corriam. De olhos fechados e cara levantada, ele batia-se no peito e gritava em voz alta. Rogava ao Senhor que cumprisse o dom da Sua promessa. Logo a sua luta espiritual terminou e ficou de rosto iluminado. Com ambas as mãos levantadas, começou  rir de alegria. Ele encontrar-se-ia freqüentemente na cozinha com um missionário mais antigo, o Rev. Dad Groom, para oração.</p>
+
+<p>De volta a Gaza, ele casou-se com Marta de Magude e substituiu o Pastor Samuel Mulate em Moiene, em 1923. Tanto ele como Marta encararam oposição amarga dos familiares não-crentes. Como não tinham nenhum filho depois de quatro anos de casados, fizeram troça deles e disseram-lhes que deviam sacrificar uma cabra para satisfazer os deuses. Eles apenas oraram; depois tiveram um rapaz, a quem chamaram Poder, e uma menina à qual deram o nome de Louvor.</p>
+
+<p>Philip Lishale era pregador apaixonado e um intercessor. Ele costumava trazer o pecado à luz sem misericórdia e apresentá-lo como objeto de desprezo e desdém. Um grande soluço embargava a sua voz e lágrimas corriam-lhe pela face abaixo enquanto rogava às pessoas que se arrependessem. Marta era uma cristã especialmente animada e feliz e uma grande coadjutora no trabalho do Senhor.[1]</p>
+
+<p>Depois de um ministério breve, tanto o Pastor Philip como a Senhora Marta Lishale morreram de tuberculose, quase ao mesmo tempo. Como foi ceifado no auge da vida e do ministério, Philip Lishale deixou à igreja um exemplo poderoso como seguidor de Cristo totalmente dedicado de homem de oração.[2]</p>
+
+<p>Paul S. Dayhoff</p>
+
+<hr />
+
+<p>Citações:</p>
+
+<ol>
+  <li>
+    <p>H. K. Bedwell, <em>Black Gold</em> (Auro preto)<em>: The Story of the International Holiness Mission in South Africa</em>, (Cape Town: Cape Times Limited, 1936), 46-47.</p>
+  </li>
+  <li>
+    <p>Sra D. B., Reginald and Harold Jones, <em>David Jones: Ambassador to the Africans</em>, (Kansas City, MO: Beacon Hill Press of Kansas City, 1955).</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>Este artigo é reproduzido, com permissão do livro <em>Living Stones In Africa: Pioneers of the Church of the Nazarene</em>, edição revisada, direitos do autor © 1999, por Paul S. Dayhoff.  Todos os direitos reservados.</p>
+
+<p>Este artigo foi traduzido da língua inglesa pelo Rev. Roy Henck, missionário reformado para Cabo Verde, e pelo Rev. António Barbosa Vasconcelos, pastor cabo-verdiano.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Lishale, Philip`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Leia várias versões: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -690,7 +760,7 @@
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 02 January 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 14 December 2022.<br>&copy; 2022 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -725,6 +795,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

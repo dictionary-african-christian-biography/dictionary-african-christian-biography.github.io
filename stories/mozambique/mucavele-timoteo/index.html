@@ -607,8 +607,87 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Rev. Timoteo Umelwane Njanje Mucavele was born into a non-Christian traditional home in the Manhique area. When he was eleven he was a herdboy.</p>
+
+<p>One night a hyena attacked him while he was asleep at home. It bit him badly and he lost a finger. His uncle fired a gun and the hyena fled. While recovering from this he had a dream one night. The sky opened and he saw people in heaven. It meant little to him then as he had not heard the gospel.</p>
+
+<p>He entered school at Tavane in 1928 and, in a revival in 1930, found the Lord. Later he was sanctified. He heard God’s call to preach and pastored very successfully. In 1937 he accompanied Rev. Lawrence Ferree to Tete to try to begin work there. He married Roshita in 1938.</p>
+
+<p>Of Mrs. Roshita Mucavele, Dr. William Esselstyn said, “She is just as good as he, a faithful wife and mother to their splendid family of young children and a real helpmeet in the Lord’s work. She carries a burden for the salvation of people. Whenever she is at an altar service she prays with tears as she pleads for and instructs seekers.”  They had five daughters and two sons.</p>
+
+<p>Missionary Dr. Esselstyn, wrote of him, “He did outstanding work, developing one of the largest, most zealous and spiritual local congregations. Although a young man of great humility, he is fearless in his stand for his convictions.”  He pastored at Jatigue from 1938 to 1943. Then he went to eswatini to Bible College. In 1948 the Mucaveles went to serve at Nyankutse and in 1953 to Xitsoguanini.</p>
+
+<p>It was about 1945 when Mucavele was arrested and sent to work at the Xinavane Sugar Plantation for six months. He read his Bible, sang and prayed. The farmer disliked this and was very hard on him. As he walked behind the plow all day he sang continually up and down the furrows. After watching for several days, the farmer called him and asked him about it. He testified to what God had done for him. The farmer told him, “From now on I am not going to trouble you and we will give you better and easier work.” Mucavele was made overseer of that whole section of the plantation until his release. [1]</p>
+
+<p>Completing Bible College in eswatini, Rev. Mucavele was ordained in 1947 by General Superintendent Hardy Powers. He pastored at Njatigwe and was appointed as a Zone Leader. In 1962 they came to Mfumo and pastored the Maputo Central Church. Later Mucaveles’ daughter, Rev. Bessie Luiza Tshambe also pastored the Maputo Central Church that was by that time the largest Nazarene congregation in Africa.</p>
+
+<p>Rev. Mucavele’s Christian uncle, Mr. Jaime Manhique, who knew him all his life, gave Mucavele this tribute at his funeral, “He worked well in his calling. All would testify that he was a choice person and would treat everyone alike whether the person was important or unimportant.” [2]  The missionary he worked with, Rev. Charles S. Jenkins, said of him that “He was a solid, dependable and good circuit leader.” [3]</p>
+
+<p>Paul S. Dayhoff</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>
+    <p>W. C. Esselstyn, “Africa Moves Forward”, <em>The Other Sheep</em> (Kansas City, Missouri: Nazarene Publishing House, May 1949), 9.</p>
+  </li>
+  <li>
+    <p>Mr. Jaime Manhique, “Rev. Timoteo Mucavele Has Passed Away,” <em>Mutwalisi</em> (The Herald), Shangaan/Tsonga magazine of the Church of the Nazarene in Mozambique and South Africa, (Florida, Transvaal, South Africa: Nazarene Publishing House, April-June 1975), 9.</p>
+  </li>
+  <li>
+    <p>C. S. Jenkins, “A Fruitful Church”, <em>The Other Sheep</em> (January 1959), inside cover.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Living Stones In Africa: Pioneers of the Church of the Nazarene</em>, revised edition, copyright © 1999, by Paul S. Dayhoff.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Mucavele, Timóteo Umelwane Njanje`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +766,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +805,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

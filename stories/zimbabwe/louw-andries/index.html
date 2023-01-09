@@ -607,8 +607,65 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>South African missionary.</p>
+
+<p>Known as “Andrew,” Louw was born at Fauresmith, South Africa, the son of a Dutch Reformed Church (DRC) minister. While studying theology at the University of Stellenbosch, he developed a serious lung affliction and had to give up his studies in order to move to a drier area inland. He worked on a sheep farm near Colesberg for five years before offering his services to the Cape DRC mission committee to accompany S. P. Helm to the new mission field in Mashonaland (present-day Zimbabwe). With the help of black evangelists trained by Stephanus Hofmeyr, he founded the DRC mission in Mashonaland, with its headquarters at Morgenster. With the help of his wife Cinie (Malan), he translated the Bible into Karanga. He also started the first theological courses for evangelists, out of which a full-pledged theological seminary later developed. In recognition of his outstanding contribution, he was ordained a minister of the DRC in 1919, without having completed the theological studies. In 1954 the queen of England awarded him the Order of the British Empire in recognition of his service in the development of Southern Rhodesia (Zimbabwe).</p>
+
+<p>Willem Saayman</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Andrew Louw’s biography, <em>Andrew Louw van Morgenster</em> (1965), was written by his son A. A. Louw. See also W. J. van der Merwe, <em>From Mission Field to Autonomous Church in Zimbabwe</em> (1981)</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Louw, Andries Adriaan (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +744,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +783,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

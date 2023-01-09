@@ -605,8 +605,89 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Évêque titulaire de Temnos, premier vicaire apostolique du Dahomey.</p>
+
+<p>Louis Dartois naquit à Wez-Macquart (Nord) le 8 juin 1861. Il fit ses études classiques et trois ans de théologie dans son diocèse. Il est ensuite trois ans professeur à Roubaix. Entré à Lyon au séminaire des missions africaines, il fait le serment le 17 décembre 1886 et est ordonné prêtre le 3 juillet 1888. Sa carrière missionnaire va commencer par le professorat et sa vie sera marquée par le signe de la rapidité. Il ne s’attardera guère aux postes successifs que ses supérieurs lui confièrent.</p>
+
+<p>D’abord professeur à Richelieu (Clermont-Ferrand) dont il devient le directeur en avril 1889. En octobre 1892, il part pour l’Egypte et prend la direction du séminaire de Mahalla bientôt transféré à Choubrah. En mars 1895, il passe à Lyon comme directeur du grand séminaire, poste plus délicat car le P. Planque qui avait l’habitude de tout faire depuis quarante ans restait supérieur.</p>
+
+<p>En octobre 1896, il peut enfin partir vers l’Afrique en la préfecture apostolique du Niger supérieur. “Ce désir, avait-il écrit en 1890, n’est pas un désir platonique, c’est un désir très réel.” Au Haut-Niger le P. Dartois se dévoua totalement malgré les nombreuses difficultés. Il travailla à Assaba, Issélé et surtout au fameux et légendaire pays de Koukouroukous en fondant la mission de Agénébodé. On a écrit de lui: “Travailleur infatigable, prêchant toujours l’exemple… Tant au point de vue du zèle apostolique que de l’administration temporelle, ce père sert de modèle à tous.”</p>
+
+<p>En fin 1889, bien fatigué, il rentre en France. Avec le père Lebouvier il fonde la procure de Paris, alors que son préfet apostolique, le père Zappa, attend son retour avec impatience et que le préfet du delta du Nil le demande comme supérieur du collège de Tanta. Le père reste à Paris toute l’année 1900 et il fait de nombreuses conférences.</p>
+
+<p>Mais le gouvernement français, lui, réclamait depuis quelque temps l’érection d’un vicariat apostolique au Dahomey dont le territoire coïnciderait avec les limites de la colonie. Le 25 mai 1901, le vicariat était érigé avec le père Dartois comme premier titulaire.</p>
+
+<p>Sacré à Cambrai le 25 juillet 1901, fin octobre il était reçu avec enthousiasme dans son vicariat. Le Seigneur lui donnera trois ans et demi pour y travailler. Accompagné du père Waller, il fait un long voyage dans le Nord en 1902. Il veut se rendre compte de la situation à Péréré près de Nikki dont il reçoit de mauvaises nouvelles et aussi voir la situation à Kouandé que les pères blancs ont dû quitter. Il dut fermer Péréré mais décida de fonder de nouvelles missions au Moyen-Dahomey, il n’en eut pas le temps. Il lança la construction de la cathédrale de Ouidah…Il avait beaucoup d’autres projets. Il mourut le 3 avril 1905 sans doute victime d’une insolation. Il venait en effet de faire un long voyage en pirogue accompagnant Mgr Pellet qui visitait les missions. Certains ont aussi parlé de fièvre jaune, ce qui est possible car il venait de la région de Grand-Popo où il y avait des cas de cette maladie. A Ouidah ce fut la consternation tant le cher pasteur était aimé. Il repose dans l’ancien cimetière.</p>
+
+<p>L. Douau S.M.A.</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p><em>Lettre de et sur Samos</em>, Missions catholiques, 1891, p. 207.</p>
+
+<p><em>L’Eglise de Ouidah</em>, Missions catholiques, 1902, p. 457-8.</p>
+
+<p><em>A travers le Dahomey</em>. Notes de voyages. Echo des Missions africaines, 1902, p. 133, 170, 1903, p. 2, 43, 73, 119, 145.</p>
+
+<p><em>Lettres</em>, Echo, 1902, p. 99.</p>
+
+<p><em>Les Débuts de la mission d’Abomey</em>, Echo, 1902, p. 213.</p>
+
+<p><em>Pauvreté de la mission d’Abomey</em>, Echo, 1905, p. 65.</p>
+
+<p>Nombreuses lettres et rapports manuscrits. Archives S.M.A. Rome.</p>
+
+<p>Coutumier de Richelieu 1890-91. Archives S.M.A.</p>
+
+<hr />
+
+<p>Cet article, réimprîmé ici avec permission, est tiré d’<em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em>, tome 9, publié en 1977 par l’Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Dartois, Louis`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +768,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +805,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

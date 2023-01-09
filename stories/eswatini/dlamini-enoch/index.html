@@ -607,8 +607,93 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/eswatini/dlamini-enoch/dlamini_enoch.jpg" alt="Enoch Dlamini" class="bio" /></p>
+
+<p>The fourth of the great Swazi pioneers that were ordained by General Superintendent J. G. Morrison in 1939 was Rev. Enoch Dlamini.  (The others were Rev. Solomon Ndzimandze, Rev. Josefa Mkhwanazi and Rev. Samuel Dlamini).   Missionary Elmer “Vusigama” Schmelzenbach was ordained along with them at Bremersdorp (Manzini).</p>
+
+<p>Enoch Dlamini was a son of Prince Ngangaza and grandson of King Mswati II.  He grew up as a nonChristian traditional Swazi.[1]   A little girl, Vina, was one of the first converts at Phophonyane.  The change in her life made a deep impression on her brother.  This illiterate young man began attending the services under a tree.  Then he boldly decided to “choose Christ” and gave up his job with a white trader.</p>
+
+<p>He took the name Enoch and, in 1918, entered the pastors’ classes at Endzingeni.  Arriving at Emvembili in 1921 to begin a church, he found only a tree for a parsonage and bushes for furniture.  The next day he built a rough shelter.  In 1923, he married Miss Leah Nkambule.</p>
+
+<p>In 1985, Mrs. Leah (Nkambule) Dlamini testified, “I gave myself to the Lord a few years after Rev. Schmelzenbach arrived at Endzingeni.  I came to the services with my sister.  We met in the stable.  One day I felt that I loved the Lord Jesus and I gave my life to Him. I confessed all my sins. Even now I still love Him. I want to serve him all the time and do His will while I am still in this world.”[2]</p>
+
+<p>Enoch Dlamini was sanctified during a quarterly workers’ meeting.  At that time he made right the things he had stolen from the trader for whom he had worked.[3]   He became known as a man of prayer and deep commitment to biblical truth and the church.</p>
+
+<p>The home of the Dlaminis was characterized by love and care for others.  Often other people came to live in their home and were treated just like their own family.  Those who know the children of Enoch and Leah Dlamini testify that it is clear from their lives that they have lived in a holiness home.[4] Many of their first converts were reached for the Lord in their own homes as the Dlaminis visited and prayed with the people.  Three of their converts at Emvembili became pastors.  Rev. Enoch Dlamini was later appointed leader of the Siteki Zone.</p>
+
+<p>As he lay for several months dying in hospital, his fortitude and testimony were an inspiration to all.  He told one visiting pastor, “Do not ask the Lord to heal me. Just pray that His will be done and all will be well.”[5]   Mrs. Leah  Dlamini continued to pastor at Emvembili after her husband’s death.  She also pastored the Ebulandzeni Church and others until she retired at Endzingeni where she still resides (1995).</p>
+
+<p>Paul S. Dayhoff</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>
+    <p>Synett B. Msimango, “The Beginnings of the Church at Emvembili,” Research essay by student at eswatini Nazarene Bible College, c.1990, sent by Hugh Friberg.</p>
+  </li>
+  <li>
+    <p>Dr. Robert Perry, notes made in 1985, Manzini Archives.</p>
+  </li>
+  <li>
+    <p>R. DeLong, 1947, <em>We Can if We Will: The Challenge of World Evangelism</em>, (Kansas City, MO: Nazarene Publishing House), 54.</p>
+  </li>
+  <li>
+    <p>Sent by Mr. Lodrick Gama, Siteki, March 2, 1992.</p>
+  </li>
+  <li>
+    <p>David Hynd, “The Passing of a Swazi Pioneer,” <em>The Other Sheep</em>, (Kansas City, MO: Nazarene Publishing House, June 1940), 21.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Living Stones In Africa: Pioneers of the Church of the Nazarene</em>, revised edition, copyright © 1999, by Paul S. Dayhoff.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Dlamini, Enoch`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +772,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +811,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

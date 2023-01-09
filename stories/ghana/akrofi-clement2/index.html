@@ -607,8 +607,75 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/ghana/akrofi-clement2/Akrofi_small.jpg" alt="Clement Akrofi" class="bio" /></p>
+
+<p>Clement Anderson Akrofi (July 1, 1901-July 1, 1967) was an educator, theologian, and linguist. He became the foremost authority on the Twi language in his lifetime, and advocated the adoption of Twi as a lingua franca for Ghana.</p>
+
+<p>Born on July 1, 1901 at Apirede, in Akuapem, a state 30 mi (48 km) north of Accra, he was educated at the Basel Mission schools at Apirede, and at Akuropon, capital of Akuapem, between 1909 and 1918. Between 1921 and 1922, he was trained as a teacher at the Akuropon Training College, after which he was appointed tutor in English and Twi at the college in early 1923.</p>
+
+<p>Unfortunately, he suffered from a partial paralysis, which grew worse, so that from 1923 onwards he was a cripple for life. Fortunately, however, his intellect and speech were unimpaired, and he was able to write and teach. He developed a keen interest in the Twi language, and in a “comprehensive and scientific investigation” of it. This interest, supported by his research, led to his authorship of four books. But the one book that immediately earned him recognition as a linguist, and established his reputation as the foremost authority on the Twi language, was his <em>Twi Kasa Mmara</em> (Twi Grammar Book), published in 1938.</p>
+
+<p>In 1930 the Gold Coast Director of Education appointed Akrofi as an adviser on all problems connected with the Twi language. He later became an examiner in Twi for local teachers’ examinations, as well as an examiner for the London and Cambridge overseas examinations. He also served as chairman, adviser, or member on six committees dealing with Twi language and literature.</p>
+
+<p>After retiring from teaching in 1956, Akrofi devoted his time to the service of the Presbyterian Church. In 1965 he completed a revision of the 1871 translation of the Bible by the Rev. J. G. Christaller, thus producing a modern Twi Bible. His literary, linguistic, and theological works were fittingly recognized by outside institutions. In 1944 he became a Member of the Order of the British Empire (MBE), and in 1960 he was made Doctor of Theology by the Johannes Gutenberg University of Mainz, West Germany.</p>
+
+<p>Akrofi’s physical disability prevented him from taking an active part in the politics of his country. Yet he remained a keen observer of political developments, and followed with passionate interest the country’s struggle for independence. He was often consulted by leading politicians, including Kwame Nkrumah and J. B. Danquah, and frequently corresponded with Danquah on literary, linguistic, customary, and political subjects. In his advice to politicians, Akrofi often stressed “linguistic nationalism” - the adoption of a national language as the only weapon against tribalism and the fragmentation of the national effort. He met with no success in this crusade under Nkrumah’s administration, but after 1966 the role of Ghanaian languages began to be taken more seriously, though the question of Twi as a lingua franca was still being debated in the mid-I970s. He died on July 1, 1967.</p>
+
+<p>D. W. Dwarko</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>C. A. Akrofi, <em>Twi Kasa Mmara</em> (“Twi Grammar Book”), London, 1937, <em>A Twi Spelling Book</em>, Accra, 1938, <em>Twi Mmebusem</em> (“Twi Proverbs”), Kumase, 1958, (revision of the 1871 translation by J. G. Christaller), <em>Anyamesem anase Kyerew Kronkron Apam-dedaw’ ne Apamfoforo nsem wo Twi mu</em> (“Holy Bible, translated from the original tongues in to the Twi language), 1965, (with G. L. Botchway) <em>English-Twi-Ga Dictionwy</em>, Accra, 1968; J. Yeboa-Dankwa, <em>History of the Presbyterian Training College</em>, 125 Years Anniverswy 1848-1973, Accra, 1973. See also an unpublished manuscript by Aubrey Lewis, on “Clement Akrofi, A Study in Christian Education,” at the Presbyterian Training College Library, Akuropon, Akuwapem, an article by the Rev. D. A. Konotey-Ahulu, “Tribute to Dr. C. A. Akrofi, An Eminent Scholar,” in the <em>Christian Messenger</em>, November, 1967, Vol. IX, No. II, and a souvenir brochure, <em>Ceremony on Some Ghanaian Celebrities</em>, University of Cape Coast, November 30, 1974.</p>
+
+<hr />
+
+<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (in 20 Volumes). Volume One Ethiopia-Ghana, Ed. L. H. Ofosu-Appiah. New York: Reference Publications Inc., 1977. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Akrofi, Clement Anderson (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +754,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +793,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

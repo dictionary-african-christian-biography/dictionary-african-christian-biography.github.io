@@ -607,8 +607,87 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Sule Iyugu was born around 1924 in Akun Eggon (Eggon Hills) at Agbro in the present Nassarawa Eggon Local Government Area. Sule and his parents later descended from those hills to settle in the plains now called Wolon at Kagbu within the same local government area. His parents were traditionalists and, as a result, he was put through all the rites and initiations their belief demanded.</p>
+
+<p>However, during his childhood Christianity entered Eggonland with missionaries from South Africa and from the Dutch missions. In this period Sule saw some mission outreaches by these missionaries and knew a few early Christians but it did not have an impact on his life at the time.</p>
+
+<p>Then on one occasion, as he listened to their hymn “<em>Ko Kun Zo Kun Yesu Domin Gafara?</em>” (“Have You Been to Jesus for the Cleansing Power”?) from the Hausa Hymnbook he was convicted and gave his life to Christ Jesus as his personal Lord and Savior.</p>
+
+<p>As his life changed, it was clear that he could no longer fit into the life patterns of his family who were still strong traditional worshippers. Little by little he experienced persecution from his parents in different forms until, finally, he was excommunicated from the family. In order to survive at the time he left and joined the family of Ada Bashi Otso, an older extended relation. They were Christians and proved a tremendous support to him in his Christian upbringing, right through his marriage arrangements. He was baptized in that family.</p>
+
+<p>Ada Bashi Otso’s family organized the marriage for him and paid the bride price. Sule Iyugu married Yaku, a humble and dedicated woman and they were blessed with ten children whom they raised in godly fear to adulthood. The children are all well placed professionally (2008).</p>
+
+<p>Sule Iyugu later moved to the mission center in Alushi where he was exposed to adult education and subsequently received theological training in the local Bible school. However, his dream of further theological education did not materialize largely because of a lack of financial resources to support himself and the family while in school.</p>
+
+<p>Sule Iyugu became an evangelist, covering Gospel work in Alushi Medical Center, the leprosarium, and the local church at Alushi. From this base he covered mission work in the neighboring Eggon and Mada regions. His major engagements were preaching, teaching, and church planting. During his ministry the number of believers increased dramatically. The demands of the Gospel increased as new churches planted in the neighborhood grew and needed pastors.</p>
+
+<p>At this early period there were no indigenous ordained ministers in all of what is known today as the Evangelical Reformed Church of Christ. The few ordained white missionaries were finding it increasingly difficult to cope with the magnitude of the work. As a result, a few of these pastors with basic biblical education and who had experience in the field were ordained as catechists to help with the work. Sule Iyugu and two others became catechists in the Eggon Regional Council, taking on the many pastoral responsibilities. They were vested with the authority to fulfill the duties of full-fledged pastors, performing baptisms and marriages, leading communion services, and dedicating children. They faithfully carried out the tasks in the church until more indigenes were trained to levels where they could be ordained full-fledged pastors. Iyugu also headed local and regional councils for many years and periodically represented these areas in the church synod.</p>
+
+<p>Sule Iyugu motivated youths to prepare for western education to fight illiteracy and enhance their ability to understand the Scripture as well as to give them hope for the future. Considering his strategic position, the local education authority gave him the responsibility of posting, transferring, and even disciplining its teaching staff within the locality–a job Iyugu successfully carried out for many years.</p>
+
+<p>Iyugu had a great influence on people both in the church and outside the church. In the church as a preacher, teacher, and church planter, he was popular and served their needs. Outside the church, youths loved him greatly for the educational encouragement he gave both to them and to their parents. He was a sort of “education secretary” for his neighboring region and the teachers teaching in nearby primary schools. He was a man of discipline throughout his life and he tried to influence people in this direction. Those who met him had a lot of respect for him.</p>
+
+<p>He died peacefully in September 1999 after a brief sickness, leaving behind his wife and children.</p>
+
+<p>Patrick Alambaga Khaty Opah</p>
+
+<hr />
+
+<p>Sources:</p>
+
+<p>Envuladu, Emmanuel Adagadzu. <em>Bishara a Kasa Eggon Daga 1920-1980</em>. N.pl.: n.p., 1983.</p>
+
+<p><em>Ayimon Magazine</em>. An Eggon Official Magazine.</p>
+
+<p>Sule, Affan, son of Pastor Sule Iyugu. Interview by author. September 24, 2006.</p>
+
+<hr />
+
+<p>This article, received in 2008, was written and researched by Rev. Patrick Alambaga Khaty Opah while a student at the Nigerian Baptist Theological Seminary (Ogbomoso, Oyo State, Nigeria) under the supervision of Rev. Dr. Deji Ayegboyin, <em>DACB</em> liaison coordinator.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Iyugu, Sule`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +766,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +805,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

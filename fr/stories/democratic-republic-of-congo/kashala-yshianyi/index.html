@@ -605,8 +605,79 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Jean Kashala Yshianyi, sixième enfant dans une famille de neuf enfants, naquit à Likasi dans le district du Haut Katanga, en République Démocratique du Congo. Son père, Kashala Benoît, était agent d’une société minière et mourut quand Jean Kashala n’avait que huit ans. Sa mère, Tshibuabua Célestine décida alors de rentrer dans son village au Kasai oriental. Kashala a dû se battre pour survivre.</p>
+
+<p>Après ses études primaires à Panda (1957-1963) et ses études techniques et mécaniques à Mutoshi-Kolwezi (1963-1969), Kashala poursuivit ses études universitaires à l’Institut supérieur technique de Seraing en Belgique (1970-1974) d’où il sortit ingénieur industriel. En 1976, il épousa Sidonie Kanku Kalonji, mais n’eut pas d’enfants avec elle. Plus tard, ils décidèrent  d’adopter quatre enfants dont trois garçons et une fille. Cette situation le poussa à chercher Dieu. Il accepta Jésus Christ comme Seigneur et Sauveur et fut baptisé le 27 mai 1979 dans la Fédération des Eglises de Pentecôte du Congo connue aussi sous le nom de <em>Nzambe Malamu</em> (Dieu est bon). Il y reçut l’appel à servir Dieu à plein temps et s’inscrivit pour les études théologiques. Quelques mois après la fin de sa formation théologique à l’Institut Théologique du Réveil (ISTR) en 2000, il fut ordonné.</p>
+
+<p>Dès 2001, il implanta l’église locale qu’il dirigea sous le nom de Fellowship Church (Église La Communion). Il fut membre à vie du Full Gospel Church [l’église du plein évangile] où il occupa le poste de directeur national. Il servit également dans beaucoup d’autres églises, notamment la Cité Evangélique Viens et Vois de Lubumbashi, sous le pasteur Lukusa ; Logos Rhema à Kinshasa sous le pasteur Kalonji; et dans l’église la Colombe du pasteur Marcel Mulumba. Il avait donc franchi les limites confessionnelles qui ont souvent caractérisé les églises de son temps. Jean Kashala  parlait couramment le swahili, le français et l’anglais, et a pu participer à des conventions et des congrès évangéliques, notamment aux États-Unis, au Nigéria, en Zambie, en Afrique du Sud, au Congo Brazza et au Cameroun.</p>
+
+<p>La Fellowship Church implantée et fondée par Jean Kashala est affiliée à l’Eglise du Christ au Congo. Même après sa mort, survenue à Kinshasa le 24 août 2003 à la suite d’un arrêt cardiaque, ses prophéties continuent à se réaliser.</p>
+
+<p>Rama Kiyendila Nyangi</p>
+
+<hr />
+
+<p>Sources:</p>
+
+<p>François Kalo, interview juin 2007. Dr. Kalo est le directeur général de l’Institut supérieur théologique de réveil et représentant légal de l’église Côte de l’Espérance.</p>
+
+<p>André Marie Musangu, interview juin 2007. Musangu était ami de Kashala et l’administrateur de l’Eglise La Communion.</p>
+
+<p>Roger Muka , interview juin 2007. Muka est diacre et le premier membre à adhérer à l’Eglise La Communion.</p>
+
+<p>Jean Pierre Mufuta, interview juin 2007. Mufuta était ami de Kashala.</p>
+
+<p>Chantal Ngalula, interview juin 2007. Ngalula est la belle sœur de Kashala.</p>
+
+<p>Sidonie Kanku Kalonji, interview juin 2007. Pasteur Kalonji est la veuve de Kashala.</p>
+
+<hr />
+
+<p>Cet article reçu en 2008 est le produit des recherches de Rama Kiyendila Nyangi, étudiant en missiologie au Centre Universitaire de Missiologie à  Kinshasa-R.D.Congo sous la direction du Rév. Fohle Lygunda, coordinateur francophone du <em>DIBICA</em>.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Kashala Yshianyi, Jean`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +758,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +795,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

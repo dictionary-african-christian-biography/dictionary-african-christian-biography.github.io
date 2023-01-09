@@ -601,8 +601,63 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Paul Gebauer was a Baptist missionary in Cameroon. Gebauer was born in Silesia, Germany, and immigrated to the United States in 1925. From 1928 to 1931 he studied at Southern Baptist Theological Seminary, Louisville, receiving a master of arts in theology. In 1931 he went to British Mandated Cameroon as a missionary under the German Baptists and served there for 30 years. He and his wife, Clara Katherine, located in the grasslands of western Cameroon, where they helped establish churches as well as educational and medical programs. They became experts in the people, history, culture, and arts of the region. They promoted the preservation and appreciation of Cameroon culture through such publications as <em>Spider Divination in the Cameroons</em> (1964; based on Gebauer’s 1958 master’s thesis at Northwestern University), <em>A Guide to Cameroon Art from the Collection of Paul and Clara Gebauer</em> (1968), and <em>Art of Cameroon</em> (1979), based on Gebauers’ own photographs and collection. Paul obtained a B.A. degree in 1943 and an honorary D.D. in 1952 from Linfield College, McMinnville, Oregon, where he taught after retiring from the mission in 1962. He also helped train early Peace Corps volunteers to Cameroon. The Gebauers contributed artifacts and photographs of the grasslands to the Metropolitan Museum of Art in New York City, Field Museum of Chicago, Milwaukee Public Museum, and Portland Art Museum.</p>
+
+<p>Charles W. Weber</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Charles W. Weber, <em>International Influences and Baptist Mission in West Cameroon</em> (1993); Frank H. Woyke, <em>Heritage and Ministry of the North American Baptist Conference</em> (1979).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Gebauer, Paul`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -681,7 +736,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -720,6 +775,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

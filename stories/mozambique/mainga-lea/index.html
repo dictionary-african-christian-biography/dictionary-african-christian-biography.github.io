@@ -607,8 +607,83 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Aunt Lea Mainga was born at Njatigue near Manjacaze. Her mother was a traditional doctor. Rev. Noé Mainga was her nephew. She first repented in 1920 and her church leaders at that time were Pastors Mosi Manhique and Daniel Mukheti.</p>
+
+<p>She and her husband were church members when the first Nazarene missionaries, Rev. Charles and Mrs. Pearl Jenkins, arrived in 1922. In retrospect she testified that her faith was still incomplete, “I still stole and drank when the Nazarene missionaries came.”[1]  Soon after that her husband died of typhoid fever.</p>
+
+<p>During the revival in 1925 she began to examine the foundations of her faith. She prayed, “My sins are too great. Jesus can never forgive.” She confessed that during her husband’s illness she had called a traditional doctor against his wishes while he was unconscious. Now she could not ask her husband’s forgiveness. It was near midnight when for nearly a half hour she kept repeating as she prayed, “I will trust you Jesus.” Finally she began to laugh and said, “They are all gone. My sins are all gone.”</p>
+
+<p>During the revivals of 1927-28 she was wholly sanctified. She prayed for two weeks with the other women and girls and explained many years later, “They told me to give myself to God but it was a hard thing. I wanted to choose my own ways. Then I left off holding on to my own will and the Holy Spirit came. I know! There was peace! There was joy! I remember well.”[2]</p>
+
+<p>Lea, as a widow, was then according to Shangaan custom to be taken as another wife of her husband’s older brother. At that time he was away working on the gold mines. Lea Mainga was heartbroken and fearful at the prospect of being the wife of a non-Christian. The Jenkins helped her with the money to pay the price for her freedom. Aunt Lea became one of the first Bible women.</p>
+
+<p>She never remarried but remained at Njatigue as a faithful Bible woman. Often her face would be bathed in tears as she counseled and prayed with seekers.[3]</p>
+
+<p>Paul S. Dayhoff</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>
+    <p><em>Mutwalisi</em> (The Herald), Shangaan/Tsonga magazine of the Church of the Nazarene in Mozambique and South Africa, (Florida, Transvaal, South Africa: Nazarene Publishing House, December 1983), 9; Vicente James Mbanze, “Buku ya nkhuvo wa 50 wa malembe ya Kereke ya Munazarene ka Gaza ni Tete” (50th Anniversary of the Church of the Nazarene in Gazaland and Tete), (Tavane Mission, 1972), 31.</p>
+  </li>
+  <li>
+    <p>Betty Emslie, <em>With Both Hands: The Story of Mary Cooper of Gazaland,</em> (Kansas City, MO: Nazarene Publishing House, 1970), from interview with Leah Mainga, 84-86.</p>
+  </li>
+  <li>
+    <p>C. S. Jenkins, “Those Women…,” <em>The Other Sheep,</em> (Kansas City, MO: Nazarene Publishing House, January 1954), 5-6.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Living Stones In Africa: Pioneers of the Church of the Nazarene</em>, revised edition, copyright © 1999, by Paul S. Dayhoff.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Mainga, Lea`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +762,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +801,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

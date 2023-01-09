@@ -611,8 +611,71 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Emperor Zara Yakub, one of the greatest Ethiopian kings, was a progressive reformer of both church and state. During a long reign (1434-1468) he centralized imperial power by replacing local warlords with government administrators, brought extensive neighbouring lands under his authority, substantially completed the Christianization of Ethiopia, and united himself with the church and the monastic leadership.</p>
+
+<p>Zara Yakub faced a major Islamic challenge when he took the throne, which became possible only after his three brothers died. He completely reorganized the army, which enabled him to crush a Muslim invasion in 1445, thus ending the Islamic threat. He completed further government reforms to bring both the central and provincial administrations under his control. A harsh man, Zara Yakub executed three of his daughters for following occult religious practices and had his wife flogged to death when she attempted a palace coup in favor of her son. Nevertheless, he appointed many women as administrators and provincial governors, which in fifteenth-century Ethiopia was remarkable.</p>
+
+<p>Zara Yakub was monastery educated and always remained interested in theology as well as church politics. He sent delegates to the Council of Florence (1431-1445) and forged links with the papacy and Western Christianity. His religious writings include the Creed of the Ethiopian church and five other theological treatises, but he also encouraged literature in general. His interest in theological matters backfired, however, as it encouraged speculation that led to disputes and heresies, especially over the doctrine of the nature of the Holy Trinity.</p>
+
+<p>Zara Yakub’s reform of the church was a mix of religious zeal and administrative cunning. He converted provinces with the first systematic program of evangelization since that of St. TÄKLÄ Haymanot. By founding churches and monasteries and maintaining control, Zara asserted his authority over the church. He placed cooperative monks as abbots in major monasteries, suppressed superstition, and reformed the church calendar.</p>
+
+<p>Norman C. Brockman</p>
+
+<hr />
+
+<p><strong>Bibliography</strong></p>
+
+<p><em>Dictionary of African Biography.</em>  Algonac, MI, and New York: Reference Publications, vol. 1, 1977; vol. 2, 1979.</p>
+
+<p>Lipschutz, Mark, and R. Kent Rasmussen.  <em>Dictionary of African Historical Biography.</em>  2nd edition.  Berkeley: University of California Press, 1986.</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>An African Biographical Dictionary,</em> copyright © 1994, edited by Norbert C. Brockman, Santa Barbara, California. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Zara Yakub (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +754,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -730,6 +793,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

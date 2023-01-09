@@ -607,8 +607,89 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/eswatini/kunene-edward/kunene_edward.jpg" alt="Edward Kunene" class="bio" height="221px" width="158px" /></p>
+
+<p>Edward D. Kunene was born in the Endlinlembe area across the Usuthu river from Manzini.  He became a Christian at a young age while attending a small Methodist primary school which had a deep, lasting influence on his life.  His elder brother, Nathaniel attended the Nazarene Bible College at Siteki.  When his mother died, Edward went to school at Siteki under the care of his brother.</p>
+
+<p>On completing school he felt the call to preach but prior to going to Bible College he taught for a year or two at the Kalanga Nazarene School in the bushveld.  He then enrolled for a two year course at the Siteki Bible College on a part time basis while teaching at the Sitsatsaweni Nazarene School near Siteki.</p>
+
+<p>In 1942 he and Miss Idah Simelane were married at the Siteki Church.  She was working at the Nazarene Clinic at  Siteki.  Miss Ora Lovelace, a teacher in the Bible College, helped her to attend school on the mission. After completing his Bible College training, Kunene was called to the large Bhekinkosi Church where he pastored successfully for ten years.  He then returned to Bible College for further training and completed the three year course in 1960 after which he was ordained as an elder. He pastored a new congregation at Embekhelweni for a short time.</p>
+
+<p>As  his pastoral work during these years was near Manzini he joined the staff at the printing press under Rev. Herbert A. Shirley.  (This was later called the Shirley Press.)  In 1963 when the press moved to Roodepoort in South Africa, Kunene was employed as a charting/accounting clerk at the Raleigh Fitkin Memorial Hospital at the Manzini mission.  He later went to assist missionary Bill Moon in his work as grantee (superintendent of all Nazarene schools in eswatini).  Throughout this time, Kunene was in great demand as a minister.  He was invited as a supply preacher and pastor as needs and circumstances required.</p>
+
+<p>While working at the hospital he felt a real burden for his home area of Endlinlembi.  Being a “home boy” he felt free to approach the chief of the area.  After several visits accompanied by Dr. Samuel Hynd, the chief granted permission for a church to be established.  Kunene started holding services near his family and parental homestead.  As he didn’t have a car, missionaries from the Manzini mission would take him.  A site was allocated for a church and the pastor’s home. As a result of his vision and concern for the spiritual welfare of his childhood community, today there is a thriving Nazarene Church in Endlinlembi.  This helped pioneer work by the Church of the Nazarene in southern eswatini.  Rev. Samuel E. Dlamini and Rev. Arthur Evans began this pioneer undertaking in 1975 and it resulted in the organization of the eswatini South District.[1]</p>
+
+<p>Kunene was appointed assistant pastor at the Sharpe Memorial Church at the Manzini Mission and served as interim pastor for nine months. The Kunenes retired in 1989 and lived at Manzini. He and his wife Idah assisted at the Zakhele Church near Manzini after retirement.[2]</p>
+
+<p>His health began to deteriorate and it was found he was suffering with diabetes.  His eyesight became affected.  Rev. Kunene died peacefully in his sleep on June 28, 1994 and was buried in the Nazarene section of the Manzini Cemetery.</p>
+
+<p>Throughout her married life, his wife, Mrs. Idah (Simelane) Kunene, was supportive of her husband and proved to be a faithful witness and servant of her Lord.[3]</p>
+
+<p>Paul S. Dayhoff</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>
+    <p>“Samuel E Dlamini,”  P. Dayhoff, <em>Living stones in Africa: Pioneers of the Church of the Nazarene</em>, revised edition with photos, (Africa Nazarene Publications, Florida, Gauteng, South Africa, 1999), 44.</p>
+  </li>
+  <li>
+    <p>David Hynd, “God builds Men,” <em>The Other Sheep</em>, Mission magazine of the Church of the Nazarene, (Kansas City, MO: Nazarene Publishing House, January 1969), 9.</p>
+  </li>
+  <li>
+    <p>Information submitted by Dr. Samuel W. Hynd, April 16, 200l.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Standing Stones of Africa: Pillars of the Faith in the Church of the Nazarene</em>, unpublished, copyright pending, 2004, by Paul S. Dayhoff.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Kunene, Edward`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +768,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +807,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -609,8 +609,69 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Abba Gabra Mikael (1791 - 28 août, 1855), ecclésiastique et érudit éthiopien du 19ème siècle, s’est converti à la foi catholique, et a été mis à mort pour sa foi par le Prince Kassa, qui est devenu Empereur Téwodros par la suite (<em>q.v.</em>) [a régné de 1855 à 1868].</p>
+
+<p>Gabra Mikael est né à Dibo, à Gojam, en 1791. Il a été éduqué dans les monastères de Dibo et de Martula Maryam, et il est devenu moine (Abba). Après 15 ans d’études, il a été couronné Liq, soit, érudit distingué. Il a quitté Gojam en 1825 pour Gondar, où il a vécu jusqu’en 1838, pour aller ensuite à Tegré, où il est resté jusqu’en 1840.</p>
+
+<p>Abba Mikael avait comme ambition d’aller en pèlerinage à Jérusalem. Il a fait ce pèlerinage en 1841, et c’est aussi quand il a été fait membre de la délégation éthiopienne du Prince Webé (<em>q.v.</em>),qui avait été envoyée en Egypte sous la direction d’Abba Habta Selassé dans le but de ramener un Abun (tête de l’église éthiopienne). La délégation était accompagnée de monseigneur Giustino de Jacobis, évêque de la mission catholique lazariste du nord de l’Ethiopie, qui était chargé d’amener des messages de bienveillance au pape à Rome, et d’être guide pour les éthiopiens lors de leur voyage.</p>
+
+<p>La délégation s’est rendue en Egypte, à Jérusalem, et à Rome. Il est probable qu’Abba Mikael s’était déjà converti à la foi catholique avant son retour de Rome. Cependant, cette conversion n’a pas été officielle jusqu’en février 1844. De 1844 à 1847, il a dirigé la station missionnaire lazariste à Guala, à Tegré. Il est parti pour Gondar en 1847, et il est rentré à Tegré en 1849. Mais, à cause de la persécution des catholiques à Tegré, il a fallu qu’il rentre un fois de plus à Gondar en 1851. Cette persécution, cependant, s’est répandue jusqu’à Gondar, et, sur les ordres d’Abuna Salama (<em>q.v.</em>), Mikael a été arrêté le 15 juillet, 1854. Il est passé en jugement devant la cour du Prince Kassa, qui est devenu par la suite l’Empereur Téwodros, pour raison de s’être converti au catholicisme. Il a maintenu sa position de catholique converti, et a même refusé d’accepter l’autorité du Prince Kassa. Le prince s’est mis en colère devant cette effronterie et l’a condamné à mort le 31 mai, 1855. Il a été exécuté le 28 août. Il était considéré martyr de la foi catholique.</p>
+
+<p>Aleme Ashete</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p>J.B. Coulbeaux, <em>Le Bienheureux Abba Ghébre Michael</em>, Paris, 1926; M. Devin, <em>L’Abyssinie et son apôtre</em>, Paris, 1866; W.C. Plowden, Travels in Abyssinia [Voyages en Abyssinie], Londres, 1868.</p>
+
+<hr />
+
+<p>Cet article est réimprimé de <em>The Encyclopaedia Africana Dictionary of African Biography</em> [L’Encyclopédie Africana de biographies africaines] (en 20 volumes). Volume Un, Ethiopie-Ghana, © 1997 par L.H. Ofosu-Appiah, rédacteur en chef, Reference Publications Inc., New York, N.Y. Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Michael, Gebhre (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +752,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -728,6 +789,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

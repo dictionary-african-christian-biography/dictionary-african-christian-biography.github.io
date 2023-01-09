@@ -607,8 +607,69 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Alaqa Tayye Gabra Maryam (1858 to August 1924) was an Ethiopian scholar, teacher, and writer, as well as an eloquent preacher.</p>
+
+<p>Born at Qaroda, in Bagemder, Teyye began his education in a church school. His education was interrupted, however, when his father and uncle fled their province for political reasons, and his mother died in an epidemic in 1867. He then wandered to different places in search of his father and uncle, who had gone to Bombay, India. Tayye ventured as far as Massawa, in the Red Sea Coast, and enrolled in an evangelical mission school at Monkolu near Massawa in 1874. In 1875 he returned to his home province to continue his education. He became proficient in Ge’ez language and in the teachings of the Ethiopian Orthodox Church.</p>
+
+<p>In 1880 he returned to Monkolu, where he became a teacher, and preached for about 20 years. He published 5 books, mostly on religious themes. His most outstanding work was a Ge’ez grammar which was published in 1889. By the time he returned to Bagemder again in 1889, his reputation for learning was established. Emperor Menilek II (<em>q.v.</em>) [reigned 1889-1913] commissioned him to write the history of Ethiopia, and protected him against the clergy, who viewed him as a heretic. The German emperor Kaiser Wilhelm II (reigned 1888-1918) requested Menilek to send him an Ethiopian scholar to catalogue Ethiopian manuscripts and to teach Ge’ez in the University of Berlin, and Menilek sent Tayye in 1905. During his four-year stay in Germany, Tayye visited Stockholm, Vienna, Rome, Istanbul, Jerusalem, Athens, and Alexandria, mainly in pursuit of historical material. Many of the governments of the countries he visited awarded him medals. Menilek also awarded him a gold medal, and again authorized him to write on Ethiopian history.</p>
+
+<p>Tayye was questioned several times on his faith by Abuna (head of the Ethiopian Church), but showed no deviation from the doctrines of the church, though he was critical of its practices. After Menilek’s illness in 1909, Tayye was attacked by his enemies. He was arrested in December 1910, and was imprisoned in Addis Ababa, but showed himself happy to be able to teach the other prisoners. He was eventually confined outside the prison. In 1918 the government realized his value as a scholar, and reinstated him as an official author. His first historical work, a social history of Ethiopia, was published in 1922. He had also written a book on the general history of Ethiopia, but he died in August 1924 before it could be published.</p>
+
+<p>Bairu Tafla</p>
+
+<hr />
+
+<p><strong>Bibliography</strong></p>
+
+<p>Heruy Walda Selasse, <em>Yahaywat Tarki</em> (“Information for the Generations to Come”), Addis Ababa, 1922/23; Mahatama Sellasie Walda Masqal, “A Study of the Ethiopian Culture of Horse Names,” <em>Journal of Ethiopian Studies</em>, Vol. 7, No. 2, Addis Ababa, 1969; P. Mérab, <em>Impressions d’Ethiopie</em> (“Impressions of Ethiopia”), Paris, 1921-1929; Tayye Gabra-Maryam, <em>Mazmura Krestos</em> (“The Psalter of Christ”), Asmara, 1913, <em>Ya-Ityopya Hizb Tarik</em> (“History of the Ethiopian People”), Addis Ababa, 1922</p>
+
+<hr />
+
+<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (in 20 Volumes). Volume One Ethiopia-Ghana, ©1997 by L. H. Ofosu-Appiah, editor-in-chief, Reference Publications Inc., New York, NY. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Gabra-Maryam, Alaqa Tayye`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +748,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +787,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -607,8 +607,65 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>[BUNYORO]</p>
+
+<p>Daudi Mbabi was born at Mutundwe Hill, Busongora, just  inside the now Democratic Republic of the Congo border. He was the youngest son  of Wamara and Kasemiire—Wamara was the ruler and spiritual leader of several  Bahima clans. Mbabi was captured by Kabarega’s <em>barusura</em> c. 1875 and sold  by his Munyoro captor to a Muganda who presented him to the mother of Muteza I.  When she died he was taken into the household of Mwanga’s mother. When he  became a Christian he lost favor, and fled and went as an evangelist to Koki.  On his return he was baptized by the Rev. E. Millar in 1893. He went to work  for the church at Bombo. In Kampala he was always welcome in the household of  Tefire Kisosonkole who was his godfather. As a result of Fisher’s influence he  was appointed <em>kawuta</em> (head cook) to Kitehimbwa when he was sent to  Bunyoro as Mukama in 1898. Mbabi became very unpopular for obeying British  orders and trying to introduce Kiganda etiquette into the Bunyoro court. In  1900 he was made <em>Katambala</em> of Buruli. In 1902 he was transferred to the  position of <em>mugema</em> at Pawiri, and was suspended after a fight with the  Bachope brought on because he tried to obey government orders about small pox.  In 1903 he was appointed <em>sekyoya</em> (sub-chief) at Butiaba, and then <em>mutengesa</em> (also a sub-chief) at Bigando. From this position he was suspended because of a  disagreement with his <em>saza</em> chief. In 1906 he was sent to supervise the  building of Hoima township, and when the <em>Nyangire</em> rising took place the  following year, he refused to take sides. As a reward for his fidelity he was  appointed to a subchieftainship in Bugahya. In 1912 he was made regent for  Andereya Butetere, one of the sons of <a href="byabaowezi_paulo_and_damari_karujuka.html">Paulo Byabaowezi</a> between whom their father’s  domains were divided. From 1918 to 1927 he worked as <em>katabarwa</em> (sub-chief) to the <em>Pokino</em> at Kigaya, and in 1927 he was appointed to a <em>saza</em> chieftaincy, that of <em>Sekibobo</em>, making his headquarters at Kyema. In 1930  he built a new <em>saza</em> headquarters at Pakanyi, and this became his home  until his death. In 1933 he was one of the signatories of the Bunyoro  Agreement, and in 1935 he was awarded a Silver medal for his services to the  Protectorate. In 1936 a reorganization of <em>sazas</em> took place, and he was  put in charge of the combined counties of the <em>Sekibobo</em> and the <em>Kangao</em> with his headquarters at Kiryandongo. He retired on pension in 1937, and died  in 1953 having been struck by lightning.</p>
+
+<p><strong>Louise Pirouet</strong><em>**</em></p>
+
+<hr />
+
+<p><strong>Notes</strong>(short  form; see <a href="../pirouet-appendixa-sources/">List of  Sources</a> for complete citations):</p>
+
+<p>Based on an obituary in the <em>Uganda Herald</em>, July 25, 1953, written by his son, Solomon  Mbabi-Katana.</p>
+
+<hr />
+
+<p>This biography, written by Louise Pirouet, was included in “Appendix A: Biographical Notes,”  on page 413-14 of “The  Expansion of the Church of Uganda (N.A.C.) from Buganda into Northern and  Western Uganda between 1891 and 1914, with Special Reference to the work of  African Teachers and Evangelists” (PhD Thesis: University of East Africa,  1968). Pirouet published this thesis as <em>Black  Evangelists</em> (London: Rex Collings, 1978). However, <em>Black  Evangelists</em> does not reproduce the detailed biographies, complete with  references to sources, found in Appendix A of the thesis. Print copies are  available at Africana Section, Makerere University Library (U 02 P57); The Centre for Christianity  Worldwide, Cambridge; and a microfilm copy at the School of Oriental Studies,  London. [information from Angus Crichton]</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Mbabi, Daudi`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +744,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +783,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

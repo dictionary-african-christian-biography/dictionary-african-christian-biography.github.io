@@ -607,8 +607,89 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Aneth (Tusanyege) Mbapa Kabisa was born in 1915 into the Nyakyusa tribe. Sources disagree on whether her birth place was Busale, Kyela District or Kyimbila, Rungwe District. She married Peter Kabisa in 1932.</p>
+
+<p>She actively participated in the Moravian Church Women’s Organization called <em>Kitulano</em>,  a word which literally means “help one another.” They met twice a week, usually on Wednesdays and Fridays to study the Bible, sing, learn Christian ethics and home economics, and development skills such as weaving and sewing. After meeting in the morning for one or two hours they went out in groups to visit the sick, the bereaved, the backslidden, and to do evangelism work among  non-Christians as well.</p>
+
+<p>Aneth Kabisa was elected a member of the synod held at Msangano in 1958. At that time she was the leader of the Mbeya Moravian Church Women’s Organization. At this synod, she was the first African woman elected leader or chairperson of the Provincial Women’s Organizations of the Moravian Church in Southern Tanzania (then Tanganyika). She was also the first African woman elected member of the Provincial Board of the Moravian Church in Southern Tanzania. She held these positions up to 1976 when the province was divided into Southern Province and Southwest Province. After the formation of  Southwest Province she was elected chairperson of the Provincial Women’s Organization in January 1977 and held this position until 1980.</p>
+
+<p>Aneth Kabisa had only two children, named Godwin Peter Kabisa and Matilda Peter Kabisa (the latter is now deceased–2007). After their two children had grown up and gone away to school, she started to take care of orphans as well as children from their relatives, primary school pupils, and secondary school students. The orphans who had no relatives she took into her own home and treated them as her own children. Some of their names are Mpoki, Yusufu, Martin, and Mary. She sent all the children in her care to school.</p>
+
+<p>Her husband was also involved in caring for these children. To compensate for the money she took from his salary for the children’s expenses, Aneth Kabisa sold charcoal and firewood. She also had farms at Nsonyanga in Mbarali District where she cultivated rice, producing approximately fifty bags per year. She kept some of the rice to use at home and the remainder she sold to pay for daily household supplies, school fees, uniforms, and school materials for the children. She also cultivated corn or maize which yielded fifteen bags a year and groundnuts or peanuts (six bags yearly). Sometimes she baked pancakes and sold them. Years later, when her adoptive children became independent, some of them gave her gifts of money, clothes, and food. For instance, Suzana Mwasongwe, who married Bantu Simuyota at Mbimba, Mbozi District, sometimes brought Aneth Kabisa such gifts.</p>
+
+<p>Due to her kindness and wisdom many bishops and other leaders of the Moravian Church in Tanzania came to visit her either to seek advice or simply to convey their greetings. When she worked for the Southwest Province, many pastors, leaders of women’s organizations, lay people, and the general public visited her to seek advice because she had shown good leadership over the Provincial Women’s Organization. She was recognized as a wise counselor. Her husband Peter Kabisa certainly helped her as well.</p>
+
+<p>Aneth Kabisa is remembered by many old women and some young women of the Moravian Church in Tanzania because of the lessons she taught, applying her wisdom and insights from both the African cultural traditions and Christian traditions. For example, she taught women not to be arrogant toward their husbands but to love and obey them.</p>
+
+<p>She faithfully gave her tithe to the church. She traveled a lot to teach at women’s organizations (<em>Kitulano</em>, for example) in Moravian churches in  Southern Province, Southwest Province, and Western Province.</p>
+
+<p>She was also a strong advocate for women’s rights and justice and for the ordination of women. She insisted constantly that parish workers or district / ward women teachers must be paid for their services and not work only on a temporary basis. This is why many women had confidence in her and depended on her. Many of the things she advocated were fulfilled during her life time.</p>
+
+<p>Aneth Tusanye Mbapa Kabisa died on August 30, 1998 and was buried at Sabasaba cemetery, Mbeya City.</p>
+
+<p>Angolwisye Isakwisa Malambugi</p>
+
+<hr />
+
+<p>Author’s Note: I met her in 1967 at Mabatini, Mbeya city and, in 1968, her husband sold me a plot of land at Mabatini where I built a house. My wife and I often visited their home.</p>
+
+<p>Sources:</p>
+
+<p>Peter Kabisa, her son, 69 years old, telephone interview by the author on September 12, 2006.</p>
+
+<p>Joshua Kabisa, son of her brother-in-law, 56 years old, interview by the author at Jacaranda, Mbeya city, Tanzania, on September 14, 2006.</p>
+
+<p>Luise Plock, <em>Historia fupi ya Umoja wa Wanawake wa Kanisa la Moravian Tanzania, Majimbo ya Kusini na Kusini Magharibi</em> [sic], unpub. booklet (1976).</p>
+
+<p>Angetile Y. Musomba, <em>Historia ya Kanisa la Moravian Tanzania - Jimbo la Kusini 1891 - 1976</em> (Dar es Salaam: Dar es Salaam University Press, 1993).</p>
+
+<hr />
+
+<p>This article, received in 2007, was researched and written by Rev. Angolowisye Isakwisa Malambugi, former chairman of the Moravian Church in Tanzania, Southwest Province, lecturer at Teofilo Kisanji University (formerly Moravian Theological College) in Mbeya from July 1995 to December 2006, and part-time lecturer at Open University of Tanzania from 1999 to the present. He was also Project Luke fellow in Spring 2007.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Kabisa, Aneth Tusanye Mbapa`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +768,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +807,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -605,8 +605,75 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/nigeria/babalola1/Babalola-small.jpg" alt="Joseph Ayo Babalola" class="bio" /></p>
+
+<p>Joseph Ayo Babalola, mwasisi katika vuguvugu la Kanisa Huru la Afrika, alikuwa mwanzilishi wa Christ Apostolic Church, tawi kuu la vuguvugu la Aladura. Makanisa ya maombi au kinabii (<em>aladura</em>) yalikuwa yameanza kuenea barani kote katika miaka ya 1920, na miongoni mwa Wayoruba yaliota mizizi kwa kujitokeza Chama cha Cherubim na Seraphim.</p>
+
+<p>Katika miaka 1930, Babalola, ambaye huko nyuma alikuwa mwendesha tingatinga la mvuke katika idara ya barabara, kwa mshangao alianza huduma ya kuhubiri. Baada ya maono yakimwambia ahubiri Injili yalimpelekea kuhukumiwa kuwa ana wazimu na kufungwa jela kwa muda, alikwenda Lagos na kujiunga na Faith Tabernacle, kanisa huru la Wayoruba lililojitenga toka Uangalikana. Toka hapo alianza kusafiri kote Nigeria mpaka kuingia Ghana, akivuta umati na kufanya ibada za uponyaji. Tofauti na makanisa ya kizayuni, ambayo yaliwavutia maskini na waliotengwa katika jamii ya kikoloni, vuguvugu la Aladura liliwavutia wafanyakazi wa mjini.</p>
+
+<p>Babalola alihubiri uamsho wa kikristo, akishambulia desturi za jadi za kidini, akiteketeza visanamu, vimungu, na vikorokoro vya uchawi katika mioto mikubwa, na kukataza mitala. Christ Apostolic Church, ambalo alianzisha mwaka 1955, lilichukua jina toka madhehebu ya kingereza iliyosaidia uanzishwaji wake. Halikuwa linapinga umishionari wala ukoloni. Naam, halikuwa kabisa na ajenda ya kijamii au kisiasa lakini badala yake lilisisitiza mambo ya kiroho, lilikuwa vuguvugu takatifu. Kwa sababu hizi serkali haikujaribu kulipinga, kama ilivyotokea katika suala la William Wadé HARRIS huko Ghana na Simon KIMBANGU kule Kongo ya Ubeligiji. Babalola alifungwa miezi michache kwa shutuma ya kushiriki kampeni ya kuondoa wachawi, lakini huo ndio ulikuwa ukomo wa mgogoro wake na mamlaka ya kikoloni.</p>
+
+<p>Babalola aliongoza kanisa kama mwinjilisiti wa kawaida, wakati rais, Sir I. B. Akinyele, Mwoba wa Ibadan (ambaye alitunukiwa cheo na Malkia Elizabeth II), aliwakilisha hadhi ya kijamii na kukubalika na umma.</p>
+
+<p>Baada ya kifo cha Babalola, kanisa liliendelea kukua na katika miaka ya 1900 lilikuwa na wanachama 500,000 hivi, na ukuaji wa mwaka wa 15,000 hivi. Lilikuwa na seminari mbili, shule za sekondari ishirini na sita, na chuo cha walimu. Lina misheni kadha Afrika ya Magharibi na ng’ambo; miongoni mwa Wanigeria wahamiaji hadi Houston, Texas.</p>
+
+<p>Norbert C. Brockman</p>
+
+<hr />
+
+<p>Bibliographia:</p>
+
+<p>Ewechue, Ralph (ed.). <em>Makers of Modern Africa.</em> 2nd ed. London: Africa Books, 1991.</p>
+
+<p>Lipschutz, Mark R., and R. Kent Rasmussen. <em>Dictionary of African Historical Biography.</em> 2nd ed. Berkeley: University of California Press, 1986.</p>
+
+<hr />
+
+<p>Makala hii imenakiliwa, kwa ruhusa, toka <em>An African Biographical Dictionary</em>, hatimiliki 1994, imehaririwa na Norbert C. Brockman, Santa Barbara, California. Haki zote zimehifadhiwa.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Babalola, Joseph Ayodele (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Matoleo mbalimbali zinapatikana: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +758,7 @@
 
         
         <div class="box_two">
-        Site iliyoboreshwa na Alex Mayfield (2017 na 2019). Ilibadilishwa Mwisho: 02 January 2023.<br>&copy; 2023 Kamusi Ya Wasifu Wa Wakristo Wa Kiafrika.<br><a href="/sw/connect/contact/">Wasiliana Nasi</a> | <a href="/about/usage/">Matumizi na Habari ya Kunuhusu</a>
+        Site iliyoboreshwa na Alex Mayfield (2017 na 2019). Ilibadilishwa Mwisho: 14 December 2022.<br>&copy; 2022 Kamusi Ya Wasifu Wa Wakristo Wa Kiafrika.<br><a href="/sw/connect/contact/">Wasiliana Nasi</a> | <a href="/about/usage/">Matumizi na Habari ya Kunuhusu</a>
         </div>
         
 
@@ -724,6 +791,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

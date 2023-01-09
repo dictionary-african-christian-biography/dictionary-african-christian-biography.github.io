@@ -607,8 +607,75 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>The Rev. Adolphe Mabille (June 12, 1836-May 20, 1894) was a noted Swiss missionary who worked for the Paris Evangelical Mission Society in Basutoland (now Lesotho). He became a philologist of Sesotho, an educator, and a trusted advisor for external affairs to King Moshoeshoe I, the creator of what became the modem Lesotho state, and to his successor, King Letsie I.</p>
+
+<p>Adolphe Mabille was born in Baulmes in the Swiss Canton of Vaud. He had a brief teaching career in the Netherlands (where he taught at The Hague, and learned Dutch), and in England where he taught at a Quaker school in Westmoreland. It was as a result of a religious experience at the Quaker school that he decided on his future career. As a result, in 1856 he joined the Paris Evangelical Mission Society. In 1859 he was ordained, and then married Adele Casalis, daughter of a missionary in Lesotho, who was to be his lifetime companion, and who was to teach him the Southern Sesotho language. The couple departed for South Africa the same year.</p>
+
+<p>The Mabilles arrived in Lesotho in January 1860. After a welcome by King Moshoeshoe, they were assigned to Morija, which was to be the center of his activities throughout his career.</p>
+
+<p>He built Morija into the educational and publishing center of the Paris Missionary Society in Lesotho. This was despite the fact that the mission station was burnt down and had to be rebuilt three times between 1858 and 1881 as a result of the two wars between the Orange Free State and the Basuto in 1858, and then in 1865-68 respectively, and finally after the Gun War of 1880-81 with Cape Colony. Mabille’s objective was to train Sotho teachers, evangelists and ultimately ministers. He initiated an intermittent synod, and was adamantly opposed to bohali (bride dowry) and to the admission of polygamists into the church. In 1868 Mabille established a theological school at Morija. In 1873 he helped to establish a Swiss mission in the northern Transvaal, and in 1877 helped found the Zambezi Mission.</p>
+
+<p>While he upheld Moshoeshoe I during the wars with the Orange Free State, he was away in Europe and America during the Gun War of 1880-82. Although he opposed the Cape’s policy of disarming the Basotho, and pleaded the cause of the Basotho, he nevertheless advised the Basotho to submit to authorities. This compromised his popu1arity with the anti-disarmament camp in Basutoland.</p>
+
+<p>As early as 1863 Mabille had established what has become the oldest surviving African newspaper in southern Africa, <em>Leselinyana la Basotho</em> (“The Small Light of the Basotho”). In 1875 the newspaper, formerly at Masitise, moved to Morija where Mabille set up a printing press, trained Sotho apprentices, and established a book depot. The press produced school books, and mission and private books, as well as government publications. His work in Sesotho laid the foundation for grammatical study of Sesotho in a European language. He compiled the first Sesotho-English vocabulary which grew to be the standard Sesotho-English dictionary. He also translated many religious books, hymns, and sermons into Sesotho.</p>
+
+<p>Fatigued by overwork, Adolphe Mabille died of peritonitis at Morija in 1894. He retained a reputation as a courageous scholar, stern evangelist, and compassionate missionary. His biographer, Dieterlin, called him “the last political missionary” in Basutoland, meaning the last to uphold the Basotho cause politically, and to advocate that the Basotho be treated with dignity under colonial rule.</p>
+
+<p>C. Tsehloane Keto</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Herman Dieterlin, <em>Adolphe Mabille, missionaire</em>, Paris: Societe des Missions Evangeliques, 1898 (new edition, 1933); Victor Ellenberger, <em>A Century of Mission Work in Basutoland, 1833-1933</em>, Morija: Sesuto Book Depot 1938; Robert C. Germond, <em>Chronicles of Basutoland</em>, Morija: Morija Sesuto Book Depot, 1967; Gordon Haliburton, <em>Historical Dictionary of Lesotho</em>, Metuchen, New Jersey: Scarecrow Press, 1977; Edwin W. Smith, <em>The Mabilles of Basutoland</em>, London: Hodder &amp; Stoughton, 1939.</p>
+
+<hr />
+
+<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (In 20 Volumes). Volume Three: South Africa- Botswana-Lesotho-eswatini. Ed. Keith Irvine. Algonac, Michigan: Reference Publications Inc., 1995.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Mabille, Adolphe (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +754,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +793,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

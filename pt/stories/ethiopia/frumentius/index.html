@@ -565,7 +565,7 @@
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Frumentius (B)">
     
-    <meta itemprop="datePublished" content="October 27, 2023">
+    <meta itemprop="datePublished" content="October 27, 2022">
     
 
 <!-- NAME(S), DATE, AFFILIATION, COUNTRY -->
@@ -610,8 +610,77 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Frumentius (Ge’ez: Frémnatos), também conhecido como <em>Abba</em> Sälama I e <em>Abba</em> Sälama Käsaté-Berhan foi o primeiro bispo da Etiópia, reconhecido como o principal responsável pela introdução do Cristianismo em Aksum. Esta versão foi dada por Rufinus, quem a recebeu oralmente do irmão de Frumentius, Aedesius; o relato também mencionado por vários analistas tais como Sócrates, Theodoret, Sozomen e Nicephoras Callistes. Um mercador de Tiro, Metópios, fez uma viagem de navio para “Índia” e levou os irmãos Frumentius e Aedesius ainda meninos. Ao retornar da sua viagem, o seu navio atracou num porto da costa da “Índia” (talvez Adulis), cujo tratado de relações com Roma estava suspenso. Metópios e os tripulantes do navio foram massacrados, mas os meninos foram poupados e dados para o soberano daquela terra o qual gostou muito deles e tornou Adesius seu copeiro e Frumentius seu mordomo. Quando o soberano morreu, a rainha regente no lugar do seu jovem filho pediu aos irmãos, especialmente a Frumentius para ajudá-la na tarefa de governar. Nesta posição ele aproveitou a oportunidade para construir igrejas para os mercadores romanos no país. Quando o jovem príncipe chegou à maturidade, Aedesius conseguiu férias para visitar os seus parentes em Tiro, e Frumentius para ir a Alexandria buscar um Bispo para o país. Athanasius, quem se tornou patriarca ali em 328, consagrou Frumentius que retornou à Aksum para retomar o seu trabalho. A data tradicional para este evento é 333, quando o povo da Etiópia se dividiu entre pagãos adoradores da serpente e o Judaísmo.</p>
+
+<p>Em 356 D. C., quando da Cisma Ariana dividiu a Cristandade e o Imperador Constantino, pró-ariano, que tinha recentemente destituído e mandado para o exílio Athanasius, escreveu uma carta para os dois <em>tyrannoi</em> ou soberanos de Aksum, Aezanas e Sazanas (Imperador ‘Ézana e Príncipe Se’azana), solicitando-lhes que enviassem Frumentius, bispo de Aksum, ao Egito para que a sua fé fosse testada. Não há relatos de que eles atenderam o seu pedido e nada se sabe das atividades posteriores de Frumentius.</p>
+
+<p>A versão etíope desses eventos consta no <em>Synaxarium</em>. Ela concorda substancialmente com o relato de Rufinus, mas acrescenta que o soberano da Etiópia, quando os meninos chegaram, era o Imperador ‘Ellä-‘Alada ou o Imperador ‘Ellä-‘Améda, esta última denominação provada por inscrições como o nome do pai do Imperador ‘Ézana. Durante a minoridade do filho, o Imperador ‘Ellä-‘Azgwagwa governou e o seu nome também aparece em algumas listas de reis, mas para períodos diferentes. Finalmente quando Frumentius retornou à Aksum como Bispo, os Imperadores ‘Abreha e ‘Asbeha estavam no trono, e parece razoável supor que estes nomes tenham sido usados para os irmãos: ‘Ézana e Se’azana.</p>
+
+<p>A. K. Irvine</p>
+
+<hr />
+
+<p><strong>Bibliografia</strong></p>
+
+<p>Rufinus, <em>Historia ecclesiastica</em>, I. 9, <em>Patrologia Latina</em>, XXI, 478-80.</p>
+
+<p>Athanasius, <em>Apologia ad Constantium Imperatorem, Patrologia Graeca</em>, XXV, 632.</p>
+
+<p>C. Conti Rossini, <em>Storia d’Etiopia</em> (Bergamo, 1928), 146-48.</p>
+
+<p>F. Altheim, <em>Geschichte der Hunnen</em>, V (Berlim, 1962), 157-80.</p>
+
+<p>R. Basset, <em>Etudes sur l’histoire d’Ethiopie</em> (Paris, 1882), 96-97.</p>
+
+<p>E. A. Wallis Budge, <em>The Book of the Saints of the Ethiopian Church</em> (Cambridge, 1928), Vol. IV, 1164-5 (<em>Synaxarium, 26 Hamlé</em>).</p>
+
+<hr />
+
+<p>Este artigo foi reproduzido com permissão do <em>The Dictionary of Ethiopian Biography</em>, Vol. 1 ‘<em>From Early Times to the End of the Zagwé Dynasty c. 1270 A.D.</em>,’ copyright © 1975, editado por Belaynesh Michael, S. Chojnacki e Richard Pankhurst, Institute of Ethiopian Studies, Addis Ababa, Etiópia. Todos os direitos são reservados.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Frumentius (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Leia várias versões: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -694,7 +763,7 @@
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 02 January 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 14 December 2022.<br>&copy; 2022 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -729,6 +798,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

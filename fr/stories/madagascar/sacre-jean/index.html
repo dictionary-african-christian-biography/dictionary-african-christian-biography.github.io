@@ -605,8 +605,73 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Né en 1897, Jean Sacré entra au noviciat des Jésuites rue des Stations à Lille le 7 septembre 1917. La guerre interrompit ses études et il les reprit au noviciat de Florennes une fois les hostilités terminées.</p>
+
+<p>Son oncle, le P. Defrenne, était missionnaire à Madagascar et les lettres qu’il envoyait à sa famille déterminèrent sans doute la vocation missionnaire de Jean Sacré. Il fut envoyé en régence au Collège Saint-Joseph de Fianarantsoa en 1923 et dès qu’il eut terminé sa théologie et son 3e an en France, il rejoignit Madagascar avec joie.</p>
+
+<p>Il était suffisamment équipé dans le maniement de la langue malgache pour se voir tout de suite confier la responsabilité du gros district d’Anjoma, dans le Sud-Betsileo. Il y resta 30 ans, faisant preuve d’une remarquable continuité dans son action missionnaire. Ses 38 postes totalisaient quelque 20 000 âmes dont plus de la moitié seraient baptisées. Le Père Sacré exerçait sur ses fidèles une forte impression faite de respect et d’attachement et son passage dans les villages reculés était toujours un événement. A son action apostolique s’ajoutaient, en outre, ses connaissances médicales et sa pharmacie de campagne fut plus d’une fois d’un précieux secours là où n’existaient ni poste médical ni infirmier.</p>
+
+<p>Après Anjoma, on lui confia au Nord de Fianarantsoa une chrétienté plus en rapport avec ses forces qui déclinaient: le district de Fandrava avec 8 000 baptisés. Il le dirigea pendant dix ans.</p>
+
+<p>Dans ses deux postes, le Père Jean Sacré avait comme principal souci de susciter l’éveil des vocations afin d’assurer la continuité du travail missionnaire. Grâce à lui, de nombreux prêtres et religieuses sont passés par les séminaires et les noviciats et continuent aujourd’hui son apostolat.</p>
+
+<p>Usé à la tâche et affaibli par l’âge, le Père Jean Sacré revint en France à la maison des Jésuites, rue des Stations à Lille. C’est là qu’il s’éteignit le 13 juillet 1977, à deux mois de la célébration de ses soixante ans de vie religieuse.</p>
+
+<p>Raymond Delval</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p><em>Chine-Madagascar</em>, Lille, 1977.</p>
+
+<hr />
+
+<p>Cet article, réimprîmé ici avec permission, est tiré d’<em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em>, tome 3, publié en 1977 par l’Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Sacré, Jean`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +752,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +789,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

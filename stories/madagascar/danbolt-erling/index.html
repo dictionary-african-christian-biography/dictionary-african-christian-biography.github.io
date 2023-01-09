@@ -607,8 +607,63 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Erling Gauslaa Danbolt was a Norwegian Lutheran missionary and scholar. He was born in Bergen and graduated from the Norwegian Lutheran School of Theology, Oslo, in 1930. In 1931 he was ordained, went to France for language study, and in the same year was sent by the Norwegian Missionary Society (NMS) to Madagascar. He first taught at the Protestant Teachers’ College at Fianarantsoa, then did parish work and taught at the Ivory Theological Seminary in Fianarantsoa from 1948 to 1954. In his missionary service Danbolt emphasized the proclamation of the gospel and high standards of education for teachers and pastors. He wrote a Malagasy commentary on the First Epistle to the Corinthians and a Norwegian one on the same epistle from the point of view of the mission. His doctoral dissertation, <em>Misjonstankens gjennombrudd i Norge</em> (1946), was a study of the missionary awakening in Norway during the years 1800 to 1830, leading up to the establishment of the NMS in 1842, and also tracing the missionary concept and activity in Norway in the eighteenth century. In 1948 he published a dictionary of NMS missionaries from 1842 to 1948. After some years of parish service, he concluded his career as a professor and principal of the Norsk Laererakademi in Bergen from 1969 to 1974.</p>
+
+<p>Nils E. Bloch-Hoell</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Norwall Hessen, ed., <em>Prester i Den norske kirke og andre teologiske kandidater</em> (1990), p. 84.</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Danbolt, Erling Gauslaa`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +742,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +781,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

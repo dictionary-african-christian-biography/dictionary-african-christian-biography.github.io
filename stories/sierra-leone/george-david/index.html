@@ -607,8 +607,81 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>David George was an early African American promoter of mission. With energy and dedication, George urged the importance of mission at a time when Protestant Christianity was far from committed to it and when the organizational basis for mission was virtually nonexistent. With indomitable will and a preparedness to take risk that was born of faith, he became leader of the outreach to Africa that opened a new chapter in the modern history of the continent.</p>
+
+<p>George was born to slave parents on a plantation in Essex County, Virginia. At an early age he ran away but soon after passed into the hands of a new master in South Carolina. He converted to evangelical Christianity and became a colleague of the black preacher George Liele, a veteran missionary to Jamaica and the Bahamas. When the American Revolutionary War broke out in 1776, George joined the British side and in 1782 was demobilized with other black loyalists to Nova Scotia, Canada, where he continued his preaching activity. He impressed the British authorities with his leadership qualities, and he was appointed a leader of an expedition to repatriate the black loyalists to West Africa. They made landfall in Freetown, Sierra Leone, in March 1792, the commencement of what the English evangelical cause, led by William Wilberforce, termed “a Christian experiment.” It established in tropical Africa a bridgehead from where the trade in slaves could be attacked and the rest of the continent reached for the gospel.</p>
+
+<p>In Freetown George combined the roles of preacher, community leader, official representative with the British authorities, humanitarian campaigner against the slave trade, and lightning rod for missionary awakening among Baptists in England, where he visited in 1793. He and William Carey were thus active at about the same time, though George by then had accumulated an abundance of field experience. By the time of George’s death in Freetown the cause was virtually assured-this was four years after the Williamstown (Massachusetts) Haystack Prayer Meeting, an event that lit the American missionary impulse. The success of the Sierra Leone “Christian experiment,” in which George’s hand was so prominent, led to the abolition of the slave trade and the peaceful, economic mobilization of Africa for commerce, civilization, and Christianity.</p>
+
+<p>Lamin Sanneh</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>I. E. Bill, <em>Fifty Years with the Baptist Ministers and Churches</em> (1880).</p>
+
+<p>W. H. Brooks, “The Priority of the Silver Bluff Church and Its Promoters,” <em>Journal of Negro History</em> 2 (1922): 172-196.</p>
+
+<p>Christopher Fyfe, “The Baptist Churches in Sierra Leone,” <em>Sierra Leone Bulletin of Religion</em> 2 (December 1963): 55-60 and <em>A History of Sierra Leone</em> (1962).</p>
+
+<p>Grant Gordon, <em>From Slavery to Freedom: The Life of David George, Pioneer Black Baptist Minister</em> (1992).</p>
+
+<p>Anthony Kirk-Green, “David George: The Nova Scotian Experience,” <em>Sierra Leone Studies</em>, n.s., 14 (1960): 93-120.</p>
+
+<p>Lamin Sanneh, “Prelude to African Christian Independency: The Afro-American Factor in African Christianity,” <em>HTR</em> 77, no. 1 (1984): 1-32.</p>
+
+<p>Mechal Sobel, <em>Trabelin’ On: The Slave Journey to an Afro-Baptist Faith</em> (1979).</p>
+
+<p>Andrew F. Walls, “The Nova Scotians and Their Religion,” <em>Sierra Leone Bulletin of Religion</em> 1 (1959): 19-31.</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `George, David (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +760,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +799,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

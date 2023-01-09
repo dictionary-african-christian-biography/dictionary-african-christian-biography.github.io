@@ -607,8 +607,81 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Isaiah Aina Balogun was the first Nigerian national to be ordained into the gospel ministry within the church. His pioneering effort among his own Ekiti people and the Yorubas of southwestern Nigeria tells a story of passion and faith. Through his collaboration with expatriates in evangelism efforts, many converts were made and the church became well known within that part of Nigeria and beyond.</p>
+
+<p>While the exact year of his birth is unknown, Balogun was probably born in 1882 at Ipoti-Ekiti, southwestern Nigeria. He became a member of the Anglican Church in 1906. As he demonstrated strong leadership skills in the church, he was made a leader or Balogun (captain of the faithful). Afterwards he used this title as his permanent surname.</p>
+
+<p>Balogun visited Erunmu to speak with D. C. Babcock, the first Adventist missionary in Nigeria. Here the Sabbath message and other Bible doctrines were first introduced to him. Balogun embraced the new faith and returned to his hometown to spread the good news. His townsfolk accepted the new message and invited Babcock to visit. It should be noted that up until that time, the majority of the people at Ipoti were Anglicans. Babcock’s visit was a success and he wrote that 78 people were baptized in one fell swoop.</p>
+
+<p>Balogun became a Seventh-day Adventist (SDA) in 1916. He was immediately made the district pastor or superintendent of the churches at Odo-Owa, Iloro and Oke-Ila until 1922. Under his stewardship, many of the Anglicans defected to the SDA. Today, at least seventy percent of the Ipoti townspeople are members of the SDA. Through the efforts of Balogun, Babcock was able to dedicate a bigger church building at Ipoti.</p>
+
+<p>Balogun also made his mark at Otun-Ekiti where he was sent to minister in 1922. He was able to win many converts from traditional worship of idols and their ancestors to the SDA faith. In 1923, W. G. Till, a Caucasian, was sent to assist him in this increasingly large task. Balogun’s efforts extended as far as Jebba and other areas in Kwara State. Other places he worked included Ikosu, Osi, Omu-Aran, Isaoye, Aiyetoro, Iloro, Offa, Oke-Ode, Ajase-Ipo, to mention a few. He was ordained into the gospel ministry on February 16, 1930. He was subsequently posted to Ibadan in 1933. He also worked at Abeokuta, have been posted there in 1938. Abeokuta proved to be a difficult ground for the spread of the Adventist message and he was eventually transferred to Ile-Ife. Some of the places he worked developed primary schools for the benefit of many.</p>
+
+<p>Balogun died at the age of sixty-five on July 27, 1947 at Ile-Ife. He left behind a wife, children, and grand-children. His greatest legacy was his pioneering effort in church planting throughout southwestern Nigeria.</p>
+
+<p>Abiodun Ayodeji Adesegun</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Agboola, D. T. <em>Seventh-Day Adventist History In West Africa (1888-1988)</em>. Ibadan: Lasob Productions, 2001.</p>
+
+<p>Babalola, D. O. <em>Sweet Memories of Our Pioneers</em>. Lagos: Emaphine Reprograhics Ltd., 2001.</p>
+
+<p>——–. “West African Sudan,” <em>Review and Herald</em>, Aug., 26, 1915.</p>
+
+<p>——–.  “Erunmu, Southern Nigeria,” <em>Review and Herald</em>, June 8, 1916.</p>
+
+<p>——–. “Nigeria,” <em>Review and Herald</em>, July 19, 1917.</p>
+
+<hr />
+
+<p>This article, received in 2007, was researched and written by Abiodun Ayodeji Adesegun, a Ph.D. candidate at the University of Ibadan, Nigeria, under the supervision of Rev. Dr. Deji Ayegboyin, <em>DACB</em> liaison coordinator.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Balogun, Isaiah Aina`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +760,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +799,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

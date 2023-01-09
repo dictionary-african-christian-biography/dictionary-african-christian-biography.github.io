@@ -611,8 +611,93 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>The honorable Adegboyega Edun, formerly known as the Rev. Jacob Henryson Samuel, was born on Sunday, July 22, 1860 to Egba parents. Educated at Richmond College, England, he was matriculated at the University of London in 1887, when he was placed in the first division. He was a very brilliant scholar, pastor, and teacher, and an astute administrator. He was an ordained minister in the Methodist Church. From 1893 to 1902 he was the principal of the Wesleyan Boy’s High School, Lagos. According to Ajisafe (1924), Edun was a member of the Commission on Infantile Mortality, a role for which he was appreciated by the Governor of Lagos, Sir William Macgregor.</p>
+
+<p>However, on April 24, 1902, Edun resigned from the church ministry because he was appointed the first Secretary of the Egba United Government (EUG). He also changed his name in 1904 and assumed the ancestral name Adegboyega Edun. The EUG was formed on the directives of Governor MacCullum of Lagos in 1865. The Governor compelled the Egba to reorganise what was then called the “National Council.” This was the first time that a local administration would be run along Christian lines, and ardent Christian laymen took control. It was also the first attempt to establish democracy in Yoruba land. Some of the laymen were C. B. Moore (Treasurer), J. Martin, and Rev. D. O. Williams (Prime Minister from 1898 to 1911). To the EUG, the <em>Ogboni</em> lost its political significance because of this demystification. The EUG was now saddled with the responsibility of advising the <em>Alake</em> (<em>Oba</em>, i.e. King) of Egba in relation to the assiduous administration of the land.</p>
+
+<p>In May, 1904, Edun accompanied the <em>Alake</em>, <em>Oba</em> Gbadebo, to England on a visit to King Edward VII. This was the first state visit by any Yoruba monarch to England. Later, in 1913, Edun led a delegation of Southern Nigerian people to England on matters relating to native land tenure. It was proved that there were good grounds for the protest by the people who were against State ownership of native lands. Edun facilitated a good relationship between the white merchants and the Egba people, and he was pivotal to the modernization of administration and civilization in the land.</p>
+
+<p>The following achievements occurred during his tenure as Secretary of the EUG:</p>
+
+<blockquote>
+  <p>1902: establishment of European factories in the Ibara area of Abeokuta</p>
+
+  <p>1903: opening of Sokori Bridge, the first of its kind</p>
+
+  <p>1904: publication of the first issue of the EUG Gazette in February</p>
+
+  <p>1904: establishment of the Egba Government Police Force</p>
+
+  <p>1908: establishment of Abeokuta Grammar School</p>
+
+  <p>1908: establishment of a EUG hospital</p>
+
+  <p>1914:  opening of the Abeokuta Water Works, which led to the eradication of guinea-worm and other water-borne diseases in the land, to the benefit of all
+On October 6, 1913, he was honored by his people for his long service to the EUG when he was presented a Double Albert Gold Chain of rare original design and beauty, and of native workmanship, the pendant of which was a model of a human hand holding a pen in the act of writing; the whole thing being mounted in a flat ring, around which was inscribed the following: “Souvenir. A. Edun, Govt. Sec., E.U.G., 1912 (Ajisafe, 1924:185).</p>
+
+</blockquote>
+
+<p>It is to his eternal credit that, although he was persecuted and maligned, he served meritoriously during the Ijemo civil unrest and the Egba Uprising (popularly called the Adubi War) of 1914 and of 1921, respectively. He was exonerated in both instances by a panel of enquiry. The EUG finally lost its relevance with the 1914 treaty of amalgamation of the Southern and Northern Protectorates of Nigeria. Edun retired from the native administration in 1918 and received a pension until his death. The role he played in native administration stands as a clear example of the need for the involvement of Christians in local and national politics. True to his name, Adegboyega, he raised the honor of the Egba kingdom within the community of similar nations in West Africa at that time.</p>
+
+<p>Francis O. Falako</p>
+
+<hr />
+
+<p><strong>References:</strong></p>
+
+<p>Ajisafe, A. K.  <em>History of Abeokuta</em>. Bungay: Richard Clay &amp; Sons Ltd., 1924.</p>
+
+<p>Akpofure, R. and M. Crowther. <em>Nigeria: A Modern History for Schools</em>. (London: Faber and Faber, 1966), pp. 193-194.</p>
+
+<p>Johnson, S. <em>The History of the Yorubas: From the Earliest Times to the Beginning of the British Protectorate</em>. Lagos: CMS, 1921.</p>
+
+<hr />
+
+<p>This article, received in 2010, was written by Dr. Francis Falako, a professor in the Religious Education Unit of the School of Education in the University of Lagos (UNILAG) in Lagos, Nigeria.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Edun, Adegboyega`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +776,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -730,6 +815,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -601,8 +601,65 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Ralph Edward Dodge was a Methodist missionary and bishop in Africa. Dodge was born in Terril, Iowa, and educated at Taylor University, Indiana (B.A.), Boston University (M.A.), and Hartford Seminary Foundation (S.T.M., Ph.D.). Ordained in the Methodist Episcopal Church, he served as a missionary in Angola (1936-1950), as executive secretary for Africa, Board of Missions of the Methodist Church (1950-1956), and as a bishop for Rhodesia (now Zimbabwe, 1956-1968); he was reelected bishop for life. Churches under Dodge’s leadership moved from being compliant partners with colonial white rule to becoming advocates of radical social change. António Agostinho Neto, Dodge’s secretary in Angola, whom he enabled to study medicine in Portugal on a Methodist Crusade scholarship, later became founder and president of the Movimento Popular de Libertação de Angola (MPLA) and of the People’s Republic of Angola. Dodge’s friend Eduardo Mondlane became first president of Frente de Libertação de Moçambique (FRELIMO). Among the more than 100 Zimbabweans sponsored by Dodge and the Methodist Church for overseas study was Abel Tendekai Muzorewa, his successor as bishop, who became prime minister of Rhodesia.</p>
+
+<p>With passionate commitment to African majority rule in both state and church, Dodge was expelled from Rhodesia in 1964 by the lan Smith regime, but he was supported as president by the Southern Rhodesia Christian Conference and by his church. From exile in Zambia he authored <em>The Unpopular Missionary</em> (1964) and <em>The Pagan Church</em> (1968). Dodge retired in the United States in 1968.</p>
+
+<p>Norman E. Thomas</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Ralph E. Dodge, <em>The Revolutionary Bishop Who Saw God at Work in Africa</em> (1986; his autobiography). <em>Who’s Who in the Methodist Church</em> (1966) and <em>The Encyclopedia of World Methodism</em> (1974) contain short biographies. Dickson A. Mungazi, <em>The Honoured Crusade: Ralph Dodge’s Theology of Liberation and Initiative for Social Change in Zimbabwe</em> (1991) assesses Dodge as a social reformer. Dodge’s personal papers are in the Syracuse Univ. library.</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Dodge, Ralph Edward`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -681,7 +738,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -720,6 +777,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

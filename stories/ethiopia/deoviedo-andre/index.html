@@ -601,8 +601,65 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Andre de Oviedo was a Jesuit missionary, Patriarch of Abyssinia. Oviedo was born in Illescas, Spain. He was admitted to the Society of Jesus in 1541 by Ignatius Loyola himself. He was among five men selected to assist Patriarch João Nuñez Barreto in the Jesuit mission to Abyssinia (Ethiopia) commissioned by Pope John III, and to that end he was consecrated a bishop in 1554. He and his fellow missionaries (without Nuñez) traveled via Goa, reaching Arquico in 1557. Confounded by regional religious conflicts and local ecclesiastical and political intrigues, Oviedo was eventually granted audience with Emperor Claudius (Galawdewos), at which time he presented the customary letters demanding submission to Rome. This the king and his Coptic priests were understandably loath to do, and Oviedo found the ensuing interminable theological debates so unsatisfactory that he withdrew from the court at the end of 1558. In early 1559 he issued a tactless circular letter describing Abyssinians as “refractory and obstinate against the Church,” urging them to disobey their king and forsake their Orthodox religion, and advising Portuguese Catholics to have nothing to do with the “schismatics.”</p>
+
+<p>When Nuñez died in Goa in 1561, without ever having seen Abyssinia, the patriarchal office was transferred to Oviedo, who moved to Fremona in Tigré Province. Here, he and his missionary colleagues heroically endured hardship, but their cultural insensitivity combined with increasing impoverishment and isolation ensured ineffectiveness that continued until the arrival years later of his more contextually sensitive countryman, Pedro Paez.</p>
+
+<p>Jonathan J. Bonk</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Tellez Balthazar, <em>The Travels of the Jesuits in Ethiopia</em> (1710); Philip Caraman, <em>The Lost Empire: The Story of the Jesuits in Ethiopia</em> (1985); C. F. Rey, <em>The Romance of the Portuguese in Ethiopia</em> (1929); Taddesse Tamrat, <em>Church and State in Ethiopia, 1270-1527</em> (1972).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `de Oviedo, Andre`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -681,7 +738,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -720,6 +777,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

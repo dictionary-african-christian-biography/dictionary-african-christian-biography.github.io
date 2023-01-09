@@ -607,8 +607,87 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Cacuta Chibanga Phiri was one of the early converts at Furancungo Mission, a hundred miles north of the town of Tete in northwestern Mozambique. When the missionaries arrived in 193l Phiri was a young man and was already married.  The  government administrator at Boma in Furancungo sent him to the mission to help missionary Henry C. Best (<em>Shakoka</em>) with building.  Phiri was soon converted and showed it by his life.  He began working in the kitchen and then as an evangelist.  Phiri proved to be a good worker for the Lord and received training from missionaries Henry and Lucy Best during the early 1930s.</p>
+
+<p>He was to inherit the chieftainship of his home area, but he declined it because, as he said, as chief he would have been obliged to perform many traditional nonChristian practices.  When he was a young man he was given a baby girl to become his future wife and he used to carry her around on his back.</p>
+
+<p>His wife professed conversion but she was always a great trial to him.  One Sunday he came to church and delivered the message with their newest baby tied onto his back although, according to custom, this was not the proper thing for a man to do.  His wife was sick at home, a carrier of a virulent type of dysentery.  Her babies all contracted the disease and, as she waited too long to get medical help, they died.  She blamed her husband for their deaths because he failed to honour the ancestral spirits.</p>
+
+<p>Many times she would not cook for him.  He often went to prayers at 6:00 a.m., then went out visiting people in their homesteads without having eaten.  He visited and inquired about sick ones and absentees and did not return home until mid-afternoon.  Her treatment of him became so bad that people began saying to him, “Why don’t you get rid of her and get somebody else?  You didn’t pay anything for her, let her go!” [1] Phiri replied to such remarks saying, “No, the Lord gave her to me, and I am trusting the Lord that one day He will change her and make her into a real Christian.”[2]</p>
+
+<p>A certain young woman in the district became pregnant and the rumour was circulated that Chibanga Phiri was responsible for it.  He affirmed his innocence and was distressed when the missionaries doubted him.  He was sure that God would reveal the truth eventually.  One day, after an exhausting day walking up and down the mountains visiting in the homes of the people, he arrived home to find his new hut burned to the ground, his new bicycle smouldering in its ashes.  His wife had done it.  He had worked hard to erect the new home and to acquire the bicycle to help him with his pastoral visitation.  Later, however, when the new baby of the woman who had accused him was born with six fingers on each hand, he was proven innocent because this was the characteristic of a particular family in the area.  Eventually Phiri’s wife did become a true Christian.</p>
+
+<p>Chibanga Phiri travelled down to Gazaland in 1954 to visit the annual meeting there.  He was ordained by Dr. G. B. Williamson in 1963, the first Nazarene minister from Tete to be ordained.</p>
+
+<p>During the war against the Portuguese government, when it became too dangerous to carry on working there, the missionaries Fairy Cochlin and Oscar <em>Ntshava</em> (Mountain)  and Marjorie Stockwell had to leave in 1970.  Travel became virtually impossible as many of the roads were mined. The people suffered greatly.  The war continued until Mozambique achieved independence in 1975 when a Marxist-Communist government came to power. When they were able to, many Christians fled to Malawi along with their pastor, Chibanga Phiri.</p>
+
+<p>Rev. Chibanga Phiri died of pneumonia in Malawi.[3] He was a true and faithful man of God.</p>
+
+<p>Paul S. Dayhoff</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>
+    <p>Marriage customs were different in that area.  Instead of the husband paying a bride price, he was required to go to his wife’s homestead, living and working there as an outsider with no say in the affairs of the family.</p>
+  </li>
+  <li>
+    <p>Report from Rev. Henry Pope sent by Revs. Pieter and Betty van den Berg, September 1999.</p>
+  </li>
+  <li>
+    <p>Notes by Carol Zurcher.  Heather Howie, letter of August 13, 1999.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Africa Nazarene Mosaic: Inspiring Accounts of Living Faith</em>, first edition, (Florida, Gauteng, South Africa: Africa Nazarene Publications, 2002), copyright © 2001, by Paul S. Dayhoff.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Phiri, Chibanga`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +766,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +805,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -564,7 +564,7 @@
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Frumentius (B)">
     
-    <meta itemprop="datePublished" content="October 27, 2023">
+    <meta itemprop="datePublished" content="October 27, 2022">
     
 
 <!-- NAME(S), DATE, AFFILIATION, COUNTRY -->
@@ -609,8 +609,75 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Frumentius (Ge’ez : Frémnatos), aussi connu comme Abba Sälama I et Abba Sälama Käsaté-Berhan, était le premier évêque d’Ethiopie et il est largement reconnu comme celui qui a été le premier à faire venir le christianisme à Aksum. La version reçue de cela est donnée par Rufinus, qui l’a entendu de la part du frère de Frumentius, Aedesius; le récit est aussi trouvé chez beaucoup d’autres annalistes tels que Socrate, Theodoret, Sozomen et Nicéphoras Callistes. Un marchand de Tyre, Meropius, a entrepris un voyage en “Inde,” accompagné des frères, qui étaient alors de jeunes garçons. Au cours du voyage de retour, leur navire a mouillé dans un port sur la côte “d’Inde” (peut-être Adulis), qui avait levé son traité de relations avec Rome. Meropius et l’équipage ont été massacrés, mais on a donné les garçons au souverain du territoire. Ils ont fait une si bonne impression qu’il a fait d’Aedesius son échanson, et de Frumentius son intendant. Quand le souverain est mort, sa reine, régente pour son jeune fils, a demandé aux frères, et à Frumentius en particulier, de partager la direction du gouvernement avec elle. Dans cette capacité, il a profité de l’occasion pour faire bâtir des églises pour les marchands romains du pays. Quand le jeune prince est arrivé à la maturité, Aedesius a obtenu la permission de rendre visite à sa famille à Tyre, et Frumentius d’aller à Alexandrie, pour y trouver un évêque pour le pays. Athanase, qui était devenu patriarche à Alexandrie en 328, a été poussé à consacrer Frumentius lui-même qui est rentré à Aksum pour y continuer son travail. La date traditionnelle de cet événement, c’est l’an 333, quand le peuple de l’Ethiopie était divisé entre le culte païenne du serpent, et le judaïsme.</p>
+
+<p>En 356 ap. J-C, quand le schisme arien avait divisé le monde chrétien, l’empereur Constantius, qui était pro arien, et qui avait récemment déposé et exilé Athanase, a écrit une lettre aux deux <em>tyrannoi</em>, ou souverains d’Aksum, Aezanas et  Sazanas (l’empereur ‘Ezana et le prince Se’azana), leur demandant d’envoyer Frumentius, évêque d’Aksum, en Egypte, pour que sa foi soit mise à l’épreuve. Il n’y a aucun rapport indiquant qu’ils ont accédé à sa demande, et nous ne savons rien de plus sur les autres activités de Frumentius.</p>
+
+<p>La version éthiopienne de ses événements se trouve dans le <em>Synaxarium</em>. Elle est largement d’accord avec le compte rendu de Rufinus, mais ajoute que le souverain de l’Ethiopie, à l’époque où les frères sont arrivés, était l’empereur ‘Ellä-‘Alada ou l’empereur ‘Ellä-Améda. Cette dernière forme est attestée dans certaines inscriptions comme étant le nom du père de l’empereur ‘Ezana. Pendant la minorité de son fils, l’empereur ‘Ellä-Azgwagwa a régné ; son nom aussi, apparaît dans quelques listes de rois, mais pour une période différente. Enfin, quand Frumentius est rentré à Aksum comme évêque, les empereurs ‘Abreha et ‘Asbeha étaient au trône, et il semble raisonnable de supposer que ces noms ont été appliqués aux frères ‘Ezana et Se’azana.</p>
+
+<h2 id="a-k-irvine">A. K. Irvine</h2>
+
+<p><strong>Bibliographie</strong></p>
+
+<p>Rufinus, <em>Historia ecclesiastica</em>, I.9, <em>Patrologia Latina, XXI</em>, 478-80.</p>
+
+<p>Athanasius, <em>Apologia ad Constantium Imperatorem, Patrologia Graeca</em>, XXV, 632.</p>
+
+<p>C. Conti Rossini, <em>Storia d’Etiopia</em> (Bergamo, 1928), 146-48.</p>
+
+<p>F. Altheim, <em>Geschichte der Hunnen</em>, V (Berlin, 1962), 157-80.</p>
+
+<p>R. Basset, <em>Etudes sur l’histoire d’Ethiopie</em> (Paris, 1882), 96-97.</p>
+
+<p>E. A. Wallis Budge, <em>The Book of the Saints of the Ethiopian Church [Le livre des saints de l’église éthiopienne]</em> (Cambridge, 1928), Vol. IV, 1164-5 (<em>Synaxarium, 26 Hamlé</em>).</p>
+
+<hr />
+
+<p>Cet article est reproduit, avec permission, de <em>The Dictionary of Ethiopian Biography, Vol. 1 ‘From Early Times to the End of the Zagwé Dynasty c. 1270 A.D.,’ [Le dictionnaire de biographie éthiopienne, Vol. 1, ‘Des temps anciens jusqu’à la fin de la dynastie Zagwé, vers 1270 ap. J-C.’]</em> copyright © 1975, édité par Belaynesh Michael, S. Chojnacki et Richard Pankhurst, Institut des Etudes Ethiopiennes, Addis Ababa, Ethiopie. Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Frumentius (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +758,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -728,6 +795,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

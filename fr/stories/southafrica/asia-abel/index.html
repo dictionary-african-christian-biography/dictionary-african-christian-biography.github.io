@@ -605,8 +605,82 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/southafrica/asia-abel/asia-abel.jpg" alt="Abel Johannes Asia" class="bio" /></p>
+
+<p>Abel Johannes Asia est né dans une famille humble dans la région de Cape Town. C’était le plus jeune enfant d’une famille de six, et ses parents ont essayé de l’élever de manière chrétienne. Ils ont été un bon exemple pour lui, mais à cause de l’influence de certains amis, il s’est retrouvé dans des gangs et dans leurs bagarres, et sa vie a commencé à mal tourner. En 1957, il a entendu le message du salut grâce au missionnaire nazaréen,  le rév. Joseph F. Penn Jr., qui venait de commencer son travail dans le Cap de l’ouest. Abel Asia était un des premiers convertis, et sa vie a été transformée. Il prenait le train tous les dimanches pour aller dans la nouvelle église qui avait été bâtie à Sunnyside.</p>
+
+<p>En 1960, quand le Collège biblique de Rehoboth, qui était à Johannesburg, a été réinstallé à Cape Town, quelques étudiants ont commencé à fréquenter Steenberg, où Abel vivait. Grâce à son témoignage, de nombreuses maisons s’ouvrirent pour des réunions de cottage. Il a ajouté une grande pièce à sa maison pour que l’assemblée puisse s’y réunir le dimanche, et c’est là que l’église de Steenburg a été organisée. C’était le premier directeur de l’école du dimanche, et dans ce poste, il a vu l’école atteindre un effectif de 1500 membres.</p>
+
+<p>Quand la première réunion de camp a eu lieu, sa femme Sabrena (décédée en 1994) n’était pas chrétienne. Elle a refusé d’y aller et insistait même qu’il s’occupe des enfants, y compris un bébé, alors il a pris tous les enfants avec lui au camp. Peu après, Sabrena s’est convertie.  C’est Abel qui s’occupait du feu sous toutes les grandes casseroles noires aux camps, et il a dirigé les ouvriers de cuisine pendant dix-sept ans. Leurs chansons ont fait partie de l’ambiance édifiante des réunions de camp. Abel est devenu un directeur activement engagé dans les affaires de l’église au niveau du district.</p>
+
+<p>Il s’est inscrit dans une école biblique, et a commencé à prendre des cours dispensés par l’institut localement, mais il a été obligé de rater des cours et de déménager. Comme on avait besoin de la parcelle de terrain où était sa maison, il a fallu qu’il vende la parcelle, qu’il démonte sa maison et la rebâtisse à plusieurs kilomètres de là. On lui avait offert une nouvelle maison dans la région, mais ses voisins ont été obligés de vivre dans des cabanes. Il a dit, “Non! Je refuse de prendre cette bonne maison. Mes vieux amis ne feront pas les cinq kilomètres de plus à pied pour aller à l’église si je ne suis pas là pour les encourager. Mettez-moi dans une des cabanes aussi.” Il ne s’est jamais plaint, à part du fait d’avoir été obligé de manquer des cours.[1]</p>
+
+<p>Un soir, un jeune leader de gang qui avait été blessé au couteau dans une bagarre, est rentré dans l’église. Les hommes de l’église se sont occupés de ses blessures et ont prié avec lui. Il s’est repenti et puisqu’il était sans-abri, frère Asia l’a amené chez lui, même si sa maison était déjà bien remplie.</p>
+
+<p>En 1967, Asia a rendu ce témoignage, “Le Seigneur m’a gardé des tentations, des épreuves et des difficultés pendant dix ans. Sa voix est toujours dans mon coeur et me dit,’Tiens-bon mon fils! Je suis avec toi!’” M. Abel Asia a servi de pasteur intérimaire à Oceanview, à vingt-cinq kilomètres de chez lui, avant sa mort. Tout le monde l’appelait “monsieur le Nazaréen,” et il a laissé l’exemple merveilleux d’une vie sainte. Il survit dans la foule de gens qu’il a amenés au Christ. [2]</p>
+
+<p>Paul S. Dayhoff</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>
+    <p>Betty Emslie, lettre datée du 25 mai 1995.</p>
+  </li>
+  <li>
+    <p>Notes de Carol Zurcher; Mary L. Steigleder, hommage à Abel Asia donné à son enterrement, rapporté par Carol Zurcher.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>Cet article est reproduit, avec permission, de <em>Living Stones in Africa: Pioneers of the Church of the Nazarene [Pierres vivantes en Afrique: les pionniers de l’église du Nazaréen]</em>, édition révisée, copyright (c) 1999, par Paul S. Dayhoff. Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Asia, Abel Johannes`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +761,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +798,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

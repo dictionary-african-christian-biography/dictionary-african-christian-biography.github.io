@@ -607,8 +607,89 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/nigeria/slessor2-mary/slessorr2.jpg" alt="Mary Slessor - &quot;Ma&quot;" class="bio" height="200px" width="147px" /></p>
+
+<p>An indomitable Scottish Presbyterian who described herself as “wee and thin and not very strong,” Mary Slessor lasted over forty years in the malaria-ridden Calabar region of Nigeria, where she was especially active in promoting the dignity of African women.</p>
+
+<p>Born on December 2, 1848, near Aberdeen, the second of seven children, Mary’s mother was a deeply religious woman, her father a drunken shoemaker. She was just twenty-eight years of age, with red hair and bright blue eyes, when in 1876 she arrived in Nigeria as a missionary for the United Presbyterian Church. The slave trade had been abolished, but local society had been disrupted by it and by the influx of commerce. Britain had seized Lagos in 1861 and was gradually extending its presence to the interior. Issues that Mary confronted as a young missionary included widespread human sacrifice at the death of a village elder, who, it was believed, required servants and retainers to accompany him in the next world, and the lack of education or any status for women.</p>
+
+<p>Mary soon learned the Efik language and showed an intense interest in local people and their customs. (Local people spoke of her as “Ma,” or “Mother of All the People.”) She lived simply, close to the people, in native housing. The greatest dangers she faced came from the disease-ridden climate. Malaria was rampant, as was smallpox and numerous undiagnosed tropical fevers. She set about establishing hospitals, dispensaries, and schools and through a constant flow of letters badgered colonial governors and mission headquarters for the means to expand her activities. “Why should I fear?” she asked. “I am on a Royal Mission. I am in the service of the King of kings.”</p>
+
+<p>Sometimes she went on preaching trips. Local members of her mission team went ahead, beating drums, and when a crowd had gathered under a shade tree, she preached in the local language, sometimes dwelling on a single verse of Scripture, for example, “Very truly, I tell you, anyone who hears my word and believes him who sent me has eternal life, and does not come under judgment, but has passed from death to life”(John 5:24).</p>
+
+<p>Saving the lives of twins was an important part of her ministry. According to local custom, twins were an ill omen, and the babies were killed or left outside villages for ants or leopards to devour. The father was thought to be possessed by an evil spirit, the mother guilty of a grievous sin, and one of the children supposedly was a monster. Mary preached against this custom, and several twins lived with her until she could place them with receptive local families. There were also numerous accounts of her confronting local leaders who attempted to have wives killed at the death of a chief to accompany him to the next world. Similarly, she spoke against ordeals by poison in which, if a local chief believed witchcraft had been worked against him, he would order suspects to drink a poisonous drink to ascertain their guilt or innocence.</p>
+
+<p>On the issue of infanticide and twin murder, she observed:</p>
+
+<blockquote>
+  <p>Though chiefs and subjects alike, less than two years ago, refused to hear of the saving of twins, we have already their promise.., in the persons of two baby girls aged six and five months respectively, who have already won the hearts of some of our neighbors and the love of all school children. Seven women have literally touched them, and all the people, including the most practical of the chiefs, come to the house to hold their palavers in full view of where the children are being nursed. One chief, who with fierce gesticulations some years ago protested that we must draw the line at twins, and that they should never be brought to light in his lifetime, brought one of his children who was very ill, two months ago, and laid it on our knee alongside the twin already there, saying with a sob in his voice, “There! They are all yours, living or dying, they are all yours. Do what you like with mine.[1]</p>
+
+</blockquote>
+
+<p>The debilitating climate took its toll, and on January 13, 1915, the sixty-seven-year-old missionary died after a severe bout of fever. Until life’s end she retained her optimistic spirit. “The time of the singing of birds is where Christ is,” she said, and “Never talk about the cold hand of death. It is the hand of Christ… Life is so grand and eternity
+is so real.”</p>
+
+<blockquote>
+  <p>Lord, the task is impossible for me, but not for Thee. Lead the way and I will follow. –Mary Slessor</p>
+</blockquote>
+
+<p>Frederick Quinn</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>W. P. Livingstone, <em>Mary Slessor of Calabar</em> (New York: Doubleday Doren, [1920]), 299.</li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>African Saints: Saints, Martyrs, and Holy People from the Continent of Africa</em>, copyright © 2002 by Frederick Quinn, Crossroads Publishing Company, New York, New York.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Slessor, Mary (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +768,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +807,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

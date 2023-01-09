@@ -607,8 +607,97 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Everyone who has studied Madagascar has heard of Emil Birkeli because of the remarkable work he did on the Vazimba and the Sakalava peoples.</p>
+
+<p>Born in Hurum, Norway, on February 2, 1877, Birkeli studied theology at the seminary of the Norwegian Missionary Society (NMS) in Stavanger from 1897 to 1902. He became an ordained pastor in 1903 and sailed for the west coast of Madagascar that same year. He was first sent to Belo, where he stayed until 1905. He then moved to Tulear, where he stayed until his furlough in Norway (1910-1912). He then came back to Morondava, where he worked until 1919, when he returned to Norway.</p>
+
+<p>Easygoing by nature, he had no problems relating to all kinds of people, the Sakalava in particular. While he carried out his ministry, he was thus able to undertake the serious study of their customs, morals, folklore, and traditional religion. During the course of his regular travels in the region of Tsiribihina and the vicinity of Antsalova, he attempted to resolve the problem of the migrations and filiations of the main Sakalava groups, as well as the irritating problem of the Vazimba, who seem[ed] to be the real natives of the high central regions of the island. The Malagasy Academy became aware of the value of his work (which he later published in French), and named him a corresponding member in 1924, because he had returned to Norway in 1923.</p>
+
+<p>From 1923 until 1944, he was a professor of the history of religion, and then professor of Church history and Missions at the NMS seminary in Stavanger, which he also directed (1937 - 1944). He was able to communicate his serious interest in exotic civilizations to his students, who were preparing to bring the gospel to many different people groups.</p>
+
+<p>He pursued his study of animist religions and applied his experience in Madagascar to the careful study of ancient Scandinavian religion. In 1939, he received a PhD. from the University of Oslo.</p>
+
+<p>He continued to teach and to publish until his death on June 13, 1952.</p>
+
+<p>O. Chr. Dahl, L. Molet</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p><strong>In French:</strong></p>
+
+<p>“Folklore sakalava recueilli dans la région de Morondava” [Sakalava Folklore collected in the Morondava Region] <em>Bulletin de l’Académie Malgache</em>, Antananarivo, 1924.</p>
+
+<p><em>Marques de bœufs et traditions de race</em> [Markings on Cattle; Racial Traditions] (documents on the ethnography of the west coast of Madagascar). Oslo, 1926.</p>
+
+<p><em>Les Vazimba de la côte ouest de Madagascar</em> [The Vazimba of the west coast of Madagascar]. Reports, Malagasy Academy, vol. XXII, Antananarivo, 1936.</p>
+
+<p><strong>In Norwegian:</strong></p>
+
+<p><em>Fra fjerne kyster</em>. [Of the Distant Coasts], (stories of experiences in Madagascar). Kristiania, 1912.</p>
+
+<p><em>Fra tamarindenes Land. Madagaskars vestkyst</em>. [From the Land of the Tamarinds. West coast of Madagascar]. Stavanger, 1913, 2nd ed. rev. 1920.</p>
+
+<p><em>Högsetet</em>. Det gamle ondvege i religionshistoriske belysning. [The Seat of Honor. The Ancient Norwegian <em>ondvege</em> in its Religious Context]. Stavanger, 1932.</p>
+
+<p><em>Misjonshistorie</em>. [History of Missions] vol. 1, Oslo, 1935 ; vol. 2, Oslo, 1937.</p>
+
+<p><em>Fedrekult i Norge</em>. [The Cult of Ancestors in Norway] (thesis), Oslo, 1938.</p>
+
+<p><em>Foreslesninger over madagassisk religion</em>. [A Course on Malagasy Religion]. Stavanger, 1944.</p>
+
+<p><em>Huskult og hinsidighetstro</em>. Nye studier over fedrekult i Norge. [The Cult of Family and Faith in (a) Life beyond the Grave. New Studies on the Cult of Ancestors in Norway] Oslo, 1944.</p>
+
+<p>“Vest-Madagaskar” [West Madagascar] in: <em>Det Norske Misjonsselskaps historie</em> [A History of the Norwegian Missionary Society] Stavanger, 1949.</p>
+
+<hr />
+
+<p>This article, which is reprinted here by permission, is from <em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em> [People and Destinies: Overseas Biographical Dictionary] vol. 3, published in 1977 by the Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Birkeli, Emil Otto`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +776,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +815,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

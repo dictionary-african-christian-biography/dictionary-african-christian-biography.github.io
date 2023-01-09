@@ -605,8 +605,85 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Raphael Assimoa est né en 1923 à Bokobele, dans le secteur de Busu Janoa, dans le territoire de Bongandanga, au district de la Mongala, dans la province de l’Équateur, en République Démocratique du Congo. Fils d’Alula et de Motsingea Monique, Assimoa a épousé Limebi Antoinette avec qui il a eu sept enfants, dont l’aîné, Assimoa Basili Raphaël, est actuellement serviteur de Dieu.</p>
+
+<p>A l’âge de 20 ans, Assimoa était en contact avec les pères missionnaires de l’Église Catholique, plus précisément, ceux de la mission catholique de Bopako dans le vicariat de Lisala, province de l’Équateur. C’est de ce contact qu’il reçut l’évangile et prit la décision de quitter sa famille pour se rendre à la mission catholique de Bopako pour suivre les enseignements sur le baptême. Après son baptême, il suivit une formation spéciale pour devenir catéchiste.</p>
+
+<p>Sa formation terminée, il fut alors envoyé dans son premier poste missionnaire dans le village de Boso Ikolo pour annoncer l’évangile et y implanter une cellule de base de l’Église Catholique. Après un travail assidu, le peuple de Boso Ikolo reçut la parole de Dieu.</p>
+
+<p>Après l’implantation et l’installation d’un catéchiste dans la cellule de Boso Ikolo où Assimoa passa plusieurs années, les autorités ecclésiastiques décidèrent de l’envoyer implanter une cellule de base au chef lieu du territoire de Boso Djanoa. Cette cellule fut implantée dans le site qui accueillait tous les services administratifs de l’autorité coloniale. C’est ainsi qu’il fut élevé au rang de catéchiste supérieur pour le secteur de Boso Djanoa par la hiérarchie où il a travaillé avec un prêtre qui y fut envoyé.</p>
+
+<p>Dans cette cellule où il y avait une école primaire qui allait jusqu’au niveau de troisième année, beaucoup reçurent l’évangile et furent baptisés.  Parmi ces derniers, on compte les travailleurs, les élèves, les villageois, et les chefs du village de Boso Djanoa.</p>
+
+<p>Après Boso Djanoa, Assimoa continua sa mission d’implantation de cellules dans plusieurs villages et groupements du secteur de Boso Djanoa. Plus de vingt-cinq cellules furent implantées, et par conséquence, il y eut beaucoup de convertis parmi la population. Ceci réjouit fortement les pères missionnaires de la mission catholique de Bopako.</p>
+
+<p>Assimoa nourrissait sa famille de la pêche, de l’agriculture et de la chasse. Pour gagner sa vie, il a été grand fabricant de pirogues et de pagaies, un emploi qui lui permettait de couvrir les besoins socio-économiques et financiers de sa famille à l’instar de l’apôtre Paul, qui fabriquait des tentes. Assimoa s’est donc pris en charge lui-même pendant toute sa vie missionnaire.</p>
+
+<p>Devant les autorités territoriales Belges, sa conduite était exemplaire. Pour preuve, les autorités coloniales lui avaient donné l’autorisation d’acheter un fusil de chasse, ce qui n’était pas facile pour les autochtones congolais à l’époque. En outre, considérant son dossier de bonne conduite transmis à Léopoldville, on lui avait accordé l’immunité devant les autorités militaires et judiciaires belges, car il était aligné au rang des pères missionnaires blancs.</p>
+
+<p>Faute de formation adéquate, il n’a pas pu participer aux travaux préparatoires de l’indépendance du Congo Belge.</p>
+
+<p>L’influence de sa vie missionnaire toucha même ses parents et sa famille qui, tous païens, reçurent l’évangile et furent baptisés. Ceci influença aussi les habitants de son village natal de Bokobele.</p>
+
+<p>Pour couronner sa vie missionnaire, il reçût le titre honorifique de catéchiste supérieur de toutes les cellules de base de l’église catholique implantées dans le secteur de Boso Djanoa.</p>
+
+<p>Son épouse bienaimée, Limebi Antoinette, mourut le 14 juillet 1990, après 45 ans de vie conjugale exemplaire. Le 19 novembre 2001, Papa Raphaël Assimoa , missionnaire laïc, est mort à l’âge de 78 ans, après une vie active et missionnaire bien accomplie.</p>
+
+<p>Assimoa Basili Raphael</p>
+
+<hr />
+
+<p>Source:</p>
+
+<p>Expérience personnelle d’Assimoa Basili Raphael, fils aîné de Raphael Assimoa.</p>
+
+<hr />
+
+<p>Cet article, reçu en 2008, est le produit des recherches d’Assimoa Basili Raphael, étudiant en missiologie au Centre Universitaire de Missiologie à  Kinshasa-R.D. du Congo sous la direction du Rév. Fohle Lygunda, coordinateur francophone du <em>DIBICA</em>.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Assimoa, Raphael`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +764,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +801,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

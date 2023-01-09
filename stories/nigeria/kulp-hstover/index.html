@@ -607,8 +607,67 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>H. Stover Kulp was a Church of the Brethren missionary in Nigeria. Born in Chester County, Pennslyvania, he graduated from Chester State Normal School, Juniata College (honorary D.D., 1948), and the University of Pennsylvania (M.A., 1920); he also studied at the Kennedy School of Missions, Hartford Seminary, Connecticut (1930-1931). After spending his early years as a teacher and pastor, he and Albert D. Hesler were sent by the Church of the Brethren in 1922 to initiate missionary work in the Northeastern State of Nigeria, located in Garkida. Neta Ruth (Royer) (b. 1896) joined her husband in 1923 but died the next year in childbirth. In 1926 Kulp married Christina* Masterson (1896-1952), a Scottish missionary. Kulp built up a flourishing pioneer mission program with numerous congregations, created a system for writing the Bura and Margi languages, published primers, translated Scriptures, and established schools and a noted leprosarium. Shortly after his retirement and return to the United States in 1964, he died and was buried in Coventry, Pennsylvania.</p>
+
+<p>Kulp was hailed as a church father by hundreds of Nigerians and as a pioneer leader by missionary colleagues. He served as a chairman of the Mission Council of Northern Nigeria and president of the Christian Council of Nigeria. The Kulp Bible School at Nkwarhi honors his memory. After initial modest growth, the Nigerian Church of the Brethren has expanded rapidly since the 1950s.</p>
+
+<p>Donald F. Durnbaugh</p>
+
+<hr />
+
+<p>*Editor’s note: The name of Stover Kulp’s wife was Christina, not Christine. Correction sent by Chrissy Kulp, granddaughter, email to DACB editor, dated 1/17/2013.</p>
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>The standard biography is Mary Ann Moyer Kulp, <em>No Longer Strangers: A Biography of H. Stover Kulp</em> (1968). See also Chamer E. Faw, ed., <em>Lardin Gabas: A Land, a People, a Church</em> (1973); Church of the Brethren, <em>Gospel Messenger</em>, September 12, 1964, pp. 22-23, and December 19, 1964, pp. 14-16; Inez Long, <em>Faces among the Faithful</em> (1962, on Ruth and Christina* Kulp); and Elgin S. Moyer, <em>Missions in the Church of the Brethren</em> (1931). On the growth of the church in Nigeria, see Charles H. Kraft, <em>Christianity in Culture: A Study of Dynamic Biblical Theologizing in Cross-Cultural Perspective</em> (1979) and <em>Communicating the Gospel God’s Way</em> (1980).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Kulp, Harold Stover`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +746,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +785,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

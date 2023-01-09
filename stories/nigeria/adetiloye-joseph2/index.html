@@ -607,8 +607,79 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Joseph Abiodun Adetiloye, the second archbishop and Primate of the Church of Nigeria (Anglican Communion), was born on Christmas Day, December 25, 1929, in the small town of Odo-Owa, Ekiti State. He hailed from an economically depressed area and from a poor home. His father, a polygamist who also could prescribe herbs for treatment and cure illness, died when Abiodun was just three years of age in 1932. Abiodun could not enjoy the privilege of formal education until he was eight years old, when he started his primary school education at Ijero-Ekiti from 1937 to 1942. He took a position teaching until 1950.</p>
+
+<p>Adetiloye started his church ministry in 1951 when he gained admission into Melville Hall (Anglican Training College), Kudeti-Ibadan. After his training, he was made a deacon in Lagos in 1953 and served as a curate at St. Peter’s Anglican Church Ake-Abeokuta from 1953 to 1956 when he left for England for further studies. He returned to Nigeria and was placed at Immanuel College of Theology, Ibadan during the 1961/62 academic session as a lecturer. He served until the year 1965.</p>
+
+<p>Adetiloye became the provost of St. James Cathedral Oke-Bola Ibadan in 1965 and got married in 1967. But his dream of a happy married life was changed eleven months later when his wife developed an ailment which defied healing until the end of his official ministry. He considers the crisis in his marital life a thorn which God gave him to teach him to appreciate His grace. The marriage was blessed with a son (Engr. Adeola Adetiloye).</p>
+
+<p>Adetiloye became the second bishop of the Ekiti Diocese in 1970 and served until 1985 when he became the sixth bishop of Lagos. In 1988, he became the second archbishop and primate of the Church of Nigeria (Anglican Communion), the position he held until his retirement from active service in December 1999.</p>
+
+<p>To Adetiloye, the office of a primate is one where the public responsibilities may occasionally bring heartache. The office attracts envy, hatred, and foul criticism. With the characteristics of the office of a primate, Adetiloye was able to excel, and with this understanding, his efforts could be appreciated most especially when his successes are considered. These include among others, the creation of many dioceses in Nigeria. Adetiloye inherited twenty-six dioceses and increased it to seventy-six before his retirement in 1999. This has made the Archbishop of Canterbury comment during the 1998 Lambeth Conference that, “the Church of Nigeria (Anglican Communion) is the fastest growing church in the Anglican Communion worldwide.”</p>
+
+<p>Adetiloye died in 2012.</p>
+
+<p>James D. Adewale</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>A. A. Agbaje, <em>Abiodun Lagos: A Blossomy Tree in the Desert</em>. (Lagos: CSS Press. 2001).</p>
+
+<p>C. O. Taiwo (ed.), <em>Joseph Abiodun Adetiloye: The Visionary primate</em>. (Lagos: CSS Ltd. 1999).</p>
+
+<p>J. D. Adewale, <em>Crisis Management in Joseph Abiodun Adetiloye’s Primacy (1988-1999)</em>, an unpublished M.A. Project, Dept. of Rel. Studies, University of Ibadan 2002.</p>
+
+<p>Oral interview by the researcher with the retired primate J. A Adetiloye in Lagos on August 18, 2006.</p>
+
+<hr />
+
+<p>This article, received in 2007, was researched and written by James D. Adewale, at the University of Ibadan, Nigeria, under the supervision of Rev. Dr. Deji Ayegboyin, <em>DACB</em> liaison coordinator.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Adetiloye, Joseph Abiodun (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +758,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +797,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

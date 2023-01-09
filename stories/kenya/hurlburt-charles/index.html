@@ -607,8 +607,63 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Charles E. Hurlburt was a founder and general director of the Africa Inland Mission (AIM). Born in Iowa, and raised in Oberlin, Ohio, he left a successful plumbing business to work with the YMCA, becoming state secretary of the Pennsylvania YMCA in 1889. With Peter Cameron Scott and others, Hurlburt helped to found AIM in May 1895.Named AIM general director in 1897, and confronted with the near collapse of the mission after the death of Scott in December 1896, he led his family and new workers to Kenya in 1901. Beginning in 1909, Hurlburt extended the work of the mission to include areas in Tanzania and the Belgian Congo (Zaire), gaining permission to enter the latter through the intervention of President Theodore Roosevelt (who had consulted Hurlburt in 1908 regarding East African affairs). Hurlburt pioneered in the concept of educating missionary children on the field, founding the Rift Valley Academy boarding school in Kenya. He represented AIM at the World Missionary Conference, Edinburgh (1910), and at the Foreign Missions Convention at Washington (1925), there giving an address, “The Gospel among Primitive Peoples.” He had a major influence on the formation of the Interdenominational Foreign Mission Association in 1917. In 1925 differences of interpretation over the “faith” principle of missionary support figured in his forced resignation from AIM. From his home in California, Hurlburt founded the Unevangelized Africa Mission and continued for 11 more years to recruit missionaries for the Congo and French Equatorial Africa.</p>
+
+<p>Robert T. Coote</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Dick Anderson, <em>We Felt Like Grasshoppers</em> (1994); Kenneth Richardson, <em>Garden of Miracles: A History of the Africa Inland Mission</em> (1968). A brief biographical sketch appears in Edwin L. Frizen, Jr., <em>Seventy-Five Years of IFMA, 1917-1992: The Nondenominational Missions Movement</em> (1992).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Hurlburt, Charles E.`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +742,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +781,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

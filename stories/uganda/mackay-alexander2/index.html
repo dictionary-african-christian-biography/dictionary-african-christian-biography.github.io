@@ -607,8 +607,59 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/uganda/mackay-alexander2/mackay-alexander.jpg" alt="" class="bio" height="198px" width="160px" /></p>
+
+<p>Of the Church Missionary Society. He was educated at Aberdeen Grammar School and Edinburgh University. He studied mechanical engineering in Berlin. He was accepted by the C.M.S. in 1876 and departed for Uganda as one of the original party of eight missionaries sent in response to H. M. Stanley’s appeal for Christian teachers to go to the court of Mutesa. He was detained near the coast because of illness; he constructed a road to Mpqapwa and eventually reached Uganda in December 1878 to join Wilson, the only other surviving member of the first party. He remained in Uganda until 1888, and for two periods the only Anglican missionary in the country. There were frequent calls on his skill as an engineer (he made the metal and wooden coffins in which Mutesa was buried), and he taught the Christian readers, some of whom were killed in the martyrdoms of 1885 and 1886. He was responsible for reducing Luganda to writing. In 1888 when the Muslims drove the Christians out of Uganda, he went to Usambiro, south of the lake, where he continued translation work, and was joined by a number of Baganda Christians. He never left East Africa and died in Usambiro in 1890. He translated St. Matthew’s Gospel into Luganda, and was preparing a catechism when he died. He was greatly loved by his colleagues and those whom he taught, and although he violently opposed the French Roman Catholics in matters of religion, they seemed to have liked one another as persons.</p>
+
+<p><strong>Louise Pirouet</strong></p>
+
+<hr />
+
+<p>This article, used by permission, was written by Louise Pirouet, as part of <a href="../pirouet-foreword/"><em>A Dictionary of Christianity in Uganda</em></a> (Department of Religious Studies, Makerere University College, 1969). Copies available at Africana Section, Makerere University Library (AF Q 276.761 MAK and AR/MAK/99/1); Bishop Tucker Library, Uganda Christian University and in UK at the University of Birmingham; Crowther Centre Library, CMS Oxford and Louise Pirouet Papers, Cambridge Centre of African Studies.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Mackay, Alexander M. (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +738,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +777,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

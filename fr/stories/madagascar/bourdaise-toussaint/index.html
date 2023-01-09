@@ -605,8 +605,77 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Le Père Toussaint Bourdaise fut l’un des Lazaristes envoyés par Saint Vincent de Paul à Madagascar au XVIIe siècle.</p>
+
+<p>Né à Blois en 1618, Toussaint Bourdaise entra à Paris à la Congrégation de la Mission le 6 octobre 1645. Il avait alors 27 ans. Il fut ordonné prêtre en 1651. Ses supérieurs avaient eu quelques doutes sur ses capacités car ils le considéraient comme “ayant trop peu de talent et de science.” Sa vocation missionnaire allait prouver le contraire.</p>
+
+<p>Saint Vincent de Paul le désigna pour Madagascar avec un autre prêtre, le P. Mounier, dès qu’il eut appris le décès du P. Gondrée envoyé dans la Grande Ile six ans plus tôt. Le Père Toussaint Bourdaise arriva à Fort-Dauphin le 16 août 1654, bien accueilli par la petite colonie française qui avait été privée de prêtre depuis trois ans et par les Antanosy qui avaient été baptisés par les premiers missionnaires.</p>
+
+<p>Le début de son apostolat fut marqué en 1655 par la destruction de Fort-Dauphin par un incendie et par la mort de son confrère, le P. Mounier. Pronis, nommé à nouveau gouverneur de Fort-Dauphin lors du départ de De Flacourt mourut aussi. Son successeur Des Perriers se livra à des violences et à des exactions contre la population Antanosy, soulevant ces derniers contre les Français.</p>
+
+<p>Malgré ces difficultés, le P. Bourdaise se donna pleinement à son travail ; il s’était mis à apprendre la langue du pays et avait commencé à rédiger un dictionnaire qu’il n’eut pas le temps d’achever car son apostolat lui prenait toutes ses journées. Fort-Dauphin fut reconstruit avec une église plus vaste pouvant contenir 200 personnes. Il échangeait avec Saint Vincent de Paul des lettres le tenant au courant des épreuves de la mission et des résultats obtenus. Il recevait de son côté des conseils pour ménager sa santé et modérer son zèle afin d’éviter le sort de ses confrères emportés après quelques mois de séjour.</p>
+
+<p>Au début de Juin 1657, il se rendit au fort d’Ambolo auprès de son Commandant malade, M. Champmargou pour lui administrer les sacrements. A peine arrivé, le P. Bourdaise fut lui-même atteint par la fièvre; il eut de la peine à rejoindre Fort-Dauphin, et, atteint de la dysenterie, il mourut le 25 juin 1657.</p>
+
+<p>C’était un homme infatigable. Pour éviter que la mission ne devienne une charge et pour lui permettre au contraire de venir en aide aux plus déshérités en période de disette, il avait mis en valeur un terrain comportant rizières et cultures vivrières, ainsi qu’un élevage qui, à sa mort, comptait trois cents bêtes à cornes. Il n’hésitait pas au moindre appel à se rendre auprès des Français établis dans les environs de Fort-Dauphin et, chaque mois, il allait dans les villages alentour prendre contact avec les nouveaux convertis. Il avait converti cinq à six cents familles malgaches et il avait commencé à réunir un groupe de jeunes néophytes dans l’espoir de créer un petit séminaire.</p>
+
+<p>Raymond Delval</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p>Notices sur les prêtres, clercs et frères défunts de la Congrégation de la Mission, Paris, 1898.</p>
+
+<p>Henri Froidevaux, <em>Les Lazaristes à Madagascar au XVIIe siècle</em>, Ch. Poussielgue, Éditeur, Paris.</p>
+
+<hr />
+
+<p>Cet article, réimprîmé ici avec permission, est tiré d’<em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em>, tome 3, publié en 1977 par l’Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Bourdaise, Toussaint`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +756,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +793,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

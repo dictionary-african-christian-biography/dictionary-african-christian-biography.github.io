@@ -607,8 +607,77 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Mishaka Mandago Shindika was a powerful evangelist in the Africa Inland Church Tanzania for 36 years.  He married a woman named Eddah with whom he had six children.  After being born again in the early 1930s, Mandago worked with AICT as a church elder and then as an evangelist. He received Bible training at the Kijima Center for Bible Learners.</p>
+
+<p>Mandago was ordained an Africa Inland Mission pastor in 1936 in Sukuma, Mwanza.  He traveled on foot up country, spreading the gospel among his people, the Basukuma, and never dispaired.</p>
+
+<p>Contrary to most other Africans, Mandago was very time oriented.  He used to say, “I wouldn’t dare waste even a single minute, because time cannot be replaced.”  Mandago preferred to evangelize in homes because he believed that visitation was a dynamic tool to enhance the church growth.  Consequently, he kept visiting the new converts regularly until they grew and matured in the church.</p>
+
+<p>Mandago evangelized in several locations around the Mwanza municipality: Bujora, Sukuma, Masemele, Busagala, Buswelu, Kiseke, Igusa, and Ilalila.  At the same point in time, in different stations, Rev. Zakaria Balele of Kolandoto, Rev. Paulo Mayuki of Idukilo Shinyanga, and Rev. Ibrahim Milyango of Busia Shinyanga all worked with Mandago. He was among the members who attended the first meeting of the Africa Inland Church synod.</p>
+
+<p>Timothy Shindika, one of Mandago’s sons, is now a church elder and a member of Africa Inland Church Tanzania Central Committee (Sinodi Kuu).  Timothy is also a member of AICT Constitution Committee, and also the Chairman of AICT Education Commission.</p>
+
+<p>Mandago was popular, honest, faithful, and trustworthy, with a high reputation in the church and society.  Although he was extremely limited in his time, most people commented that “Everywhere he went, he was doing good.”</p>
+
+<p>Joseph N. Gisayi</p>
+
+<hr />
+
+<p>Sources:</p>
+
+<p>Evangelist Charles Ngalilaba, interview by the author, October 2002, Mwanza.</p>
+
+<p>Aaron Mikomangwa, a near relative of Mandago, interview by the author, Makongoro, Mwanza.</p>
+
+<p><em>Muhtasari wa Historia ya Kanisa,</em> (A Short History of the AICT Church), edited by Bishop Samwel Magessa (Mwanza: Inland Publishers, 1977): 21.</p>
+
+<hr />
+
+<p>This article, submitted in 2003, was written by Rev. Joseph N. Gisayi, 2003-2004 Project Luke fellow, a minister in the AICT for the past twenty-four years, as well as a member of the Africa Inland Executive Council and chairperson of the AICT Mission and Evangelism Department. This article was reviewed and approved by AICT bishop Peter Kitula, David N. M. Nghosha, historian of the Africa Inland Church Tanzania and by Stephen Kapongo, coordinator of AICT Department of Mission and Evangelism.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Shindika, Mishaka Mandago`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +756,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +795,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -610,8 +610,72 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/ethiopia/lalibela/Lalibala-small.jpg" alt="lalibela" class="bio" height="203px" width="158px" /></p>
+
+<p>St. Lalibela foi um monarca e fundador de igrejas etíope. Foi o segundo e último rei da dinastia Zagwe; o mais renomado especialmente pelas onze igrejas esculpidas em pedra na Capital. Estas construções fazem parte dos maiores monumentos da África medieval. Lalibela constitui um notável exemplo entre a união de igreja e Estado na Etiópia e é reverenciado como um santo na Igreja Etíope.</p>
+
+<p>Lalibela significa “as abelhas o obedecem”, pois o relato diz que ao nascer um enxame de abelhas pousou sobre ele sem causar-lhe nenhum dano. Ainda jovem Lalibela alega ter visões e passar por períodos de retiro. Em 1180 fez uma peregrinação a Jerusalém. Ao retornar, Lalibela relutante assumiu o trono do seu meio irmão Harba com o apoio do clero que se opunha aos contatos de Harba com o papado. Assumiu o nome Gabra Masqal, Servo da Cruz, e começou o seu reinado com um longo jejum.</p>
+
+<p>s
+Lalilbela adotou uma política cristã de caridade e paz, a qual teve considerável sucesso. Protegeu as suas fronteiras com novos monastérios e desenvolveu boas relações com o Sultão Saladin, diminuindo assim, as pressões sobre os cristãos do Egito e protegendo os etíopes em Jerusalém. O seu grande feito, no entanto, foi criar uma fantástica rede de igrejas, pátios e sistemas hídricos na capital. Pelo fato de todo o complexo ter sido esculpido na pedra natural, abaixo do nível do solo, permaneceu intacto. O túmulo de Lalibela está localizado neste complexo.</p>
+
+<p>Norbert C. Brockman</p>
+
+<hr />
+
+<h1 id="bibliografia">Bibliografia</h1>
+
+<p><em>Dictionary of African Biography</em>. Algonac, MI, e New York: Reference Publications, vol. 1, 1977; vol. 2, 1979.</p>
+
+<p>Lipschutz, Mark, e R. Kent Rasmussen. <em>Dictionary of African Historical Biography</em>. 2ª edição. Berkeley: Editora da Universidade da Califórnia, 1986.</p>
+
+<hr />
+
+<p>Este artigo foi reproduzido com a permissão do <em>An African Biographical Dictionary</em>, copyright © 1994, editado por Norbert C. Brockman, Santa Barbara, Califórnia. Todos os direitos são reservados.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Lalibala (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Leia várias versões: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -694,7 +758,7 @@
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 02 January 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 14 December 2022.<br>&copy; 2022 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -729,6 +793,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

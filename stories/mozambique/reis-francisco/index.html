@@ -607,8 +607,78 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Mr Francisco Reis was a Nazarene member from Maio. He emigrated to Maputo in Mozambique because of poverty at home. When he sought a job where he could serve the Lord in practical ways, the Bible Society hired him. Wherever he went to sell Bibles, whether on the street or in homes, he always introduced the book with his testimony. He recruited his two teenage sons to help with this work.</p>
+
+<p>Father and sons were repeatedly sent to prison. They then sold Bibles to the prison guards. Several times the local churches bailed them out of prison but Reis never stopped selling Bibles. His pastor was Rev. Acácio Pereira, a former Catholic priest who had studied at the Cape Verde Bible College.</p>
+
+<p>Reis was a lay leader in the Maputo Portuguese Church and opened his home each week for outreach services. As a result a church developed in his neighborhood of Rua Guiné. People admired his courage, love for others and uncompromising faith.</p>
+
+<p>With the achievement of independence for Mozambique in 1975, churches were closed, properties confiscated, and Christians harassed. Francisco was forced to stop selling Bibles. How the family survived with this total loss of income is a mystery. Yet they prepared food, time after time, to take to the Nazarene missionaries in prison, Reverends Armand Doll and Hugh Friberg. The guards received it and then slammed the door in his face. It did not matter; he continued to bring the food.[1]</p>
+
+<p>Mr. Francisco Reis later returned to Cape Verde, where he was an active worker in the church on the island of Maio until he passed away.[2]</p>
+
+<p>Paul S. Dayhoff</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>
+    <p>Jorge de Barros, report (1992).</p>
+  </li>
+  <li>
+    <p>Roy Henck, letter (15 April 1995).</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Living Stones In Africa: Pioneers of the Church of the Nazarene</em>, revised edition, copyright © 1999, by Paul S. Dayhoff.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Reis, Francisco`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +757,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +796,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

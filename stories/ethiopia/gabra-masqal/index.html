@@ -611,8 +611,75 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Gäbrä-Mäsqäl, Emperor, ruled the Aksumite Empire, perhaps from about 543 to 560, or possibly later, from about 550 to 575, after his father Emperor Kaléb had abdicated and after some conflict with his brother Emperor Bétä-‘Esra’él, who temporarily took the throne in the first year of the period. It appears from the Chronicles and Lives of Saints that Gäbrä-Mäsqäl’s reign within Ethiopia was peaceful and orderly, and he could engage in religious and cultural affairs. Many secular and religious buildings were raised by him in and near Aksum, including the monastery of Däbrä Damo. It is likely that he or his father gave full support to those of the Nine Saints who were at this time establishing their retreats, for example Abba Afsé, who changed the Sabaean temple of worship at Yeha into a Christian church. At this time also Yaréd the Deacon compiled the <em>Mäzgäba Degwa</em> (“Treasury of Hymns”); legend has it that the Emperor was so absorbed by Saint Yaréd’s singing that he drove the spear with which he was keeping time into Yaréd’s foot, but the saint was unaware of it until he had finished the song.</p>
+
+<p>Outside Ethiopia, Gäbrä-Mäsqäl’s reign was not so prosperous. The Ethiopian occupation of Southern Arabia, preserved in battle by Kaléb, was presumably lost, and the Persians invaded and annexed the territory c. 575 A.D.</p>
+
+<p>Gäbrä-Mäsqäl was buried at Däbrä Damo. He was canonized by the Ethiopian Church, and is commemorated on 29 <em>Hedar</em> (8 December).</p>
+
+<p>Sergew Hable-Selassie</p>
+
+<hr />
+
+<p><strong>Bibliography</strong></p>
+
+<p>E. A. Wallis Budge, <em>A History of Ethiopia</em> (London, 1928), Vol. I, 265 ff..</p>
+
+<p>——–, <em>The Book of Saints of the Ethiopian Church</em> (Cambridge, 1928), Vol. III.</p>
+
+<p>C. Conti Rossini, <em>Liber Axumae</em>, <em>Corpus Scriptorum Christianorum Orientalium</em>, Scriptores aethiopici, series altera, t. VIII.</p>
+
+<p>——–, <em>Storia d’Etiopia</em> (Bergamo, 1928), 260-62.</p>
+
+<p>Sergew Hable-Selassie “Yared,” <em>Ye-Memhiran Dimts</em>, I, No. 1 (1965), 15-17.</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>The Dictionary of Ethiopian Biography, Vol. 1 ‘From Early Times to the End of the Zagwé Dynasty c. 1270 A.D.,’</em> copyright © 1975, edited by Belaynesh Michael, S. Chojnacki and Richard Pankhurst, Institute of Ethiopian Studies, Addis Ababa, Ethiopia.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Gabra-Masqal`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +758,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -730,6 +797,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

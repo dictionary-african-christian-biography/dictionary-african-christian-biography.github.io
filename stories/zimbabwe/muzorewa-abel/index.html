@@ -607,8 +607,81 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Bishop Abel Tendekayi Muzorewa, Methodist bishop and nationalist leader, was prime minister of the coalition government called Zimbabwe Rhodesia, which failed in its attempt to create a biracial government to end the civil war in formerly white-controlled Rhodesia.</p>
+
+<p>In 1947, Muzorewa was appointed a lay preacher for five tiny congregations while he studied theology.  He was ordained in 1953 and was appointed a circuit preacher for five years before spending 1958 to 1963 at Methodist colleges in the United States, where he completed a master’s degree.  By the 1950s he supported his people’s rising nationalist feelings and, after his return, he took up a conference post as youth director, where he could channel his ministry into political activity.  He led protests against the deportation of Bishop Ralph Dodge, who opposed the increasing political repression of the Ian SMITH  government, which unilaterally proclaimed the independent white-ruled nation of Rhodesia in 1965.  In 1968, Muzorewa was elected bishop to succeed Dodge, becoming the first African head of a major church in Rhodesia.  He came into conflict with the Smith regime, which banned him from tribal trust lands, where most of the black Methodists lived.  He continued to criticize the racist policies of the government and became a national symbol of resistance.</p>
+
+<p>In 1971 the British struck a deal with Smith that provided for a transition to majority rule over decades in exchange for an end to sanctions against the government.  Muzorewa joined with an inexperienced cleric, Reverend Canaan BANANA, to form the African National Congress (ANC) to oppose the settlement.  It was so successful that the proposed referendum was withdrawn; Muzorewa found himself a national leader and an international personality.  The liberation movements- the Zimbabwe African National Union (ZANU) of Reverend Ndabaningi SITHOLE and the Zimbabwe African People’s Union (ZAPU) of Joshua NKOMO–both placed themselves under the ANC umbrella even though they had some doubts when Muzorewa founded a national party.  The ANC was the only legal black party once ZANU and ZAPU undertook guerrilla warfare, which it rejected.  Muzorewa is a man without cunning or political guile, which was both his appeal during the 1970s and the reason for his failure.  He was the acknowledged African leader, but he lacked ambition and avoided the factional politics that fueled the independence movements but which also led to ethnic violence and bloodshed in internecine battles.  Muzorewa saw himself as a Moses leading his people out of bondage; ZAPU and ZANU saw him as a figure-head maintaining a legal front while they fought the real battle for liberation.</p>
+
+<p>In 1975 Sithole and Nkomo were released from the restriction that had confined them to their home villages since 1964.  They promptly moved to seize control of the ANC from Muzorewa.  Talks with the government collapsed, Nkomo and Sithole abandoned the ANC to begin their own splinter movements, and Muzorewa temporarily left the country.  After 14 months he returned to a tumultuous welcome.  Nkomo tried to outflank the bishop by joining with guerrilla leader Robert MUGABE to form the Patriotic Front (PF).  After the collapse of U.S.-brokered conciliation talks in 1977, Muzorewa found himself increasingly isolated politically.  The neighboring African states endorsed the PF’s civil war, and Muzorewa turned to direct negotiations.  In 1978, Muzorewa and Sithole (who had lost control of ZANU to Mugabe) signed an agreement with Smith for installing a majority government within a year.  All citizens over 18 had the vote, but the seats were reserved for whites and they were allocated a quarter of the cabinet positions.</p>
+
+<p>From the start the transitional government was doomed to failure.  Muzorewa became prime minister when his ANC carried the elections and the country’s name was changed to Zimbabwe Rhodesia.  But the PF denounced the arrangement, the war continued, and no international recognition was forthcoming.  When Muzorewa attempted to address the United Nations Security Council the day after Nkomo and Mugabe, he was not permitted to do so.  The security situation deteriorated until government supporters were unsafe beyond the region around the capital.  Large numbers of whites emigrated, leaving the economy in shambles.  Finally, an international all-party arrangement led to the arrival of a British administrator along with Commonwealth troops to oversee a cease-fire.  In 1980 independence was achieved, and Mugabe’s ZANU swept to power.  Muzorewa was elected to parliament, but the ANC won only two other seats.  Banana became president of Zimbabwe, with Mugabe as prime minister.  Muzorewa remained in parliament but was detained from 1983 to 1984.  In 1985 he returned to Scarritt Theological Seminary in Memphis.  He divides his time between Memphis and his farm in Zimbabwe.</p>
+
+<p>Norbert C. Brockman</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p><em>Current Biography.</em>  New York: H. W. Wilson, 1940-.</p>
+
+<p>Lipschutz, Mark R., and R. Kent Rasmussen.  <em>Dictionary of African Historical Biography.</em>  2nd edition.  Berkeley: University of California Press, 1986.</p>
+
+<p>Dickie, John and Alan Rake.  <em>Who’s Who in Africa.</em>   London: African Development, 1973.</p>
+
+<p>Wiseman, John A.  <em>Political Leaders in Black Africa.</em>  Brookfield, VT: Edward Elgar Publishing, 1991.</p>
+
+<p>Rake, Alan.  <em>Who’s Who in Africa: Leaders for the 1990s.</em>  Metuchen, NJ: Scarecrow Press, 1992.</p>
+
+<p>Additional reading: Muzorewa, Abel. *Rise Up and Walk *(1978).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from *An African Biographical Dictionary, *copyright © 1994, edited by Norbert C. Brockman, Santa Barbara, California. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Muzorewa, Abel Tendekayi`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +760,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +799,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

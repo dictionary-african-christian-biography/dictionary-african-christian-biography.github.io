@@ -611,8 +611,73 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>King of Kongo.</p>
+
+<p>His father having been baptized by Portuguese missionaries in 1491, Affonso committed himself to the Christianization of his kingdom. Nicknamed <em>Mbema a Nzinga</em>, “the son and heir of the old King,” he struggled with and later expelled his unbaptized brother Mpanzu. Inadequately supported by Portuguese authorities, Affonso himself became coercive, adopting a “clean sweep” policy and destroying local ritual objects (<em>minkisi</em>). He alienated many people; some of them followed Mpanzu while others abandoned Christianity.</p>
+
+<p>Affonso sent his son to Portugal to study for the priesthood and tried to train an indigenous elite. By catechizing 400 sons of local chiefs and baptizing huge numbers of people, Affonso attempted to create a Christian society. The lack of adequate missionary support led him to establish his own seminary, and though this was opposed by Portugal, he continued to extend Christian education in his kingdom, even creating girls’ schools. His son Henrique returned as the first African bishop (1521) but died prematurely and the budding church withered for lack of sustenance. The Portuguese were more concerned with commerce than with Christianity, and Affonso died disillusioned.</p>
+
+<p>Anthony J. Gittins, CSSp</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Marie-Louise Martin, <em>Kimbangu: An African Prophet and His Church</em> (1975).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
+
+<hr />
+
+<p>External link</p>
+
+<p><em>Encyclopaedia Britannica</em>  (complete article):   <a href="http://www.britannica.com/eb/article-9003926/Afonso-I"> Afonso I</a></p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Afonso I (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +756,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -730,6 +795,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

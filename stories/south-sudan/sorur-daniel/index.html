@@ -607,8 +607,65 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/south-sudan/sorur-daniel/sorur-daniel.jpg" alt="Sorur, Daniel" class="bio" height="266px" width="160px" /> A Dinka, Daniel Ferim Deng Sorur was taken, together with his mother, to Khartoum by a slave trader when he was still a child in 1871. In 1875 he took refuge in the Catholic Mission at El Obeid and was accepted by Bishop Comboni who baptized him and sent him to Rome for ecclesiastical studies (1877-1883). After completing his theological course at Beyrut he was ordained a priest at Cairo by Comboni’s successor, Bishop Francis Xavier Sogaro, on May 8, 1887. He exercised his priestly ministry in Suakin and Helouan, Cairo. He died in Cairo on January 11, 1900.</p>
+
+<p>V. Dellagiacoma</p>
+
+<hr />
+
+<p>This article, received in 2005, is reprinted with permission from <em>Sudanese Catholic Clergy</em>, © copyright 1997 by Fr. V. Dellagiacoma (Provincial Comboni House, Khartoum, Sudan).</p>
+
+<hr />
+
+<h1 id="photo-gallery">Photo Gallery</h1>
+
+<p><img src="/images/bio-pics/south-sudan/sorur-daniel/sorur-students.jpg" alt="Sorur and students" class="bio" /></p>
+
+<p><img src="/images/bio-pics/south-sudan/sorur-daniel/sorur-students2.jpg" alt="Sorur and students" class="bio" /></p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Sorur, Daniel Deng (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +744,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +783,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

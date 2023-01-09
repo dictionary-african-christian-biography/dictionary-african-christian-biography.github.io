@@ -605,8 +605,86 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Liaba Abekami Laurent est né à Bambombo en 1953. Il est originaire du groupement Bobenge, collectivité Baboa de Kole, territoire de Banalia, district de Tshopo, Province Orientale en République Démocratique du Congo. Il était marié à Jeannette Maswa Monzongo, originaire de Bongolobo de la tribu Boa. Liaba Abekami était de la tribu Ngelema. Son père s’appelait Esongo et sa mère Agbasekia Mandeni. Il était père de douze enfants.</p>
+
+<p>Liaba a fait ses études primaires à Zambeke et ses études secondaires à Banjwade en section pélagique, option pédagogie générale. Apres avoir obtenu son diplôme d’Etat, il travailla comme enseignant à l’école primaire Zambeke dans le territoire de Banalia en 1974 puis il fut muté  à Bumba, province de l’Equateur. Là il assuma les fonctions d’enseignant pendant deux ans, ensuite il fut muté à Bopepe, un village situé à 23 kilomètres de Banalia. C’est là où il assuma les fonctions de diacre dans la paroisse de la 21e Communauté Nations de Christ en Afrique (21e CNCA).</p>
+
+<p>Il eut la promotion d’être coordinateur des écoles primaires et secondaires de la 21e CNCA à Kisangani de 1989 à 1990. Il reçut encore la mutation pour Alolo, un village situé à 25 km du territoire de Banalia de 1990 à 1993. Enfin, il fut nommé directeur dans une école à Banalia.</p>
+
+<p>Liaba a reçu la vocation d’aller faire des études théologiques en 1993. Il emmena toute sa famille de Banalia à Bunia à l’Institut Supérieur Théologique de Bunia (ISTB), qui est l’actuelle Université Shalom de Bunia (USB). Après avoir terminé les trois ans de graduat, il rentre à Banalia, en 1996, pour assumer les fonctions d’assistant du représentant provincial de la Province Ecclésiastique du Congo Nord à Banalia.</p>
+
+<p>En 1997, lors de la guerre de l’AFDL (l’Alliance des Forces Démocratiques pour la Libération du Congo), le représentant titulaire voyage à Kinshasa et Liaba assuma son intérim. Par la suite, il devint le représentant provincial de la Province Ecclésiastique du Congo Nord à Banalia. Il est ordonné le 17 juillet 1999.</p>
+
+<p>En 2000, il fut affecté à Banjwade comme directeur de l’Institut Biblique. C’est là que son fils cadet du nom de Benjamin mourra. Après une année, il rentre à Banalia pour occuper son poste du représentant provincial. Là, il devint à la fois conseiller à l’Hôpital Général de Référence de Banalia, enseignant de la philosophie et de la chimie à l’Institut Boo-Koy et aussi enseignant à l’Institut Biblique de Banalia (IBA).</p>
+
+<p>Liaba a construit un temple de 25 m sur 13 m en mémoire des missionnaires occidentaux tués pendant la rébellion à Banalia. Ledit temple fut inauguré par le représentant de la mission CROSS WORLD en la personne du Révérend Ted Witmer.</p>
+
+<p>Liaba est le fondateur de l’école primaire et secondaire Boo-Koy et de l’Institut Biblique de Banalia.</p>
+
+<p>Liaba est mort suite à une complication de diabète dont il souffrait depuis quinze ans. Sa mort est survenue à Kisangani le vendredi le 17 février 2012 pendant la nuit. Son corps fut amené à Banalia pour y être enseveli.</p>
+
+<p><strong>Patrick Kalengi Etili</strong></p>
+
+<hr />
+
+<p><strong>Sources :</strong></p>
+
+<ol>
+  <li>
+    <p>MASUA MONZONGO Jeanette, épouse du défunt, interview du 6 mai 2013 à Banalia (Kisangani)</p>
+  </li>
+  <li>
+    <p>MALOMBI LIABA Henriette, fille du défunt, interview du 13 août 2013 à Bunia.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>Cet article, reçu en 2014, est le produit des recherches de Patrick Kalengi Etili, étudiant en 3e graduat à l’Université Anglicane du Congo, sous la direction du Révérend Dr. Yossa Way. Ce dernier était professeur de théologie et coordinateur de liaison du DIBICA à l’Institut Supérieur Théologique Anglican (Bunia, Rép. Dém. du Congo) ainsi que récipiendaire de la bourse du Projet Luc en 2001. Couramment (2016), il est recteur de l’Université Anglicane du Congo (ancien ISThA).</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Liaba, Laurent Abekami`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +765,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +802,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

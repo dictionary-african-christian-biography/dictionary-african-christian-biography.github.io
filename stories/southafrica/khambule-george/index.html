@@ -607,8 +607,71 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>George Nazar Khambule (1884-January 9, 1949), a Zulu Messiah, founded a unique religious community whose ethos and structure differed from that of any other independent African Christian church of his time. Although his church has ceased to exist, it left behind a tradition of apocalyptic Christianity which has been followed by many subsequent groups.</p>
+
+<p>Khambule was born of Christian parents at Telezini in the Nquto district of Zululand. Illiterate, he left Telezini to work in the mines of Johannesburg, where he learned to read and write at a night school. In 1919 he was a mine captain at the time he received a letter from a Nqutu schoolteacher, John Mtanti, asking him to return to Telezini to lead a religious movement. Mtanti (1873-1937) had had a dream in which, he saw a “shining stone,” and interpreted it to mean that he had to find holy stones with which to build a new Jerusalem. A further dream revealed to him one who was greater than himself, who could proclaim the message better-Khambule.</p>
+
+<p>Khambule’s initial response was negative but, after a frightening brush with death from influenza, during which he “died” and was “resurrected” with specific divine instructions, he returned to Telezini to work with his precursor, Mtanti. Exceptional powers of perception were attributed to Khambule, and he attracted great numbers of people to his home initially to hear of his death and resurrection, and later so that they might confess their sins and be saved. As some visitors chose to stay, a new community began and a stone temple was built for worship. Khambule’s church, ‘‘The Church of Christ, the Congregation of All Saints of South Africa,” prospered and expanded in its early years, with branches at Msinga in Natal and at Witbank in the Transvaal. He and Mtanti searched for the true revelation of God that was beyond the missionaries’ interpretations. Mtanti, the ex-schoolteacher, spent a decade studying the Bible and formulating a doctrine that encompassed Zulu beliefs, while Khambule created his own liturgy. Khambule set up a code of conduct which required saints to keep away from infidels; to part from spouses married in the traditional way in order to enter into a “heavenly marriage;” and to refrain from eating certain foods which were part of traditional Zulu fare. This breaking of family bonds and the total asocial effect of the saints’ conduct brought the church into conflict with local Chief Molife and the Nqutu people, resulting in Khambule’s eviction from Telezini.</p>
+
+<p>Khambule also introduced mysticism into his church through the use of a secret “language of the saints” and the use of secret names for his followers. Khambule alone had access to yet another secret device, a “heavenly telephone,” through which he received instructions from Jehovah. By the mid-1930s, however, Khambule had fallen out with his precursor over the issues of the “heavenly marriage” and the “heavenly telephone.”</p>
+
+<p>After his eviction from Telezini, Khambule and his followers wandered in Zululand and Natal, being continually uprooted because of the Land Act of 1913, which deprived Africans of large tracts of their land and confined them to designated areas. Finally the church purchased a plot of land at Spookmill in Natal, where Khambule was buried after his death in Johannesburg in 1949. Khambule left a copious diary, a unique document which has enabled scholars to study his movement.</p>
+
+<p>Nomathemba  Sithole</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>B.G.M. Sundkler, <em>Zulu Zion and Some Swazi Zionists,</em> Oxford: Clarendon Press, 1976; B.G.M. Sundkler, <em>Bantu Prophets in South Africa.</em> 2nd ed. London: Oxford University Press, 1961.</p>
+
+<hr />
+
+<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (In 20 Volumes). Volume Three: South Africa- Botswana-Lesotho-eswatini. Ed. Keith Irvine. Algonac, Michigan: Reference Publications Inc., 1995.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Khambule, George Nazar`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +750,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +789,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

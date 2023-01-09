@@ -601,8 +601,63 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>John Joseph Freeman was a mid-nineteenth century leader of the London Missionary Society (LMS). Freeman, born in London, was educated at Hoxton Academy and became a Congregational pastor in Kidderminster. In March 1827 he was sent to Madagascar as a missionary on a limited-time appointment by the LMS. In September 1829 he was expelled from Madagascar. His wife and family sailed to England, but Freeman stopped in Cape Town, where he assisted John Philip. In 1831 he was able to return to Madagascar, where his wife and children joined him in 1834. Political difficulties again forced the Freemans to leave Madagascar, and they returned to Cape Town, where Freeman finished the period of his contract. Back in Britain by the beginning of 1837, he became a pastor in Walthamstow. In May 1841 he was made joint foreign secretary of the LMS with A. Tidman. He spent 1842 and 1843 inspecting and revitalizing the LMS missions in the Caribbean. In 1846 he became full-time home secretary of the LMS. From February 1849, he spent 18 months inspecting the work in South Africa, and then tried to reenter Madagascar but was turned back. Before Freeman died, he managed to see through to publication his very important <em>Tour in South Africa</em>.</p>
+
+<p>Andrew C. Ross</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>A very large number of letters to and from Freeman can be found in the LMS archives, which are housed in the library of the School of Oriental and African Studies, Univ. of London. See also Richard Lovett, <em>The History of the London Missionary Society, 1795-1895</em> (1899).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Freeman, John Joseph`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -681,7 +736,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -720,6 +775,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

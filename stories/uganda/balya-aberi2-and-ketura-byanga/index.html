@@ -611,8 +611,65 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>[TORO]</p>
+
+<p>Rt. Rev. Aberi Kakyomya Balya was born at Matiri in eastern  Toro. When a child he was taken to Bunyoro by Kabarega’s armies. He was brought  up in Kabarega’s enclosure because his aunt was one of Kabarega’s wives. He  returned to Toro in 1896. He served in the Mukama’s enclosure where he started  to receive Christian teaching.  He was  baptized by the Rev. A. B. Fisher in 1901, and confirmed by Bishop Tucker in 1903.  His first teaching appointments were in Kayaka and Nyakabimba. In 1905 he went  as a teacher to Kyagaju in Ankole. In 1907 he married Ketura Byanga, also a  church teacher, who had been in the service of the <em>Nyina Omukama</em>. The  same year he was sent to Mboga (now in the Democratic Republic of the Congo)  where Apolo Kivebulaya had worked. In 1908 he was transferred to Kitagwenda on  the Toro/Ankole border, and was the first Anglican teacher to make any headway  there. From 1910-1911 he and two others worked with the Rev. H. E. Maddox on  the translation of the Bible into Runyoro/Rutoro. He then went to Bishop Tucker  College, Mukono, and qualified as a lay-reader. On his return he was posted to  Ngoma, sent of the <em>Nyina Omukama</em>, and worked up towards the Ruwenzori,  concentrating on the Bakonjo. After a further period at Mukono he was ordained  priest in 1922 and returned to Ngoma, this time concentrating on Butuku. In  1923 he was put in charge of Busongora, a huge area in southern Toro, where he  again worked among the Bakonjo. From 1931-1934 he was again at Mboga and was  there when Apolo Kivebulaya died. In 1934 he was appointed vicar of St. John’s  Church, Kabarole. The following year he was made a Canon of Namirembe  Cathedral. In 1938 he was appointed an honorary Life Governor of the CMS. In  1947 he was consecrated Assistant Bishop with special responsibility for  Western Uganda—the first East African to be consecrated by the Anglican  episcopacy. In 1952 he was awarded the O.B.E. In 1960 he retired to Bunyonyi,  sixteen miles from Fort Portal. In 1964 when the Lost Counties were returned to  Bunyoro, he was invited to preach the sermon at the service of thanksgiving. In  1966 he played a prominent part at the coronation of the new <em>Mukama</em> of  Toro.</p>
+
+<p><strong>Louise Pirouet</strong><em>**</em></p>
+
+<hr />
+
+<p><strong>Notes</strong>(short  form; see <a href="../pirouet-appendixa-sources/">List of  Sources</a> for complete citations):</p>
+
+<p>Based on his own information.</p>
+
+<hr />
+
+<p>This biography, written by Louise Pirouet, was included in “Appendix A: Biographical Notes,”  on pages 371-2 of “The  Expansion of the Church of Uganda (N.A.C.) from Buganda into Northern and  Western Uganda between 1891 and 1914, with Special Reference to the work of  African Teachers and Evangelists” (PhD Thesis: University of East Africa, 1968).  Pirouet published this thesis as <em>Black  Evangelists</em> (London: Rex Collings, 1978). However, <em>Black  Evangelists</em> does not reproduce the detailed biographies, complete with  references to sources, found in Appendix A of the thesis. Print copies are  available at Africana Section, Makerere University Library (U 02 P57); The Centre for Christianity  Worldwide, Cambridge; and a microfilm copy at the School of Oriental Studies,  London. [information from Angus Crichton]</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Balya, Aberi Kakyomya (C)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +748,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -730,6 +787,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

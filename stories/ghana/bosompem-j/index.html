@@ -607,8 +607,73 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Joseph Bosompem (1848-193?), also known as Kamirey, was senior presbyter (elder) of the Basel Mission Church at Kyebi, capital of the state of Akyem Abuakwa in southern Ghana. He was the central figure in the anti-Christian riots which occurred in Akyem Abuakwa in December 1886.</p>
+
+<p>Born to Madam Amma Buabemaa of Kyebi in 1848, Joseph Bosompem grew up at Apedwa, a short distance west of Kyebi, where he lived with his father. He later moved to Kyebi, and was one of the earliest converts there to the Christian faith. He later became the first leader of the Kyebi Christian congregation, and was one of the witnesses invited to Accra by the British governor, H. T. Ussher, to testify for the prosecution during the trial of Amoako Atta I (<em>q.v.</em>), Okyehene (paramount chief of Akyem Abuakwa), on a charge of arson in 1880.</p>
+
+<p>In 1881 the Gyasse stool (the office of comptroller of the royal household) became vacant following the death of the Gyasehene (royal treasurer) Kwasi Amoako. Joseph Bosompem, nephew of Kwasi Amoako, and the legitimate heir to the Gyase stool, at first declined to accept the position on religious grounds, but in 1883 was prevailed upon by the Rev. Karl Buck to accept it.</p>
+
+<p>On January 8, 1885, Amoako Atta I was repatriated from Lagos, and was met by a delegation, including Bosompem. But it soon became apparent that Amoako Atta I, who had been reinstated as Okyehene, could not reconcile himself to Bosompen’s appointment as Gyasehene. Sensing danger, Bosompem resigned his position in 1886, and went back to live at the Mission station.</p>
+
+<p>In December 1886, Bosompem was arrested at Apedwa, and was brought before the Okyeman (Akyem Abuakwa State) Council charged with complicity in the theft from the royal treasury of Amoako Atta’s money, jewelry, and velvet cloths. Bosompem was found guilty of receiving stolen property, but in spite of his denial of the charge, he was tortured and detained for eight days. At the request of the Rev. Adolf Mohr of the Basel Mission, the British governor, William Brandford Griffith (who served intermittently from 1880-95) sent Mr. J. Simons, a British official, to Kyebi to investigate the case. Bosompem was subsequently tried at the Divisional Court in Accra 1887, and was acquitted and discharged. He returned to Kyebi, where he continued to play a leading role in the church as senior presbyter.</p>
+
+<p>Early in the 20th century, following an improvement in the relations between non-Christians and Christians in Akyem Abuakwa, he was appointed as one of the Christian representatives on the Kyebi Executive Council. He continued to serve actively in that capacity till about 1930. He died a few years later.</p>
+
+<p>R. Addo-Fening</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Paul Jenkins, A<em>bstracts from the Gold Coast Correspondence of the Basel Mission</em>, (Bound Transcript), Legon, 1970. See also National Archives of Ghana, ADM. 11/1/1094, 11/1/1265.</p>
+
+<hr />
+
+<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (in 20 Volumes). Volume One Ethiopia-Ghana, ©1997 by L. H. Ofosu-Appiah, editor-in-chief, Reference Publications Inc., New York, NY. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Bosompem, Joseph`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +752,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +791,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

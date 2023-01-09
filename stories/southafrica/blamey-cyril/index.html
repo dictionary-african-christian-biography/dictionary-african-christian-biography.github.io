@@ -607,8 +607,88 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/southafrica/blamey-cyril/blamey-cyril.jpg" alt="Cyril Blamey" class="bio" /></p>
+
+<p>Cyril V. Blamey was born at Mount Edgecombe in Natal and became a farmer in the Eastern Cape near Matatiele.  When he was nine, his mother tried to persuade him to become a parson but he refused.  During World War I he served in France and lost a hand.  He was  greatly disappointed when, upon his return, his fiancée declined to marry him.  His mother died in 1930.</p>
+
+<p>Cyril found the Lord in 1931 during the visit of an evangelism team.  That night in a hotel room, God told him to sell his farm and everything he had.  Then, a few months later, he again heard God speaking to him, “I want you to be a missionary to the African people.”  For a white South African, that was the last straw and was  totally abhorrent, but he was afraid to refuse.  Later Cyril was entirely sanctified. In January 1937, he found clear guidance and went for preparation to Cliff College in England.  In December 1938, Cyril Blamey was appointed as a missionary by the International Holiness Mission.</p>
+
+<p>During the 1940s, at Khokhovela (Islington), in the southeastern lowveld of Northern Province, he spent several days a week  visiting on horseback and evangelizing in homes over a wide area. Miss Ania Mabaso was a Christian from Khokhovela.  She married Mr. Ben Mabunda and moved to Edinburgh.  Rev. Blamey often visited them there and the Mabandla (Edinburgh) Church was started.   Many years later, he was still remembered for his widespread visiting  and he has virtually become a legend in the district.[1]</p>
+
+<p>He spent many years teaching in the Rehoboth Bible College (Johannesburg area).  Becoming a Nazarene in 1952, Cyril joined the Malvern East Church (in an eastern suburb of Johannesburg).  Later, for a number of years, his mission assignment was to visit and evangelize in hospitals and jails around Boksburg on the East Rand.  Cyril was proficient in the Zulu and Tsonga languages.[2]</p>
+
+<p>He often experienced great loneliness and many difficulties especially living by himself on a mission station in the bush.  Through it all, he was able to say, “I can testify to the never-failing faithfulness of a loving Father and glorious Saviour who constantly abides with me.”[3] Cyril Blamey retired at White River in the  Mpumalanga lowveld in 1968 and spent his last months  evangelizing and distributing tracts on the streets of the town.  He was a friend of the missionary children in boarding school there and they often visited him.  Uncle Cyril prayed with them and always gave wise counsel.[4]</p>
+
+<p>After breakfast one day, he retired to his room for his devotions as usual and a little while later he was found on his bed where he had died while reading.</p>
+
+<p>Paul S. Dayhoff</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>
+    <p>Conversation with Mrs. Evelina Khoza, Acornhoek, February 1998.</p>
+  </li>
+  <li>
+    <p>J. MacLachlan, 1974, <em>The First 25 years: A Brief History of the South African District of the Church of the Nazarene,</em> (Florida, Transvaal, South Africa: Nazarene Publishing House,), 27.</p>
+  </li>
+  <li>
+    <p>K. Spell, 1960, <em>So Send I You</em>, (Kansas City, MO: Nazarene Publishing House), 60-61.</p>
+  </li>
+  <li>
+    <p>“Rev. Cyril Blamey,” <em>The Other Sheep</em>, (Kansas City, MO: Nazarene Publishing House, April 1969), 23.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Living Stones In Africa: Pioneers of the Church of the Nazarene</em>, revised edition, copyright © 1999, by Paul S. Dayhoff.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Blamey, Cyril`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +767,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +806,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

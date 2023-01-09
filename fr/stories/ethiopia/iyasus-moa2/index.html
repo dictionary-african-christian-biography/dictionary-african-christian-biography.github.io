@@ -564,7 +564,7 @@
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Iyasus-Moa (‘Iyäsus-Mo’a) (B)">
     
-    <meta itemprop="datePublished" content="December 12, 2023">
+    <meta itemprop="datePublished" content="December 12, 2022">
     
 
 <!-- NAME(S), DATE, AFFILIATION, COUNTRY -->
@@ -605,8 +605,71 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/ethiopia/iyasus-moa2/Iyasus-moa-small.jpg" alt="Iyasus-Moa" class="bio" /></p>
+
+<p>Iyasus-Moa (circa 1212-1292) a fondé une communauté monastique à Dabra Estifanos (St. Etienne) au bord du lac Hayq. Cette communauté est devenue le centre spirituel et culturel de la dynastie Amhara fondée par Yekuno Amlak (<em>q.v.</em>) vers 1270.</p>
+
+<p>Iyasus-Moa est né à Dahna dans le district Amara de Bagemder, où il a aussi reçu son éducation. Plus tard, il est allé à Tegré pour rejoindre le monastère bien connu de Dabra Damo, près d’Aksum. C’est là qu’il a fait l’étude des Ecritures Saintes sous Abba Yohani.</p>
+
+<p>Environ sept ans après, il est parti pour l’église sur l’île de Dabra Estifanos, et y a ouvert une école qui est vite devenue la plus importante et la plus ancienne communauté monastique de la région. Avant, à Dabra Damo, il est devenu bon calligraphe, et apparemment, il a copié quelques manuscrits pour sa collection personnelle, des manuscrits qui se trouvent dans ce monastère au bord du lac Hayq qui font encore aujourd’hui sa réputation. Il a été rejoint par des jeunes chrétiens de beaucoup de régions différentes, et on pense que les fondateurs d’autres monastères à Amhara et à Shawa ont autrefois été ses étudiants.</p>
+
+<p>Iyasus-Moa a vécu pendant la période critique de l’apparition d’une nouvelle dynastie chrétienne à Amhara vers 1270, lorsque Yekuno Amlak a accédé au pouvoir. Son monastère était déjà bien établi, et les deux premiers rois de la dynastie se sont associés étroitement à lui. Il semble que le monastère qu’il a fondé - qui s’appelle Hayq Dabra-Estifanos - est devenu le centre spirituel et culturel de la nouvelle dynastie, et que ses abbés ont tenu le titre ecclésiastique le plus influent (‘Aqaba-Saat’) à la cour royale jusqu’au milieu du 16ème siècle.</p>
+
+<p>Tadesse Tamrat</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p>Tadesse Tamrat, <em>Church and State in Ethiopia, 1270-1527</em> [L’église et l’état en Ethiopie, 1270-1527], Oxford, 1972.</p>
+
+<hr />
+
+<p>Cet article est réimprimé de <em>The Encyclopaedia Africana Dictionary of African Biography</em> [L’Encyclopédie Africana de biographies africaines] (en 20 volumes). Volume Un, Ethiopie-Ghana, © 1997 par L.H. Ofosu-Appiah, rédacteur en chef, Reference Publications Inc., New York, N.Y. Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Iyasus-Moa ('Iyäsus-Mo'a) (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +750,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +787,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

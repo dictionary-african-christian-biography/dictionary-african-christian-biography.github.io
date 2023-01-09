@@ -605,8 +605,82 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>André Corsini (André William, en religion: F. André Corsini) est né à Gorée (Sénégal) de Nicol William et de Mame Bougouma, le 23 août 1835. C’est l’un des six jeunes Goréens et Saint-Louisiens qui furent envoyés à Ploërmel entre 1851 et 1863 pour y recevoir une formation d’instituteur. En effet, les écoles du Sénégal avaient été confiées à la congrégation des Frères de l’Instruction chrétienne (ou Frères de Ploërmel) par une convention passée, en 1841, entre le ministre de la Marine et l’abbé Jean-Marie de La Mennais, fondateur de la congrégation. Au cours de la négociation, l’abbé de La Mennais avait évoqué la possibilité de recevoir à Ploërmel “de jeunes Noirs intelligents qui eussent le désir d’entrer dans (sa) congrégation,” pour en faire des instituteurs et même les fondateurs de nouvelles écoles. Le gouverneur du Sénégal ne montra aucun enthousiasme pour ce projet, qui fut alors abandonné. Il fut relancé, en 1850, par le F. Liguori-Marie, directeur général des Frères à Saint-Louis. A l’abbé de La Mennais, devenu, entre-temps, très réticent, le F. Liguori-Marie fit valoir l’avantage d’avoir des instituteurs connaissant la langue du pays (le wolof), surtout au moment où il était question d’ouvrir de cours d’adultes. En outre, affirmait-il, il n’y avait plus de difficulté du fait de la couleur (“les préjugés disparaissent”) et encore moins du fait des moyens intellectuels ou de la piété des candidats possibles.</p>
+
+<p>Reçu du noviciat de Ploërmel en juillet 1851, André William était de retour au Sénégal en février 1855. Il fut chargé d’une classe de jour à l’école de Saint-Louis. Il y ajouta bientôt un “catéchisme wolof” pour les enfants de l’école. Son directeur l’encourageait, en outre, à étudier l’arabe avec un marabout. Quand la classe du soir fut ouverte, le 1er janvier 1857, elle lui fut confiée, sans qu’il fût, pour autant, déchargé de sa classe de jour de quarante-sept élèves. Epuisé, le F. André Corsini fut envoyé à Gorée “en changement d’air,” en octobre 1858. Il y mourut, au milieu de sa famille, le 11 janvier 1859, à l’âge de vingt-trois ans.</p>
+
+<p>Pendant sa trop courte carrière, le F. André Corsini n’avait reçu que des éloges. De ses cinq compagnons, deux moururent, l’un à Ploërmel, l’autre dix-huit mois après son retour au Sénégal. Les autres ne perservèrent pas ou quittèrent la congrégation. L’expérience de frères instituteurs sénégalais fut abandonnée pour longtemps.</p>
+
+<p>Denise Bouche</p>
+
+<hr />
+
+<p>Sources:</p>
+
+<p><strong>Archives:</strong></p>
+
+<p>Archives des Frères de l’Instruction chrétienne, à Rome.</p>
+
+<p>Archives de la République du Sénégal, à Dakar (ancien fonds du gouvernement général et ancien fonds de la colonie du Sénégal, dit “fonds de Saint-Louis”).</p>
+
+<p><strong>Sources imprimées:</strong></p>
+
+<p><em>Chronique des Frères de l’Instruction chrétienne de Ploërmel</em>, revue trimestrielle, à partir de 1875.</p>
+
+<p><em>Ménologue des Frères de l’Instruction chrétienne de Ploërmel</em>, La Prairie (Canada), Imprimerie du Sacré-Cœur, 1947, 4 vol. Index.</p>
+
+<p>Ouvrages:
+Denise Bouche, <em>L’Enseignement dans les territoires français de l’Afrique occidentale de 1817 à 1920</em>, université de Lille-III et Paris, librairie Champion, 1975, 2 vol., 947 p. Index.</p>
+
+<p>Note: Denise Bouche est professeur d’histoire contemporaine à l’université de Nancy-II.</p>
+
+<hr />
+
+<p>Cet article, réimprîmé ici avec permission, est tiré d’<em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em>, tome 9, publié en 1977 par l’Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Corsini, André`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +761,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +798,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

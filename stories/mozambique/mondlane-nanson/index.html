@@ -607,8 +607,75 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/mozambique/mondllane-nanson/Nanson-Mondlane.jpg" alt="Nanson Mondlane" class="bio" height="220px" width="160px" /></p>
+
+<p>Nanson Mondlane came from the area in Gazaland of the Mavengane Church in Mozambique. His family were the rulers of that area; his brother was the chief.  While working in the gold mines in South Africa during the 1930s, Nanson Mondlane was converted through the preaching of the missionary, Rev. J. F. Penn, Sr. Mondlane became a part-time worker in the church. He was called, with genuine affection, “Brother Beloved” and he was just that. At an annual meeting in Mozambique, while he was home on leave, he was appointed to be the leader of the western area of the mines.</p>
+
+<p>Thousands of Mozambican miners were employed in the South African gold and coal mines from the very early years. The Shangaans from Gazaland were considered to be the best workers. The Nazarene ministry among these miners was always a vital part of the church in Mozambique. Indeed, it was converted miners who returned to their homes and began the first churches in Mozambique and they sent a steady flow of new converts through the years to increase the church in Mozambique. It was their tithes and offerings that sustained the poverty stricken churches there. Nazarene missionaries were always deployed to the mines to assist them but the work at the many and widely scattered mines was largely carried out by lay leaders because the Mozambique authorities would only allow a visa for one Nazarene Mozambican ordained minister at a time to reside in South Africa.</p>
+
+<p>Nanson Mondlane went back to the mine where he had worked before and earned good wages. His former employer was gone and his job had been given to another. The work offered did not provide very good pay. He looked around and found better jobs. However, his stipulation was that he had to have Saturday afternoons and Sundays off for his church work.  None of the better-paying jobs would give him that time off. The problem was that he had a family back home to support and children to educate and he needed the extra money. He finally took a job with much lower wages at a place that was central on the district where he was serving the church.</p>
+
+<p>He showed that he was truly sanctified and committed to God’s work. He was also an effective preacher and leader. The white men at the mine where he worked called him <em>Moruti</em> (minister, in the Sotho language). Some of them called him by the English name “Preacher Man,” but he said he didn’t know what that meant. The missionary Rev. Charles Jenkins, <em>Inkomo yahlaba</em> (The cow that gores), assured him that it meant the same as <em>Moruti</em>. When they saw the sacrifice that he willingly made for the sake of his work for the church, the Christian men he that served in the compounds voted to give Mondlane a substantial monthly contribution toward his support. In 1959, he became the leader on the East Rand and Orange Free State. This meant considerably more travel for him over weekends. [1]</p>
+
+<p>Nanson Mondlane was one of the faithful pioneer leaders in the Mozambican Churches on the South African mines.</p>
+
+<p>Paul S. Dayhoff</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>C. S. Jenkins, “Nanson, a Brother Beloved,”  <em>The Other Sheep</em>,  Mission magazine of the Church of the Nazarene, Kansas City, MO: Nazarene Publishing House, September 1960), 11.</li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Africa Nazarene Mosaic: Inspiring Accounts of Living Faith</em>, first edition, (Florida, Gauteng, South Africa: Africa Nazarene Publications, 2002), copyright © 2001, by Paul S. Dayhoff.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Mondlane, Nanson`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +754,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +793,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

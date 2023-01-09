@@ -605,8 +605,69 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Nikodemos Sarikas alizaliwa Uturuki, na alikuwa mtawa wa kiume katika umri wa miaka 17. Alikaa na Baba Damaios mjini Jerusalemu, akafanywa kasisi Smyrna katika mwaka 1907 (Mantzaris sa).</p>
+
+<p>Mwaka 1907 alienda Johannesburg, na alifanywa kasisi wa kwanza wa Kanisa la Kigiriki la Othodoksi kwenye sehemu ya Transvaal. Alikuwa na huzuni pale kwa sababu wanaparokia walitaka kumfungia dhehebu lake kwa wanachama wa umma wa Kigiriki, nao hawakumtaka kufanya kazi ya misheni. Mwaka 1911 alihamia wilaya ya Moshi katika Afrika ya Mashariki ya Kijerumani (Tanganyika) na kuwa mkulima.</p>
+
+<p>Sarikas alitembelea Uganda mwaka 1933 kwa sababu ya mwaliko wa Reuben Spartas, ambaye alikuwa amemfanywa kasisi kwenye Kanisa la Othodoksi la Kiafrika na Daniel William Alexander. Isitoshe, alionana mara kwa mara na viongizi wa Kanisa la Othodoksi la Kiafrika katika sehemu ya Kikuyu, Kenya. Alimtumia barua Askofu wa Alexandria kumwuliza kwamba amsaidie kuchukua Kanisa la Othodoksi la Kiafrika chini ya utunzi wake. Aliwachukua Waganda wawili kuwarudisha Moshi kuishi naye, na akawafundisha juu ya Kanisa la Othodoksi.  Kwa njia hii, Sarikas alianzisha uhusiano wa kirafiki baina ya kanisa la Spartas na umma wa Kigiriki mjini Kampala (Welbourn 1961:89).</p>
+
+<p>Stephen Hayes</p>
+
+<hr />
+
+<p>Bibliographia:</p>
+
+<p>Mantzaris, E. Mswada ambao haujachapishwa.</p>
+
+<p>Welbourn, F. B. 1961. <em>East African Rebels: A Study of Some Independent Churches</em>. London: SCM.</p>
+
+<hr />
+
+<p>Makala haya yametokana na <em>Database of African Church Leaders</em>, ambayo ni sehemu ya <a href="http://www.geocities.com/missionalia/aicdb.htm">Database of African Independent Churches</a> zinahifadhiwa na Stephen Hayes. Haki zote zimehifhadiwa.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Sarikas, Nikodemos`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Matoleo mbalimbali zinapatikana: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +752,7 @@
 
         
         <div class="box_two">
-        Site iliyoboreshwa na Alex Mayfield (2017 na 2019). Ilibadilishwa Mwisho: 02 January 2023.<br>&copy; 2023 Kamusi Ya Wasifu Wa Wakristo Wa Kiafrika.<br><a href="/sw/connect/contact/">Wasiliana Nasi</a> | <a href="/about/usage/">Matumizi na Habari ya Kunuhusu</a>
+        Site iliyoboreshwa na Alex Mayfield (2017 na 2019). Ilibadilishwa Mwisho: 14 December 2022.<br>&copy; 2022 Kamusi Ya Wasifu Wa Wakristo Wa Kiafrika.<br><a href="/sw/connect/contact/">Wasiliana Nasi</a> | <a href="/about/usage/">Matumizi na Habari ya Kunuhusu</a>
         </div>
         
 
@@ -724,6 +785,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

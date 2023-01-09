@@ -605,8 +605,65 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Fanny Marrion (Jackson) Coppin was an African-American educator and missionary. Jackson was born into slavery in Washington, D.C., but her freedom was purchased by an aunt. Eventually she moved to Newport, Rhode Island, as a domestic servant. After completing a teaching course, she enrolled at Oberlin College, the first college in America open to blacks. Driven by a sense of mission to African Americans, she opened a night class for freedmen. Oberlin then appointed her as the first black student to teach in its preparatory department. After graduating in 1865, she became principal of the Female Department of the Institute for Colored Youth in Philadelphia, a Quaker institution. In less than five years, she became principal of the entire school. Under her leadership, the institute specialized in educating African Americans as teachers and also added industrial training to its curriculum. The first black woman to head an institution of higher learning, she remained until her retirement in 1902.</p>
+
+<p>In 1881 she married Levi Coppin, an African Methodist Episcopal (AME) minister. She joined the AME and became active in mission work, serving for years as president of the AME Women’s Home and Foreign Missionary Society. In 1888 she represented the society at the London Centenary Conference and spoke on women’s desire for “the Christianization of the colored races of the earth.” In 1900 Levi Coppin was elected bishop for South Africa. In 1902 Fanny joined him and began speaking on temperance among Cape Coloured and African women. Because oppressed farm workers were partly paid in wine, temperance had special significance in the South African context (although Coppin claimed to be apolitical). She accompanied her husband to the interior and spoke to women, organizing mission societies and supporting mission education. After leaving South Africa at the end of 1903, she suffered from arteriosclerosis until her death.</p>
+
+<p>Dana L. Robert</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Coppin’s autobiography was published as <em>Remembrances of School Life</em>, and <em>Hints on Teaching</em> (1913). She also had a column in the <em>Christian Recorder</em> the oldest black periodical in the United States. See also Levi Coppin, <em>Unwritten History</em> (1913); Margaret E. Burton, <em>Comrades in Service</em> (1919); Linda M. Perkins, <em>Fanny Jackson Coppin and the Institute for Colored Youth 1865-1902</em> (1987).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Coppin, Fanny Marrion`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -685,7 +742,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -724,6 +781,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

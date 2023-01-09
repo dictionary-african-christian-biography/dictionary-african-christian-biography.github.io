@@ -605,8 +605,65 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Guglielmo Massaja was an Italian Capuchin missionary in Ethiopia. Born at Piova, Massaja’s baptismal name was Lorenzo. He joined the Capuchin order, receiving the name Guglielmo, and taught philosophy and theology for ten years (1836-1846) near Turin while exercising a wide ministry that included the royal family of Piedmont. In 1846 he was appointed vicar apostolic for a new Latin Rite mission in Ethiopia to be staffed by Capuchins, distinct from the Vincentian mission for the Ethiopian Rite headed by de Jacobis. Massaja’s mission was understood to be one to the “Gallas” (Oromo), the non-Christians of Ethiopia. However the division was not in reality so clear-cut. Orthodox Christian influence had affected many of the Gallas, and very few of Massaja’s converts were truly of “pagan” background. Massaja himself was in theory a committed Latinizer, extolling the superior qualities of the Latin Rite, but in practice he was far more pragmatic. He adopted the Ethiopian calendar and fasting practices and did not fight against circumcision. He cooperated well with de Jacobis but was of a grander, more flamboyant character and lacked de Jacobis’s deep appreciation for Ethiopian Christianity. The presence of a Latin Rite mission in Ethiopia was always problematic. He was expelled in 1861, though he managed to remain in the country secretly for two years. He returned in 1866 and established friendly relations with Menelik, King of Shoa, but was finally expelled by Emperor Yohannes in 1879 as part of an antiforeign policy. Like de Jacobis, Massaja had wisely ordained a number of young Ethiopians who secured the survival of the church in Kafa, southwest Ethiopia, where his principal work had been done.</p>
+
+<p>Massaja was made a cardinal in 1884 and was encouraged by Leo XIII to write his memoirs, which he did at very great length. Massaja had always been a man at home with princes and comfortable on a public stage as well as an imaginative and determined field missionary. With a public status comparable to that of Lavigerie, he became something of an Italian national hero, but it is unfair to see him as a conscious precursor of Italian imperialist aspirations in the Horn of Africa.</p>
+
+<p>Adrian Hastings</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Massaja’s reminiscences were published in the 12 vols. of <em>I miei trentacinque anni di missione nell’Alta Etiopia</em> (1885-1895); also see his <em>Memorie storiche del Vicariato Apostolico dei Galla</em>, Antonio Rossi, ed., 6 vols. (1984) and <em>Le Lettere del Cardinale Massaja dal 1846 al 1886</em>, G. Farina, ed. (1936). No authoritative modern biography exists; the best available is probably E. Cozzani, <em>Vita di Guglielmo Massaja</em>, 2 vols. (1943). A comprehensive bibliography may be found in A. Dalbesio, <em>Guglielmo Massaja, Bibliografia-Iconografia, 1846-1967</em> (1973).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Massaja, Guglielmo`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -685,7 +742,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -724,6 +781,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

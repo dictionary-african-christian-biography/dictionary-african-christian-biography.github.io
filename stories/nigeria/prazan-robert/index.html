@@ -607,8 +607,119 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Robert Louis Prazan, O.P., was born on September 5, 1936,
+in Chicago, Illinois, the oldest of the two children of Louis J. Prazan and
+Lillian Mary Rasch. He attended St. Leonard Grammar School, Berwyn, Illinois,
+and Fenwick High School, Oak Park, Illinois. Before entering the Dominican
+novitiate at St. Peter Martyr Priory, Winona, Minnesota, in August 1956, he
+attended Loras College, Dubuque, Iowa, for two years.</p>
+
+<p>He was given the religious name, Ceslaus, and made first profession at
+Winona on August 31, 1957. He was then assigned to St. Thomas Aquinas Priory
+(Dominican House of Studies), River Forest, Illinois, for philosophical
+studies (1957-60), earning a Bachelor in Philosophy degree. After profession
+of solemn vows on August 31, 1960, he went to Dubuque, Iowa, for theological
+studies at Aquinas Institute, School of Theology (1960-64). There on April 15,
+1963, Bishop George J. Biskup ordained him a priest in the chapel of St. Rose
+of Lima Priory.</p>
+
+<p>After completion of basic studies Father Prazan was assigned to the foreign
+missions in Nigeria, West Africa, where he was to spend the next twenty-two
+years of his priestly ministry. After a brief stay in Gusau, Zamfara State, he
+was assigned as an assistant pastor at St. Dominic Parish, Yelwa, Northern
+Nigeria, where he spent the next nine years (1965-74) engaged in
+pre-evangelization work among the Dukkawa people. In the book <em>The Dukkawa
+of Northwest Nigeria</em> he tells the story of these people. Then for three
+years (1974-77) he served as assistant pastor at St. Vincent Ferrer Parish,
+Malumfashi, Northern Nigeria, among the Maguzawa, an ancient Hausa-speaking
+people.</p>
+
+<p>In 1977 he began the third phase of his missionary work which was to
+continue until his return to the United States in November, 1986. During this
+time he was stationed at Our Lady of Fatima Parish, Gusau, Zamfara State, and
+devoted his efforts to full-time preaching and writing in Hausa. To help
+eradicate illiteracy he produced a very popular aid for teaching
+Hausa-speakers to read —<em>Karatu: “Rashin sani ya fi dare duhu”</em>. For
+English-speakers learning the Hausa language he wrote <em>Hausa Hints</em>
+(1978) and <em>Hausa proverbs for preaching</em> (1978). Gone on leave on 8
+March 1979, he returned to write <em>Grasping the Rosary</em> and (in Hausa)
+<em>Rosari</em>, and later <em>Marriage matters</em>. Among his other writings
+were two small booklets on the miracles of Jesus.  In addition to the
+written word he extended his preaching by producing tapes.</p>
+
+<p>In November, 1986, one year after Nigeria had become an independent
+province, Father “Ces” returned to the United States, and spent some months in
+reorienting himself to his native country. He spent six months in campus
+ministry at South Dakota State University, Brookings, South Dakota, and then
+explored preaching team ministry in McAllen, Texas. While providing temporary
+supply help at Our Lady of Pompeii Parish, Tickfaw, Louisiana, Father Prazan
+found the second love of his priestly ministry. From March, 1988, until his
+death he served the people of this parish.</p>
+
+<p>In early summer of 1997 “Ces” was diagnosed as having a malignant
+inoperable tumor in his chest. Chemotherapy and radiation treatments followed.
+After a brief remission, the cancer began to spread and, in spite of
+additional chemotherapy treatments, it continued to ravage his body, but not
+his spirit. He continued his pastoral work at Our Lady of Pompeii parish as
+long as he was able. His conditioned worsened and on the afternoon of July 5,
+1998, because of severe difficulty in breathing, he was rushed to the hospital
+in Hammond, Louisiana. Efforts to review him were futile. His funeral Mass was
+celebrated at his beloved parish on July 8, 1998, with burial in the Dominican
+plot at Rosaryville, Louisiana.</p>
+
+<hr />
+
+<p>Source:</p>
+
+<p>From the “Lives of the Brethren 1994-1999” page on the Web site of the <a href="http://www.domcentral.org">Dominican Friars Province of St. Joseph the Worker</a> (Nigeria and Ghana).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from the “Lives of the Brethren 1994-1999” page on the Web site of <a href="http://www.domcentral.org">Dominican Friars Province of St. Joseph the Worker</a> (Nigeria and Ghana).  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Prazan, Robert Louis Ceslaus`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +798,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +837,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

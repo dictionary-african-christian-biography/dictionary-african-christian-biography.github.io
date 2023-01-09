@@ -605,8 +605,69 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Caractère entier et orgueilleux, le pasteur Rajaona eut sous sa houlette, pendant cinquante années, la paroisse luthérienne d’Antsirabe (Madagascar).</p>
+
+<p>Les parents de Rajaona étaient seigneurs d’Ambohijanaka, près de Tananarive. La reine les avait envoyés gouverner la région d’Ambohipona, Manandona et Antsirabé. Le garçon, né en 1862, avait été placé, avant d’aller en classe, chez des parents éloignés installés à Fandriana au Betsiléo. À huit ans, Rajaona est, à Tananarive, l’élève de la Mission norvégienne (N.M.S.) et jeune condisciple de Hand Rabeony, sans même avoir été baptisé.</p>
+
+<p>Pas très fort physiquement il fait des études juste suffisantes et se fait remarquer en parlant tout doucement, seule façon convenable, pense-t-il, pour un noble de s’exprimer pour qu’on prête attention à ses paroles. Il acquiert cependant les connaissances de base du christianisme, mais son orgueil se refuse à recevoir la moindre aide de quiconque. La seule fois où il fut contraint d’avoir recours à quelqu’un, c’est quand il demanda à Madame Borchgrevink de consentir à son mariage avec Ranjanoro, une des jeunes filles qu’elle avait chez elle au pair. Ce mariage de “nobles” eut lieu le 31 août 1883.</p>
+
+<p>Les professeurs étaient assez réticents quant à Rajaona, et le mirent à l’épreuve, car généralement ce genre d’hommes préférait devenir fonctionnaire plutôt que de servir dans l’Église. Il fut pourtant consacré pasteur en 1884 à Ambatovinaky à Tananarive, et envoyé à Antsirabe s’occuper de la paroisse urbaine. Il y resta cinquante ans.</p>
+
+<p>Ce ministère ne répondait pas aux vœux des missionnaires mais ils surent s’en accommoder. M. le pasteur ne répondait aux salutations que lorsqu’on employait la formule réservée aux nobles: “<em>Tsara va Tompokoi</em>? (Êtes-vous bien, mon seigneur?)” La reine convoquait parfois des notables à la capitale pour prendre leur avis et il arriva que Rajaona fût appelé. Au retour, il ne se sentait plus et aurait voulu qu’on le traitât comme sa majesté elle-même. Il avait un emploi du temps rigoureux que rien ne pouvait modifier. Il tenait à tout faire et décider lui-même. Ce n’est pas dans son église, contrairement à ce qui se passait dans les paroisses de Tananarive que l’on aurait pu avoir une idée de la démocratie, et il refusa aussi longtemps qu’il le put les caisses d’entraide et de compensation.</p>
+
+<p>Après que l’île eût été annexée par la France, il se mit à apprendre le français et n’eut plus aucune considération pour les missionnaires. Il cessa d’en faire mention dans son agenda ou son journal et il fut ulcéré quand, en 1902, le synode discuta de l’autonomie financière des églises et qu’on affirma que l’autonomie impliquait de ne plus recevoir d’aide extérieure de la Mission. Clérical, il n’aurait voulu donner de pouvoir dans l’Église qu’aux pasteurs consacrés et son conservatisme allait jusqu’à ne se vêtir que d’un lamba et d’un chapeau de paille, au lieu d’adopter comme la majorité des citadins la tenue vestimentaire des Européens. Ce n’est que contraint et forcé qu’il consentit à prendre le train pour aller à Tananarive. S’il condescendait à recevoir son ancien condisciple Rabéony, il menait la vie dure aux jeunes missionnaires et avait dit de Rosaas: “Il faudra qu’il m’écouté, s’il veut rester ici.”</p>
+
+<p>Représentant un certain type de clergé, avec sa morgue et son esprit réactionnaire, Rajaona est une figure marquante et assez caractéristique d’une classe sociale du premier quart du XXe s. sur les Hautes Terres de Madagascar.</p>
+
+<p>A. Snekkenes, L. Molet</p>
+
+<hr />
+
+<p>Cet article, réimprîmé ici avec permission, est tiré d’<em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em>, tome 3, publié en 1977 par l’Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Rajaona`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +748,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +785,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

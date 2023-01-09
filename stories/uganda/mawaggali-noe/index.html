@@ -607,8 +607,79 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Noé (Noah) Mawaggali was one of the three Catholic martyrs of Mityana, Uganda, the other two being Matthias Kalemba and Luke Banabakintu. Mawaggali was the son of Musazi and a member of the Bush-Buck (Ngabi) Clan. His mother’s name was Meme. He was born at Nkazibaku in the Ssingo County of Buganda about 1850. He was an expert potter and was appointed potter to the county chief who greatly admired his work. After living for a time in the chief’s household, Mawaggali became a tenant of Matthias Kalemba and built a house on his land. Kalemba was his friend, as well as his landlord, and it was this friendship, as well as the zeal and Christian example of Matthias, which drew Mawaggali to him and which induced him to join the Catholic catechumenate. He was eventually baptized on November 1st, the Feast of All Saints, 1885 in a group of twenty-two.</p>
+
+<p>Besides making pots, Mawaggali also tanned hides, and had a reputation as a steady and industrious worker. In appearance, he was tall and slender. Although he had not married by the time of his martyrdom, his moral behaviour was scrupulously correct. His mother Meme was later baptized and took the name Valeria, while his sister Munaku, who was eighteen years younger, suffered for her faith at the time of her brother’s martyrdom. She, too, was baptized, taking the name Maria Matilda, and lived to the age of seventy-six.</p>
+
+<p>In 1881, Mawaggali was among several Catholic catechumens who attended classes on St. Matthew’s Gospel and the Acts of the Apostles, given by the Anglican missionary, Alexander Mackay. When the persecution of 1886 broke out, Mawaggali was at Mityana, some forty-five miles from the capital, but the Christian community there was too well known to escape notice. The details of her brother’s death were later related by Munaku.  Mawaggali was in charge of  the household of Matthias Kalemba, who was away at Mengo with Luke Banabakintu. It was the custom for the Christians of Mityana to send representatives each week to the catechetical class at the Catholic mission. On the morning of May 31, Mawaggali went to Kawingo to see the men whose turn it was. While he was gone, the raiders arrived.</p>
+
+<p>Mawaggali was in Banabakintu’s house giving the men their final instructions and discussing with them the news of  the arrest of  Matthias  and Luke. The raiding party led by Mbugano, the royal legate, closed in on the house. Mawaggali went to meet them, thus giving his fellow Christians the chance to escape. “Is that you Mawaggali?” called out one of the raiders. “Yes, it is,” he replied, at the same time drawing over his head the bark cloth he was wearing, so that he should not see the death stroke coming. Kamanyi, the king’s chief drummer, plunged his spear into Mawaggali’s back, who fell grievously wounded. One of the raiders suggested that Noë should be fed to the dogs. The wounded martyr was therefore tied to a tree and dogs were set upon him. Maddened by the scent of blood from further lacerations, they tore him to pieces. It is said that his agony lasted until evening. At nightfall his mangled remains were untied from the tree and left on the road as a warning to other Christians. By the time the executioners left Mityana the following day, there was virtually nothing left of the body. Hyenas had finished the work begun by the dogs.</p>
+
+<p>Noé Mawaggali was beatified by Pope Benedict XV in 1920, and declared a canonized saint by Pope Paul VI in 1964. A portion of the tree to which the martyr was tied is preserved at Mityana, where a magnificent modern shrine commemorates all three martyrs of Mityana.</p>
+
+<p>Aylward Shorter M.Afr.</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>J. F. Faupel, <em>African Holocaust, the Story of the Uganda Martyrs</em> (Nairobi: St. Paul Publications Africa, 1984 [1962]).</p>
+
+<p>J. P. Thoonen,  *Black Martyrs * (London: Sheed and Ward, 1941).</p>
+
+<hr />
+
+<p>This article, submitted in 2003, was researched and written by Dr. Aylward Shorter M.Afr., Emeritus Principal of Tangaza College Nairobi, Catholic University of Eastern Africa.</p>
+
+<hr />
+
+<p>External link</p>
+
+<p><em>Encyclopaedia Britannica</em>  (complete article): <a href="http://www.britannica.com/eb/article-9074103/Martyrs-of-Uganda"> Martyrs of Uganda</a></p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Mawaggali, Noé`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +758,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +797,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

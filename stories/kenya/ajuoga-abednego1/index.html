@@ -607,8 +607,69 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Archbishop Abednego Matthew Ajuoga founded the Church of Christ in Africa, known popularly as the Johera, a prominent independent African Christian denomination in Kenya. He was educated in schools of the Church Missionary Society (CMS), the leading Anglican missionary society in East Africa and one with strong evangelical leanings. Ajuoga was baptized in 1943 and, after working for the railways, he entered a seminary and was ordained in 1954.</p>
+
+<p>Ajuoga was posted to Luoland in western Kenya, an area that had experienced a number of church schisms in response to the <em>bakalole</em> (“the saved ones”), a charismatic and evangelical church revival movement. It originated in Rwanda in 1927 and in the late 1930s spread to Kenya, where many Christians began leaving mission churches and joining new African independent churches. Many who remained in the mission churches attempted to transform them from European to African institutions. In western Kenya, the largest renewal group among the Anglicans was known as the Johera (“people of love”). Ajuoga preached unity and opposed separatist tendencies and was at first a force for keeping the Johera within the Anglican communion. Matters seemed to stabilize when the first five African bishops - all members of the <em>bakalole</em> - were consecrated. When relations between the separatists and those within the church became strained, the bishop suppressed the Johera and suspended the clergy, calling in the colonial police for enforcement. Ajuoga led an exodus of 7 priests, 130 congregations, and 16,000 members. The schism was wrenching - there were violent outbreaks, 25 churches were destroyed, and the dreaded police Special Branch was deployed. The Johera movement had a political aspect that was not lost on the government: it considered the settler-controlled Anglican state church as a pillar of colonial society. Fearing a nationalist movement, the authorities warned the Johera not to identify themselves as a Luo church, thus they registered under the name “Church of Christ in Africa”. It was the first in a wave of independent foundations, now numbering over 500 denominations in Kenya, making that country a center of the independent church movement. By the time of Kenyan independence in 1963, Johera had 50,000 members.</p>
+
+<p>Johera spread throughout Kenya and into neighboring countries and has built a group of religious schools. Unlike many other independent churches, Johera remains traditionally Christian in its teachings.</p>
+
+<p>Ajuoga took a leave and spent a year of advanced study at Union Theological Seminary in New York, 1964-1965. He remains archbishop and head of the church he founded.</p>
+
+<p>Norbert C. Brockman</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Lipschutz, Mark and Rasmussen, R. Kent.  <em>Dictionary of African Historical Biography,</em> 2nd edition.  Berkeley: University of California Press, 1986.</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from *An African Biographical Dictionary, *copyright © 1994, edited by Norbert C. Brockman, Santa Barbara, California. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Ajuoga, Abednego Matthew (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +748,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +787,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

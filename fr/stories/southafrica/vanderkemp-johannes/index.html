@@ -605,8 +605,71 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/southafrica/vanderkemp-johannes/van-der-kemp.jpg" alt="image" class="bio" height="208px" width="160px" /></p>
+
+<p>Missionnaire pionnier.</p>
+
+<p>Après une brève carrière militaire aux Pays-Bas, son pays natal, il a fait des études de médecine en Ecosse (1782). Il est devenu missionnaire avec la London Missionary Society (LMS), qui venait d’être établie, en 1798. Un des trois premiers agents envoyés en Afrique du Sud par la LMS, c’était le premier missionnaire à travailler parmi les Xhosa (1799-1800). Il s’est intéressé au sort économique du peuple Khoikhoi (“Hottentot”) à la Colonie du Cap et il était très partisan de l’idée qu’on leur accorde l’égalité avec les blancs légalement. Il a œuvré alternativement parmi les Khoikhoi de l’est du Cap et auprès de la population d’esclaves à Cape Town. Partiellement par principe, il a épousé une femme qui n’était pas blanche. Par conséquent, les colons blancs n’ont pas accepté son travail. Muni d’une éducation en philologie européenne et classique, il a fait un travail pionnier dans l’étude des langues Xhosa et Khoikhoi. Il a été nommé premier surintendant des missions de la LMS en Afrique du Sud peu avant sa mort.</p>
+
+<p>Mark R. Lipschutz et R. Kent Rasmussen</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p>Martin, Arthur David. <em>Doctor Van der Kemp</em>. Westminster: Livingston Press, 1931.</p>
+
+<p><em>Dictionary of South African Biography</em>, 4 vols. Cape Town, Durban: Human Sciences Research Council, 1968-81.</p>
+
+<p>Marais, S.J. <em>The Cape Coloured People, 1652-1937</em> [Les métis du Cap]. Johannesburg: Witwatersrand University Press, 1939.</p>
+
+<hr />
+
+<p>Cet article est reproduit, avec permission, de <em>Dictionary of African Historical Biography</em>, 2ème édition, copyright © 1986, par Mark R. Lipschutz et R. Kent Rasmussen, University of California Press, Berkeley and Los Angeles, California. Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Van der Kemp, Johannes Theodorus (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +750,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +787,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

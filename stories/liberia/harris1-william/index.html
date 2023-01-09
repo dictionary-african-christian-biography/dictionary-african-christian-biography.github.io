@@ -607,8 +607,87 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/liberia/harris1-william/harris.jpg" alt="William W. Harris" class="bio" /></p>
+
+<p>Prophet William Wadé Harris was one of the earliest figures in the foundation of the independent church movement, which brings together Christian and traditional African practices. Although his church was suppressed, separatist groups invoking him as their founder flourish today in Côte d’Ivoire and Ghana.</p>
+
+<p>Harris became an Episcopalian preacher and school principal in Liberia after spending his youth as a sailor. In 1907 he was appointed as a government interpreter, but due to his advocacy of interior peoples’ rights against the Americo-Liberian elite, he was fired the following year. When he protested, he was unfairly accused of complicity in a British coup attempt against President Arthur Barclay and was jailed. In prison he had a vision of the archangel Gabriel, who told him he would become a prophet.</p>
+
+<p>On his release in 1912, Harris began preaching along the coast in Côte d’Ivoire and Ghana. In 1914 his Ivoirian crusade baptized more than 100,000. Wearing a white robe a turban, carrying a staff topped by a cross, and with a full white beard, he fostered the image of himself as a biblical prophet. Harris taught a strict opposition to witchcraft and many traditional religious practices and was popularly thought to be an exorcist and faith healer. Nonetheless, he accepted polygamy, and several of his wives accompanied him on his travels. In his preaching, which was initially accepted by the French colonial administration, he insisted on temperance and hard work. As his converts increased, however, the French felt threatened by the political implications of a mass movement. They forbade preaching in any language other than French, arrested and deported Harris to Liberia, and burned his churches. Meanwhile, Catholic and Methodist missionaries took advantage of the revival to recruit from among those Harris had evangelized. Harris continued to preach in Liberia but was never very successful in his homeland.</p>
+
+<p>It is unclear whether Harris intended to establish a full-fledged independent church, although his chief disciple declared that before his death, Harris had ordained him to carry out such a mission. The Église Harriste, a congregation descended from the 1914 converts, is a significant church in Côte d’Ivoire. Harris was the first of the major prophetic African leaders, and he had the greatest impact of any itinerant preacher.</p>
+
+<p>Norbert C. Brockman</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Lipschutz, Mark R., and R. Kent Rasmussen.  <em>Dictionary of African Historical Biography.</em>  2nd edition.  Berkeley: University of California Press, 1986.</p>
+
+<p>Ewechue, Ralph (ed.).  <em>Makers of Modern Africa.</em>  2nd edition.  London: Africa Books, 1991.</p>
+
+<hr />
+
+<p>Additional reading:</p>
+
+<p>Haliburton, Gordon. <em>The Prophet Harris</em>  (1973).</p>
+
+<p>Walker, Sheila. <em>The Religious Revolution in the Ivory Coast</em> (1983).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>An African Biographical Dictionary,</em> copyright © 1994, edited by Norbert C. Brockman, Santa Barbara, California. All rights reserved.</p>
+
+<hr />
+
+<p>External link</p>
+
+<p><em>Encyclopaedia Britannica</em>  (complete article): <a href="http://www.britannica.com/eb/article-9039351/Harris-movement">Harris Movement</a></p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Harris, William Wadé (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +766,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +805,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

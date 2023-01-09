@@ -607,8 +607,84 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/mozambique/matsinhe-mario/matshinhe_mario.jpg" alt="Mario Matsinhe" class="bio" /></p>
+
+<p>Mário Matsinhe was the son of Ezequeil and Enesta Matshinye who were married by the pioneer Nazarene missionary Rev. C. S. Jenkins in 1928.  Mário was raised in the Chitsombelane Church and his pastor was Pastor David Johane Chirindzane. Mário became a believer in Jesus in 1945 and was baptized in 1955.</p>
+
+<p>On January 25, 1956 he married Miss Irene Pedro Mondlane from the Jatigue Church.  They had seven sons and two daughters.  She reports: “By His help I have worked well for the Lord. I thank him that He protected us and the children in the difficulties we encountered.  And also that in leading the church He did not allow it to be closed down.  The Lord gave us victory and answered our prayers.  I thank the Lord for all of His help to me.”</p>
+
+<p>Matsinhe began pastoring in 1960 and from 1968 to 1972 he attended Bible College and then continued pastoring.  He was ordained by Dr. Eugene Stowe at Manzini, eswatini, in 1977.</p>
+
+<p>Admonitions that have strengthened his faith in preaching God’s word are: “He will not shout or cry out, or raise his voice in the streets” (Isaiah 42:2), and  “In famine he will ransom you from death, and in battle from the stroke of the sword” (Job 5:20).  In 1982 he was elected as the superintendent of the Mavengane District.  In 2001  He reported:</p>
+
+<blockquote>
+  <p>When the government banned prayer and ruled as the Antichrist, God was with us.  When war came and many Christians were killed, God was with us.  We never deserted God’s flock.  Oh!  Brothers and Sisters, the promises of God stood firm!  They endured into eternity.  All of His admonitions were accomplished well and correctly.  We led the district through extremely difficult times.  Now we are expecting the return of Jesus to receive the reward for our labour.[1]</p>
+</blockquote>
+
+<p>Matsinhe retired in 2000 and the Mavengane district was divided into two, the Chibuto and Xai Xai Districts.  He did a great job holding the church together during the war years. In December 2005 Rev. Mario Matsinhe, father of Rev. Juliao Mario Matsinhe and Rev. Alfredo Matsinhe, passed away at Central Hospital, Maputo.[2]</p>
+
+<p>Paul S. Dayhoff</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>
+    <p>Rev. and Mrs. Matshinye, reports, June 2001.</p>
+  </li>
+  <li>
+    <p><em>Out of Africa</em>, Kyle Lauf, editor. Weekly E-mail news from (Africa Region, Church of the Nazarene, Florida, S. Africa, December 12, 2005).</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Standing Stones of Africa: Pillars of the Faith in the Church of the Nazarene</em>, unpublished, copyright pending, 2004, by Paul S. Dayhoff.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Matsinhe, Mário`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +763,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +802,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

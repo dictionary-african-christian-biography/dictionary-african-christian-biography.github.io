@@ -607,8 +607,69 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Yohannes, <em>Abunä</em>, was a Metropolitan of Ethiopia consecrated by Jacob, Patriarch of Alexandria from 819 to 830 A.D. Christian Arabic sources relate that during the Patriarchate of the latter’s successor Joseph, Patriarch from 830 to 849, a war in Ethiopia brought about a popular uprising which forced Yohannes to flee to Alexandria, while another was appointed <em>abun</em>, contrary to the canon. The miseries of Ethiopia increased with a plague, a drought and a succession of defeats for the Emperor, to the point where he had to ask Joseph for a new <em>abun</em>. Yohannes, who had entered the monastery of Baramus, was sent back to Ethiopia under escort, and seems to have been accepted by the people. Later they insisted that he should be circumcised like them, or leave the country, and when he reluctantly submitted to the operation, by a miracle it was found that he was already circumcised.</p>
+
+<p>A. K. Irvine</p>
+
+<hr />
+
+<p><strong>Bibliography</strong></p>
+
+<p>B. E. Evetts, <em>History of the Patriarchs of the Coptic Church of Alexandria, Patrologia Orientalis</em>, X (1915), 503, 508-11.</p>
+
+<p>O. F. Meinardus, <em>Monks and Monasteries of the Egyptian Deserts</em> (Cairo, 1961), 132.</p>
+
+<p>E. A. Wallis Budge,* The Book of the Saints of the Ethiopian Church* (Cambridge, 1928), Vol. I, 185-6.</p>
+
+<p>M. Chaîne, <em>La chronologie des temps chrétiens de l’Egypte et de l’Ethiopie</em> (Paris, 1925), 267.</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>The Dictionary of Ethiopian Biography, Vol. 1 ‘From Early Times to the End of the Zagwé Dynasty c. 1270 A.D.,’</em> copyright © 1975, edited by Belaynesh Michael, S. Chojnacki and Richard Pankhurst, Institute of Ethiopian Studies, Addis Ababa, Ethiopia.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Yohannes`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +748,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +787,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

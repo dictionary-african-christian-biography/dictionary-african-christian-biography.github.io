@@ -599,8 +599,72 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Mwalimu Andrea Lungwa wa Mvumi alikuwa mtu mnyenyekevu sana na mtu muhimu sana kwa Yohana Malecela kuingia katika dini ya ukristo huko Mpwapwa. Kwa wakati ule, ilikuwa kawaida kwa wamisionari wa CMS kuwachukua Wagogo na Wakaguru wakristo na kwenda nao kokote walikoenda kufungua kituo kipya cha misheni . Andrea Lungwa, ambaye aliishi na kufanya kazi Mpwapwa (lakini pengine alikuwa mkaguru kwa asili) alikuwa bila shaka mmoja wa wakristo wachache waliobatizwa ambao walimfuata John Briggs kuanzisha kituo kipya hapo Mvumi mwaka 1900. Baadaye, alikuwa mmoja wa walimu waliofundisha katika kituo cha Mvumi pamoja na Javan Haji [1] na aliteuliwa kama mchungaji msaidizi hapo. Ernest Doulton, aliyekuwa katibu mkuu wa misheni ya CMS wakati ule, alimwelezea Lungwa kuwa “mmoja wa watu bora kabisa katika misheni” [2]. Lungwa alipoteza maisha yake wakati wa mlipuko wa ugonjwa wa homa kali ya mafua ambao uliathiri Ugogo nzima mwishoni mwa mwaka 1918.</p>
+
+<p>Miaka mingi baada ya kifo chake, nyumba ya mchungaji ilijengwa pale Mvumi miaka ya sitini na iliitwa kwa jina lake. Nyumba hiyo iliitwa “Lungwa House.” Mbali ya majina ya Andrea Mwaka na Andrea Lungwa hakuna majengo au taasisi zozote za kanisa zilizopewa majina ya wachungaji wa kiafrika, nadra majengo ya makanisa yamepewa majina ya wachungaji muhimu wa asilia (watu wa kawaida au walioteuliwa, wanaume au wanawake) ambao walitoa mchango mkubwa kwa ajili ya uwanzilishaji wa makanisa nchini Tanzania. Kwa nyumba hii kupewa jina la Lungwa kunaonyesha umuhimu wa maisha yake na utumishi wake, siyo tu kwa Wagogo ambao aliwasaidia, bali pia kwa wamisionari wa CMS. Na kwa hakika hili ni jambo kubwa kwa wakati ule kwa sababu kuiita nyumba kwa jina la Lungwa ambaye ni mwafrika ingelazimika kupata ruhusa ya askofu kiongozi mzungu wa dayosisi.</p>
+
+<p>Raphael Mwita Akiri</p>
+
+<hr />
+
+<h1 id="marejeo">Marejeo</h1>
+
+<ol>
+  <li>
+    <p>Esta Chali, mahojiano ya mdomo, 26/6/1997.</p>
+  </li>
+  <li>
+    <p>Dan Mbogoni, mahojiano ya mdomo, 11/6/1997.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>Makala hii ilichapishwa tena kwa ruhusa kutoka “Ukuaji wa Ukristo katika Ugogo na Ukaguru (katikati ya Tanzania): Uchambuzi kijamii na kihistoria wa nafasi ya wenyeji 1876-1933,” taasnifu ambayo haijachapishwa ya shahada la tatu (Chuo Kikuu cha Edinburgh, 1999) na Raphael Mwita Akiri. Ilitafsiriwa na Amy Pollard, mwanafunzi wa darasa la Kiswahili (kiwango cha 12) linalofundishwa na Mwl. Judith Mmari, mhadhiri mwandamizi wa Kiswahili katika Chuo Kikuu cha Boston.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Lungwa, Andrea`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Matoleo mbalimbali zinapatikana: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -685,7 +749,7 @@
 
         
         <div class="box_two">
-        Site iliyoboreshwa na Alex Mayfield (2017 na 2019). Ilibadilishwa Mwisho: 02 January 2023.<br>&copy; 2023 Kamusi Ya Wasifu Wa Wakristo Wa Kiafrika.<br><a href="/sw/connect/contact/">Wasiliana Nasi</a> | <a href="/about/usage/">Matumizi na Habari ya Kunuhusu</a>
+        Site iliyoboreshwa na Alex Mayfield (2017 na 2019). Ilibadilishwa Mwisho: 14 December 2022.<br>&copy; 2022 Kamusi Ya Wasifu Wa Wakristo Wa Kiafrika.<br><a href="/sw/connect/contact/">Wasiliana Nasi</a> | <a href="/about/usage/">Matumizi na Habari ya Kunuhusu</a>
         </div>
         
 
@@ -718,6 +782,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

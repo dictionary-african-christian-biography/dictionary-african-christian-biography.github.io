@@ -606,8 +606,68 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Joseph Booth foi um missionário inglês em África. Foi nascido na Bretanha, emigrou para Austrália e chegou em África em 1892 para iniciar a Missão Industrial do Zambeze na vila de Mitsindi em Malawi. Durante o resto da sua vida ele estava quase constantemente em movimento. Os movimentos eram entre denominações e também entre lugares geográficas. Ele passou tempo em Malaui, África do Sul, Lesoto, Grã-Bretanha e nos Estados Unidos. Foi afiliado em tempos diferentes com os Batistas, os Batistas do Sétimo Dia e com os Adventistas do Sétimo Dia. Ele provocou a ira e hostilidade de ambos os missionários das igrejas estabelecidas e as autoridades coloniais por chamando por mais poder político para os africanos, por salários mais altos para os africanos, e por fazer, o que eles chamaram, fomentar descontentamento político africano. Ele influenciou várias pessoas importantes entre os cristãos africanos, nomeadamente o John Chilembwe, Elliot Kamwana Chirwa, Charles domingo e John L. Dube (um dos fundadores do Congresso Africano Nacional na África do Sul). Ele perseguiu muitas petições pró-africanas que foram descritas no seu livro <em>África para os Africanos</em> (1897). Em 1915 ele foi erradamente acusado pela revolta do John Chilembwe em Malawi e foi expulsado de Lesoto para Grã-Bretanha onde ele morreu em pobreza e quase completamente desconhecido. Uma pessoa difícil entender, o Booth fica notória como um dos poucos missionários contra o colonialismo na região central e sul de África.</p>
+
+<p><strong>T. Jack Thompson</strong></p>
+
+<hr />
+
+<h1 id="bibliografia">Bibliografia</h1>
+<p>Brighton G. M. Kavaloh, “Joseph Booth: An Evaluation of His Life, Thought and Influence” (Ph.D. diss.,  Univ. of Edinburgh, 1991)</p>
+
+<p>Emily Booth Langworthy, <em>This Africa was Mine</em> (1952)</p>
+
+<p>Harry W. Langworthy, *Joseph Booth: A Radical Missionary *(1996)</p>
+
+<p>George Shepperson and Thomas Price, <em>Independent African: John Chilembwe and the Nyasaland Rising of 1915</em> (1958).</p>
+
+<hr />
+
+<p>Este artigo é reproduzido, com permissão, da <em>Biographical Dictionary of Christian Missions</em>, direitos autoriais © 1998, por Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. Todos os direitos reservados.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Booth, Joseph (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Leia várias versões: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -690,7 +750,7 @@
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 02 January 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 14 December 2022.<br>&copy; 2022 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -725,6 +785,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

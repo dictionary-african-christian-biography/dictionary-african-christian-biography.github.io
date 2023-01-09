@@ -605,8 +605,75 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Marcel Maradan, en religion le Père Olivier Maradan et Monseigneur Olivier Maradan, est né dans le village Suisse d’Escuvillens, auprès de Fribourg, en 1899. Son père était instituteur. Après des études classiques au Collège de l’Abbaye de St-Maurice et le baccalauréat au Lycée des Capucins de Stans, il entra au couvent des Capucins de Lucerne en 1918 pour y faire son noviciat. Il fut ordonné prêtre en 1925. L’année suivante il arrivait aux Seychelles comme missionnaire. Après avoir servi à Victoria, chef-lieu des Seychelles, il prit charge de la paroisse de l’Anse Boileau, sur Mahé, l’île principale des Seychelles. En 1937 il fut élu sixième évêque du Port Victoria, le diocèse catholique des Seychelles, où il succéda à Monseigneur Ernest Joye, démissionnaire. Il devait demeurer à son poste, contre vents et marées, pendant trente-cinq ans. Lors qu’il démissionna en 1973 son épiscopat avait duré plus de temps que tous les épiscopats de ses cinq prédécesseurs. Il dit adieu au peuple seychellois au cours d’une messe pontificale, le jour de Pâques 1973, et se retira au Couvent des Capucins de Bulle, en Suisse. Il avait alors passé quarante-sept ans aux Seychelles. Il mourut en 1975.</p>
+
+<p>Monseigneur Maradan a été la personnalité la plus marquante des Seychelles des cinquante dernières années. On a dit de lui qu’il a été un évêque jusqu’au bout des ongles. C’est un compliment qu’il méritait. Il avait cependant une bonhomie naturelle et un sens de l’humour qui le rendirent accessible à tous. Sa popularité put se mesurer à la célébration de ses vingt-cinq ans d’épiscopat en 1962, lorsqu’il fut fêté par tout son peuple seychellois, et en 1973 lorsque des milliers de seychellois l’accompagnèrent à l’aéroport des Seychelles pour lui dire adieu.</p>
+
+<p>La biographie de Monseigneur Maradan est à écrire. On peut cependant dire de lui dès maintenant qu’il a laissé le souvenir d’un évêque bâtisseur et d’un défenseur des valeurs seychelloises.</p>
+
+<p>C’est sous l’épiscopat de Monseigneur Maradan que se construisirent ou se reconstruisirent les églises qui ceinturent les îles Seychelles et des écoles paroissiales qui partout jouxtent les églises.</p>
+
+<p>Monseigneur Maradan se soucia particulièrement de l’instruction publique aux Seychelles, que l’Eglise Catholique, devant l’indifférence de l’administration britannique, avait dû prendre en charge. Il fut seul, ou presque seul, à s’opposer à sa réforme en 1944, réforme qui visait surtout à l’angliciser et qui a eu des résultats qu’on peut qualifier de médiocres. C’est surtout grâce à l’Eglise Catholique sous son épiscopat qu’ont pu survivre aux Seychelles ces deux authentiques patrimoines seychellois que sont la langue et la culture françaises. Enfin Monseigneur Maradan accorda un précieux appui aux sociétés culturelles des Seychelles. Il fut un Président d’Honneur du groupement seychellois de l’Alliance Française dès sa fondation en 1954 et manquait rarement à ses manifestations. De même il était fidèle aux rendez-vous des autres sociétés culturelles ou scientifiques, qu’il rehaussait de sa présence.</p>
+
+<p>Monseigneur Maradan fut fait Commander of the Order of the British Empire en 1960 et Chevalier de la Légion d’Honneur en 1974.</p>
+
+<p>Guy Lionnet</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p><em>L’Echo des Iles</em> (Journal de la Mission Catholique des Seychelles), Edition du Jubilé, 1 et 15 juillet 1962.</p>
+
+<p>P. Louis Dayer. <em>Les Iles Seychelles. Esquisse Historique</em>. 2ème édition. Sion, 1974.</p>
+
+<hr />
+
+<p>Cet article, réimprîmé ici avec permission, est tiré d’<em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em>, tome 2, volume 2, publié en 1977 par l’Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Maradan, Marcel`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +754,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +791,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

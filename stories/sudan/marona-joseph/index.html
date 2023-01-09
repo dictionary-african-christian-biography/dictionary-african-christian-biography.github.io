@@ -607,8 +607,77 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Joseph Marona was born in 1941 in the Western equatorial town of Maridi, in Southern Sudan. He attended Maridi Mission Primary School, a school founded and run by the Church Missionary Society (CMS) in 1952. He studied at Maridi for about two years before entering Yambio Upper Primary School in 1954. Upon leaving Yambio, Marona enrolled at Yei Teachers Training College and graduated with a certificate in teaching in 1958.</p>
+
+<p>With his teaching certificate in hand, Marona started teaching Arabic in the primary schools in Tali and Lui, working from 1962 to 1966. The mid 1960s saw Sudan’s first north-south civil war intensifying, and many people left Southern Sudan for safety in neighboring countries. Like most people in the equatorial region, Marona was exiled to Uganda until the end of the war, when he returned home.</p>
+
+<p>While in Uganda, Marona continued to teach, and also to study. He received two diplomas in education in 1971 and a third one in communication and history from Makerere University in 1973. After the signing of the Addis Ababa Peace Agreement of 1972 between the government of Sudan and the Southern Sudan Liberation Movement, Marona returned to Sudan and resumed teaching, this time having been promoted to the position of deputy headmaster of Yei Primary School. He taught there from 1975 to 1976.</p>
+
+<p>In 1977, he was again promoted to a post of headmaster and sent to Tore Primary School. He would serve in this position for about two years. After feeling an urge to pursue theological education training, possibly as a gateway to the ordained ministry, Marona left teaching and entered Bishop Gwynne College, where he undertook theological studies from 1978 to 1980. In 1981, he was ordained deacon, becoming a priest in 1982.</p>
+
+<p>Realizing the need for his people to read the word of God in their own langauge, Marona also did some Bible translation work. While head of the department of Christian education and training at Maridi Teachers Training Institute from 1981 to 1983, he did some translating into his native tongue, Baka.</p>
+
+<p>On April 22, 1984 he was consecrated bishop and became the first bishop of the newly created Episcopal diocese of Maridi. After becoming a bishop, Marona was made the secretary of the Episcopal council in the House of Bishops, a post he held until his election in 1999 as dean of the province and acting archbishop of the Episcopal Church of the Sudan (ECS). In 2000, he was elected as third ECS archbishop and primate. He retired on December 31, 2007 due to deteriorating health conditions, after serving eight years of the ten year term.</p>
+
+<p>Besides providing critical leadership as head of the ECS during the tumultuous years of Sudan’s north-south second civil war, Joseph Marona is credited for being a strong advocate for peace and justice. He would every use every platform to speak out against injustices on behalf of the many voiceless Sudanese. As chairman of the New Sudan Council of Churches (NSCC), an ecumenical body made up of many denominations operating in Southern Sudan, he worked hard to promote peace and reconciliation through a “people to people” peace initiative within Southern Sudan. He led the NSCC from 1997 to 1999. He died peacefully on September 18, 2009, in Khartoum, in the house of Justin Marona, his second son.</p>
+
+<p>Zakaria Diing Akol</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Kayanga, Samuel E., and Andrew C. Wheeler, eds. <em>But God Is Not Defeated, Celebrating the Centenary of the Episcopal Church of the Sudan, 1899-1999</em>. Nairobi: Paulines Publications Africa, 1999.</p>
+
+<p>Notes taken from his obituary.</p>
+
+<hr />
+
+<p>This article, received in 2010, was written by Zakaria Diing Akol, an M. Div. Student at Yale Divinity School and  a 2010 <em>DACB</em> Project Luke Fellow. He and his wife are from Southern Sudan.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Marona, Joseph`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +756,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +795,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

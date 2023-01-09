@@ -606,8 +606,85 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Abbé Alexis Kagame foi um historiador ruandense, etnólogo e filósofo que se tornou um líder intelectual Tutsi ao apresentar a cosmologia deles em termos contemporâneos.</p>
+
+<p>Kagame nasceu em uma família de historiadores da Corte e logo se familiarizou com a tradição oral do povo Tutsi. A sua família se converteu ao catolicismo depois da Primeira Guerra Mundial e Kagame freqüentou a Escola Missionária assim como a Escola para os filhos dos chefes. Ingressou no Seminário em 1929 e foi ordenado em 1941. Em 1938, ainda sendo seminarista, foi editor de um jornal católico. Também lecionou no noviciado dos Irmãos de São José (Bayozefiti), e continuou ensinando por cinco anos após a sua ordenação. Neste período Kagame tornou-se um amigo íntimo do Rei MUTARA III e ocupou o lugar de destaque no país. As habilidades de Kagame se tornariam aparentes de qualquer modo, mas ele teve a sorte de ganhar popularidade devido à ampla difusão do catolicismo no país.</p>
+
+<p>Em 1943, Kagame publicou o seu primeiro livro, uma história oral da antiga Ruanda. Este livro foi seguido por vários volumes de poesia e, finalmente por uma obra de volumes múltiplos num relato épico da criação, publicado em francês como: “<em>La divine pastorale</em>” (1952-1955).  Apresenta o mito da criação e a história do mundo ruandense, relevando paralelos entre as tradições Tutsi e os ensinamentos cristãos- tema favorito de Kagame. No anos 70 ele adicionou vários estudos sobre a dinastia poética ruandense.</p>
+
+<p>Em 1952, Kagame escreveu <em>Le code des institutions politiques du Rwanda</em>, uma surpreendente defesa e vindicação do sistema feudal Tutsi. As autoridades belgas julgaram o seu trabalho nacionalista e desconcertante e de modo conveniente conseguiram enviar Kagame para Roma para estudos posteriores. Ele se tornou membro do les prêtres noirs (os padres negros), uma associação livre de jovens estudantes de teologia africanos que faziam uma leitura nacionalista do Cristianismo. A tese de doutorado de Kagame foi o seu trabalho de maior destaque, <em>The Bantu- Rwandese Philosophy of Being</em> (A Filosofia do Ser Bantu-Ruandense) (1956). Nela, Kagame apresenta o pensamento africano em termos ocidentais. Não somente respondia efetivamente às interpretações dos missionários do pensamento africano, mas começava a dialogar sobre a natureza das religiões africanas e a sua relação com o Cristianismo Ocidental.</p>
+
+<p>Ao voltar para a sua terra, Kagame passou a ensinar no Seminário Católico e publicou uma história de Ruanda e um estudo sobre a língua Kinyarwanda. Em 1959, depois da morte do Rei, os Hutus derrubaram o sistema feudal numa cruel e sangrenta vingança. Kagame, apesar da sua identificação com a classe governante deposta, não foi afetado devido ao respeito geral obtido pela sua erudição e pensamento. Foi nomeado para a Universidade Nacional, quando esta foi fundada em 1963. Subseqüentemente recebeu vários honores internacionais que incluíram o serviço no prestigioso comitê da UNESCO para escrever uma história geral da África. Neste último período, ele também se destacou na africanização do Cristianismo, ao usar os documentos do Concílio Vaticano para argumentar contra a manutenção das atitudes missionárias. Devido à importância do Catolicismo na sociedade Ruandense, essa era uma postura que ia muito além das questões religiosas. Apesar da sua eminência, Kagame era um pensador transicional, foi mediador do pensamento africano em termos ocidentais, mas tornou possível que a nova geração de intelectuais desenvolvesse uma filosofia integralmente africana, a qual tem um lugar no mundo contemporâneo.</p>
+
+<p>Norbert C. Brockman</p>
+
+<hr />
+
+<h1 id="bibliografia">Bibliografia</h1>
+
+<p>Herdeck, Donald. <em>African Authors</em>. Vol. 1. Washington, DC: Inscape, 1974.</p>
+
+<p>Lipschutz, Mark R., e R. Kent Rasmussen. <em>Dictionary of African Historical Biography</em>. 2ª edição. Berkeley: Editora da Universidade da Califórnia, 1986.</p>
+
+<p>Ewechue, Ralph (ed.). <em>Makers of Modern Africa</em>. 2nd edition. Londres: Africa Books, 1991.</p>
+
+<p>Leitura Adicional:</p>
+
+<p>Nsengimana, Joseph. <em>Alexis Kagame: L’homme</em> (Alexis Kagame: The man, 1987).</p>
+
+<hr />
+
+<p>Este artigo foi reproduzido com a permissão do <em>An African Biographical Dictionary</em>, copyright © 1994, editado por Norbert C. Brockman, Santa Barbara, Califórnia. Todos os direitos são reservados.</p>
+
+<hr />
+
+<p>Conexão externa:</p>
+
+<p><em>Encyclopaedia Britannica</em> (artigo completo): <a href="http://www.britannica.com/EBchecked/topic/309585/Alexis-Kagame">Alexis Kagame</a></p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Kagamé, Alexis (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Leia várias versões: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -690,7 +767,7 @@
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 02 January 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 14 December 2022.<br>&copy; 2022 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -725,6 +802,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

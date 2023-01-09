@@ -607,8 +607,89 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/rwanda/barham-lawrence/barham_lawrenceandjulia-small.jpg" alt="Lawrence and Julia Barham" class="bio" /></p>
+
+<p>Lawrence Barham was born in Balham, London.  At primary school he distinguished himself by gaining a scholarship to Merchant Taylor’s School, London.  From there he gained a scholarship to study classics at Gonville and Gaius College, Cambridge, where he gained a first class honours degree and was invited to stay on as a don, specialising in Hebrew and Aramaic.  By this time, however, having been converted at the age of 13, he was sure God was calling him to be a missionary in China.  He studied theology at Ridley  College, Cambridge and was ordained in the Church of England in 1925.</p>
+
+<p>Julia Leakey was born to missionary parents in Kenya.  She attended school in England and returned to Kenya to help her sister Gladys to found one of the first intermediate level girls’ schools in that country.  She trained as a teacher at Goldsmith’s College, London.</p>
+
+<p>In 1926, Lawrence offered to the Church Missionary Society to work in China.  At that time that country was temporarily closed to missionary activity.  After much thought and prayer, he offered his services to the Ruanda Mission of the C.M.S. for work in Rwanda.  He sailed for that country in 1928.  He and Julia were married in 1928.</p>
+
+<p>On his arrival at Kabale, Lawrence was appointed headmaster of Kigezi High School and put in charge of the church work in Kigezi.  However, Lawrence’s major contribution was in the Kabale Bible School, later to become the Bishop Barham Theological College.  A happy and influential association developed in the School between the leaders: Lawrence and Julia Barham, and Ezekieri (later Canon) and Losira Balaba.</p>
+
+<p>It was an invitation from Lawrence and Ezekieri to a team to visit them from Gahini, Rwanda, which led to the Kabale Convention in September 1935, in which took place some of the most significant manifestations of the early days of the East African Revival.  In the years which followed, Lawrence played a leading role in the development of the training of church teachers and ordinands for Rwanda and Burundi as well as for south-west Uganda.  At the same time, he shared in the leadership of missions and conventions in other parts of East Africa.</p>
+
+<p>A notable feature of the ministry of Lawrence and Julia Barham was the importance they gave to the training of ordinands’ wives, in partnership with their husbands.</p>
+
+<p>Lawrence loved military music and he is remembered for his introduction and promotion of Boys’ Brigades whose bugle bands have taken part on many public occasions in Uganda, leading processions at festive functions.  This was accompanied by a deep spiritual impact on both Boys’ Brigade leaders and members.</p>
+
+<p>Lawrence brought to the East African Revival, in which he played a very significant role, a profound understanding of the Bible which benefited from his Hebrew scholarship.</p>
+
+<p>In 1938, Lawrence and Julia moved to Buye, Burundi, where he founded the institution at first named the Canon Warner Theological College.  Many clergy and church teachers were trained at Buye for the churches established by the Ruanda Mission (CMS) in Burundi, Rwanda and the Kigezi area of Uganda.</p>
+
+<p>In 1946, he was nominated to be Bishop of Ruanda-Urundi (as it was then known) but this was rejected by the Bishop of Uganda in view of his deep involvement with the East African Revival which, at that time, was viewed with some apprehension by the Church of Uganda leadership.</p>
+
+<p>In 1957, Lawrence returned to Kabale for two years as Archdeacon of Ankole-Kigezi.  In 1958, Lawrence and Julia retired from active missionary service in Africa to take on the duties of General Secretary of the Ruanda Mission (CMS). On the retirement of the first bishop of Rwanda and Burundi in 1964, Lawrence was consecrated as his successor in Namirembe Cathedral.  For the next two years he concentrated on the preparation of African bishops for the newly formed separate dioceses of Rwanda and Burundi in 1966.</p>
+
+<p>He and Julia retired to the U.K. and were active in their retirement to the last.</p>
+
+<p>H. H. Osborn</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Dr. J. E. Church, <em>Quest for the Highest</em>  (Paternoster, 1981).</p>
+
+<p>H. H. Osborn, <em>Pioneers in the East African Revival</em> (Apologia, 2000).</p>
+
+<hr />
+
+<p>This article, submitted in 2002, was written for the <em>DACB</em> by Dr. H. H. Osborn, author of the book <em>Pioneers in the East African Revival</em>.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Barham, Lawrence and Julia`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +768,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +807,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

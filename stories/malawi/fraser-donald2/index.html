@@ -607,8 +607,63 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Donald Fraser was a missionary to Africa and international mission statesman and strategist. He was born in Scotland at Lochgilphead, Argyllshire, the son of a Free Church minister. As a young man, he helped found the Student Volunteer Movement (SVM) in Britain and became its traveling secretary in 1892. He was also involved with John R. Mott in discussions leading to the formation of the World’s Student Christian Federation in 1896. Before beginning missionary service in Malawi with the Free Church of Scotland, Fraser toured both Europe and South Africa in 1896 to encourage the SVM. In Malawi Fraser was assigned to the Ngoni people, with whom he became closely identified. He encouraged huge sacramental conventions which soon attracted thousands. These were modeled after nineteenth-century Scottish Highland gatherings, but in Africa included both baptism and Communion. He was much more open to African culture than were most of his Scottish colleagues. He encouraged indigenous church music by organizing annual hymn-writing competitions and encouraged local leadership in the church, including the leadership of women through an unofficial order of women elders, long before such initiatives were officially recognized in Scotland or Malawi. He also spent a very high proportion of his time itinerating around the huge area for which he was responsible. At such times his wife Agnes (Robson), herself a medical doctor, carried on the administration of the mission station at Loudon (Embangweni). In 1925, somewhat unwillingly, Fraser was recalled to Scotland to become a United Free Church mission secretary. In 1926 his considerable international reputation was recognized when he was asked to chair the international conference at Le Zoute on the topic “The Christian Mission in Africa.” After his death, Fraser’s ashes were returned to Malawi and buried at Embangweni, among the people he had served so well.</p>
+
+<p>T. Jack Thompson</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Donald Fraser, <em>Winning a Primitive People</em> (1914), <em>African Idylls</em> (1923), <em>The Autobiography of an African</em> (1925), and <em>The New Africa</em> (1927). Agnes R. Fraser, <em>Donald Fraser of Livingstonia</em> (1934); T. Jack Thompson, <em>Christianity in Northern Malawi: Donald Fraser’s Missionary Methods and Ngomi Culture</em> (1995) and “Donald Fraser,” in Gerald H. Anderson et al., eds., <em>Mission Legacies</em> (1994), pp. 166-172).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Fraser, Donald (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +742,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +781,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

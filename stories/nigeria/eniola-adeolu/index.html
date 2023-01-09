@@ -607,8 +607,81 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/nigeria/eniola-adeolu/Adeolu-Eniola.jpg" alt="Adeolu Eniola" class="bio" /></p>
+
+<p>In the mid 1960s, the Nigerian pentecostal church movement was still very young compared to the mission-initiated churches. At this time, the western region of Nigeria saw the emergence of several freelance evangelistic groups based in the Pentecostal tradition. These groups began with the work of independent evangelists whose ministries extended throughout the country.</p>
+
+<p>One such group was the Glad Tidings Evangelistic Ministry, founded in 1966 by an evangelist named Isaac Adeolu Eniola. Glad Tidings Evangelistic Ministry was one of the two most prominent freelance evangelistic ministries in western Nigeria. The other was the “GO YE” Evangelistic Association, founded and directed by Rev. T. A. Iyanda.</p>
+
+<p>Born in 1928, Isaac Adeyemi Ogunsetire hailed from Ilawe-Ekiti in the Ekiti State of Nigeria. He became known as Evangelist Adeoguns and his ministry was titled the Adeoguns Evangelistic Association. In the early 1980s, after surviving a very serious illness, he changed his name to Isaac Adeolu Eniola. He was the first president of the Fellowship of Itinerant Evangelists of Nigeria, a position he held until his death.</p>
+
+<p>Not much is known about the conversion experience of Adeolu Eniola. A former police officer, he had resigned to answer the call to go into the ministry. In response to his call, he received theological training both at home and abroad.</p>
+
+<p>He married Mrs Josephine Eniola and was blessed with children.</p>
+
+<p>Under his direction, Glad Tidings Evangelistic Ministry blew the trumpet of the gospel throughout the length and breadth of Nigeria for close to thirty years. He conducted open-air evangelistic meetings across what was then known as the Western and Midwestern regions and conducted revival services in churches, cutting across denominational lines. As a result of these revival meetings many converted to Christianity.  He was one of the first radio and television evangelists in the country, preaching on Ogun, Oyo, Ondo, and Lagos radio stations, and on the Western Nigeria Television Service.</p>
+
+<p>As an evangelist, Eniola performed miracles and signs, unifying churches of various denominations, and spreading the Gospel in Nigeria. He was instrumental in restoring peace to troubled hearts, harmony to many conflict-torn families, in giving joy to barren women, jobs to applicants, spouses to chronic spinsters and bachelors, in inspiring brilliant academic performances in struggling students and divine healing to patients suffering from indescribable sickness and disease. Eniola’s ministry contributed tremendously to the expansion of Christianity in general and to Pentecostalism in particular in Nigeria.</p>
+
+<p>He was well known to many top Christian functionaries and church ministers in Nigeria– prominent church leaders such as W. F. Kumuyi of the Deeper Life Bible Church, Wilson Badejo of the Foursquare Gospel Church, Archbishop Benson Idahosa of the Church of God Mission, and G. Olu Farombi, the former general overseer of the Foursquare Gospel Church. All benefited immensely from his ministry. Isaac Adeolu Eniola died on January 13, 1992 at the age of 64.</p>
+
+<p>Michael Leke Ogunewu</p>
+
+<hr />
+
+<p>Sources:</p>
+
+<p>Funeral Service Brochure.</p>
+
+<p>Interviews with over 25 members of the ministry.</p>
+
+<hr />
+
+<p>This article, received in 2007, was researched and written by Michael Leke Ogunewu, a Ph.D candidate at the University of Ibadan, Nigeria, under the supervision of Rev. Dr. Deji Ayegboyin, <em>DACB</em> liaison coordinator.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Eniola, Adeolu`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +760,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +799,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

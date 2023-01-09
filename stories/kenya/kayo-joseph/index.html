@@ -607,8 +607,75 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Dr. Joe Kayo is the founder of Deliverance Church, a charismatic and indigenous ministry that has spread into Uganda and Zambia. He has preached to large crowds in Kenya and influenced many prominent ministers.</p>
+
+<p>He was born in 1936 in Kisii District, Nyanza Province in Kenya. He went to school in his village and later to the Pentecostal Bible College in Kisumu. He describes himself as a self-taught man in several fields, although he has been awarded two honorary doctoral degrees: from the U.S. in 1987 and Nigeria in 1990. He was born again in February 1957 and later ordained by the Pentecostal Assemblies of God.</p>
+
+<p>Joe met his wife Rose on a preaching tour in Uganda with his team of evangelists.  After a terminally ill patient at Rose’s home was miraculously healed as a result of his prayers, Rose’s father begged Joe to take Rose for his wife as a gift of appreciation for his ministry. Joe temporarily turned down the offer to first seek the will of God. As it turned out, this was God’s will for Joe and Rose. A wedding was planned within weeks. The couple has three children and two grandchildren.</p>
+
+<p>Many consider him a dynamic preacher anointed by the Holy Spirit. Signs and wonders as well as documented cases of miraculous healing and the slaying in the Spirit are frequent manifestations of Joe’s ministry. Thousands have been born again and delivered from demonic forces. He derived the name for his ministry from these recurring acts of deliverance. Joe believes that it is not enough to be saved from sin but that one needs to be delivered from the many demonic forces at work in Africa. He argues that in Luke 4:18-19 Jesus’ ministry included bringing deliverance to the captives as a result of His anointing. He claims that the same anointing that Jesus had was promised not only to the Apostles of Biblical times but also to those God calls today. Thus, Joe calls himself an Apostle because he claims to have the same anointing which characterized Jesus’ ministry.</p>
+
+<p>Joe speaks several languages including Ekigusi, Dho Luo, Swahili, Luganda and English. He is a powerful and effective communicator, and an excellent Bible expositor,- an element that has made his ministry popular among the educated in East and Central Africa. University students have been the focus of his ministry.  Consequently, Deliverance Church services were held in English and translated into other languages. The use of English made it possible to expand the ministry to Uganda and Zambia.  Through his ministry Joe has led many church leaders to the Lord, discipled and commissioned them for ministry.</p>
+
+<p>At the height of Joe’s ministry in the late nineteen seventies, some allegations were made against him which led to a sharp disagreement with his board members. As a result Joe resigned from Deliverance Church.</p>
+
+<p>In 1978, he founded the Christian Family Church and Joe Kayo Ministries International, of which he is the executive Chairman. He has ministered in the United States, Zambia, Canada, South Africa, England, the Democratic Republic of Congo, Malawi, Japan, and Hong Kong. He publishes <em>Revival Digest</em>, a magazine in which he continues to share his vision. He has written the following books: <em>The Bible Way to Success</em>; <em>Standing Alone with God</em>; <em>Twenty/Twenty Vision</em>; <em>Prayer: Supernatural Force</em>, and <em>Why I speak in Tongues</em>.</p>
+
+<p>Francis Manana</p>
+
+<hr />
+
+<p>Sources:</p>
+
+<p>Stephen Thuo and Julius Akenga, interview by author (Pan Africa Christian College, Nairobi, Kenya).</p>
+
+<hr />
+
+<p>This story, submitted in 2000, was researched by Dr. Francis Manana, Professor of Evangelism and Missions and DACB Liaison Coordinator, Pan African Christian College, Nairobi, Kenya.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Kayo, Joseph`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +754,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +793,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -605,8 +605,77 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>L’abbé Alexis Kagamé était un historien, éthnologue et philosophe Rwandais qui est devenu le leader intellectuel du peuple Tutsi parce qu’il a pu articuler leur cosmologie en terminologie contemporaine.</p>
+
+<p>Kagamé est né dans une famille d’historiens de la cour et il a rapidement acquis une connaissance intime des traditions orales des Tutsi. Sa famille s’est convertie au catholicisme après la première guerre mondiale et Kagamé a fait ses études dans une école missionnaire ainsi que dans une école réservée aux fils de chefs. Il est entré au séminaire en 1929, et a été ordonné en 1941. En 1938, alors qu’il était toujours séminariste, il était déjà devenu éditeur d’un journal catholique. Il enseignait aussi au noviciat des frères de St. Joseph (Bayozefiti), et a continué de le faire pendant encore cinq ans après son ordination. Au cours de ces années, il est devenu ami proche du roi MUTARA III, et il est devenu assez connu dans le pays. Ses capacités auraient été apparentes dans n’importe quelle condition, mais il a heureusement attiré l’attention publique au moment où le catholicisme devenait une force importante dans le pays entier.</p>
+
+<p>En 1943, Kagamé a publié son premier livre, une histoire orale du Rwanda ancien. Ce livre a été suivi de plusieurs volumes de poésie, et enfin par une création épique en plusieurs volumes, publiée en français sous le titre de *La divine pastorale *(1952-1955). Elle présente un mythe rwandais de la création et une histoire du monde, révélant des parallèles entre les traditions Tutsi et le dogme chrétien - un thème favori de Kagamé. Dans les années 1970, il a ajouté plusieurs études de poésie dynastique rwandaise.</p>
+
+<p>En 1952, Kagamé a écrit <em>Le code des institutions politiques du Rwanda</em>, une défense vibrante et une justification du système féodal Tutsi. Les autorités belges ont trouvé son travail nationaliste troublant et se sont arrangés pour que Kagamé soit envoyé à Rome pour y faire des études supérieures. Il est devenu membre des <em>prêtres noirs</em>, une association peu structurée de jeunes théologiens africains qui faisaient une lecture nationaliste du christianisme. La thèse doctorale de Kagamé est devenue son œuvre la plus remarquée, <em>La philosophie Bantu-Rwandaise de l’être</em> (1956). C’est là que Kagamé a interprété la pensée africaine en terminologie occidentale. Cette œuvre a non seulement répondu de manière efficace aux interprétations missionnaires de pensée africaine, mais elle a aussi entamé un dialogue sur la nature de la religion africaine et son rapport au christianisme occidental.</p>
+
+<p>Après être rentré chez lui, Kagamé a commencé à enseigner au séminaire catholique et a publié non seulement une histoire du Rwanda, mais aussi une étude de la langue Kinyarwanda. En 1959, après la mort du roi, les Hutu ont mis à bas le système féodal dans un bain de sang de vengeance brutale. Malgré le fait qu’il était identifié à l’ancienne classe régnante, Kagamé n’a pas été atteint à cause du respect général pour sa pensée et ses qualités d’érudit. Il a été nommé à l’université nationale quand elle a été fondée en 1963. Par la suite, il a reçu beaucoup d’honneurs sur le plan international, y compris un service au comité prestigieux de l’UNESCO qui écrivait une histoire générale de l’Afrique. Pendant cette période il a aussi défendu “l’africanisation” du christianisme, à l’aide de documents du Conseil du Vatican qui argumentaient contre le maintien des attitudes missionnaires. Compte tenu de l’importance du catholicisme dans la société rwandaise, c’était-là une déclaration qui allait loin au-delà des questions religieuses. En dépit de son éminence, Kagamé était un penseur transitionnel, qui était médiateur de pensée africaine en terminologie occidentale, mais qui permettait à une nouvelle génération d’intellectuels d’inaugurer une philosophie africaine plus intégrale, une philosophie qui, en même temps, pouvait trouver sa place dans le monde contemporain.</p>
+
+<p>Norbert C. Brockman</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p>Herdeck, Donald. <em>African Authors [Auteurs africains]</em>, Vol. 1. Washington, D.C.: Inscape, 1974.</p>
+
+<p>Lipschutz, Mark R., et R. Kent Rasmussen. <em>Dictionary of African Historical Biography [Dictionnaire de biographie historique de l’Afrique]</em>. 2ème édition. Berkely: University of California Press, 1986.</p>
+
+<p>Ewechue, Ralph (éd.). <em>Makers of Modern Africa [Les créateurs de l’Afrique moderne]</em>. 2ème édition. London: Africa Books, 1991.</p>
+
+<p>Lectures supplémentaires: Nsengimana, Joseph. <em>Alexis Kagamé: L’homme</em>, 1987.</p>
+
+<hr />
+
+<p>Cet article est reproduit, avec permission, de <em>An African Biographical Dictionary [Un Dictionnaire biographique africain]</em>, copyright (c) 1994, édité par Norbert C. Brockman, Santa Barbara, California. Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Kagamé, Alexis (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +756,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +793,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

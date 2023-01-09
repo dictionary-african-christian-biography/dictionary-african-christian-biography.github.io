@@ -607,8 +607,57 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Semi Lwakirenzi Kakungulu was baptized by a CMS missionary between 1882 and 1889, he was perhaps the leading Muganda soldier of his day. There was no room in Buganda for both him and Apolo Kagwa. Between 1900 and 1902 he was, therefore, encouraged by the British to pacify, in their name without their help or interference, the whole of what is now Testo, Bugisu, and Bukedi. He established a Kiganda systems of administration under Baganda chiefs directly responsible to him; and he had the words <em>Kabaka wa Bukedi</em> carved on the stocks of his guns, claiming that the British had offered him this title. By 1903 Bishop Alfred Robert Tucker reported that, in Mbale, “a church had been built, and regular services were being carried on by Andereya Batulabudde,” a Muganda pastor. But no attempts had been made to convert the local people. Between 1906 and 1913 Kakungulu created the Busoga District and became its first president. He had to be retired and, while still controlling land and cattle in North Busoga, he was made a county chief near Mbale. He strongly resented this demotion, kept in close touch with Joswa Damulira Wambwa Kate and joined the Society of the One Almighty God on its formation in 1914. So strongly did he feel about medicine that, rather than be inoculated against a plague in order to enter Buganda for the coming-of-age celebrations of Kabaka Daudi Chwa, he and his followers returned to Mbale. He seems to have been particularly impressed with the argument first advanced by Kate, that 666, “the number of the beast” (Revelation 13, 16ff) was almost identical to the number 606 given to the new anti-syphilitic drug “Salvarsan.” To be inoculated was “to bear the number of the beast.” He encouraged the spread of the new teaching in Busoga, Bugisu and Bukedi and, through his follower, Enoka Auta Otuba, in Teso. In 1915 he took a second wife. He founded the Bayudaya. He became involved in an argument of the compulsory acquisition of his land at Makerere, Kampala, and was generally uncooperative with government regulations referring to cattle. In 1923 he was retired from his chieftainship and died in 1928. Descendants of his Buganda followers still live in Mbale.</p>
+
+<p><strong>Louise Pirouet</strong></p>
+
+<hr />
+
+<p>This article, used by permission, was written by Louise Pirouet, as part of <em><a href="../pirouet-foreword/">A Dictionary of Christianity in Uganda </a></em>(Department of Religious Studies, Makerere University College, 1969), p. 17. Copies available at Africana Section, Makerere University Library (AF Q 276.761 MAK and AR/MAK/99/1); Bishop Tucker Library, Uganda Christian University and in UK at the University of Birmingham; Crowther Centre Library, CMS Oxford and Louise Pirouet Papers, Cambridge Centre of African Studies.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Kakungulu, Semi Lwakirenzi`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +736,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +775,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -607,8 +607,85 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/eswatini/maluka-beta/maluka_beta.jpg" alt="Beta Maluka" class="bio" /></p>
+
+<p>Miss Beta Maluka was a pioneer Nazarene nurse in eswatini. She was from a Sotho family at Sabie, Mpumalanga, South Africa and was converted in 1921 through the influence of Missionary Joseph F. Penn.  Her brother decided that she had to be married to a nonChristian man.  Believing that she should not do this, Beta decided in 1924 to go away to the girls’ school at Endzingeni in eswatini.  Her mother was at the Sabie railroad station to prevent her from leaving.  As the train pulled out Beta made a lunge and boarded it.  Her mother grabbed her by the jacket she was wearing.  It tore away and her mother  was left on the platform holding it.[1]</p>
+
+<p>At Endzingeni Beta helped in the clinic. Mrs Fredah Hlatshwayo tells how years later Miss Dorothy Davis taught them about burns  in their Surgical Nursing class.  She told them of  an experience she had as a nursing sister that had just arrived in eswatini and was posted to Endzingeni Clinic.  A little girl was beought in that had been badly burned.  Before consulting the sister, Beta Maluka removed the burnt clothes and quickly scrubbed the girl with blue soap (soap used for washing clothes).  When Miss Davis asked her about it she replied, “This is good treatment for burns.”  Dorothy Davis was shocked but instead of scolding the nursing assistant she showed her the proper treatment for burns.  At the same time the missionary discovered what the traditional treatment for burns was in eswatini.  Fredah continued, “She laughed when she told us and we were all amused by her demonstration showing us how Beta did it.[2]</p>
+
+<p>As Beta was unable at first to read the labels on the medicine bottles the missionary nurse would add cake coloring to the contents to color-code them so as to signify their use.</p>
+
+<p>Beta Maluka continued in school and  after that she went to work at the Raleigh Fitkin Memorial Nazarene Hospital in Manzini and went into nurses’ training.  She was with the first class graduating from the nursing college.</p>
+
+<p>She never married and after her graduation returned to Endzingeni Mission Clinic as a nurse and worked there faithfully for many years until her retirement.  She was highly regarded by the community in the area. Thay gave her a place to live after she retired in recognition or her many years of service.  In 1985 she testified: “I loved Jesus and left the worldly friends who were of my age.  I did not like their lifestyle so I gave myself to the Lord.  I have continued to follow him all these years.”[3]</p>
+
+<p>In 1990 she moved to Mbabane where she was an invalid and became blind.  Her nephew and his family cared for her.  Beta Maluka went to her eternal Home in 2004.</p>
+
+<p>Paul S. Dayhoff</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>
+    <p>Notes sent by Joseph Penn, May 26, 1992.</p>
+  </li>
+  <li>
+    <p>Mrs Fredah Hlatshwayo, notes, June 23, 1998.</p>
+  </li>
+  <li>
+    <p>Interview with Beta Maluka in 1985 by Robert Perry, Nazarene Archives, Manzini.  Bill Moon, notes, August 14, 1995.   Samuel Hynd, letter from Manzini, 11 November 1995.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Living Stones In Africa: Pioneers of the Church of the Nazarene</em>, revised edition, copyright © 1999, by Paul S. Dayhoff.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Maluka, Beta`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +764,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +803,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

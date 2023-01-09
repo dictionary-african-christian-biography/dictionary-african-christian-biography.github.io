@@ -607,8 +607,65 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/ethiopia/flad-j2/flad2.jpg" alt="Johann Flad" class="bio" height="195px" width="160px" /></p>
+
+<p>Johann Martin Flad was a German missionary to Ethiopia. A native of Württemberg and trainee of the famous St. Chrischona Mission seminary near Basel, Switzerland, Flad was one of four young missionaries who in 1855 were sent to Ethiopia by Samuel Gobat, Anglican bishop of Jerusalem. After a short period of work as a craftsman in the service of the emperor Theodoros, Flad discovered his personal opportunity for mission among the Falashas, an indigenous Jewish minority in and around Addis Ababa. The mission was supported mainly by the London Society for Promoting Christianity amongst the Jews, of which Flad became a member. During a persecution initiated by the emperor, Flad was arrested in 1863, together with other Europeans. They were eventually freed by a British military expedition in 1868, but Flad had to leave the country. He managed to continue his work from outside Ethiopia, chiefly by sending Bibles for distribution among the Falashas, and later by dispatching evangelists. In 1885 he joined the British and Foreign Bible Society and is said to have delivered altogether eighty-four camel loads of Amharic Bibles and New Testaments. When the country again became accessible for missionaries in 1922, Martin Flad’s son Friedrich and others were able to continue the work until the occupation by Italy in 1936.</p>
+
+<p>Hans-Werner Gensichen</p>
+
+<hr />
+
+<p><strong>Bibliography</strong></p>
+
+<p>Julius Flad, J.M. Flad, <em>Ein Leben für Äthiopien</em> (1968).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Flad, Johann Martin (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +744,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +783,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -607,8 +607,65 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Pioneer missionary in Sierra Leone.</p>
+
+<p>A German Lutheran from Russian-ruled Livonia (in area of present-day Lithuania), Nyländer trained at the Berlin Mission seminary before being recruited in 1805 by the Church Missionary Society (CMS).  He served as chaplain at Freetown, Sierra Leone, from 1806 to 1812 but then opened a mission station on the Bullom Shore of the Sierra Leone estuary, opposite Freetown, where he worked from 1812 to 1818.  He finally served as a parish minister among liberated slaves at Kissy village, near Freetown, until his death there at the end of eighteen continuous years in Sierra Leone.  The earliest of the CMS missionaries in West Africa to see his linguistic work in print, he published (1813-1816) a quantity of material in and on the Bullom language, which has been little studied since, and one with a limited printed literature and missionary use to date.  He also encouraged a local African, George Caulker, to publish a few pieces on the related Sherbro language.  He was thus the founding father of the Freetown school of missionary linguists.  He married and buried two wives in Sierra Leone, both Afro-Americans.  His two daughters worked in the Sierra Leone mission as teachers and died there.  One daughter was the first wife of the missionary linguist, J. F. Schön, and descendants from this marriage served the CMS during the rest of the century.</p>
+
+<p>P. E. H. Hair</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>P. E. H. Hair, “Freetown and the Study of West African Languages, 1800-1875,” <em>Bulletin de l’Institut Français d’Afrique Noire</em>, B, 221 (1959): 579-586, “Early Vernacular Printing in Africa,” <em>Sierra Leone Language Reviews</em> 3 (1964): 47-52, and <em>The Early Study of Nigerian Languages</em> (2d ed., 1995).  Nyländer materials are held in the CMS archives, Univ. of Birmingham.</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Nyländer, Gustavus Reinhold`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +744,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +783,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

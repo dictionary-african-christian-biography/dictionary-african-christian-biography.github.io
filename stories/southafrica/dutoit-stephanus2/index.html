@@ -607,8 +607,87 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/southafrica/du-toit-stephanus/du_toit_stephanus.jpg" alt="Stephanus du Toit" class="bio" /></p>
+
+<p>Stephen Jacobus du Toit (October 9, 1867-May 28, 1911) was a theologian as well as a journalist and a pioneer Afrikaner nationalist.</p>
+
+<p>Of direct Huguenot descent, he was born on the farm Kleinbosch near Paarl in Cape Province, the 13th son of a wine farmer. After proving a gifted scholar at school he studied for the ministry in the Dutch Reformed Church and served as minister of the Noorder-Paarl congregation from September 25, 1875 to the end of 188l.</p>
+
+<p>Du Toit played a leading role in the establishment of Die Genootskap van Regte Afrikaners (The Society of True Afrikaners) at Paarl on August 14, 1875. Through its widely read mouthpiece <em>Die Afrikaanse Patriot</em>, the first Afrikaans-language newspaper, this organization became a powerful instrument to promote the Afrikaans language and pan-Afrikaner nationalism throughout South Africa.</p>
+
+<p>Du Toit’s contribution to the new organization was immense. He propagated the slogan “We write as we speak” and helped to compile an Afrikaans dictionary and grammatical rules. Under the pseudonym “Ware Afrikaner” (“True Afrikaner”) he wrote numerous articles, poems and prose works in Afrikaans.</p>
+
+<p>His most significant political achievement was the establishment of the Afrikaner Bond in 1880 which became a powerful factor in Cape and South African politics. He urged all true South Africans to participate in this political organization aimed at promoting broad “Afrikaner” (i.e., South African) interests.</p>
+
+<p>His strong support of the Transvaalers in their struggle to regain their independence and his advocacy of Christian national education led to his appointment in 1882 as superintendent of education in the newly restored Transvaal republic. He drew up the Transvaal’s education law of 1882 which embodied Christian national principles. The number of schools and school-goers increased greatly during his period as superintendent (1882-88). He also became a trusted adviser of President Paul Kruger and took an increasing interest in politics. He was a member of the Transvaal deputation to Europe (1883-84) and helped to negotiate the London Convention and other treaties.</p>
+
+<p>As the Transvaal’s special commissioner, he hoisted the Transvaal flag over the disputed territory of Goshen in 1884. The subsequent outcry over and nullification of this action made du Toit lose prestige. Dr. Willem Johannes Leyds replaced him as Kruger’s chief adviser.</p>
+
+<p>After abortive financial enterprises had left him virtually penniless he returned to Paarl and continued his journalistic and political activities. He edited <em>Die Patriot</em> and other Afrikaans publications such as <em>Ons Klyntji</em>. In many respects he was a pioneer, producing for example, the first published Afrikaans play <em>Magrita Prinsloo</em> (1896), the first historical romance <em>Die koningin fan Skeba</em> (1898), and collaborating on the first Afrikaans history book <em>Di geskiedenis von ons land in di taal van ons volk</em> (1877). His prolific literary output served to popularize Afrikaans as a language.</p>
+
+<p>He grew increasingly critical of Kruger’s policies and supported the ideal of a united South Africa promoted Cecil John Rhodes. His austere neo-Calvinism and continued support of Rhodes after the Jameson Raid alienated him from the majority of Afrikaners. He broke with the Afrikaner Bond in 1898. His attempts to establish a new political party, the Koloniale Unie (Colonial Union) and a schismatic church movement, the Gereformeerde Kerke onder die Kruis (Reformed Churches under the Cross), proved unsuccessful. After failing to win a seat in the 1898 Cape elections du Toit withdrew from politics and devoted himself to the task of translating the Bible into Afrikaans and elucidating biblical texts.</p>
+
+<p>Du Toit was a controversial figure in South African history who after being held in high esteem died as something of a pariah. His plays, stories and articles helped to popularize the Afrikaans language, but his political efforts were less successful.</p>
+
+<p>L.E. van Niekerk</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>J.D. du Toit, <em>Ds. S.J. du Toit in weg en werk</em>, Paarl, 1917.</p>
+
+<p>P.J. Nienaber, <em>Ds. J.J. du Toit, die eensame Ismael</em>, Pretoria, 1940; J. Ploeger, <em>Onderwys en onderwysbeleid in die SuidAfrikaanse republiek onder ds. S.J. du Toit en dr. N. Mansvelt, 1881-1900</em>. Archives Year Book 1952, I; P.D. van der Walt, <em>S.J. du Toit, vegter vir sy taal</em>, Kaapstrad, 1963.</p>
+
+<p>F.A. van Jaarsveld, <em>The Awakening of Afrikaner Nationalism 1868-1881</em>, Cape Town, 1961.</p>
+
+<hr />
+
+<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (In 20 Volumes). Volume Three: South Africa- Botswana-Lesotho-eswatini. Ed. Keith Irvine. Algonac, Michigan: Reference Publications Inc., 1995.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Du Toit, Stephanus Jacobus (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +766,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +805,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

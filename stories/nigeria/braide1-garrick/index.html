@@ -607,8 +607,73 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Prophet Garrick Sokari Marian Braide, a prominent healer and prophet, was one of the originators of the African independent church movement. Braide became an Anglican catechist (missionary) in the turbulent years following Bishop Samwel Crowther’s removal as leader of the Niger Delta Pastorate. Semi-autonomous status was granted to the Nigerian Anglican church in 1892 with Bishop James Johnson in authority. Although Johnson operated independently, he never cut ties with the sponsoring Church Missionary Society (CMS).</p>
+
+<p>Braide had a gift for healing, and beginning in 1908, people came to him for cures and prophecies. He was said to be able to predict personal difficulties and to bestow good fortune. He retained the support of Johnson because his healing, although unusual, was not far removed from the experience of the evangelical CMS. This toleration also stemmed in part from Braide’s success in getting converts to cast out their fetishes and idols. He challenged traditional priests in a rainmaking contest and then bested them by invoking the Christian God. He spent night vigils in prayer, enforced Sunday observance, and preached peace and reconciliation. He also denounced the use of alcohol so completely that consumption fell dramatically. The loss in excise taxes from the sale of alcohol was so great that when the British moved against him in fear of this growing influence, they listed the decline in revenue as one of their charges.</p>
+
+<p>By 1915, Braide had attracted a following more attached to him than to the Delta ministry or the CMS; his followers were estimated to number more than a million. He was honored as a prophet and began using that title, calling himself Elijah II. Braide had become the focus of a cult. Over two-thirds of the Delta congregation abandoned Bishop Johnson for Braide, and Johnson turned against his protégé. After proscribing the movement for heresy, Johnson asked the British colonial authorities to investigate. They needed little prompting. When Braide was quoted as saying that power was passing from whites to blacks during World War I, the British imprisoned him for sedition. Without him, the last tenuous links to the CMS were severed and a new denomination, the Christ Army Church, was founded by his disciples. It was one of the first independent churches founded in African reaction to foreign domination. Braide died in an accident in 1918, and his movement splintered into a number of factions, some continuing his rigorous Christian morality and others adapting Christianity to African customs.</p>
+
+<p>Norbert C. Brockman</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Ewechue, Ralph (ed.).  <em>Makers of Modern Africa.</em>  2nd edition.  London: Africa Books, 1991.</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>An African Biographical Dictionary</em>, copyright © 1994, edited by Norbert C. Brockman, Santa Barbara, California. All rights reserved.</p>
+
+<hr />
+
+<p>External link</p>
+
+<p><em>Encyclopaedia Britannica</em>  (complete article):  <a href="http://www.britannica.com/eb/article-9016172/Braid-movement"> Braide movement</a></p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Braide, Garrick Sokari Marian (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +752,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +791,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

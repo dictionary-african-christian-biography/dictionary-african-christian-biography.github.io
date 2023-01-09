@@ -605,8 +605,85 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Enseignante et évangéliste baptiste jamaïcaine au Cameroun.</p>
+
+<p>Née esclave, Johnson figurait parmi plusieurs pionniers
+de jamaïcains libres qui ont voyagé en 1843 jusqu’à Clarence,
+sur l’île de Fernando Po, et qui se sont installés
+en 1845 à Douala, le l/ong de l’estuaire du Cameroun.
+En 1853, Alfred Saker, missionnaire de la Société Missionnaire
+Baptiste (1814-1880) l’a baptisée et l’a encouragée
+a ouvrir une station missionnaire à Douala avec son
+mari, Sam Johnson. Avec un autre collègue missionaire
+jamaïcain, Joseph Jackson Fuller (1825-1908), Mammie
+Johnson a aidé à poser les fondations de l’oeuvre protestante
+au Cameroun. Ils ont étudié les langues indigènes et
+ont entrepris le travail de la traduction. Ils ont
+aussi établi des églises et ont pourvu des services
+dans le domaine de la médecine, de l’éducation, de
+l’agriculture et de la formation industrielle. En sa
+qualité de membre de l’équipe pastorale jamaïcaine,
+Johnson a lancé le travail parmi les femmes dans l’église,
+et elle a encouragé la formation de la direction des églises
+par les indigènes au Cameroun.</p>
+
+<p>Ses collègues missionnaires baptistes anglais ont été très reconnaissants des soins qu’elle administrait aux malades et aux enfants de missionnaires.  A l’occasion de sa mort, lors de sa commémoration, ils ont parlé de l’inspiration que cette femme ouvrière laïque suscitait en eux.</p>
+
+<p>Paul R. Dekar</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p>Horace Orlando Russell, “The Missionary Outreach of the West Indian Church to West Africa in the Nineteenth Century, with Particular Reference to the Baptists” [L’Oeuvre Missionnaire de l’Eglise des Antilles en Afrique de l’Ouest au Dix-neuvième Siècle, avec Référence Particulière aux Baptistes] (Thèse de doctorat, Oxford University, 1972); Brian Stanley, <em>The History of the Baptist Missionary Society, 1792-1992 [L’Histoire de Société Missionnaire Baptiste, 1792-1992]</em> (1992). Les sources de la SMB telles que Thomas Lewis, <em>These Seventy Years, An Autobiography [Ces Soixante-Dix Ans, une Autobiographie]</em> (1930) et Joseph Jackson Fuller, manuscrit autobiographique, qui se trouvent à Regent’s Park College, Oxford, font souvent référence à Jackson.</p>
+
+<hr />
+
+<p>Cet article est reproduit, avec permission, du <em>Biographical Dictionary of Christian Missions [Dictionnaire Biographique des Missions Chrétiennes]</em>, copyright (c) 1998, par Gerald H. Anderson, W.B. Eerdmans Publishing Company, Grand Rapids, Michigan.  Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Johnson, Mammie`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +764,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +801,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -611,8 +611,66 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Zare’a Ya’eqob (who is believed to have lived in the 17th century) was the author of a book of philosophy known as Hatata Zara Yaqob (“The Investigations of Zare’a Ya’eqob”).</p>
+
+<p>The religious policies of the reign of Emperor Susneyos [reigned 1607-32], who had accepted Catholicism, were a threat to Ethiopians of the Orthodox Church, among whom was Zare’a Ya’eqob. He was obliged to leave his city, Aksum, to live a secluded life in the mountains of Ambara, in Tegré province. His religious contemplation there led him to the point of doubting even the existence of God. Since no previous existing work in Ethiopia deals with religious problems in a rational way, the unique quality of his work raised doubts in the minds of the 20th-century Italian scholar C. Conti Rossini. Conti Rossini tried to prove that the name Zare’a Ya’eqob was only a pseudonym adopted by the Father Giusto da Urbino, an Italian monk and scholar who lived in Ethiopia in the 19th century, and whom he believed to be the real author of the Hatata. Although some of Conti Rossini’s assumptions may be correct, it is nevertheless difficult to believe that such a vivid account of the religio-political situation of 17th century Ethiopia could have been written 200 years later.</p>
+
+<p>Amsalu Aklilu</p>
+
+<hr />
+
+<p><strong>Bibliography</strong></p>
+
+<p>C. Conti Rossini, “Lo Hatata Zare’a Ya’eqob e il Padre Giusto da Urbino” (“The Hatata Zare’a Ya’eqob and Father Ciusto da Urbino”), <em>Rendiconti della Reale Accademia dei Lincei</em>, Vol. XXIX, Rome, 1920; I. Guidi, <em>Storia della letteratura etiopica</em> (“History of Ethiopian Literature”), Rome, 1932; E. Littmann, <em>Geschichte der Athiopischen Literatur *(“History of Ethiopian Literature”), Leipzig, 1907, P</em>hilosophi Abessini, sive vita et philosophia magistri Zare’a Ya’eqob eiusque discipuli Walda-Heywat philosophia <em>(“Abyssinian Philosophers, or the Life and Philosophy of Master Zare’a Ya’eqob and the Philosophy of His Disciple Walda Heyewat”), Paris, 1904; E. Mittowoch, *Die amharische version der ‘Soirées de Carthage’</em> (“The Amharic Version of the ‘Nights of Carthage’”) Berlin, 1934.</p>
+
+<hr />
+<p>*</p>
+
+<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (in 20 Volumes). Volume One Ethiopia-Ghana. Ed. L. H. Ofosu-Appiah. New York: Reference Publications Inc., 1977. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Yaeqob, Zarea (Scholar)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +749,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -730,6 +788,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

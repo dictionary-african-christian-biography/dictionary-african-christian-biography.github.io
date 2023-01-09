@@ -607,8 +607,80 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Brother Walsh was born on February 8, 1853 at Silvermines in Ireland. He was a maternal uncle of Bishop J. Shanahah.</p>
+
+<p>He originally wanted to be a priest. He registered on September 20, 1875 in the Blackrock Juniorate. His original name was Patrick Walsh. Due to his advanced age (he was already twenty-two and was just about to begin his secondary education, partly because of poverty!) he could not cope with the rigorous training of the young seminarians. He 1eft the Juniorate and went over to the Brothers’ Novitiate. He made his first profession on March 8, 1878 and took the name Adelme.</p>
+
+<p>There was nothing special about him except his simplicity and resignation to the will of God through his superiors. Between 1893 and 1896 he worked in Sierra Leone. Then he was recalled to Ireland. He always desired to return to work in Africa after this first experience in Sierra Leone. For a long time this was denied him.</p>
+
+<p>The opportunity finally came through his young nephew who was by this time assigned as the Vicar Apostolic to the Niger mission. It was in 1908 when a brother assigned to the Vicariate (Brother David) due to poor health was recalled to their mother-house in Ireland, Shanahan did not waste any time in recommending that Brother Adelme be sent to replace the sick confrère. In his letter to Ireland he wrote:</p>
+
+<blockquote>
+  <p>Now in Rockwell is a veteran West African campaigner pining away for a glimpse of the scene of his former labours. Brother Adelme is the man. A thousand times he has written
+to me on the subject. Could he not be spared to take Brother David’s place? …. [1]</p>
+</blockquote>
+
+<p>The request was granted and so Br. Adelme set sail to Nigeria. He was very warmly received by his nephew, Shanahan. He was then assigned to the mission in Onitsha Waterside (Immaculate Conception mission) where he taught in the school and looked after the garden. It was in this mission house that he worked closely with Fr. L. J. Ward.</p>
+
+<p>He died on July 23, 1920 at the age of 67. Bishop Joseph Shanahan, his young nephew, was deeply touched by his death. So too were many of those (both his confrères and the Nigerians) who had known him at a close range. He was interred in Onitsha with the other great missionaries before him.</p>
+
+<p>Denis Chidi Isizoh</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>Shanahan papers, Holy Ghost archives, Temple Park, Dublin.</li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>The Dawn From on High : A Brief History of the Catholic Church in Ogbunike</em>, copyright © 1995, by Rev. Fr. Denis Chidi Isizoh, Tipografica Leberit, Rome, Italy.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Walsh, Adelme`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +759,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +798,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

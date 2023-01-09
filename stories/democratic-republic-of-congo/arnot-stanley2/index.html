@@ -607,8 +607,63 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Frederick Stanley Arnot was a pioneer Plymouth Brethren missionary in central Africa. Arnot was born in Glasgow and brought up in a devout Scottish family, friends of David Livingstone’s wife and children. In 1874 he attended Livingstone’s funeral in Westminster Abbey. Determined to continue Livingstone’s work, he arrived in Africa in 1881 as an independent missionary connected with the Plymouth Brethren and proceeded north from Durban, eventually reaching Lealui, the capital of the area ruled by Lewanika, the paramount chief of the Lozi, in what is now Zambia. After two fruitless years he moved on to Angola and then to Garenganze, in the Katanga (now Shaba) district of Zaire, then unannexed by any European power. Ill health dogged him, and after seven years mostly on his own, he handed his work over to Dan Crawford and others. He made several other major central African journeys, planning and helping to open new missions stations and bringing the South Africa General Mission in northern Rhodesia (now Zambia), but he was forced by recurrent malaria to base himself in Johannesburg. Arnot had little education but nevertheless became a prolific through unexciting writer in the cause of missions. His great gift was to lead and inspire others; he was utterly dedicated to his understanding of the missionary calling. He was awarded a fellowship of the Royal Geographical Society for his journeys on the Zambezi-Congo watershed. He died Johannesburg.</p>
+
+<p>M. Louise Pirouet</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Frederick Stanley Arnot, <em>From Natal to the Upper Zambezi</em> (1883), <em>Garenganze, or Seven Years Pioneer Mission Work in Central Africa</em> (1893). Arnot also edited an edition of David Livingstone’s <em>Missionary Travels and Researches in South Africa</em> (1899). A popular biography dealing with Arnot’s early years is Tony Lawman, <em>From the Hands of the Wicked</em> (1960), and a full biography is Ernest Baker, <em>The Life and Explorations of Frederick Stanley Arnot, F.R.G.S.</em> (1920) which largely reprints sections of Arnot’s own writings. The only scholarly evaluation is by Robert Rotberg in his introduction to the 1969 reprint of <em>Garenganze</em>.</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Arnot, Frederick Stanley (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +742,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +781,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

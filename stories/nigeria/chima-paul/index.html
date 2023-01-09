@@ -607,8 +607,73 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Paul Chima was born at Akwukwu-Igbo, a farming community in the present-day Delta state of Nigeria in September of 1928. Akwukwu-Igbo was a religious community where there were many Catholic and Protestant churches.</p>
+
+<p>Having just completed his elementary education, Paul Chima taught briefly at Jengre Seventh-day Adventist (SDA) Primary School near Jos in northeastern Nigeria from 1944 to 1948. After completing his teachers’ training course at Ibadan in 1947, he went back to the school at Jengre to continue his work. To improve his lot as a teacher-evangelist, he enrolled for the Grade II Teachers’ course in 1954 at the SDA School, Ihie, in eastern Nigeria. During this period, he married his wife, Christy, in 1955 and the marriage was later blessed with five girls. Upon graduation, he continued teaching either at Jengre, Ibadan or Ile-Ife until 1963.</p>
+
+<p>Paul Chima seems to have had a thirst for education uncommon in his time. He enrolled at the Adventist College of West Africa, where he obtained a bachelor’s degree in theology in 1967. He and his family were sent to Liberia as missionaries after his graduation. They worked in that field until 1970, which marked the end of the Nigerian civil war. When he returned to Nigeria he was posted to the Adventist Grammar School in Ede as a Bible teacher where he worked until 1973 when he was appointed as the Sabbath School Director of SDA work in the whole of the Nigerian field.</p>
+
+<p>On January 1, 1977, Chima was appointed as president of the newly created Bendel Mission of the SDA church, headquartered in Bénin. As pioneer president of this virgin territory, he worked assiduously to spread the gospel and increase the membership of the church in that part of Nigeria (now known as Niger Delta region). After operating from rented apartments for a while, it was his responsibility to embark on the building of a headquarters befitting the mission territory.</p>
+
+<p>The effect of Chima’s work can be seen in the growth of church membership. For instance, the membership in what was considered a difficult terrain grew from 358 at the beginning of his administration to 1568 by 1985 when he died. His pioneering efforts led to exponential growth. Today, what used to be the Bendel Mission (now Edo-Delta Conference) is a full fledged self-supporting administrative unit catering to tens of thousands of SDA members in that part of the country. This Adventist pioneer died on December 6, 1985, leaving behind his wife, Christy, and five children.</p>
+
+<p>Abiodun Ayodeji Adesegun</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Alao, Dayo. <em>90 Years of Adventism in Nigeria - A Compendium</em>. Lagos: Communication/PARL Department of the Seventh-day Adventist Church in Nigeria, 2004.</p>
+
+<p>Babalola, D.O. <em>Sweet Memories of Our Pioneers</em>. Lagos: Emaphine Reprographics Ltd., 2001.</p>
+
+<hr />
+
+<p>This article, received in 2007, was researched and written by Abiodun Ayodeji Adesegun, a Ph.D. candidate at the University of Ibadan, Nigeria, under the supervision of Rev. Dr. Deji Ayegboyin, <em>DACB</em> liaison coordinator.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Chima, Paul Chibunna`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +752,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +791,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -609,8 +609,81 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Celle qui devait être la première prieure malgache du Carmel de Tananarive naquit dans une famille qui comptait treize enfants. Son père était un sculpteur ébéniste incarnant les solides vertus des chrétiens des premiers âges, vivant selon sa foi, aimant son prochain, accomplissant son travail avec une grande conscience. Ses qualités marquèrent sa fille Émilie.</p>
+
+<p>Cette dernière aimait l’étude, mais bien souvent, le soir, au retour de l’école, alors qu’elle s’appliquait à ses devoirs, elle devait les interrompre pour aider sa mère: la garde d’un bébé, les corvées quotidiennes de toutes les familles malgaches: l’eau à puiser, le bois à ramasser, le riz à piler. Elle se souvient qu’elle le faisait parfois à contrecœur, mais il fallait bien participer aux travaux d’une maisonnée aussi nombreuse.</p>
+
+<p>A l’âge de dix-sept ans, répondant à un appel irrésistible, Émilie décida d’entrer au Carmel; ce fut un drame de famille: bravant la colère maternelle, elle s’échappa de la maison. Ce fut aussi une grande déception pour bien des prétendants.</p>
+
+<p>Sœur Marie-Bernard de l’Immaculée-c’était son nom de religieuse-marquait sa présence au monastère par une grande application dans ce qu’elle faisait et par une grande discrétion, mais aux récréations sa joie et sa vivacité d’esprit éclataient de façon parfois inattendue, mais toujours plaisante. La vie contemplative derrière la clôture ne l’avait pas coupée de ses nombreux parents et amis pour lesquels elle avait de touchantes attentions, notamment lors de leurs anniversaires.</p>
+
+<p>En 1973, l’heure était venue de marquer l’implantation du Carmel en terre malgache par la nomination d’une prieure originaire du pays à la tête du Carmel de Tananarive particulièrement prospère et riche en vocations. La quasi-totalité…de la communauté pensa à la désignation à ce poste de Sœur Marie-Bernard de l’Immaculée en raison de sons sens surnaturel, de son courage, de sa prudence et de ses dons d’esprit et de cœur. Elle-même n’y pensait pas.</p>
+
+<p>Donnant la pleine mesure de ses moyens. Mère Marie-Bernard de l’Immaculée porta sur ses frêles épaules de trente-trois ans la charge de lourdes responsabilités, faisant face à de multiples difficultés avec conscience, simplicité, et confiance.</p>
+
+<p>Pour une jeune prieure faisant ses débuts, les tâches ne manquèrent pas: l’aggiornamento, c’est-à-dire l’application au Carmel de Tananarive des réformes conciliaires préconisées par Vatican II; la malgachisation, notamment l’emploi de la langue malgache pour la liturgie, les offices les chants, etc.; la création du Carmel de Tuléar en y détachant une partie de la communauté de Tananarive avec tous les problèmes financiers que pose une fondation nouvelle.</p>
+
+<p>Lors des événements de février 1975, le Carmel vécut dans l’angoisse le siège et l’assaut par l’armée du groupement mobile de Police situé à proximité. La Mère Supérieure avait réuni toute la communauté en prière tandis que, dehors, les détonations faisaient rage, causant quelques dégâts aux bâtiments.</p>
+
+<p>Mère Marie-Bernard de l’Immaculée succomba à la peine, surmenée de travail et ne ménageant pas sa santé. Elle fut hospitalisée pendant cinq semaines et s’éteignit le 5 janvier 1978. Ses obsèques furent un triomphe: le Cardinal, quatre évêques, soixante prêtres, et une foule nombreuse entourèrent le cercueil où elle repose pour l’éternité.</p>
+
+<p>Elle avait 38 ans dont 21 de vie religieuse. La grande maturité et la grande sagesse dont elle fit preuve pendant ses cinq années de priorat auraient bien mérité une longue carrière. Sa vocation en fut toute autre.</p>
+
+<p>Raymond Delval</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p><em>Notice du Carmel de Tananarive</em>, janvier 1978.</p>
+
+<hr />
+
+<p>Cet article, réimprîmé ici avec permission, est tiré d’<em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em>, tome 3, publié en 1977 par l’Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Ravaoarisoa, Émilie`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +764,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -728,6 +801,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

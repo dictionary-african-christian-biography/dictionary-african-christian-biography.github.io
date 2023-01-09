@@ -607,8 +607,89 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/mozambique/muiane-elias/muiane_elias.jpg" alt="Elias Muiane" class="bio" /></p>
+
+<p>Elias José Muiane was born in the village of Dengeni near the town of Xai Xai in Mozambique.  His parents were not Nazarenes but they wanted the best for their son. As a youngster, like most boys his age, Elias was given the responsibility of herding the family’s cattle before he could go to school.</p>
+
+<p>In 1955 he was enrolled in a Roman Catholic primary school, having first started at the Presbyterian school in a village nearby.  The family was poor and could not afford the school fees so, through the influence of a family friend, contacts were made with the Nazarene mission school at Tavane.  In 1957 missionary Lorraine Schultz decided to accept Elias into the school, allowing him to work for her to earn his fees.  Elias did not know anything about the school routine, how to pray or how to sing.</p>
+
+<p>In addition to his regular studies, he was also enrolled in Bible classes after his regular classes.  On his first Sunday Miss Schultz preached in the church, and when people went to the altar to pray, he thought it was so funny and laughed out loud.  But the following year, a great revival descended over the mission station and Elias found Jesus as his Lord and Saviour.</p>
+
+<p>At the end of 1961 when exam time came in the school, the head teacher asked the students to respond to the question, “What I would like to do when I grow up.”  Elias had already heard God’s voice speaking to him and he responded, “I want to be a pastor.”  Everyone was so surprised!  But Miss Schultz was very pleased and urged Elias to enroll in the Bible School which he did.  After completing his Bible school training in 1965, Elias enrolled in the teacher training college in Xai Xai for two years and then was called to complete his military service.</p>
+
+<p>Elias Muiane was released from the army in 1971 and the following year he married  Miss Ana Langa.  Then they went to Tavane where he taught in the Nazarene primary school.  At the same time he served as pastor of the Xikeleni Church.  It was a difficult time because of the revolution.  As nationalization progressed government officials confiscated the keys to the church building and forbade the use of it.  Muine continued to pastor the congregation and led them in worship under a tree in the village.  Many other Nazarene churches in Gaza were closed in this way including Ulombe, Njatigwe, Xitsonguanini, Machecahomu, Mbenye and Mabunganini.[1]</p>
+
+<p>When the Marxist government took over, Elias was criticized for serving as a pastor and teacher at the same time.  All of the teachers at the Nazarene school were transferred to other schools to divide them up.  He was transferred from school to school because he refused to give up his Christian practices and beliefs. He finally left teaching and went to work for the ministry of agriculture in Maputo in the accounting office.  At the same time Muiane served in various pastorates. He was ordained in eswatini in 1977.</p>
+
+<p>From 1986 to 1988, he was responsible for the church’s ministry among the Mozambican miners working in South Africa.  In 1988 he was asked to return to Maputo to join the faculty of the newly organized Bible School.  While teaching there he also served as pastor.  For several years he served as a teacher and treasurer of the Seminário Nazareno em Moçambique while his wife, Rev. Mrs. Ana Muiane  pastored the Maputo City  Church.[2]</p>
+
+<p>Rev. Elias Muiane died suddenly of an apparent heart attack on September 5, 2003. Joanne Doerr wrote of him, “<em>Africa Region</em> salutes Rev. Elias Muiane, a man who was committed to excellence in the area of Christian education!”[3]</p>
+
+<p>Paul S. Dayhoff</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>
+    <p>Restrick, David W., “The Church of the Nazarene and the Mozambican Revoluion, 1975 to 1982,”  dissertation for the Doctor of Theology Degree at Boston University School of Theology, 2001, p. 319.</p>
+  </li>
+  <li>
+    <p>Rev. Dave Restrick, E-mail from interview with Rev. Elias Muiane, June 5, 2000.</p>
+  </li>
+  <li>
+    <p>Joanie Doerr, <em>Out of Africa</em>, Weekly E-mail news from Africa Region, Church of the Nazarene. (Sept. 17, 2003, 4; Sept. 25).</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Africa Nazarene Mosaic: Inspiring Accounts of Living Faith</em>, first edition, (Florida, Gauteng, South Africa: Africa Nazarene Publications, 2002), copyright © 2001, by Paul S. Dayhoff.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Muiane, Elias`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +768,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +807,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

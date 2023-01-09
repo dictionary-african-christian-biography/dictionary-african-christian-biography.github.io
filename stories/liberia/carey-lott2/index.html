@@ -607,8 +607,65 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Lott Carey was a leader of the first African American mission to Africa. He was born to slave parents in Virginia. Though his father and grandmother were devout Baptists, he was not converted until 1807. He obtained a Bible and taught himself to read, later enrolling in a night school for blacks established by William Crane, a white Baptist leader. Meanwhile, he had married, fathering two children. He had also gained a reputation as an effective evangelist, preacher and leader. In 1815 he and Crane led in organizing the Richmond African Missionary Society (RAMS). Carey (who remarried after the death of his first wife) and his friend Colin Teague were appointed as missionaries to Africa by the RAMS and the Baptist Triennial Convention as a part of a plan of the American Colonization Society to settle freed blacks in newly established African colonies. The two missionaries, their wives, Teague’s 16-year old son, and another couple organized themselves into a church before sailing in January 1821. Arriving first in the British protectorate and newly established colony of Sierra Leone in March, the American colonists were delayed in settling in Liberia until August of the following year.</p>
+
+<p>Carey was named health officer by the colony’s white governor, a task that absorbed much of his time and energy. He also acted as director of the schools and pastor of the newly established Providence Baptist Church. Repeated attacks by indigenous tribes, a lack of adequate supplies, fevers and other maladies, and internal dissension complicated life for the colonists. When the governor was forced by illness to return to America, Carey was named the colony’s first (albeit provisional) governor of African heritage. Responsible for the defense of the threatened settlement, he along with several others were killed by an accidental explosion of gunpowder in November 1828.</p>
+
+<p>Alan Neely</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Miles Mark Fisher, “Lott Carey: The Colonizing Missionary,” <em>Journal of Negro History</em> 7 (1922): 380-418, 427-448; Leroy Fitts, <em>Lott Carey: First Black Missionary to Africa</em> (1978) and <em>The Lott Carey Legacy of African American Missions</em> (1994); Sandy D. Martin, <em>Black Baptists and African Missions</em> (1989).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Carey, Lott (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +744,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +783,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

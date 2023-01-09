@@ -611,8 +611,67 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Eldest son of Chief Sekgoma I of the Ngwato people of Bechuanaland (now Botswana).</p>
+
+<p>In about 1858 Khama (correctly Kgama) and his father met missionaries of the (Lutheran) Hermannsburg Mission while in exile as guests of Sechele of the BaKwena. One of the missionaries, Heinrich C. Schulenburg, went home with them, and Khama joined the church. Khama’s father objected to the practices of the new faith and was exiled in 1875; Khama then ruled at Shoshong. He worked hand in hand with missionaries of the London Missionary Society (LMS; the Lutherans withdrew), and together they labored to build up a strong church. In the partnership Khama-who was known as Khama the Great and Khama the Good-was the senior partner. The LMS church he helped create was very much a state church for the BaNgwato, and indeed no rival was allowed. Missionaries who offended Khama were soon ordered out of his kingdom.</p>
+
+<p>Khama was publicly praised by the LMS for his prohibition of the liquor trade and the drinking of spirits, his observance of the Sabbath, and his curtailing of traditional ceremonies such as rainmaking and the initiation rites for youth. He welcomed the offer of British protection in 1885. In 1895 he journeyed to Britain with fellow chiefs to oppose Cecil Rhodes, who was demanding administrative rights over the protectorate. He continued to rule his people strictly until his death.</p>
+
+<p>Gordon M. Haliburton</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>J. Mutero Chirenje, <em>Chief Kgama and His Times c. 1835 - 1923</em> (1978) and <em>A History of Northern Botswana 1850 - 1910</em> (1977); Anthony Dachs, <em>Khama of Botswana</em> (1971).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Khama Boikano (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +750,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -730,6 +789,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -607,8 +607,79 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Ikiriko was instrumental in helping the Baptist mission make tremendous and successful inroads into Ekpeyeland.</p>
+
+<p>Ikiriko was born in 1907 at Ogbologbo village in Ekpeyeland. He went to the famous Government Primary School in Ahoada between 1925 and 1931.</p>
+
+<p>When Ikiriko met Dr. Carson and his wife, pioneer missionaries from the Southern Baptist Convention, U.S.A., at Joinkrama, in Engenni, he invited them to establish a church in his hometown of Ogbologbolo, in Igbuduya. The missionaries responded to his call and as a result, the foundation of the Baptist Church was laid in that part of Ekpeyeland.</p>
+
+<p>Miss Josephine Scaggs, the American missionary who succeeded Dr. and Mrs. Carson, recognized Ikiriko’s good work and devotion.  She introduced a new phase in the  administration of the church by moving its headquarters to Ahoada town in 1964.  A Bible school and a home craft center were established very soon thereafter at Ahoada. In his book, <em>Historical and Cultural Perspectives of Rivers State</em>, Amini Philips observed that the establishment of the Craft School which was initially earmarked for Shaki, a town in Yorubaland, stirred up hatred against Ikiriko among the Yoruba congregation. Miss Scaggs, who had stayed in both Yorubaland and Ekpeyeland, saw the poor educational background of the Ekpeye people and immediately consented to the establishment of the school at Ahoada.  There it successfully trained many young women of Ekpeye.</p>
+
+<p>The church also established primary schools in various Ekpeye villages thanks to Ikiriko’s leadership.  He led the crusade for saving motherless babies and twin children, who were customarily killed in Ekpeye society before the coming of Christianity.</p>
+
+<p>Also to his credit, the Baptist Church recorded a monumental presence in virtually all the towns and villages in Ekpeyeland within twenty years of the coming of Christianity to that part of the Niger Delta.</p>
+
+<p>Ikiriko’s pioneering efforts contributed, in no small measure, to the spread and growth of the Baptist Church in that part of the Niger Delta at a time when the majority of the local people were illiterate pagans. He was later trained and ordained a pastor, in recognition of his priceless contributions to the growth of Christianity.</p>
+
+<p>Rev. Ikiriko died in 1986, a satisfied and accomplished man. He was buried with his wife who also died soon after he was pronounced dead. They were buried on the same day in different caskets, an unprecedented event.  Rev. Ikiriko was unusually close to his wife. Even before he had embraced Christianity, their marriage was an epitome of love, endurance, understanding, and total commitment.  As a result, they could not be separated even by death.</p>
+
+<p>Melvin Okoroigwe</p>
+
+<hr />
+
+<p><strong>Sources:</strong></p>
+
+<p>E. J. Alagoa,  <em>A Chronicle of Grand Bonny</em>  (Ibadan University Press, 1972):  81.</p>
+
+<p>I. C. Amini-Philios, <em>Historical Perspectives of Rivers State</em> (Iscap Enterprises, 2000): 69.</p>
+
+<hr />
+
+<p>This story, received in 2004, was researched and written by Mr. Melvin Okoroigwe, a student in the Department of History, University of Port Harcourt, under the supervision of Dr. Protus O. Kemdirim, DACB liaison coordinator at the University of Port Harcourt and DACB regional coordinator for Nigeria.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Ikiriko`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +758,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +797,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

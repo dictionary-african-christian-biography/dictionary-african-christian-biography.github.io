@@ -605,8 +605,67 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>C’est au pasteur norvégien T. G. Rosaas que revient l’honneur d’avoir le premier soigné les lépreux à Madagascar et d’avoir fait connaître les sources thermales d’Antsirabé.</p>
+
+<p>Torkild Guttormsen Rosaas était né à Evje (Norvège) le 1er octobre 1841. Après ses études de théologie (1864-1869), il reçut la consécration pastorale à Entumeni (Afrique du Sud) au cours de son voyage vers Madagascar, des mains de l’évêque Schreuder qui dirigeait alors l’œuvre de la Mission Luthérienne Norvégienne (N.M.S.) dans cette région du monde et dont la Grande Ile ressortissait.</p>
+
+<p>Arrivé dans l’île en 1869, le pasteur Rosaas fut missionnaire dans le Vakinankaratra, tout d’abord à Loharano, puis à Masinandraina, enfin, et surtout, au chef-lieu de cette province à Antsirabé où il résida jusqu’en 1907.</p>
+
+<p>C’est lui qui érigea en 1887 la léproserie non loin de cette ville à Ambohipiantrana (“au village de la miséricorde”), avec la sœur Marie Foereid, diaconesse arrivée en 1890 pour diriger les traitements et les soins aux malades.</p>
+
+<p>T. G. Rosaas remarqua également les sources thermales de l’endroit et envoya des échantillons à l’Université d’Oslo aux fins d’analyse. Ces eaux se révélèrent favorables au traitement des rhumatismes et le docteur Chr. Borchgrevink prescrivit des cures qui attirèrent des foules. Rosaas se trouva obligé de construire un établissement balnéaire dont les bâtiments ne pouvaient cependant suffire à la seule famille royale dont les déplacements entraînaient parfois plus de 300 personnes à la fois!</p>
+
+<p>Rosaas rentra en Norvège en 1907 et mourut à Berg, Vestfold, en 1913.</p>
+
+<p>L. Munthe, L. Molet</p>
+
+<hr />
+
+<p>Cet article, réimprîmé ici avec permission, est tiré d’<em>Hommes et Destins: Dictionnaire biographique d’Outre-Mer</em>, tome 3, publié en 1977 par l’Académie des Sciences d’Outre-Mer (15, rue la Pérouse, 75116 Paris, France). Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Rosaas, Torkild Guttormsen`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +746,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +783,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -601,8 +601,64 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Catherine Louise Roe Mabie was a missionary doctor, teacher, and educational advocate in the Belgian Congo. Mabie was born in Rock Island, Illinois. She was inspired at age nine by missionary talks and Methodist revivals and was baptized in a Baptist church. At age ten, she began to teach Sunday school to hoodlum boys in an unchurched area of Chicago. Having become interested in missionary work through the Christian Endeavor Society, she studied medicine at Rush Medical College to prepare for work as a missionary doctor.</p>
+
+<p>In 1898 the Woman’s Baptist Foreign Missionary Society (WBFMS) appointed Mabie for service at Banza Manteke, Belgian Congo (Zaire), and at age 26, she sailed for Africa. She served her internship at the Banza Manteke hospital and for many years had charge of the medical work in that district. In 1911 she became a member of the faculty of the Congo Evangelical Training Institution at Kimpese. In 1913 she took part in a meeting in Detroit to unify the home and foreign Woman’s Baptist Mission Societies, resulting in the World Wide Guild. Mabie served as the secretary of the WBFMS for 20 years. In 1920 she was appointed to serve in the Belgian Congo with the Phelps-Stokes Commission to study educational, economic, social, and religious conditions in Africa. Following a furlough and tour of schools in the southern United States, she attended the Third Baptist World Alliance Congress, held in 1923 in Stockholm, Sweden. In 1926 she was appointed as a delegate to the conference on Christian Mission in Africa, held at Le Zoute, Belgium. She returned to Kimpese to translate and print school readers and textbooks in the Kikongo language. In 1932 Albert, king of Belgium, bestowed upon her the honor of becoming a Chevalier of the Royal Order of the Lion. In 1941 Mabie retired to the United States at age 70, after 30 years of service in Kimpese. She continued giving talks and papers, doing deputation work, and attending conventions until her death at age 91.</p>
+
+<p>Joan R. Duffy</p>
+
+<hr />
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Catherine L. Mabie, <em>Our Work on the Congo: A Book for Mission Study Classes and for General Information</em> (1917) and <em>Congo Cameos</em> (1952). James Henry Franklin, <em>Ministers of Mercy</em> (1919), includes a chapter about Catherine L. Mabie.</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Mabie, Catherine Louise Roe`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -681,7 +737,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -720,6 +776,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

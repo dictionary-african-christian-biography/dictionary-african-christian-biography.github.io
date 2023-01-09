@@ -605,8 +605,73 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Deuxième primat de l’église du Seigneur (Aladura).</p>
+
+<p>Instituteur nigérien de souche anglicane, Adejobi a rejoint l’Église du Seigneur de Josué O. Oshitelu (Aladura) en 1940. Il a fondé des branches d’abord à Lagos, ensuite au Sierra Léone à partir de 1947, et au Ghana en 1953, mais le gouvernement a refusé de permettre l’expansion en Gambie. Comme il avait voulu depuis longtemps étudier à l’étranger, il a pu faire ses études à l’Institut Biblique de Glasgow de 1961 à 1963.</p>
+
+<p>Après avoir évalué la situation et rendu visite à l’archevêque de Canterbury ainsi qu’a W. Visser’t Hooft à Genève, il a commencé une branche de l’église à Londres en 1964. De retour au Nigéria, il a fondé une école secondaire, une imprimerie, et une faculté de théologie près de Lagos sous la direction d’un missionnaire mennonite américain. Quand Oshitelu est mort en 1966, Adejobi est devenu primat. En 1976, cette église était une des premières églises africaines indépendantes à devenir membre du Conseil Mondial des Eglises (W.C.C), et en 1983, Adejobi a été élu membre du comité central de cette organisation. Ses voyages fréquents, ainsi que sa vision d’homme d’état ont fait de lui l’agent principal de la croissance internationale et de l’acceptation œcuménique de l’église.</p>
+
+<p>Harold W. Turner</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p>H. W. Turner, <em>The African Independent Church</em> [L’église africaine indépendante], 2 vols. (1967), vol. 1, chap. 9, ainsi que l’ensemble du texte. Les nombreuses publications d’Adejobi, ainsi que les textes ayant rapport à ses obsèques, se trouvent dans la bibliothèque de Selly Oak Colleges, à Birmingham, en Angleterre.</p>
+
+<hr />
+
+<p>Cet article est reproduit, avec permission, du <em>Biographical Dictionary of Christian Missions</em> [Dictionnaire de biographies des missions chrétiennes], © 1998, par Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. Tous droits réservés.</p>
+
+<hr />
+
+<p>Lien externe:</p>
+
+<p><em>Encyclopaedia Britannica</em>, (article complet en anglais): <a href="http://www.britannica.com/EBchecked/topic/12038/Aladura">Aladura</a>.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Adejobi, Emmanuel Owoade Adeleke`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +752,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +789,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

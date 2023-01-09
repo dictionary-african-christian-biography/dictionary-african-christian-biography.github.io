@@ -605,8 +605,85 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/lesotho/coillardfrancois/F-coillard-head.gif" alt="Francois Coillard" class="bio" /></p>
+
+<p>Après avoir longuement servi la Société des Missions Evangéliques  de Paris au Lésotho (1857-77), il alla  au Zimbabwe à la tête d’une expédition pour ouvrir une mission parmi les Shona.  Là il fut arrêté par le roi Ndebele LOBENGULA, qui l’expulsa du pays.  Suivant les conseils du chef Ngwato KGAMA III, il tenta alors une visite au royaume Lozi en Zambie occidentale.  Arrivant au milieu d’une guerre civile, il fut obligé là aussi de rebrousser chemin.  Le roi Lozi LEWANIKA l’invita cependant à revenir.  C’est ce qu’il fit en 1885 et la mission eut beaucoup de succès sous sa direction.  Plus tard, Coillard joua un rôle important dans les négociations entre Lewanika et les factions impériales britanniques.  Lewanika n’accepta jamais de se faire baptiser mais il encouragea le travail séculier de la mission.  Le travail pionnier de Coillard donna aux Lozi un avantage important dans le domaine de l’éducation par rapport aux autres peuples de la Zambie.</p>
+
+<p>Mark R. Lipschutz et R. Kent Rasmussen</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p>Favre, Édouard.  <em>François Coillard.</em>  Paris: Société des Missions évangéliques, 1913.</p>
+
+<p><em>Dictionary of National Biography.  Main Dictionary to 1900,</em> 22 volumes; * Twentieth Century D.N.B.,* 5 volumes.  Londres: Presses de l’Université d’Oxford, 27 volumes, 1885-1950.</p>
+
+<p>Caplan, G. L.  <em>The Elites of Barotseland, 1878-1969.</em>  Berkeley et Los Angeles: Presses de l’Université de Californie, 1970.</p>
+
+<p>Photos:</p>
+
+<p>[1<em>] *Coillard of the Zambesi</em> de C. W. Mackintosh (New York: American Tract Society, 1907).</p>
+
+<p>[2<em>] *Idem</em>.</p>
+
+<hr />
+
+<p>Cet article est reproduit, avec la permission des auteurs, du <em>Dictionary of African Historical Biography</em>, 2e édition, copyright © 1986, de Mark R. Lipschutz et R. Kent Rasmussen,  Presses de l’Université de Californie, Berkeley et Los Angeles, Californie, USA.  Tous droits réservés.</p>
+
+<hr />
+
+<h1 id="photo-gallery">Photo Gallery</h1>
+
+<p><img src="/images/bio-pics/lesotho/coillardfrancois/Lewanika.jpg" alt="Lewanika" class="bio" /></p>
+
+<p><img src="/images/bio-pics/lesotho/coillardfrancois/Lewanika-suite.jpg" alt="Lewanika" class="bio" /></p>
+
+<p>Un des premiers missionnaires français en Zambie.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Coillard, François (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +764,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +801,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

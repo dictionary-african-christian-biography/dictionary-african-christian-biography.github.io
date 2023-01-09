@@ -607,8 +607,92 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>The French Reformed Church was an active presence in South Africa, primarily in Basutoland, and as was common among French Protestant missionaries, a few leading families tended to support the missions generation after generation.</p>
+
+<p>One such person was Eugene Casalis, who spent twenty-three years among the Basuto before returning to Paris to become head of missionary training for his church. Like many French raised in a Calvinistic tradition, Casalis learned as much of the fear of God as he did of the love of God in his early years?[1]</p>
+
+<p>Casalis decided to become a missionary at age nine. He had been reading some of the missionary literature for children widely circulated in France by religious groups. The youth found what he called a “living sympathy” for Africans, triggered in part by an illustration in a story, “Gumal and Lina,” in which a young African, surrounded by the forests, lifts his arms skyward and says, “I am a Christian.” Accounts of the Spanish conquest of Mexico and Peru also aroused in him empathy for indigenous peoples.</p>
+
+<p>Casalis arrived in South Africa on February 24, 1833, after an arduous three-and-a-half month voyage to the Cape. There he was met by the redoubtable John Philip, who welcomed a generation of new missionaries to South Africa even when they were not members of his own denomination. It was Philip who suggested that Casalis resume the work of earlier French missionaries among the Basuto, who had been scattered in a recent violent war.</p>
+
+<p>Eventually the missionaries arrived at Thaba Nchu, the Black Mountain, where they led a service for some of the subchiefs of Moshesh, leader of the Basuto. The setting was one of spectacular beauty–brooding mountains, a vast plain filled with wildlife, and verdant pastures. Casalis, preaching in the idiom of that era, told the Basuto that the missionaries were servants of a high God, who had revealed himself to them through Jesus Christ and who offered blessings and salvation to those who accepted the divine message. One sentence from his sermon: “If you will receive our message, you will be like the ostrich which rejects its old feathers in order to get more beautiful ones.”</p>
+
+<p>Next they met the paramount chief, Moshesh, at his palace high atop Thaba Bosiu Mountain. Entrance to the plateau on which the massive compound was situated was by a winding narrow path along a riverbed, easily defensible by warriors at the top. Moshesh was a commanding presence, a leader now in his middle years, possessed with gravitas and a trim, athletic body.</p>
+
+<p>Casalis expressed the missionaries’ sorrow at the loss of life the Basuto had sustained in recent wars, as suggested by the whitened bones visible on the plain. War was the product of human pride and evil, the missionary continued, but because they were representatives of God, their desire was to bring peace. A new era of peace and progress was theirs, Casalis said, if the Basuto would accept the missionary presence and the God represented by it. The missionaries asked for land and permission to operate among the Basuto. Moshesh readily supported them, and soon land was cleared, buildings were constructed, and European agricultural practices were introduced alongside indigenous ones.</p>
+
+<p>“None of us experienced even the shadow of a regret for having left all that was most dear to us for the Lord,” Casalis wrote. He and the French Protestant missionaries established a solid presence among the Basuto, making it easier for Roman Catholic and Church of the Province of South Africa missionaries to conduct their activity a decade later. Among the Basuto he was known as <em>Mahloana-Matsoana</em>, “The man with the small black eyes,” and “the friend of Moshesh.”</p>
+
+<blockquote>
+  <p>You only are my portion, 0 Lord;</p>
+
+  <p>I have promised to keep your words.</p>
+
+  <p>I entreat you with all my heart,</p>
+
+  <p>Be merciful to me according to your promise.</p>
+
+  <p>–Psalm 119:57-58</p>
+
+</blockquote>
+
+<p>Frederick Quinn</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>“Eugene Casalis,” in Horton Davies, <em>Great South African Christians</em> (New York: Oxford University Press, Geoffrey Cumberlege, 1951), 57-66.</li>
+</ol>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>African Saints: Saints, Martyrs, and Holy People from the Continent of Africa</em>, copyright © 2002 by Frederick Quinn, Crossroads Publishing Company, New York, New York.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Casalis, Eugene (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +771,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +810,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -607,8 +607,72 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Ras Se’ela Krestos (15?-1636), the younger brother of Emperor Susneyos (reigned 1607-32) was responsible for the emperor’s conversion to Catholicism.</p>
+
+<p>Se’e1a Krestos’ father was a nobleman of Damot named Muso. The mother of both the emperor and Se’ela Krestos, Ete Hama1mal Warq, had many sons, but as Susneyos was the only son born to a prince, Fasilidas, the grandson of Emperor Lebna Dengel (reigned 1508-40), there was no rivalry among the half-brothers. In 1608, a year after Susneyos became emperor, he made Se’ela Krestos governor of Tegre, and in 1609 gave him Gojam, making him commander of a large number of experienced soldiers posted there to prevent a Galla occupation.</p>
+
+<p>The emperor liked the Spanish Jesuit missionary Pedro Paez (1564-1622), but Se’ela Krestos, who had had a thorough Orthodox religious education, was at first an articulate adversary of Paez and Catholicism. The astute missionary worked hard to win him over, and Se’ela Krestos’ open conversion to Catholicism in 1612 was a triumph for Paez, as Se’ela Krestos then used every means of persuasion to make the military, civil, and religious officials of Gojam follow his example.</p>
+
+<p>Susneyos himself favored the teachings of the Catholic Church, but feared public opposition. He was encouraged, however, by his influential half-brother, who was confident of support from Gojam. After Se’ela Krestos’ victory of 1617 over the Galla, the Gojam partisans of Catholicism were strengthened, and the emperor felt strong enough to support Catholicism openly; with his conversion in 1620, it became for a time the state religion of Ethiopia.</p>
+
+<p>After 1625, Se’ela Krestos’ influence over the emperor began to decline, while that of Prince Fasilidas , the heir to the throne and the supporter of an opposing policy, steadily increased. Afraid that intensifying civil war might split the country and cost him his throne, Fasilidas advised his father to make concessions to the supporters of the Ethiopian Church, while Se’ela Krestos recommended more repressive measures against the mounting opposition to Catholicism. Fasilidas’ views prevailed, and in July 1632 the Ethiopian Orthodox Church was re-established. Fasilidas became emperor, thus opening a reign that was to last from 1632-67. Fearing a Catholic uprising, he compelled the Jesuits to leave Ethiopia, and imprisoned Se’ela Krestos on Amba Waheni. In 1636 False rumors of the landing of Portuguese soldiers led Fasilidas to order his uncle’s death.</p>
+
+<p>Merid Wolde Aragay</p>
+
+<hr />
+
+<p><strong>Bibliography</strong></p>
+
+<p>M. de Almeida, <em>Historia de Ethiopia a alta ou Abassia</em> (‘ ‘History of Higher Ethiopia, or Abassia”), Coimbra, 1660; C. Beccari, <em>Rerum Aethiopicarum scriptores occidentales</em> (“Western Writers on Ethiopian Matters”), 15 vols, Rome, 1903-17; S. Johnson, <em>The History of Rasselas, Prince of Abyssinia</em>, London, 1759; J. Lobo, <em>Relation historique d’ Abyssinie</em> (“Historical Account of Abyssinia”), Paris,1728; P. Paez, <em>Historia da Etiopia</em> (“History of Ethiopia “), [written in the 17th century], reproduced from the original unpublished manuscript, Porto, 1945-1946; F.M.E. Pereira, <em>Chronica de Susneyos</em> (“Chronicle of Susneyos “), Lisbon, 1892-1900; B. Tellez, <em>Historia geral de Ethiopia a alta</em> (“General History of Higher Ethiopia”), Coimbra, 1660.</p>
+
+<hr />
+<p>*</p>
+
+<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (In 20 Volumes). Volume One: Ethiopia-Ghana. Ed. L. H. Ofosu-Appiah. New York: Reference Publications Inc., 1977.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Krestos, Se'ela`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +751,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +790,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

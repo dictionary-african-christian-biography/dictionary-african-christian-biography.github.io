@@ -607,8 +607,65 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Melchoir Joseph de Marion Brésillac was founder of the Society of African Missions. He was born at Castelnaudary, France, studied at the seminary of Carcassone, and was ordained a priest in 1838. In 1841 Brésillac joined the Missions Étrangères de Paris and the following year went to Pondicherry, India. In 1846 he was appointed bishop of the Provicariate of Coïmbatore, India. Brésillac favored rapid progress toward the ordination of indigenous clergy. He rejected the existing uncertainty toward the Malabar Rites, many of which, he felt, could be adapted for use by Christianity. He met with much opposition from other missionaries who found his views too progressive. His hopes that Propaganda Fide might provide a firm ruling on the question of Indian customs were misplaced, so that after eight years he felt he had no option but to resign. Brésillac now wanted to go to Africa as a missionary, but Propaganda Fide insisted that he should first found a missionary society. Brésillac’s Society of African Missions (SMA), specifically for “the most abandoned souls in Africa,” was founded at Lyon on December 8, 1856. Entrusted with the Vicariate of Sierra Leone, Brésillac led his society’s first missionary venture, arriving in Freetown in May 1859. Within six weeks he and four of his companions died of yellow fever.</p>
+
+<p>Brésillac gave the church a society that was to play a major role in the modern missionary movement. He also made a significant contribution to thinking on missions. He saw the missionary essentially as an apostle who founds new churches, and the key to founding new churches, in his view, was the formation of an indigenous clergy. What was at issue here was not the education of individual priests but rather the formation of a clergy that would in time be capable of producing its own bishops. Brésillac differed from many of his contemporaries in refusing to accept the view that the formation of such a clergy was impractical or inopportune and that missions could be successfully conducted without indigenous clergy. In 1994 the SMA numbered 1,229 members.</p>
+
+<p>Edmund M. Hogan, SMA</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Jean Bonfils, <em>Mgr. de Marion Brésillac</em> (1962); Patrick Gantly, <em>Marion Brésillac in India</em> (1991) and <em>Mission to West Africa</em>, vol. 1 (1991); Patrick Gantly and Ellen Thorp, <em>For This Cause</em> (1992); Edmund H. Hogan, “Marion Brésillac’s Views on Mission,” <em>SMA Bulletin</em>, no. 86 (June 1992): 18-26.</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `De Marion Brésillac, Melchior-Marie-Joseph (C)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +744,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +783,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

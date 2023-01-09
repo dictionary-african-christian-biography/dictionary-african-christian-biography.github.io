@@ -607,8 +607,89 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Reverend John Chilembwe, the great hero and martyr of Malawi (formerly Nyasaland), is a person of mythic proportions in his homeland because he was the first African with a sense of Malawian nationalism.  After founding one of the earliest independent Christian denominations in Africa, he led a dramatic and violent uprising against colonialism.</p>
+
+<p>Around 1880, Chilembwe became a pupil at the Church of Scotland mission in Blantyre, but he was converted by Joseph Booth, a British Baptist missionary, and became his assistant from 1892 until 1895.  Booth worked for a number of churches and had no denominational loyalty; he taught a radical equality that resonated with Chilembwe’s own sense of black pride.  In 1897, Booth took Chilembwe to the United States, where a Baptist church sponsored him through Virginia Theological College.  Here he seems to have come into contact with contemporary African-American thinking, especially that of Booker T. Washington.  He returned to Nyasaland in 1900 as an ordained Baptist and founded the Providence Industrial Mission, which developed into seven schools.</p>
+
+<p>Chilembwe preached an orthodox Baptist faith along with a morality that opposed alcohol and emphasized the values of hard work, personal hygiene, and self-help.  Chilembwe seriously seemed to believe that European-style propriety and etiquette would bring respect and success from whites.  His schools emphasized modern methods of agriculture and by 1912 had 1,000 pupils, plus 800 in the adult section.</p>
+
+<p>Events after 1912 disillusioned Chilembwe.  A famine in 1913 brought great hardship and starvation to many peasant farmers.  Mozambican refugees flooded into Nyasaland, and Chilembwe deeply resented the way they were exploited by white plantation owners.  When World War I broke out the following year, Africans were conscripted into the British army, and Chilembwe protested both from the pulpit and in the local press.  The white landowners were infuriated by his nationalist appeal, and several of his schools were burned down.  Added to personal problems of declining health, financial difficulties, and the death of a beloved daughter, Chilembwe’s sense of betrayal deepened into fury.</p>
+
+<p>In careful detail, Chilembwe planned an attack on the worst of the area plantations, which was known for cruelty to its African workers.  Whether Chilembwe thought that his rebellion would spark a general uprising is difficult to determine, because he had no clear long-term goal.  With 200 followers, he struck swiftly, and three plantation managers were killed.  One of these, a cousin of David LIVINGSTONE, was notorious for burning down tenants’ chapels, whipping workers, and denying them their wages.  His head was cut off and displayed on a pole in Chilembwe’s church.  The rebels, however, scrupulously observed Chilembwe’s orders not to harm any women or children.  The colonial response was immediate and ruthless, resulting in the death of many Africans.  Chilembwe was captured and shot immediately.</p>
+
+<p>Chilembwe must have been aware that the uprising was suicidal when he called on his men “to strike a blow and die.”  It was, nevertheless, the first resistance to colonialism that went beyond attempts merely to restore earlier traditional African authority; his rebellion looked toward a future nation.  In this sense, Chilembwe and his followers–mostly educated, Christian, small businessmen–demanded for themselves the same place in the modern world that they saw Europeans enjoying.</p>
+
+<p>Norbert C. Brockman</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Lipschutz, Mark R., and R. Kent Rasmussen.  <em>Dictionary of African Historical Biography.</em>  2nd edition.  Berkeley: University of California Press, 1986.</p>
+
+<p><em>The New Encyclopedia Britannica.</em>  15th edition.  Chicago, IL, 1988.</p>
+
+<p>Ewechue, Ralph (ed.).  <em>Makers of Modern Africa.</em>  2nd edition.  London: Africa Books, 1991.</p>
+
+<hr />
+
+<p>Additional reading:</p>
+
+<p>Phiri, Desmond.  <em>John Chilembwe</em> (1976).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from *An African Biographical Dictionary, *copyright © 1994, edited by Norbert C. Brockman, Santa Barbara, California. All rights reserved.</p>
+
+<hr />
+
+<p>External link</p>
+
+<p><em>Encyclopaedia Britannica</em>  (complete article):  <a href="http://www.britannica.com/eb/article-9024083/John-Chilembwe"> John Chilembwe</a></p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Chilembwe, John (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +768,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +807,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

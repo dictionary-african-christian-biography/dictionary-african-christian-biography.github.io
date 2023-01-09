@@ -601,8 +601,63 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>William Binnington Boyce was an English Methodist missionary, administrator, and pioneer linguist. Boyce was ordained in 1829 for service in South Africa where he worked among the Xhosa of the eastern Cape Colony. He was brilliant and aggressive, but his lifelong friendship with William Shaw was a steadying influence upon him. His great achievement was discovering the “euphonic concord,” which provided the essential clue to the syntax of all Bantu languages. In 1834 with Shaw, he published the text of Luke in Xhosa. Between 1834 and 1843 he played a vigorous role in frontier affairs, supporting the English settlers in their attacks on John Philip and other London Missionary Society pro-African missionaries. After returning to England in 1843, he was sent to Australia in 1845 as head of Methodist missions there. He planned and oversaw the creation of the Australasian Conference of the Methodist Church and later served as president (1885 and 1886). In 1858 he was called back to England to be secretary of the Wesleyan Missionary Society. In this post he encouraged the setting up of autonomous conferences for Methodist mission areas abroad. He retired in 1876 to Australia.</p>
+
+<p>Andrew C. Ross</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>William Binnington Boyce, <em>Memoir of the Rev William Shaw</em> (1874). G. G. Finlay and W. W. Holdsworth, <em>History of the Wesleyan Methodist Missionary Society</em>, vol. 3 (1922); L A. Hewson, “William B. Boyce and the Euphonic Concord,” <em>Journal of the Methodist Historical Society, S.A.</em>, March 1955.</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Boyce, William Binnington`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -681,7 +736,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -720,6 +775,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

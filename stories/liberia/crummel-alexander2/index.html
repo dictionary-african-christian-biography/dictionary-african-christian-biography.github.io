@@ -607,8 +607,63 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Alexander Crummell was an African American Episcopal missionary to Liberia, Crummell was born in New York of free black ancestry. He had a good general education, and though racial prejudice denied him entrance to General Theological Seminary, he was ordained in the Episcopal Church (deacon, 1842; priest, 1844). Fund-raising in England for his new black congregation in New York brought him a place at Queens College, Cambridge, where he graduated in 1853. He then went as a Protestant Episcopal missionary to Liberia, taking citizenship and combining pastoral work with the headship of schools in Monrovia and in Maryland County. From 1862 to 1866 he was professor of philosophy and English at Liberia College, a stormy period; and from 1867 to 1873, he lived at the Caldwell settlement, where he built a church and school, established an educational outreach for indigenous people, and served two other mission stations. Crummell influenced Liberian intellectual and religious life, as preacher, prophet, social analyst, and educationist, proclaiming a special place for Africa, with its God-given moral and religious potential, in the history of redemption. He wanted Liberia to be marked by democratic institutions, flourishing arts and letters, commerce, and law, and to that end Christian teaching was necessary. His enthusiasms included agricultural development, opening the interior to evangelization and trade, women’s education, and public libraries. He helped reconstruct the Protestant Episcopal Mission as a Liberian church. In his vision, African Americans had a particular responsibility for Africa, but as a “pure black” (as he frequently asserted), he sought to identify with the interests of the indigenous population, opposing government attempts to concentrate power and resources in the mulatto community. In 1873, fearing his life was in danger from the mulatto ascendancy, he returned to the United States. He was rector of St. Luke’s, Washington, D.C., until 1894 and taught at Howard University from 1895 to 1897. He continued his work for African American Christian scholarship and African redemption and founded the American Negro Academy in 1897.</p>
+
+<p>Andrew F. Walls</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Alexander Crummell, <em>Alexander Crummell, 1844-1894: The Shades and Lights of a 50 Years’ Ministry</em> (1894), <em>The Relations and Duties of Free Colored Men in America to Africa</em> (1861), <em>The Future of Africa</em> (1862, 1969), <em>The Greatness of Christ and Other Sermons</em> (1882), and <em>Africa and America</em> (1891). M. B. Akpan, “Alexander Crummell and His African ‘Race Work’: An Assessment of His Contribution to Liberia to African’s Redemption,” in D. W. Wills and R. Newman, eds., <em>Black Apostles at Home and Abroad: Afro-Americans and the Christian Mission from the Revolution to Reconstruction</em> (1982), pp. 283-310; W. J. Moses, <em>Alexander Crummell: A Study of Civilization and Discontent</em> (1989); J. R. Oldfield, <em>Alexander Crummell (1819-1898) and the Creation of an African-American Church in Liberia</em> (1990); G. U. Rigsby, <em>Alexander Crummell: A Pioneer in Nineteenth-Century Pan-Africa Thought</em> (1987); O. M. Scruggs, “‘We the Children of Africa in this Land’: Alexander Crummell,” in L. A. Williams, ed., <em>Africa and the Afro-American Experience</em> (1977).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Crummell, Alexander (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +742,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +781,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

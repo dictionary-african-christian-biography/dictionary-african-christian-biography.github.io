@@ -566,7 +566,7 @@
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Pantaenus">
     
-    <meta itemprop="datePublished" content="April 10, 2023">
+    <meta itemprop="datePublished" content="April 10, 2022">
     
 
 <!-- NAME(S), DATE, AFFILIATION, COUNTRY -->
@@ -607,8 +607,82 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Pantaenus left no written indications of his own work or thought, but as first known head of the Christian philosophical or catechetical school at Alexandria, he made an unmistakable impact upon the development of church theology.  The direct succession from him provides the source of information.  Clement’s (c. 150-215) metaphor of the “Sicilian bee” makes probable his place of origin, though he has also been called the “Samaritan Stoic”; his Christianity had taken him as missionary evangelist as far east as India.</p>
+
+<p>He is dated by the direct role he played as teacher of Clement who succeeded him, of Alexander (d. 250) who studied under them both and was later bishop of Cappadocia and then of Jerusalem (Aelia), and of Origen (c. 185-254) who may have been too young to have been taught directly by him but whose martyred father, Leonides (d. c. 202/203), was Pantaenus’ contemporary and of like mind.  His philosophy was Stoicism and his literary interests were classical; considering the exegetical writings of his successors, this would account not only for their strong emphasis upon a divine literature, but also for their allegorical methodology in interpreting the same.</p>
+
+<p>Clyde Curry Smith</p>
+
+<hr />
+
+<h1 id="bibliography-see-link-to-abbreviation-table-below">Bibliography (see link to abbreviation table below):</h1>
+
+<p>J 36</p>
+
+<p>Q2.1.2; FOTC 100 59-60; ODCC 1010; NIDCC 745 (C. C. Smith); OEEC 639 (S. Lilla); GEEC 859 (E. Ferguson).</p>
+
+<h2 id="supplementary-bibliography">Supplementary Bibliography</h2>
+<p>Eusebius, <em>The Ecclesiastical History and the Martys of Palestine</em>, 2 volumes, (London: SPCK) Volume I: Translation by John Ernest Leonard Oulton (1927);  Volume II: Introduction, Notes, and Index, by Hugh Jackson Lawlor (1928):  V. 10, 11; VI. 14.8-9, 19.12-14 (includes citations from Clement, Alexander, and Origen).</p>
+
+<p>R. M. Grant, <em>Miracle and Natural Law in Graeco-Roman and Early Christian Thought</em> (Amsterdam: North-Holland Publishing Company, 1952): 106; 1957: 85; 1970: 63, 199-200; 1988: 176-177.</p>
+
+<p>Philip Carrington, <em>The Early Christian Church</em>, 2 volumes (Cambridge: At the University Press, 1957): II. 275, 277, 283, 405, 438, 451.</p>
+
+<p>A. Badawy, <em>Coptic Art and Archeology</em> (Cambridge, MA: Harvard University Press, 1978): 4.</p>
+
+<p>W. H. C. Frend, <em>The Rise of Christianity</em> (Philadelphia: Fortress Press, 1984): 243, 253, 286, 369.</p>
+
+<hr />
+
+<p>This article, received in 2000, was researched and written by Dr. Clyde Curry Smith, Professor Emeritus of Ancient History and Religion, University of Wisconsin, River Falls.</p>
+
+<hr />
+
+<p><strong>Click here for</strong><a href="/resources/ancient-references/">Abbreviations and Source References for Ancient African Christians.</a></p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Pantaenus`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +761,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +800,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

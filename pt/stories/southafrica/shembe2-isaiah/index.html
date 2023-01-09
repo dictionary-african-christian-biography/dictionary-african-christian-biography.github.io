@@ -606,8 +606,79 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/southafrica/shembe2-isaiah/shembe_isaiah0001.jpg" alt="Isaiah Shembe" class="bio" height="214px" width="160px" /> Líder religioso Zulu e fundador da Igreja Batista Nazaré.</p>
+
+<p>Shembe nasceu em Ntabamhlophe perto de Estcourt, Natal, África do Sul de origem Zulu. Após um primeiro envolvimento com os Wesleyanos, associou-se com os Batistas e foi batizado em Julho de 1906. Tudo indica que atuava como evangelista itinerante antes de entrar em contato com Nkabinde, um ex-luterano que era tido como profeta.  Nkabinde o incentivou a desenvolver um ministério de cura em 1910. Um ano mais tarde ele fundou o iBandla lamaNazaretha (Igreja Batista Nazaré), um movimento religioso controverso enraizado nas tradições Zulu. Pouco tempo depois ele adquiriu uma fazenda que se tornou a sua cidade santa, Ekuphakameni, e instituiu uma peregrinação anual à montanha sagrada de Nhlangakazi. Shembe era conhecido por suas vividas parábolas, suas curas milagrosas e por ler os pensamentos das pessoas. Escreveu muitos hinos animadores, compôs musicas e deu a seus seguidores uma rica tradição litúrgica baseada em danças tradicionais Zulus modificadas. Críticos do movimento dizem que seus seguidores o viam como uma encarnação de Deus. Outros, liderados pelo estudioso luterano, Bengt Sunkler, argumentam que a teologia de Shembe era uma forma africanizada de cristianismo.</p>
+
+<p>Depois da morte de Shembe ocorreu um conflito sucessório até que a liderança passou para Johannes Galilee Shembe filho da sua terceira esposa. Problemas mais sérios estouraram após a morte de J. G. Shembe em 1975, quando o movimento dividiu-se entre seu irmão, Amos Shembe e seu filho Londa Shembe. Amos Shembe entitulou-se “bispo” e parece que levou seus seguidores a adotar o cristianismo ortodoxo. Londa Shembe admitiu abertamente que não tinha certeza se seu movimento era cristão, uma forma de judaísmo ou quem sabe estava mais próximo de outras tradições religiosas como o hinduísmo. Atualmente existe aproximadamente um milhão de amaNazaretha na África do Sul.</p>
+
+<p>Irving Hexham</p>
+
+<hr />
+
+<h1 id="bibliografia">Bibliografia</h1>
+
+<p>Irving Hexham, editor, <em>The Scriptures of the amaNazaretha of Ekuphakameni</em> (1994); Irving Hexham e G. C. Oosthuizen, editores., <em>The Oral History and Sacred Traditions of the Nazareth Baptist Church</em>, 3 volumes. (1996 - 1997); G. C. Oosthuizen, <em>The Theology of a South African Messiah</em> (1967); Bengt Sundkler, <em>Bantu Prophets in South Africa</em> (1961) and <em>Zulu Zion and Some Swazi Zionists</em> (1976); Absalom Vilakazi et al., Shembe: <em>The Revitalization of African Society</em> (1986).</p>
+
+<hr />
+
+<p>Este artigo foi reproduzido com a permissão do <em>Dicionário Biográfico de Missões Cristãs</em>, copyright © 1998, de Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. Todos os direitos reservados.</p>
+
+<hr />
+
+<h1 id="galeria-de-fotos">Galeria de fotos</h1>
+
+<p><img src="/images/bio-pics/southafrica/shembe2-isaiah/shembe-i-group.jpg" alt="image" class="bio" /></p>
+
+<p><img src="/images/bio-pics/southafrica/shembe2-isaiah/shembe-i-dancing.jpg" alt="image" class="bio" /></p>
+
+<p><img src="/images/bio-pics/southafrica/shembe2-isaiah/shembe-i-footwashing.jpg" alt="image" class="bio" /></p>
+
+<p><img src="/images/bio-pics/southafrica/shembe2-isaiah/shembe-j-goduka.jpg" alt="image" class="bio" /></p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Shembe, Isaiah Mdliwamafa (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Leia várias versões: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -690,7 +761,7 @@
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 02 January 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 14 December 2022.<br>&copy; 2022 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -725,6 +796,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

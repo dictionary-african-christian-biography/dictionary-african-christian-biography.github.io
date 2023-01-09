@@ -606,8 +606,75 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/madagascar/rasalama-raf/mortdeRasalama-small.jpg" alt="Execução de Rasalama" class="bio" /></p>
+
+<p>Primeira mártir Cristã Madagascarense.</p>
+
+<p>Rasalama foi provavelmente uma das primeiras alunas das escolas das vilas fundadas pela Sociedade Missionária de Londres, em 1824. Quando a sua família se mudou para Manjakaray, na periferia da capital, ela passou a freqüentar a primeira comunidade Cristã em Ambodin’Andohalo, próxima ao palácio real. Ela estava entre as primeiras madagascarenses que foram batizadas (maio 1831) e tomaram a Santa Ceia em Ambatonakanga, a primeira igreja, em cinco de junho de 1831. Em 1835, quando a nova rainha Ranavalona I declarou o Cristianismo ilegal, Rasalama passou a esconder-se. A caverna onde ela se refugiava, próxima a sua casa, foi descoberta, e em julho de 1837 ela foi presa e entregue a um cortesão como escrava. Ela pacientemente suportou maus tratos, até que se negou a trabalhar no domingo e provocou a ira do seu dono, ao declarar a sua fé. Foi sentenciada a morte sob alegação de rebelião contra a vontade da rainha. No dia 14 de agosto, depois de uma noite de sofrimento acorrentada, Rasalama foi levada a Ambohipotsy. A sua caminhada até o lugar de execução, na qual ela encheu de orações e de hinos, tornou-se lendária. Foi morta com uma lança e o seu corpo foi deixado sem enterrar. Hoje, uma igreja à sua memória ocupa o lugar da sua execução. O seu martírio causou uma profunda impressão sob os seus conterrâneos e os protestantes britânicos; uma placa em sua memória foi colocada na Brunswick Chapel em Bristol, Inglaterra.</p>
+
+<p>Yvette Ranjeva Rabetafika</p>
+
+<hr />
+
+<h1 id="bibliografia">Bibliografia</h1>
+
+<p>R. Lovett, <em>A Historia da Sociedade Missionária de Londres, 1795 - 1896</em> (1896); G. Mondain, <em>Un siècle de mission au Madagascar</em> (1926). Por ocasião das comemorações do seu martírio foram publicados vários trabalhos como o de Rabary: <em>Ny Maritiora Malagasy</em> (1957).</p>
+
+<hr />
+
+<p>Este artigo reproduzido com permissão de <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, por Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. Todos os diretos são reservados.</p>
+
+<hr />
+
+<h1 id="photo">Photo:</h1>
+
+<p><img src="/images/bio-pics/madagascar/rasalama-raf/mortdeRasalama.jpg" alt="Execução de Rasalama" class="bio" /></p>
+
+<p>A execução de Rasalama com uma lança em * Mission and Martyrs in Madagascar * (Nova York: American Tract Society, 1864), página 114.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Rasalama, Rafaravavy`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Leia várias versões: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -690,7 +757,7 @@
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 02 January 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 14 December 2022.<br>&copy; 2022 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -725,6 +792,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

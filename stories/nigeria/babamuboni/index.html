@@ -607,8 +607,85 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Babamuboni is regarded today as the most outstanding lay figure to have introduced Christianity, education, and modernized agriculture in Ekiti land. Born of heathen parents at Uyin Ekiti and named Ifamuboni (the oracle, <em>Ifa</em>, holds or takes care of), he was captured in 1874 during the inter-tribal war and taken to Ibadan, where he was sold into slavery. He was bought by Rev. Daniel Olubi, and redeemed himself fifteen years later. Although free, he stayed with the Olubi family for a while. He converted to the Christian faith while in Ibadan, and learned how to read and write. He saved half of his stipend for future missionary work in his hometown, Uyin Ekiti.</p>
+
+<p>In 1894, to the joy of his relatives, he returned to his hometown. According to Adebiyi [1], he and other ex-slaves of Ekiti origin, such as Mary Oja of Ode, Doherty of Ijero, and Samuel Omojola of Ikole, should be credited with introducing Christianity to their respective towns. Nearly every town or village in Ekiti Land could be proud of having an ex-slave who had embraced Christianity while in slavery. The returnees were assisted in this by ex-soldiers and itinerant traders who had also been exposed to Christianity during their sojourns outside Ekiti.</p>
+
+<p>After his return, he began preaching the gospel. He started at the provincial city of Ado, where he presented a copy of the Holy Bible to <em>Oba</em> Ajimudaoro, the <em>Ewi</em> of Ado Ekiti. In light of the encouragement he received from the monarch, he decided to make the city his evangelical base. He established the Emmanuel Church, Ado-Ekiti, now called the Cathedral Church of Emmanuel, in the Diocese of Ekiti, Church of Nigeria (Anglican Communion). Babamuboni travelled far and wide throughout the land. He visited and preached in places like Ido-Ajinare, Ijero, Usi, Otun, Igbo-Omo Oba (now Ilumooba), Igede, Ikere, and Osi Ekiti. He recruited and trained a group of evangelists with whom he travelled in difficult and perilous times.</p>
+
+<p>He had numerous encounters with the adherents of local gods and goddesses like <em>Ogun</em>, <em>Esu</em>, <em>Obalufon</em>, <em>olua</em>, <em>orisa oko</em>, and others. While he was at Osi Ado, the traditionalists became furious at his successes and invoked their god, <em>Olua</em> or <em>Atogun</em>, in order to kill him. It was here that the traditionalists changed his name from Ifamuboni to Babamuboni (meaning Father, i.e. God, holds or takes care of). They did this because the people did not like the fact that an antagonist of their god bore the name of the oracle “<em>Ifa</em>.” He accepted the new name and considered it to be providential.</p>
+
+<p>He also established many primary schools in towns and villages like Ado (1894) and Ogbese (1915), among other places. He was nicknamed <em>Agbomo lowo olomo</em> (the one who snatches children from their parents) because the people were taken aback by the tenacity with which he gathered school children. He introduced cocoa and coffee, which he first planted on his farm at Ogbese, where he also had a vocational school. He gave the seedlings to people free of charge, and in that act alone, he boosted their economic well-being. In Nigeria today, Ekiti land is a major producer of cocoa. He will be remembered as a pioneer evangelist, educator, crusader, farmer, philanthropist, mentor, and industrialist in Ekiti land.</p>
+
+<p>Francis O. Falako</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>P. A. Adebiyi, <em>History of Christianity in Ekitiland 1893-1973</em> (Lagos: CSS, 2003).</li>
+</ol>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Adebiyi, P. A. <em>History of Christianity in Ekitiland 1893-1973</em>. Lagos: CSS, 2003.</p>
+
+<p>Ayandele, E. A. <em>The Missionary Impact on Modern Nigeria 1842-1914</em>. London: Longman, 1962.</p>
+
+<p>Ekiti Diocese. <em>A Short history of the Introduction of Christianity to Ekitiland</em>. Ado Ekiti: Omojola Press, 1974.</p>
+
+<p>Oguntuyi, A. O.  <em>History of Ekiti</em>. Lagos: Caxton Press, 1969.</p>
+
+<hr />
+
+<p>This article, received in 2010, was written by Dr. Francis Falako, a professor in the Religious Education Unit of the School of Education in the University of Lagos (UNILAG) in Lagos, Nigeria.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Babamuboni`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +764,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +803,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

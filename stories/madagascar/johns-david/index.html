@@ -607,8 +607,63 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>David Johns was a missionary to Madagascar with the London Missionary Society. Born in Cardiganshire, Wales, he (whose original surname was Jones) studied at Newtown Academy and at Gosport. He reached Madagascar in 1826 and in 1831 was put in charge of the second church organized in the country. He changed his surname to Johns because there was already a David Jones in the mission. In 1835 the government began persecuting Christians, causing the missionaries to leave, but Johns and the printer, Edward Baker, stayed on for another year to complete Johns’s Malagasy dictionary and his translation of <em>Pilgrim’s Progress</em> and to bind copies of the Bible to leave with the Christians. This was a time of great distress. The missionaries’ servants were forced by the government to undergo an ordeal by poison, from which two of them died. When he finally left, Johns went to Mauritius and tried to keep in touch with and encourage the Malagasy Christians. He ventured back to Madagascar briefly four times, making fruitless efforts to establish a haven for Christians on the part of the coast that was under French influence. The coastal island of Nosy Be was his headquarters for some of these operations. Once, between these trips, he and his wife took six refugees to Britain and he published, with J. J. Freeman, <em>A Narrative of the Persecutions of Christians in Madagascar</em> (1840). On his last trip to Madagascar, Johns died of fever, having declared, “If I had a thousand lives, I would willingly lay down every one for Madagascar.”</p>
+
+<p>Charles W. Forman</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>William Ellis, <em>The Martyr Church of Madagascar</em> (1852); Richard Lovett, <em>The History of the London Missionary Society</em> (1899).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Johns, David`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +742,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +781,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

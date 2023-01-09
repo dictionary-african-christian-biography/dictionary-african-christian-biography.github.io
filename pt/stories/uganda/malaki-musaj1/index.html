@@ -606,8 +606,69 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Musajjakawa Malaki foi um líder que formou a igreja separatista, a Sociedade do Deus Altíssimo, popularmente conhecida como os Malakitas.</p>
+
+<p>Malaki, do povo Baganda, recebeu duas recusas de batismo pelos missionários anglicanos, em 1914 fundou o movimento Malakita, o qual logo tonou-se uma denominação que ganhou mais de noventa mil membros em sete anos. Os Malakitas foram também a primeira igreja independente na Uganda.</p>
+
+<p>Apesar dos Malakitas serem um grupo religioso eles também tinham o germe dos dissidentes anti colonialistas. O movimento estava quase totalmente restrito ao povo Baganda, um grupo étnico dominante da Uganda o qual por volta de 1914 era na sua maioria cristão. Malaki ensinou que a medicina ocidental deveria ser rejeitada, o que criou conflitos tanto com os missionários quanto com o governo. Talvez o conflito mais sério foi sua postura enquanto a redistribuição da terra. A sua proposta era uma ameaça para os chefes locais. No entanto, o incidente que provocou supressão dos Malakitas pelo governo colonial foi a recusa em cooperar com o programa de vacinação. O próprio Malaki morreu em conseqüência de uma greve de fome.</p>
+
+<p>O movimento declinou rapidamente após o seu apogeu em 1921 até que desapareceu por volta de 1930. A igreja dos Malakitas está entre uma das poucas igrejas independentes da África de grande porte que desapareceu. O seu surgimento fez com que as igrejas missionárias reconsiderassem as suas atitudes sobre as aspirações religiosas africanas.</p>
+
+<p>Norbert C. Brockman</p>
+
+<hr />
+
+<h1 id="bibliografia">Bibliografia</h1>
+
+<p>Lipschutz, Mark R., e R. Kent Rasmussen. <em>Dictionary of African Historical Biography</em>. 2ª edição. Berkeley: Editora da Universidade da Califórnia, 1986.</p>
+
+<hr />
+
+<p>Este artigo foi reproduzido com a permissão do <em>An African Biographical Dictionary</em>, copyright © 1994, editado por Norbert C. Brockman, Santa Barbara, Califórnia. Todos os direitos são reservados.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Malaki, Musajjakawa (B)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Leia várias versões: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -690,7 +751,7 @@
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 02 January 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 14 December 2022.<br>&copy; 2022 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -725,6 +786,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

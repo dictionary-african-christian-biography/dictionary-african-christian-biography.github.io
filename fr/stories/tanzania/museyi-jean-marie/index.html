@@ -605,8 +605,69 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Saint Jean-Marie Muyezi est né juste à l’intérieur de la frontière moderne de la Tanzanie, dans un petit hameau près de Minziro, (Compté de Buddu, Ouganda). Son père Bunyaga, avait comme devoir de porter le roi Ganda sur ses épaules lorsque celui-ci se rendait à Buddu. Il était membre du clan des buffles. La mère de Munyezi, qui s’appelait Mukatunzi ou Nnamalayo, était du clan des singes. Avant, Muyezi s’appelait Musoke, mais à la cour royale, il a pris le nom Muddembuga. A cause d’une maladie des yeux (probablement le trachome), il avait l’air plus âgé qu’il ne l’était. Il se trouvait, en fait, qu’il était bien plus âgé que la plupart des jeunes hommes à la cour. Pour cette raison, et aussi à cause de sa réputation d’homme prudent, on l’appelait Muyezi, un nom qui vient du titre swahili mzee, qui veut dire “ancien” ou “vieil homme.” Lorsqu’il est devenu musulman, il a pris le prénom Jamari, qui veut dire “bonne chance.” Le missionnaire Siméon Lourdel lui a astucieusement donné le prénom chrétien français de consonance semblable, Jean-Marie.</p>
+
+<p>Quand Muyezi était encore assez jeune, un sous-chef appelé Kabega l’a vu en train de conduire du bétail et l’a kidnappé. A la capitale, Kabega a vendu le garçon à quelqu’un qu’il connaissait, un certain Bigomba. Celui-ci, à son tour, a vendu Muyezi au roi pour une étoffe de tissu et une gourde de bière. Trop jeune pour devenir page, il a été confié à Ttamiro, qui était créateur de clôtures pour le roi, et beaucoup par la suite ont pensé que celui-ci était son vrai père. Devenu adolescent, il a été fait page royal, et il est devenu musulman quand le roi Mutesa I a commencé à s’intéresser à cette religion. Quand la peste a éclaté en 1881, il a été congédié et s’est rendu à Mutundwe, où il a fait la connaissance de quelques chrétiens ou de catéchumènes qui lui ont appris l’essentiel de la foi catholique. Lors de son retour à la cour, il est devenu bras droit de Saint Joseph Mukasa, le majordome. Il s’occupait du roi quand ce dernier était malade, et aidait à répandre la connaissance du christianisme parmi les pages, dont certains étaient de futurs martyrs.</p>
+
+<p>Il a été baptisé le 1er novembre, 1885. On lui demandait souvent conseil parce qu’il était de caractère sérieux et de conscience scrupuleuse. Il se servait de ses économies modestes pour racheter de l’esclavage des petits enfants, et il leur donnait une instruction chrétienne. Il était d’âge mariable et en position d’être marié, mais Jean-Marie a annoncé son intention de rester célibataire pour le royaume de Dieu. Quand le roi Mutesa I est mort en 1884, Jean-Marie a été assigné au tombeau royal à Kasubi, mais il s’est retiré de ce service à cause des rites païens qui y avaient lieu. Il semble qu’il a joué un rôle dans la décision du roi Mwanga lorsque celui-ci a invité Lourdel et les autres missionnaires à revenir en Ouganda en 1885, suite à leur exil auto imposé en Tanzanie.</p>
+
+<p>Avant les événements des martyres du mois de juin 1886, Jean-Marie a été confirmé par le premier évêque missionnaire de l’Afrique Équatoriale, monseigneur Léon Livinhac. Malgré le fait qu’il était menacé de mort par Mwanga, Jean-Marie n’a pas cherché à se cacher. En septembre 1886, il était devenu évident que Mwanga avait l’intention de faire exécuter d’autres chrétiens en secret. En janvier 1887, Muyezi, qui demeurait alors chez Stanislaus Mugwanya, le futur régent catholique, a été appelé à la cour. En dépit de toutes tentatives de le dissuader, Jean-Marie a obéi à la sommation. Il a été reçu gentiment par le roi et le chancelier, mais il a commencé à soupçonner quelque chose quand ils ont insisté qu’il rentre avec d’autres chrétiens d’un certain groupe. Dans la matinée du 27 janvier, 1887, Muyezi a été à la messe, à reçu la communion sainte, et est rentré à la cour tout seul. Il n’a jamais été revu. On a rapporté de source fiable qu’il avait été décapité et que son corps avait été jeté dans un étang. C’est ainsi que Jean-Marie Mutezi est devenu le dernier des martyrs de l’Ouganda. Il a été déclaré “béni” par le Pape Bénédicte XV en 1920, et a été canonisé saint par le Pape Paul VI en 1964.</p>
+
+<p>Aylward Shorter M. Afr.</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p>J.F. Faupel, <em>African Holocaust - The Story of the Uganda Martyrs</em>, 4th edition [Holocauste africain - l’histoire des martyrs de l’Ouganda, 4ème édition] (Nairobi, St. Paul’s Publications Africa, 1984 [1962]).</p>
+
+<hr />
+
+<p>Cet article, soumis en 2003, a été recherché et rédigé par le dr. Aylward Shorter M. Afr., directeur émérite de Tangaza College Nairobi, université catholique de l’ Afrique de l’Est.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Muzeyi, Jean-Marie`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +748,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +785,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

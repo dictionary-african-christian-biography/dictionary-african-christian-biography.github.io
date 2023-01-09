@@ -607,8 +607,67 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Augustine Onyeyirichukwu Iwuagwu, born to Rosah Uwanuifo Iwuagwu in Umuobom-Umunkwo in Isiala Mbano L.G.A., Imo, Nigeria, had a very humble beginning but through struggle and study, he came to be a bishop of great influence in the Anglican Church.</p>
+
+<p>Augustine and his wife, Lady Grace Ngozi Iwuagwu, have six children (all of whom have doctorate degrees) and five grandchildren.</p>
+
+<p>He was born into the church and was called to the ministry early in life.  He was trained as a teacher, receiving his certificate through external studies from London in 1963.  He completed his PhD at Ibadan in 1971.  He was ordained a deacon in 1963, a priest in 1964 and was consecrated bishop in 1987.</p>
+
+<p>During his rise in the hierarchy of the church, he served many parishes.  As the Bishop of Aba Diocese, he founded more than 50 church congregations.  He spearheaded the creation of two new dioceses out of Aba Diocese: Ukwa and Umuahia dioceses.</p>
+
+<p>He began his ministerial career as an evangelist going around encouraging weak congregations and establishing new ones.  He devoted much time to the ministry of prayer and became a great instrument in bringing the healing and deliverance ministry to light in the Diocese of Owerri and beyond.  As a young priest, he influenced other young people to join the ordained ministry or to take on a lay apostolate.  He personally funded the establishment of more than fifty local congregations in his present jurisdiction of Aba and beyond.  He has founded two new schools, for boys and for girls, respectively.  He also established a center for the in-service training of pastors who might not be able to go to theological schools or universities.</p>
+
+<p>The Right Reverend Professor Augustine Onyeyirichukwu Iwuagwu has continued to exert influence in the life of people today.  He has taught in the Alvan Ikoku College of Education where he rose to become the head of the Department of Religious Studies and, later, the Dean of the School of Social Sciences.  He has served as chairman or member of several government committees on education and has translated the church liturgy into the Igbo language.</p>
+
+<p>Emele Mba Uka</p>
+
+<hr />
+
+<p>This article, received in 2001, was researched and written by Rev. Dr. Emele Mba Uka, a Project Luke Fellow, Professor of Theology in the Department of Religion and Philosophy at the Federal University of Calabar, Nigeria (UNICAL).</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Iwuagwu, Augustine Onyeyirichukwu`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +746,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +785,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

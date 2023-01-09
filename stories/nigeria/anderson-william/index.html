@@ -607,8 +607,63 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>William Anderson was a Scottish Presbyterian missionary in Jamaica and Nigeria. Anderson was born in Galashiels, Scotland. His formal education was limited, but he had a keen mind and a taste for reading. In 1839 the Scottish Missionary Society sent him as a catechist to Jamaica, where he met and married a local woman, Louisa Peterswald. After four sessions in theology with William Jameson, Anderson was ordained in 1845. He went to Calabar, Nigeria, in 1849, and served as “head of station” in Duke Town until his resignation in 1891. With Hope Waddell he initiated a number of social reforms, most notably the abolition of human sacrifices at aristocratic funerals. However, he argued repeatedly and violently both with his colleagues and the Calabar aristocracy. Indeed, his quarrels were a major reason for the formation of the Presbytery of Biafra, now the Presbyterian Church of Nigeria. Nevertheless, Calabar people not only put up with him but came to love him. Duke Town was never a successful station; Anderson worked hard and faithfully, but the church in Duke Town did not really begin to grow until after 1890, about the time Anderson retired. He returned to Calabar in 1895 and died there.</p>
+
+<p>Geoffrey Johnston</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>W. Marwick, <em>William and Louisa Anderson: A Record of their Life and Work in Old Calabar</em> (1897). See also Geoffrey Johnston, <em>Of God and Maxim Guns: Presbyterianism in Nigeria, 1846-1966</em> (1988). Anderson’s journals for 1851 and 1852 are in the offices of the Church of Scotland, Edinburgh.</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>, copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Anderson, William (Nigeria)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +742,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +781,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

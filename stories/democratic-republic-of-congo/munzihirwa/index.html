@@ -607,8 +607,82 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Munzihirwa was born in 1926 in Lukumba, located in the  northeastern part of the Democratic Republic of the Congo [DRC]. The name  “Munzihirwa” means “leader,” and “Mwene Ngabo” means “son of the people.” His  surname of “Muhudumu” means “servant of God” in Kiswahili.</p>
+
+<p>Munzihirwa was a brilliant stand-out during his many years  of study, years into which his pastoral ministry was often interwoven. After  his general Greco-Latin studies at the minor seminary of Mugeri, he began his  theological studies at the major seminary of Nyakubanda in Rwanda but continued  them at Moba in the DRC. Upon completion, he was ordained priest for the  diocese of Bukavu in 1958. He later became priest and dean of the cathedral  parish of Bukavu.</p>
+
+<p>In keeping with the best Jesuit tradition, Munzihirwa was ever  focused on his formation. From 1965-66, he pursued his theological studies at  the Institut de Philosophie de Saint-Pierre Canisius [St. Peter Canisius Institute  for Philosophy] in Kimwenza. From 1967-69 he studied social sciences and  economics. Several years later (in 1977), his interest in these areas led him  to earn his PhD in sociology.</p>
+
+<p>After finishing his studies, Munzihirwa became vicar of the  university parish of Kinshasa where, in a show of solidarity with the students  who were forcibly conscripted into the army in 1971, he voluntarily chose to  share their lot and enlisted as well. Shortly thereafter, his rise through the  Jesuit ranks began. By turns, he was named Vicar Superior of the Jesuit student  house at the University of Lubumbashi, then Rector of the St. Peter Canisius  Institute for Philosophy in 1978. In 1980, he was named Superior (Provincial)  of the Jesuit Province of Central Africa, which included Rwanda, Burundi, and  the DRC. [In 1986], he was appointed coadjutor bishop to Monsignor Pirigisha of  the Kasongo Diocese. Following this, he became Apostolic Administrator of the Bukavu  archdiocese in 1993 and its archbishop in 1994.</p>
+
+<p>The heart of his ministry began in 1994, and it consisted  above all in defending the oppressed by striving for peace, justice, and truth.  During the last two years of his life, he was deeply involved in the peace  process for the Great Lakes region, an area that had been ravaged by civil war.</p>
+
+<p>Monsignor Munzihirwa was a towering figure in the Church’s  life in the DRC, and his influence was felt outside of the country’s borders as  well. His involvement as a committed Christian serves as a model for all those  of the region who seek to serve God. While actively engaged in the area’s peace  process, Munzihirwa was assassinated by Rwandan soldiers on October 29, 1996.</p>
+
+<p><strong>César Mateso W. Akeso</strong></p>
+
+<hr />
+
+<h1 id="notes">Notes</h1>
+<ol>
+  <li>
+    <p>Fari, Benjamin et al., “Monseigneur Munzihirwa Mwene  Ngabo” in the review, <em>Serviteur et Temoin * [Servant and Witness] (Bukavu: Ed. Loyola, 1977). [Tr. Note: In *Cibles: 235 prêtres africains tués</em>, by  P. Neno Contran and Abbé Gilbert Kadjemenje, this work is listed as “Mgr C.  Munzihirwa, S.J., Serviteur et Témoin.”, Ed. Loyola, Kinshasa.]</p>
+  </li>
+  <li>
+    <p>Mugaruka Shota, (Archdiocese of Bukavu), interview by  author, January 14, 2003, Bunia.</p>
+  </li>
+  <li>
+    <p>Burume Kebidu, (family member of Munzihirwa), interview by  author, January 14, 2003, Bunia.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>This article, received in 2003, is the research work of  César Mateso W. Akeso, theology student mentored by Reverend Yossa Way.  Reverend Way is a professor of theology and liaison between DIBICA and the Institut Supérieur  Théologique Anglican (in Bunia, DRC), as well as the 2001 recipient of the  Project Luke grant. Translation from the original French in 2012 by Mrs.  Elizabeth Mullen.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Munzihirwa, Mwene Ngabo`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +761,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +800,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

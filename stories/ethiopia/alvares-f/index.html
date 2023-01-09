@@ -607,8 +607,67 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Francisco Alvares (14?-circa 1542) was a Portuguese Roman Catholic priest who wrote the first detailed travel book about Ethiopia, the <em>Verdadera Informaçam das terras do Preste Joam das Indias</em> (“True Information on the Countries of Prester John of the Indies”), 1540.</p>
+
+<p>In 1515 Alvares accompanied Duarte Galvão, the Portuguese ambassador designate to Ethiopia as the country of Prester John (q.v.) of the Indies, a somewhat mythical designation, since the term “India” was then applied indiscriminately to the tropical regions of Africa and southern Asia. When Galvão died at Kameran, an island in the Red Sea off the coast of Yemen, in 1517, Alvares was attached as chaplain to his successor, Rodrigo de Lima, who landed at Massawa on the coast of Eritrea in 1520. The Portuguese, who came in a vain effort to forge an alliance with the African Christian kingdom, which they regarded as a natural ally in their conflict with the Ottoman Turks, remained in Europe for six years, and returned to Portugal in 1527. In 1532, Alvares went to Italy, and in1533 he presented letters from the Ethiopian emperor, Lebna Dengel (q.v.) [reigned 1508-1540], to Pope Clement VII (in office 1523-1534). He remained in Rome until his death about ten years later.</p>
+
+<p>Alvares, who was an acute observer, later wrote a graphic account in Portuguese of his travels, entitled <em>Verdadera Inform?cam das Terras do Preste Joam Das Indias</em>, which attracted considerable interest in Europe where several widely-read translations of it appeared. Though far from complete, the work includes interesting descriptions of the antiquities of both Aksum and Latibala, accounts of Ethiopian governmental and social institutions, and a narrative of Portuguese negotiations with Lebna Dengel. The work is of a particular interest because it gives a clear picture of the Ethiopian empire in its heyday, just before the invasion of the Muslim conqueror Ahmad Ibn Ibr?h?m (q.v.), also called Gr?ñ.</p>
+
+<p>Richard Pankhurst</p>
+
+<hr />
+
+<p><strong>Bibliography</strong></p>
+
+<p>Francisco Alvares, <em>Verdadera Informaçam das terras do Preste Joam das Indias</em> (“True Information on the Countries of Prester John of the Indies”), Lisbon, 1540, published in English as <em>Narrative of the Portuguese Embassy to Abbyssinia During the Years 1520-1527,</em> (edited by Lord Stanley of Alderley), London, 1881; C. F. Beckingham and G. W. B. Huntingford, <em>The Prester John of the Indies</em>, Cambridge, 1961; C. F. Beckingham, “Notes on an Unpublished Manuscript of Francisco Alvares,” <em>Annales d’Ethiopie</em>, Vol. 4, Paris, 1961; E. Sylvia Pankhurst, <em>Ethiopia, A Cultural History</em>, Woodford Green, 1955; G. B. Ramuso, D<em>elle navigazioni ax e viaggi</em> (“Voyages and Travels”), Vol. 1, Venice, 1550; C. F. Rey, <em>The Romance of the Portuguese in Abyssinia</em>, London, 1929; Elaine Sanceau, <em>The Land of Prester John</em>, New York, 1944.</p>
+
+<hr />
+
+<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (in 20 Volumes). Volume One Ethiopia-Ghana, ©1997 by L. H. Ofosu-Appiah, editor-in-chief, Reference Publications Inc., New York, NY. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Alvares, Francisco`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +746,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +785,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

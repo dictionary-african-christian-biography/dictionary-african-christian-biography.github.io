@@ -605,8 +605,73 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Isaac Banda était un réfugié de la guerre civile du Mozambique. Avec vingt-deux milles autres,  il s’installa au camp agricole de réfugiés d’Ukwimi en Zambie pendant les années 1980. Le gouvernement zambien et les agences mondiales de lutte contre la faim leur avaient accordé un espace où ils pouvaient faire de l’agriculture et continuer leurs vies en paix.</p>
+
+<p>Isaac Banda avait été pasteur laïc dans la région de Tete en Mozambique, Il se retrouva à Ukwimi avec beaucoup d’autres Nazaréens et ils commençèrent à y célébrer des cultes. Isaac Banda avait à ce moment-là plus de soixante-dix ans et était considéré comme un leader spirituel.</p>
+
+<p>Vers 1988 il suggéra qu’on collectionne des fonds et qu’on envoie un messager à Lusaka, à cinq cents kilomètres de là, pour y prendre contact avec des Nazaréens. Un autre pasteur laïc, Mr. Viola Phiri, fut envoyé comme leur représentant. Par la suite, Rév. John Zulu, surintendant du district de Zambie-Sud et le missionnaire Rév. Lowell Clark commença à leur rendre visite à Ukwimi. Ils dècouvrirent à peu près 275 Nazaréens parlant chewa qui se réunissaient dans une &amp;eacuteglise construite en chaume avec une structure de poteaux en bois.</p>
+
+<p>À la mort de Mr. Isaac Banda il y avait quatre églises différentes à trente-cinq kilomètres les unes des autres où se réunissaient plus de deux milles personnes. Tous furent en deuil à la perte de ce vénérable leader spirituel.[1]</p>
+
+<p>Paul S. Dayhoff</p>
+
+<hr />
+
+<p>Notes:</p>
+
+<ol>
+  <li>J. Fred Huff, “A Saintly Refugee Goes to His Heavenly Home,” <em>Trans African</em>, (Florida, Transvaal, Afrique du Sud: Africa Nazarene Publications, Mars-Avril 1992), 7. <em>World Mission</em>, (Kansas City, Mo: Nazarene Publishing House, Octobre 1989), 10.</li>
+</ol>
+
+<hr />
+
+<p>Cet article est reproduit, avec la permission de l’auteur, de <em>Living Stones in Africa : Pioneers of the Church of the Nazarene</em>, édition révisée, copyright © 1999, de Paul S. Dayhoff. Tous droits réservés.</p>
+
+<p>Cet article a été traduit de l’Anglais par Milly et Agnès Ibanda M. de la République Démocratique du Congo, Eglise du Nazaréen - District du Nord-Kivu/Afrique.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Banda, Isaac`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +752,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -724,6 +789,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

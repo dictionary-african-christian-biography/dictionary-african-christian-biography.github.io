@@ -607,8 +607,69 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Abuna Marqos (who lived in the 17th century), an Egyptian monk originally known as father Arimimios, was Metropolitan, or Abuna, of Ethiopia from 1634 until he was deposed in 1649.</p>
+
+<p>He was consecrated as Abuna (head of the Ethiopian Church) in Alexandria, Egypt, and left for Ethiopia with the German Lutheran scholar, Peter Heyerling of Leipzig (died 1647), on October 16, 1634. En route, he stayed for a while at Suakin, the Red Sea port in what is now the Sudan, where in 1635 he was in friendly touch with the Catholic missionaries recently sent into exile there from Ethiopia.</p>
+
+<p>When he arrived in Ethiopia, he issued a proclamation on Christian marriage in which he condemned concubinage and challenged the value of the Ethiopian custom of celebrating the Feast of the Epiphany on the borders or rivers as a second baptism. The influence of the Ethiopian clergy led him, however, to become less friendly towards foreign missionaries, who were in the country illegally. Though he would not condemn the acts of the Portuguese Jesuit bishop Apollinaris d’Almeida, he was powerless to prevent the execution of his friends, the French Capuchin monks Father Agathange of Vendôme and Father Cassien of Nantes, both Catholics, who had tried to revive Catholicism in Ethiopia, where all foreign Catholics had been denied entry since 1632.</p>
+
+<p>Marqos was considered too moderate in ecclesiastical disputes, and thus made enemies. He tried to win the favor of Emperor Fasilidas (q.v.) [ruled 1632-67] by disclosing to him the conspiracy of his brother Galawdéwos to ascend the throne. But later the enemies of Marqos accused him of violating the competence of civil courts and of enlarging the jurisdiction of ecclesiastical courts, and the emperor ordered an enquiry. In 1648 he was attacked by the Echage (chief of the monastic orders) for the conduct of his private life, and after an enquiry had found him unworthy of his dignity, he was deposed in 1649.</p>
+
+<p>Enrico Cerulli</p>
+
+<hr />
+
+<p><strong>Bibliography</strong></p>
+
+<p>C.Beccari, <em>Rerum Aethiopicarum Scriptores Occidentales</em> (“Western Writers on Ethiopian Matters”), Rome, 1917; J.B. Coulbeaux, <em>Historie politique et religieuse de l’Abyssinie</em> (Political and Religious History of Abyssinia”), Paris, 1929.</p>
+
+<hr />
+
+<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (in 20 Volumes). Volume One Ethiopia-Ghana, ©1997 by L. H. Ofosu-Appiah, editor-in-chief, Reference Publications Inc., New York, NY. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Marqos (Abuna)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +748,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +787,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

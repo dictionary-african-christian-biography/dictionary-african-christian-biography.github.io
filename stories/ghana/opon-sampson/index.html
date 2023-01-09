@@ -611,8 +611,77 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>The prophet Sampson Opon (circa 1884 - circa 1960) was a controversial local preacher who became prominent in Asante in the 1920s. His zeal and fiery preaching touched off a mass spiritual awakening in Asante which the Methodist Mission used as a basis for expanding its evangelical work.</p>
+
+<p>The circumstances of his birth and death are unknown. But in 1957 he told H. W. Debrunner, who was to be his biographer, that when Asantehene, Prempeh I (<em>q.v.</em>) was captured by the British in 1896, he was 12 years old. He was the “son of a Grunshie slave, who had been captured by Samori [Samory Touré, the gifted military adventurer who in the late 19th century built a kingdom extending from what is now the Republic of Guinea to Upper Volta] and sold to a man at Akuntanim in the Brong-Ahafo Region of Ghana.</p>
+
+<p>When Opon grew up, he worked as a foreman of railroad construction gang in the Ivory Coast, after a time in prison in the Ivory Coast, he returned to the Gold Coast and worked as a laborer on cocoa farms in the Asante Akyem and Akyem Abuakwa districts. During this time he gained a reputation as a sorcerer, preparing magic “medicines” and charms intended to harm, which he sold.</p>
+
+<p>These activities, and a charge of misappropriation of money, again sent Opon to prison. (He was later to serve a third prison term.) Whilst in prison, he is believed to have come into contact with Christianity, but refused to accept conversion and baptism. At Bompata, 40 mi (64 km) east of Kumase, in Asante-Akyem, he is said to have received catechism lessons at the Basel Mission, but again refused to be converted, as “he did not want to learn to read and write as a schoolboy.” It was in Akyem-Abuakwa that he was finally converted. The drama occurred in a vision, “whilst he was preparing a charm to kill somebody by magic.” In the vision he was commanded to burn his magic apparatus and to proclaim God’s wrath on all “fetishism”.</p>
+
+<p>This call came in 1920, and he was baptized by the Rev. Ofosuhene of the African Methodist Episcopal Zion (A.M.E.Z.) Church. He took up his cross, made of bamboo sticks, and dressed in a long black robe which had a large cross in the center and a red cross on each shoulder, and with his hair falling down to his shoulders, he entered Asante.</p>
+
+<p>At this time Sampson Opon had some similarities to John Wesley (1703-91), the English founder of the Methodist movement. Like Wesley he had undergone the experience of conversion, and like Wesley he decided to bring to others the faith he had found. Like Wesley, too, he won converts by using appeals to fear and pity, with threats of hell fire, promises of Heaven, wildly emotional oratory, and hymn singing. But, unlike Wesley, he was a criminal turned evangelist</p>
+
+<p>Perhaps it was these resemblances to Wesley which attracted the Methodist to Opon, and made them decide to use his services. He toured Asante with the Rev. W. C. Waterworth, arousing intense emotions, and baptizing about 10,000 people in less than two years. The Basel Mission, on the other hand, saw in him only a “big fetish man” with a thin veneer of Christianity. He told Debrunner in later years that he had had a “holy stone” which he said he received whilst in prison at Juaso, 40 mi (64 km) east-south-east of Kumase, with the help of which he could “read the whole Bible from Genesis to Revelation thanks to the Holy Spirit,” even though he had not learned how to read or write.</p>
+
+<p>In his later years he became a drunkard and “lost” his prophetic powers, as well as his alleged ability to read the Bible. The Methodists therefore excluded him from their church. But before his death, the actual date of which is uncertain, he returned to the church and settled down as a local preacher in his home town, Akuntanim, about 40 mi (64 km) west of Sunyani, in Brong-Ahafo, near the Ivory Coast border. The effects of his work in Asante had been so marked that in 1924 the Methodists decided to open the Wesleyan Training College in Kumase, instead of in the Colony (the southern, or coastal, part of the country), as had originally been their intention.</p>
+
+<p>M. A. Kwamena-Poh</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>F. L. Bartels, <em>The Roots of Ghana Methodism</em>, London, 1965; H. W. Debrunner, <em>The Story of Sampson Opong, The Prophet</em>, Accra, 1965, <em>A History of Christianity in Ghana</em>, Accra, 1967; David Kimble, <em>A Political History of Ghana</em>, 1950-1928, 1963; A. E. Southon, <em>Gold Coast Methodism</em>, Cape Coast, 1935.</p>
+
+<hr />
+
+<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (in 20 Volumes). Volume One Ethiopia-Ghana, ©1997 by L. H. Ofosu-Appiah, editor-in-chief, Reference Publications Inc., New York, NY. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Opon, Sampson (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +760,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -730,6 +799,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

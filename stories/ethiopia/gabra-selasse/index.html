@@ -607,8 +607,69 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/ethiopia/gabra-selasse/gabra_selasse_walda.jpg" alt="Gabra Aragay" class="bio" /></p>
+
+<p>Gabra Selassé Walda Aragay (1844/45-November 4, 1912), who held the post of Tsahafé Teezaz (Chief Imperial Secretary), was a chronicler, an influential courtier, and a church dignitary during the  reign of Menilek II (<em>q.v.</em>) [ reigned 1889-1913].</p>
+
+<p>Born around 1844 at Dabra Berehan, in Shawa, 70 miles (112 km) northeast of Addis Ababa, he was educated in eastern Shawa, where he studied theology, and was given the title of Alaqa (dean or chief of a cathedral). He began his career as a scribe at the court of Wayzaro Bafana (<em>q.v.</em>), Menilek’s wife, in the 1870s, and later became one of king’s secretaries. After the royal secretary’s death in about 1876, Gabra Selassé was appointed Tsahafé Teezaz, and became the first Minister of the Pen in 1907. He accompanied Menilek on all his travels and marches, and kept a record of the major historical events. Although his work was first published in French in 1930, the Amharic original was not published until 1966.</p>
+
+<p>Gabra Selassé also assisted the emperor in the reconstruction and administration of churches. Menilek later appointed him head of the St. Mary Church of Addis Ababa in Shawa, with the prestigious title of Nebura’ed, which was originally borne only by the head of the cathedral of Aksum. He died in November 1912, and was buried at the Raguel Church in Entoto, 3 miles (5 km) north of Addis Ababa.</p>
+
+<p>Bairu Tafla</p>
+
+<hr />
+
+<p><strong>Bibliography</strong></p>
+
+<p>Guèbre Selassié, <em>Chronique de règne de Menelik II</em> (“Chronicle of the Reign of Menilek II”), 2 vols, Paris, 1930-1931; Heruy Walda Selassé, <em>Yaheywat Tarik *(‘Information for Generations to Come”), Addis Ababa, 1922/23; Mahatama Selassé Walda Masqal, “A study of the  Ethiopian Culture of Horse-Names,” *Journal of Ethiopian Studies</em>, vol.7, No. 2, Addis Ababa, 1969; P. Mérab, <em>Impressions d’Ethiopie</em> (“Impressions of Ethiopia”), Paris, 1921-1929.</p>
+
+<hr />
+
+<p>This article was reprinted from <em>The Encyclopaedia Africana Dictionary of African Biography</em> (in 20 Volumes). Volume One Ethiopia-Ghana, ©1997 by L. H. Ofosu-Appiah, editor-in-chief, Reference Publications Inc., New York, NY. All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Gabra Selassé Walda Aragay`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +748,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +787,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -611,8 +611,67 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Early leader of the independent church movement in Africa.</p>
+
+<p>The son of a Nigerian (Yoruba) Anglican catechist, Agbebi was given the name David Brown Vincent at baptism. Educated by the Church Missionary Society (CMS) and appointed a teacher in 1878, he left the CMS in 1880 following a disciplinary measure. Converted about 1883 at a Baptist revival service, he and his wife, Adeline Adeotan, then became Baptists. Agbebi played a prominent role in the March 1888 establishment of the Native Baptist Church in Lagos, the first indigenous church in West Africa. Understanding the importance of indigenous African leadership for an African church, he affirmed the richness of African culture and in 1894 discontinued using David Brown Vincent as his name. An exemplary preacher and pastor, he initiated evangelistic work in Yorubaland and in the Niger Delta.</p>
+
+<p>While maintaining his Baptist ambitions, Agbebi was an apostle of ecumenism and an ambassador for Africa at large. His contact in 1895 with a Welsh Baptist, William Hughes, resulted in training for some Africans at the African Training Institute in Wales. In 1903 he visited the United States and Britain to raise some money to support his evangelistic work in West Africa. In 1898 he founded the African Baptist Union of West Africa. He was the first president of the Yoruba Baptist Association, formed in 1914, and he supported his wife’s efforts in establishing the nationwide Baptist Women’s League in 1919. A visionary, he dedicated his life to evangelism, education and the advancement of African leadership.</p>
+
+<p>Mathews A. Ojo</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>Mojola Agbebi, “The West African Problem,” in G. Spiller, ed., <em>Papers on Interracial Problems Contributed to the First International Races Congress…</em>(1911), reprinted in H. S. Wilson, <em>Origins of West African Nationalism</em> (1969); Akinsola Akiwowo, “The Place of Mojola Agbebi in African Nationalists Movements, 1890-1917,” <em>Phylon</em> 26 (1965): 122 - 139; E. A. Ayandele, <em>A Visionary of the African Church: Mojola Agbebi, 1860 - 1917</em> (1971); Hazel King, “Cooperation in Contextualization: Two Visionaries of the African Church-Mojola Agbebi and William Hughes of the African Institute, Colwyn Bay,” <em>JRA</em> 16 (1986): 2 - 21; J. B. Webster, <em>The African Churches Among the Yoruba, 1888 - 1922</em> (1964).</p>
+
+<hr />
+
+<p>This article is reproduced, with permission, from <em>Biographical Dictionary of Christian Missions</em>,   copyright © 1998, by Gerald H. Anderson, W. B. Eerdmans Publishing Company, Grand Rapids, Michigan.  All rights reserved.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Agbebi, Mojola`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +750,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -730,6 +789,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -607,8 +607,71 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Wilo Banderembako was born in Bugendana on May 28, 1937. Even as a youth, he was zealous for the Christian faith. It was for this reason that he was asked to become a catechist in the subsidiary parish of Kirimbi, which became his charge during the crisis provoked by the Bagaza regime.</p>
+
+<p>Amongst his numerous outstanding qualities, the most significant were the strength of his personality, his keen grasp of the truth, and his dedication to justice and duty. The following words were dear to him, and he was heard often to repeat them: “I feel bound always to tell the truth, even if it cost[s] me my life.”</p>
+
+<p>These virtues were never more apparent than on the great day which began the days of his martyrdom. On Sunday, July 19, 1998, Wilo was just about to start the Liturgy of the Word when soldiers arrived. One of them said, “I absolutely forbid you to continue with this celebration. Send everyone to the ceremonies at Bugendana.” The commemoration he was speaking of was the anniversary of the death of hundreds of displaced Tutsis who had died two years earlier. Wilo did not refuse absolutely to comply with the soldier’s demand but merely asked that he be allowed to celebrate for those of his parish who were too ill to go to Bugendana. As the soldier did not respond to this request, Wilo took his silence to mean “Yes.” But when Wilo began to make preparations for the celebration, the soldier burst out in fury, “You irritate me to the point of bloodshed!” At that point, Wilo took off his vestments, saying, “Let not the blood of Christians be upon me. It is you who shall bear the responsibility.” These words did not at all please the soldiers.</p>
+
+<p>One week later, Wilo was arrested by the police and brought to Bugendana. Upon arriving, he was immediately imprisoned. No one knows exactly what happened to him after that. Neither the government, nor military authorities, nor prison guards have ever revealed the circumstances of his death. According to some testimonies, Wilo died July 26 after severe beatings and torture inflicted by soldiers in Bugendana.</p>
+
+<p>After the celebration of his funeral Mass, Wilo was interred in Kirimbi beside the church.</p>
+
+<p>Marc Nsanzurwimo, M.Afr.</p>
+
+<hr />
+
+<h1 id="bibliography">Bibliography</h1>
+
+<p>N. Contran and G. Kadjemenje, <em>Cibles: 235 Prêtres Africains Tués</em> (Kinshasa: Afriquespoir, 2002).</p>
+
+<hr />
+
+<p>Received in 2004, this article is based on the research of Fr. Marc Nsanzurwimo, M.Afr. He studied under the direction of Fr. Francis Oborji, professor of the Faculty of Missiology at the Urbaniana Pontifical University in Rome, Secretary General of the International Association of Catholic Missiologists, and consulting member of the <em>DACB</em>. Translation from the original French in 2012 by Mrs. Elizabeth Mullen.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Banderembako, Wilo`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +750,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +789,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

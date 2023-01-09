@@ -609,8 +609,73 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/ethiopia/za-mikael/za_mikael.jpg" alt="Za-Mikael Aragawi" class="bio" /></p>
+
+<p>Abba Za-Mikael Aragawi (fin du 5ème siècle - début du 6ème) est un des Neuf Saints de l’église éthiopienne orthodoxe.</p>
+
+<p>Comme les huit autres - Abba Afsé, Abba Aéf, Abba Garima, Abba Guba, Abba Liqanos, Abba Pantaléwon, Abba Sahma, et Abba Yamata - on pense qu’il était d’origine syrienne et qu’il aurait participé à la traduction de la Bible Ge’ez. Cette Bible était basée sur la version de l’école d’Antioche, et, à la différence de l’école d’Alexandrie, elle soulignait l’interprétation littérale de la Bible, favorisant l’humanité du Christ au lieu de sa divinité.</p>
+
+<p>On trouve un récit de la vie de Za-Mikael dans un Gadl, soit un “Livre d’actes”, qui date, on pense, du quinzième siècle, et qui met l’accent sur le côté soi-disant miraculeux de sa vie. Né ‘Abd al-Masih, il est réputé d’avoir été membre de la maison royale de Byzance, et d’être devenu moine à l’âge de quatorze ans, quand Saint Pacôme lui a donné le nom Za-Mikael. Petit à petit, sa renommée avit attiré les huit autres Abbas, qui l’ont appelé Aragawi, soit “l’ancien”. Par la suite, sa mère est devenue religieuse et l’a rejoint.</p>
+
+<p>Accompagné de ses disciples, Za-Mikael a quitté Byzance, et on dit qu’il est allé à Aksum, ville qui était déjà chrétienne. Ils y ont été accueillis par le roi Ella Ameda II (qui a régné au 5ème siècle) dans la cinquième année de son règne, et sont restés par la suite à la cour de son successeur, Tazena. Ils ont passé douze ans à Aksum avant de se séparer pour aller chacun fonder un monastère.</p>
+
+<p>Pour sa part, accompagné de sa mère, Za-Mikael est allé dans l’est du Tegré où il a fondé un monastère au mont Damo, pendant le règne de Gabra Masqal (qui a régné d’environ 550 à 570). Selon la tradition, comme l’homme saint ne pouvait pas grimper cette montagne, il s’est agrippé à la queue d’un serpent qui l’a tiré jusqu’au sommet. Dans son Gadl, on réclame que le roi Kaleb (qui avait régné d’environ 514 à 530) l’aurait consulté avant d’entreprendre sa fameuse expédition vers l’Arabie Saoudite. On rappelle sa mort, qui est survenue au mois d’octobre, dans le Synaxarium de l’église éthiopienne (recueil liturgique regroupant les vies des Saints).</p>
+
+<p>Richard Pankhurst</p>
+
+<hr />
+
+<h1 id="bibliographie">Bibliographie</h1>
+
+<p>E.A.W. Budge, <em>A History of Ethiopia</em> [Une histoire de l’Ethiopie], Londres, 1928; C. Conti Rossini, “L’omilia di Yohannes vescovo d’Aksum in onore di Garima” (Homélie de Yohannes, Evêque d’Aksum, en honneur de Gariba), <em>Actes du XIème Congrès International des Orientalistes</em>, Paris, 1898, <em>Acta Yared et Pantalewon</em> (Actes de Yared et de Pantalewon), Paris, 1904, <em>Storia d’Etiopia</em> (Histoire de l’Ethiopie), Bergamo, 1928; I. Guidi, “Gadla Aragawi,” (Actes d’Aragawi), <em>Atti delia Regia Accadernia dei Lincei</em>, vol. 2, Rome, 1896, “La Chiesa Abissina” (l’église Abyssinienne), <em>Oriente Moderno</em>, Rome, 1922; M.A. van den Oudenrij, <em>La vie de Saint Za-Mikael ‘Aragawi</em>, Fribourg, 1939; F.M. Pereira, <em>Historia dos Martyres de Nagran</em> (Histoite des martyrs de Nagran), Lisbonne, 1899; Sergew Hable Selassie, <em>Ancient and Medieval Ethiopian History to 1270</em> (Histoire ancienne et médiévale de l’Ethiopie jusqu’à 1270), Addis Ababa, 1972.</p>
+
+<hr />
+
+<p>Cet article vient de The Encyclopaedia Africana Dictionary of African Biography (in 20 volumes). Volume One - Ethiopia-Ghana [Dictionnaire de Biographies Africaines de L’Encyclopédie Africana (en 20 volumes), Volume Un - Ethiopie-Ghana]. Éd. L.H. Ofusu-Appiah. New York: Reference Publications Inc., 1977. Tous droits réservés.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Aragawi, Za-Mika'el (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Lire d'autres versions: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -691,7 +756,7 @@
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 02 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 14 December 2022.<br>&copy; 2022 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -728,6 +793,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

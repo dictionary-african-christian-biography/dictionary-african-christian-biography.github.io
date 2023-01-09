@@ -607,8 +607,74 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>[TESO,  Muganda]</p>
+
+<p>Satulo Byantuyo was educated at Budo. In 1914 he arrived in  Teso, where he had already worked for a while previously, to be headmaster of  Ngora High School.[1] He was a very good teacher who worked hard, was friendly  with the Iteso, and did much to “uplift” the school.[2] After some years he  returned to Buganda, but in 1948 he came back to Teso on a prolonged visit,  staying at Kyere, and with <a href="okwerede_yakobo.html">Yakobo Okwerede</a> and Archdeacon Odiit. He did not finally  return to Buganda until 1963.[3]</p>
+
+<p><strong>Louise Pirouet</strong><em>**</em></p>
+
+<hr />
+
+<p><strong>Notes</strong>(short  form; see <a href="../pirouet-appendixa-sources/">List of  Sources</a> for complete citations):</p>
+<ol>
+  <li>
+    <p><em>Uganda  Notes</em>, November, 1914, p. 239.</p>
+  </li>
+  <li>
+    <p>Okwerede, 1968; Oguti, 1968.</p>
+  </li>
+  <li>
+    <p>Okwerede, 1968; Odiit, 1968.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>This biography, written by Louise Pirouet, was included in “Appendix A: Biographical Notes,”  on page 383 of “The Expansion  of the Church of Uganda (N.A.C.) from Buganda into Northern and Western Uganda  between 1891 and 1914, with Special Reference to the work of African Teachers  and Evangelists” (PhD Thesis: University of East Africa, 1968). Pirouet  published this thesis as <em>Black  Evangelists</em> (London: Rex Collings, 1978). However, <em>Black  Evangelists</em> does not reproduce the detailed biographies, complete with  references to sources, found in Appendix A of the thesis. Print copies are  available at Africana Section, Makerere University Library (U 02 P57); The Centre for Christianity  Worldwide, Cambridge; and a microfilm copy at the School of Oriental Studies,  London. [information from Angus Crichton]</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Byantuyo, Satulo`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +753,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +792,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -601,8 +601,79 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Roberta Amoah was born to Opanyin Patrick Onyeosi and Madam Florence Ekezi Onyeosi of the line of Obi Agbor in Delta State, Nigeria on September 23, 1931 at Prestea in the Western Region of Ghana (then Gold Coast). She was popularly called Auntie Esi and was the fourth of nine children. Roberta was a mother of two children, Mrs. Celeste H. Brown (UK) and Pastor Charles N. E. Amoah (librarian, Valley View University, Ghana).</p>
+
+<p>She had her primary and middle school education at Prestea and thereafter entered a vocational training school where she learned typing and dressmaking at Takoradi, also in the Western Region. Auntie Esi, as she was affectionately called, worked with Prestea State Gold Mining Corporation as a typist, and there met her husband, Mr. George Christian Heywood Amoah (he died in March 1989). She and her husband, who was a police officer, began their family life in 1965. She followed the husband wherever he was posted. She and her husband served in places like Bechem, Japekrom (in the Brong Ahafo Region of Ghana), and Hohoe, Worawora and some other parts in the Volta Region of Ghana. The full support she gave to her husband helped him to achieve a lot both in the family and externally. She traded in textiles and was the backbone of the family when things become tough. Her love for dancing won her many awards in various dancing and beauty competitions.</p>
+
+<p><strong>As a Mother</strong></p>
+
+<p>Auntie Esi was a tough, hardworking person and also a disciplinarian. She tried to instill good moral values in her children and all children she came across. In the absence of her husband, Auntie Esi stood tall and strong to take care of her family. She took care of all the needs of the family. She is known for her scrumptious and mouthwatering meals. No wonder she became the pastors’ cook at camp meetings. She taught her children humility, hard work, selflessness, kindness, and how to speak, as well as manners. She encouraged her children to study. She advised the children to be serious with church worship and lived as an example by her life of worship. She was a woman of prayer and made family worship a priority. Her kindness was extended to visitors. She selflessly provided for migrants from the Sahel who made their way to Ghana. Auntie Esi was a loving mother, grandma, and mother in-law. As a result of her example, her son and nephew are both pastors of the Seventh-day Adventist Church.</p>
+
+<p><strong>Her Baptism and Her Church Role</strong></p>
+
+<p>After the death of the husband  on March 6, 1989, Auntie Esi joined the Seventh-day Adventist Church, now Madina Central SDA Church in 1985. After studying at the baptismal class for some time and having understood the Adventist message, she got baptized (along with her son, who later became a pastor) in the University of Ghana pond at Ashalley Botwe by Pastor E. O. Abbey.</p>
+
+<p>Due to her unique leadership qualities and as a woman worthy of emulation, she was appointed as the first Women Ministry Leader, a position she held for many years, when the name of the Adventist auxillary club was changed from Dorcas Society to Women Ministry in the history of Madina Central SDA Church. She held other positions in the church as well and her influence was felt at the local church, the district and the South Ghana Conference (formerly, South Ghana Mission) at Accra. For a period of ten years, she served as a cook for pastors at annual camp meetings of the district. Her involvement in church activities and programs was remarkable. No service was too difficult for her to perform. She sacrificed her means and energy for the sake of the church. Maame Roberta Torkornoo, as she was called by the church members, fought a good fight of faith and died at the feet of Jesus.</p>
+
+<p>The sickness that took the life of Auntie Esi occurred on December 10, 2014. She was finally hospitalized at Korle Bu Teaching Hospital, Accra. Family and friends visited, and prayed for her recovery, but survival was not God’s plan for her at this time. On the morning of Thursday, July 3, 2014, the Lord called her to rest. Roberta Chukwuma Amoah, a loving Christian mother, will forever be remembered for her philanthropic lifestyle and unselfish service offered to her family, church, district, pastors and the Ghanaian state.</p>
+
+<p><strong>Kenneth Oppong</strong></p>
+
+<hr />
+
+<p><strong>Bibliography</strong></p>
+
+<p>Celebrating the Life of the Late Mad. Roberta Chukwuma Amoah. Program for Burial Service. Held on Sunday, August 31, 2014 at the Madina Central Seventh-day Adventist Church premises, Rawlings Circle, Madina-Accra.</p>
+
+<p>Pr. Charles N. E. Amoah, Son. Interview by author, August 26, 2016, at Valley View University Librarian’s Office on Friday, August 26, 2016.</p>
+
+<hr />
+
+<p>This article, submitted in September 2016, was researched and written by Kenneth Oppong, a Teaching Assistant and an Assistant Chaplain at Valley View University, Techiman Campus, under the supervision of Assoc. Professor Abiodun A. Adesegun, Ph.D while a Masters student (in Biblical and Theological Studies–Church History) at Adventist University of Africa, Kenya.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Amoah, Roberta Chukwuma`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -681,7 +752,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -720,6 +791,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

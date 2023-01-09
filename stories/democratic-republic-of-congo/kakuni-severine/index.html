@@ -607,8 +607,75 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>Séverine Kakuni was born in 1923 in the territory of Lubudi at Kolwezi in the province of Katanga in Democratic Republic of the Congo. Her parents were farmers and didn’t have the money to pay for school for their children. Consequently, Séverine grew up, poor and devout, under the discipline of the Catholic Church. She married Antoine and they had two girls and one boy.</p>
+
+<p>Kakuni was converted at the age of 23 during a sermon by Reverend Kizele from the 46th Pentecostal Community at Kolwezi. There she first heard God’s call, asking her to go to Lubudi for the sake of the gospel. She refused. But when her son died after a brief illness she reconsidered and accepted God’s mission. Instantly the child came back to life.</p>
+
+<p>In spite of this, Séverine had many questions and wondered what would become of her field. God reassured her, saying that he would send guards to protect her harvest. She left at that point. When she returned from her mission she found things as God had predicted: monkeys had picked all her corn, wild boars had harvested the manioc, the birds her rice, and her fields had been hoed by hares. All the produce was piled up and guarded by elephants.</p>
+
+<p>Kakuni had a special gift for worship. When she sang one could hear the sound of other instruments that were not in the room. One day she was seen lifted three feet up off the floor. She also had the gift of understanding the cries of birds and animal language. Her ministry was often accompanied by wonders and miracles-the dead could come back to life.</p>
+
+<p>She worked with a team of fourteen people that she had trained to accompany her wherever she went. When she arrived in a village, she first contacted the village chief or the local authorities. She then revealed to what degree demonic powers ruled the area and asked permission to deliver the population. Then her acolytes went in to evangelize for two days. On the third day, she went into action.</p>
+
+<p>In this way she planted forty-two churches in northern Katanga and in Angola. She trained several people to serve as intercessors, prophets, evangelists, and pastors. Several people were converted by her ministry and handed over their fetishes.</p>
+
+<p>At the end of her ministry Séverine gave in to tribalism which she refused to give up, in spite of God’s warnings and rebukes. So death took her at the age of fifty in 1982. During her burial one could see a light over her tomb for three nights. Then all was calm.</p>
+
+<p>Jean-Claude Kabanda</p>
+
+<hr />
+
+<p>Source:</p>
+
+<p>William Tindwa, interview in May 2007. Apostle William Tindwa is a former member of the 46th Pentecostal Community.</p>
+
+<hr />
+
+<p>This article, received in 2008, is the fruit of research by Jean-Claude Kabanda, a student in missiology at the Centre Universitaire de Missiology (University Missiology Center) in Kinshasa, DR Congo, under the supervision of Rev. Fohle Lygunda, regional coordinator for the <em>DACB</em>.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Kakuni, Séverine`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +754,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +793,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

@@ -607,8 +607,92 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p>[TORO]</p>
+
+<p>As a young man Rev. Andereya Sere had served in the  enclosure of <a href="byakweyamba_yafeti.html">Yafeti  Byakweyamba</a>__ and had thus come into contact with Christian  teaching.[1] He was baptized at Butiti by the Rev. <a href="kizito_zakariya_kisingiri2.html">Zakariya Kizito Kisingiri</a>__ on April 27,  1897.[2] He worked as a teacher under the Revs. A. L. Kitching and T. B.  Johnson at Butiti.[3] In 1903 he was sent to teach at Butanuka for a brief  period.[4] His wife, Lea, had also been trained as a teacher and she received  her letter in 1905.[5] At the request of the Christians of Butiti he was chosen  for ordination.[6] He was made deacon in 1907.[7] He worked for a year at  Butiti and a year at Mboga, and was then ordained priest in 1909, again  returning to Butiti where he remained until 1913, when for two years he worked  at Ngoma. From 1915-1922 and possibly longer he worked in Kyaka, and later also  served in Busongora—like the church teachers he was moved around a good  deal.[8] He officially retired in 1936, but went on doing a little work until  the early 1950’s.[9]</p>
+
+<p><strong>Louise Pirouet</strong></p>
+
+<hr />
+
+<p><strong>Notes</strong>(short  form; see <a href="../pirouet-appendixa-sources/">List of  Sources</a>__ for complete citations):</p>
+<ol>
+  <li>
+    <p>Balya, 1965.</p>
+  </li>
+  <li>
+    <p><em>Kabarole  Baptism Register</em>.</p>
+  </li>
+  <li>
+    <p>Balya, 1965.</p>
+  </li>
+  <li>
+    <p><em>Kabarole  Church Council Minutes</em>, September 19, 1903.</p>
+  </li>
+  <li>
+    <p><em>Toro Women  Teachers Record</em>.</p>
+  </li>
+  <li>
+    <p>Balya, 1965.</p>
+  </li>
+  <li>
+    <p>Church of Uganda, <em>Record Book</em>.</p>
+  </li>
+  <li>
+    <p>The details of his postings in these years can  be traced from those of his wife in the <em>Toro  Women Teachers Record</em>.</p>
+  </li>
+  <li>
+    <p>Balya, 1965.</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>This biography, written by Louise Pirouet, was included in “Appendix A: Biographical Notes,”  on page 421 of “The Expansion  of the Church of Uganda (N.A.C.) from Buganda into Northern and Western Uganda  between 1891 and 1914, with Special Reference to the work of African Teachers  and Evangelists” (PhD Thesis: University of East Africa, 1968). Pirouet  published this thesis as <em>Black  Evangelists</em> (London: Rex Collings, 1978). However, <em>Black  Evangelists</em> does not reproduce the detailed biographies, complete with  references to sources, found in Appendix A of the thesis. Print copies are  available at Africana Section, Makerere University Library (U 02 P57); The Centre for Christianity  Worldwide, Cambridge; and a microfilm copy at the School of Oriental Studies,  London. [information from Angus Crichton]</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Sere, Andereya and Lea`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -687,7 +771,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 02 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 14 December 2022.<br>&copy; 2022 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -726,6 +810,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>

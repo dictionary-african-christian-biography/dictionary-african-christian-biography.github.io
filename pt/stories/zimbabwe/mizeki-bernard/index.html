@@ -606,8 +606,67 @@
 
 
       <section class="page__content" itemprop="text">
-        
-          
+        <!-- CONTENT -->
+        <p><img src="/images/bio-pics/zimbabwe/mizeki-bernard/mizeki-bernard.jpg" alt="Bernard Mizeki" class="bio" /></p>
+
+<p>Quando tinha doze anos de idade, Bernard Mizeki deixou a sua casa em Moçambique e foi para a Cidade do Cabo, África do Sul, onde morou e trabalhou por dez anos. Ele trabalhava para colonos brancos e voltava todos os dias para a sua casa na favela. Ele ingressou na Escola Noturna Anglicana para negros e se negava a beber bebidas alcoólicas, esta era a forma que muitos africanos pobres afogavam seus sofrimentos. Ele tinha um dom para aprender idiomas, e este jovem africano logo aprendeu: inglês, holandês, francês e oito línguas africanas. Isto o conduziu a trabalhar como tradutor da Bíblia para as línguas nativas.</p>
+
+<p>Ele logo se tornou cristão. Mizeki foi preparado para o batismo em 1886, pelos membros da Sociedade do São João Evangelista. Então ele se tornou um catequista laico em Mashonaland, e acompanhava o bispo inglês ao interior, onde agora fica Zimbábue, onde ele construiu uma estação missionária, perto da residência do grande chefe Mangwende. Mizeki organizou o seu trabalho com uma rotina de orações diárias, cuidado da sua horta de subsistência, estudo das línguas locais, e ao mesmo tempo, o relacionamento com os nativos.</p>
+
+<p>A seguir, ele abriu uma escola, e com a permissão do chefe, mudou a estação missionária para uma planície próxima de uma área arborizada, onde se acreditava que moravam os espíritos ancestrais de Mashona. A estação Nhowe, prosperou desde 1891 até 1896, e o número de convertidos cresceu. O jovem catequista tinha um respeito considerável pelas crenças religiosas locais, e acreditava que aspectos da religião Espírita Shona com a sua fé monoteísta no grande deus Mwari era compatível com o pensamento cristão. No entanto, ele deixou os líderes religiosos muito irritados, ao cortar algumas árvores do lugar sagrado, e entalhar cruzes em outras.</p>
+
+<p>Durante a rebelião de Mashona em 1896, Mizeki foi aconselhado a fugir, sendo que os cristãos africanos locais eram vistos como agentes do imperialismo europeu, mais do que agentes da independência. Mizeki negou-se a abandonar a comunidade cristã pela qual ele assumiu responsabilidade, e na noite de 18 de Junho ele foi atingido por uma lança na frente da sua cabana. Enquanto que a sua esposa e outra pessoa corriam em busca de comida e cobertores na tentativa de mantê-lo vivo, foi quase cegada por uma ofuscante luz branca e sentiu uma brisa forte do lado da montanha onde estava Mizeki. Ao retornar ao local onde o haviam deixado, o corpo do mártir tinha desaparecido. O lugar da sua morte tornou-se um lugar de adoração para protestantes e católicos. Todos os anos, no aniversário de sua morte, peregrinos vêm de muitos lugares da África do Sul para orar e comemorar a sua vida.</p>
+
+<p>Poderoso Deus, cuja Glória é comemorada na vida de Bernard Mizeki, nós te agradecemos pelo ministério do teu servo entre o povo da África do Sul, como missionário, catequista e mártir. Através do exemplo desta firme coragem, inclusive sob risco de morte que a Tua Igreja possa ser chamada para renovar a sua fé em Ti,  Grande pastor de todo o povo. Amem.</p>
+
+<p>Frederick Quinn</p>
+
+<hr />
+
+<p>Este artigo foi reproduzido com a permissão de <em>African Saints: Saints, Martyrs, and Holy People from the Continent of Africa</em>, copyright © 2002 por Frederick Quinn, Crossroads Publishing Company, New York, New York. Todos os direitos são reservados.</p>
+
+      </section>
+    </div>
+  </article>
+</div>
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Mizeki, Bernard (A)`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Leia várias versões: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -690,7 +749,7 @@
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 02 January 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 14 December 2022.<br>&copy; 2022 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -725,6 +784,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayJanuary02232213" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayDecember14221526" async></script>
   </body>
 </html>
