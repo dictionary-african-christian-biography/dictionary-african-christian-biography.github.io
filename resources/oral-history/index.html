@@ -143,7 +143,7 @@
             <input type="checkbox" id="drop-2"/>
             <ul class=="top">
               <li class="second"><a href="/about/vision/">Vision</a></li>
-              <li class="second"><a href="/about/advisors/">Advisors</a></li>
+              <li class="second"><a href="/about/editors-and-elders/">Editors and Elders</a></li>
               <li class="second"><a href="/about/editorial-committee/">Executive Committee</a></li>
               <li class="second"><a href="/about/donor-list/">Donors</a></li>
               <li class="second"><a href="/about/partners/">Partners</a></li>
@@ -348,6 +348,8 @@ ORAL HISTORY ___________________________________________________________________
         padding: 16px;
         text-align: center;
         transition: 0.3s;
+        height: calc(100vh/1.5)
+
     }
     /* On mouse-over, add a deeper shadow */
     .card:hover {
@@ -372,15 +374,25 @@ ORAL HISTORY ___________________________________________________________________
         content: "";
         display: table;
         clear: both;
+        margin-bottom:5px;
     }
+
 
     @media screen and (max-width: 600px) {
         .column {
             width: 100%;
             display: block;
             margin-bottom: 20px;
+
         }
     }
+    .cardhead{
+        font-size: 20px;
+    }
+    .cardbody{
+        font-size: 12px;
+    }
+
 
 </style>
 
@@ -390,14 +402,13 @@ ORAL HISTORY ___________________________________________________________________
     <div class="column">
         <div class="card">
             <div class="splash__item-teaser">
-                <a href="/resources/oral-history/oh-eng/teaching-oral-history.pdf"><img src="/assets/images/squares/sq-introductory.jpg"></a>
+                <a href="/resources/oral-history/oh-eng/teaching-oral-history.pdf"><img src="/assets/images/squares/sq-oral-practice.jpg" class = 'bio'></a>
             </div>
             <div class="container">
-                <h2><a href="/resources/oral-history/oh-eng/teaching-oral-history.pdf">Oral History Workshop Curriculum</a></h2>
-                
-                <p>
-                    "Doing Oral History: Helping Christians Tell Their Own Story" - Class Curriculum based on original work by Dr. Jean-Paul Wiest and revised by Dr. Michèle Sigg (2015)  </p>
-                
+                <h2 class="cardhead"><a href="/resources/oral-history/oh-eng/teaching-oral-history.pdf">Oral History Workshop Curriculum</a></h2>
+                <p style="font-size:12px">
+                    "Doing Oral History: Helping Christians Tell Their Own Story"
+                    </p>
             </div>
         </div>
     </div>
@@ -405,14 +416,14 @@ ORAL HISTORY ___________________________________________________________________
     <div class="column">
             <div class="card" >
                 <div class="splash__item-teaser">
-                    <a href="/resources/oral-history/oh-eng/guidelines-for-rw-template-for-info-collecting.pdf"><img src="/assets/images/squares/sq-introductory.jpg"></a>
+                    <a href="/resources/oral-history/oh-eng/guidelines-for-rw-template-for-info-collecting.pdf"><img src="/assets/images/squares/sq-collect-info.jpg"></a>
                 </div>
                 <div class="container">
-                    <h2><a href="/resources/oral-history/oh-eng/guidelines-for-rw-template-for-info-collecting.pdf">Guidelines for Researchers and Writers: Template for Collecting Basic Information</a></h2>
-                    
-                    <p>
-                        This template can serve as a data-collecting tool for oral history research.     </p>       
-                    <p><a href = "/resources/oral-history/oh-eng/guidelines-for-rw-template-for-info-collecting.doc">Word</a></p>
+                    <h2 class="cardhead"><a href="/resources/oral-history/oh-eng/guidelines-for-rw-template-for-info-collecting.pdf">Template for Collecting Basic Information</a></h2>
+                    <p style="font-size:12px">
+                        Data-collecting tool for oral history research.     </p>
+                    <p style="font-size:12px"><a href = "/resources/oral-history/oh-eng/guidelines-for-rw-template-for-info-collecting.pdf">PDF</a></p>
+                    <p style="font-size:12px"><a href = "/resources/oral-history/oh-eng/guidelines-for-rw-template-for-info-collecting.doc">WORD</a></p>
 
 
                 </div>
@@ -422,14 +433,12 @@ ORAL HISTORY ___________________________________________________________________
         <div class="column">
             <div class="card" >
                 <div class="splash__item-teaser">
-                    <a href="/resources/oral-history/oh-eng/DACB-biography-review-form.pdf"><img src="/assets/images/squares/sq-introductory.jpg"></a>
+                    <a href="/resources/oral-history/oh-eng/DACB-biography-review-form.pdf"><img src="/assets/images/squares/sq-checklists.jpg"></a>
                 </div>
                 <div class="container">
-                    <h2><a href="/resources/oral-history/oh-eng/DACB-biography-review-form.pdf"> Biography Review Checklist</a></h2>
-                    
-                    <p>
-                        This checklist helps writers to critically review the drafts of their biographies.
-                        
+                    <h2 class="cardhead"><a href="/resources/oral-history/oh-eng/DACB-biography-review-form.pdf"> Biography Review Checklist</a></h2>
+                    <p style="font-size:12px">
+
 
                 </div>
             </div>
@@ -438,19 +447,18 @@ ORAL HISTORY ___________________________________________________________________
 
 
 
+
 <div class="row">
     <div class="column">
         <div class="card">
             <div class="splash__item-teaser">
-                <a href="/resources/oral-history/oh-eng/DACB-oral-history-uganda-booklet-kampala-2008.pdf"><img src="/assets/images/squares/sq-introductory.jpg"></a>
+                <a href="/resources/oral-history/oh-eng/DACB-oral-history-uganda-booklet-kampala-2008.pdf"><img src="/assets/images/squares/sq-history.jpg"></a>
             </div>
             <div class="container">
-                <h2><a href="/resources/oral-history/oh-eng/DACB-oral-history-uganda-booklet-kampala-2008.pdf">DACB Oral History Booklet</a></h2>
-                
-                <p><a href="/resources/oral-history/oh-eng/DACB-oral-history-uganda-booklet-cover.pdf">Book Cover</a></p>
-                <p>
-                    The booklet contains a selection of DACB biographies of the church in Uganda, Rwanda, and Burundi. Kampala, October 2008 </p>
-                
+                <h2 class="cardhead"><a href="/resources/oral-history/oh-eng/DACB-oral-history-uganda-booklet-kampala-2008.pdf">DACB Oral History Booklet</a></h2>
+                <p style="font-size:12px"><a href="/resources/oral-history/oh-eng/DACB-oral-history-uganda-booklet-cover.pdf">Book Cover (only)</a></p>
+                <p style="font-size:12px">
+                    Biographies from Uganda, Rwanda, and Burundi.</p>
 
             </div>
         </div>
@@ -459,16 +467,12 @@ ORAL HISTORY ___________________________________________________________________
     <div class="column">
         <div class="card" >
             <div class="splash__item-teaser">
-                <a href="/resources/oral-history/oh-eng/dacb-general-guidelines.docx"><img src="/assets/images/squares/sq-introductory.jpg"></a>
+                <a href="/resources/oral-history/oh-eng/dacb-general-guidelines.docx"><img src="/assets/images/squares/sq-guidlines.jpg"></a>
             </div>
             <div class="container">
-                <h2><a href="/resources/oral-history/oh-eng/dacb-general-guidelines.docx">DACB General Guidelines</a></h2>
-                
-                <p><a href="/resources/oral-history/oh-eng/dacb-general-guidelines.pdf">(PDF)</a></p>
-                <p><a href="/resources/oral-history/oh-eng/dacb-general-guidelines.docx">(Word)</a></p>
-
-
-                
+                <h2 class="cardhead"><a href="/resources/oral-history/oh-eng/dacb-general-guidelines.docx">DACB General Guidelines</a></h2>
+                <p style="font-size:12px"><a href="/resources/oral-history/oh-eng/dacb-general-guidelines.pdf">PDF</a></p>
+                <p style="font-size:12px"><a href="/resources/oral-history/oh-eng/dacb-general-guidelines.docx">WORD</a></p>
 
             </div>
         </div>
@@ -477,16 +481,13 @@ ORAL HISTORY ___________________________________________________________________
     <div class="column">
         <div class="card" >
             <div class="splash__item-teaser">
-                <a href="/resources/oral-history/oh-eng/interview-procedure.docx"><img src="/assets/images/squares/sq-introductory.jpg"></a>
+                <a href="/resources/oral-history/oh-eng/interview-procedure.docx"><img src="/assets/images/squares/sq-interview.jpg"></a>
             </div>
             <div class="container">
-                <h2><a href="/resources/oral-history/oh-eng/interview-procedure.docx">Interview Procedure</a></h2>
-                
-                <p><a href="/resources/oral-history/oh-eng/interview-procedure.pdf">(PDF)</a></p>
-                <p><a href="/resources/oral-history/oh-eng/interview-procedure.docx">(Word)</a></p>
+                <h2 class="cardhead"><a href="/resources/oral-history/oh-eng/interview-procedure.docx">Interview Procedure</a></h2>
+                <p style="font-size:12px"><a href="/resources/oral-history/oh-eng/interview-procedure.pdf">PDF</a></p>
+                <p style="font-size:12px"><a href="/resources/oral-history/oh-eng/interview-procedure.docx">WORD</a></p>
 
-
-                
 
             </div>
         </div>
@@ -497,15 +498,13 @@ ORAL HISTORY ___________________________________________________________________
     <div class="column">
         <div class="card">
             <div class="splash__item-teaser">
-                <a href="/resources/oral-history/oh-eng/interview-techniques.docx"><img src="/assets/images/squares/sq-introductory.jpg"></a>
+                <a href="/resources/oral-history/oh-eng/interview-techniques.docx"><img src="/assets/images/squares/sq-interview.jpg"></a>
             </div>
             <div class="container">
-                <h2><a href="/resources/oral-history/oh-eng/interview-techniques.docx">Interview techniques</a></h2>
-                
-                <p><a href="/resources/oral-history/oh-eng/interview-techniques.pdf">(PDF)</a></p>
-                <p><a href="/resources/oral-history/oh-eng/interview-techniques.docx">(Word)</a></p>
+                <h2 class="cardhead"><a href="/resources/oral-history/oh-eng/interview-techniques.docx">Interview techniques</a></h2>
+                <p style="font-size:12px"><a href="/resources/oral-history/oh-eng/interview-techniques.pdf">PDF</a></p>
+                <p style="font-size:12px"><a href="/resources/oral-history/oh-eng/interview-techniques.docx">WORD</a></p>
 
-                
 
             </div>
         </div>
@@ -514,23 +513,19 @@ ORAL HISTORY ___________________________________________________________________
     <div class="column">
         <div class="card" >
             <div class="splash__item-teaser">
-                <a href="/resources/oral-history/oh-eng/planning-doc.docx"><img src="/assets/images/squares/sq-introductory.jpg"></a>
+                <a href="/resources/oral-history/oh-eng/planning-doc.docx"><img src="/assets/images/squares/sq-signup.jpg"></a>
             </div>
             <div class="container">
-                <h2><a href="/resources/oral-history/oh-eng/planning-doc.docx">Planning/sign up document</a></h2>
-                
-                <p><a href="/resources/oral-history/oh-eng/planning-doc.pdf">(PDF)</a></p>
-                <p><a href="/resources/oral-history/oh-eng/planning-doc.docx">(Word)</a></p>
+                <h2 class="cardhead"><a href="/resources/oral-history/oh-eng/planning-doc.docx">Planning/sign up document</a></h2>
+                <p style="font-size:12px"><a href="/resources/oral-history/oh-eng/planning-doc.pdf">PDF</a></p>
+                <p style="font-size:12px"><a href="/resources/oral-history/oh-eng/planning-doc.docx">WORD</a></p>
 
-
-                
 
             </div>
         </div>
     </div>
 
 </div>
-
 
       </section>
     </div>
@@ -616,7 +611,7 @@ ORAL HISTORY ___________________________________________________________________
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 21 January 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 03 February 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -655,6 +650,6 @@ ORAL HISTORY ___________________________________________________________________
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=SaturdayJanuary21232107" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=FridayFebruary03231317" async></script>
   </body>
 </html>

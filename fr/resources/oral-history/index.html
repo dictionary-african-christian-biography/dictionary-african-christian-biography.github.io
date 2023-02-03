@@ -143,7 +143,7 @@
             <input type="checkbox" id="drop-2"/>
             <ul class=="top">
               <li class="second"><a href="/fr/about/vision/">Vision</a></li>
-              <li class="second"><a href="/fr/about/advisors/">Conseillers</a></li>
+              <li class="second"><a href="/fr/about/editors-and-elders/">Éditeurs et Anciens</a></li>
               <li class="second"><a href="/about/editorial-committee/">Comité exécutif</a></li>
               <li class="second"><a href="/about/donor-list/">Nos Donateurs</a></li>
               <li class="second"><a href="/fr/about/partners/">Partenaires</a></li>
@@ -340,20 +340,212 @@ ORAL HISTORY ___________________________________________________________________
       
 
       <section class="page__content" itemprop="text">
-        <p>Vous trouverez ici des documents et fiches utiles pour vos projets de biographie et/ou d’histoire orale. Pour les directives générales de soumission d’une biographie au DIBICA, voir cette <a href="/fr/connect/submit/">page</a>.</p>
+        <style>
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    transition: 0.3s;
+    height: calc(100vh/1.5)
 
-<ol>
-  <li><a href="/resources/oral-history/oh-fr/oral-history-fr-manual.pdf">Programme complet de l’atelier d’histoire orale</a> (PDF): “Faire de l’histoire orale: aider les chrétiens à raconter leur propre histoire” – Programme de cours basé sur le travail original de Prof. Jean-Paul Wiest (2010).</li>
-  <li><a href="/resources/oral-history/oh-fr/fiche-planification.docx">Fiche planification d’un projet d’histoire orale</a> (Version Word);
-<a href="/resources/oral-history/oh-fr/fiche-planification.pdf">Version PDF</a> – Ce document vous aidera à planifier votre projet de biographie.</li>
-  <li><a href="/resources/oral-history/oh-fr/fiche-explicative.docx">Modèle de fiche explicative</a>(Version Word); <a href="/resources/oral-history/oh-fr/fiche-explicative.pdf">Version PDF</a> – un document que vous pouvez adapter pour expliquer votre projet de recherche aux interviewés potentiels.</li>
-  <li><a href="/resources/oral-history/oh-fr/autorisation.docx">Modèle de lettre d’autorisation de recherche</a>(Version Word); <a href="/resources/oral-history/oh-fr/autorisation.pdf">Version PDF</a> – un document à utiliser par un institut/université pour expliquer les buts de la recherche aux interviewés potentiels.</li>
-  <li><a href="/resources/oral-history/oh-fr/guidelines-fr-template-for-info-collecting.docx">Maquette pour la collecte d’informations</a> (Version Word); <a href="/resources/oral-history/oh-fr/guidelines-fr-template-for-info-collecting.pdf">Version PDF</a> – une fiche qui vous permet de ne rien oublier dans votre collecte de données pour une biographie.</li>
-  <li><a href="/resources/oral-history/oh-fr/procedure.docx">Procédures d’interview</a>(Version Word); <a href="/resources/oral-history/oh-fr/procedure.pdf">Version PDF</a> – une liste de choses à faire avant, pendant, et après l’interview.</li>
-  <li><a href="/resources/oral-history/oh-fr/interviews.docx">Techniques d’interview</a>(Version Word);  <a href="/resources/oral-history/oh-fr/interviews.pdf">Version PDF</a> – exemples de bonnes et de mauvaises questions d’interview.</li>
-  <li><a href="/resources/oral-history/oh-fr/analyse-info.docx">Analyse contextuelle</a>(Version Word); <a href="/resources/oral-history/oh-fr/analyse-info.pdf">Version PDF</a> – une fiche pour récolter des informations clés en lien avec la préservation de l’histoire d’une église ou dénomination.</li>
-  <li>Ressources utiles pour la recherche sur le sujet du christianisme africain: <a href="/resources/oral-history/oh-fr/ressources-utiles.docx">Version Word</a>;  <a href="/resources/oral-history/oh-fr/ressources-utiles.pdf">Version PDF</a></li>
-</ol>
+  }
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+  .column {
+    float: left;
+    width: 33%;
+    padding: 0 10px;
+  }
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom:5px;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+
+    }
+  }
+  .cardhead{
+    font-size: 20px;
+  }
+  .cardbody{
+    font-size: 12px;
+  }
+
+
+</style>
+
+<p>Vous trouverez ici des documents et fiches utiles pour vos projets de biographie et/ou d’histoire orale. Pour les directives générales de soumission d’une biographie au DIBICA, <a href= "/fr/connect/submit/ >">voir ici</a>
+</p>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="splash__item-teaser">
+        <a href="/resources/oral-history/oh-fr/oral-history-fr-manual.pdf"><img src="/assets/images/squares/sq-oral-practice.jpg" class = 'bio'></a>
+      </div>
+      <div class="container">
+        <h2 class="cardhead"><a href="/resources/oral-history/oh-fr/oral-history-fr-manual.pdf">Programme complet de l'atelier d'histoire orale</a></h2>
+        <p style="font-size:12px">
+          "Faire de l'histoire orale: aider les chrétiens à raconter leur histoire"
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card" >
+      <div class="splash__item-teaser">
+        <a href="/resources/oral-history/oh-fr/fiche-planification.docx"><img src="/assets/images/squares/sq-checklists.jpg"></a>
+      </div>
+      <div class="container">
+        <h2 class="cardhead"><a href="/resources/oral-history/oh-fr/fiche-planification.docx">Fiche planification d’un projet d’histoire orale</a></h2>
+        <p style="font-size:12px">
+           </p>
+        <p style="font-size:12px"><a href = "/resources/oral-history/oh-fr/fiche-planification.pdf">PDF</a></p>
+        <p style="font-size:12px"><a href = "/resources/oral-history/oh-fr/fiche-planification.docx">WORD</a></p>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card" >
+      <div class="splash__item-teaser">
+        <a href="/resources/oral-history/oh-fr/fiche-explicative.docx"><img src="/assets/images/squares/sq-explain.jpg"></a>
+      </div>
+      <div class="container">
+        <h2 class="cardhead"><a href="/resources/oral-history/oh-fr/fiche-explicative.docx"> Modèle de fiche explicative</a></h2>
+        <p style="font-size:12px">
+          Comment expliquer votre projet aux interviewés potentiels.
+        <p style="font-size:12px"><a href = "/resources/oral-history/oh-fr/fiche-explicative.pdf">PDF</a></p>
+        <p style="font-size:12px"><a href = "/resources/oral-history/oh-fr/fiche-explicative.docx">WORD</a></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="splash__item-teaser">
+        <a href="/resources/oral-history/oh-fr/autorisation.docx"><img src="/assets/images/squares/sq-explain.jpg"></a>
+      </div>
+      <div class="container">
+        <h2 class="cardhead"><a href="/resources/oral-history/oh-fr/autorisation.docx">Modèle de lettre d’autorisation de recherche</a></h2>
+        <p style="font-size:12px">
+          Explique les buts de la recherche (usage institutionnel).</p>
+        <p style="font-size:12px"><a href="/resources/oral-history/oh-fr/autorisation.pdf">PDF</a></p>
+        <p style="font-size:12px"><a href="/resources/oral-history/oh-fr/autorisation.docx">WORD</a></p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card" >
+      <div class="splash__item-teaser">
+        <a href="/resources/oral-history/oh-fr/guidelines-fr-template-for-info-collecting.docx"><img src="/assets/images/squares/sq-collect-info.jpg"></a>
+      </div>
+      <div class="container">
+        <h2 class="cardhead"><a href="/resources/oral-history/oh-fr/guidelines-fr-template-for-info-collecting.docx">Maquette pour la collecte d'informations</a></h2>
+        <p style="font-size:12px">
+          Pour ne rien oublier dans votre collecte de données.</p>
+        <p style="font-size:12px"><a href="/resources/oral-history/oh-fr/guidelines-fr-template-for-info-collecting.pdf">PDF</a></p>
+        <p style="font-size:12px"><a href="/resources/oral-history/oh-fr/guidelines-fr-template-for-info-collecting.docx">WORD</a></p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card" >
+      <div class="splash__item-teaser">
+        <a href="/resources/oral-history/oh-fr/procedure.docx"><img src="/assets/images/squares/sq-interview.jpg"></a>
+      </div>
+      <div class="container">
+        <h2 class="cardhead"><a href="/resources/oral-history/oh-fr/procedure.docx">Procédures d’interview</a></h2>
+        <p style="font-size:12px">Avant, pendant, et après l’interview. </p>
+        <p style="font-size:12px"><a href="/resources/oral-history/oh-fr/procedure.pdf">PDF</a></p>
+        <p style="font-size:12px"><a href="/resources/oral-history/oh-fr/procedure.docx">WORD</a></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="splash__item-teaser">
+        <a href="/resources/oral-history/oh-fr/interviews.docx"><img src="/assets/images/squares/sq-interview.jpg"></a>
+      </div>
+      <div class="container">
+        <h2 class="cardhead"><a href="/resources/oral-history/oh-fr/interviews.docx">Techniques d'interview</a></h2>
+        <p style = "font-size:12px"> Les bonnes et mauvaises questions.   </p>
+        <p style="font-size:12px"><a href="/resources/oral-history/oh-fr/interviews.pdf">PDF</a></p>
+        <p style="font-size:12px"><a href="/resources/oral-history/oh-fr/interviews.docx">WORD</a></p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card" >
+      <div class="splash__item-teaser">
+        <a href="/resources/oral-history/oh-fr/analyse-info.docx"><img src="/assets/images/squares/sq-forms.jpg"></a>
+      </div>
+      <div class="container">
+        <h2 class="cardhead"><a href="/resources/oral-history/oh-fr/analyse-info.docx">Analyse contextuelle</a></h2>
+        <p style="font-size:12px"> Liste d'informations clés à récolter .</p>
+        <p style="font-size:12px"><a href="/resources/oral-history/oh-fr/analyse-info.pdf">PDF</a></p>
+        <p style="font-size:12px"><a href="/resources/oral-history/oh-fr/analyse-info.docx">WORD</a></p>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card" >
+      <div class="splash__item-teaser">
+        <a href="/resources/oral-history/oh-fr/ressources-utiles.docx"><img src="/assets/images/squares/sq-history.jpg"></a>
+      </div>
+      <div class="container">
+        <h2 class="cardhead"><a href="/resources/oral-history/oh-fr/ressources-utiles.docx">Ressources utiles sur le christianisme africain</a></h2>
+        <p style="font-size:12px"><a href="/resources/oral-history/oh-fr/ressources-utiles.pdf">PDF</a></p>
+        <p style="font-size:12px"><a href="/resources/oral-history/oh-fr/ressources-utiles.docx">WORD</a></p>
+
+      </div>
+    </div>
+  </div>
+
+</div>
 
       </section>
     </div>
@@ -441,7 +633,7 @@ ORAL HISTORY ___________________________________________________________________
 
         
         <div class="box_two">
-          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 21 January 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: 03 February 2023.<br>&copy; 2023 Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="/fr/connect/contact/">Contactez Nous</a> | <a href="/about/usage/">Informations d'Utilisation et de Citation</a>
         </div>
         
 
@@ -478,6 +670,6 @@ ORAL HISTORY ___________________________________________________________________
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=SaturdayJanuary21232107" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=FridayFebruary03231317" async></script>
   </body>
 </html>

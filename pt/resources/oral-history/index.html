@@ -143,7 +143,7 @@
             <input type="checkbox" id="drop-2"/>
             <ul class=="top">
               <li class="second"><a href="/pt/about/vision/">Visão</a></li>
-              <li class="second"><a href="/pt/about/advisors/">Conselheiros</a></li>
+              <li class="second"><a href="/about/editors-and-elders/">Editores e anciãos</a></li>
               <li class="second"><a href="/about/editorial-committee/">Comitê Executivo</a></li>
               <li class="second"><a href="/about/donor-list/">Nossos Doadores</a></li>
               <li class="second"><a href="/pt/about/partners/">Parceiros</a></li>
@@ -341,11 +341,80 @@ ORAL HISTORY ___________________________________________________________________
       
 
       <section class="page__content" itemprop="text">
-        <p>Aqui você encontrará fontes sobre metodologia de história oral, incluindo o currículo completo do Workshop de História Oral do DACB, completo com planilhas.</p>
+        <style>
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    transition: 0.3s;
+    height: calc(100vh/1.5)
 
-<ul>
-  <li><a href="/resources/doing_oral_history_portuguese.pdf">Programa completo do workshop de história oral</a> (PDF): “Fazendo história oral: ajudando os cristãos a contar sua própria história” - Curso programa baseado na obra original do Prof. Jean-Paul Wiest (2010).</li>
-</ul>
+  }
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+  .column {
+    float: left;
+    width: 33%;
+    padding: 0 10px;
+  }
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom:5px;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+
+    }
+  }
+  .cardhead{
+    font-size: 20px;
+  }
+  .cardbody{
+    font-size: 12px;
+  }
+
+
+</style>
+
+<p>
+  Aqui você encontrará fontes sobre metodologia de história oral, incluindo o currículo completo do Workshop de História Oral do DACB, completo com planilhas.
+</p>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="splash__item-teaser">
+        <a href="/resources/oral-history/oh-fr/oral-history-fr-manual.pdf"><img src="/assets/images/squares/sq-oral-practice.jpg" class = 'bio'></a>
+      </div>
+      <div class="container">
+        <h2 class="cardhead"><a href="/resources/oral-history/oh-fr/oral-history-fr-manual.pdf">Programa completo do workshop de história oral</a></h2>
+        <p style="font-size:12px">
+          "Fazendo história oral: ajudando os cristãos a contar sua própria história"        </p>
+      </div>
+    </div>
+  </div>
+
+
+</div>
 
       </section>
     </div>
@@ -435,7 +504,7 @@ ORAL HISTORY ___________________________________________________________________
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 21 January 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 03 February 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -470,6 +539,6 @@ ORAL HISTORY ___________________________________________________________________
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=SaturdayJanuary21232107" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=FridayFebruary03231317" async></script>
   </body>
 </html>
