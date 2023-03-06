@@ -342,153 +342,195 @@ ORAL HISTORY ___________________________________________________________________
       
 
       <section class="page__content" itemprop="text">
-        <p>On this page you can find materials that can be used in courses on African Christian history or biography.</p>
+        <style>
+    .card {
+        width: 300px;
+        background: #fff;
+        transition: box-shadow 0.3s ease-in-out;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    }
 
-<!------------------------------------------------------------------------------------------------------------------------------------------->
-<!-------------------------------GENERAL AFRICA---------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------------------------------------------->
-<div class="tab">
-<input class="accordion" id="general" type="checkbox" name="tabs" />
-<label class="accordion" for="general">General Africa and Research-Related Links  </label>
-<div class="tab-content">
+    /* Add box shadow to entire card on hover */
+    .card:hover {
+        box-shadow: 0 1px 35px 0 rgba(0, 0, 0, 0.3);
+    }
 
-    <ul>
-      <li><a href="http://www.bbc.co.uk/worldservice/africa/features/storyofafrica/index.shtml">BBC: The Story of Africa</a></li>
-      <li><a href="http://www.earlyafricanchristianity.com/">Center for Early African Christianity</a></li>
-      <li><a href="https://christianhistoryinstitute.org/">Christian History Institute</a></li>
-      <li><a href="http://historyonline.chadwyck.co.uk">History Online</a></li>
-      <li><a href="http://www.tidac.org/">The Institute for Diasporan and African Culture</a></li>
-      <li><a href="http://www.mundus.ac.uk">Mundus - Gateway to Missionary Collections in the U.K.</a></li>
-      <li><a href="http://www.paulinesafrica.org">Paulines Publications Africa</a></li>
-      <li><a href="http://www.soas.ac.uk/">School of Oriental and African Studies</a></li>
-      <li><a href="http://www.anglicancommunion.org/tour/index.cfm">Anglican Provinces in Africa</a></li>
-      <li><a href="https://cac-worldwide.org/home/">Christ Apostolic Church Worldwide</a></li>
-      <li><a href="http://www.aladura.net/">Church of the Lord (Aladura)</a></li>
-      <li><a href="http://www.africanazarene.org/">Church of the Nazarene in Africa</a></li>
-      <li><a href="http://www.dclm.org/">Deeper Christian Life Ministry</a></li>
-      <li><a href="http://rccg.org/">The Redeemed Christian Church of God</a></li>
-      <li><a href="http://www.adventist.org/">Seventh-Day Adventist World Church</a></li>
-      <li><a href="http://www.spiritans.org/africa.html">Spiritans - Africa (Catholic)</a></li>
-    </ul>
+    /* Creates variation of card component in a wide format */
+    .card.card--wide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: row;
+    }
 
-  </div></div>
+    .card__media {
+        position: relative;
+        width: 300px;
+    }
 
-<!------------------------------------------------------------------------------------------------------------------------------------------->
-<!-------------------------------ONLINE RESEARCH--------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------------------------------------------->
-<div class="tab">
-<input class="accordion" id="online" type="checkbox" name="tabs" />
-<label class="accordion" for="online">Online Research</label>
-<div class="tab-content">
+    /* Adds transparent overlay over image. */
+    .card__media::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.3);
+    }
 
-    <ul>
-      <li><a href="https://afriprov.org/">African Proverbs, Sayings and Stories</a> Rev. Joseph G. Healey, MM</li>
-      <li><a href="https://www.facebook.com/afriprov/">African Proverbs, Sayings and Stories: Society and Culture Facebook page</a></li>
-      <li><a href="http://pitts.emory.edu/collections/selectholdings/subsaharan.cfm">Pitts Theological Library at Emory University</a> This is a link to a description of some of what we hold at Pitts Theology Library. The most valuable dimension of this link is the further embedded link to our library catalogue, the <a href="http://discovere.emory.edu/primo_library/libweb/action/search.do?ct=facet&amp;fctN=facet_library&amp;fctV=THEO&amp;rfnGrp=1&amp;rfnGrpCounter=1&amp;frbg=&amp;&amp;fn=search&amp;indx=1&amp;dscnt=0&amp;scp.scps=scope%3A(repo)%2Cscope%3A(01EMORY_ALMA)%2CEmory_PrimoThirdNode&amp;tb=t&amp;vl(38512462UI1)=all_items&amp;vid=discovere&amp;mode=Basic&amp;ct=search&amp;srt=rank&amp;tab=emory_catalog&amp;dum=true&amp;vl(freeText0)=sub-saharan%20african%20periodicals&amp;dstmp=1506956373265">850</a> number. By clicking on this embedded link, researchers are directed to periodical holdings catalogued under the subject heading “sub-saharan african periodicals.” Researchers can then refine their search within the collection by making selections from the left panel of the online catalogue; subject, author, and language may be of most use to determine if we hold particular items. (from Jennifer Aycock)</li>
-      <li><a href="http://www.orthodoxresearchinstitute.org/articles/church_history/makarios_tillyrides_east_africa.htm">Orthodox Research Institute</a> “The Origin of Orthodoxy in East Africa.” This website offers resources, articles, links, book titles, and information on the work and mission of the Orthodox Research Institute.</li>
-    </ul>
+    .card__img {
+        display: block;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
-  </div></div>
 
-<!------------------------------------------------------------------------------------------------------------------------------------------->
-<!-------------------------------DOCUMENTS--------------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------------------------------------------->
-<div class="tab">
-<input class="accordion" id="doc" type="checkbox" name="tabs" />
-<label class="accordion" for="doc">Documents for Download</label>
-<div class="tab-content">
+    .card__content {
+        padding: 40px 25px;
+        color: #999999;
+        transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    }
 
-    <p><strong>Teaching Resources: Curriculum Booklet</strong></p>
+    /* Changes padding on wide card */
+    .card--wide .card__content {
+        padding: 20px 20px;
+        width: calc(100% - 300px);
+    }
 
-    <p><em>Stories of Faith and Leadership from Africa: Select Biographies of Leaders from the
-Continent’s Rich Christian History</em></p>
+    /* By default we hide the excerpt on card long. */
+    .card__excerpt {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
 
-    <p>By Kyama Mugambi, PhD</p>
+    /* Removes max-height on wide card */
+    .card--wide .card__excerpt {
+        max-height: none;
+    }
 
-    <p><strong>Introduction</strong></p>
+    /* On hover, we expand the excerpt container to show the text. */
+    .card:hover .card__excerpt {
+        max-height: 300px;
+    }
 
-    <p>The story of Christianity on the continent is a story of how God’s
-Truth in the Person of Jesus Christ crosses geographic, social, cultural, and
-even gender barriers. Here we see struggle and triumph, victory and
-persecution. The story of Christianity is also about Africans engaging their
-minds, theologically, as they sought to understand and present the Messiah
-as best as they could. African scholars contributed to orthodoxy, the quest
-to find and communicate the correct, accepted Christian doctrine. In the
-story you meet different kinds of leaders who showed courage, and fortitude
-as they engaged in mission, presenting the Gospel to their generation, in
-their context. This story is both about historic mission churches and
-indigenous new expressions. It is as much about women as it is about men.
-It is as much about the youth as it is about older people. This short book
-tries to capture all these elements through just a few representative stories.</p>
+    .card__title {
+        color: initial;
+        margin: 0 0 10px;
+        font-size: 20px;
+    }
 
-    <p>In this book you will find narratives about African leaders whose lives
-left a mark not just on the continent, but in the history of the entire
-Christian community. Their lives are by no means the most important. In
-fact these stories represent a great many leaders whose contributions have
-not been preserved in writing. Their names are written in the Lamb’s Book
-of Life, and in hearts of those they served during their lives.</p>
+    .card__subtitle {
+        color: #964b00;
+        font-size: 15px;
+    }
 
-    <p>Download this textbook of African Christion history (college level) by Dr. Kyama Mugambi: <a href="/resources/kmugambi-stories-of-faith.pdf">Stories of Faith and Leadership from Africa</a></p>
+    .card__meta {
+        color: #ccc;
+        font-size: 14px;
+    }
+    .card_header {
+        width: 100%;
+    }
 
-    <hr />
+    @media screen and (max-width: 600px) {
+        .card.card--wide {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            width: 100%;
+            flex-direction: column;
+            
+        }
+        .card--wide .card__content {
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            flex-grow: initial;
+        }
+        .card__header{
+            flex-direction: column;
 
-    <p><strong>Annotated Bibliography: Christianity and Islam–Biographies</strong></p>
+        }
+    }
 
-    <p>Ramey, Grace. <a href="/resources/christian-muslim-bibliography.pdf">Annotated Bibliography of Christian Interaction with Islam in Africa</a>. Boston University Undergraduate Research Opportunity Program (UROP) Final Project, June 2020.</p>
 
-  </div></div>
+</style>
 
-<!------------------------------------------------------------------------------------------------------------------------------------------->
-<!-------------------------------MEDIA------------------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------------------------------------------->
-<div class="tab">
-<input class="accordion" id="media" type="checkbox" name="tabs" />
-<label class="accordion" for="media">Media</label>
-<div class="tab-content">
+<p> On this page you can find materials that can be used in courses on African Christian history or biography.
+</p>
 
-    <p>(Internet connection needed)</p>
+<h2> Teaching Resources: Curriculum Booklet</h2>
 
-    <hr />
+<article class="card card--wide">
+        <div class="card__img">
+        <a href="/resources/kmugambi-stories-of-faith.pdf"><img src="/assets/images/squares/sq-leader.jpg" alt="Card image" /></a>
+        </div>
 
-    <p>Chuka University Jerusha Kanyua Documentary<br />
-Learn about Jerusha Kanyua, a phenomenal woman who, besides having had a church named in her honour (the J.K.M.C) and being a seer, is also credited for being one of the early pioneers of Ndagani.<br />
-Cinematographer: Victor Murithi<br />
-Documentary bibliography of written and oral <a href="/resources/bio-pdfs/kenya/jkanyua-bibliography.pdf">sources.</a><br />
-Large portions of the film script are direct quotes from the excellent biography of <a href="/stories/kenya/kanyua-jerusha/">Jerusha Kanyua</a>, by Dr. Dickson Nkonge Kagema.
-***</p>
+    <div class="card__content">
+        <header class="card__header">
+            <h2 class="card__title"><a href="/resources/kmugambi-stories-of-faith.pdf">Stories of Faith and Leadership from Africa</a></h2>
+            <div class="card__subtitle"> Select Biographies of Leaders from the
+                Continent’s Rich Christian History, By Kyama Mugambi, PhD</div>
+        </header>
+        <p class="card__excerpt">
+            In this book you will find narratives about African leaders whose lives left a mark not just on the continent, but in the history of the entire Christian community. </p>
 
-    <h3 id="kanyua-jerusha"><a href="https://www.youtube.com/watch?v=xCt7uPJ_oKI">Kanyua, Jerusha.</a></h3>
-    <p>From Victor Murithi, cinematographer</p>
+        <footer class="card__meta" role="contentinfo">
+            <span class="card__comments"> Download this textbook of African Christion history (college level) by Dr. Kyama Mugambi:<a href="/resources/kmugambi-stories-of-faith.pdf">here</a>
+</span>
+        </footer>
+    </div>
+</article>
 
-    <iframe src="https://www.youtube.com/embed/xCt7uPJ_oKI" width="640" height="480" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
-    <hr />
 
-    <p>This two-part series entitled <em>African Christianity Rising: Stories from Ghana (part 1) and Stories from Zimbabwe (part 2)</em>, a project of <a href="http://www.jamesault.com/documenaries/">James Ault Productions</a>, focuses on Christianity’s explosive growth in Africa and its meaning for the world community and the world church. This excerpt vividly introduces the historical background out of which emerged the vision for the <em>Dictionary of African Christian Biography</em> project. From footage shot in 1998 in Ghana and 2006 in Ghana and the USA. Principal camera, Tom Hurwitz. Additional camera, William Sefa and Jim Ault. Sound, Francis Kwakye. Principal editor, Kate Purdie. Initial editing, Jean Boucicaut.</p>
+<h2>Annotated Bibliography</h2>
+<article class="card card--wide">
+    <div class="card__img">
+        <a href="/resources/christian-muslim-bibliography.pdf"><img src="/assets/images/squares/sq-islam.jpg" alt="Card image" /></a>
+    </div>
 
-    <hr />
+    <div class="card__content">
+        <header class="card__header">
+            <h2 class="card__title"><a href="/resources/christian-muslim-bibliography.pdf">Christianity and Islam--Biographies</a></h2>
+            <div class="card__subtitle">Annotated Bibliography of Christian Interaction with Islam in Africa. By Ramey, Grace. </div>
+        </header>
+        <p class="card__excerpt">
+            Boston University Undergraduate Research Opportunity Program (UROP) Final Project, June 2020.</p>
 
-    <h3 id="african-christianity-rising-stories-from-ghana-opening"><a href="http://vimeo.com/9292811">African Christianity Rising: Stories from Ghana (opening)</a></h3>
-    <p>from <a href="http://vimeo.com/jamesault">James Ault</a> on <a href="http://vimeo.com">Vimeo</a></p>
+        <footer class="card__meta" role="contentinfo">
 
-    <iframe src="https://player.vimeo.com/video/9292811?color=ff9933&amp;title=0&amp;byline=0&amp;portrait=0" width="640" height="480" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+        </footer>
+    </div>
+</article>
 
-    <hr />
-    <h3 id="african-christianity-rising-stories-from-zimbabwe-opening"><a href="http://vimeo.com/9299661">African Christianity Rising: Stories from Zimbabwe (opening)</a></h3>
-    <p>from <a href="http://vimeo.com/jamesault">James Ault</a> on <a href="http://vimeo.com">Vimeo</a></p>
 
-    <iframe src="https://player.vimeo.com/video/9299661?color=ff9933&amp;byline=0&amp;portrait=0" width="640" height="480" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<h2>External Links</h2>
+<article class="card card--wide">
+    <div class="card__img">
+        <a href="/resources/educational-external-links/"><img src="/assets/images/squares/sq-collect-info.jpg" alt="Card image" /></a>
+    </div>
 
-    <hr />
+    <div class="card__content">
+        <header class="card__header">
+            <h2 class="card__title"><a href="/resources/educational-external-links/">General Africa and Research-Related Links, Onine Research and Media</a></h2>
+            <div class="card__subtitle">Internet Required. </div>
+        </header>
+        <p class="card__excerpt">
+            Find links of our cooperated institutions, related research and educational videos on youtube.</p>
 
-    <h3 id="kwame-bediako-excerpts-from-his-life-story">Kwame Bediako: Excerpts from His Life-Story</h3>
-    <p>from <a href="http://vimeo.com/jamesault">James Ault</a> on <a href="http://vimeo.com">Vimeo</a></p>
+        <footer class="card__meta" role="contentinfo">
 
-    <p>Kwame Bediako, outstanding African scholar and theologian, and <em>DACB</em> Advisory Council member, died on June 10, 2008. You can read his full story at <a href="http://www.dacb.org/stories/ghana/bediako_kwame.html">www.dacb.org/stories/ghana/bediako_kwame.html</a>.</p>
+        </footer>
+    </div>
+</article>
 
-    <p><a href="https://vimeo.com/61770717">Watch excerpt of Kwame Bediako’s life story.</a></p>
-
-  </div></div>
 
       </section>
     </div>
@@ -574,7 +616,7 @@ Large portions of the film script are direct quotes from the excellent biography
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 15 February 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 06 March 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -613,6 +655,6 @@ Large portions of the film script are direct quotes from the excellent biography
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayFebruary15231551" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayMarch06231335" async></script>
   </body>
 </html>

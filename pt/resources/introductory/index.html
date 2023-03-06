@@ -341,23 +341,241 @@ ORAL HISTORY ___________________________________________________________________
       
 
       <section class="page__content" itemprop="text">
-        <h3 id="1-introdução-ao-projeto">1. Introdução ao Projeto</h3>
+        <style>
+    :root {
+        --platinum: #e5e5e5;
+        --black: #2b2d42;
+        --white: #fff;
+        --thumb: #edf2f4;
+      }
+      
+    .container {
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 
-<ul>
-  <li><a href="/pt/about/what-is-dacb/">O que é o DIBICA?</a></li>
-  <li><a href="/pt/about/beginnings/">“Como começou o DIBICA, e qual o seu futuro” </a>: Uma breve história do início do projeto.</li>
-  <li><a href="/pt/about/vision/">“O <em>Dicionario de Biografias Cristãs da África</em>: Cartografia Eclesiástica do Continente Invisível”</a>: A lógica ea visão por trás do projeto, apresentado em pelo Dr. Jonathan J. Bonk, Diretor do Projeto.</li>
-  <li><a href="/resources/intro-dacb-web.pdf">“Introdução ao <em>DIBICA</em>”</a> (PDF): PDF em Inglês de uma apresentação de 30 minutos que dá uma visão geral do projeto.</li>
-</ul>
+h2 {
+  font-size: 32px;
+  margin-bottom: 1em;
+}
 
-<h3 id="2-diretrizes-e-manuais">2. Diretrizes e Manuais:</h3>
+.cards {
+  display: flex;
+  padding: 25px 0px;
+  list-style: none;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
 
-<ul>
-  <li><a href="/resources/port_manual_DIBICA.pdf">Manual de instruções para pesquisadores e escritores</a> (PDF) Conteúdo: 1) Instruções para escritores contribuintes (técnica e formato); 2) Técnicas de história oral; 3) Procedimentos para implementação do DIBICA nas instituições participantes</li>
-  <li><a href="/resources/doing_oral_history_portuguese.pdf"> Construindo Historia Oral: Ajudar os Cristãos a Contar suas Próprias Histórias</a> (PDF)</li>
-  <li><a href="/pt/resources/potential-subjects/">Assuntos Potenciais</a> Uma lista suggéré de assuntos biográficos por país. Verifique ici derramar biografias qui já <em>DACB</em> o TEM</li>
-  <li><a href="/pt/resources/bibliographies/">Bibliografia</a> Uma lista de trabalhos relacionados à África úteis para pesquisa de fundo.</li>
-</ul>
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 100%;
+  padding: 20px;
+  background: var(--white);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+  scroll-snap-align: start;
+  border-radius: 12px;
+  transition: all 0.2s;
+}
+
+.card:not(:last-child) {
+  margin-left: 10px;
+}
+
+.card:hover {
+  color: var(--white);
+  background:#8f5923;
+}
+.card_img{
+    border-radius: 12px;
+    width:100%;
+    object-fit: cover;
+    height: max(10rem, 30vh);
+    aspect-ratio:4/3;
+}
+.card .card-title {
+  font-size: 20px;
+}
+
+.card .card-content {
+  margin: 20px 0;
+  max-width: 85%;
+}
+
+.card .card-link-wrapper {
+  margin-top: auto;
+}
+
+.card .card-link {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: #964b00;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.card:hover .card-link {
+  background: #e99949;
+}
+
+.cards::-webkit-scrollbar {
+  height: 12px;
+}
+
+.cards::-webkit-scrollbar-thumb,
+.cards::-webkit-scrollbar-track {
+  border-radius: 92px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background: #964b00;
+}
+
+.cards::-webkit-scrollbar-track {
+  background: var(--thumb);
+}
+
+@media (min-width: 500px) {
+  .card {
+    flex-basis: calc(50% - 10px);
+  }
+
+  .card:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 700px) {
+  .card {
+    flex-basis: calc(calc(100% / 3) - 20px);
+  }
+
+  .card:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+
+</style>
+
+
+<div class="container">
+    <h3>1. Introdução ao Projeto</h3>
+    <ul class="cards">
+      <li class="card">
+        <div>
+          <img class = 'card_img' src="/assets/images/squares/sq-history.jpg"/>
+          <h3 class="card-title">O que é o DIBICA?</h3>
+          <div class="card-content">
+            <p>Apresentação do nosso site.</p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="/pt/about/what-is-dacb/" class="card-link">Learn More</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+            <img class = 'card_img' src="/assets/images/squares/sq-leader.jpg"/>
+            <h3 class="card-title">LComo começou o DIBICA, e qual o seu futuro</h3>
+          <div class="card-content">
+            <p> Uma breve história do início do projeto.   </p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="/pt/about/beginnings/" class="card-link">Learn More</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+            <img class = 'card_img' src="/assets/images/squares/sq-vision-yellow.jpg"/>
+            <h3 class="card-title">O _Dicionario de Biografias Cristãs da África_: Cartografia Eclesiástica do Continente Invisível</h3>
+          <div class="card-content">
+            <p>A lógica ea visão por trás do projeto, apresentado em pelo Dr. Jonathan J. Bonk, Diretor do Projeto. </p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="/pt/about/vision/" class="card-link">Learn More</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+            <img class = 'card_img' src="/assets/images/squares/sq-history.jpg"/>
+            <h3 class="card-title">Introdução ao DIBICA</h3>
+          <div class="card-content">
+            <p>PDF em Inglês de uma apresentação de 30 minutos que dá uma visão geral do projeto.
+            </p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="/resources/intro-dacb-web.pdf" class="card-link">Learn More</a>
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+
+
+  <div class="container">
+    <h3>2. Diretrizes e Manuais</h3>
+    <ul class="cards">
+      <li class="card">
+        <div>
+          <img class = 'card_img' src="/assets/images/squares/sq-guidlines.jpg"/>
+          <h3 class="card-title">Manual de instruções para pesquisadores e escritores</h3>
+          <div class="card-content">
+            <p> Conteúdo: 1) Instruções para escritores contribuintes (técnica e formato); 2) Técnicas de história oral; 3) Procedimentos para implementação do DIBICA nas instituições participantes </p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="/resources/port_manual_DIBICA.pdf" class="card-link">Learn More</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+          <img class = 'card_img' src="/assets/images/squares/sq-guidlines.jpg"/>
+          <h3 class="card-title">Construindo Historia Oral</h3>
+          <div class="card-content">
+            <p> Ajudar os Cristãos a Contar suas Próprias Histórias.</p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="/resources/doing_oral_history_portuguese.pdf" class="card-link">Learn More</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+          <img class = 'card_img' src="/assets/images/squares/sq-explain.jpg"/>
+          <h3 class="card-title">Assuntos Potenciais</h3>
+          <div class="card-content">
+            <p> Uma lista suggéré de assuntos biográficos por país. Verifique ici derramar biografias qui já _DACB_ o TEM. </p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="/pt/resources/potential-subjects/" class="card-link">Learn More</a>
+        </div>
+      </li>
+      
+      <li class="card">
+        <div>
+          <img class = 'card_img' src="/assets/images/squares/sq-forms.jpg"/>
+          <h3 class="card-title">Bibliografia</h3>
+          <div class="card-content">
+            <p>Uma lista de trabalhos relacionados à África úteis para pesquisa de fundo.</p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="/pt/resources/bibliographies/" class="card-link">Learn More</a>
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+
 
       </section>
     </div>
@@ -447,7 +665,7 @@ ORAL HISTORY ___________________________________________________________________
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 15 February 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 06 March 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -482,6 +700,6 @@ ORAL HISTORY ___________________________________________________________________
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayFebruary15231551" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayMarch06231335" async></script>
   </body>
 </html>

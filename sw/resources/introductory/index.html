@@ -340,17 +340,211 @@ ORAL HISTORY ___________________________________________________________________
       
 
       <section class="page__content" itemprop="text">
-        <ul>
-  <li><a href="/sw/connect/submit/">Maelezo kwa Watafiti na Waandishi </a></li>
-  <li><a href="/resources/swahili-instr_manual.pdf">Kijitabu cha Maelezo kwa Watafiti na Waandishi</a> (PDF)</li>
-  <li><a href="/resources/archives-manual-swahili.pdf">Uokoaji wa Makumbusho ya Watu Wetu – Maelezo ya Kumbukumbu</a> (PDF)</li>
-  <li><a href="/resources/oral-history-sw-manual.pdf">Kutimiliza Historia Simulizi: Kuwasaidia Wakristo Kusimulia Habari Zao</a> (PDF)</li>
-</ul>
+        <style>
+    :root {
+        --platinum: #e5e5e5;
+        --black: #2b2d42;
+        --white: #fff;
+        --thumb: #edf2f4;
+      }
+      
+    .container {
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 
-<p><strong>Rasilimali ya nje</strong></p>
-<ul>
-  <li><a href="https://incubator.wikimedia.org/wiki/Wb/sw/Historia_ya_Kanisa_ikoll">Historia ya Kanisa- Kitabu cha Wanafunzi</a>: Kiliandikwa mwaka 1993 na Ingo Koll Mbeya kwa matumizi ya Umoja wa Walimu wa Elimu ya Kikristo kwenye shule za sekondari mjini Mbeya.</li>
-</ul>
+h2 {
+  font-size: 32px;
+  margin-bottom: 1em;
+}
+
+.cards {
+  display: flex;
+  padding: 25px 0px;
+  list-style: none;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 100%;
+  padding: 20px;
+  background: var(--white);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+  scroll-snap-align: start;
+  border-radius: 12px;
+  transition: all 0.2s;
+}
+
+.card:not(:last-child) {
+  margin-left: 10px;
+}
+
+.card:hover {
+  color: var(--white);
+  background:#8f5923;
+}
+.card_img{
+    border-radius: 12px;
+    width:100%;
+    object-fit: cover;
+    height: max(10rem, 30vh);
+    aspect-ratio:4/3;
+}
+.card .card-title {
+  font-size: 20px;
+}
+
+.card .card-content {
+  margin: 20px 0;
+  max-width: 85%;
+}
+
+.card .card-link-wrapper {
+  margin-top: auto;
+}
+
+.card .card-link {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: #964b00;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.card:hover .card-link {
+  background: #e99949;
+}
+
+.cards::-webkit-scrollbar {
+  height: 12px;
+}
+
+.cards::-webkit-scrollbar-thumb,
+.cards::-webkit-scrollbar-track {
+  border-radius: 92px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background: #964b00;
+}
+
+.cards::-webkit-scrollbar-track {
+  background: var(--thumb);
+}
+
+@media (min-width: 500px) {
+  .card {
+    flex-basis: calc(50% - 10px);
+  }
+
+  .card:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 700px) {
+  .card {
+    flex-basis: calc(calc(100% / 3) - 20px);
+  }
+
+  .card:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+
+</style>
+
+
+
+<div class="container">
+    <h3>1. Diretrizes e Manuais</h3>
+    <ul class="cards">
+      <li class="card">
+        <div>
+          <img class = 'card_img' src="/assets/images/squares/sq-guidlines.jpg"/>
+          <h3 class="card-title">Maelezo kwa Watafiti na Waandishi</h3>
+          <div class="card-content">
+            <p>  </p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="/sw/connect/submit" class="card-link">Learn More</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+          <img class = 'card_img' src="/assets/images/squares/sq-guidlines.jpg"/>
+          <h3 class="card-title">Kijitabu cha Maelezo kwa Watafiti na Waandishi</h3>
+          <div class="card-content">
+            <p></p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="/resources/swahili-instr_manual.pdf" class="card-link">Learn More</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+          <img class = 'card_img' src="/assets/images/squares/sq-map.jpg"/>
+          <h3 class="card-title">Uokoaji wa Makumbusho ya Watu Wetu -- Maelezo ya Kumbukumbu</h3>
+          <div class="card-content">
+            <p>  </p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="/resources/archives-manual-swahili.pdf" class="card-link">Learn More</a>
+        </div>
+      </li>
+      
+      <li class="card">
+        <div>
+          <img class = 'card_img' src="/assets/images/squares/sq-explain.jpg"/>
+          <h3 class="card-title">Kutimiliza Historia Simulizi</h3>
+          <div class="card-content">
+            <p>Kuwasaidia Wakristo Kusimulia Habari Zao</p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="/resources/oral-history-sw-manual.pdf" class="card-link">Learn More</a>
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+
+
+
+
+<div class="container">
+    <h3>2. Rasilimali ya nje</h3>
+    <ul class="cards">
+      <li class="card">
+        <div>
+          <img class = 'card_img' src="/assets/images/squares/sq-writing.jpg"/>
+          <h3 class="card-title">Historia ya Kanisa- Kitabu cha Wanafunzi</h3>
+          <div class="card-content">
+            <p>Ufikiaji wa mtandao unahitajika: Kiliandikwa mwaka 1993 na Ingo Koll Mbeya kwa matumizi ya Umoja wa Walimu wa Elimu ya Kikristo kwenye shule za sekondari mjini Mbeya.
+            </p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="https://incubator.wikimedia.org/wiki/Wb/sw/Historia_ya_Kanisa_ikoll" class="card-link">Learn More</a>
+        </div>
+    </li>
+      
+      
+    </ul>
+  </div>
+
+
+
 
       </section>
     </div>
@@ -442,7 +636,7 @@ ORAL HISTORY ___________________________________________________________________
 
         
         <div class="box_two">
-        Site iliyoboreshwa na Alex Mayfield (2017 na 2019). Ilibadilishwa Mwisho: 15 February 2023.<br>&copy; 2023 Kamusi Ya Wasifu Wa Wakristo Wa Kiafrika.<br><a href="/sw/connect/contact/">Wasiliana Nasi</a> | <a href="/about/usage/">Matumizi na Habari ya Kunuhusu</a>
+        Site iliyoboreshwa na Alex Mayfield (2017 na 2019). Ilibadilishwa Mwisho: 06 March 2023.<br>&copy; 2023 Kamusi Ya Wasifu Wa Wakristo Wa Kiafrika.<br><a href="/sw/connect/contact/">Wasiliana Nasi</a> | <a href="/about/usage/">Matumizi na Habari ya Kunuhusu</a>
         </div>
         
 
@@ -475,6 +669,6 @@ ORAL HISTORY ___________________________________________________________________
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayFebruary15231551" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayMarch06231335" async></script>
   </body>
 </html>
