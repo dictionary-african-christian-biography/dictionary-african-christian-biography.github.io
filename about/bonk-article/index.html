@@ -97,11 +97,10 @@
 
   <body class="layout--archive" style="zoom: 1; margin-bottom: 354px;">
     <!-- MASTHEAD -->
-    
-<div class="masthead-banner">
-<div class="masthead__inner-wrap">
+    <div class="masthead-banner">
+  <div class="masthead__inner-wrap">
 
-  <!------ LANGAUGE SWITCHER
+    <!------ LANGAUGE SWITCHER
   <div class="lang-switch">
     <div class="switcher">
       <div class="home"> </div>
@@ -112,161 +111,201 @@
     </div>
   </div> -->
 
-  <div class="logo">
-      <a href="/#"><img src="/assets/images/logo-new-en.png"></a>
+    <div class="logo">
+      <a href="/#"><img
+          src="/assets/images/logo-new-en.png"></a>
     </div>
-    
+    <nav class="top">
+      <input type="checkbox" id="drop" />
+      <label for="drop" class="toggle-m">Menu</label>
+      <ul class="menu">
 
-<nav class="top">
-  
-  <input type="checkbox" id="drop" />
-  <label for="drop" class="toggle-m">Menu</label>
-        <ul class="menu">
-<!----------------------------------------------------------------------------------------------------------->
-<!--TRANSLATION---------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------------->
+        <!-- HOME --------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------------->
+        <li>
+          <label for="drop-2" class="toggle">
+            <div class="drop"><a href="/">Home</a></div>
+          </label>
+          <a href="/">
+            <div class="drop">Home</div>
+          </a>
+          <input type="checkbox" id="drop-2" />
+          <ul class=="top">
+            <li class="second"><a href="/">English</a></li>
+            <li class="second"><a href="/fr/">Français</a></li>
+            <li class="second"><a href="/pt/">Português</a></li>
+            <li class="second"><a href="/sw/">Kiswahili</a></li>
+          </ul>
+        </li>
 
-          <li>
-            <label for="drop-2" class="toggle"><div class="drop"><a href="/">Translation</a></div></label>
-            <a href="/"><div class="drop">Translation</div></a>
-            <input type="checkbox" id="drop-2"/>
-            <ul class=="top">
-              <li class="second">
-            <div id="google_translate_element"></div>
-            <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-            <script type="text/javascript">
-            function googleTranslateElementInit() {
-              new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-            }
-            </script>
+        <!----------------------------------------------------------------------------------------------------------->
+        <!--TRANSLATION---------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------------->
+
+        <li>
+          <label for="drop-4" class="toggle">
+            <div class="drop"><a href="">Translation</a></div>
+          </label>
+          <a href="">
+            <div class="drop">Translation</div>
+          </a>
+          <input type="checkbox" id="drop-4" />
+          <ul class=="top">
+            <li class="second">
+              <div id="google_translate_element"></div>
+              <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+              <script type="text/javascript">
+                function googleTranslateElementInit() {
+                  new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                }
+              </script>
             </li>
-            </ul>
-          </li>
-<!----------------------------------------------------------------------------------------------------------->
-<!-- HOME --------------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------------->
-            <li>
-            <label for="drop-2" class="toggle"><div class="drop"><a href="/">Home</a></div></label>
-            <a href="/"><div class="drop">Home</div></a>
-            <input type="checkbox" id="drop-2"/>
-            <ul class=="top">
-              <li class="second"><a href="/">English</a></li>
-              <li class="second"><a href="/fr/">Français</a></li>
-              <li class="second"><a href="/pt/">Português</a></li>
-              <li class="second"><a href="/sw/">Kiswahili</a></li>
-            </ul>
-            </li>
+          </ul>
+        </li>
 
-<!----------------------------------------------------------------------------------------------------------->
-<!-- ABOUT -------------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------------->
-            <li>
-            <label for="drop-2" class="toggle"><div class="drop"><a href="/about/">About</a></div></label>
-            <a href="/about/"><div class="drop">About</div></a>
-            <input type="checkbox" id="drop-2"/>
-            <ul class=="top">
-              <li class="second"><a href="/about/vision/">Vision</a></li>
-              <li class="second"><a href="/about/editors-and-elders/">Editors and Elders</a></li>
-              <li class="second"><a href="/about/editorial-committee/">Executive Committee</a></li>
-              <li class="second"><a href="/about/donor-list/">Donors</a></li>
-              <li class="second"><a href="/about/partners/">Partners</a></li>
-              <li class="second"><a href="/about/usage/">Site Usage</a></li>
-            </ul>
-            </li>
+        <!----------------------------------------------------------------------------------------------------------->
+        <!-- ABOUT -------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------------->
+        <li>
+          <label for="drop-5" class="toggle">
+            <div class="drop"><a href="/about/">About</a></div>
+          </label>
+          <a href="/about/">
+            <div class="drop">About</div>
+          </a>
+          <input type="checkbox" id="drop-5" />
+          <ul class=="top">
+            <li class="second"><a href="/about/vision/">Vision</a></li>
+            <li class="second"><a href="/about/editors-and-elders/">Editors and Elders</a></li>
+            <li class="second"><a href="/about/editorial-committee/">Executive Committee</a></li>
+            <li class="second"><a href="/about/donor-list/">Donors</a></li>
+            <li class="second"><a href="/about/partners/">Partners</a></li>
+            <li class="second"><a href="/about/usage/">Site Usage</a></li>
+          </ul>
+        </li>
 
-<!----------------------------------------------------------------------------------------------------------->
-<!-- STORIES ------------------------------------------------------------------------------------------------>
-<!----------------------------------------------------------------------------------------------------------->
-            <li>
-            <label for="drop-0" class="toggle"><div class="drop"><a href="/sort/stories/">Stories</a></div></label>
-            <a href="/sort/stories/"><div class="drop">Stories</div></a>
-            <input type="checkbox" id="drop-0"/>
-            <ul class=="top">
-              <li class="second"><a href="/sort/stories/latest-sort/">Newest Stories</a></li>
-              <li class="second"><a href="/sort/stories/collected-memories/">Collected Memories</a></li>
-              <li class="second"><a href="/sort/stories/regional-histories/">Regional Histories</a></li>
-              <li class="second"><a href="/sort/stories/country-sort/">Modern Africa</a></li>
-              <li class="second"><a href="/sort/stories/ancient-church-index/">Ancient Africa</a></li>
-              <li class="second"><a href="/resources/datasheets/affiliation/">Affiliation</a></li>
-            </ul>
-            </li>
+        <!----------------------------------------------------------------------------------------------------------->
+        <!-- STORIES ------------------------------------------------------------------------------------------------>
+        <!----------------------------------------------------------------------------------------------------------->
+        <li>
+          <label for="drop-0" class="toggle">
+            <div class="drop"><a href="/sort/stories/">Stories</a></div>
+          </label>
+          <a href="/sort/stories/">
+            <div class="drop">Stories</div>
+          </a>
+          <input type="checkbox" id="drop-0" />
+          <ul class=="top">
+            <li class="second"><a href="/sort/stories/latest-sort/">Newest Stories</a></li>
+            <li class="second"><a
+                href="/sort/stories/collected-memories/">Collected Memories</a></li>
+            <li class="second"><a
+                href="/sort/stories/regional-histories/">Regional Histories</a></li>
+            <li class="second"><a href="/sort/stories/country-sort/">Modern Africa</a></li>
+            <li class="second"><a
+                href="/sort/stories/ancient-church-index/">Ancient Africa</a></li>
+            <li class="second"><a href="/resources/datasheets/affiliation/">Affiliation</a></li>
+          </ul>
+        </li>
 
-<!----------------------------------------------------------------------------------------------------------->
-<!-- PROJECTS ------------------------------------------------------------------------------------------------>
-<!----------------------------------------------------------------------------------------------------------->
-            <li>
-              <label for="drop-1" class="toggle"><div class="drop"><a href="/projects/">Projects</a></div></label>
-              <a href="/projects/"><div class="drop">Projects</div></a>
-              <input type="checkbox" id="drop-1"/>
-            <ul class=="top">
-              <li class="second"><a href="/projects/women/">Women</a></li>
-              <li class="second"><a href="/projects/music-art/">Musicians and Artists</a></li>
-              <li class="second"><a href="/projects/diaspora">Diaspora</a></li>
+        <!----------------------------------------------------------------------------------------------------------->
+        <!-- PROJECTS ------------------------------------------------------------------------------------------------>
+        <!----------------------------------------------------------------------------------------------------------->
+        <li>
+          <label for="drop-1" class="toggle">
+            <div class="drop"><a href="/projects/">Projects</a></div>
+          </label>
+          <a href="/projects/">
+            <div class="drop">Projects</div>
+          </a>
+          <input type="checkbox" id="drop-1" />
+          <ul class=="top">
+            <li class="second"><a href="/projects/women/">Women</a></li>
+            <li class="second"><a href="/projects/music-art/">Musicians and Artists</a></li>
+            <li class="second"><a href="/projects/diaspora">Diaspora</a></li>
 
-            </ul>
-            </li>
-<!----------------------------------------------------------------------------------------------------------->
-<!-- RESOURCES  --------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------------->
-            <li>
-            <label for="drop-3" class="toggle"><div class="drop"><a href="/resources">Resources</a></div></label>
-            <a href="/resources"><div class="drop">Resources</div></a>
-            <input type="checkbox" id="drop-3"/>
-            <ul class=="top">
-              <li class="second"><a href="/resources/introductory/">Introductory Resources</a></li>
-              <li class="second"><a href="/resources/educational/">Educational Resources</a></li>
-              <li class="second"><a href="/resources/bibliographic/">Bibliographic Resources</a></li>
-              <li class="second"><a href="/resources/oral-history/">Oral History Resources</a></li>
-            </ul>
-            </li>
-<!----------------------------------------------------------------------------------------------------------->
-<!-- JOURNAL --------------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------------->
-            <li>
-            <label for="drop-6" class="toggle"><div class="drop"><a href="/journal/">Journal</a></div></label>
-            <a href="/journal/"><div class="drop">Journal</div></a>
-            </li>
+          </ul>
+        </li>
+        <!----------------------------------------------------------------------------------------------------------->
+        <!-- RESOURCES  --------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------------->
+        <li>
+          <label for="drop-3" class="toggle">
+            <div class="drop"><a href="/resources">Resources</a></div>
+          </label>
+          <a href="/resources">
+            <div class="drop">Resources</div>
+          </a>
+          <input type="checkbox" id="drop-3" />
+          <ul class=="top">
+            <li class="second"><a href="/resources/introductory/">Introductory Resources</a></li>
+            <li class="second"><a href="/resources/educational/">Educational Resources</a></li>
+            <li class="second"><a href="/resources/bibliographic/">Bibliographic Resources</a></li>
+            <li class="second"><a href="/resources/oral-history/">Oral History Resources</a></li>
+          </ul>
+        </li>
+        <!----------------------------------------------------------------------------------------------------------->
+        <!-- JOURNAL --------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------------->
+        <li>
+          <label for="drop-6" class="toggle">
+            <div class="drop"><a href="/journal/">Journal</a></div>
+          </label>
+          <a href="/journal/">
+            <div class="drop">Journal</div>
+          </a>
+        </li>
 
-<!----------------------------------------------------------------------------------------------------------->
-<!-- CONNECT --------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------------->
-            <li>
-            <label for="drop-7" class="toggle"><div class="drop"><a href="/connect/">Connect</a></div></label>
-            <a href="/connect/"><div class="drop">Connect</div></a>
-            <input type="checkbox" id="drop-7"/>
-            <ul class=="top">
-              <li class="second"><a href="/connect/news/">News</a></li>
-              <li class="second"><a href="/connect/submit/">Submissions</a></li>
-              <li class="second"><a href="/connect/collaborate/">Collaborate</a></li>
-              <li class="second"><a href="/connect/contact/">Contact Us</a></li>
-            </ul>
-            </li>
+        <!----------------------------------------------------------------------------------------------------------->
+        <!-- CONNECT --------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------------->
+        <li>
+          <label for="drop-7" class="toggle">
+            <div class="drop"><a href="/connect/">Connect</a></div>
+          </label>
+          <a href="/connect/">
+            <div class="drop">Connect</div>
+          </a>
+          <input type="checkbox" id="drop-7" />
+          <ul class=="top">
+            <li class="second"><a href="/connect/news/">News</a></li>
+            <li class="second"><a href="/connect/submit/">Submissions</a></li>
+            <li class="second"><a href="/connect/collaborate/">Collaborate</a></li>
+            <li class="second"><a href="/connect/contact/">Contact Us</a></li>
+          </ul>
+        </li>
 
-<!----------------------------------------------------------------------------------------------------------->
-<!-- DONATE --------------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------------->
-            <li>
-            <label for="drop-8" class="toggle"><div class="drop"><a href="/donate/">Donate</a></div></label>
-            <a href="/donate/"><div class="drop">Donate</div></a>
-            </li>
+        <!----------------------------------------------------------------------------------------------------------->
+        <!-- DONATE --------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------------->
+        <li>
+          <label for="drop-8" class="toggle">
+            <div class="drop"><a href="/donate/">Donate</a></div>
+          </label>
+          <a href="/donate/">
+            <div class="drop">Donate</div>
+          </a>
+        </li>
 
 
-<!----------------------------------------------------------------------------------------------------------->
-<!-- SEARCH ------------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------------->
-            <label class="toggle" style="margin-left: .5vw !important; margin-right: .5vw !important;">
-              <a class="search-image" href="/search.html" style="padding: 0px !important"></a></label>
-                <li class="menu">
-                  <a class="search-image" href="/search.html" style="padding: 0px !important"></a>
-                </li>
+        <!----------------------------------------------------------------------------------------------------------->
+        <!-- SEARCH ------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------------->
+        <label class="toggle" style="margin-left: .5vw !important; margin-right: .5vw !important;">
+          <a class="search-image" href="/search.html"
+            style="padding: 0px !important"></a></label>
+        <li class="menu">
+          <a class="search-image" href="/search.html"
+            style="padding: 0px !important"></a>
+        </li>
 
-        </ul>
-      </nav>
+      </ul>
+    </nav>
+  </div>
+  <div class="masthead-bar-en"> </div>
+
 </div>
-<div class="masthead-bar-en">  </div>
-
-</div>
-
 
     <!-- CONTENT -->
     
@@ -737,7 +776,7 @@ DONORS _________________________________________________________________________
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 08 March 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 21 March 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -776,6 +815,6 @@ DONORS _________________________________________________________________________
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayMarch08231937" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=TuesdayMarch21231731" async></script>
   </body>
 </html>

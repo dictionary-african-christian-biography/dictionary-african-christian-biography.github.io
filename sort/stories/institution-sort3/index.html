@@ -97,11 +97,10 @@
 
   <body class="layout--archive" style="zoom: 1; margin-bottom: 354px;">
     <!-- MASTHEAD -->
-    
-<div class="masthead-banner">
-<div class="masthead__inner-wrap">
+    <div class="masthead-banner">
+  <div class="masthead__inner-wrap">
 
-  <!------ LANGAUGE SWITCHER
+    <!------ LANGAUGE SWITCHER
   <div class="lang-switch">
     <div class="switcher">
       <div class="home"> </div>
@@ -112,161 +111,201 @@
     </div>
   </div> -->
 
-  <div class="logo">
-      <a href="/#"><img src="/assets/images/logo-new-en.png"></a>
+    <div class="logo">
+      <a href="/#"><img
+          src="/assets/images/logo-new-en.png"></a>
     </div>
-    
+    <nav class="top">
+      <input type="checkbox" id="drop" />
+      <label for="drop" class="toggle-m">Menu</label>
+      <ul class="menu">
 
-<nav class="top">
-  
-  <input type="checkbox" id="drop" />
-  <label for="drop" class="toggle-m">Menu</label>
-        <ul class="menu">
-<!----------------------------------------------------------------------------------------------------------->
-<!--TRANSLATION---------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------------->
+        <!-- HOME --------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------------->
+        <li>
+          <label for="drop-2" class="toggle">
+            <div class="drop"><a href="/">Home</a></div>
+          </label>
+          <a href="/">
+            <div class="drop">Home</div>
+          </a>
+          <input type="checkbox" id="drop-2" />
+          <ul class=="top">
+            <li class="second"><a href="/">English</a></li>
+            <li class="second"><a href="/fr/">Français</a></li>
+            <li class="second"><a href="/pt/">Português</a></li>
+            <li class="second"><a href="/sw/">Kiswahili</a></li>
+          </ul>
+        </li>
 
-          <li>
-            <label for="drop-2" class="toggle"><div class="drop"><a href="/">Translation</a></div></label>
-            <a href="/"><div class="drop">Translation</div></a>
-            <input type="checkbox" id="drop-2"/>
-            <ul class=="top">
-              <li class="second">
-            <div id="google_translate_element"></div>
-            <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-            <script type="text/javascript">
-            function googleTranslateElementInit() {
-              new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-            }
-            </script>
+        <!----------------------------------------------------------------------------------------------------------->
+        <!--TRANSLATION---------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------------->
+
+        <li>
+          <label for="drop-4" class="toggle">
+            <div class="drop"><a href="">Translation</a></div>
+          </label>
+          <a href="">
+            <div class="drop">Translation</div>
+          </a>
+          <input type="checkbox" id="drop-4" />
+          <ul class=="top">
+            <li class="second">
+              <div id="google_translate_element"></div>
+              <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+              <script type="text/javascript">
+                function googleTranslateElementInit() {
+                  new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                }
+              </script>
             </li>
-            </ul>
-          </li>
-<!----------------------------------------------------------------------------------------------------------->
-<!-- HOME --------------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------------->
-            <li>
-            <label for="drop-2" class="toggle"><div class="drop"><a href="/">Home</a></div></label>
-            <a href="/"><div class="drop">Home</div></a>
-            <input type="checkbox" id="drop-2"/>
-            <ul class=="top">
-              <li class="second"><a href="/">English</a></li>
-              <li class="second"><a href="/fr/">Français</a></li>
-              <li class="second"><a href="/pt/">Português</a></li>
-              <li class="second"><a href="/sw/">Kiswahili</a></li>
-            </ul>
-            </li>
+          </ul>
+        </li>
 
-<!----------------------------------------------------------------------------------------------------------->
-<!-- ABOUT -------------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------------->
-            <li>
-            <label for="drop-2" class="toggle"><div class="drop"><a href="/about/">About</a></div></label>
-            <a href="/about/"><div class="drop">About</div></a>
-            <input type="checkbox" id="drop-2"/>
-            <ul class=="top">
-              <li class="second"><a href="/about/vision/">Vision</a></li>
-              <li class="second"><a href="/about/editors-and-elders/">Editors and Elders</a></li>
-              <li class="second"><a href="/about/editorial-committee/">Executive Committee</a></li>
-              <li class="second"><a href="/about/donor-list/">Donors</a></li>
-              <li class="second"><a href="/about/partners/">Partners</a></li>
-              <li class="second"><a href="/about/usage/">Site Usage</a></li>
-            </ul>
-            </li>
+        <!----------------------------------------------------------------------------------------------------------->
+        <!-- ABOUT -------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------------->
+        <li>
+          <label for="drop-5" class="toggle">
+            <div class="drop"><a href="/about/">About</a></div>
+          </label>
+          <a href="/about/">
+            <div class="drop">About</div>
+          </a>
+          <input type="checkbox" id="drop-5" />
+          <ul class=="top">
+            <li class="second"><a href="/about/vision/">Vision</a></li>
+            <li class="second"><a href="/about/editors-and-elders/">Editors and Elders</a></li>
+            <li class="second"><a href="/about/editorial-committee/">Executive Committee</a></li>
+            <li class="second"><a href="/about/donor-list/">Donors</a></li>
+            <li class="second"><a href="/about/partners/">Partners</a></li>
+            <li class="second"><a href="/about/usage/">Site Usage</a></li>
+          </ul>
+        </li>
 
-<!----------------------------------------------------------------------------------------------------------->
-<!-- STORIES ------------------------------------------------------------------------------------------------>
-<!----------------------------------------------------------------------------------------------------------->
-            <li>
-            <label for="drop-0" class="toggle"><div class="drop"><a href="/sort/stories/">Stories</a></div></label>
-            <a href="/sort/stories/"><div class="drop">Stories</div></a>
-            <input type="checkbox" id="drop-0"/>
-            <ul class=="top">
-              <li class="second"><a href="/sort/stories/latest-sort/">Newest Stories</a></li>
-              <li class="second"><a href="/sort/stories/collected-memories/">Collected Memories</a></li>
-              <li class="second"><a href="/sort/stories/regional-histories/">Regional Histories</a></li>
-              <li class="second"><a href="/sort/stories/country-sort/">Modern Africa</a></li>
-              <li class="second"><a href="/sort/stories/ancient-church-index/">Ancient Africa</a></li>
-              <li class="second"><a href="/resources/datasheets/affiliation/">Affiliation</a></li>
-            </ul>
-            </li>
+        <!----------------------------------------------------------------------------------------------------------->
+        <!-- STORIES ------------------------------------------------------------------------------------------------>
+        <!----------------------------------------------------------------------------------------------------------->
+        <li>
+          <label for="drop-0" class="toggle">
+            <div class="drop"><a href="/sort/stories/">Stories</a></div>
+          </label>
+          <a href="/sort/stories/">
+            <div class="drop">Stories</div>
+          </a>
+          <input type="checkbox" id="drop-0" />
+          <ul class=="top">
+            <li class="second"><a href="/sort/stories/latest-sort/">Newest Stories</a></li>
+            <li class="second"><a
+                href="/sort/stories/collected-memories/">Collected Memories</a></li>
+            <li class="second"><a
+                href="/sort/stories/regional-histories/">Regional Histories</a></li>
+            <li class="second"><a href="/sort/stories/country-sort/">Modern Africa</a></li>
+            <li class="second"><a
+                href="/sort/stories/ancient-church-index/">Ancient Africa</a></li>
+            <li class="second"><a href="/resources/datasheets/affiliation/">Affiliation</a></li>
+          </ul>
+        </li>
 
-<!----------------------------------------------------------------------------------------------------------->
-<!-- PROJECTS ------------------------------------------------------------------------------------------------>
-<!----------------------------------------------------------------------------------------------------------->
-            <li>
-              <label for="drop-1" class="toggle"><div class="drop"><a href="/projects/">Projects</a></div></label>
-              <a href="/projects/"><div class="drop">Projects</div></a>
-              <input type="checkbox" id="drop-1"/>
-            <ul class=="top">
-              <li class="second"><a href="/projects/women/">Women</a></li>
-              <li class="second"><a href="/projects/music-art/">Musicians and Artists</a></li>
-              <li class="second"><a href="/projects/diaspora">Diaspora</a></li>
+        <!----------------------------------------------------------------------------------------------------------->
+        <!-- PROJECTS ------------------------------------------------------------------------------------------------>
+        <!----------------------------------------------------------------------------------------------------------->
+        <li>
+          <label for="drop-1" class="toggle">
+            <div class="drop"><a href="/projects/">Projects</a></div>
+          </label>
+          <a href="/projects/">
+            <div class="drop">Projects</div>
+          </a>
+          <input type="checkbox" id="drop-1" />
+          <ul class=="top">
+            <li class="second"><a href="/projects/women/">Women</a></li>
+            <li class="second"><a href="/projects/music-art/">Musicians and Artists</a></li>
+            <li class="second"><a href="/projects/diaspora">Diaspora</a></li>
 
-            </ul>
-            </li>
-<!----------------------------------------------------------------------------------------------------------->
-<!-- RESOURCES  --------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------------->
-            <li>
-            <label for="drop-3" class="toggle"><div class="drop"><a href="/resources">Resources</a></div></label>
-            <a href="/resources"><div class="drop">Resources</div></a>
-            <input type="checkbox" id="drop-3"/>
-            <ul class=="top">
-              <li class="second"><a href="/resources/introductory/">Introductory Resources</a></li>
-              <li class="second"><a href="/resources/educational/">Educational Resources</a></li>
-              <li class="second"><a href="/resources/bibliographic/">Bibliographic Resources</a></li>
-              <li class="second"><a href="/resources/oral-history/">Oral History Resources</a></li>
-            </ul>
-            </li>
-<!----------------------------------------------------------------------------------------------------------->
-<!-- JOURNAL --------------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------------->
-            <li>
-            <label for="drop-6" class="toggle"><div class="drop"><a href="/journal/">Journal</a></div></label>
-            <a href="/journal/"><div class="drop">Journal</div></a>
-            </li>
+          </ul>
+        </li>
+        <!----------------------------------------------------------------------------------------------------------->
+        <!-- RESOURCES  --------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------------->
+        <li>
+          <label for="drop-3" class="toggle">
+            <div class="drop"><a href="/resources">Resources</a></div>
+          </label>
+          <a href="/resources">
+            <div class="drop">Resources</div>
+          </a>
+          <input type="checkbox" id="drop-3" />
+          <ul class=="top">
+            <li class="second"><a href="/resources/introductory/">Introductory Resources</a></li>
+            <li class="second"><a href="/resources/educational/">Educational Resources</a></li>
+            <li class="second"><a href="/resources/bibliographic/">Bibliographic Resources</a></li>
+            <li class="second"><a href="/resources/oral-history/">Oral History Resources</a></li>
+          </ul>
+        </li>
+        <!----------------------------------------------------------------------------------------------------------->
+        <!-- JOURNAL --------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------------->
+        <li>
+          <label for="drop-6" class="toggle">
+            <div class="drop"><a href="/journal/">Journal</a></div>
+          </label>
+          <a href="/journal/">
+            <div class="drop">Journal</div>
+          </a>
+        </li>
 
-<!----------------------------------------------------------------------------------------------------------->
-<!-- CONNECT --------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------------->
-            <li>
-            <label for="drop-7" class="toggle"><div class="drop"><a href="/connect/">Connect</a></div></label>
-            <a href="/connect/"><div class="drop">Connect</div></a>
-            <input type="checkbox" id="drop-7"/>
-            <ul class=="top">
-              <li class="second"><a href="/connect/news/">News</a></li>
-              <li class="second"><a href="/connect/submit/">Submissions</a></li>
-              <li class="second"><a href="/connect/collaborate/">Collaborate</a></li>
-              <li class="second"><a href="/connect/contact/">Contact Us</a></li>
-            </ul>
-            </li>
+        <!----------------------------------------------------------------------------------------------------------->
+        <!-- CONNECT --------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------------->
+        <li>
+          <label for="drop-7" class="toggle">
+            <div class="drop"><a href="/connect/">Connect</a></div>
+          </label>
+          <a href="/connect/">
+            <div class="drop">Connect</div>
+          </a>
+          <input type="checkbox" id="drop-7" />
+          <ul class=="top">
+            <li class="second"><a href="/connect/news/">News</a></li>
+            <li class="second"><a href="/connect/submit/">Submissions</a></li>
+            <li class="second"><a href="/connect/collaborate/">Collaborate</a></li>
+            <li class="second"><a href="/connect/contact/">Contact Us</a></li>
+          </ul>
+        </li>
 
-<!----------------------------------------------------------------------------------------------------------->
-<!-- DONATE --------------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------------->
-            <li>
-            <label for="drop-8" class="toggle"><div class="drop"><a href="/donate/">Donate</a></div></label>
-            <a href="/donate/"><div class="drop">Donate</div></a>
-            </li>
+        <!----------------------------------------------------------------------------------------------------------->
+        <!-- DONATE --------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------------->
+        <li>
+          <label for="drop-8" class="toggle">
+            <div class="drop"><a href="/donate/">Donate</a></div>
+          </label>
+          <a href="/donate/">
+            <div class="drop">Donate</div>
+          </a>
+        </li>
 
 
-<!----------------------------------------------------------------------------------------------------------->
-<!-- SEARCH ------------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------------->
-            <label class="toggle" style="margin-left: .5vw !important; margin-right: .5vw !important;">
-              <a class="search-image" href="/search.html" style="padding: 0px !important"></a></label>
-                <li class="menu">
-                  <a class="search-image" href="/search.html" style="padding: 0px !important"></a>
-                </li>
+        <!----------------------------------------------------------------------------------------------------------->
+        <!-- SEARCH ------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------------->
+        <label class="toggle" style="margin-left: .5vw !important; margin-right: .5vw !important;">
+          <a class="search-image" href="/search.html"
+            style="padding: 0px !important"></a></label>
+        <li class="menu">
+          <a class="search-image" href="/search.html"
+            style="padding: 0px !important"></a>
+        </li>
 
-        </ul>
-      </nav>
+      </ul>
+    </nav>
+  </div>
+  <div class="masthead-bar-en"> </div>
+
 </div>
-<div class="masthead-bar-en">  </div>
-
-</div>
-
 
     <!-- CONTENT -->
     
@@ -1119,9 +1158,9 @@
             </thead></table>
             <table width=100%><tbody><tr>
                 <td width=20%> Obasanjo, Olusegun </td>
-                <td width=25%><a href="/stories/nigeria/windibirizi-david/">Windibiziri, David Lonkibiri</a></td>
+                <td width=25%><a href="/stories/nigeria/ekandem-dominic/">Ekandem, Dominic Ignatius</a></td>
                 <td width=20%>
-                  Lutheran Church of Christ in Nigeria
+                  Catholic Church
                   
                   
                 </td>
@@ -1131,7 +1170,7 @@
                   
                 </td>
                 <td width=15%>
-                  <a href="/stories/nigeria/windibirizi-david/" rel="permalink">EN</a>
+                  <a href="/stories/nigeria/ekandem-dominic/" rel="permalink">EN</a>
         
         
         
@@ -1151,47 +1190,6 @@
             </tr></tbody></table>
       </article>
       </div>
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Obasanjo, Olusegun </td>
-            <td width=25%><a href="/stories/nigeria/lawrence-ab/">Lawrence, Abiodun Babatunde</a></td>
-            <td width=20%>
-              Holy Flock of Christ Worldwide
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/lawrence-ab/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
     
 
 
@@ -1241,9 +1239,9 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Obasanjo, Olusegun </td>
-            <td width=25%><a href="/stories/nigeria/ekandem-dominic/">Ekandem, Dominic Ignatius</a></td>
+            <td width=25%><a href="/stories/nigeria/windibirizi-david/">Windibiziri, David Lonkibiri</a></td>
             <td width=20%>
-              Catholic Church
+              Lutheran Church of Christ in Nigeria
               
               
             </td>
@@ -1253,7 +1251,48 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/nigeria/ekandem-dominic/" rel="permalink">EN</a>
+              <a href="/stories/nigeria/windibirizi-david/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Obasanjo, Olusegun </td>
+            <td width=25%><a href="/stories/nigeria/lawrence-ab/">Lawrence, Abiodun Babatunde</a></td>
+            <td width=20%>
+              Holy Flock of Christ Worldwide
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/lawrence-ab/" rel="permalink">EN</a>
         
         
         
@@ -1341,10 +1380,10 @@
             <th width=15%>Languages</th>
             </thead></table>
             <table width=100%><tbody><tr>
-                <td width=20%> Ogunewu, Michael Adeleke and Ayegboyin, Deji </td>
-                <td width=25%><a href="/stories/nigeria/orimolade3-moses/">Orimolade Tunolase, Moses (C)</a></td>
+                <td width=20%> Ogunewu, Michael Adeleke </td>
+                <td width=25%><a href="/stories/nigeria/sadela-samuel/">Sadela, Samuel Akinbode</a></td>
                 <td width=20%>
-                  Cherubim and Seraphim Society (Aladura)
+                  Gospel Apostolic Church
                   
                   
                 </td>
@@ -1354,7 +1393,7 @@
                   
                 </td>
                 <td width=15%>
-                  <a href="/stories/nigeria/orimolade3-moses/" rel="permalink">EN</a>
+                  <a href="/stories/nigeria/sadela-samuel/" rel="permalink">EN</a>
         
         
         
@@ -1374,908 +1413,6 @@
             </tr></tbody></table>
       </article>
       </div>
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ogunewu, Michael Adeleke </td>
-            <td width=25%><a href="/stories/nigeria/otubu-godfrey/">Otubu, Godfrey Itse Mene</a></td>
-            <td width=20%>
-              Eternal Sacred Order of the Cherubim and Seraphim Church
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/otubu-godfrey/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ogunewu, Michael Adeleke </td>
-            <td width=25%><a href="/stories/nigeria/idowu-bolaji/">Idowu, Bolaji</a></td>
-            <td width=20%>
-              Methodist Church Nigeria
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/idowu-bolaji/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ogunewu, Michael Adeleke </td>
-            <td width=25%><a href="/stories/nigeria/igbudu-cornelius/">Igbudu, Cornelius Adam</a></td>
-            <td width=20%>
-              Anglican Communion (Adam Preaching Society)
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/igbudu-cornelius/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ogunewu, Michael Adeleke </td>
-            <td width=25%><a href="/stories/nigeria/ilori-joseph/">Ilori, Joseph Abiodun</a></td>
-            <td width=20%>
-              Nigerian Baptist Convention
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/ilori-joseph/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ogunewu, Michael Adeleke </td>
-            <td width=25%><a href="/stories/nigeria/iyanda-timothy/">Iyanda, Timothy Aremu</a></td>
-            <td width=20%>
-              Go Ye Evangelistic Association
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/iyanda-timothy/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ogunewu, Michael Adeleke </td>
-            <td width=25%><a href="/stories/nigeria/jemigbon-samuel/">Jemigbon, Samuel Sunday (A)</a></td>
-            <td width=20%>
-              The Apostolic Church
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/jemigbon-samuel/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ogunewu, Michael Leke </td>
-            <td width=25%><a href="/stories/nigeria/kumuyi-abiodun/">Kumuyi, Abiodun</a></td>
-            <td width=20%>
-              Deeper Christian Life Ministry
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/kumuyi-abiodun/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Oguntade, Ayotunde Olayori </td>
-            <td width=25%><a href="/stories/nigeria/omoniyi-jacob/">Omoniyi, Jacob Olawale</a></td>
-            <td width=20%>
-              Nigerian Baptist Convention
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/omoniyi-jacob/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ogunewu, Michael Adeleke </td>
-            <td width=25%><a href="/stories/nigeria/kenny-joseph/">Kenny, Joseph Peter</a></td>
-            <td width=20%>
-              Catholic Church
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/kenny-joseph/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ogunewu, Michael Leke </td>
-            <td width=25%><a href="/stories/nigeria/olanrewaju/">Olanrewaju Adigun Shitta-Bey</a></td>
-            <td width=20%>
-              Christ Deliverance Church
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/olanrewaju/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ogunewu, Michael Leke </td>
-            <td width=25%><a href="/stories/nigeria/adebajo-christopher/">Adebajo, Christopher James Adebayo</a></td>
-            <td width=20%>
-              Prayerful Apostolic Church (Gboran)
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/adebajo-christopher/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ogunewu, Michael Adeleke </td>
-            <td width=25%><a href="/stories/nigeria/adegbolagun-michael/">Adegbolagun, Michael Oluwamuyide</a></td>
-            <td width=20%>
-              Voice of Redemption Gospel Church
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/adegbolagun-michael/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ogunewu, Michael Adeleke </td>
-            <td width=25%><a href="/stories/nigeria/adejobi-emmanuel2/">Adejobi, Emmanuel Adeleke</a></td>
-            <td width=20%>
-              Church of the Lord (Aladura)
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/adejobi-emmanuel2/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ogunewu, Michael Leke </td>
-            <td width=25%><a href="/stories/nigeria/akande-samuel/">Akande, Samuel Titilola Oladele</a></td>
-            <td width=20%>
-              Nigerian Baptist Convention
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/akande-samuel/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ogunewu, Michael Adeleke </td>
-            <td width=25%><a href="/stories/nigeria/okon-eyo-edet/">Okon, Eyo Edet</a></td>
-            <td width=20%>
-              The Apostolic Church
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/okon-eyo-edet/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ogunewu, Michael Adeleke </td>
-            <td width=25%><a href="/stories/nigeria/akindayomi-josiah/">Akindayomi, Josiah Olufemi</a></td>
-            <td width=20%>
-              Redeemed Christian Church of God
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/akindayomi-josiah/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ogunewu, Michael Leke </td>
-            <td width=25%><a href="/stories/nigeria/bada-alexander-abiodun-adebayo/">Bada, Alexander Abiodun Adebayo</a></td>
-            <td width=20%>
-              Celestial Church of Christ
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/bada-alexander-abiodun-adebayo/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ogunewu, Michael Leke </td>
-            <td width=25%><a href="/stories/nigeria/bamidele-michael/">Bamidele, Michael Adeniyi</a></td>
-            <td width=20%>
-              Christ Healing Evangelical Church
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/bamidele-michael/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ogunewu, Michael Adeleke </td>
-            <td width=25%><a href="/stories/nigeria/boyejo-james/">Boyejo, James Abayomi</a></td>
-            <td width=20%>
-              Foursquare Gospel Church
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/boyejo-james/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ogunewu, Michael Adeleke </td>
-            <td width=25%><a href="/stories/nigeria/usuwa-friday/">Usuwa, Friday Chinyere</a></td>
-            <td width=20%>
-              Foursquare Gospel Church
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/usuwa-friday/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Oguntade, Ayotunde Olayori </td>
-            <td width=25%><a href="/stories/nigeria/orodiji-christopher/">Orodiji, Christopher Ayantayo</a></td>
-            <td width=20%>
-              Nigerian Baptist Convention
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/orodiji-christopher/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ogunewu, Michael Adeleke </td>
-            <td width=25%><a href="/stories/nigeria/coker-jacobk2/">Coker, Jacob Kehinde (B)</a></td>
-            <td width=20%>
-              The African Church
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/coker-jacobk2/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
     
 
 
@@ -2324,10 +1461,10 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Ogunewu, Michael Leke </td>
-            <td width=25%><a href="/stories/nigeria/taylor-jc3/">Taylor, John Christopher (E)</a></td>
+            <td width=20%> Ogunewu, Michael Adeleke </td>
+            <td width=25%><a href="/stories/nigeria/akindayomi-josiah/">Akindayomi, Josiah Olufemi</a></td>
             <td width=20%>
-              Anglican Communion (Church Missionary Society)
+              Redeemed Christian Church of God
               
               
             </td>
@@ -2337,7 +1474,7 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/nigeria/taylor-jc3/" rel="permalink">EN</a>
+              <a href="/stories/nigeria/akindayomi-josiah/" rel="permalink">EN</a>
         
         
         
@@ -2448,6 +1585,662 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Ogunewu, Michael Leke </td>
+            <td width=25%><a href="/stories/nigeria/akande-samuel/">Akande, Samuel Titilola Oladele</a></td>
+            <td width=20%>
+              Nigerian Baptist Convention
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/akande-samuel/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ogunewu, Michael Leke </td>
+            <td width=25%><a href="/stories/nigeria/taylor-jc3/">Taylor, John Christopher (E)</a></td>
+            <td width=20%>
+              Anglican Communion (Church Missionary Society)
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/taylor-jc3/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ogunewu, Michael Adeleke </td>
+            <td width=25%><a href="/stories/nigeria/boyejo-james/">Boyejo, James Abayomi</a></td>
+            <td width=20%>
+              Foursquare Gospel Church
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/boyejo-james/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ogunewu, Michael Adeleke and Ayegboyin, Deji </td>
+            <td width=25%><a href="/stories/nigeria/orimolade3-moses/">Orimolade Tunolase, Moses (C)</a></td>
+            <td width=20%>
+              Cherubim and Seraphim Society (Aladura)
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/orimolade3-moses/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Oguntade, Ayotunde Olayori </td>
+            <td width=25%><a href="/stories/nigeria/orodiji-christopher/">Orodiji, Christopher Ayantayo</a></td>
+            <td width=20%>
+              Nigerian Baptist Convention
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/orodiji-christopher/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ogunewu, Michael Adeleke </td>
+            <td width=25%><a href="/stories/nigeria/jemigbon-samuel/">Jemigbon, Samuel Sunday (A)</a></td>
+            <td width=20%>
+              The Apostolic Church
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/jemigbon-samuel/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ogunewu, Michael Adeleke </td>
+            <td width=25%><a href="/stories/nigeria/iyanda-timothy/">Iyanda, Timothy Aremu</a></td>
+            <td width=20%>
+              Go Ye Evangelistic Association
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/iyanda-timothy/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ogunewu, Michael Adeleke </td>
+            <td width=25%><a href="/stories/nigeria/okon-eyo-edet/">Okon, Eyo Edet</a></td>
+            <td width=20%>
+              The Apostolic Church
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/okon-eyo-edet/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ogunewu, Michael Leke </td>
+            <td width=25%><a href="/stories/nigeria/olanrewaju/">Olanrewaju Adigun Shitta-Bey</a></td>
+            <td width=20%>
+              Christ Deliverance Church
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/olanrewaju/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ogunewu, Michael Leke </td>
+            <td width=25%><a href="/stories/nigeria/bamidele-michael/">Bamidele, Michael Adeniyi</a></td>
+            <td width=20%>
+              Christ Healing Evangelical Church
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/bamidele-michael/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ogunewu, Michael Leke </td>
+            <td width=25%><a href="/stories/nigeria/eniola-adeolu/">Eniola, Adeolu</a></td>
+            <td width=20%>
+              Glad Tidings Evangelistic Ministry
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/eniola-adeolu/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ajeigbe, Adesoji Olatunji </td>
+            <td width=25%><a href="/stories/ghana/adams-frank/">Adams, Frank Kwesi</a></td>
+            <td width=20%>
+              Baptist
+              
+              
+            </td>
+            <td width=20%>
+              Ghana
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/ghana/adams-frank/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ogunewu, Michael Adeleke </td>
+            <td width=25%><a href="/stories/nigeria/ilori-joseph/">Ilori, Joseph Abiodun</a></td>
+            <td width=20%>
+              Nigerian Baptist Convention
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/ilori-joseph/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Oguntade, Ayotunde Olayori </td>
+            <td width=25%><a href="/stories/nigeria/omoniyi-jacob/">Omoniyi, Jacob Olawale</a></td>
+            <td width=20%>
+              Nigerian Baptist Convention
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/omoniyi-jacob/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ogunewu, Michael Leke </td>
+            <td width=25%><a href="/stories/nigeria/bada-alexander-abiodun-adebayo/">Bada, Alexander Abiodun Adebayo</a></td>
+            <td width=20%>
+              Celestial Church of Christ
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/bada-alexander-abiodun-adebayo/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ogunewu, Michael Adeleke </td>
+            <td width=25%><a href="/stories/nigeria/idowu-bolaji/">Idowu, Bolaji</a></td>
+            <td width=20%>
+              Methodist Church Nigeria
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/idowu-bolaji/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ogunewu, Michael Leke </td>
             <td width=25%><a href="/stories/nigeria/odunaike-samuel/">Odunaike, Samuel Olusegun</a></td>
             <td width=20%>
               Foursquare Gospel Church
@@ -2461,6 +2254,129 @@
             </td>
             <td width=15%>
               <a href="/stories/nigeria/odunaike-samuel/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ogunewu, Michael Adeleke </td>
+            <td width=25%><a href="/stories/nigeria/adejobi-emmanuel2/">Adejobi, Emmanuel Adeleke</a></td>
+            <td width=20%>
+              Church of the Lord (Aladura)
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/adejobi-emmanuel2/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ogunewu, Michael Adeleke </td>
+            <td width=25%><a href="/stories/nigeria/adegbolagun-michael/">Adegbolagun, Michael Oluwamuyide</a></td>
+            <td width=20%>
+              Voice of Redemption Gospel Church
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/adegbolagun-michael/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ogunewu, Michael Adeleke </td>
+            <td width=25%><a href="/stories/nigeria/usuwa-friday/">Usuwa, Friday Chinyere</a></td>
+            <td width=20%>
+              Foursquare Gospel Church
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/usuwa-friday/" rel="permalink">EN</a>
         
         
         
@@ -2530,9 +2446,9 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Ogunewu, Michael Leke </td>
-            <td width=25%><a href="/stories/nigeria/eniola-adeolu/">Eniola, Adeolu</a></td>
+            <td width=25%><a href="/stories/nigeria/adebajo-christopher/">Adebajo, Christopher James Adebayo</a></td>
             <td width=20%>
-              Glad Tidings Evangelistic Ministry
+              Prayerful Apostolic Church (Gboran)
               
               
             </td>
@@ -2542,89 +2458,7 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/nigeria/eniola-adeolu/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ogunewu, Michael Adeleke </td>
-            <td width=25%><a href="/stories/nigeria/oshitelu4-josiah/">Oshitelu, Josiah Olunowo (D)</a></td>
-            <td width=20%>
-              Church of the Lord (Aladura)
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/oshitelu4-josiah/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Ogunewu, Michael Adeleke </td>
-            <td width=25%><a href="/stories/nigeria/sadela-samuel/">Sadela, Samuel Akinbode</a></td>
-            <td width=20%>
-              Gospel Apostolic Church
-              
-              
-            </td>
-            <td width=20%>
-              Nigeria
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/nigeria/sadela-samuel/" rel="permalink">EN</a>
+              <a href="/stories/nigeria/adebajo-christopher/" rel="permalink">EN</a>
         
         
         
@@ -2693,20 +2527,225 @@
     <div>
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
-            <td width=20%> Ajeigbe, Adesoji Olatunji </td>
-            <td width=25%><a href="/stories/ghana/adams-frank/">Adams, Frank Kwesi</a></td>
+            <td width=20%> Ogunewu, Michael Adeleke </td>
+            <td width=25%><a href="/stories/nigeria/otubu-godfrey/">Otubu, Godfrey Itse Mene</a></td>
             <td width=20%>
-              Baptist
+              Eternal Sacred Order of the Cherubim and Seraphim Church
               
               
             </td>
             <td width=20%>
-              Ghana
+              Nigeria
               
               
             </td>
             <td width=15%>
-              <a href="/stories/ghana/adams-frank/" rel="permalink">EN</a>
+              <a href="/stories/nigeria/otubu-godfrey/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ogunewu, Michael Adeleke </td>
+            <td width=25%><a href="/stories/nigeria/kenny-joseph/">Kenny, Joseph Peter</a></td>
+            <td width=20%>
+              Catholic Church
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/kenny-joseph/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ogunewu, Michael Adeleke </td>
+            <td width=25%><a href="/stories/nigeria/coker-jacobk2/">Coker, Jacob Kehinde (B)</a></td>
+            <td width=20%>
+              The African Church
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/coker-jacobk2/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ogunewu, Michael Adeleke </td>
+            <td width=25%><a href="/stories/nigeria/oshitelu4-josiah/">Oshitelu, Josiah Olunowo (D)</a></td>
+            <td width=20%>
+              Church of the Lord (Aladura)
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/oshitelu4-josiah/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ogunewu, Michael Leke </td>
+            <td width=25%><a href="/stories/nigeria/kumuyi-abiodun/">Kumuyi, Abiodun</a></td>
+            <td width=20%>
+              Deeper Christian Life Ministry
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/kumuyi-abiodun/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Ogunewu, Michael Adeleke </td>
+            <td width=25%><a href="/stories/nigeria/igbudu-cornelius/">Igbudu, Cornelius Adam</a></td>
+            <td width=20%>
+              Anglican Communion (Adam Preaching Society)
+              
+              
+            </td>
+            <td width=20%>
+              Nigeria
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/nigeria/igbudu-cornelius/" rel="permalink">EN</a>
         
         
         
@@ -4963,19 +5002,19 @@
             </thead></table>
             <table width=100%><tbody><tr>
                 <td width=20%> Manana, Francis </td>
-                <td width=25%><a href="/stories/sudan/wani-benjamin/">Wani Yugusuk, Benjamin</a></td>
+                <td width=25%><a href="/stories/mali/keita-kassoum/">Keita, Kassoum (B)</a></td>
                 <td width=20%>
-                  Anglican Communion (Episcopal)
+                  Evangelical
                   
                   
                 </td>
                 <td width=20%>
-                  Sudan
-                  South Sudan
+                  Mali
+                  
                   
                 </td>
                 <td width=15%>
-                  <a href="/stories/sudan/wani-benjamin/" rel="permalink">EN</a>
+                  <a href="/stories/mali/keita-kassoum/" rel="permalink">EN</a>
         
         
         
@@ -5003,19 +5042,19 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Manana, Francis </td>
-            <td width=25%><a href="/stories/ghana/bendor-samuel-john/">Bendor-Samuel, John Theodore</a></td>
+            <td width=25%><a href="/stories/sudan/wani-benjamin/">Wani Yugusuk, Benjamin</a></td>
             <td width=20%>
-              Evangelical
+              Anglican Communion (Episcopal)
               
               
             </td>
             <td width=20%>
-              Ghana
-              
+              Sudan
+              South Sudan
               
             </td>
             <td width=15%>
-              <a href="/stories/ghana/bendor-samuel-john/" rel="permalink">EN</a>
+              <a href="/stories/sudan/wani-benjamin/" rel="permalink">EN</a>
         
         
         
@@ -5044,19 +5083,19 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Manana, Francis </td>
-            <td width=25%><a href="/stories/mali/keita-kassoum/">Keita, Kassoum (B)</a></td>
+            <td width=25%><a href="/stories/ghana/bendor-samuel-john/">Bendor-Samuel, John Theodore</a></td>
             <td width=20%>
               Evangelical
               
               
             </td>
             <td width=20%>
-              Mali
+              Ghana
               
               
             </td>
             <td width=15%>
-              <a href="/stories/mali/keita-kassoum/" rel="permalink">EN</a>
+              <a href="/stories/ghana/bendor-samuel-john/" rel="permalink">EN</a>
         
         
         
@@ -8644,7 +8683,7 @@
             </thead></table>
             <table width=100%><tbody><tr>
                 <td width=20%> Muyebe, Stanslaus </td>
-                <td width=25%><a href="/stories/malawi/vaessen-victor/">Vaessen, Victor</a></td>
+                <td width=25%><a href="/stories/malawi/chafulumira-william/">Chafulumira, William</a></td>
                 <td width=20%>
                   Catholic Church
                   
@@ -8656,7 +8695,7 @@
                   
                 </td>
                 <td width=15%>
-                  <a href="/stories/malawi/vaessen-victor/" rel="permalink">EN</a>
+                  <a href="/stories/malawi/chafulumira-william/" rel="permalink">EN</a>
         
         
         
@@ -8666,7 +8705,7 @@
         
         
         
-        
+        <a href="/pt/stories/malawi/chafulumira-william/" rel="permalink">PT</a>
         
         
         
@@ -8676,47 +8715,6 @@
             </tr></tbody></table>
       </article>
       </div>
-    
-
-
-    
-    <div>
-      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-        <table width=100%><tbody><tr>
-            <td width=20%> Muyebe, Stanslaus </td>
-            <td width=25%><a href="/stories/malawi/bourget-pierre/">Bourget, Pierre</a></td>
-            <td width=20%>
-              Catholic Church
-              
-              
-            </td>
-            <td width=20%>
-              Malawi
-              
-              
-            </td>
-            <td width=15%>
-              <a href="/stories/malawi/bourget-pierre/" rel="permalink">EN</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                  </td>
-        </tr></tbody></table>
-    </article>
-    </div>
-
     
 
 
@@ -8748,6 +8746,47 @@
         
         
         <a href="/pt/stories/malawi/chiputu-raphael/" rel="permalink">PT</a>
+        
+        
+        
+        
+        
+                  </td>
+        </tr></tbody></table>
+    </article>
+    </div>
+
+    
+
+
+    
+    <div>
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <table width=100%><tbody><tr>
+            <td width=20%> Muyebe, Stanslaus </td>
+            <td width=25%><a href="/stories/malawi/bourget-pierre/">Bourget, Pierre</a></td>
+            <td width=20%>
+              Catholic Church
+              
+              
+            </td>
+            <td width=20%>
+              Malawi
+              
+              
+            </td>
+            <td width=15%>
+              <a href="/stories/malawi/bourget-pierre/" rel="permalink">EN</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -8848,7 +8887,7 @@
       <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
         <table width=100%><tbody><tr>
             <td width=20%> Muyebe, Stanslaus </td>
-            <td width=25%><a href="/stories/malawi/chafulumira-william/">Chafulumira, William</a></td>
+            <td width=25%><a href="/stories/malawi/vaessen-victor/">Vaessen, Victor</a></td>
             <td width=20%>
               Catholic Church
               
@@ -8860,7 +8899,7 @@
               
             </td>
             <td width=15%>
-              <a href="/stories/malawi/chafulumira-william/" rel="permalink">EN</a>
+              <a href="/stories/malawi/vaessen-victor/" rel="permalink">EN</a>
         
         
         
@@ -8870,7 +8909,7 @@
         
         
         
-        <a href="/pt/stories/malawi/chafulumira-william/" rel="permalink">PT</a>
+        
         
         
         
@@ -9587,7 +9626,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 08 March 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 21 March 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -9626,6 +9665,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayMarch08231937" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=TuesdayMarch21231731" async></script>
   </body>
 </html>
