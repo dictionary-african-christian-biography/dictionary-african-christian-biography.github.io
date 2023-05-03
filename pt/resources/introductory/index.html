@@ -368,121 +368,149 @@ ORAL HISTORY ___________________________________________________________________
 
       <section class="page__content" itemprop="text">
         <style>
-    :root {
-        --platinum: #e5e5e5;
-        --black: #2b2d42;
-        --white: #fff;
-        --thumb: #edf2f4;
-      }
-      
-    .container {
-  max-width: 1400px;
-  padding: 0 15px;
-  margin: 0 auto;
+  :root {
+      --platinum: #e5e5e5;
+      --black: #2b2d42;
+      --white: #fff;
+      --thumb: #edf2f4;
+    }
+
+  .container {
+max-width: 1400px;
+padding: 0 15px;
+margin: 0 auto;
+position: relative;
 }
 
 h2 {
-  font-size: 32px;
-  margin-bottom: 1em;
+font-size: 32px;
+margin-bottom: 1em;
 }
 
 .cards {
-  display: flex;
-  padding: 25px 0px;
-  list-style: none;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
+display: flex;
+padding: 25px 0px;
+list-style: none;
+overflow-x: scroll;
+scroll-snap-type: x mandatory;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 100%;
-  padding: 20px;
-  background: var(--white);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
-  scroll-snap-align: start;
-  border-radius: 12px;
-  transition: all 0.2s;
+display: flex;
+flex-direction: column;
+flex: 0 0 100%;
+padding: 20px;
+background: var(--white);
+box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+scroll-snap-align: start;
+border-radius: 12px;
+transition: all 0.2s;
 }
 
 .card:not(:last-child) {
-  margin-left: 10px;
+margin-left: 10px;
 }
 
 .card:hover {
-  color: var(--white);
-  background:#8f5923;
+color: var(--white);
+background:#8f5923;
 }
 .card_img{
-    border-radius: 12px;
-    width:100%;
-    object-fit: cover;
-    height: max(10rem, 30vh);
-    aspect-ratio:4/3;
+  border-radius: 12px;
+  width:100%;
+  object-fit: cover;
+  height: max(10rem, 30vh);
+  aspect-ratio:4/3;
 }
 .card .card-title {
-  font-size: 20px;
+font-size: 20px;
 }
 
 .card .card-content {
-  margin: 20px 0;
-  max-width: 85%;
+margin: 20px 0;
+max-width: 85%;
 }
 
 .card .card-link-wrapper {
-  margin-top: auto;
+margin-top: auto;
 }
 
 .card .card-link {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  background: #964b00;
-  padding: 6px 12px;
-  border-radius: 8px;
-  transition: background 0.2s;
+display: inline-block;
+text-decoration: none;
+color: white;
+background: #964b00;
+padding: 6px 12px;
+border-radius: 8px;
+transition: background 0.2s;
 }
 
 .card:hover .card-link {
-  background: #e99949;
+background: #e99949;
 }
 
 .cards::-webkit-scrollbar {
-  height: 12px;
+height: 12px;
 }
 
 .cards::-webkit-scrollbar-thumb,
 .cards::-webkit-scrollbar-track {
-  border-radius: 92px;
+border-radius: 92px;
 }
 
 .cards::-webkit-scrollbar-thumb {
-  background: #964b00;
+background: #964b00;
 }
 
 .cards::-webkit-scrollbar-track {
-  background: var(--thumb);
+background: var(--thumb);
 }
 
-@media (min-width: 500px) {
-  .card {
-    flex-basis: calc(50% - 10px);
-  }
+.arrow-button {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 30px;
+height: 30px;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background-color: transparent;
+border:none;
+cursor: pointer;
+}
 
-  .card:not(:last-child) {
-    margin-right: 20px;
-  }
+.arrow-button:hover {
+transform: translateY(-50%) scale(1.05);
+}
+
+.arrow-button.prev {
+left: 0px;
+}
+
+.arrow-button.next {
+right: 0px;
+}
+
+
+@media (min-width: 500px) {
+.card {
+  flex-basis: calc(50% - 10px);
+}
+
+.card:not(:last-child) {
+  margin-right: 20px;
+}
 }
 
 @media (min-width: 700px) {
-  .card {
-    flex-basis: calc(calc(100% / 3) - 20px);
-  }
+.card {
+  flex-basis: calc(calc(100% / 3) - 20px);
+}
 
-  .card:not(:last-child) {
-    margin-right: 30px;
-  }
+.card:not(:last-child) {
+  margin-right: 30px;
+}
 }
 
 
@@ -490,6 +518,11 @@ h2 {
 
 
 <div class="container">
+  <button class="arrow-button prev">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14.1667 3.33333L5.83333 10L14.1667 16.6667" stroke="#808080" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
     <h3>1. Introdução ao Projeto</h3>
     <ul class="cards">
       <li class="card">
@@ -543,10 +576,20 @@ h2 {
       </li>
       
     </ul>
+    <button class="arrow-button next">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.83331 16.6667L14.1666 10L5.83331 3.33337" stroke="#808080" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
   </div>
 
 
   <div class="container">
+    <button class="arrow-button prev">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.1667 3.33333L5.83333 10L14.1667 16.6667" stroke="#808080" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
     <h3>2. Diretrizes e Manuais</h3>
     <ul class="cards">
       <li class="card">
@@ -600,9 +643,39 @@ h2 {
       </li>
       
     </ul>
+    <button class="arrow-button next">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.83331 16.6667L14.1666 10L5.83331 3.33337" stroke="#808080" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
   </div>
 
-
+  <script>
+    // add this script to make the arrow buttons work for each container
+    const containerList = document.querySelectorAll('.container');
+    const scrollDistance = 300; // adjust this number to change the distance to scroll
+    
+    containerList.forEach(container => {
+      const prevButton = container.querySelector('.arrow-button.prev');
+      const nextButton = container.querySelector('.arrow-button.next');
+      const cardsList = container.querySelector('.cards');
+  
+      prevButton.addEventListener('click', () => {
+        cardsList.scrollBy({
+          left: -scrollDistance,
+          behavior: 'smooth'
+        });
+      });
+  
+      nextButton.addEventListener('click', () => {
+        cardsList.scrollBy({
+          left: scrollDistance,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+  
       </section>
     </div>
 
@@ -691,7 +764,7 @@ h2 {
 
         
         <div class="box_two">
-        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 01 May 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: 03 May 2023.<br>&copy; 2023 Dicionário Biográfico de Cristãos da África.<br><a href="/pt/connect/contact/">Contate-Nos</a> | <a href="/about/usage/">Uso & Informação de Citação</a>
         </div>
         
 
@@ -726,6 +799,6 @@ h2 {
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayMay01231749" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayMay03231300" async></script>
   </body>
 </html>

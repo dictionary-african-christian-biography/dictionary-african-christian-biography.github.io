@@ -416,6 +416,7 @@ ORAL HISTORY ___________________________________________________________________
   max-width: 1400px;
   padding: 0 15px;
   margin: 0 auto;
+  position: relative;
 }
 
 h2 {
@@ -502,6 +503,33 @@ h2 {
   background: var(--thumb);
 }
 
+.arrow-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border:none;
+  cursor: pointer;
+}
+
+.arrow-button:hover {
+  transform: translateY(-50%) scale(1.05);
+}
+
+.arrow-button.prev {
+  left: 0px;
+}
+
+.arrow-button.next {
+  right: 0px;
+}
+
+
 @media (min-width: 500px) {
   .card {
     flex-basis: calc(50% - 10px);
@@ -538,8 +566,12 @@ h2 {
    </td></tr></tbody></table>
 
 
-
 <div class="container">
+  <button class="arrow-button prev">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14.1667 3.33333L5.83333 10L14.1667 16.6667" stroke="#808080" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
     <h3>1. Introduction to the Project</h3>
     <ul class="cards">
       <li class="card">
@@ -564,6 +596,18 @@ h2 {
         </div>
         <div class="card-link-wrapper">
           <a href="/about/beginnings/" class="card-link">Learn More</a>
+        </div>
+      </li>
+      <li class="card">
+        <div>
+          <img class = 'card_img' src="/assets/images/squares/sq-vision-yellow.jpg"/>
+          <h3 class="card-title">USB Files Download</h3>
+          <div class="card-content">
+            <p>Last Updated: Mar 2023</p>
+          </div>
+        </div>
+        <div class="card-link-wrapper">
+          <a href="/resources/usb/indexes" class="card-link">Learn More</a>
         </div>
       </li>
       <li class="card">
@@ -603,10 +647,20 @@ h2 {
         </div>
       </li>
     </ul>
+    <button class="arrow-button next">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.83331 16.6667L14.1666 10L5.83331 3.33337" stroke="#808080" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
   </div>
 
 
   <div class="container">
+    <button class="arrow-button prev">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.1667 3.33333L5.83333 10L14.1667 16.6667" stroke="#808080" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
     <h3>2. Submission Guidelines</h3>
     <ul class="cards">
       <li class="card">
@@ -694,12 +748,22 @@ h2 {
         </div>
       </li>
     </ul>
+    <button class="arrow-button next">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.83331 16.6667L14.1666 10L5.83331 3.33337" stroke="#808080" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
   </div>
 
 
 
 
   <div class="container">
+    <button class="arrow-button prev">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.1667 3.33333L5.83333 10L14.1667 16.6667" stroke="#808080" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
     <h3>3. Establishing an Institutional Archive </h3>
     <ul class="cards">
       <li class="card">
@@ -752,11 +816,21 @@ h2 {
       </li>
 
     </ul>
+    <button class="arrow-button next">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.83331 16.6667L14.1666 10L5.83331 3.33337" stroke="#808080" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
   </div>
 
 
 
   <div class="container">
+    <button class="arrow-button prev">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.1667 3.33333L5.83333 10L14.1667 16.6667" stroke="#808080" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
     <h3>4. Project Luke Fellowship   </h3>
     <ul class="cards">
       <li class="card">
@@ -772,10 +846,20 @@ h2 {
         </div>
       </li>
     </ul>
+    <button class="arrow-button next">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.83331 16.6667L14.1666 10L5.83331 3.33337" stroke="#808080" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
   </div>
 
 
   <div class="container">
+    <button class="arrow-button prev">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.1667 3.33333L5.83333 10L14.1667 16.6667" stroke="#808080" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
     <h3>5. Being a Participating Institution    </h3>
     <ul class="cards">
       <li class="card">
@@ -819,10 +903,20 @@ h2 {
 
 
     </ul>
+    <button class="arrow-button next">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.83331 16.6667L14.1666 10L5.83331 3.33337" stroke="#808080" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
   </div>
 
 
   <div class="container">
+    <button class="arrow-button prev">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.1667 3.33333L5.83333 10L14.1667 16.6667" stroke="#808080" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
     <h3>6. Affiliated Projects   </h3>
     <ul class="cards">
       <li class="card">
@@ -838,8 +932,46 @@ h2 {
         </div>
       </li>
     </ul>
+    <button class="arrow-button next">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.83331 16.6667L14.1666 10L5.83331 3.33337" stroke="#808080" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
   </div>
 
+
+  <script>
+    // add this script to make the arrow buttons work for each container
+    const containerList = document.querySelectorAll('.container');
+    const scrollDistance = 300; // adjust this number to change the distance to scroll
+    
+    containerList.forEach(container => {
+      const prevButton = container.querySelector('.arrow-button.prev');
+      const nextButton = container.querySelector('.arrow-button.next');
+      const cardsList = container.querySelector('.cards');
+  
+      prevButton.addEventListener('click', () => {
+        cardsList.scrollBy({
+          left: -scrollDistance,
+          behavior: 'smooth'
+        });
+      });
+  
+      nextButton.addEventListener('click', () => {
+        cardsList.scrollBy({
+          left: scrollDistance,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+  
+  
+  
+  
+  
+
+  
       </section>
     </div>
 
@@ -924,7 +1056,7 @@ h2 {
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 01 May 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 03 May 2023.<br>&copy; 2023 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -963,6 +1095,6 @@ h2 {
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=MondayMay01231749" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayMay03231300" async></script>
   </body>
 </html>
