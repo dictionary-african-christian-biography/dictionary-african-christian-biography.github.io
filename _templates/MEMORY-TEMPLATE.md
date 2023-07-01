@@ -1,0 +1,58 @@
+---
+layout: single-memory
+lang: 'en'
+languages-available:
+  - 'en'
+  - ' '
+  - ' '
+  - ' '
+index: ''
+categories: ''
+eulogy: ''
+obituary: ''
+memory: ''
+permalink: '/memories/lastname-firstname/'
+title: ''
+alternate: ''
+date: ''
+century:
+  - ''
+  - ''
+  - ''
+tradition: ''
+affiliation:
+  - ''
+  - ''
+  - ''
+country:
+  - ''
+  - ''
+agri-ecologist: ''
+ancient: ''
+artist: ''
+catechist: ''
+clergy: ''
+diaspora: ''
+ecologists: ''
+ecumenist: ''
+evangelist: ''
+nationalist: ''
+martyr: ''
+persecuted: ''
+medical: ''
+missionary: ''
+musician: ''
+nonafrican: ''
+nonchristian: ''
+photo: ''
+scholar: ''
+theologian: ''
+translator: ''
+women: ''
+youth: ''
+author: ''
+upload: 2001-01-01
+image: '/images/singe_bio_image_placeholder.jpg'
+---
+
+Content Goes Here

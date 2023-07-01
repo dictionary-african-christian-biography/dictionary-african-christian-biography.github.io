@@ -1,0 +1,71 @@
+---
+layout: archive
+title: "Panga na Taasisi: T-Z"
+permalink: /sw/sort/stories/institution-sort4/
+lang: sw
+languages-available:
+  - en
+  - fr
+  - pt
+  - sw
+---
+<table class="sort"><tbody>
+  <tr>
+    <td><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/sort/stories/institution-sort/">A-F</a></td>
+    <td><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/sort/stories/institution-sort2/">G-M</a></td>
+    <td><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/sort/stories/institution-sort3/">N-S</a></td>
+    <td><a href="#T" style="color:#ecc068;">T</a></td>
+    <td><a href="#U" style="color:#ecc068;">U</a></td>
+    <td><a href="#V" style="color:#ecc068;">V</a></td>
+    <td><a href="#W" style="color:#ecc068;">W</a></td>
+    <td><a href="#X" style="color:#ecc068;">X</a></td>
+    <td><a href="#Y" style="color:#ecc068;">Y</a></td>
+    <td><a href="#Z" style="color:#ecc068;">Z</a></td>
+    </tr>
+</tbody></table>
+
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}
+{% assign sorted = site.data.site-content | where: "index","primary" | sort: 'institution' %}
+
+<h3><a id="T">T</a></h3>
+{% for page in sorted %}{% if page.institution != 'none' and page.institution != "" and page.title != 'none' %}{% capture cull %}{{ page.institution | truncate: 1, "" }}{% endcapture %}
+    {% if cull == 'T' %}{% include json-institution-index.html parent_lang=parent_lang %}{%elsif cull.size == 0 %}None{% endif %}
+{% endif %}{% endfor %}
+
+{% include back-to-top %}
+<h3><a id="U">U</a></h3>
+{% for page in sorted %}{% if page.institution != 'none' and page.institution != "" and page.title != 'none' %}{% capture cull %}{{ page.institution | truncate: 1, "" }}{% endcapture %}
+    {% if cull == 'U' %}{% include json-institution-index.html parent_lang=parent_lang %}{%elsif cull.size == 0 %}None{% endif %}
+{% endif %}{% endfor %}
+
+{% include back-to-top %}
+<h3><a id="V">V</a></h3>
+{% for page in sorted %}{% if page.institution != 'none' and page.institution != "" and page.title != 'none' %}{% capture cull %}{{ page.institution | truncate: 1, "" }}{% endcapture %}
+    {% if cull == 'V' %}{% include json-institution-index.html parent_lang=parent_lang %}{%elsif cull.size == 0 %}None{% endif %}
+{% endif %}{% endfor %}
+
+{% include back-to-top %}
+<h3><a id="W">W</a></h3>
+{% for page in sorted %}{% if page.institution != 'none' and page.institution != "" and page.title != 'none' %}{% capture cull %}{{ page.institution | truncate: 1, "" }}{% endcapture %}
+    {% if cull == 'W' %}{% include json-institution-index.html parent_lang=parent_lang %}{%elsif cull.size == 0 %}None{% endif %}
+{% endif %}{% endfor %}
+
+{% include back-to-top %}
+<h3><a id="X">X</a></h3>
+{% for page in sorted %}{% if page.institution != 'none' and page.institution != "" and page.title != 'none' %}{% capture cull %}{{ page.institution | truncate: 1, "" }}{% endcapture %}
+    {% if cull == 'X' %}{% include json-institution-index.html parent_lang=parent_lang %}{%elsif cull.size == 0 %}None{% endif %}
+{% endif %}{% endfor %}
+
+{% include back-to-top %}
+<h3><a id="Y">Y</a></h3>
+{% for page in sorted %}{% if page.institution != 'none' and page.institution != "" and page.title != 'none' %}{% capture cull %}{{ page.institution | truncate: 1, "" }}{% endcapture %}
+    {% if cull == 'Y' %}{% include json-institution-index.html parent_lang=parent_lang %}{%elsif cull.size == 0 %}None{% endif %}
+{% endif %}{% endfor %}
+
+{% include back-to-top %}
+<h3><a id="Z">Z</a></h3>
+{% for page in sorted %}{% if page.institution != 'none' and page.institution != "" and page.title != 'none' %}{% capture cull %}{{ page.institution | truncate: 1, "" }}{% endcapture %}
+    {% if cull == 'Z' %}{% include json-institution-index.html parent_lang=parent_lang %}{%elsif cull.size == 0 %}None{% endif %}
+{% endif %}{% endfor %}
+
+{% include back-to-top %}

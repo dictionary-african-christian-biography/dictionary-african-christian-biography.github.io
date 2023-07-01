@@ -1,0 +1,39 @@
+---
+layout: archive
+title: "Project Luke Fellows: 2001-2002"
+
+permalink: /sort/stories/project-luke-2001/
+lang: en
+languages-available:
+  - en
+  - ' '
+  - ' '
+  - ' '
+---
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}{% assign sorted = site.data.site-content | sort: 'title' %}
+
+<h3>Rev. Yossa Way</h3><table bgcolor="#f5f5f5"><tbody><tr>
+<td width=20% style="border-right: 0px !important"><img src="/images/project-luke/Yossa-rev.jpg"></td><td width=80%>
+  <b>Years in Residency at OSMC:</b><br>
+  2001-2002<br><br>
+  <b>Positions:</b><br>
+  Professor of Theology at the Institut Supérieur Théologique Anglican <br>
+  in Bunia, Democratic Republic of the Congo
+</td></tr></tbody></table><h4>Stories by Rev. Yossa Way</h4><table><thead><th width=35%>{{ site.data.site-trans[page.lang].name }}</th><th width=25%>{{ site.data.site-trans[page.lang].affiliation }}</th><th width=25%>{{ site.data.site-trans[page.lang].country }}</th><th width=15%>{{ site.data.site-trans[page.lang].languages }}</th></thead></table>
+{% for page in sorted %}
+{% if page.index == 'primary' and page.author == "Way, Yossa" %}{% include json-category-index.html parent_lang=parent_lang %}
+{% endif %}{% endfor %}
+<hr>
+
+
+<h3>Dr. Kofi Owusu-Mensa</h3><table bgcolor="#f5f5f5"><tbody><tr>
+<td width=20% style="border-right: 0px !important"><img src="/images/project-luke/Kofi-Owusu-Mensa.jpg"></td><td width=80%>
+  <b>Years in Residency at OSMC:</b><br>
+  2001-2002<br><br>
+  <b>Positions:</b><br>
+  Professor of History at Valley View University, <br>
+  Oyibi in Accra, Ghana
+</td></tr></tbody></table><h4>Stories by Dr. Kofi Owusu-Mensa</h4><table><thead><th width=35%>{{ site.data.site-trans[page.lang].name }}</th><th width=25%>{{ site.data.site-trans[page.lang].affiliation }}</th><th width=25%>{{ site.data.site-trans[page.lang].country }}</th><th width=15%>{{ site.data.site-trans[page.lang].languages }}</th></thead></table>
+{% for page in sorted %}
+{% if page.index == 'primary' and page.author == "Owusu-Mensa, Kofi" %}{% include json-category-index.html parent_lang=parent_lang %}
+{% endif %}{% endfor %}

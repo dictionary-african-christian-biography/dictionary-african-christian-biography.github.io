@@ -1,0 +1,14 @@
+---
+layout: single-news
+title:  "Complete Redesign of DACB Website"
+date:   2017-09-25
+lang: en
+languages-available:
+  - en
+  - ' '
+  - ' '
+  - ' '
+---
+This summer, the DACB website underwent a complete redesign using a flat-file CMS system conceived by leading software development platform Github. The new site has a lightweight digital footprint, loads fast, and can be distributed on USB drives in areas without Internet access. In addition, multiple indexes and a powerful standalone search engine (that works offline) make it easy to do in-depth research on the site.
+
+Indexing of subjects (as catechists, martyrs, etc) is still underway and will hopefully be completed by November. Please do not hesitate to contact us at [dacb@bu.edu](mailto:dacb@bu.edu) if you see anything that needs correcting.

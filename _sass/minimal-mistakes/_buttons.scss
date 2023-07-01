@@ -1,0 +1,257 @@
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+
+/*
+   Default button
+   ========================================================================== */
+.clear {
+  text-align: center;
+}
+
+.btn-facebook {
+ /* default button */
+ display: inline-block;
+ margin-bottom: 0.25em;
+ padding: 0.5em 1em;
+ background-image: url(/assets/images/facebook.jpg) !important;
+ background-size: 108px 36px;
+ background-repeat: no-repeat;
+ width: 108px !important;
+ height: 36px !important;
+ border: 0 !important;
+ border-radius: 4px;
+ cursor: pointer;
+ font-size: 0;
+ margin-top: 10px;
+
+ &:hover {
+   background-image: url(/assets/images/facebook-hover.jpg) !important;
+   background-size: 108px 36px;
+   background-repeat: no-repeat;
+ }
+}
+
+.btn {
+  /* default button */
+  display: inline-block;
+  margin-bottom: 0.25em;
+  padding: 0.5em 1em;
+  color: #fff !important;
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: mix(white, #000, 20%);
+  border: 0 !important;
+  border-radius: $border-radius;
+  cursor: pointer;
+  margin-top: 1em;
+
+  &:hover {
+    background-color: #802525;
+  }
+  .icon {
+    margin-right: 0.5em;
+  }
+
+  .icon + .hidden {
+    margin-left: -0.5em; /* override for hidden text*/
+  }
+
+  /* fills width of parent container */
+
+  &--block {
+    display: block;
+    width: 100%;
+
+    + .btn--block {
+      margin-top: 0.25em;
+    }
+  }
+
+  /* for dark backgrounds */
+  &--banner {
+    color: #fff !important;
+    border: 0px !important;
+    background-color: #802525;
+    border-radius: 0px;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+
+    &:hover {
+      color: $dark-gray !important;
+      background-color: #ffcc66;
+      text-decoration: none !important;
+    }
+
+    &:hover a{
+      text-decoration: none !important;
+    }
+  }
+  &--inverse {
+    color: $gray !important;
+    border: 1px solid $light-gray !important; /* override*/
+    background-color: #fff;
+    font-size: small;
+    font-style: normal;
+    width: 100%;
+
+    &:hover {
+      color: #fff !important;
+      border-color: $gray;
+    }
+  }
+  &--inverse-home {
+    color: #fff !important;
+    border: 0px; /* override*/
+    background-color: #802525;
+    float: right;
+    font-size: 9pt;
+    border-radius: 0px;
+    margin-top: 0px;
+    width: 100%;
+    display: block;
+    height: 30px;
+
+    &:hover {
+      color: $dark-gray !important;
+      background-color: #ffcc66;
+      text-decoration: none !important;
+    }
+
+    &:hover a{
+      text-decoration: none !important;
+    }
+  }
+
+  &--inverse-form {
+    color: #7a8288 !important;
+    border: 1px solid #bdc1c4 !important;
+    background-color: #fff;
+    font-size: small;
+    font-style: normal;
+    width: 100% !important;
+    margin-top: .5em;
+    padding: .75em;
+
+    &:hover {
+      color: #fff !important;
+      border-color: $gray;
+    }
+  }
+
+  &--inverse-long {
+    color: $black !important;
+    background-color: $yellow;
+    width: 50% !important;
+    margin-top: .25em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .75em;
+    text-transform: uppercase;
+    text-decoration: none !important;
+
+
+    &:hover {
+      color: $yellow!important;
+      border: 2px solid $yellow !important;
+      background-color: transparent;
+      text-decoration: none !important;
+    }
+  }
+  /* light outline */
+
+  &--light-outline {
+    border: 1px solid #fff !important; /* override*/
+    background-color: transparent;
+  }
+
+  /* information */
+
+  &--info {
+    background-color: $info-color;
+
+    &:hover {
+      background-color: mix(#000, $info-color, 20%);
+    }
+  }
+
+  /* warning */
+
+  &--warning {
+    background-color: $warning-color;
+
+    &:hover {
+      background-color: mix(#000, $warning-color, 20%);
+    }
+  }
+
+  /* success */
+
+  &--success {
+    background-color: $success-color;
+
+    &:hover {
+      background-color: mix(#000, $success-color, 20%);
+    }
+  }
+
+  /* danger */
+
+  &--danger {
+    background-color: $danger-color;
+
+    &:hover {
+      background-color: mix(#000, $danger-color, 20%);
+    }
+  }
+
+  /* disabled */
+
+  &--disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    box-shadow: none;
+    opacity: 0.65;
+  }
+
+  /* social buttons */
+
+  $social:
+  (facebook, $facebook-color),
+  (twitter, $twitter-color),
+  (google-plus, $google-plus-color),
+  (linkedin, $linkedin-color);
+
+  @each $socialnetwork, $color in $social {
+    &--#{$socialnetwork} {
+      background-color: $color;
+
+      &:hover {
+        background-color: mix(#000, $color, 20%);
+      }
+    }
+  }
+
+  /* extra large button */
+
+  &--x-large {
+    font-size: $type-size-4;
+  }
+
+  /* large button */
+
+  &--large {
+    font-size: $type-size-5;
+  }
+
+  /* small button */
+
+  &--small {
+    font-size: $type-size-7;
+  }
+}

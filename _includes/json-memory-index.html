@@ -1,0 +1,29 @@
+<div style="padding-bottom:.5em;">
+  <table class="country-data" stlye="padding:.5em"><thead style="border-bottom: 1px solid #bdc1c4">
+    <tr>
+      <td colspan=2 style="font-size: .625em;">
+        <h3 style="font-size: 1.25em;margin-top:0px;margin-bottom: 0px;">{{ item.title }}</h3>
+        <p style="font-size: 1em;margin-bottom: 0px;"><b>
+          {{ item.date }}  |
+
+          {{ site.data.aff-trans[item.affiliation0].[include.parent_lang] }}
+          {{ site.data.aff-trans[item.affiliation1].[include.parent_lang] }}
+          {{ site.data.aff-trans[item.affiliation2].[include.parent_lang] }}
+          ,
+          {{ site.data.country-trans[item.country0].[include.parent_lang] }}
+          {{ site.data.country-trans[item.country1].[include.parent_lang] }}
+          {{ site.data.country-trans[item.country2].[include.parent_lang] }}
+        </b></p>
+      </td>
+    </tr></thead>
+    <tbody style="background-color:#fff;font-size: .625em;">
+      <tr>
+        <td style="width: 20%; vertical-align: top; display: table-cell;">
+          <img src="{{ item.image }}" class="icon">
+        </td>
+        <td style="width: 80%; vertical-align: top; display: table-cell;">
+          <div>{{ item.content | markdownify | | remove: "<p>" | remove: "</p>" | truncatewords: 60 }}</div>
+          <a href="{{item.url}}" class="btn btn--inverse">Read More</a>
+        </td>
+  </tr></tbody></table>
+</div>

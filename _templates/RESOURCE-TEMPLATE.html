@@ -1,0 +1,141 @@
+---
+title: ""
+layout: single-resources
+permalink: /resources/example/
+lang: en
+languages-available:
+- en
+- fr
+- pt
+- sw
+
+---
+
+
+<!----------------------------------------------------------------------------------------------------->
+<!--#### STYLE STARTS HERE------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------->
+<!--#### Do not change it unless you want to change the format like font size or card size------------->
+
+<style>
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+        padding: 16px;
+        text-align: center;
+        transition: 0.3s;
+        height: calc(100vh/1.5)
+
+    }
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    /* Add some padding inside the card container */
+    .container {
+        padding: 2px 16px;
+    }
+
+    .column {
+        float: left;
+        width: 33%;
+        padding: 0 10px;
+    }
+    /* Remove extra left and right margins, due to padding in columns */
+    .row {margin: 0 -5px;}
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        margin-bottom:5px;
+    }
+
+
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+
+        }
+    }
+    .cardhead{
+        font-size: 20px;
+    }
+    .cardbody{
+        font-size: 12px;
+    }
+
+
+</style>
+
+
+<!----------------------------------------------------------------------------------------------------->
+<!--#### TEMPLATES ENDS HERE--------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------->
+
+
+
+
+<!----------------------------------------------------------------------------------------------------->
+<!--Add explanation for the page content here --------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------->
+
+<p>XXX </p>
+
+
+<!----------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------->
+
+
+
+
+<!----------------------------------------------------------------------------------------------------->
+<!--Add new row of resource item     ------------------------------------------------------------------>
+<!----------------------------------------------------------------------------------------------------->
+
+<div class="row">
+
+    <!--Paste column here to create a new card -->
+
+    <!--Paste column here to create a new card -->
+
+    <!--Paste column here to create a new card -->
+
+</div>
+
+<!----------------------------------------------------------------------------------------------------->
+<!--Row ends here-------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------->
+
+
+
+
+<!----------------------------------------------------------------------------------------------------->
+<!--Add new column of resource item     ------------------------------------------------------------------>
+<!----------------------------------------------------------------------------------------------------->
+<div class="column">
+    <div class="card" >
+        <div class="splash__item-teaser">
+            <a href="{{ page.lang | prepend: '/' | remove: '/LANGUAGES' }}/resources/XXX"><!--1. Change '/LANGUAGES' to according languages like '/en' or '/fr'. 2.Change XXX to correct path--><img src="/assets/images/squares/XXX.jpg"></a> <!--Change to correct path to image-->
+        </div>
+        <div class="container">
+            <h2 class="cardhead"><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/resources/XXX"> <!--Change XXX to correct path--> Card Title XXX </a></h2><!--Change "Card Title XXX" to correct information-->
+            <p style="font-size:12px">
+                Add description XXX to the card.     <!--Change to correct information-->
+            </p>
+            <!--If want to add additional links to Word or PDF documents, change XXX to correct path and change Word/PDF to correct information
+                Else delete the entire line down here -->
+            <p style="font-size:12px"><a href = "{{ page.lang | prepend: '/' | remove: '/en' }}/resources/XXX">Word/PDF</a></p>
+
+        </div>
+    </div>
+</div>
+<!----------------------------------------------------------------------------------------------------->
+<!--Column ends here-------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------->
+
+

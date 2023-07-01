@@ -1,0 +1,70 @@
+# main links
+index-menu:
+  - title: Sort All Stories
+    children:
+      - title: "By Name"
+        url: /sort/stories/
+      - title: "By Most Recent"
+        url: /sort/stories/latest-sort/
+      - title: "By Century"
+        url: /sort/stories/century-sort/
+      - title: "By Tradition"
+        url: /sort/stories/tradition-sort/
+      - title: "By Country"
+        url: /sort/stories/country-sort/
+      - title: "By Author"
+        url: /sort/stories/author-sort/
+      - title: "By Project Luke Scholar"
+        url: /sort/stories/project-luke/
+      - title: "By Institution"
+        url: /sort/stories/institution-sort/
+      - title: "By Language"
+        url: /sort/stories/language-sort/
+  - title: Category Indexes
+    children:
+      - title: "Ancient Church"
+        url: /sort/stories/ancient-church-index/
+      - title: "Artists"
+        url: /sort/stories/artist-index/
+      - title: "Catechists"
+        url: /sort/stories/catechist-index/
+      - title: "Classic"
+        url: /sort/stories/classic-index/
+      - title: "Clergy"
+        url: /sort/stories/clergy-index/
+      - title: "Diaspora"
+        url: /sort/stories/diaspora-index/
+      - title: "Ecologists"
+        url: /sort/stories/ecologist-index/
+      - title: "Ecumenists"
+        url: /sort/stories/ecumenist-index/
+      - title: "Evangelists"
+        url: /sort/stories/evangelist-index/
+      - title: "Martyrs"
+        url: /sort/stories/martyr-index/
+      - title: "Medical Practitioners"
+        url: /sort/stories/medical-index/
+      - title: "Missionaries"
+        url: /sort/stories/missionary-index/
+      - title: "Musicians"
+        url: /sort/stories/musician-index/
+      - title: "Nationalists"
+        url: /sort/stories/nationalist-index/
+      - title: "Non-Africans"
+        url: /sort/stories/non-africans-index/
+      - title: "Non-Christians"
+        url: /sort/stories/non-christian-index/
+      - title: "Persecuted"
+        url: /sort/stories/persecuted-index/
+      - title: "Photos"
+        url: /sort/stories/photo-index/
+      - title: "Scholars"
+        url: /sort/stories/scholar-index/
+      - title: "Theologians"
+        url: /sort/stories/theologian-index/
+      - title: "Translators"
+        url: /sort/stories/translator-index/
+      - title: "Women"
+        url: /sort/stories/women-index/
+      - title: "Youth"
+        url: /sort/stories/youth-index/

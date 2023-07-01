@@ -1,0 +1,38 @@
+---
+layout: archive
+title: "Project Luke Fellows: 2007-2008"
+
+permalink: /sort/stories/project-luke-2007/
+lang: en
+languages-available:
+  - en
+  - ' '
+  - ' '
+  - ' '
+---
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}{% assign sorted = site.data.site-content | sort: 'title' %}
+
+<h3>Rev. Robert Adamou Pindzié</h3><table bgcolor="#f5f5f5"><tbody><tr>
+<td width=20% style="border-right: 0px !important"><img src="/images/project-luke/Pindzie-Robert-150w.jpg"></td><td width=80%>
+  <b>Years in Residency at OSMC:</b><br>
+  2007-2008<br><br>
+  <b>Positions:</b><br>
+  Professor of Church History and African Missions, <br>
+  Faculté de Théologie Évangélique du Cameroun (FACTEC), Cameroon
+</td></tr></tbody></table><h4>Stories by Rev. Robert Adamou Pindzié</h4><table><thead><th width=35%>{{ site.data.site-trans[page.lang].name }}</th><th width=25%>{{ site.data.site-trans[page.lang].affiliation }}</th><th width=25%>{{ site.data.site-trans[page.lang].country }}</th><th width=15%>{{ site.data.site-trans[page.lang].languages }}</th></thead></table>
+{% for page in sorted %}
+{% if page.index == 'primary' and page.author == "Pindzié, Robert Adamou" %}{% include json-category-index.html parent_lang=parent_lang %}
+{% endif %}{% endfor %}
+<hr>
+
+
+<h3>Rev. Angolowisye I. Malambug</h3><table bgcolor="#f5f5f5"><tbody><tr>
+<td width=20% style="border-right: 0px !important"><img src="/images/project-luke/Malambugi-A.jpg"></td><td width=80%>
+  <b>Years in Residency at OSMC:</b><br>
+  Spring 2007<br><br>
+  <b>Positions:</b><br>
+  Professor, Teofilo Kisanji University and Open University, Mbeya, Tanzania
+</td></tr></tbody></table><h4>Stories by Rev. Angolowisye Malambug</h4><table><thead><th width=35%>{{ site.data.site-trans[page.lang].name }}</th><th width=25%>{{ site.data.site-trans[page.lang].affiliation }}</th><th width=25%>{{ site.data.site-trans[page.lang].country }}</th><th width=15%>{{ site.data.site-trans[page.lang].languages }}</th></thead></table>
+{% for page in sorted %}
+{% if page.index == 'primary' and page.author == "Malambugi, Angolwisye I." %}{% include json-category-index.html parent_lang=parent_lang %}
+{% endif %}{% endfor %}

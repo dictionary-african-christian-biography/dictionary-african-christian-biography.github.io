@@ -1,0 +1,30 @@
+---
+layout: single-about
+permalink: /sw/about/partners/
+title: "Washirika wa Taasisi"
+author_profile: false
+lang: sw
+languages-available:
+  - en
+  - fr
+  - pt
+  - sw
+---
+<p mardown='span'>
+Hapa chini pana orodha ya taasisi hiyo-wameshiriki katika KAWAKIA. Bonyeza kwenye jina la taasisi ya kuona orodha ya hadithi kwa njia ya iliombwa taasisi hiyo.
+</p>
+
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}
+{% assign primary = site.data.site-content | where: "index","primary" | sort: 'institution' %}
+
+<table><thead>
+<th width=70%>{{ site.data.site-trans[parent_lang].institution }}</th>
+<th width=30%>{{ site.data.site-trans[parent_lang].number-bio }}</th>
+</thead></table>
+
+{% for page in primary %}
+{% assign cull = primary | where: "institution", page.institution %}
+{% if cull.size >= 1  and cull.size <= 1000 %}
+{% include json-institution-count.html parent_lang=parent_lang cull=cull%}
+{% endif %}
+{% endfor %}

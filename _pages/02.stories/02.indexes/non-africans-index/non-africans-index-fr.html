@@ -1,0 +1,30 @@
+---
+layout: archive
+title: "Indice des Non-Africains"
+permalink: /fr/sort/stories/non-africans-index/
+lang: fr
+languages-available:
+  - en
+  - fr
+  - pt
+  - sw
+---
+<div>
+Les non-Africains qui n'ont jamais passé de temps en Afrique mais qui ont contribué de manière significative au christianisme africain par le biais de missions, de théologie, de bourses d'études, de plaidoyer ou d'éducation.
+  <br>
+</div>
+
+<div class="side-box" style="font-size:.8.5em;font-style:italic;">{{ site.data.site-trans.ongoing[page.lang] }}</div>
+
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}
+<table><thead>
+<th width=35%>{{ site.data.site-trans[page.lang].name }}</th>
+<th width=25%>{{ site.data.site-trans[page.lang].affiliation }}</th>
+<th width=25%>{{ site.data.site-trans[page.lang].country }}</th>
+<th width=15%>{{ site.data.site-trans[page.lang].languages }}</th>
+</thead></table>
+{% assign sorted = site.data.site-content | where: "index","primary" | sort: 'title' %}{% for page in sorted %}
+{% if page.tags contains "nonafrican" %}
+{% include json-category-index.html parent_lang=parent_lang %}
+{% endif %}{% endfor %}
+{% include back-to-top %}

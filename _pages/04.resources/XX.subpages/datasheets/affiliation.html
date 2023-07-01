@@ -1,0 +1,51 @@
+---
+layout: archive
+permalink: /resources/datasheets/affiliation/
+title: "DACB Data"
+author_profile: false
+lang: en
+languages-available:
+  - en
+  - ' '
+  - ' '
+  - ' '
+---
+<table class="sort"><tbody>
+  <tr>
+    <td><a href="/resources/datasheets/">Totals</a></td>
+    <td><a href="/resources/datasheets/affiliation" style="color:#ecc068;">Affiliation Data</a></td>
+    <td><a href="/resources/datasheets/country">Country Data</a></td>
+    <td><a href="/resources/datasheets/indexes">Index Data</a></td>
+  </tr>
+</tbody></table>
+
+<!-- KEY ---------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------------->
+
+<div style="height:20px; display:block"> </div>
+
+<div class="language-switch-main"><div class="lang-head">
+  <div class="en" style="color:#fff"><b>English</b><br>{% assign ecount = site.data.site-content | where: "lang","en" %}{{site.data.site-trans.en.total}}: {{ecount.size}}</div>
+  <div class="fr" style="color:#fff"><b>French</b><br>{% assign fcount = site.data.site-content | where: "lang","fr" %}{{site.data.site-trans.en.total}}: {{fcount.size}}</div>
+  <div class="pt" style="color:#fff"><b>Portuguese</b><br>{% assign pcount = site.data.site-content | where: "lang","pt" %}{{site.data.site-trans.en.total}}: {{pcount.size}}</div>
+  <div class="sw" style="color:#fff"><b>Swahili</b><br>{% assign scount = site.data.site-content | where: "lang","sw" %}{{site.data.site-trans.en.total}}: {{scount.size}}</div>
+</div></div>
+
+<!-- GRAPH ----------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------------->
+
+<h3> Number of Biographies for Each Affiliation </h3>
+<p><i>Note: Some biographies are counted in multiple groups.</i> <br>&nbsp;</p>
+
+<table><thead>
+<th style="width:50%">{{ site.data.site-trans[page.lang].affiliation }}</th>
+<th style="width:50%">Total No. of Bios</th>
+</thead></table>
+
+<table><tbody>
+{% assign aff = site.data.site-content | where: "index","primary" | sort: "affiliation0" %}
+
+  {% for page in aff %}
+      {% include json-aff-count.html %}
+  {% endfor %}
+</tbody></table>

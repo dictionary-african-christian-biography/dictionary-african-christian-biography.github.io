@@ -1,0 +1,18 @@
+<!-- JS Base URL -->
+<script> var BASE_URL = '{{ site.url }}'; </script>
+
+<!-- Plugins -->
+<script src="/assets/js/vendors/plugins.min.js"></script>
+
+<!-- jQuery -->
+<script src="/assets/js/vendors/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="/assets/js/vendors/bootstrap.min.js"></script>
+
+<!-- Site scripts -->
+<script src="/assets/js/main.js"></script>
+
+<!-- Lightweight search on the navbar -->
+<!-- add random query param to clear cache on each new build -->
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v={{ site.time | date: '%A%B%d%y%H%M' }}" async></script>

@@ -1,0 +1,104 @@
+<div class="page__footer">
+
+  <!-- AWARDS ROW -->
+  <div class="awards-wrap">
+    <div class="awards">
+      <a style="width: 33.33%; display: block; float: right;" href="{{site.url}}/about/awards/">
+        <img class="awards__icon" src="/assets/images/asa-award.png"/>
+      </a>
+      <a style="width: 33.33%; display: block; float: right;"  href="{{site.url}}/about/awards/">
+        <img class="awards__icon" src="/assets/images/neh-award.png"/>
+      </a>
+      <a style="width: 33.33%; display: block; float: right;"  href="{{site.url}}/about/awards/">
+        <img class="awards__icon" src="/assets/images/eb-award.png"/>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="foot-box">
+      <!-- FIRST COLUMN -->
+      <div class="box">
+        <h3>{{ site.data.site-trans[page.lang].donate }}</h3>
+        {% if page.lang == 'en' %}
+          <p style="margin-bottom: 1em;">
+          <a href="/donate/"><img alt="QR Code" src="/assets/images/qr-dacb200.png" ></a></p>
+          <a href="{{site.url}}/donate/" class="btn btn--inverse-long">{{ site.data.site-trans[page.lang].support-dacb }}</a>
+        {% endif %}
+        {% if page.lang == 'fr' %}
+          <p style="margin-bottom: 1em;">
+          <a href="/fr/donate/"><img alt="QR Code" src="/assets/images/qr-dacb200.png" ></a></p>
+          <a href="{{site.url}}/fr/donate/" class="btn btn--inverse-long">{{ site.data.site-trans[page.lang].support-dacb }}</a>
+          {% endif %}
+        {% if page.lang == 'pt' %}
+          <p style="margin-bottom: 1em;">
+          <a href="/pt/donate/"><img alt="QR Code" src="/assets/images/qr-dacb200.png" ></a></p>
+          <a href="{{site.url}}/pt/donate/" class="btn btn--inverse-long">{{ site.data.site-trans[page.lang].support-dacb }}</a>
+        {% endif %}
+        {% if page.lang == 'sw' %}
+          <p style="margin-bottom: 1em;">
+          <a href="/sw/donate/"><img alt="QR Code" src="/assets/images/qr-dacb200.png" ></a></p>
+          <a href="{{site.url}}/sw/donate/" class="btn btn--inverse-long">{{ site.data.site-trans[page.lang].support-dacb }}</a>
+        {% endif %}
+      </div>
+
+      <!-- SECOND COLUMN -->
+      <div class="box__end">
+        <h3>{{ site.data.site-trans[page.lang].journal }}</h3>
+        {% if page.lang == 'en' %}
+          <p>Sign up here to receive the quarterly <i>Journal of African Christian Biography</i> and DACB News (FREE).</p>
+            {% include mailchimp-mini-form.html %}
+        {% endif %}
+        {% if page.lang == 'fr' %}
+            <p>Inscrivez-vous ici pour recevoir notre journal trimestriel et le bulletin du DIBICA (GRATUITEMENT).</p>
+            {% include mailchimp-mini-form.html %}
+        {% endif %}
+        {% if page.lang == 'pt' %}
+            <p>Registre-se aqui para receber nosso jornal trimestral e o boletim da DIBICA (GRATUITAMENTE).</p>
+            {% include mailchimp-mini-form.html %}
+        {% endif %}
+        {% if page.lang == 'sw' %}
+            <p>Kujiandikisha hapa ili upokea jarida letu na habari za DACB (BURE).</p>
+            {% include mailchimp-mini-form.html %}
+        {% endif %}
+      </div>
+
+      <!-- COPYRIGHT AND COUNTS -->
+      <div class="page__footer-copyright">
+        <div class="box_one"><a href="https://www.facebook.com/DictionaryofAfricanChristianBiography">
+          <img src="/assets/images/fb-full-white.png" class="facebook"/>
+        </a></div>
+
+        {% if page.lang == 'en' %}
+        <div class="box_two">
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: {{ site.time | date_to_long_string }}.<br>&copy; {{ site.time | date: '%Y' }} Dictionary of African Christian Biography.<br><a href="{{site.url}}/connect/contact/">Contact Us</a> | <a href="{{site.url}}/about/usage/">Usage & Citation Information</a>
+        </div>
+        {% endif %}
+
+        {% if page.lang == 'fr' %}
+        <div class="box_two">
+          Site reconceptualisé par Alex Mayfield (2017 et 2019). Dernière Mise à Jour: {{ site.time | date_to_long_string }}.<br>&copy; {{ site.time | date: '%Y' }} Dictionnaire Biographique des Chrétiens d'Afrique.<br><a href="{{site.url}}/fr/connect/contact/">Contactez Nous</a> | <a href="{{site.url}}/about/usage/">Informations d'Utilisation et de Citation</a>
+        </div>
+        {% endif %}
+
+        {% if page.lang == 'pt' %}
+        <div class="box_two">
+        Site reconceputalizado por Alex Mayfield (2017 e 2019). Ultima Atualização: {{ site.time | date_to_long_string }}.<br>&copy; {{ site.time | date: '%Y' }} Dicionário Biográfico de Cristãos da África.<br><a href="{{site.url}}/pt/connect/contact/">Contate-Nos</a> | <a href="{{site.url}}/about/usage/">Uso & Informação de Citação</a>
+        </div>
+        {% endif %}
+
+        {% if page.lang == 'sw' %}
+        <div class="box_two">
+        Site iliyoboreshwa na Alex Mayfield (2017 na 2019). Ilibadilishwa Mwisho: {{ site.time | date_to_long_string }}.<br>&copy; {{ site.time | date: '%Y' }} Kamusi Ya Wasifu Wa Wakristo Wa Kiafrika.<br><a href="{{site.url}}/sw/connect/contact/">Wasiliana Nasi</a> | <a href="{{site.url}}/about/usage/">Matumizi na Habari ya Kunuhusu</a>
+        </div>
+        {% endif %}
+
+        <div class="box_three">
+          <a href="https://www.bu.edu/cgcm/">
+            <img src="/assets/images/cgcm.png" class="facebook"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>

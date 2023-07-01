@@ -1,0 +1,59 @@
+---
+layout: archive
+title: 'Project Luke Fellows: XXXX-XXXX'
+permalink: /about/project-luke-XXXX/
+lang: en
+languages-available:
+  - en
+  - ' '
+  - ' '
+  - ' '
+---
+
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}{% assign sorted = site.data.site-content | sort: 'title' %}
+
+<!------------------------------------------------------------------------------------------>
+<!-- PROJECT LUKE FELLOW ------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------>
+<h3>Mrs. Firstname Lastname</h3>
+<table bgcolor="#f5f5f5">
+  <tbody>
+    <tr>
+      <!-- Replace with fellow's name and title -->
+      <td>
+        <b>Years in Residency:</b><br />
+        XXXX-XXXX<br /><br />
+        <!-- Replace with years in residency -->
+
+        <b>Positions:</b><br />
+        Professor of Evangelism and Missions, <br />
+        <!-- Replace with fellow's title(s), sperate titles by ",<br>" -->
+        Institution, City, Country
+        <!-- Replace with fellow's Institution, City, Country -->
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>Stories by Mrs. Firstname Lastname</h4>
+<!-- Replace with fellow's name and title -->
+
+<table>
+  <thead>
+    <th width="35%">{{ site.data.site-trans[page.lang].name }}</th>
+    <th width="25%">{{ site.data.site-trans[page.lang].affiliation }}</th>
+    <th width="25%">{{ site.data.site-trans[page.lang].country }}</th>
+    <th width="15%">{{ site.data.site-trans[page.lang].languages }}</th>
+  </thead>
+</table>
+
+{% for page in sorted %} {% if page.author == "Lastname, Firstname" %}
+<!-- Replace with fellow's name in the format it appears in YML frontmatter of biographies -->
+
+{% include json-category-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}
+
+<hr />
+<!-- DELETE THIS IS THERE IS NO OTHER FELLOW AFTER THIS POINT -->
+
+<!------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------>

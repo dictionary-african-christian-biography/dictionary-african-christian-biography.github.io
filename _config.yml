@@ -1,0 +1,96 @@
+incremental: true
+
+# Site Settings
+title: 'Dictionary of African Christian Biography'
+name: 'Dictionary of African Christian Biography'
+title_separator: '-'
+description: 'To collect, preserve, and make freely accessible biographical accounts and church histories – from oral and written sources – integral to a scholarly understanding of African Christianity.'
+
+# Include
+include:
+  - _pages
+
+# Filetypes
+encoding: 'utf-8'
+markdown_ext: 'markdown,md'
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: true
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Multiple languages support
+languages: ['en', 'fr', 'pt', 'sw']
+exclude_from_localization: ['javascript', 'images', 'css', 'public']
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
+
+# Used in category list pages
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# Jekyll archives
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
+# Defaults
+defaults:
+  # defaults for posts
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: single-news
+      author_profile: false
+      sidebar:
+        nav: 'index-menu'
+  # defaults for pages
+  - scope:
+      path: ''
+      type: pages
+    values:
+      layout: single-bio
+      author_profile: false
+      sidebar:
+        nav: 'index-menu'

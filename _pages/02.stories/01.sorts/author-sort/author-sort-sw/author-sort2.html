@@ -1,0 +1,56 @@
+---
+layout: archive
+title: "Panga na Waandishi: G-M"
+permalink: /sw/sort/stories/author-sort2/
+lang: sw
+languages-available:
+  - en
+  - fr
+  - pt
+  - sw
+---
+<table class="sort"><tbody>
+  <tr>
+    <td><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/sort/stories/author-sort/">A-F</a></td>
+    <td><a href="#G" style="color:#ecc068;">G</a></td>
+    <td><a href="#H" style="color:#ecc068;">H</a></td>
+    <td><a href="#I" style="color:#ecc068;">I</a></td>
+    <td><a href="#J" style="color:#ecc068;">J</a></td>
+    <td><a href="#K" style="color:#ecc068;">K</a></td>
+    <td><a href="#L" style="color:#ecc068;">L</a></td>
+    <td><a href="#M" style="color:#ecc068;">M</a></td>
+    <td><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/sort/stories/author-sort3/">N-S</a></td>
+    <td><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/sort/stories/author-sort4/">T-Z</a></td>
+  </tr>
+</tbody></table>
+
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}
+{% assign sorted = site.data.site-content | where: "index","primary" | sort: 'author' %}
+
+<a id="G"></a><h2>G</h2><table><thead><th width=20%>{{ site.data.site-trans[page.lang].author }}</th><th width=25%>{{ site.data.site-trans[page.lang].name }}</th><th width=20%>{{ site.data.site-trans[page.lang].affiliation }}</th><th width=20%>{{ site.data.site-trans[page.lang].country }}</th><th width=15%>{{ site.data.site-trans[page.lang].languages }}</th></thead></table>
+{% for page in sorted %}{% assign check = page.author | truncate: 1, "" %}{% if check == 'G' %}
+{% include json-author-index.html parent_lang=parent_lang %}{% endif %}{% endfor%}{% include back-to-top %}
+
+<a id="H"></a><h2>H</h2><table><thead><th width=20%>{{ site.data.site-trans[page.lang].author }}</th><th width=25%>{{ site.data.site-trans[page.lang].name }}</th><th width=20%>{{ site.data.site-trans[page.lang].affiliation }}</th><th width=20%>{{ site.data.site-trans[page.lang].country }}</th><th width=15%>{{ site.data.site-trans[page.lang].languages }}</th></thead></table>
+{% for page in sorted %}{% assign check = page.author | truncate: 1, "" %}{% if check == 'H' %}
+{% include json-author-index.html parent_lang=parent_lang %}{% endif %}{% endfor%}{% include back-to-top %}
+
+<a id="I"></a><h2>I</h2><table><thead><th width=20%>{{ site.data.site-trans[page.lang].author }}</th><th width=25%>{{ site.data.site-trans[page.lang].name }}</th><th width=20%>{{ site.data.site-trans[page.lang].affiliation }}</th><th width=20%>{{ site.data.site-trans[page.lang].country }}</th><th width=15%>{{ site.data.site-trans[page.lang].languages }}</th></thead></table>
+{% for page in sorted %}{% assign check = page.author | truncate: 1, "" %}{% if check == 'I' %}
+{% include json-author-index.html parent_lang=parent_lang %}{% endif %}{% endfor%}{% include back-to-top %}
+
+<a id="J"></a><h2>J</h2><table><thead><th width=20%>{{ site.data.site-trans[page.lang].author }}</th><th width=25%>{{ site.data.site-trans[page.lang].name }}</th><th width=20%>{{ site.data.site-trans[page.lang].affiliation }}</th><th width=20%>{{ site.data.site-trans[page.lang].country }}</th><th width=15%>{{ site.data.site-trans[page.lang].languages }}</th></thead></table>
+{% for page in sorted %}{% assign check = page.author | truncate: 1, "" %}{% if check == 'J' %}
+{% include json-author-index.html parent_lang=parent_lang %}{% endif %}{% endfor%}{% include back-to-top %}
+
+<a id="K"></a><h2>K</h2><table><thead><th width=20%>{{ site.data.site-trans[page.lang].author }}</th><th width=25%>{{ site.data.site-trans[page.lang].name }}</th><th width=20%>{{ site.data.site-trans[page.lang].affiliation }}</th><th width=20%>{{ site.data.site-trans[page.lang].country }}</th><th width=15%>{{ site.data.site-trans[page.lang].languages }}</th></thead></table>
+{% for page in sorted %}{% assign check = page.author | truncate: 1, "" %}{% if check == 'K' %}
+{% include json-author-index.html parent_lang=parent_lang %}{% endif %}{% endfor%}{% include back-to-top %}
+
+<a id="L"></a><h2>L</h2><table><thead><th width=20%>{{ site.data.site-trans[page.lang].author }}</th><th width=25%>{{ site.data.site-trans[page.lang].name }}</th><th width=20%>{{ site.data.site-trans[page.lang].affiliation }}</th><th width=20%>{{ site.data.site-trans[page.lang].country }}</th><th width=15%>{{ site.data.site-trans[page.lang].languages }}</th></thead></table>
+{% for page in sorted %}{% assign check = page.author | truncate: 1, "" %}{% if check == 'L' %}
+{% include json-author-index.html parent_lang=parent_lang %}{% endif %}{% endfor%}{% include back-to-top %}
+
+<a id="M"></a><h2>M</h2><table><thead><th width=20%>{{ site.data.site-trans[page.lang].author }}</th><th width=25%>{{ site.data.site-trans[page.lang].name }}</th><th width=20%>{{ site.data.site-trans[page.lang].affiliation }}</th><th width=20%>{{ site.data.site-trans[page.lang].country }}</th><th width=15%>{{ site.data.site-trans[page.lang].languages }}</th></thead></table>
+{% for page in sorted %}{% assign check = page.author | truncate: 1, "" %}{% if check == 'M' %}
+{% include json-author-index.html parent_lang=parent_lang %}{% endif %}{% endfor%}{% include back-to-top %}

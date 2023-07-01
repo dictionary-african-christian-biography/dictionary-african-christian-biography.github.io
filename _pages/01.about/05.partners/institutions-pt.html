@@ -1,0 +1,30 @@
+---
+layout: single-about
+permalink: /pt/about/partners/
+title: "Parceiros Institucionais"
+author_profile: false
+lang: pt
+languages-available:
+  - en
+  - fr
+  - pt
+  - sw
+---
+<p mardown='span'>
+Abaixo está uma lista de instituições que participaram do DIBICA. Clique no nome da instituição para ver uma lista de histórias apresentadas por aquela instituição.
+</p>
+
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}
+{% assign primary = site.data.site-content | where: "index","primary" | sort: 'institution' %}
+
+<table><thead>
+<th width=70%>{{ site.data.site-trans[parent_lang].institution }}</th>
+<th width=30%>{{ site.data.site-trans[parent_lang].number-bio }}</th>
+</thead></table>
+
+{% for page in primary %}
+{% assign cull = primary | where: "institution", page.institution %}
+{% if cull.size >= 1  and cull.size <= 1000 %}
+{% include json-institution-count.html parent_lang=parent_lang cull=cull%}
+{% endif %}
+{% endfor %}

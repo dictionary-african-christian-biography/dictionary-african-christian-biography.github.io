@@ -1,0 +1,8 @@
+{% capture date %}{{ page.upload | truncate: 7 | remove: "..." }}{% endcapture %}
+{% if date <=  "2015" %}
+  <div class="classic">
+      <div class="classic__logo"></div>
+      <div class="classic__text"><h3 class="classic-header">{{ site.data.site-trans.classic-head[page.lang] }}</h3>{{ site.data.site-trans.classic[page.lang] }}</div>
+  </div></div>
+  <br>
+{% endif %}

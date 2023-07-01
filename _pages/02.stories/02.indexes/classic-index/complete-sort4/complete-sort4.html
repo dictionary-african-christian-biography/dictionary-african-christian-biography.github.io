@@ -1,0 +1,56 @@
+---
+layout: archive
+permalink: /sort/stories/classic-index4/
+title: "Classic Index: T-Z"
+author_profile: false
+lang: en
+breadcrumbs: true
+languages-available:
+  - en
+  - fr
+  - pt
+  - sw
+---
+{% capture parent_lang %}{{ page.lang }}{% endcapture %}
+<table class="sort"><tbody>
+  <tr>
+    <td><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/sort/stories/classic-index/">A-F</a></td>
+    <td><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/sort/stories/classic-index2/">G-M</a></td>
+    <td><a href="{{ page.lang | prepend: '/' | remove: '/en' }}/sort/stories/classic-index/">N-S</a></td>
+    <td><a href="#T" style="color:#ecc068;">T</a></td>
+    <td><a href="#U" style="color:#ecc068;">U</a></td>
+    <td><a href="#V" style="color:#ecc068;">V</a></td>
+    <td><a href="#W" style="color:#ecc068;">W</a></td>
+    <td><a href="#X" style="color:#ecc068;">X</a></td>
+    <td><a href="#Y" style="color:#ecc068;">Y</a></td>
+    <td><a href="#Z" style="color:#ecc068;">Z</a></td>
+  </tr>
+</tbody></table>
+
+<h2 id="T">T</h2>
+<table><thead><th width=35%>{{ site.data.site-trans[parent_lang].name }}</th><th width=25%>{{ site.data.site-trans[parent_lang].affiliation }}</th><th width=25%>{{ site.data.site-trans[parent_lang].country }}</th><th width=15%>{{ site.data.site-trans[parent_lang].languages }}</th></thead></table>
+{% assign sorted = site.data.site-content | where: "categories","t" | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% if page.date <=  "2015" %}{% include json-category-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}{% include back-to-top %}
+
+<h2 id="U">U</h2>
+<table><thead><th width=35%>{{ site.data.site-trans[parent_lang].name }}</th><th width=25%>{{ site.data.site-trans[parent_lang].affiliation }}</th><th width=25%>{{ site.data.site-trans[parent_lang].country }}</th><th width=15%>{{ site.data.site-trans[parent_lang].languages }}</th></thead></table>
+{% assign sorted = site.data.site-content | where: "categories","u" | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% if page.date <=  "2015" %}{% include json-category-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}{% include back-to-top %}
+
+<h2 id="V">V</h2>
+<table><thead><th width=35%>{{ site.data.site-trans[parent_lang].name }}</th><th width=25%>{{ site.data.site-trans[parent_lang].affiliation }}</th><th width=25%>{{ site.data.site-trans[parent_lang].country }}</th><th width=15%>{{ site.data.site-trans[parent_lang].languages }}</th></thead></table>
+{% assign sorted = site.data.site-content | where: "categories","v" | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% if page.date <=  "2015" %}{% include json-category-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}{% include back-to-top %}
+
+<h2 id="W">W</h2>
+<table><thead><th width=35%>{{ site.data.site-trans[parent_lang].name }}</th><th width=25%>{{ site.data.site-trans[parent_lang].affiliation }}</th><th width=25%>{{ site.data.site-trans[parent_lang].country }}</th><th width=15%>{{ site.data.site-trans[parent_lang].languages }}</th></thead></table>
+{% assign sorted = site.data.site-content | where: "categories","w" | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% if page.date <=  "2015" %}{% include json-category-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}{% include back-to-top %}
+
+<h2 id="X">X</h2>
+<table><thead><th width=35%>{{ site.data.site-trans[parent_lang].name }}</th><th width=25%>{{ site.data.site-trans[parent_lang].affiliation }}</th><th width=25%>{{ site.data.site-trans[parent_lang].country }}</th><th width=15%>{{ site.data.site-trans[parent_lang].languages }}</th></thead></table>
+{% assign sorted = site.data.site-content | where: "categories","x" | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% if page.date <=  "2015" %}{% include json-category-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}{% include back-to-top %}
+
+<h2 id="Y">Y</h2>
+<table><thead><th width=35%>{{ site.data.site-trans[parent_lang].name }}</th><th width=25%>{{ site.data.site-trans[parent_lang].affiliation }}</th><th width=25%>{{ site.data.site-trans[parent_lang].country }}</th><th width=15%>{{ site.data.site-trans[parent_lang].languages }}</th></thead></table>
+{% assign sorted = site.data.site-content | where: "categories","y" | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% if page.date <=  "2015" %}{% include json-category-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}{% include back-to-top %}
+
+<h2 id="Z">Z</h2>
+<table><thead><th width=35%>{{ site.data.site-trans[parent_lang].name }}</th><th width=25%>{{ site.data.site-trans[parent_lang].affiliation }}</th><th width=25%>{{ site.data.site-trans[parent_lang].country }}</th><th width=15%>{{ site.data.site-trans[parent_lang].languages }}</th></thead></table>
+{% assign sorted = site.data.site-content | where: "categories","z" | where: "index","primary" | sort: 'title' %}{% for page in sorted %}{% if page.date <=  "2015" %}{% include json-category-index.html parent_lang=parent_lang %}{% endif %}{% endfor %}{% include back-to-top %}

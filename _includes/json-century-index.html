@@ -1,0 +1,35 @@
+<table><tbody><tr>
+<td width=30%>
+  {% if page.lang == parent_lang %} <a href="{{ page.url | relative_url}}">{{ page.title }}</a></td>
+  {% elsif page.languages-available contains parent_lang %}<a href="/{{parent_lang}}{{ page.url | relative_url | replace: 'fr/stories/','stories/' | replace: 'pt/stories/','stories/' | replace: 'sw/stories/','stories/' }}" rel="permalink">{{ page.title }}</a></td>
+  {% else %}<a href="{{ page.url | relative_url}}">{{ page.title }}</a>{% endif %}
+  </td>
+<td width=15%>{{ page.date }}</p></td>
+<td width=20%>
+  {{ site.data.aff-trans[page.affiliation0].[include.parent_lang] }}
+  {{ site.data.aff-trans[page.affiliation1].[include.parent_lang] }}
+  {{ site.data.aff-trans[page.affiliation2].[include.parent_lang] }}
+  </td>
+<td width=20%>
+  {{ site.data.country-trans[page.country0].[include.parent_lang] }}
+  {{ site.data.country-trans[page.country1].[include.parent_lang] }}
+  {{ site.data.country-trans[page.country2].[include.parent_lang] }}
+  </td>
+<td width=15%>
+  {% if page.languages-available0 == "en" %}<a href="{{ page.url | relative_url | replace: 'fr/stories/','stories/' | replace: 'pt/stories/','stories/' | replace: 'sw/stories/','stories/' }}" rel="permalink">{{ page.languages-available0 | upcase }}</a>{% endif%}
+        {% if page.languages-available0 == "fr" %}<a href="/fr{{ page.url | relative_url | replace: 'fr/stories/','stories/' | replace: 'pt/stories/','stories/' | replace: 'sw/stories/','stories/' }}" rel="permalink">{{ page.languages-available0 | upcase }}</a>{% endif%}
+        {% if page.languages-available0 == "pt" %}<a href="/pt{{ page.url | relative_url | replace: 'fr/stories/','stories/' | replace: 'pt/stories/','stories/' | replace: 'sw/stories/','stories/' }}" rel="permalink">{{ page.languages-available0 | upcase }}</a>{% endif%}
+        {% if page.languages-available0 == "sw" %}<a href="/sw{{ page.url | relative_url | replace: 'fr/stories/','stories/' | replace: 'pt/stories/','stories/' | replace: 'sw/stories/','stories/' }}" rel="permalink">{{ page.languages-available0 | upcase }}</a>{% endif%}
+        {% if page.languages-available1 == "en" %}<a href="{{ page.url | relative_url | replace: 'fr/stories/','stories/' | replace: 'pt/stories/','stories/' | replace: 'sw/stories/','stories/' }}" rel="permalink">{{ page.languages-available1 | upcase }}</a>{% endif%}
+        {% if page.languages-available1 == "fr" %}<a href="/fr{{ page.url | relative_url | replace: 'fr/stories/','stories/' | replace: 'pt/stories/','stories/' | replace: 'sw/stories/','stories/' }}" rel="permalink">{{ page.languages-available1 | upcase }}</a>{% endif%}
+        {% if page.languages-available1 == "pt" %}<a href="/pt{{ page.url | relative_url | replace: 'fr/stories/','stories/' | replace: 'pt/stories/','stories/' | replace: 'sw/stories/','stories/' }}" rel="permalink">{{ page.languages-available1 | upcase }}</a>{% endif%}
+        {% if page.languages-available1 == "sw" %}<a href="/sw{{ page.url | relative_url | replace: 'fr/stories/','stories/' | replace: 'pt/stories/','stories/' | replace: 'sw/stories/','stories/' }}" rel="permalink">{{ page.languages-available1 | upcase }}</a>{% endif%}
+        {% if page.languages-available2 == "en" %}<a href="{{ page.url | relative_url | replace: 'fr/stories/','stories/' | replace: 'pt/stories/','stories/' | replace: 'sw/stories/','stories/' }}" rel="permalink">{{ page.languages-available2 | upcase }}</a>{% endif%}
+        {% if page.languages-available2 == "fr" %}<a href="/fr{{ page.url | relative_url | replace: 'fr/stories/','stories/' | replace: 'pt/stories/','stories/' | replace: 'sw/stories/','stories/' }}" rel="permalink">{{ page.languages-available2 | upcase }}</a>{% endif%}
+        {% if page.languages-available2 == "pt" %}<a href="/pt{{ page.url | relative_url | replace: 'fr/stories/','stories/' | replace: 'pt/stories/','stories/' | replace: 'sw/stories/','stories/' }}" rel="permalink">{{ page.languages-available2 | upcase }}</a>{% endif%}
+        {% if page.languages-available2 == "sw" %}<a href="/sw{{ page.url | relative_url | replace: 'fr/stories/','stories/' | replace: 'pt/stories/','stories/' | replace: 'sw/stories/','stories/' }}" rel="permalink">{{ page.languages-available2 | upcase }}</a>{% endif%}
+        {% if page.languages-available3 == "en" %}<a href="{{ page.url | relative_url | replace: 'fr/stories/','stories/' | replace: 'pt/stories/','stories/' | replace: 'sw/stories/','stories/' }}" rel="permalink">{{ page.languages-available3 | upcase }}</a>{% endif%}
+        {% if page.languages-available3 == "fr" %}<a href="/fr{{ page.url | relative_url | replace: 'fr/stories/','stories/' | replace: 'pt/stories/','stories/' | replace: 'sw/stories/','stories/' }}" rel="permalink">{{ page.languages-available3 | upcase }}</a>{% endif%}
+        {% if page.languages-available3 == "pt" %}<a href="/pt{{ page.url | relative_url | replace: 'fr/stories/','stories/' | replace: 'pt/stories/','stories/' | replace: 'sw/stories/','stories/' }}" rel="permalink">{{ page.languages-available3 | upcase }}</a>{% endif%}
+        {% if page.languages-available3 == "sw" %}<a href="/sw{{ page.url | relative_url | replace: 'fr/stories/','stories/' | replace: 'pt/stories/','stories/' | replace: 'sw/stories/','stories/' }}" rel="permalink">{{ page.languages-available3 | upcase }}</a>{% endif%}
+</td></tr></tbody></table>

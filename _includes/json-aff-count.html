@@ -1,0 +1,73 @@
+{% assign primary = site.data.site-content | where: "index","primary" | sort: "affiliation0" %}
+{% assign first = primary | where: "affiliation0", page.affiliation0 %}
+
+{% if forloop.first %}
+{% assign check = page.affiliation0 %}
+{% assign sort = page.affiliation0 | truncate: 1,"" %}
+<tr>
+  {% if sort == 'a' or sort == 'b' or sort == 'c' or sort == 'd' or sort == 'e' or sort == 'f' or sort == 'g' or sort == 'h' or sort == 'i' or sort == 'j' or sort == 'k' or sort == 'l' or sort == 'm' or sort == 'n' or sort == 'o' or sort == 'p' or sort == 'q' or sort == 'r' or sort == 's' or sort == 't' or sort == 'u' or sort == 'v' or sort == 'w' or sort == 'x' or sort == 'y' or sort == 'z' %}
+    <td>{{ site.data.aff-trans[page.affiliation0].en }}</td>
+    {% capture secondary %}
+      {% for sub in primary %}
+        {% if sub.affiliation1 == check %}
+        {% assign value = sub.affiliation1 %}
+        {% assign count = primary | where: "affiliation1", value %}
+        {{count.size}}{% break %}
+        {% else %}
+          {% continue %}
+        {% endif %}
+      {% endfor %}
+    {% endcapture %}
+    {% capture tertiary %}
+      {% for nex in primary %}
+        {% if nex.affiliation2 == check %}
+        {% assign value = nex.affiliation2 %}
+        {% assign countb = primary | where: "affiliation2", value %}
+        {{countb.size}}{% break %}
+        {% else %}
+          {% continue %}
+        {% endif %}
+      {% endfor %}
+    {% endcapture %}
+  <td>{{ first.size | plus:secondary | plus:tertiary }}</td>
+  {% else %}{% continue %}{% endif %}
+</tr>
+
+{% elsif page.affiliation0 != check %}
+
+{% assign check = page.affiliation0 %}
+{% assign sort = page.affiliation0 | truncate: 1,"" %}
+<tr>
+  {% if sort == 'a' or sort == 'b' or sort == 'c' or sort == 'd' or sort == 'e' or sort == 'f' or sort == 'g' or sort == 'h' or sort == 'i' or sort == 'j' or sort == 'k' or sort == 'l' or sort == 'm' or sort == 'n' or sort == 'o' or sort == 'p' or sort == 'q' or sort == 'r' or sort == 's' or sort == 't' or sort == 'u' or sort == 'v' or sort == 'w' or sort == 'x' or sort == 'y' or sort == 'z' %}
+    <td>{{ site.data.aff-trans[page.affiliation0].en }}</td>
+    {% capture secondary %}
+      {% for sub in primary %}
+        {% if sub.affiliation1 == check %}
+        {% assign value = sub.affiliation1 %}
+        {% assign count = primary | where: "affiliation1", value %}
+        {{count.size}}{% break %}
+        {% else %}
+          {% continue %}
+        {% endif %}
+      {% endfor %}
+    {% endcapture %}
+    {% capture tertiary %}
+      {% for nex in primary %}
+        {% if nex.affiliation2 == check %}
+        {% assign value = nex.affiliation2 %}
+        {% assign countb = primary | where: "affiliation2", value %}
+        {{countb.size}}{% break %}
+        {% else %}
+          {% continue %}
+        {% endif %}
+      {% endfor %}
+    {% endcapture %}
+  <td>{{ first.size | plus:secondary | plus:tertiary }}</td>
+  {% else %}{% continue %}{% endif %}
+</tr>
+
+{% elsif page.affiliation0 == check %}
+
+{% continue %}
+
+{% endif %}
