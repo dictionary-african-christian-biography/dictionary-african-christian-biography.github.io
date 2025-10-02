@@ -21,7 +21,7 @@
 
 
 
-<title>Edward - Dictionary of African Christian Biography</title>
+<title>Muyira, Yohana - Dictionary of African Christian Biography</title>
 
 
 
@@ -31,11 +31,11 @@
 
 
 
-<meta name="author" content="Warui, Stephen Kariuki Apollo">
+<meta name="author" content="Unavailable">
 
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Dictionary of African Christian Biography">
-<meta property="og:title" content="Edward">
+<meta property="og:title" content="Muyira, Yohana">
 
 
 
@@ -49,7 +49,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="?">
+  <meta property="article:published_time" content="1800s">
 
 
 
@@ -319,7 +319,7 @@
 
   <div class="language-switch2">This page is available in:</div>
   <div class="language-switch"><div class="lang-head">
-    <div class="en"><a href="/memories/edward/" rel="permalink">EN</a></div>
+    <div class="en"><a href="/stories/uganda/muyira-yohana/" rel="permalink">EN</a></div>
     
     
     
@@ -628,57 +628,101 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Edward">
+    <meta itemprop="headline" content="Muyira, Yohana">
     
-    <meta itemprop="datePublished" content="?">
+    <meta itemprop="datePublished" content="1800s">
     
 
 <!-- NAME(S), DATE, AFFILIATION, COUNTRY -->
-        <div class="page__inner-wrap">
+    <div class="page__inner-wrap">
+      
+        <header>
+
           
-            <header>
-              <h1 class="page__title" itemprop="headline">Edward
+
+  <div class="classic">
+      <div class="classic__logo"></div>
+      <div class="classic__text"><h3 class="classic-header">Classic DACB Collection</h3>All articles created or submitted in the first twenty years of the project, from 1995 to 2015.</div>
+  </div></div>
+  <br>
+
+
+
+          <h1 class="page__title" itemprop="headline">Muyira, Yohana
 </h1>
-              <p class="page__meta">
-                ?
-                  
-                Anglican Communion
-                
-                
-              </br>
-                
-                Zimbabwe
-                
-                
-            </p>
-          <br>
-            </header>
-          
+          <p class="page__meta">
+            
+            1800s
+          <br/>
+              
+            Anglican Communion (Church Missionary Society)
+            
+            
+          <br/>
+            
+            Uganda
+            
+            
+          <br/>
+          </p>
+        </header>
+      
 
-<!-- ALTERNATE VERSION CHECK AND DISPLAY -->
+
+
       <section class="page__content" itemprop="text">
-        <div class="side-box" style="font-size:.6em;font-style:italic;pmargin-top: 1em;margin-bottom: 1em;">COLLECTED MEMORY: The following text belongs to our collection of eyewitness and fragmentary accounts that includes eulogies, obituaries, and primary materials. It may lack sources and proper academic verification for accuracy.</div>
-        <img src="/images/singe_bio_image_placeholder.jpg" class="icon">
-        <p>Edward was one of the indigenous individuals who accompanied Bishop George Wyndham Hamilton Knight-Bruce upon his arrival in the newly established Anglican Diocese of Mashonaland in 1891. The Bishop recognized the crucial role that local people would play in the evangelization of their own communities. Edward served as the Bishop’s personal attendant and remained devoted to his service until his retirement, which was prompted by illness. Although his contributions went largely unrecorded by the Bishop, Edward exercised a significant ministry among the local population. As a person of mixed race, he was more culturally and relationally connected to the African communities than the Bishop, who was a foreigner to many who had never encountered a European before.</p>
-
-<p>Stephen Kariuki Apollo Warui</p>
-
-<hr />
-
-<h3 id="source">Source:</h3>
-
-<p><a href="https://uir.unisa.ac.za/items/98eee6ae-98f8-4f76-9941-49f80f8c4f2b">https://uir.unisa.ac.za/items/98eee6ae-98f8-4f76-9941-49f80f8c4f2b</a></p>
-
-<hr />
-
-<p>This collected memory was submitted in May 2025 by Stephen Kariuki Apollo Warui, a PhD student at the Boston University School of Theology and a member of both the Presbyterian Church of East Africa and the Presbyterian Church (USA).</p>
-
         
+        <!-- CONTENT -->
+        <p>Of Uganda.  1893, May 28, ordained a deacon by Bishop Tucker of Eastern Equatorial Africa.</p>
+
+<hr />
+
+<p>Source:</p>
+
+<p>Church Missionary Society, <em>Register of Missionaries (Clerical, Lay and Female) and Native Clergy from 1804 to 1904</em>.</p>
+
       </section>
     </div>
   </article>
 </div>
-
+<script>
+  (async () => {
+    const asyncLightweightSearch = async (query) =>
+      new Promise((resolve) => {
+        if (window.getLightweightSearchResults) resolve(getLightweightSearchResults(query, -1));
+        const checkInterval = setInterval(() => {
+          if (window.getLightweightSearchResults) {
+            clearInterval(checkInterval);
+            resolve(getLightweightSearchResults(query));
+          }
+        }, 250);
+      });  
+  
+    const cleanPageTitle = (title) => {
+      const letters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+      letters.forEach((letter) => {
+        title = title.split(`(${letter})`).join("");
+      });
+      title = title.trim();
+      return title;
+    }
+    
+    let pageTitle = `Muyira, Yohana`;
+    pageTitle = cleanPageTitle(pageTitle);
+  
+    asyncLightweightSearch(pageTitle).then((e) => {
+      let alternates = e.filter(e => cleanPageTitle(e.title).toLowerCase() === pageTitle.toLowerCase());
+      if(alternates.length > 0) {
+        const alternatesElm = document.createElement('div');
+        alternatesElm.classList.add('alternate');
+        alternatesElm.innerHTML = "Multiple versions are available: " + alternates.map(e => `<a href="${e.url}">${e.title.split(pageTitle).join("").trim()}</a>`).join(' &bull; ');
+  
+        const afterElm = document.querySelector('.page__content');
+        afterElm.parentElement.insertBefore(alternatesElm, afterElm);
+      }
+    })
+  })();
+</script>
 
     <!-- FOOTER -->
     <div class="page__footer">
@@ -757,7 +801,7 @@
 
         
         <div class="box_two">
-        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 01 October 2025.<br>&copy; 2025 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
+        Site redesigned by Alex Mayfield (2017 and 2019). Last updated: 12 June 2025.<br>&copy; 2025 Dictionary of African Christian Biography.<br><a href="/connect/contact/">Contact Us</a> | <a href="/about/usage/">Usage & Citation Information</a>
         </div>
         
 
@@ -796,6 +840,6 @@
 
 <!-- Lightweight search on the navbar -->
 <!-- add random query param to clear cache on each new build -->
-<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=WednesdayOctober01252315" async></script>
+<script src="/assets/js/search-engine/search-lightweight.bundle.js?v=ThursdayJune12251008" async></script>
   </body>
 </html>
